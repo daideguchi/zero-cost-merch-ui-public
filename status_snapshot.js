@@ -1,5 +1,5 @@
 window.ZERO_COST_STATUS = {
-  "generated_at": "2026-04-21 18:08:37 JST",
+  "generated_at": "2026-04-21 18:59:47 JST",
   "workbook_url": "https://docs.google.com/spreadsheets/d/1VjdUJavoijOkdjKtkdKy_zUcdkQqZwG0oRty57H5_lk/edit",
   "metrics": {
     "box_count": "1",
@@ -143,7 +143,7 @@ window.ZERO_COST_STATUS = {
         "proof_done_count": 3,
         "proof_total_count": 4,
         "proof_progress_label": "3/4 完了",
-        "next_step": "BASE準備可 34件 を前提に、注文画面 -> ヤマト集荷 -> 発送完了 の 1件通しを証跡化する",
+        "next_step": "BASE準備可 33件 を前提に、注文画面 -> ヤマト集荷 -> 発送完了 の 1件通しを証跡化する",
         "href": "./routing.html"
       },
       {
@@ -205,7 +205,7 @@ window.ZERO_COST_STATUS = {
         "proof_done_count": 2,
         "proof_total_count": 4,
         "proof_progress_label": "2/4 完了",
-        "next_step": "BASE準備可 34件 / Ship&co候補 34件 を前提に、注文取込 -> 送り状 -> 集荷予約 -> 発送済み反映 の 1件通しを記録する",
+        "next_step": "BASE準備可 33件 / Ship&co候補 33件 を前提に、注文取込 -> 送り状 -> 集荷予約 -> 発送済み反映 の 1件通しを記録する",
         "href": "./routing.html"
       },
       {
@@ -322,14 +322,14 @@ window.ZERO_COST_STATUS = {
     "total": "36",
     "mercari_live": "9",
     "mercari_pending": "25",
-    "base_ready": "34",
-    "shipco_candidate": "34",
+    "base_ready": "33",
+    "shipco_candidate": "33",
     "human_review_needed": "26",
-    "image_review_waiting": "1",
-    "publish_gate_waiting": "24",
+    "image_review_waiting": "2",
+    "publish_gate_waiting": "23",
     "master_waiting": "0",
     "draft_waiting": "0",
-    "base_hold": "3"
+    "base_hold": "4"
   },
   "shipping_guard": {
     "status": "ok",
@@ -478,7 +478,7 @@ window.ZERO_COST_STATUS = {
       {
         "tone": "blue",
         "label": "いま優先するルート",
-        "note": "BASE標準 かんたん発送 / 公式プリンタレス候補 / BASE準備可 34件 を前提に、注文画面 -> ヤマト集荷 -> 発送完了 の 1件通しを証跡化する",
+        "note": "BASE標準 かんたん発送 / 公式プリンタレス候補 / BASE準備可 33件 を前提に、注文画面 -> ヤマト集荷 -> 発送完了 の 1件通しを証跡化する",
         "href": "./routing.html"
       }
     ],
@@ -504,7 +504,7 @@ window.ZERO_COST_STATUS = {
       {
         "tone": "blue",
         "label": "多販路下地",
-        "note": "BASE準備可 34件 / Ship&co候補 34件",
+        "note": "BASE準備可 33件 / Ship&co候補 33件",
         "href": "./routing.html"
       }
     ],
@@ -568,7 +568,7 @@ window.ZERO_COST_STATUS = {
       "proof_done_count": 3,
       "proof_total_count": 4,
       "proof_progress_label": "3/4 完了",
-      "next_step": "BASE準備可 34件 を前提に、注文画面 -> ヤマト集荷 -> 発送完了 の 1件通しを証跡化する",
+      "next_step": "BASE準備可 33件 を前提に、注文画面 -> ヤマト集荷 -> 発送完了 の 1件通しを証跡化する",
       "href": "./routing.html"
     },
     "route_options_title": "選べる発送ルート",
@@ -681,7 +681,7 @@ window.ZERO_COST_STATUS = {
         "severity": "orange",
         "key": "26件",
         "title": "販路ルーティングで人確認が必要です",
-        "note": "公開可否 24件 / 画像確認 1件",
+        "note": "公開可否 23件 / 画像確認 2件",
         "href": "./routing.html"
       }
     ]
@@ -700,7 +700,7 @@ window.ZERO_COST_STATUS = {
     "設定要: Ship&co carrier / 日本郵便 / ヤマトB2 / 佐川の必要情報をそろえて Ship&co へ登録する。",
     "設定要: ヤマト開発API / 返信確認の正規 route は Chrome Profile 12 です。/Users/dd/000_AI組織/ops/ヤマトAPI返信を確認する.command を再実行すれば、degutidai@gmail.com で 365日以内の4 query を再確認できます。現時点では relevant reply は見えていないため、Mercari Shops post-sale pickup rail を継続します。",
     "要確認: 販路ルーティング BOX-001-ITEM-0002, BOX-001-ITEM-0003, BOX-001-ITEM-0007",
-    "要確認: 画像同一性確認待ち 1件",
-    "要確認: 公開可否確認待ち 24件"
+    "要確認: 画像同一性確認待ち 2件",
+    "要確認: 公開可否確認待ち 23件"
   ]
 };

@@ -1436,24 +1436,33 @@
         return ' / バーコード区切り ' + delimiterCount + '件';
       }
       if (fileCount > 1) {
-        return ' / バーコード区切り未検出。今回は1商品として仮取り込み';
+        return ' / バーコード区切り0件。取り込み停止';
       }
       return ' / 1商品';
+    }
+
+    function uploadSafetyError() {
+      if (!selectedFiles.length || selectedFiles.length === 1 || barcodeDetectionPending) return '';
+      if (barcodeDelimiterCount(selectedPhotoManifest) > 0) return '';
+      return '複数枚アップロードでバーコード区切りが0件です。取り込みを止めました。バーコード写真が読めるように撮り直すか、バーコード写真のファイル名に CODE / BARCODE / JAN を入れてください。';
     }
 
     function setUploadButtonState() {
       var box = currentBox();
       var hasPending = selectedFiles.length > 0;
+      var safetyError = uploadSafetyError();
       uploadSubmit.hidden = !hasPending;
       intakeLink.hidden = hasPending;
       opsLink.hidden = hasPending;
-      uploadSubmit.disabled = isUploading || barcodeDetectionPending || !hasPending || !box;
+      uploadSubmit.disabled = isUploading || barcodeDetectionPending || Boolean(safetyError) || !hasPending || !box;
       driveShareBtn.disabled = isUploading || isDriveBusy || !box;
       driveSyncBtn.disabled = isUploading || isDriveBusy || !box;
       if (!isUploading) {
-        uploadSubmit.textContent = barcodeDetectionPending
-          ? 'バーコード確認中...'
-          : (box && hasPending ? (box.label + ' に取り込む') : '写真を取り込む');
+        uploadSubmit.textContent = safetyError
+          ? 'バーコード区切り0件で停止'
+          : (barcodeDetectionPending
+            ? 'バーコード確認中...'
+            : (box && hasPending ? (box.label + ' に取り込む') : '写真を取り込む'));
       }
     }
 
@@ -1760,12 +1769,13 @@
         if (!selectedFiles.length) return;
         var latestItems = estimatedItemsFor(selectedFiles.length, box);
         var latestEnd = start + Math.max(latestItems - 1, 0);
+        var safetyError = uploadSafetyError();
         statusEl.textContent = (box ? box.label : '箱未設定') + ' / ' + selectedFiles.length + '枚選択 / '
           + latestItems + '商品ぶん / No.' + padSequence(start)
           + (latestItems > 1 ? '〜' + padSequence(latestEnd) : '')
           + groupingStatusText(selectedFiles.length, latestItems)
-          + ' / 「写真を取り込む」を押す';
-        statusEl.style.color = barcodeDelimiterCount(selectedPhotoManifest) || selectedFiles.length === 1 ? 'var(--green)' : 'var(--orange)';
+          + (safetyError ? ' / ' + safetyError : ' / 「写真を取り込む」を押す');
+        statusEl.style.color = safetyError ? 'var(--red)' : 'var(--green)';
         setUploadButtonState();
       });
     }
@@ -1773,6 +1783,14 @@
     function uploadSelectedFiles() {
       var box = currentBox();
       if (!box || !selectedFiles.length || isUploading) return;
+      var safetyError = uploadSafetyError();
+      if (safetyError) {
+        statusEl.textContent = safetyError;
+        statusEl.style.color = 'var(--red)';
+        setUploadButtonState();
+        return;
+      }
+      if (barcodeDetectionPending) return;
       var form = new FormData();
       form.append('box_id', box.id);
       form.append('box_label', box.label);
