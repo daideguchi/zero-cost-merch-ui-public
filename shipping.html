@@ -590,10 +590,16 @@
           </div>
           <div class="wb-two-col" style="margin-top:12px">
             <div>
+              <div class="wb-section-label">channel readiness</div>
+              <div class="simple-list" id="channel-statuses" style="margin-top:6px"></div>
+            </div>
+            <div>
               <div class="wb-section-label">sync health</div>
               <div class="simple-list" id="sync-health-summary" style="margin-top:6px"></div>
             </div>
-            <div>
+          </div>
+          <div class="wb-two-col" style="margin-top:12px">
+            <div style="grid-column: 1 / -1">
               <div class="wb-section-label">source fetch / post-sale</div>
               <div class="simple-list" id="sync-health-fetches" style="margin-top:6px"></div>
             </div>
@@ -1197,8 +1203,23 @@
     }
 
     var syncHealth = board.sync_health || {};
+    var channelStatuses = document.getElementById('channel-statuses');
     var syncHealthSummary = document.getElementById('sync-health-summary');
     var syncHealthFetches = document.getElementById('sync-health-fetches');
+    if (channelStatuses){
+      var channelItems = [];
+      (board.channel_statuses || []).forEach(function(item){
+        channelItems.push(
+          (item.label||'channel')+': 出品='+(item.publish_status||'未取得')
+          +' / 発送='+(item.shipping_lane||'未取得')
+          +' / 状態='+(item.fulfillment_status||'未取得')
+          +' / 次='+(item.next_action||'未取得')
+          +(item.blocker ? ' / blocker='+(item.blocker||'') : '')
+        );
+      });
+      if (!channelItems.length) channelItems.push('販路別 readiness は未取得です。');
+      channelStatuses.innerHTML = channelItems.map(function(i){ return '<div class="simple-item">'+esc(i)+'</div>'; }).join('');
+    }
     if (syncHealthSummary){
       syncHealthSummary.innerHTML = [
         '状態: '+esc(syncHealth.badge||'未取得'),
@@ -1206,12 +1227,18 @@
         '補足: '+esc(syncHealth.detail||'未取得'),
         '確認時刻: '+esc(syncHealth.checked_at||'未取得'),
         'last-good: '+esc(syncHealth.last_success_generated_at||'未取得'),
+        'post-sale last success: '+esc(syncHealth.last_success_at||'未取得'),
+        'post-sale duration: '+esc(syncHealth.duration_label||'未取得'),
+        'stale reason: '+esc(syncHealth.stale_reason||'なし'),
         'next: '+esc(syncHealth.next_action||'未取得')
       ].map(function(i){ return '<div class="simple-item">'+i+'</div>'; }).join('');
     }
     if (syncHealthFetches){
       var sf = []; var pss = syncHealth.post_sale_sync || {};
       sf.push('post-sale: '+esc(pss.status||'未取得')+' / '+esc(pss.completed_at||'未取得'));
+      sf.push('post-sale last success: '+esc(pss.last_success_at||'未取得'));
+      sf.push('post-sale duration: '+esc(pss.duration_label||'未取得'));
+      sf.push('stale reason: '+esc(pss.stale_reason||'なし'));
       sf.push('post-sale next: '+esc(pss.next_action||'未取得'));
       (syncHealth.source_fetches||[]).forEach(function(item){
         sf.push((item.label||'source')+': '+(item.status||'unknown')

@@ -1308,11 +1308,17 @@
       return 'http://127.0.0.1:18777';
     }
 
+    function backendOrigin() {
+      var base = String(window.ZERO_COST_API_BASE || window.ZERO_COST_APP_BASE || '').trim().replace(/\/$/, '');
+      if (base && base !== 'null') return base;
+      return portalOrigin().replace(/\/$/, '');
+    }
+
     function apiUrl(path) {
       try {
-        return new URL(path, portalOrigin()).toString();
+        return new URL(path, backendOrigin() + '/').toString();
       } catch (_) {
-        return portalOrigin().replace(/\/$/, '') + path;
+        return backendOrigin() + path;
       }
     }
 
@@ -1364,7 +1370,7 @@
     function appBaseUrl() {
       var base = String(window.ZERO_COST_APP_BASE || window.ZERO_COST_API_BASE || '').trim().replace(/\/$/, '');
       if (base && base !== 'null') return base;
-      return portalOrigin().replace(/\/$/, '');
+      return backendOrigin();
     }
 
     function appAssetUrl(path) {

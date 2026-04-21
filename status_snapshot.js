@@ -1,10 +1,10 @@
 window.ZERO_COST_STATUS = {
-  "generated_at": "2026-04-22 02:30:09 JST",
+  "generated_at": "2026-04-22 02:50:08 JST",
   "workbook_url": "https://docs.google.com/spreadsheets/d/1VjdUJavoijOkdjKtkdKy_zUcdkQqZwG0oRty57H5_lk/edit",
   "metrics": {
     "box_count": "1",
     "box_note": "受入対象の箱数です。先頭: BOX-001",
-    "research_pending": "64",
+    "research_pending": "65",
     "research_note": "JAN / 型番 / 比較画像の確認待ち件数です。barcode_ready=0 / ocr_ready=0 / blocking_missing=0 / exception=2",
     "draft_pending": "19",
     "draft_note": "公開前に AI が整える下書き件数です。",
@@ -750,7 +750,7 @@ window.ZERO_COST_STATUS = {
     "今すぐ進める: 写真セット組み直し BOX-001-ITEM-0025, BOX-001-ITEM-0029, BOX-001-ITEM-0040, BOX-001-ITEM-0034, BOX-001-ITEM-0023 ほか16件",
     "今すぐ進める: 写真セット組み直し計画 BOX-001-ITEM-0021 BOX-001-ITEM-0021 は首サポーターとレモンクォーツリングが混在している。FRONT は X001AIILBV / HJ-GY-M の首サポーターで 0020 側に寄せる。BACK/CODE は X00020VHV9 / 1.1CT レモンクォーツ / シルバーリング / サイズ10 の同一赤箱だが、FRONT 相当写真がないため local child mint は保留。",
     "今すぐ進める: 写真セット組み直し計画 BOX-001-ITEM-0023 BOX-001-ITEM-0023 は LE BLANC フェムケアPRO と Trekking Pole-Blue が混在している。BACK/CODE は X0013QXDQX / Trekking Pole-Blue / N-82 BLUE の同一黒袋だが、FRONT 相当写真がない。Web検索でも X0013QXDQX の完全一致ページは見つからないため、現写真では local child mint せず保留する。",
-    "今すぐ進める: 商品特定待ち BOX-001-ITEM-0001, BOX-001-ITEM-0013, BOX-001-ITEM-0026",
+    "今すぐ進める: 商品特定待ち BOX-001-ITEM-0001, BOX-001-ITEM-0002, BOX-001-ITEM-0003",
     "今すぐ進める: 出品下書き待ち WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り, WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り, MMC FACE LOTION 240ml",
     "反映待ち: カテゴリ審査待ち WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り",
     "設定要: Ship&co carrier / 日本郵便 / ヤマトB2 / 佐川の必要情報をそろえて Ship&co へ登録する。",
