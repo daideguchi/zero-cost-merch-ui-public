@@ -1436,33 +1436,31 @@
         return ' / バーコード区切り ' + delimiterCount + '件';
       }
       if (fileCount > 1) {
-        return ' / バーコード区切り0件。取り込み停止';
+        return ' / ブラウザ未検出。Acer側で判定';
       }
       return ' / 1商品';
     }
 
-    function uploadSafetyError() {
+    function uploadGroupingWarning() {
       if (!selectedFiles.length || selectedFiles.length === 1 || barcodeDetectionPending) return '';
       if (barcodeDelimiterCount(selectedPhotoManifest) > 0) return '';
-      return '複数枚アップロードでバーコード区切りが0件です。取り込みを止めました。バーコード写真が読めるように撮り直すか、バーコード写真のファイル名に CODE / BARCODE / JAN を入れてください。';
+      return 'ブラウザ側では区切り未検出です。Acer側の実画像判定で商品ごとに束ねます。';
     }
 
     function setUploadButtonState() {
       var box = currentBox();
       var hasPending = selectedFiles.length > 0;
-      var safetyError = uploadSafetyError();
+      var groupingWarning = uploadGroupingWarning();
       uploadSubmit.hidden = !hasPending;
       intakeLink.hidden = hasPending;
       opsLink.hidden = hasPending;
-      uploadSubmit.disabled = isUploading || barcodeDetectionPending || Boolean(safetyError) || !hasPending || !box;
+      uploadSubmit.disabled = isUploading || barcodeDetectionPending || !hasPending || !box;
       driveShareBtn.disabled = isUploading || isDriveBusy || !box;
       driveSyncBtn.disabled = isUploading || isDriveBusy || !box;
       if (!isUploading) {
-        uploadSubmit.textContent = safetyError
-          ? 'バーコード区切り0件で停止'
-          : (barcodeDetectionPending
-            ? 'バーコード確認中...'
-            : (box && hasPending ? (box.label + ' に取り込む') : '写真を取り込む'));
+        uploadSubmit.textContent = barcodeDetectionPending
+          ? 'バーコード確認中...'
+          : (box && hasPending ? (box.label + ' に取り込む') : '写真を取り込む');
       }
     }
 
@@ -1769,13 +1767,13 @@
         if (!selectedFiles.length) return;
         var latestItems = estimatedItemsFor(selectedFiles.length, box);
         var latestEnd = start + Math.max(latestItems - 1, 0);
-        var safetyError = uploadSafetyError();
+        var groupingWarning = uploadGroupingWarning();
         statusEl.textContent = (box ? box.label : '箱未設定') + ' / ' + selectedFiles.length + '枚選択 / '
           + latestItems + '商品ぶん / No.' + padSequence(start)
           + (latestItems > 1 ? '〜' + padSequence(latestEnd) : '')
           + groupingStatusText(selectedFiles.length, latestItems)
-          + (safetyError ? ' / ' + safetyError : ' / 「写真を取り込む」を押す');
-        statusEl.style.color = safetyError ? 'var(--red)' : 'var(--green)';
+          + (groupingWarning ? ' / ' + groupingWarning : ' / 「写真を取り込む」を押す');
+        statusEl.style.color = groupingWarning ? 'var(--orange)' : 'var(--green)';
         setUploadButtonState();
       });
     }
@@ -1783,13 +1781,6 @@
     function uploadSelectedFiles() {
       var box = currentBox();
       if (!box || !selectedFiles.length || isUploading) return;
-      var safetyError = uploadSafetyError();
-      if (safetyError) {
-        statusEl.textContent = safetyError;
-        statusEl.style.color = 'var(--red)';
-        setUploadButtonState();
-        return;
-      }
       if (barcodeDetectionPending) return;
       var form = new FormData();
       form.append('box_id', box.id);
