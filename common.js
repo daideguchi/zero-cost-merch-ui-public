@@ -13,11 +13,32 @@
     if (path.charAt(0) !== '/') path = '/' + path;
     return path;
   }
+  function storedBoxId() {
+    try {
+      return window.localStorage ? String(window.localStorage.getItem('zeroCostSelectedBox') || '').trim().toUpperCase() : '';
+    } catch (_) {
+      return '';
+    }
+  }
+  function searchWithStoredBox() {
+    var search = String(window.location.search || '');
+    try {
+      var params = new URLSearchParams(search);
+      if (!params.get('box') && !params.get('mid')) {
+        var boxId = storedBoxId();
+        if (boxId) params.set('box', boxId);
+      }
+      var next = params.toString();
+      return next ? '?' + next : '';
+    } catch (_) {
+      return search;
+    }
+  }
   var appBase = normalizedBase(window.ZERO_COST_APP_BASE || window.ZERO_COST_API_BASE || '');
   var currentOrigin = normalizedBase(window.location.origin || '');
   if (appBase && currentOrigin && appBase !== currentOrigin) {
     try {
-      var target = new URL(publicPath() + window.location.search + window.location.hash, appBase);
+      var target = new URL(publicPath() + searchWithStoredBox() + window.location.hash, appBase);
       if (target.toString() !== window.location.href) {
         window.location.replace(target.toString());
         return;

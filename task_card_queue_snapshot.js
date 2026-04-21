@@ -1,11 +1,101 @@
 window.ZERO_COST_TASK_CARD_QUEUE = {
-  "generated_at": "2026-04-21 17:57:07 JST",
+  "generated_at": "2026-04-21 18:06:27 JST",
   "business_name": "0円仕入れ物販事業",
   "counts": {
-    "open_jobs": 21,
+    "open_jobs": 23,
     "task_cards": 8
   },
   "jobs": [
+    {
+      "job_id": "候補URL収集担当-001",
+      "task_name": "候補URL収集担当",
+      "management_id": "BOX-001-ITEM-0057",
+      "status": "open",
+      "recommended_ai_tier": "低コストAI可",
+      "goal": "比較画像候補を集めて、同一性判断の材料だけを残す",
+      "input_fields": [
+        "management_id",
+        "product_name",
+        "GTIN / Amazon内部コード",
+        "実物画像3枚",
+        "current_exact_match_status"
+      ],
+      "write_targets": [
+        "zero_cost_merch_branch/state/intake/BOX-001_official_image_candidates.json"
+      ],
+      "must_not_do": [
+        "100%同一確認済み を勝手に付けない",
+        "比較画像を listing へ反映しない",
+        "問い合わせへ直接返答しない",
+        "出品や API 公開を実行しない"
+      ],
+      "stop_conditions": [
+        "色違い / 型番違い / サイズ違いが見えた",
+        "候補画像が似ているだけで断定できない",
+        "顧客影響のある商品に当たった"
+      ],
+      "expected_outputs": [
+        "candidate_urls",
+        "candidate_titles",
+        "一致しそうな根拠メモ"
+      ],
+      "batch_size": 2,
+      "routing_context": {
+        "mercari_lane": "公開済み",
+        "mercari_gate": "公開済み",
+        "image_gate": "画像同一性確認待ち",
+        "base_condition": "画像確認後",
+        "shipco_condition": "送り状共通化候補",
+        "review_reason": "画像同一性未確認",
+        "low_cost_job": "比較画像照合"
+      }
+    },
+    {
+      "job_id": "比較画像照合担当-001",
+      "task_name": "比較画像照合担当",
+      "management_id": "BOX-001-ITEM-0057",
+      "status": "open",
+      "recommended_ai_tier": "低コストAI可",
+      "goal": "routing 上の 画像同一性確認待ち を整理し、同一性判断の材料だけを残す",
+      "input_fields": [
+        "management_id",
+        "product_name",
+        "実物画像3枚",
+        "比較画像候補",
+        "routing_reason"
+      ],
+      "write_targets": [
+        "zero_cost_merch_branch/state/intake/BOX-001_official_image_candidates.json",
+        "zero_cost_merch_branch/state/routing_plan.json"
+      ],
+      "must_not_do": [
+        "100%同一確認済み を勝手に付けない",
+        "比較画像を listing へ反映しない",
+        "顧客対応をしない",
+        "問い合わせへ直接返答しない",
+        "出品や API 公開を実行しない"
+      ],
+      "stop_conditions": [
+        "色違い / 型番違い / サイズ違い / セット違いが見えた",
+        "比較画像が似ているだけで断定できない",
+        "顧客影響がある商品に当たった"
+      ],
+      "expected_outputs": [
+        "comparison_findings",
+        "risk_points",
+        "hq_review_note"
+      ],
+      "batch_size": 2,
+      "routing_context": {
+        "mercari_lane": "公開済み",
+        "mercari_gate": "公開済み",
+        "image_gate": "画像同一性確認待ち",
+        "base_condition": "画像確認後",
+        "shipco_condition": "送り状共通化候補",
+        "review_reason": "画像同一性未確認",
+        "low_cost_job": "比較画像照合"
+      }
+    },
     {
       "job_id": "公開前チェック担当-001",
       "task_name": "公開前チェック担当",

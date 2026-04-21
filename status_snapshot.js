@@ -1,5 +1,5 @@
 window.ZERO_COST_STATUS = {
-  "generated_at": "2026-04-21 17:57:44 JST",
+  "generated_at": "2026-04-21 18:07:03 JST",
   "workbook_url": "https://docs.google.com/spreadsheets/d/1VjdUJavoijOkdjKtkdKy_zUcdkQqZwG0oRty57H5_lk/edit",
   "metrics": {
     "box_count": "1",
@@ -324,12 +324,12 @@ window.ZERO_COST_STATUS = {
     "mercari_pending": "25",
     "base_ready": "34",
     "shipco_candidate": "34",
-    "human_review_needed": "25",
-    "image_review_waiting": "0",
+    "human_review_needed": "26",
+    "image_review_waiting": "1",
     "publish_gate_waiting": "24",
     "master_waiting": "0",
     "draft_waiting": "0",
-    "base_hold": "2"
+    "base_hold": "3"
   },
   "shipping_guard": {
     "status": "ok",
@@ -679,9 +679,9 @@ window.ZERO_COST_STATUS = {
       },
       {
         "severity": "orange",
-        "key": "25件",
+        "key": "26件",
         "title": "販路ルーティングで人確認が必要です",
-        "note": "公開可否 24件 / 画像確認 0件",
+        "note": "公開可否 24件 / 画像確認 1件",
         "href": "./routing.html"
       }
     ]
@@ -700,6 +700,7 @@ window.ZERO_COST_STATUS = {
     "設定要: Ship&co carrier / 日本郵便 / ヤマトB2 / 佐川の必要情報をそろえて Ship&co へ登録する。",
     "設定要: ヤマト開発API / 返信確認の正規 route は Chrome Profile 12 です。/Users/dd/000_AI組織/ops/ヤマトAPI返信を確認する.command を再実行すれば、degutidai@gmail.com で 365日以内の4 query を再確認できます。現時点では relevant reply は見えていないため、Mercari Shops post-sale pickup rail を継続します。",
     "要確認: 販路ルーティング BOX-001-ITEM-0002, BOX-001-ITEM-0003, BOX-001-ITEM-0007",
+    "要確認: 画像同一性確認待ち 1件",
     "要確認: 公開可否確認待ち 24件"
   ]
 };

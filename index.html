@@ -1231,6 +1231,7 @@
         setDriveLink('');
         return;
       }
+      selectedBoxId = box.id;
       if (window.zeroCostSetBoxId) {
         window.zeroCostSetBoxId(box.id, { updateUrl: true });
       }
@@ -1255,7 +1256,7 @@
       driveShareBtn.disabled = isUploading || isDriveBusy;
       driveSyncBtn.disabled = isUploading || isDriveBusy;
       setDriveLink(storedDriveLink(box.id));
-      setDriveStatus(box.label + ' は Drive 自動取り込み対象です。1商品1フォルダ + FRONT/BACK/CODE で入れてください。', '');
+      setDriveStatus(box.label + ' は Drive 自動取り込み対象です。バーコード区切り、または 1商品1フォルダ で入れてください。', '');
       refreshDriveAutoStatus({ silent: true });
       if (selectedFiles.length) {
         renderSelectedFiles(selectedFiles, box);
@@ -1585,7 +1586,7 @@
             + (blockedGroups ? ' 子フォルダ修正 ' + blockedGroups + '件。' : '')
             + (looseImages ? ' 箱直下画像 ' + looseImages + '枚。' : '')
             + (detail ? ' 例: ' + detail + '。' : '')
-            + ' 1商品1フォルダ + FRONT/BACK/CODE に直してください。'
+            + ' バーコード写真に CODE/BARCODE/JAN を付けるか、1商品1フォルダに直してください。'
         };
       }
       if (fileCount || itemCount) {
@@ -1604,7 +1605,7 @@
       }
       return {
         tone: '',
-        text: label + ' は Drive 自動取り込み対象です。1商品1フォルダ + FRONT/BACK/CODE で入れてください。'
+        text: label + ' は Drive 自動取り込み対象です。バーコード区切り、または 1商品1フォルダ で入れてください。'
       };
     }
 
@@ -1670,7 +1671,7 @@
             rememberDriveLink(box.id, folderUrl);
             setDriveLink(folderUrl);
           }
-          setDriveStatus(box.label + ' の共有URLを作りました。相手には「1商品1フォルダ + FRONT/BACK/CODE」で入れるよう伝えてください。', 'ok');
+          setDriveStatus(box.label + ' の共有URLを作りました。相手には「バーコード区切り、または 1商品1フォルダ」で入れるよう伝えてください。', 'ok');
         })
         .catch(function(error) {
           setDriveStatus('Google Drive URL 作成に失敗しました。' + (error && error.message ? ' ' + error.message : ''), 'error');
@@ -1705,7 +1706,7 @@
                 box.label + ' に自動取り込みできないものがあります。'
                 + (blockedGroups ? ' 子フォルダ要修正 ' + blockedGroups + '件。' : '')
                 + (looseImages ? ' 箱直下画像 ' + looseImages + '枚。' : '')
-                + ' 1商品1フォルダ + FRONT/BACK/CODE に直してください。',
+                + ' バーコード写真に CODE/BARCODE/JAN を付けるか、1商品1フォルダに直してください。',
                 'error'
               );
               return;

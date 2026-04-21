@@ -1,5 +1,5 @@
 window.ZERO_COST_ROLE_PACKETS = {
-  "generated_at": "2026-04-21 17:57:07 JST",
+  "generated_at": "2026-04-21 18:06:27 JST",
   "business_name": "0円仕入れ物販事業",
   "meta": {
     "resident_url": "./roles.html",
@@ -32,7 +32,7 @@ window.ZERO_COST_ROLE_PACKETS = {
     "pickup_pending": 0,
     "category_review_waiting": 1,
     "routing_total": 36,
-    "image_review_waiting": 0,
+    "image_review_waiting": 1,
     "publish_gate_waiting": 24,
     "base_ready_routing": 34,
     "qwen_review_pending": 0,
@@ -50,7 +50,7 @@ window.ZERO_COST_ROLE_PACKETS = {
         "category_review_waiting": 1,
         "draft_ready": 19,
         "pickup_pending": 0,
-        "image_review_waiting": 0,
+        "image_review_waiting": 1,
         "publish_gate_waiting": 24,
         "qwen_review_pending": 0,
         "qwen_review_resolved": 2,
@@ -116,15 +116,15 @@ window.ZERO_COST_ROLE_PACKETS = {
       ],
       "split_required_ids": [
         "BOX-001-ITEM-0028",
-        "BOX-001-ITEM-0041",
-        "BOX-001-ITEM-0044",
-        "BOX-001-ITEM-0052",
-        "BOX-001-ITEM-0036",
-        "BOX-001-ITEM-0049",
-        "BOX-001-ITEM-0034",
-        "BOX-001-ITEM-0048"
+        "BOX-001-ITEM-0048",
+        "BOX-001-ITEM-0030",
+        "BOX-001-ITEM-0023",
+        "BOX-001-ITEM-0029",
+        "BOX-001-ITEM-0053",
+        "BOX-001-ITEM-0021",
+        "BOX-001-ITEM-0044"
       ],
-      "launch_prompt": "あなたは 0円仕入れ物販事業の 0円出品部長 です。\nゴール: ショップ運営を優先し、問い合わせ・公開済み監査・審査待ち・下書き待ちを各担当へ振って resident と Git の整合まで持つ\n必ず見るもの:\n- README.md\n- docs/12_ルーティン運用マニュアル.md\n- docs/14_AI担当役職と起動プロンプト集.md\n- docs/16_UI起動パケット仕様.md\n制約:\n- 100%同一確認済みでない比較画像を出品画像へ上げない\n- README・resident・Z-98・Git を最後に必ずそろえる\n必要なら次の担当へ振ってください:\n- 商品特定担当\n- 比較画像精査担当\n- 相場調査担当\n- 出品下書き担当\n- API公開担当\n- 問い合わせ対応担当\n- 集荷運用担当\n次の条件では上位AIへ引き継いでください:\n- 顧客対応が絡む時\n- 商品同一性の断定に迷う時\n- カテゴリ審査や API 異常が絡む時\nいま優先して見るID:\n- BOX-001-ITEM-0001\n- BOX-001-ITEM-0013\n- BOX-001-ITEM-0026\n- BOX-001-ITEM-0027\n- BOX-001-ITEM-0032\n- BOX-001-ITEM-0034\n- BOX-001-ITEM-0003\n- BOX-001-ITEM-0004\n要再束ねのID:\n- BOX-001-ITEM-0028\n- BOX-001-ITEM-0041\n- BOX-001-ITEM-0044\n- BOX-001-ITEM-0052\n- BOX-001-ITEM-0036\n- BOX-001-ITEM-0049\n- BOX-001-ITEM-0034\n- BOX-001-ITEM-0048\n今回の対象ID:\n- BOX-001-ITEM-0004\n- BOX-001-ITEM-0005\n- BOX-001-ITEM-0008\n- BOX-001-ITEM-0009\n- BOX-001-ITEM-0011\n- BOX-001-ITEM-0012\n期待する出力:\n- 今の件数\n- 次に進める商品ID\n- どの担当へ何を振るか\n- 更新した正本\n最後に resident・README・Z-98・Git をそろえてください。"
+      "launch_prompt": "あなたは 0円仕入れ物販事業の 0円出品部長 です。\nゴール: ショップ運営を優先し、問い合わせ・公開済み監査・審査待ち・下書き待ちを各担当へ振って resident と Git の整合まで持つ\n必ず見るもの:\n- README.md\n- docs/12_ルーティン運用マニュアル.md\n- docs/14_AI担当役職と起動プロンプト集.md\n- docs/16_UI起動パケット仕様.md\n制約:\n- 100%同一確認済みでない比較画像を出品画像へ上げない\n- README・resident・Z-98・Git を最後に必ずそろえる\n必要なら次の担当へ振ってください:\n- 商品特定担当\n- 比較画像精査担当\n- 相場調査担当\n- 出品下書き担当\n- API公開担当\n- 問い合わせ対応担当\n- 集荷運用担当\n次の条件では上位AIへ引き継いでください:\n- 顧客対応が絡む時\n- 商品同一性の断定に迷う時\n- カテゴリ審査や API 異常が絡む時\nいま優先して見るID:\n- BOX-001-ITEM-0001\n- BOX-001-ITEM-0013\n- BOX-001-ITEM-0026\n- BOX-001-ITEM-0027\n- BOX-001-ITEM-0032\n- BOX-001-ITEM-0034\n- BOX-001-ITEM-0003\n- BOX-001-ITEM-0004\n要再束ねのID:\n- BOX-001-ITEM-0028\n- BOX-001-ITEM-0048\n- BOX-001-ITEM-0030\n- BOX-001-ITEM-0023\n- BOX-001-ITEM-0029\n- BOX-001-ITEM-0053\n- BOX-001-ITEM-0021\n- BOX-001-ITEM-0044\n今回の対象ID:\n- BOX-001-ITEM-0004\n- BOX-001-ITEM-0005\n- BOX-001-ITEM-0008\n- BOX-001-ITEM-0009\n- BOX-001-ITEM-0011\n- BOX-001-ITEM-0012\n期待する出力:\n- 今の件数\n- 次に進める商品ID\n- どの担当へ何を振るか\n- 更新した正本\n最後に resident・README・Z-98・Git をそろえてください。"
     },
     {
       "role_name": "商品特定担当",
@@ -173,10 +173,12 @@ window.ZERO_COST_ROLE_PACKETS = {
       "goal": "100%同一確認済み / 保留 / 不可 を判定する",
       "current_counts": {
         "verified_exact_match": 2,
-        "pending_review": 0,
+        "pending_review": 1,
         "official_image_pending": 0
       },
-      "target_ids": [],
+      "target_ids": [
+        "BOX-001-ITEM-0057"
+      ],
       "must_read": [
         "docs/12_ルーティン運用マニュアル.md",
         "state/intake/BOX-001_official_image_candidates.json",
@@ -204,7 +206,7 @@ window.ZERO_COST_ROLE_PACKETS = {
         "100%同一確認済みを断定し切れない時",
         "比較画像の採用可否が顧客影響を持つ時"
       ],
-      "launch_prompt": "あなたは 0円仕入れ物販事業の 比較画像精査担当 です。\nゴール: 100%同一確認済み / 保留 / 不可 を判定する\n必ず見るもの:\n- docs/12_ルーティン運用マニュアル.md\n- state/intake/BOX-001_official_image_candidates.json\n- resident 商品カードDB\n制約:\n- 100%同一確認済みでない比較画像を出品画像へ上げない\n- 保留と不可を混同しない\n次の条件では上位AIへ引き継いでください:\n- 100%同一確認済みを断定し切れない時\n- 比較画像の採用可否が顧客影響を持つ時\n今回の対象ID:\n- いま固定の対象IDはありません\n期待する出力:\n- exact_match_status\n- adoptable_images\n- evidence\n最後に resident・README・Z-98・Git をそろえてください。"
+      "launch_prompt": "あなたは 0円仕入れ物販事業の 比較画像精査担当 です。\nゴール: 100%同一確認済み / 保留 / 不可 を判定する\n必ず見るもの:\n- docs/12_ルーティン運用マニュアル.md\n- state/intake/BOX-001_official_image_candidates.json\n- resident 商品カードDB\n制約:\n- 100%同一確認済みでない比較画像を出品画像へ上げない\n- 保留と不可を混同しない\n次の条件では上位AIへ引き継いでください:\n- 100%同一確認済みを断定し切れない時\n- 比較画像の採用可否が顧客影響を持つ時\n今回の対象ID:\n- BOX-001-ITEM-0057\n期待する出力:\n- exact_match_status\n- adoptable_images\n- evidence\n最後に resident・README・Z-98・Git をそろえてください。"
     },
     {
       "role_name": "相場調査担当",
@@ -480,7 +482,9 @@ window.ZERO_COST_ROLE_PACKETS = {
         "exact_pending": 56,
         "official_image_pending": 0
       },
-      "target_ids": [],
+      "target_ids": [
+        "BOX-001-ITEM-0057"
+      ],
       "input_fields": [
         "management_id",
         "product_name",
@@ -517,18 +521,22 @@ window.ZERO_COST_ROLE_PACKETS = {
       },
       "recommended_ai_tier": "低コストAI可",
       "batch_size": 2,
-      "job_target_ids": [],
-      "launch_prompt": "あなたは 0円仕入れ物販事業の 候補URL収集担当 です。\nあなたのAI層は 低コストAI です。\nゴール: 比較画像候補を集めて、同一性判断の材料だけを残す\n今回の batch_size: 2\n今回の対象ID:\n- いま固定の対象IDはありません\n入力として見るもの:\n- management_id\n- product_name\n- GTIN / Amazon内部コード\n- 実物画像3枚\n- current_exact_match_status\n書き戻してよい場所:\n- zero_cost_merch_branch/state/intake/BOX-001_official_image_candidates.json\nやってはいけないこと:\n- 100%同一確認済み を勝手に付けない\n- 比較画像を listing へ反映しない\n- 問い合わせへ直接返答しない\n- 出品や API 公開を実行しない\n次に当てはまったら止めて上位AIへ渡してください:\n- 色違い / 型番違い / サイズ違いが見えた\n- 候補画像が似ているだけで断定できない\n- 顧客影響のある商品に当たった\n期待する出力:\n- candidate_urls\n- candidate_titles\n- 一致しそうな根拠メモ\n最後に README・resident・Z-98・Git のうち、自分に許可された更新だけをそろえてください。"
+      "job_target_ids": [
+        "BOX-001-ITEM-0057"
+      ],
+      "launch_prompt": "あなたは 0円仕入れ物販事業の 候補URL収集担当 です。\nあなたのAI層は 低コストAI です。\nゴール: 比較画像候補を集めて、同一性判断の材料だけを残す\n今回の batch_size: 2\n今回の対象ID:\n- BOX-001-ITEM-0057\n入力として見るもの:\n- management_id\n- product_name\n- GTIN / Amazon内部コード\n- 実物画像3枚\n- current_exact_match_status\n書き戻してよい場所:\n- zero_cost_merch_branch/state/intake/BOX-001_official_image_candidates.json\nやってはいけないこと:\n- 100%同一確認済み を勝手に付けない\n- 比較画像を listing へ反映しない\n- 問い合わせへ直接返答しない\n- 出品や API 公開を実行しない\n次に当てはまったら止めて上位AIへ渡してください:\n- 色違い / 型番違い / サイズ違いが見えた\n- 候補画像が似ているだけで断定できない\n- 顧客影響のある商品に当たった\n期待する出力:\n- candidate_urls\n- candidate_titles\n- 一致しそうな根拠メモ\n最後に README・resident・Z-98・Git のうち、自分に許可された更新だけをそろえてください。"
     },
     {
       "task_name": "比較画像照合担当",
       "role_name": "低コストAI",
       "goal": "routing 上の 画像同一性確認待ち を整理し、同一性判断の材料だけを残す",
       "current_counts": {
-        "image_review_waiting": 0,
+        "image_review_waiting": 1,
         "routing_total": 36
       },
-      "target_ids": [],
+      "target_ids": [
+        "BOX-001-ITEM-0057"
+      ],
       "input_fields": [
         "management_id",
         "product_name",
@@ -567,8 +575,10 @@ window.ZERO_COST_ROLE_PACKETS = {
       },
       "recommended_ai_tier": "低コストAI可",
       "batch_size": 2,
-      "job_target_ids": [],
-      "launch_prompt": "あなたは 0円仕入れ物販事業の 比較画像照合担当 です。\nあなたのAI層は 低コストAI です。\nゴール: routing 上の 画像同一性確認待ち を整理し、同一性判断の材料だけを残す\n今回の batch_size: 2\n今回の対象ID:\n- いま固定の対象IDはありません\n入力として見るもの:\n- management_id\n- product_name\n- 実物画像3枚\n- 比較画像候補\n- routing_reason\n書き戻してよい場所:\n- zero_cost_merch_branch/state/intake/BOX-001_official_image_candidates.json\n- zero_cost_merch_branch/state/routing_plan.json\nやってはいけないこと:\n- 100%同一確認済み を勝手に付けない\n- 比較画像を listing へ反映しない\n- 顧客対応をしない\n- 問い合わせへ直接返答しない\n- 出品や API 公開を実行しない\n次に当てはまったら止めて上位AIへ渡してください:\n- 色違い / 型番違い / サイズ違い / セット違いが見えた\n- 比較画像が似ているだけで断定できない\n- 顧客影響がある商品に当たった\n期待する出力:\n- comparison_findings\n- risk_points\n- hq_review_note\n最後に README・resident・Z-98・Git のうち、自分に許可された更新だけをそろえてください。"
+      "job_target_ids": [
+        "BOX-001-ITEM-0057"
+      ],
+      "launch_prompt": "あなたは 0円仕入れ物販事業の 比較画像照合担当 です。\nあなたのAI層は 低コストAI です。\nゴール: routing 上の 画像同一性確認待ち を整理し、同一性判断の材料だけを残す\n今回の batch_size: 2\n今回の対象ID:\n- BOX-001-ITEM-0057\n入力として見るもの:\n- management_id\n- product_name\n- 実物画像3枚\n- 比較画像候補\n- routing_reason\n書き戻してよい場所:\n- zero_cost_merch_branch/state/intake/BOX-001_official_image_candidates.json\n- zero_cost_merch_branch/state/routing_plan.json\nやってはいけないこと:\n- 100%同一確認済み を勝手に付けない\n- 比較画像を listing へ反映しない\n- 顧客対応をしない\n- 問い合わせへ直接返答しない\n- 出品や API 公開を実行しない\n次に当てはまったら止めて上位AIへ渡してください:\n- 色違い / 型番違い / サイズ違い / セット違いが見えた\n- 比較画像が似ているだけで断定できない\n- 顧客影響がある商品に当たった\n期待する出力:\n- comparison_findings\n- risk_points\n- hq_review_note\n最後に README・resident・Z-98・Git のうち、自分に許可された更新だけをそろえてください。"
     },
     {
       "task_name": "公開前チェック担当",
@@ -855,6 +865,96 @@ window.ZERO_COST_ROLE_PACKETS = {
     }
   ],
   "task_card_queue": [
+    {
+      "job_id": "候補URL収集担当-001",
+      "task_name": "候補URL収集担当",
+      "management_id": "BOX-001-ITEM-0057",
+      "status": "open",
+      "recommended_ai_tier": "低コストAI可",
+      "goal": "比較画像候補を集めて、同一性判断の材料だけを残す",
+      "input_fields": [
+        "management_id",
+        "product_name",
+        "GTIN / Amazon内部コード",
+        "実物画像3枚",
+        "current_exact_match_status"
+      ],
+      "write_targets": [
+        "zero_cost_merch_branch/state/intake/BOX-001_official_image_candidates.json"
+      ],
+      "must_not_do": [
+        "100%同一確認済み を勝手に付けない",
+        "比較画像を listing へ反映しない",
+        "問い合わせへ直接返答しない",
+        "出品や API 公開を実行しない"
+      ],
+      "stop_conditions": [
+        "色違い / 型番違い / サイズ違いが見えた",
+        "候補画像が似ているだけで断定できない",
+        "顧客影響のある商品に当たった"
+      ],
+      "expected_outputs": [
+        "candidate_urls",
+        "candidate_titles",
+        "一致しそうな根拠メモ"
+      ],
+      "batch_size": 2,
+      "routing_context": {
+        "mercari_lane": "公開済み",
+        "mercari_gate": "公開済み",
+        "image_gate": "画像同一性確認待ち",
+        "base_condition": "画像確認後",
+        "shipco_condition": "送り状共通化候補",
+        "review_reason": "画像同一性未確認",
+        "low_cost_job": "比較画像照合"
+      }
+    },
+    {
+      "job_id": "比較画像照合担当-001",
+      "task_name": "比較画像照合担当",
+      "management_id": "BOX-001-ITEM-0057",
+      "status": "open",
+      "recommended_ai_tier": "低コストAI可",
+      "goal": "routing 上の 画像同一性確認待ち を整理し、同一性判断の材料だけを残す",
+      "input_fields": [
+        "management_id",
+        "product_name",
+        "実物画像3枚",
+        "比較画像候補",
+        "routing_reason"
+      ],
+      "write_targets": [
+        "zero_cost_merch_branch/state/intake/BOX-001_official_image_candidates.json",
+        "zero_cost_merch_branch/state/routing_plan.json"
+      ],
+      "must_not_do": [
+        "100%同一確認済み を勝手に付けない",
+        "比較画像を listing へ反映しない",
+        "顧客対応をしない",
+        "問い合わせへ直接返答しない",
+        "出品や API 公開を実行しない"
+      ],
+      "stop_conditions": [
+        "色違い / 型番違い / サイズ違い / セット違いが見えた",
+        "比較画像が似ているだけで断定できない",
+        "顧客影響がある商品に当たった"
+      ],
+      "expected_outputs": [
+        "comparison_findings",
+        "risk_points",
+        "hq_review_note"
+      ],
+      "batch_size": 2,
+      "routing_context": {
+        "mercari_lane": "公開済み",
+        "mercari_gate": "公開済み",
+        "image_gate": "画像同一性確認待ち",
+        "base_condition": "画像確認後",
+        "shipco_condition": "送り状共通化候補",
+        "review_reason": "画像同一性未確認",
+        "low_cost_job": "比較画像照合"
+      }
+    },
     {
       "job_id": "公開前チェック担当-001",
       "task_name": "公開前チェック担当",
