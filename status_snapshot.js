@@ -1,5 +1,5 @@
 window.ZERO_COST_STATUS = {
-  "generated_at": "2026-04-21 23:18:04 JST",
+  "generated_at": "2026-04-21 23:54:34 JST",
   "workbook_url": "https://docs.google.com/spreadsheets/d/1VjdUJavoijOkdjKtkdKy_zUcdkQqZwG0oRty57H5_lk/edit",
   "metrics": {
     "box_count": "1",
@@ -366,6 +366,10 @@ window.ZERO_COST_STATUS = {
       "inquiry_count_open": 3,
       "shipping_lane": "メルカリBiz配送 + 送り状印刷 + ヤマト集荷",
       "owner_note": "本線は稼働中。売れた後の gate も検査付きで固定済み",
+      "planned_count": 0,
+      "blocked_count": 0,
+      "auth_label": "",
+      "plan_note": "",
       "next_step": "最初の live 1件を shipping.html で最後まで通す",
       "href": "./shipping.html"
     },
@@ -382,6 +386,10 @@ window.ZERO_COST_STATUS = {
       "inquiry_count_open": 0,
       "shipping_lane": "BASE かんたん発送 / Ship&co",
       "owner_note": "自社EC は公開済み。公開確認は BASE admin 商品一覧 / search API / 通常ブラウザ表示 を正本にする",
+      "planned_count": 12,
+      "blocked_count": 8,
+      "auth_label": "OAuth ready",
+      "plan_note": "repo計画 12件 / 停止 8件 / OAuth ready",
       "next_step": "最初の live 1件を BASE注文 -> かんたん発送 / Ship&co 比較で証跡化する",
       "href": "./routing.html"
     },
@@ -398,6 +406,10 @@ window.ZERO_COST_STATUS = {
       "inquiry_count_open": 0,
       "shipping_lane": "Ship&co",
       "owner_note": "メルカリの商品を次に出しやすい、最短の副販路",
+      "planned_count": 0,
+      "blocked_count": 0,
+      "auth_label": "",
+      "plan_note": "",
       "next_step": "下書き 2件 を pilot 候補として固定する",
       "href": "./channel_listings.html"
     },
@@ -414,6 +426,10 @@ window.ZERO_COST_STATUS = {
       "inquiry_count_open": 0,
       "shipping_lane": "Ship&co",
       "owner_note": "価格競争力が必要。手数料差で価格調整",
+      "planned_count": 0,
+      "blocked_count": 0,
+      "auth_label": "",
+      "plan_note": "",
       "next_step": "Phase 2",
       "href": "./routing.html"
     },
@@ -430,6 +446,10 @@ window.ZERO_COST_STATUS = {
       "inquiry_count_open": 0,
       "shipping_lane": "Ship&co",
       "owner_note": "オークション型。価格発見力。在庫処分量",
+      "planned_count": 0,
+      "blocked_count": 0,
+      "auth_label": "",
+      "plan_note": "",
       "next_step": "Phase 3",
       "href": "./routing.html"
     },
@@ -446,7 +466,11 @@ window.ZERO_COST_STATUS = {
       "inquiry_count_open": 0,
       "shipping_lane": "shipandco_or_store_native",
       "owner_note": "repo 側の下書き / publish plan は整備。live 出品は Yahoo!ショッピングの store/app auth 待ち",
-      "next_step": "store/app auth 後",
+      "planned_count": 14,
+      "blocked_count": 8,
+      "auth_label": "live auth待ち",
+      "plan_note": "repo計画 14件 / 停止 8件 / live auth待ち",
+      "next_step": "live auth 解消後に repo計画 14件 を順に流す",
       "href": "./routing.html"
     },
     {
@@ -462,6 +486,10 @@ window.ZERO_COST_STATUS = {
       "inquiry_count_open": 0,
       "shipping_lane": "international",
       "owner_note": "海外展開。ラクマ公式ショップ経由で出品可能",
+      "planned_count": 0,
+      "blocked_count": 0,
+      "auth_label": "",
+      "plan_note": "",
       "next_step": "Phase 4",
       "href": "./routing.html"
     },
@@ -478,6 +506,10 @@ window.ZERO_COST_STATUS = {
       "inquiry_count_open": 0,
       "shipping_lane": "international",
       "owner_note": "越境EC。国内即出荷モデルには現時点で不向き",
+      "planned_count": 0,
+      "blocked_count": 0,
+      "auth_label": "",
+      "plan_note": "",
       "next_step": "Phase 4",
       "href": "./routing.html"
     }
@@ -716,7 +748,7 @@ window.ZERO_COST_STATUS = {
     "反映待ち: カテゴリ審査反映待ち: applicationId=2zpKKFVRC4aUXzG6o",
     "要確認: 例外許容 BOX-001-ITEM-0058(CODE写真不足は今回の運用では例外許容とする), BOX-001-ITEM-0006(FRONT/BACK/CODE は同一の長方形ギフト箱だが、箱の中身と正式商品名を実物写真から特定できないため、誤出品防止で例外保留とする)",
     "今すぐ進める: 写真セット組み直し BOX-001-ITEM-0025, BOX-001-ITEM-0029, BOX-001-ITEM-0040, BOX-001-ITEM-0034, BOX-001-ITEM-0023 ほか16件",
-    "今すぐ進める: 写真セット組み直し計画 BOX-001-ITEM-0028 BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 FRONT は car hook NO-FE040、0029 BACK/CODE は SPEEDWOX X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は同一白箱を視認確認済み。0052 FRONT の青橙箱は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。 / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
+    "今すぐ進める: 写真セット組み直し計画 BOX-001-ITEM-0028 BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の黒/白/緑の厚手ニット靴下またはレッグウォーマー系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 FRONT は car hook NO-FE040、0029 BACK/CODE は SPEEDWOX X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は同一白箱を視認確認済み。0052 FRONT の青橙箱は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。 / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
     "今すぐ進める: 商品特定待ち BOX-001-ITEM-0001, BOX-001-ITEM-0013, BOX-001-ITEM-0026",
     "今すぐ進める: 出品下書き待ち WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り, WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り, MMC FACE LOTION 240ml",
     "反映待ち: カテゴリ審査待ち WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り",

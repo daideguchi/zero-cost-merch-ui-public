@@ -778,7 +778,7 @@
     }
     .channel-stats {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(72px, 1fr));
       gap: 6px;
     }
     .channel-stat {
@@ -799,10 +799,15 @@
       color: var(--text);
     }
     .channel-note,
+    .channel-plan,
     .channel-next {
       font-size: 12px;
       color: var(--text-2);
       line-height: 1.7;
+    }
+    .channel-plan {
+      font-weight: 800;
+      color: var(--text);
     }
     details.context {
       margin-bottom: 16px;
@@ -951,7 +956,7 @@
         grid-column: 2;
       }
       .channel-stats {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
   </style>
@@ -1001,18 +1006,18 @@
         </div>
         <div class="drive-panel">
           <div class="drive-header">
-            <div class="drive-title">別メンバー用 共有フォルダ</div>
+            <div class="drive-title">相手に送る共有フォルダ</div>
             <div class="drive-badge">1日1回確認</div>
           </div>
           <div class="drive-note">
-            1. <strong>共有フォルダを用意</strong> を押します。 2. 出たリンクを相手に送ります。 3. 相手はそのフォルダへ <strong>撮影順のまま</strong> 写真を入れるだけです。
+            1. <strong>相手に送るリンクをコピー</strong> を押します。 2. そのまま相手に送ります。 3. 相手は開いた共有フォルダへ <strong>撮影順のまま</strong> 写真を入れるだけです。
             フォルダ追加は不要です。Acer 側で <strong>時系列順 + バーコード写真を区切り</strong> にまとめます。通常確認は <strong>1日1回</strong>、急ぐ時だけ「今すぐ共有フォルダ確認」を使います。
           </div>
           <div class="drive-actions">
-            <button id="drive-share-btn" class="action-link" type="button">共有フォルダを用意</button>
+            <button id="drive-share-btn" class="action-link" type="button">相手に送るリンクをコピー</button>
             <button id="drive-sync-btn" class="action-link primary" type="button">今すぐ共有フォルダ確認</button>
           </div>
-          <div id="drive-status" class="drive-status">箱を選ぶと共有フォルダを1つこちらで用意します。相手はそのフォルダへ撮影順のまま写真を入れるだけです。</div>
+          <div id="drive-status" class="drive-status">箱を選ぶと、相手に送る共有リンクをこちらで用意できます。相手は開いた共有フォルダへ写真を入れるだけです。</div>
           <a id="drive-link" class="drive-link" href="#" target="_blank" rel="noreferrer noopener" hidden>共有フォルダを開く</a>
         </div>
       </div>
@@ -1409,6 +1414,44 @@
       driveLinkEl.hidden = true;
     }
 
+    function currentDriveLinkUrl(boxId) {
+      var remembered = storedDriveLink(boxId);
+      if (remembered) return remembered;
+      var href = String(driveLinkEl && driveLinkEl.href || '').trim();
+      if (!driveLinkEl.hidden && href && href !== '#') return href;
+      return '';
+    }
+
+    function copyText(value) {
+      var text = String(value || '').trim();
+      if (!text) return Promise.reject(new Error('コピーするリンクがありません。'));
+      if (navigator.clipboard && window.isSecureContext) {
+        return navigator.clipboard.writeText(text);
+      }
+      return new Promise(function(resolve, reject) {
+        try {
+          var textarea = document.createElement('textarea');
+          textarea.value = text;
+          textarea.setAttribute('readonly', 'readonly');
+          textarea.style.position = 'fixed';
+          textarea.style.top = '-1000px';
+          textarea.style.left = '-1000px';
+          document.body.appendChild(textarea);
+          textarea.focus();
+          textarea.select();
+          var copied = document.execCommand('copy');
+          document.body.removeChild(textarea);
+          if (copied) {
+            resolve();
+            return;
+          }
+          reject(new Error('リンクをコピーできませんでした。'));
+        } catch (error) {
+          reject(error);
+        }
+      });
+    }
+
     function setActionLinkState(link, href, enabled) {
       link.href = enabled ? href : '#';
       link.setAttribute('data-zero-cost-current-box', '1');
@@ -1475,7 +1518,7 @@
       driveShareBtn.disabled = isUploading || isDriveBusy;
       driveSyncBtn.disabled = isUploading || isDriveBusy;
       setDriveLink(storedDriveLink(box.id));
-      setDriveStatus(box.label + ' の共有フォルダはこちらで用意します。相手はそのフォルダへ撮影順のまま写真を入れるだけです。', '');
+      setDriveStatus(box.label + ' の共有リンクはこちらで用意します。ボタンを押すと相手に送るリンクをコピーできます。', '');
       refreshDriveAutoStatus({ silent: true });
       if (selectedFiles.length) {
         renderSelectedFiles(selectedFiles, box);
@@ -2005,7 +2048,7 @@
       }
       return {
         tone: '',
-          text: label + ' の共有フォルダはこちらで用意します。相手はそのフォルダへ撮影順のまま写真を入れるだけです。'
+          text: label + ' の共有リンクはこちらで用意します。ボタンを押すと相手に送るリンクをコピーできます。'
       };
     }
 
@@ -2060,10 +2103,21 @@
     function requestDriveShare() {
       var box = currentBox();
       if (!box || isDriveBusy || isUploading) return;
+      var existingUrl = currentDriveLinkUrl(box.id);
+      if (existingUrl) {
+        copyText(existingUrl)
+          .then(function() {
+            setDriveStatus(box.label + ' の共有リンクをコピーしました。相手へそのまま送ってください。', 'ok');
+          })
+          .catch(function() {
+            setDriveStatus(box.label + ' の共有リンクは準備済みです。下のリンクを相手に送ってください。', 'ok');
+          });
+        return;
+      }
       isDriveBusy = true;
       setUploadButtonState();
-      driveShareBtn.textContent = '共有フォルダ準備中...';
-      setDriveStatus(box.label + ' の共有フォルダを用意しています。', '');
+      driveShareBtn.textContent = 'リンク準備中...';
+      setDriveStatus(box.label + ' の共有リンクを用意しています。', '');
       postJson(driveShareApiUrl(), boxPayload(box))
         .then(function(data) {
           var folderUrl = String(data.folder_url || '');
@@ -2071,14 +2125,18 @@
             rememberDriveLink(box.id, folderUrl);
             setDriveLink(folderUrl);
           }
-          setDriveStatus(box.label + ' の共有フォルダを用意しました。下のリンクを相手に送り、撮影順のまま写真を入れてもらってください。', 'ok');
+          return copyText(folderUrl).then(function() {
+            setDriveStatus(box.label + ' の共有リンクをコピーしました。相手へ送って、撮影順のまま写真を入れてもらってください。', 'ok');
+          }).catch(function() {
+            setDriveStatus(box.label + ' の共有リンクを用意しました。下のリンクを相手に送ってください。', 'ok');
+          });
         })
         .catch(function(error) {
-          setDriveStatus('共有フォルダの準備に失敗しました。' + (error && error.message ? ' ' + error.message : ''), 'error');
+          setDriveStatus('共有リンクの準備に失敗しました。' + (error && error.message ? ' ' + error.message : ''), 'error');
         })
         .finally(function() {
           isDriveBusy = false;
-          driveShareBtn.textContent = '共有フォルダを用意';
+          driveShareBtn.textContent = '相手に送るリンクをコピー';
           setUploadButtonState();
           scheduleDriveStatusPoll(86400000);
         });
@@ -2381,7 +2439,7 @@
           name: '出品状況',
           count: listingCount,
           tone: 'green',
-          note: 'いまどこに何件出ているか、売れたかを見ます。',
+          note: 'いまの公開・下書きと、次に出せる repo計画を分けて見ます。',
           href: './channel_listings.html',
           link: '出品状況を開く →'
         },
@@ -2447,17 +2505,26 @@
       }
       el.innerHTML = channels.map(function(channel) {
         var tone = toneClass(channel.tone);
+        var stats = [
+          { label: '公開', value: num(channel.published_count) },
+          { label: '下書き', value: num(channel.draft_count) }
+        ];
+        if (num(channel.planned_count) > 0) stats.push({ label: '計画', value: num(channel.planned_count) });
+        if (num(channel.blocked_count) > 0) stats.push({ label: '停止', value: num(channel.blocked_count) });
+        stats.push({ label: '受注', value: num(channel.order_count_total) });
+        var planHtml = channel.plan_note
+          ? '<div class="channel-plan">' + esc(channel.plan_note) + '</div>'
+          : '';
         return '<div class="channel-card ' + tone + '">'
           + '<div class="channel-head">'
           + '<div class="channel-name">' + esc(channel.name || '') + '</div>'
           + '<span class="badge ' + chipClass(tone) + '">' + esc(channel.badge || '') + '</span>'
           + '</div>'
-          + '<div class="channel-stats">'
-          + '<div class="channel-stat"><div class="channel-stat-label">公開</div><div class="channel-stat-value">' + esc(channel.published_count || 0) + '</div></div>'
-          + '<div class="channel-stat"><div class="channel-stat-label">下書き</div><div class="channel-stat-value">' + esc(channel.draft_count || 0) + '</div></div>'
-          + '<div class="channel-stat"><div class="channel-stat-label">受注</div><div class="channel-stat-value">' + esc(channel.order_count_total || 0) + '</div></div>'
-          + '</div>'
+          + '<div class="channel-stats">' + stats.map(function(stat) {
+              return '<div class="channel-stat"><div class="channel-stat-label">' + esc(stat.label) + '</div><div class="channel-stat-value">' + esc(stat.value) + '</div></div>';
+            }).join('') + '</div>'
           + '<div class="channel-note">' + esc(channel.owner_note || '') + '</div>'
+          + planHtml
           + '<div class="channel-next">次: ' + esc(channel.next_step || '未設定') + '</div>'
           + '</div>';
       }).join('');
