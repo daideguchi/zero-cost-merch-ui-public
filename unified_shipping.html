@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>発送管理 - 0円仕入れ物販事業</title>
+  <link rel="stylesheet" href="./common.css">
+  <style>
+    .ship-summary {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+      gap: 8px; margin-bottom: 16px;
+    }
+    .ship-stat {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 12px; text-align: center;
+    }
+    .ship-stat-label { font-size: 10px; color: var(--text-3); font-weight: 700; }
+    .ship-stat-value { font-size: 24px; font-weight: 900; margin-top: 4px; }
+    .empty-state {
+      text-align: center; padding: 40px 20px; color: var(--text-3);
+    }
+    .empty-state .icon { font-size: 48px; margin-bottom: 12px; }
+    .empty-state .text { font-size: 14px; }
+    .empty-state .sub { font-size: 12px; margin-top: 4px; }
+    .channel-group { margin-bottom: 16px; }
+    .channel-group h3 {
+      font-size: 12px; font-weight: 800; color: var(--text-2);
+      margin-bottom: 8px; padding-bottom: 4px; border-bottom: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+  <header class="hq-header">
+    <h1><span class="dot">●</span> 0円仕入れ物販事業</h1>
+    <span class="hq-fresh">更新 2026-04-15</span>
+    <nav class="hq-nav">
+      <a href="./">📊統合</a><a href="./intake_cards.html">📥写真</a>
+      <a href="./ops.html">📦商品</a><a href="./channel_listings.html">🏪出品</a>
+      <a href="./" class="active">🚚発送</a><a href="./unified_inquiry.html">💬問合せ</a>
+      <a href="./settings.html">⚙️設定</a>
+    </nav>
+  </header>
+  <div class="hq-wrap">
+    <div class="section-head"><span class="dot" style="background:var(--accent)"></span>発送管理（全チャネル統合）</div>
+    <div class="ship-summary">
+      <div class="ship-stat"><div class="ship-stat-label">総受注</div><div class="ship-stat-value">0</div></div>
+      <div class="ship-stat"><div class="ship-stat-label">梱包待ち</div><div class="ship-stat-value">0</div></div>
+      <div class="ship-stat"><div class="ship-stat-label">集荷待ち</div><div class="ship-stat-value">0</div></div>
+      <div class="ship-stat"><div class="ship-stat-label">発送済</div><div class="ship-stat-value">0</div></div>
+    </div>
+    <div class="channel-group">
+      <h3>🟣 らくらくメルカリ便（メルカリ本線）</h3>
+      <div class="ship-summary">
+        <div class="ship-stat"><div class="ship-stat-label">受注</div><div class="ship-stat-value">0</div></div>
+        <div class="ship-stat"><div class="ship-stat-label">発送済</div><div class="ship-stat-value">0</div></div>
+      </div>
+    </div>
+    <div class="channel-group">
+      <h3>🔵 Ship&co（副販路共通）</h3>
+      <div class="ship-summary">
+        <div class="ship-stat"><div class="ship-stat-label">ヤマト</div><div class="ship-stat-value">0</div></div>
+        <div class="ship-stat"><div class="ship-stat-label">佐川</div><div class="ship-stat-value">0</div></div>
+        <div class="ship-stat"><div class="ship-stat-label">日本郵便</div><div class="ship-stat-value">0</div></div>
+      </div>
+      <div style="font-size:11px;color:var(--text-3);margin-top:8px;padding:8px;background:var(--surface-2);border-radius:8px">
+        ℹ️ Ship&coはM4完了後にpilot開始予定。メルカリ本線はらくらくメルカリ便を維持。
+      </div>
+    </div>
+    <div class="empty-state">
+      <div class="icon">📦</div>
+      <div class="text">受注待ち</div>
+      <div class="sub">実注文が発生するとここに表示されます。launchd常駐監視が稼働中です。</div>
+    </div>
+  </div>
+  <div class="hq-footer">
+    <span>スナップショット: 2026-04-15 02:45</span>
+  </div>
+</body>
+</html>

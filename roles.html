@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="ja" data-page="roles">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>0円仕入れ物販事業 | 役職起動パケット</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./common.css">
+  <style>
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: #818cf8; }
+    .hq-wrap { max-width: 1320px; }
+    .hero {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 18px;
+      margin-bottom: 14px;
+    }
+    .hero-title {
+      font-size: 24px;
+      font-weight: 900;
+      line-height: 1.2;
+      letter-spacing: -.02em;
+    }
+    .hero-note {
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 1.8;
+      color: var(--text-2);
+    }
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .summary-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px;
+    }
+    .summary-value {
+      font-size: 28px;
+      line-height: 1;
+      font-weight: 900;
+      color: var(--accent);
+    }
+    .summary-label {
+      margin-top: 8px;
+      font-size: 13px;
+      font-weight: 800;
+    }
+    .summary-note {
+      margin-top: 5px;
+      font-size: 11px;
+      line-height: 1.6;
+      color: var(--text-3);
+    }
+    .toolbar {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 12px;
+      position: sticky;
+      top: 53px;
+      z-index: 40;
+      background: var(--bg);
+      padding: 8px 0;
+      flex-wrap: wrap;
+    }
+    .search {
+      flex: 1;
+      min-width: 240px;
+      padding: 10px 14px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--text);
+      font: 14px/1.4 inherit;
+      outline: none;
+    }
+    .search:focus,
+    .type-btn:focus,
+    .reset-btn:focus {
+      border-color: var(--accent);
+      outline: none;
+    }
+    .type-group {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .type-btn,
+    .reset-btn {
+      padding: 10px 12px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--text-2);
+      font: 13px/1.4 inherit;
+      cursor: pointer;
+      font-weight: 700;
+    }
+    .type-btn.active {
+      border-color: var(--accent);
+      background: linear-gradient(180deg, rgba(99,102,241,.08), rgba(99,102,241,0));
+      color: var(--text);
+    }
+    .count-pill {
+      padding: 6px 12px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-3);
+      white-space: nowrap;
+    }
+    .section {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 22px;
+    }
+    .section-heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-top: 4px;
+    }
+    .section-title {
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: -.02em;
+    }
+    .section-note {
+      font-size: 12px;
+      color: var(--text-3);
+    }
+    details.packet {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    details.packet > summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 16px;
+    }
+    details.packet > summary::-webkit-details-marker {
+      display: none;
+    }
+    .packet-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 12px;
+      align-items: start;
+    }
+    .packet-title {
+      display: grid;
+      gap: 6px;
+      min-width: 0;
+    }
+    .packet-tag {
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+    .packet-name {
+      font-size: 16px;
+      font-weight: 900;
+      line-height: 1.4;
+    }
+    .packet-goal {
+      font-size: 13px;
+      line-height: 1.7;
+      color: var(--text-2);
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .packet-summary {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .packet-body {
+      border-top: 1px solid var(--border);
+      background: var(--surface-2);
+      padding: 16px;
+      display: grid;
+      gap: 12px;
+    }
+    .panel-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 12px;
+    }
+    .panel-title {
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--text-3);
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      margin-bottom: 10px;
+    }
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .list {
+      margin: 0;
+      padding-left: 18px;
+      line-height: 1.8;
+      color: var(--text-2);
+      font-size: 13px;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      color: var(--text-2);
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .chip.red {
+      color: var(--red);
+      border-color: rgba(239,68,68,.22);
+      background: rgba(239,68,68,.08);
+    }
+    .chip.orange {
+      color: var(--orange);
+      border-color: rgba(249,115,22,.22);
+      background: rgba(249,115,22,.08);
+    }
+    .chip.yellow {
+      color: var(--yellow);
+      border-color: rgba(234,179,8,.22);
+      background: rgba(234,179,8,.08);
+    }
+    .chip.green {
+      color: var(--green);
+      border-color: rgba(34,197,94,.22);
+      background: rgba(34,197,94,.08);
+    }
+    .chip.blue {
+      color: var(--blue);
+      border-color: rgba(59,130,246,.22);
+      background: rgba(59,130,246,.08);
+    }
+    details.subdetail > summary {
+      list-style: none;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--text-2);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 0;
+    }
+    details.subdetail > summary::-webkit-details-marker {
+      display: none;
+    }
+    .chevron {
+      color: var(--accent);
+      transition: transform .15s;
+      display: inline-block;
+    }
+    details[open] .chevron {
+      transform: rotate(90deg);
+    }
+    .code-box {
+      margin-top: 8px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: #0b1220;
+      overflow: hidden;
+    }
+    .code-box pre {
+      margin: 0;
+      padding: 12px;
+      white-space: pre-wrap;
+      word-break: break-word;
+      line-height: 1.65;
+      font-size: 12px;
+      color: #cbd5e1;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      max-height: 320px;
+      overflow: auto;
+    }
+    .code-actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      padding: 10px 12px;
+      border-top: 1px solid rgba(148,163,184,.18);
+      background: rgba(148,163,184,.06);
+    }
+    .copy-btn {
+      padding: 7px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text-2);
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .empty {
+      text-align: center;
+      padding: 48px;
+      color: var(--text-3);
+      font-size: 14px;
+      border: 1px dashed var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+    }
+    .hidden {
+      display: none !important;
+    }
+    @media (max-width: 900px) {
+      .panel-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (max-width: 640px) {
+      .toolbar {
+        top: 49px;
+      }
+      .packet-head {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hq-header">
+    <h1><span class="dot">●</span> 役職起動パケット</h1>
+    <span id="freshness-pill" class="hq-fresh" style="display:none"></span>
+  </header>
+
+  <div class="hq-wrap">
+    <section class="hero">
+      <div class="hero-title">役職と作業カードを、必要な時だけ開く</div>
+      <div class="hero-note">
+        役職の意図・優先ID・制約を先に見せて、長い prompt と JSON は折りたたみへ移しました。0円出品部長だけ初期表示で開きます。
+      </div>
+    </section>
+
+    <div class="summary-grid" id="summary-grid"></div>
+
+    <div class="toolbar">
+      <input id="search" class="search" type="text" placeholder="役職名・作業名・管理番号・制約で検索">
+      <div class="type-group">
+        <button type="button" class="type-btn active" data-type="all">すべて</button>
+        <button type="button" class="type-btn" data-type="role">役職パケット</button>
+        <button type="button" class="type-btn" data-type="task">担当作業カード</button>
+      </div>
+      <button id="reset-btn" class="reset-btn" type="button">絞り込み解除</button>
+      <span id="count-pill" class="count-pill">- 件</span>
+    </div>
+
+    <section class="section" id="roles-section">
+      <div class="section-heading">
+        <div class="section-title">役職パケット</div>
+        <div class="section-note">判断軸と引き継ぎ条件を先に確認</div>
+      </div>
+      <div id="roles-root"></div>
+      <div id="roles-empty" class="empty hidden">該当する役職パケットはありません</div>
+    </section>
+
+    <section class="section" id="tasks-section">
+      <div class="section-heading">
+        <div class="section-title">担当作業カード</div>
+        <div class="section-note">0円出品部長が切り出す小さな仕事</div>
+      </div>
+      <div id="tasks-root"></div>
+      <div id="tasks-empty" class="empty hidden">該当する作業カードはありません</div>
+    </section>
+  </div>
+
+  <script src="./role_packets_snapshot.js"></script>
+  <script src="./common.js"></script>
+  <script>
+  (function(){
+    var payload = window.ZERO_COST_ROLE_PACKETS || {};
+    var packets = payload.packets || [];
+    var taskCards = payload.task_cards || [];
+    var search = document.getElementById('search');
+    var rolesRoot = document.getElementById('roles-root');
+    var tasksRoot = document.getElementById('tasks-root');
+    var rolesEmpty = document.getElementById('roles-empty');
+    var tasksEmpty = document.getElementById('tasks-empty');
+    var countPill = document.getElementById('count-pill');
+    var summaryGrid = document.getElementById('summary-grid');
+    var activeType = 'all';
+
+    function escapeHtml(value) {
+      return String(value || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    function copyText(text) {
+      navigator.clipboard.writeText(String(text || '')).catch(function(){});
+    }
+
+    function arrayOrEmpty(value) {
+      return Array.isArray(value) ? value : [];
+    }
+
+    function listHtml(items, emptyText) {
+      var rows = arrayOrEmpty(items);
+      if (!rows.length) return '<div class="chip">なし</div>';
+      return '<ul class="list">' + rows.map(function(item) {
+        return '<li>' + escapeHtml(item) + '</li>';
+      }).join('') + '</ul>';
+    }
+
+    function chipsHtml(items, cls) {
+      var rows = arrayOrEmpty(items);
+      if (!rows.length) return '<div class="chip">なし</div>';
+      return '<div class="badge-row">' + rows.map(function(item) {
+        return '<span class="chip ' + (cls || '') + '">' + escapeHtml(item) + '</span>';
+      }).join('') + '</div>';
+    }
+
+    function countChips(currentCounts) {
+      var entries = Object.entries(currentCounts || {});
+      if (!entries.length) return '<div class="chip">件数なし</div>';
+      return '<div class="badge-row">' + entries.map(function(entry) {
+        return '<span class="chip blue">' + escapeHtml(entry[0]) + ' ' + escapeHtml(entry[1]) + '</span>';
+      }).join('') + '</div>';
+    }
+
+    function urlsHtml(urls) {
+      var entries = Object.entries(urls || {});
+      if (!entries.length) return '<div class="chip">URLなし</div>';
+      return '<ul class="list">' + entries.map(function(entry) {
+        return '<li><strong>' + escapeHtml(entry[0]) + '</strong>: <a href="' + entry[1] + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(entry[1]) + '</a></li>';
+      }).join('') + '</ul>';
+    }
+
+    function renderSummary() {
+      var counts = payload.counts || {};
+      var cards = [
+        ['役職', packets.length, '大きな判断単位'],
+        ['作業カード', taskCards.length, '切り出し済みの小仕事'],
+        ['問い合わせ', counts.inquiry_open != null ? counts.inquiry_open : '-', '先に返答が必要'],
+        ['公開済み', counts.published != null ? counts.published : '-', '販売中の監査対象'],
+        ['審査待ち', counts.category_review_waiting != null ? counts.category_review_waiting : '-', 'カテゴリ審査など'],
+        ['下書き待ち', counts.draft_ready != null ? counts.draft_ready : '-', '公開前の整理対象']
+      ];
+      summaryGrid.innerHTML = cards.map(function(card) {
+        return '<div class="summary-card">'
+          + '<div class="summary-value">' + escapeHtml(card[1]) + '</div>'
+          + '<div class="summary-label">' + escapeHtml(card[0]) + '</div>'
+          + '<div class="summary-note">' + escapeHtml(card[2]) + '</div>'
+          + '</div>';
+      }).join('');
+    }
+
+    function renderRolePacket(packet, index) {
+      var packetJson = JSON.stringify(packet, null, 2);
+      var isLead = packet.role_name === '0円出品部長';
+      var summaryChips = [
+        packet.recommended_ai_tier ? '<span class="chip blue">' + escapeHtml(packet.recommended_ai_tier) + '</span>' : '',
+        arrayOrEmpty(packet.target_ids).length ? '<span class="chip">' + arrayOrEmpty(packet.target_ids).length + ' ID</span>' : '<span class="chip">対象IDなし</span>',
+        arrayOrEmpty(packet.priority_ids).length ? '<span class="chip yellow">優先 ' + arrayOrEmpty(packet.priority_ids).length + '</span>' : '',
+        arrayOrEmpty(packet.blocked_ids).length ? '<span class="chip red">差し止め ' + arrayOrEmpty(packet.blocked_ids).length + '</span>' : '',
+        arrayOrEmpty(packet.split_required_ids).length ? '<span class="chip orange">要再束ね ' + arrayOrEmpty(packet.split_required_ids).length + '</span>' : ''
+      ].filter(Boolean).join('');
+
+      return '<details class="packet role-entry" data-type="role" data-search="' + escapeHtml([
+          packet.role_name,
+          packet.goal,
+          arrayOrEmpty(packet.target_ids).join(' '),
+          arrayOrEmpty(packet.must_read).join(' '),
+          arrayOrEmpty(packet.constraints).join(' '),
+          arrayOrEmpty(packet.delegate_roles).join(' ')
+        ].join(' ').toUpperCase()) + '"' + (isLead ? ' open' : '') + '>'
+        + '<summary>'
+        + '<div class="packet-head">'
+        + '<div class="packet-title">'
+        + '<div class="packet-tag">role packet</div>'
+        + '<div class="packet-name">' + escapeHtml(packet.role_name || '役職名未設定') + '</div>'
+        + '<div class="packet-goal">' + escapeHtml(packet.goal || 'goal 未設定') + '</div>'
+        + '</div>'
+        + '<div class="badge-row">' + (isLead ? '<span class="chip green">初期表示</span>' : '') + '</div>'
+        + '</div>'
+        + '<div class="packet-summary">' + summaryChips + '</div>'
+        + '</summary>'
+        + '<div class="packet-body">'
+        + '<div class="panel-grid">'
+        + '<div class="panel"><div class="panel-title">現在の件数</div>' + countChips(packet.current_counts) + '</div>'
+        + '<div class="panel"><div class="panel-title">対象ID</div>' + chipsHtml(packet.target_ids) + '</div>'
+        + '</div>'
+        + '<div class="panel-grid">'
+        + '<div class="panel"><div class="panel-title">必ず見るもの</div>' + listHtml(packet.must_read, 'なし') + '</div>'
+        + '<div class="panel"><div class="panel-title">制約</div>' + listHtml(packet.constraints, 'なし') + '</div>'
+        + '</div>'
+        + '<div class="panel-grid">'
+        + '<div class="panel"><div class="panel-title">期待する出力</div>' + listHtml(packet.expected_outputs, 'なし') + '</div>'
+        + '<div class="panel"><div class="panel-title">参照URL</div>' + urlsHtml(packet.key_urls) + '</div>'
+        + '</div>'
+        + '<div class="panel-grid">'
+        + '<div class="panel"><div class="panel-title">委譲先</div>' + chipsHtml(packet.delegate_roles) + '</div>'
+        + '<div class="panel"><div class="panel-title">上位AIへ渡す条件</div>' + listHtml(packet.handoff_when, 'なし') + '</div>'
+        + '</div>'
+        + (arrayOrEmpty(packet.priority_ids).length || arrayOrEmpty(packet.blocked_ids).length || arrayOrEmpty(packet.split_required_ids).length
+          ? '<div class="panel-grid">'
+            + '<div class="panel"><div class="panel-title">優先 / 差し止め / 再束ね</div>'
+            + '<div class="badge-row">'
+            + arrayOrEmpty(packet.priority_ids).map(function(id){ return '<span class="chip yellow">' + escapeHtml(id) + '</span>'; }).join('')
+            + arrayOrEmpty(packet.blocked_ids).map(function(id){ return '<span class="chip red">' + escapeHtml(id) + '</span>'; }).join('')
+            + arrayOrEmpty(packet.split_required_ids).map(function(id){ return '<span class="chip orange">' + escapeHtml(id) + '</span>'; }).join('')
+            + '</div></div>'
+            + '<div class="panel"><div class="panel-title">推奨AI層</div>' + chipsHtml(packet.recommended_ai_tier ? [packet.recommended_ai_tier] : []) + '</div>'
+            + '</div>'
+          : '')
+        + '<details class="subdetail">'
+        + '<summary><span class="chevron">▶</span>起動文を開く</summary>'
+        + '<div class="code-box"><pre>' + escapeHtml(packet.launch_prompt || '') + '</pre><div class="code-actions"><button type="button" class="copy-btn" data-copy="' + index + '" data-kind="role-prompt">起動文をコピー</button></div></div>'
+        + '</details>'
+        + '<details class="subdetail">'
+        + '<summary><span class="chevron">▶</span>JSONを開く</summary>'
+        + '<div class="code-box"><pre>' + escapeHtml(packetJson) + '</pre><div class="code-actions"><button type="button" class="copy-btn" data-copy="' + index + '" data-kind="role-json">JSONをコピー</button></div></div>'
+        + '</details>'
+        + '</div>'
+        + '</details>';
+    }
+
+    function renderTaskCard(card, index) {
+      var cardJson = JSON.stringify(card, null, 2);
+      var summaryChips = [
+        card.role_name ? '<span class="chip blue">' + escapeHtml(card.role_name) + '</span>' : '',
+        card.batch_size ? '<span class="chip">batch ' + escapeHtml(card.batch_size) + '</span>' : '',
+        arrayOrEmpty(card.target_ids).length ? '<span class="chip">' + arrayOrEmpty(card.target_ids).length + ' ID</span>' : '<span class="chip">対象IDなし</span>',
+        card.recommended_ai_tier ? '<span class="chip">' + escapeHtml(card.recommended_ai_tier) + '</span>' : ''
+      ].filter(Boolean).join('');
+
+      return '<details class="packet task-entry" data-type="task" data-search="' + escapeHtml([
+          card.task_name,
+          card.goal,
+          card.role_name,
+          arrayOrEmpty(card.target_ids).join(' '),
+          arrayOrEmpty(card.input_fields).join(' '),
+          arrayOrEmpty(card.write_targets).join(' ')
+        ].join(' ').toUpperCase()) + '">'
+        + '<summary>'
+        + '<div class="packet-head">'
+        + '<div class="packet-title">'
+        + '<div class="packet-tag">task card</div>'
+        + '<div class="packet-name">' + escapeHtml(card.task_name || '作業名未設定') + '</div>'
+        + '<div class="packet-goal">' + escapeHtml(card.goal || 'goal 未設定') + '</div>'
+        + '</div>'
+        + '<div class="badge-row"></div>'
+        + '</div>'
+        + '<div class="packet-summary">' + summaryChips + '</div>'
+        + '</summary>'
+        + '<div class="packet-body">'
+        + '<div class="panel-grid">'
+        + '<div class="panel"><div class="panel-title">入力として見るもの</div>' + listHtml(card.input_fields, 'なし') + '</div>'
+        + '<div class="panel"><div class="panel-title">書き戻してよい場所</div>' + listHtml(card.write_targets, 'なし') + '</div>'
+        + '</div>'
+        + '<div class="panel-grid">'
+        + '<div class="panel"><div class="panel-title">止めて上位AIへ渡す条件</div>' + listHtml(card.stop_conditions, 'なし') + '</div>'
+        + '<div class="panel"><div class="panel-title">やってはいけないこと</div>' + listHtml(card.must_not_do, 'なし') + '</div>'
+        + '</div>'
+        + '<div class="panel-grid">'
+        + '<div class="panel"><div class="panel-title">対象ID</div>' + chipsHtml(card.target_ids) + '</div>'
+        + '<div class="panel"><div class="panel-title">参照URL</div>' + urlsHtml(card.key_urls) + '</div>'
+        + '</div>'
+        + '<details class="subdetail">'
+        + '<summary><span class="chevron">▶</span>起動文を開く</summary>'
+        + '<div class="code-box"><pre>' + escapeHtml(card.launch_prompt || '') + '</pre><div class="code-actions"><button type="button" class="copy-btn" data-copy="' + index + '" data-kind="task-prompt">起動文をコピー</button></div></div>'
+        + '</details>'
+        + '<details class="subdetail">'
+        + '<summary><span class="chevron">▶</span>JSONを開く</summary>'
+        + '<div class="code-box"><pre>' + escapeHtml(cardJson) + '</pre><div class="code-actions"><button type="button" class="copy-btn" data-copy="' + index + '" data-kind="task-json">JSONをコピー</button></div></div>'
+        + '</details>'
+        + '</div>'
+        + '</details>';
+    }
+
+    function renderAll() {
+      rolesRoot.innerHTML = packets.map(renderRolePacket).join('');
+      tasksRoot.innerHTML = taskCards.map(renderTaskCard).join('');
+    }
+
+    function applyFilter() {
+      var query = String(search.value || '').trim().toUpperCase();
+      var roleShown = 0;
+      var taskShown = 0;
+
+      Array.from(document.querySelectorAll('.role-entry, .task-entry')).forEach(function(entry) {
+        var type = entry.dataset.type;
+        var haystack = entry.dataset.search || '';
+        var typeMatch = activeType === 'all' || activeType === type;
+        var queryMatch = !query || haystack.indexOf(query) !== -1;
+        var visible = typeMatch && queryMatch;
+        entry.classList.toggle('hidden', !visible);
+        if (visible && type === 'role') roleShown += 1;
+        if (visible && type === 'task') taskShown += 1;
+      });
+
+      rolesEmpty.classList.toggle('hidden', roleShown !== 0 || activeType === 'task');
+      tasksEmpty.classList.toggle('hidden', taskShown !== 0 || activeType === 'role');
+      document.getElementById('roles-section').classList.toggle('hidden', activeType === 'task');
+      document.getElementById('tasks-section').classList.toggle('hidden', activeType === 'role');
+      countPill.textContent = (roleShown + taskShown) + ' 件';
+    }
+
+    document.addEventListener('click', function(event) {
+      var button = event.target.closest('[data-copy]');
+      if (!button) return;
+      var index = Number(button.dataset.copy || 0);
+      var kind = button.dataset.kind || '';
+      if (kind === 'role-prompt') copyText((packets[index] || {}).launch_prompt || '');
+      if (kind === 'role-json') copyText(JSON.stringify(packets[index] || {}, null, 2));
+      if (kind === 'task-prompt') copyText((taskCards[index] || {}).launch_prompt || '');
+      if (kind === 'task-json') copyText(JSON.stringify(taskCards[index] || {}, null, 2));
+    });
+
+    document.querySelector('.type-group').addEventListener('click', function(event) {
+      var button = event.target.closest('.type-btn');
+      if (!button) return;
+      activeType = button.dataset.type;
+      Array.from(document.querySelectorAll('.type-btn')).forEach(function(btn) {
+        btn.classList.toggle('active', btn === button);
+      });
+      applyFilter();
+    });
+
+    search.addEventListener('input', applyFilter);
+    document.getElementById('reset-btn').addEventListener('click', function() {
+      activeType = 'all';
+      search.value = '';
+      Array.from(document.querySelectorAll('.type-btn')).forEach(function(btn) {
+        btn.classList.toggle('active', btn.dataset.type === 'all');
+      });
+      applyFilter();
+    });
+
+    var freshness = payload.generated_at || '';
+    if (freshness) {
+      var pill = document.getElementById('freshness-pill');
+      pill.textContent = '更新 ' + freshness;
+      pill.style.display = '';
+    }
+
+    renderSummary();
+    renderAll();
+    applyFilter();
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,1304 @@
+<!doctype html>
+<html lang="ja" data-page="shipping">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>発送</title>
+  <link rel="stylesheet" href="./common.css">
+  <style>
+    /* ── workbench overrides ── */
+    :root {
+      --soft-border: rgba(15,23,42,.10);
+      --card-r: 14px;
+    }
+    .hq-wrap { max-width: 720px }
+
+    /* ── A. Progress rail ── */
+    .wb-rail {
+      padding: 14px 0 10px;
+      border-bottom: 1px solid var(--border);
+    }
+    .wb-steps {
+      display: flex;
+      align-items: center;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .wb-steps::-webkit-scrollbar { display: none }
+    .wb-step {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      flex-shrink: 0;
+    }
+    .wb-step-arrow {
+      font-size: 11px;
+      color: var(--border);
+      padding: 0 6px;
+      flex-shrink: 0;
+    }
+    .wb-step-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--border);
+      flex-shrink: 0;
+    }
+    .wb-step-label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-3);
+      white-space: nowrap;
+    }
+    .wb-step-count {
+      font-size: 11px;
+      color: var(--text-3);
+      white-space: nowrap;
+    }
+    .wb-step.done .wb-step-dot  { background: var(--green); }
+    .wb-step.done .wb-step-label { color: var(--text-3); }
+    .wb-step.current .wb-step-dot {
+      background: var(--blue);
+      box-shadow: 0 0 0 3px rgba(37,99,235,.14);
+    }
+    .wb-step.current .wb-step-label { color: var(--text); font-size: 13px; font-weight: 800; }
+    .wb-step.current .wb-step-count { color: var(--text-2); }
+    .wb-step.blocked .wb-step-dot { background: var(--red); box-shadow: 0 0 0 3px rgba(185,28,28,.14); }
+    .wb-step.blocked .wb-step-label { color: var(--red); }
+
+    /* ── B. Action banner ── */
+    .wb-banner {
+      padding: 22px 0 18px;
+      border-bottom: 1px solid var(--border);
+    }
+    .wb-eyebrow {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      color: var(--text-3);
+    }
+    .wb-action-text {
+      margin-top: 6px;
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 1.3;
+      color: var(--text);
+    }
+    body[data-mode="idle"]   .wb-action-text,
+    body[data-mode="sample"] .wb-action-text {
+      color: var(--text-2);
+      font-size: 20px;
+    }
+    .wb-banner-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+    .wb-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .04em;
+      border: 1px solid var(--soft-border);
+      background: var(--surface-2);
+      color: var(--text-2);
+    }
+    .wb-badge.ready    { background: var(--green-bg);  border-color: rgba(21,128,61,.3);  color: var(--green); }
+    .wb-badge.active   { background: var(--blue-bg);   border-color: rgba(29,78,216,.3);  color: var(--blue); }
+    .wb-badge.critical { background: var(--red-bg);    border-color: rgba(185,28,28,.3);  color: var(--red); }
+    .wb-badge.sample   { background: var(--yellow-bg); border-color: rgba(146,64,14,.3);  color: var(--yellow); }
+    .wb-banner-route { font-size: 12px; color: var(--text-3); }
+
+    /* ── C. Focus card ── */
+    .wb-focus { padding: 20px 0 0; }
+    .wc {
+      border: 1px solid var(--border);
+      border-radius: var(--card-r);
+      background: var(--surface);
+      overflow: hidden;
+      box-shadow: 0 1px 2px rgba(15,23,42,.04);
+    }
+    .wc.wc-sample  { border-style: dashed; }
+    .wc.wc-idle    { border-style: dashed; background: var(--surface); }
+    .wc.wc-handoff { border-color: rgba(21,128,61,.25); background: #f2fbf5; }
+    .wc-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 16px 16px 10px;
+      gap: 10px;
+    }
+    .wc-title {
+      font-size: 17px;
+      font-weight: 900;
+      line-height: 1.35;
+    }
+    .wc-stage {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 9px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 800;
+      flex-shrink: 0;
+      border: 1px solid var(--soft-border);
+      background: var(--surface-2);
+      color: var(--text-2);
+    }
+    .wc-stage.ready    { background: var(--green-bg);  border-color: rgba(21,128,61,.3);  color: var(--green); }
+    .wc-stage.high     { background: var(--orange-bg); border-color: rgba(180,83,9,.3);   color: var(--orange); }
+    .wc-stage.critical { background: var(--red-bg);    border-color: rgba(185,28,28,.3);  color: var(--red); }
+    .wc-idbar {
+      padding: 0 16px 10px;
+      font-size: 11px;
+      color: var(--text-3);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .wc-action {
+      margin: 0 12px 14px;
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.65;
+      color: var(--text-2);
+    }
+    /* 2×2 value grid */
+    .wc-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-top: 1px solid var(--border);
+    }
+    .wc-cell {
+      padding: 14px 16px;
+      min-height: 100px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .wc-cell:nth-child(2n) { border-right: none; }
+    .wc-cell:nth-last-child(-n+2) { border-bottom: none; }
+    .wc-cell.code-cell { background: var(--surface-2); }
+    .wc-cell.missing   { background: var(--yellow-bg); }
+    .wc-cell-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      color: var(--text-3);
+    }
+    .wc-cell-value {
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.5;
+      color: var(--text);
+      word-break: break-all;
+      flex: 1;
+    }
+    /* Code cell: big mono */
+    .wc-cell.code-cell .wc-cell-value {
+      font-family: "SF Mono","Fira Mono","Consolas",monospace;
+      font-size: 26px;
+      font-weight: 900;
+      letter-spacing: .03em;
+      line-height: 1.15;
+    }
+    .wc-cell-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: auto;
+    }
+    .wc-btn {
+      appearance: none;
+      padding: 6px 10px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text-2);
+      font: inherit;
+      font-size: 11px;
+      font-weight: 800;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+    }
+    .wc-btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .wc-btn:disabled { opacity: .4; cursor: not-allowed; }
+
+    /* ── D. Queue ── */
+    .wb-queue { margin-top: 20px; }
+    .wb-queue-header {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      color: var(--text-3);
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    .wb-qrow {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 13px;
+    }
+    .wb-qrow-stage {
+      flex-shrink: 0;
+      font-size: 10px;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: 6px;
+      background: var(--surface-2);
+      color: var(--text-3);
+      border: 1px solid var(--border);
+    }
+    .wb-qrow-title {
+      flex: 1;
+      font-weight: 700;
+      color: var(--text-2);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .wb-qrow-code {
+      font-family: "SF Mono","Fira Mono","Consolas",monospace;
+      font-size: 11px;
+      color: var(--text-3);
+      flex-shrink: 0;
+    }
+    .wb-qrow-pickup {
+      font-size: 11px;
+      color: var(--text-3);
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+
+    /* ── E. Drawers ── */
+    .wb-drawers { margin-top: 24px; display: grid; gap: 6px; padding-bottom: 40px; }
+    .wb-drawer {
+      border: 1px solid var(--border);
+      border-radius: var(--card-r);
+      background: var(--surface);
+      overflow: hidden;
+      box-shadow: 0 1px 2px rgba(15,23,42,.04);
+    }
+    .wb-drawer > summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 13px 16px;
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--text-2);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .wb-drawer > summary::-webkit-details-marker { display: none }
+    .wb-drawer > summary::before {
+      content: "▸";
+      font-size: 11px;
+      color: var(--text-3);
+      transition: transform .15s;
+      flex-shrink: 0;
+    }
+    .wb-drawer[open] > summary::before { transform: rotate(90deg); }
+    .wb-drawer-body { padding: 0 16px 16px; }
+    .wb-section-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      color: var(--text-3);
+      margin-bottom: 8px;
+    }
+    .wb-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 12px; }
+    .wb-action-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      padding-top: 4px;
+    }
+    .wb-btn-lg {
+      appearance: none;
+      padding: 10px 14px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--surface-2);
+      color: var(--text);
+      font: inherit;
+      font-size: 12px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .wb-btn-lg.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .wb-btn-lg.ghost   { background: transparent; color: var(--text-2); }
+    .wb-btn-lg:disabled { opacity: .4; cursor: not-allowed; }
+    details.wb-fold > summary {
+      cursor: pointer;
+      list-style: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--text-3);
+      padding: 6px 10px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--surface);
+    }
+    details.wb-fold > summary::-webkit-details-marker { display: none }
+    .wb-fold-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+
+    /* ── Shared utility (reused in drawers) ── */
+    .simple-list { display: grid; gap: 7px; }
+    .simple-item {
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--surface-2);
+      font-size: 12px;
+      line-height: 1.7;
+      color: var(--text-2);
+    }
+    .empty {
+      padding: 13px;
+      border-radius: 10px;
+      border: 1px dashed var(--border);
+      color: var(--text-3);
+      font-size: 12px;
+    }
+    .exception-item { padding: 12px 14px; border-radius: 10px; border: 1px solid var(--border); background: var(--surface-2); }
+    .exception-item.error   { border-color: rgba(185,28,28,.3);  background: var(--red-bg); }
+    .exception-item.warning { border-color: rgba(146,64,14,.3);  background: var(--yellow-bg); }
+    .exception-item.orange  { border-color: rgba(180,83,9,.3);   background: var(--orange-bg); }
+    .exception-label   { font-size: 12px; font-weight: 900; color: var(--text); }
+    .exception-detail  { margin-top: 5px; font-size: 12px; line-height: 1.7; color: var(--text-2); }
+    .exception-preview { margin-top: 5px; font-size: 12px; line-height: 1.6; color: var(--text-3); }
+    .exception-context { margin-top: 10px; padding: 10px 12px; border-radius: 10px; border: 1px solid rgba(29,78,216,.2); background: var(--blue-bg); font-size: 12px; font-weight: 700; color: var(--text-2); }
+    details.exception-expand > summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 800; color: var(--blue); }
+    details.exception-expand > summary::-webkit-details-marker { display: none }
+    details.exception-expand .ex-full { margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--border); font-size: 12px; line-height: 1.75; color: var(--text-2); }
+
+    .compact-route { padding: 10px 12px; border-radius: 10px; border: 1px solid var(--border); background: var(--surface-2); margin-bottom: 8px; }
+    .compact-route .label { font-size: 10px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--text-3); }
+    .compact-route .value { margin-top: 3px; font-size: 12px; font-weight: 800; line-height: 1.5; }
+    .compact-route .note  { margin-top: 3px; font-size: 11px; line-height: 1.6; color: var(--text-3); }
+
+    .coverage-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .coverage-card  { padding: 10px 12px; border-radius: 10px; background: var(--surface-2); border: 1px solid var(--border); }
+    .coverage-label { font-size: 10px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--text-3); }
+    .coverage-value { margin-top: 5px; font-size: 16px; font-weight: 900; }
+
+    .packet-card { padding: 14px; border-radius: 12px; border: 1px solid var(--border); background: var(--surface-2); margin-bottom: 10px; }
+    .packet-top  { display: flex; justify-content: space-between; gap: 10px; align-items: flex-start; }
+    .packet-title { font-size: 14px; font-weight: 900; }
+    .packet-chip { display: inline-flex; align-items: center; padding: 4px 8px; border-radius: 999px; font-size: 11px; font-weight: 800; border: 1px solid var(--soft-border); background: var(--surface); color: var(--text-2); }
+    .packet-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .mini-btn { appearance: none; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); color: var(--text); padding: 7px 10px; font: inherit; font-size: 11px; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; text-decoration: none; }
+    .mini-btn:disabled { opacity: .4; cursor: not-allowed; }
+    .packet-primary-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 8px; margin-top: 10px; }
+    .packet-primary-item .label { font-size: 10px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--text-3); }
+    .packet-primary-item { padding: 10px 12px; border-radius: 10px; background: var(--surface); border: 1px solid var(--border); }
+    .packet-primary-item .value { margin-top: 4px; font-size: 12px; font-weight: 800; line-height: 1.65; }
+    details.packet-secondary > summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 800; color: var(--text-3); padding: 5px 10px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); margin-top: 8px; }
+    details.packet-secondary > summary::-webkit-details-marker { display: none }
+    .packet-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 8px; margin-top: 8px; }
+    .packet-cell { padding: 9px 11px; border-radius: 8px; background: var(--surface); border: 1px solid var(--border); }
+    .packet-cell .label { font-size: 10px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--text-3); }
+    .packet-cell .value { margin-top: 3px; font-size: 11px; line-height: 1.6; }
+    .packet-coverage { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+    .coverage-pill { display: inline-flex; align-items: center; gap: 5px; padding: 5px 9px; border-radius: 999px; border: 1px solid var(--soft-border); background: var(--surface); font-size: 11px; font-weight: 800; color: var(--text-2); }
+    .coverage-pill.ready   { border-color: rgba(21,128,61,.3);  background: var(--green-bg);  color: var(--green); }
+    .coverage-pill.partial { border-color: rgba(180,83,9,.3);   background: var(--orange-bg); color: var(--orange); }
+    .coverage-pill.missing { border-color: rgba(185,28,28,.28); background: var(--red-bg);    color: var(--red); }
+    .work-missing { margin-top: 8px; font-size: 12px; font-weight: 800; color: var(--yellow); }
+    .inline-link  { display: inline-flex; align-items: center; margin-top: 6px; font-size: 11px; font-weight: 800; color: var(--blue); text-decoration: underline; }
+
+    .data-table { width: 100%; border-collapse: collapse; font-size: 11px; }
+    .data-table th, .data-table td { padding: 7px 8px; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
+    .data-table th { font-size: 10px; font-weight: 800; color: var(--text-3); }
+    .data-table tr:last-child td { border-bottom: none; }
+
+    .kv-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 8px; }
+    .kv-card { padding: 10px 12px; border-radius: 10px; background: var(--surface-2); border: 1px solid var(--border); }
+    .kv-card .label { font-size: 11px; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; color: var(--text-3); }
+    .kv-card .value { margin-top: 5px; font-size: 12px; line-height: 1.65; }
+
+    .hq-fresh.fresh { border-color: rgba(21,128,61,.35); color: var(--green); }
+
+    @media (max-width: 580px) {
+      .wc-grid, .wb-two-col, .wb-drawer-grid, .packet-primary-grid, .packet-grid, .kv-grid { grid-template-columns: 1fr; }
+      .wb-action-text { font-size: 20px; }
+      .wc-cell.code-cell .wc-cell-value { font-size: 20px; }
+      .coverage-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hq-header">
+    <h1><span class="dot">●</span> 発送</h1>
+    <span class="hq-fresh" id="freshness-pill" title="最終更新時刻">—</span>
+  </header>
+
+  <div class="hq-wrap">
+
+    <!-- A. Progress rail -->
+    <div class="wb-rail">
+      <div class="wb-steps" id="pipeline-strip"></div>
+    </div>
+
+    <!-- B. Action banner -->
+    <div class="wb-banner">
+      <div class="wb-eyebrow">いまやること</div>
+      <div class="wb-action-text" id="summary-next-step">読み込み中</div>
+      <div class="wb-banner-meta">
+        <span class="wb-badge" id="summary-badge">読み込み中</span>
+        <span class="wb-banner-route" id="summary-detail"></span>
+      </div>
+    </div>
+
+    <!-- C. Focus card (primary single order) -->
+    <div class="wb-focus">
+      <div id="work-cards"></div>
+    </div>
+
+    <!-- D. Queue (remaining orders, compact rows) -->
+    <div class="wb-queue" id="wb-queue" hidden>
+      <div class="wb-queue-header">次の件</div>
+      <div id="wb-queue-rows"></div>
+    </div>
+
+    <!-- E. Drawers -->
+    <div class="wb-drawers">
+
+      <!-- Stop reasons — shown only when there is content -->
+      <details class="wb-drawer" id="stop-drawer">
+        <summary id="stop-summary">⚠ 止める / 例外</summary>
+        <div class="wb-drawer-body">
+          <div class="wb-two-col">
+            <div>
+              <div class="wb-section-label">ここで止める</div>
+              <div class="simple-list" id="stop-rules" style="margin-top:8px"></div>
+            </div>
+            <div>
+              <div class="wb-section-label">あとでやること</div>
+              <div id="exceptions-context"></div>
+              <div id="exceptions" style="margin-top:6px"></div>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <!-- Print + Route -->
+      <details class="wb-drawer">
+        <summary>印刷 / レール / エクスポート</summary>
+        <div class="wb-drawer-body">
+          <div class="wb-action-row" style="margin-top:6px">
+            <button class="wb-btn-lg primary" id="open-print-view" type="button">印刷ビュー</button>
+            <button class="wb-btn-lg" id="download-print-json" type="button">JSON保存</button>
+            <details class="wb-fold">
+              <summary>その他のエクスポート</summary>
+              <div class="wb-fold-row">
+                <button class="wb-btn-lg" id="download-print-csv" type="button">CSV保存</button>
+                <button class="wb-btn-lg" id="download-batch-csv" type="button">バッチCSV保存</button>
+                <button class="wb-btn-lg ghost" id="copy-print-json" type="button">JSONコピー</button>
+              </div>
+            </details>
+          </div>
+          <div class="coverage-grid" id="print-coverage" style="margin-top:12px"></div>
+          <div id="print-note" style="margin-top:8px;font-size:12px;color:var(--text-3)"></div>
+          <div class="wb-two-col" style="margin-top:14px">
+            <div>
+              <div class="wb-section-label">レール</div>
+              <div id="route-list" style="margin-top:6px"></div>
+            </div>
+            <div>
+              <div class="wb-section-label">印刷パケット</div>
+              <div id="print-packets" style="margin-top:6px"></div>
+            </div>
+          </div>
+          <div id="print-batch-panel" style="margin-top:12px">
+            <div class="wb-section-label">集荷バッチ</div>
+            <div id="print-batches" style="margin-top:6px"></div>
+          </div>
+        </div>
+      </details>
+
+      <!-- Backend + Supplemental -->
+      <details class="wb-drawer">
+        <summary>補助情報 / バックエンド詳細</summary>
+        <div class="wb-drawer-body">
+          <div class="wb-two-col">
+            <div>
+              <div class="wb-section-label">DDが今やること</div>
+              <div class="simple-list" id="daily-dd" style="margin-top:6px"></div>
+            </div>
+            <div>
+              <div class="wb-section-label">補助リンク</div>
+              <div class="simple-list" id="support-panels" style="margin-top:6px"></div>
+            </div>
+          </div>
+          <div class="kv-grid" id="api-summary-cards" style="margin-top:14px"></div>
+          <div class="wb-two-col" style="margin-top:12px">
+            <div>
+              <div class="wb-section-label">API readiness</div>
+              <div class="simple-list" id="api-readiness" style="margin-top:6px"></div>
+            </div>
+            <div>
+              <div class="wb-section-label">次にやること</div>
+              <div class="simple-list" id="next-actions" style="margin-top:6px"></div>
+            </div>
+          </div>
+          <div class="wb-two-col" style="margin-top:12px">
+            <div>
+              <div class="wb-section-label">未完受注</div>
+              <div id="queue-orders" style="margin-top:6px"></div>
+            </div>
+            <div>
+              <div class="wb-section-label">集荷待ち</div>
+              <div id="queue-pickup" style="margin-top:6px"></div>
+            </div>
+          </div>
+          <div class="wb-two-col" style="margin-top:12px">
+            <div>
+              <div class="wb-section-label">source tabs</div>
+              <div id="backend-source-tabs" style="margin-top:6px"></div>
+            </div>
+            <div>
+              <div class="wb-section-label">print export contract</div>
+              <div class="simple-list" id="backend-print-contract" style="margin-top:6px"></div>
+            </div>
+          </div>
+          <div class="wb-two-col" style="margin-top:12px">
+            <div>
+              <div class="wb-section-label">sync health</div>
+              <div class="simple-list" id="sync-health-summary" style="margin-top:6px"></div>
+            </div>
+            <div>
+              <div class="wb-section-label">source fetch / post-sale</div>
+              <div class="simple-list" id="sync-health-fetches" style="margin-top:6px"></div>
+            </div>
+          </div>
+        </div>
+      </details>
+
+    </div>
+  </div>
+
+  <script src="./shipping_snapshot.js"></script>
+  <script src="./common.js"></script>
+  <script>
+  (function(){
+    var board = window.ZERO_COST_SHIPPING_BOARD || {};
+    var consoleData = board.operator_console || {};
+    var printExports = board.print_exports || {};
+    var backendContract = board.backend_contract || {};
+    var apiReadiness = board.api_readiness || {};
+
+    /* ── utilities ── */
+    function parseJstTimestamp(value){
+      var text = String(value || '').trim();
+      if (!text) return null;
+      var normalized = text.replace(/ JST$/, '').replace(' ', 'T') + '+09:00';
+      var parsed = new Date(normalized);
+      return Number.isNaN(parsed.getTime()) ? null : parsed;
+    }
+
+    function esc(v){
+      return String(v == null ? '' : v)
+        .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+        .replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+    }
+    function multilineHtml(v){ return esc(v).replace(/\n/g,'<br>'); }
+    function attr(v){ return esc(v).replace(/\n/g,'&#10;'); }
+    function set(id, value){ var el = document.getElementById(id); if (el) el.textContent = value; }
+    function linkHtml(url, label){
+      var href = String(url || '').trim();
+      if (!href) return '';
+      return '<a class="inline-link" href="'+esc(href)+'" target="_blank" rel="noreferrer noopener">'+esc(label||'開く')+'</a>';
+    }
+    function compactText(parts, sep){ return (parts||[]).filter(Boolean).join(sep||' '); }
+    function downloadText(filename, text, mime){
+      var blob = new Blob([text||''],{type:mime||'text/plain;charset=utf-8'});
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url; a.download = filename||'download.txt';
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(function(){ URL.revokeObjectURL(url); }, 1000);
+    }
+    function copyText(text, button){
+      if (!navigator.clipboard) return;
+      navigator.clipboard.writeText(text||'').then(function(){
+        if (!button) return;
+        var orig = button.textContent;
+        button.textContent = 'コピー済み';
+        setTimeout(function(){ button.textContent = orig; }, 1200);
+      });
+    }
+    function rowsToCsvText(rows){
+      if (!rows||!rows.length) return '';
+      var headers = Object.keys(rows[0]);
+      function enc(v){ var t=String(v==null?'':v); return /[",\n]/.test(t)?'"'+t.replace(/"/g,'""')+'"':t; }
+      var lines = [headers.map(enc).join(',')];
+      rows.forEach(function(row){ lines.push(headers.map(function(h){ return enc(row[h]); }).join(',')); });
+      return lines.join('\n')+'\n';
+    }
+    function renderList(id, items, className){
+      var el = document.getElementById(id); if (!el) return;
+      if (!items||!items.length){ el.innerHTML='<div class="empty">0件です。</div>'; return; }
+      el.innerHTML = items.map(function(item){ return '<div class="'+(className||'simple-item')+'">'+esc(item)+'</div>'; }).join('');
+    }
+    function renderTable(id, rows){
+      var box = document.getElementById(id); if (!box) return;
+      if (!rows||!rows.length){ box.innerHTML='<div class="empty">まだありません。</div>'; return; }
+      var headers = Object.keys(rows[0]);
+      var head = '<tr>'+headers.map(function(h){ return '<th>'+esc(h)+'</th>'; }).join('')+'</tr>';
+      var body = rows.map(function(row){ return '<tr>'+headers.map(function(h){ return '<td>'+esc(row[h]||'')+'</td>'; }).join('')+'</tr>'; }).join('');
+      box.innerHTML='<table class="data-table"><thead>'+head+'</thead><tbody>'+body+'</tbody></table>';
+    }
+    function firstNonEmpty(){
+      for (var i=0;i<arguments.length;i++){ var v=arguments[i]; if (v==null) continue; var t=String(v).trim(); if (t) return t; }
+      return '';
+    }
+    function numberValue(v){ return Number(v||0); }
+
+    /* ── packet helpers ── */
+    function packetLabelHref(p){ return String(p&&(p.label_pdf_url||p.label_download_url||'')||'').trim(); }
+    function realLabelHref(p){ var h=packetLabelHref(p); return /example\.invalid/i.test(h)?'':h; }
+    function packetCode(p){ return firstNonEmpty(p&&p.printable_code, p&&p.tracking_number, p&&p.reception_number, p&&p.reception_qr); }
+    function packetPickup(p){ return compactText([p&&p.pickup_date, p&&p.pickup_window],' '); }
+    function packetRecipient(p){
+      var addr = compactText([p&&p.recipient_zip, p&&p.recipient_address],' ');
+      return compactText([p&&p.recipient_name, addr, p&&p.recipient_phone],'\n');
+    }
+    function packetRecipientSingleLine(p){
+      var addr = firstNonEmpty(p&&p.recipient_address, compactText([p&&p.recipient_zip, p&&p.recipient_address],' '));
+      return compactText([p&&p.recipient_name, addr, p&&p.recipient_phone],' / ');
+    }
+    function packetTitle(p){ return firstNonEmpty(p&&p.product_name, p&&p.shipment_id, p&&p.order_id, '出荷カード'); }
+    function packetReadyForHandoff(p){ return !!p && !!packetCode(p) && !!packetPickup(p) && !!packetRecipient(p) && !((p.missing_fields||[]).length); }
+
+    function stageMode(stage, priority){
+      if (stage==='引渡し可' || priority==='ready') return 'handoff';
+      if (stage==='梱包待ち') return 'packing';
+      if (stage==='要画面回収'||stage==='情報不足'||priority==='critical'||priority==='high') return 'label';
+      return 'neutral';
+    }
+
+    /* ── data ── */
+    var routes = consoleData.routes || [];
+    var cards  = consoleData.work_cards || [];
+    var samplePacket = (printExports.sample_shipment && Object.keys(printExports.sample_shipment).length) ? printExports.sample_shipment : null;
+    var livePackets  = (printExports.shipments && printExports.shipments.length) ? printExports.shipments : [];
+
+    function findPacketIndex(card, packets, used){
+      if (!card) return -1;
+      for (var i=0;i<packets.length;i++){
+        if (used[i]) continue;
+        var p=packets[i];
+        if (card.order_id && p.order_id && card.order_id===p.order_id) return i;
+        if (card.product_id && p.product_id && card.product_id===p.product_id) return i;
+        if (card.id_label && p.shipment_id && card.id_label.indexOf(p.shipment_id)!==-1) return i;
+      }
+      return -1;
+    }
+
+    function buildUnifiedCard(card, packet, isSample, isIdle){
+      var mode = isIdle ? 'idle' : stageMode(card&&card.stage, card&&card.priority);
+      if (!card && !isIdle && packetReadyForHandoff(packet)) mode='handoff';
+      if (!card && !isIdle && packet && !packetReadyForHandoff(packet)) mode='label';
+      var defaultStage = isIdle?'待機中':(isSample?'見本':(mode==='handoff'?'引渡し可':(mode==='label'?'ラベル待ち':'梱包待ち')));
+      var defaultPriority = isIdle?'medium':(mode==='handoff'?'ready':(mode==='label'?'high':'medium'));
+      var defaultAction = isIdle
+        ? '注文が入ると、梱包 → ラベル → 渡す の順でここに出ます。'
+        : (isSample
+          ? '売れたら本番カードが同じ形で出ます。'
+          : (mode==='handoff'
+            ? 'コードとラベルを持ってヤマトへ渡します。'
+            : (mode==='label'
+              ? 'ラベルと集荷情報がそろっているか確認します。'
+              : '商品を取り、梱包します。')));
+      return {
+        mode: mode, isSample:!!isSample, isIdle:!!isIdle,
+        stage: firstNonEmpty(card&&card.stage, defaultStage),
+        priority: firstNonEmpty(card&&card.priority, defaultPriority),
+        kindLabel: isIdle?'待機':firstNonEmpty(card&&card.kind, isSample?'見本':'出荷'),
+        title: firstNonEmpty(card&&card.title, packetTitle(packet), isIdle?'まだ売れていません':'出荷カード'),
+        action: firstNonEmpty(card&&card.action, defaultAction),
+        idLabel: firstNonEmpty(card&&card.id_label, packet&&packet.shipment_id, ''),
+        orderId: firstNonEmpty(card&&card.order_id, packet&&packet.order_id, ''),
+        shipmentId: firstNonEmpty(packet&&packet.shipment_id, ''),
+        route: firstNonEmpty(card&&card.route, packet&&packet.lane, (routes[0]||{}).value, ''),
+        codeText: packetCode(packet),
+        pickupText: packetPickup(packet),
+        recipientText: packetRecipient(packet),
+        recipientSingleLine: packetRecipientSingleLine(packet),
+        labelHref: realLabelHref(packet),
+        detailLabelHref: packetLabelHref(packet),
+        labelStatus: firstNonEmpty(packet&&packet.label_status, isSample?'見本':''),
+        missingFields: (packet&&packet.missing_fields)||(card&&card.missing_fields)||[]
+      };
+    }
+
+    function buildUnifiedCards(workCards, packets, sample){
+      var used={};
+      var items=(workCards||[]).map(function(card){
+        var idx=findPacketIndex(card,packets,used);
+        if (idx>=0) used[idx]=true;
+        return buildUnifiedCard(card, idx>=0?packets[idx]:null, false, false);
+      });
+      (packets||[]).forEach(function(p,i){ if (used[i]) return; items.push(buildUnifiedCard(null,p,false,false)); });
+      if (!items.length && sample) items.push(buildUnifiedCard(null,sample,true,false));
+      if (!items.length) items.push(buildUnifiedCard(null,null,false,true));
+      return items;
+    }
+
+    function missingForGroup(item, group){
+      var text=(item.missingFields||[]).join(' ');
+      if (!text) return false;
+      if (group==='code')      return /送り状番号|受付番号|受付QR|見せるコード|提示方法/.test(text);
+      if (group==='pickup')    return /引渡予定日|時間帯|集荷予定日/.test(text);
+      if (group==='recipient') return /宛先|氏名|住所|電話/.test(text);
+      if (group==='label')     return /ラベル/.test(text);
+      return false;
+    }
+
+    /* ── focus card renderer ── */
+    function renderFocusCardHtml(item){
+      var codeMissing      = missingForGroup(item,'code')      || !item.codeText;
+      var labelMissing     = missingForGroup(item,'label')     || (!item.labelHref && !item.isSample);
+      var pickupMissing    = missingForGroup(item,'pickup')    || !item.pickupText;
+      var recipientMissing = missingForGroup(item,'recipient') || !item.recipientText;
+
+      var codeAction = item.codeText
+        ? '<button class="wc-btn copy-inline" type="button" data-copy="'+attr(item.codeText)+'">コピー</button>'
+        : '';
+      var labelAction = item.labelHref
+        ? '<a class="wc-btn primary" href="'+esc(item.labelHref)+'" target="_blank" rel="noreferrer noopener">ラベルを開く</a>'
+        : (item.isSample ? '<button class="wc-btn open-print-inline" type="button">印刷ビュー</button>' : '');
+      var recipientAction = item.recipientText
+        ? '<button class="wc-btn copy-inline" type="button" data-copy="'+attr(item.recipientText)+'">コピー</button>'
+        : '';
+
+      var cardCls = 'wc';
+      if (item.isSample) cardCls += ' wc-sample';
+      if (item.isIdle)   cardCls += ' wc-idle';
+      if (item.mode === 'handoff') cardCls += ' wc-handoff';
+
+      var stageCls = 'wc-stage';
+      if (item.priority==='ready')    stageCls += ' ready';
+      else if (item.priority==='high')     stageCls += ' high';
+      else if (item.priority==='critical') stageCls += ' critical';
+
+      var codeValue   = item.codeText     ? multilineHtml(item.codeText)     : (codeMissing     ? '⚠ 未取得' : '未取得');
+      var labelValue  = item.labelHref    ? '準備済み'                        : (item.isSample   ? '見本'    : (item.labelStatus || '未取得'));
+      var pickupValue = item.pickupText   ? esc(item.pickupText)              : (pickupMissing   ? '⚠ 未取得' : '未取得');
+      var recipValue  = item.recipientText ? multilineHtml(item.recipientText) : (recipientMissing ? '⚠ 未取得' : '未取得');
+
+      var idParts = [];
+      if (item.shipmentId) idParts.push('出荷 '+item.shipmentId);
+      if (item.orderId)    idParts.push('注文 '+item.orderId);
+      if (item.route)      idParts.push(item.route);
+
+      return '<div class="'+cardCls+'">'
+        +'<div class="wc-head">'
+        +'<div class="wc-title">'+esc(item.title)+'</div>'
+        +'<div class="'+stageCls+'">'+esc(item.stage)+'</div>'
+        +'</div>'
+        +(idParts.length?'<div class="wc-idbar">'+idParts.map(function(p){return '<span>'+esc(p)+'</span>';}).join('')+'</div>':'')
+        +'<div class="wc-action">'+esc(item.action)+'</div>'
+        +'<div class="wc-grid">'
+        // Code cell
+        +'<div class="wc-cell code-cell'+(codeMissing?' missing':'')+'">'
+        +'<div class="wc-cell-label">見せるコード</div>'
+        +'<div class="wc-cell-value">'+codeValue+'</div>'
+        +(codeAction?'<div class="wc-cell-actions">'+codeAction+'</div>':'')
+        +'</div>'
+        // Label cell
+        +'<div class="wc-cell'+(labelMissing?' missing':'')+'">'
+        +'<div class="wc-cell-label">ラベル</div>'
+        +'<div class="wc-cell-value">'+esc(labelValue)+'</div>'
+        +(labelAction?'<div class="wc-cell-actions">'+labelAction+'</div>':'')
+        +'</div>'
+        // Pickup cell
+        +'<div class="wc-cell'+(pickupMissing?' missing':'')+'">'
+        +'<div class="wc-cell-label">集荷日時</div>'
+        +'<div class="wc-cell-value">'+pickupValue+'</div>'
+        +'</div>'
+        // Recipient cell
+        +'<div class="wc-cell'+(recipientMissing?' missing':'')+'">'
+        +'<div class="wc-cell-label">宛先</div>'
+        +'<div class="wc-cell-value">'+recipValue+'</div>'
+        +(recipientAction?'<div class="wc-cell-actions">'+recipientAction+'</div>':'')
+        +'</div>'
+        +'</div>'
+        +'</div>';
+    }
+
+    /* ── queue row renderer ── */
+    function renderQueueRowHtml(item){
+      var codeSnippet = item.codeText ? (item.codeText.length > 16 ? item.codeText.slice(0,16)+'…' : item.codeText) : '—';
+      var pickup = item.pickupText || '—';
+      return '<div class="wb-qrow">'
+        +'<div class="wb-qrow-stage">'+esc(item.stage)+'</div>'
+        +'<div class="wb-qrow-title">'+esc(item.title)+'</div>'
+        +'<div class="wb-qrow-code">'+esc(codeSnippet)+'</div>'
+        +'<div class="wb-qrow-pickup">'+esc(pickup)+'</div>'
+        +'</div>';
+    }
+
+    /* ── freshness pill ── */
+    (function(){
+      var pill = document.getElementById('freshness-pill');
+      if (!pill) return;
+      var ts = board.generated_at || '';
+      if (!ts){ pill.textContent='更新時刻不明'; return; }
+      pill.textContent = '更新 '+ts;
+      var parsed = parseJstTimestamp(ts);
+      if (!parsed) return;
+      var ageH = (Date.now()-parsed.getTime())/3600000;
+      pill.classList.add(ageH>6?'stale':'fresh');
+    })();
+
+    /* ── mode ── */
+    var metrics = board.metrics || {};
+    (function(){
+      var m = metrics;
+      var isIdle = !m.orders_open && !m.packing_waiting && !m.pickup_waiting && !m.packed_waiting_pickup && !cards.length;
+      document.body.dataset.mode = isIdle ? 'idle' : 'work';
+    })();
+
+    /* ── build unified cards ── */
+    var unifiedCards = buildUnifiedCards(cards, livePackets, samplePacket);
+    var focusCard    = unifiedCards.find(function(c){ return !c.isSample && !c.isIdle; }) || unifiedCards[0];
+    var queueItems   = unifiedCards.filter(function(c){ return c !== focusCard; });
+
+    var apiSummary   = (apiReadiness.summary) || {};
+    var packingCount = Math.max(numberValue(metrics.packing_waiting), unifiedCards.filter(function(c){ return c.mode==='packing' && !c.isSample && !c.isIdle; }).length);
+    var labelCount   = Math.max(
+      numberValue(metrics.packed_waiting_pickup)+numberValue(metrics.pickup_waiting),
+      unifiedCards.filter(function(c){ return c.mode==='label' && !c.isSample && !c.isIdle; }).length
+    );
+    var handoffCount = unifiedCards.filter(function(c){ return c.mode==='handoff' && !c.isSample && !c.isIdle; }).length;
+    var soldCount    = Math.max(numberValue(metrics.orders_open), numberValue(metrics.shipping_candidates), packingCount, labelCount, handoffCount);
+    var doneCount    = numberValue(metrics.shipped_total);
+
+    /* ── summary state ── */
+    var summaryBadge    = '待機中';
+    var summaryHeadline = '売れたらここにカードが出ます。';
+    var summaryDetail   = (routes[0]||{}).value || '';
+    var summaryNext     = '今は待つだけです。';
+    var currentStepId   = 'idle';
+    var badgeMod        = '';
+
+    if (apiSummary.mainline_blockers) {
+      summaryBadge='要確認'; badgeMod='critical';
+      summaryNext='下の「止める / 例外」ドロワーを先に確認します。';
+      currentStepId = handoffCount?'handoff':(labelCount?'label':(packingCount||soldCount?'pack':'sold'));
+    } else if (focusCard && focusCard.isSample) {
+      summaryBadge='見本'; badgeMod='sample';
+      summaryNext='この見本でコード・宛先・ラベル位置を確認します。';
+    } else if (focusCard && focusCard.isIdle) {
+      summaryBadge='待機中';
+      summaryNext='注文が入ると、梱包カードが先頭に出ます。';
+    } else if (handoffCount) {
+      summaryBadge='引渡し可'; badgeMod='ready'; currentStepId='handoff';
+      summaryNext = focusCard && focusCard.action ? focusCard.action : 'コードとラベルを持ってヤマトへ渡します。';
+      summaryDetail = focusCard ? '先頭: '+focusCard.title : summaryDetail;
+    } else if (labelCount) {
+      summaryBadge='ラベル準備'; badgeMod='active'; currentStepId='label';
+      summaryNext = focusCard && focusCard.action ? focusCard.action : '見せるコードと時間帯を確認します。';
+      summaryDetail = focusCard ? '先頭: '+focusCard.title : summaryDetail;
+    } else if (packingCount || soldCount) {
+      summaryBadge='梱包'; badgeMod='active'; currentStepId='pack';
+      summaryNext = focusCard && focusCard.action ? focusCard.action : '商品を取り、梱包します。';
+      summaryDetail = focusCard ? '先頭: '+focusCard.title : summaryDetail;
+    }
+
+    set('summary-next-step', summaryNext);
+    set('summary-detail', summaryDetail);
+    (function(){
+      var badgeEl = document.getElementById('summary-badge');
+      if (badgeEl){ badgeEl.textContent=summaryBadge; if (badgeMod) badgeEl.classList.add(badgeMod); }
+    })();
+
+    /* ── A. Pipeline rail ── */
+    var pipelineSteps = [
+      {id:'sold',    label:'売れた',  count:soldCount||0},
+      {id:'pack',    label:'梱包',    count:packingCount||0},
+      {id:'label',   label:'ラベル',  count:labelCount||0},
+      {id:'handoff', label:'渡す',    count:handoffCount||0},
+      {id:'done',    label:'完了',    count:doneCount||0}
+    ];
+    var stepIndexMap = {sold:0,pack:1,label:2,handoff:3,done:4,idle:-1};
+    var currentIndex = stepIndexMap[currentStepId]==null ? -1 : stepIndexMap[currentStepId];
+    var pipelineStrip = document.getElementById('pipeline-strip');
+    if (pipelineStrip) {
+      pipelineStrip.innerHTML = pipelineSteps.map(function(step, index){
+        var status = 'future';
+        if (currentIndex >= 0){
+          if (index < currentIndex) status='done';
+          else if (index===currentIndex) status = apiSummary.mainline_blockers ? 'blocked current' : 'current';
+        } else if (doneCount && index<=stepIndexMap.done) {
+          status='done';
+        }
+        var countHtml = step.count > 0
+          ? ' <span class="wb-step-count">('+esc(step.count)+')</span>'
+          : '';
+        return (index>0?'<span class="wb-step-arrow">→</span>':'')+
+          '<div class="wb-step '+esc(status)+'">'
+          +'<div class="wb-step-dot"></div>'
+          +'<span class="wb-step-label">'+esc(step.label)+'</span>'
+          +countHtml
+          +'</div>';
+      }).join('');
+    }
+
+    /* ── C. Focus card ── */
+    var workCardsEl = document.getElementById('work-cards');
+    if (workCardsEl) {
+      workCardsEl.innerHTML = focusCard ? renderFocusCardHtml(focusCard) : '<div class="empty">カードなし</div>';
+      workCardsEl.addEventListener('click', function(event){
+        var t = event.target;
+        if (!t || !t.classList) return;
+        if (t.classList.contains('copy-inline')) copyText(t.getAttribute('data-copy')||'', t);
+        if (t.classList.contains('open-print-inline')){
+          var pb = document.getElementById('open-print-view');
+          if (pb && !pb.disabled) pb.click();
+        }
+      });
+    }
+
+    /* ── D. Queue ── */
+    (function(){
+      var queueEl = document.getElementById('wb-queue');
+      var queueRows = document.getElementById('wb-queue-rows');
+      if (!queueEl || !queueRows) return;
+      var realQueue = queueItems.filter(function(c){ return !c.isSample && !c.isIdle; });
+      if (!realQueue.length){ queueEl.hidden=true; return; }
+      queueEl.hidden = false;
+      queueRows.innerHTML = realQueue.map(renderQueueRowHtml).join('');
+    })();
+
+    /* ── Stop drawer visibility ── */
+    (function(){
+      var stopRules = consoleData.stop_rules || [];
+      var exItems   = consoleData.exceptions || [];
+      var hasBlocker = !!(apiSummary.mainline_blockers);
+      var drawer = document.getElementById('stop-drawer');
+      if (!drawer) return;
+      var hasContent = stopRules.length || exItems.length || hasBlocker;
+      if (!hasContent){
+        drawer.hidden = true;
+      } else {
+        drawer.hidden = false;
+        if (hasBlocker) drawer.open = true;
+        var summaryEl = document.getElementById('stop-summary');
+        if (summaryEl && hasBlocker) summaryEl.textContent = '⚠ 止める / 例外 ('+apiSummary.mainline_blockers+'件)';
+      }
+    })();
+
+    renderList('stop-rules', consoleData.stop_rules || []);
+
+    /* ── Exceptions ── */
+    (function(){
+      var exceptions     = document.getElementById('exceptions');
+      var exCtx          = document.getElementById('exceptions-context');
+      var exceptionItems = consoleData.exceptions || [];
+      if (exCtx){
+        if (exceptionItems.length && !apiSummary.mainline_blockers){
+          exCtx.innerHTML='<div class="exception-context">後段 '+esc(apiSummary.optional_blockers||exceptionItems.length)+'件</div>';
+        } else { exCtx.innerHTML=''; }
+      }
+      if (!exceptions) return;
+      if (!exceptionItems.length){ exceptions.innerHTML='<div class="empty">0件です。</div>'; return; }
+      exceptions.innerHTML = exceptionItems.map(function(item){
+        var detail = item.detail||'';
+        var isLong = detail.length > 84;
+        var previewHtml = isLong
+          ? '<div class="exception-preview">'+esc(detail.slice(0,84))+'…</div>'
+            +'<details class="exception-expand"><summary>▸ 続きを見る</summary>'
+            +'<div class="ex-full">'+esc(detail)+'</div></details>'
+          : '<div class="exception-detail">'+esc(detail)+'</div>';
+        return '<div class="exception-item '+(item.severity||'warning')+'">'
+          +'<div class="exception-label">'+esc(item.label||'')+'</div>'
+          +previewHtml
+          +'</div>';
+      }).join('');
+    })();
+
+    /* ── Print drawer ── */
+    set('print-note', printExports.note || '');
+    (function(){
+      var printCoverageEl = document.getElementById('print-coverage');
+      var coverageItems = ((consoleData.print_center||{}).coverage)||[];
+      if (printCoverageEl){
+        printCoverageEl.innerHTML = coverageItems.map(function(item){
+          return '<div class="coverage-card">'
+            +'<div class="coverage-label">'+esc(item.label||'')+'</div>'
+            +'<div class="coverage-value">'+esc(item.value||'')+'</div>'
+            +'</div>';
+        }).join('');
+      }
+    })();
+
+    var routeList = document.getElementById('route-list');
+    if (routeList){
+      routeList.innerHTML = routes.map(function(r){
+        return '<div class="compact-route">'
+          +'<div class="label">'+esc(r.label||'')+'</div>'
+          +'<div class="value">'+esc(r.value||'')+'</div>'
+          +'<div class="note">'+esc(r.note||'')+'</div>'
+          +'</div>';
+      }).join('');
+    }
+
+    var packetBox = document.getElementById('print-packets');
+    var detailPackets = livePackets.length ? livePackets : (samplePacket ? [samplePacket] : []);
+    if (packetBox){
+      if (!detailPackets.length){ packetBox.innerHTML='<div class="empty">まだありません。</div>'; }
+      else {
+        packetBox.innerHTML = detailPackets.map(function(packet){
+          var labelLink = realLabelHref(packet);
+          var recAddr   = [packet.recipient_zip, packet.recipient_address].filter(Boolean).join(' ');
+          var senderTxt = [packet.sender_name,packet.sender_address,packet.sender_phone].filter(Boolean).join(' / ');
+          var codeToCopy    = packetCode(packet);
+          var recipToCopy   = compactText([packet.recipient_name,recAddr,packet.recipient_phone],'\n');
+          var pickupValue   = packetPickup(packet)||'未取得';
+          var labelValue    = labelLink ? ((packet.label_status||'取得済み')+' / 開けます') : (packet.label_status||'未取得');
+          var recipientValue= compactText([packet.recipient_name,recAddr,packet.recipient_phone],'\n')||'未取得';
+          var coverageHtml  = (packet.coverage||[]).map(function(c){
+            return '<div class="coverage-pill '+(c.status||'missing')+'">'+esc(c.label||'')+' '+esc(c.value||'')+'</div>';
+          }).join('');
+          return '<div class="packet-card">'
+            +'<div class="packet-top"><div class="packet-title">'+esc(packet.shipment_id||'未設定')+'</div><div class="packet-chip">'+esc(packet.status||'')+'</div></div>'
+            +'<div class="packet-coverage">'+coverageHtml+'</div>'
+            +'<div class="packet-actions">'
+            +'<button class="mini-btn copy-code" type="button" data-copy="'+attr(codeToCopy)+'"'+(codeToCopy?'':' disabled')+'>コードをコピー</button>'
+            +'<button class="mini-btn copy-recipient" type="button" data-copy="'+attr(recipToCopy)+'"'+(recipToCopy?'':' disabled')+'>宛先をコピー</button>'
+            +(labelLink
+              ?'<a class="mini-btn" href="'+esc(labelLink)+'" target="_blank" rel="noreferrer noopener">ラベルを開く</a>'
+              :'<button class="mini-btn" type="button" disabled>ラベル未取得</button>')
+            +'</div>'
+            +'<div class="packet-primary-grid">'
+            +'<div class="packet-primary-item"><div class="label">見せるコード</div><div class="value">'+multilineHtml(codeToCopy||'未取得')+'</div></div>'
+            +'<div class="packet-primary-item"><div class="label">集荷日時</div><div class="value">'+multilineHtml(pickupValue)+'</div></div>'
+            +'<div class="packet-primary-item"><div class="label">宛先</div><div class="value">'+multilineHtml(recipientValue)+'</div></div>'
+            +'<div class="packet-primary-item"><div class="label">ラベル</div><div class="value">'+multilineHtml(labelValue)+'</div></div>'
+            +'</div>'
+            +'<details class="packet-secondary"><summary>▸ 詳細メタデータ</summary>'
+            +'<div class="packet-grid">'
+            +'<div class="packet-cell"><div class="label">注文ID</div><div class="value">'+esc(packet.order_id||'')+'</div></div>'
+            +'<div class="packet-cell"><div class="label">商品ID</div><div class="value">'+esc(packet.product_id||'')+'</div></div>'
+            +'<div class="packet-cell"><div class="label">商品名</div><div class="value">'+esc(packet.product_name||'')+'</div></div>'
+            +'<div class="packet-cell"><div class="label">レール</div><div class="value">'+esc(packet.lane||'')+'</div></div>'
+            +'<div class="packet-cell"><div class="label">印刷可否</div><div class="value">'+esc(packet.print_readiness||'')+'</div></div>'
+            +'<div class="packet-cell"><div class="label">配送サービス</div><div class="value">'+esc(packet.service_name||'')+'</div></div>'
+            +'<div class="packet-cell"><div class="label">送り状番号</div><div class="value">'+esc(packet.tracking_number||'')+'</div></div>'
+            +'<div class="packet-cell"><div class="label">受付番号</div><div class="value">'+esc(packet.reception_number||'')+'</div></div>'
+            +'<div class="packet-cell"><div class="label">引渡予定日</div><div class="value">'+esc(packet.pickup_date||'')+'</div></div>'
+            +'<div class="packet-cell"><div class="label">時間帯</div><div class="value">'+esc(packet.pickup_window||'')+'</div></div>'
+            +'<div class="packet-cell"><div class="label">提示方法</div><div class="value">'+esc(packet.display_method||'')+'</div></div>'
+            +'<div class="packet-cell"><div class="label">見せるコード</div><div class="value">'+esc(packet.printable_code||'')+'</div></div>'
+            +'<div class="packet-cell"><div class="label">宛先氏名</div><div class="value">'+esc(packet.recipient_name||'')+'</div></div>'
+            +'<div class="packet-cell"><div class="label">宛先住所</div><div class="value">'+esc(recAddr||'')+'</div></div>'
+            +'<div class="packet-cell"><div class="label">宛先電話番号</div><div class="value">'+esc(packet.recipient_phone||'')+'</div></div>'
+            +'<div class="packet-cell"><div class="label">ラベル</div><div class="value">'+esc(packet.label_status||'')+linkHtml(labelLink,'ラベルを開く')+'</div></div>'
+            +'<div class="packet-cell"><div class="label">発送元</div><div class="value">'+esc(senderTxt||'')+'</div></div>'
+            +'<div class="packet-cell"><div class="label">印刷メモ</div><div class="value">'+esc(packet.print_note||'')+'</div></div>'
+            +'</div></details>'
+            +((packet.missing_fields||[]).length?'<div class="work-missing">不足: '+esc(packet.missing_fields.join(' / '))+'</div>':'')
+            +'</div>';
+        }).join('');
+        packetBox.addEventListener('click', function(event){
+          var t=event.target; if (!t||!t.classList) return;
+          if (t.classList.contains('copy-code')||t.classList.contains('copy-recipient'))
+            copyText(t.getAttribute('data-copy')||'', t);
+        });
+      }
+    }
+
+    var batchRows = printExports.batch_export_rows || [];
+    renderTable('print-batches', batchRows);
+    var batchPanel = document.getElementById('print-batch-panel');
+    if (batchPanel) batchPanel.hidden = !batchRows.length;
+
+    /* ── Backend drawer ── */
+    renderList('daily-dd', ((board.daily_actions||{}).dd)||[]);
+
+    var supportPanels = document.getElementById('support-panels');
+    var supportItems  = consoleData.supporting_panels || [];
+    if (supportPanels){
+      supportPanels.innerHTML = supportItems.map(function(p){
+        return '<div class="simple-item"><strong>'+esc(p.label||'')+'</strong><br>'+(p.items||[]).map(esc).join('<br>')+'</div>';
+      }).join('');
+    }
+
+    var apiSummaryCards = document.getElementById('api-summary-cards');
+    if (apiSummaryCards){
+      apiSummaryCards.innerHTML = [
+        {label:'API状態',       value:apiSummary.badge||'未取得'},
+        {label:'未解決',        value:apiSummary.unresolved||0},
+        {label:'mainline blocker', value:apiSummary.mainline_blockers||0},
+        {label:'任意stopline', value:apiSummary.optional_blockers||0}
+      ].map(function(item){
+        return '<div class="kv-card"><div class="label">'+esc(item.label)+'</div><div class="value">'+esc(item.value)+'</div></div>';
+      }).join('');
+    }
+
+    var apiReadinessBox = document.getElementById('api-readiness');
+    if (apiReadinessBox){
+      var apiItems = apiReadiness.items || [];
+      apiReadinessBox.innerHTML = apiItems.map(function(item){
+        return '<div class="simple-item"><strong>'+esc(item.label||'')+'</strong><br>'
+          +esc((item.status||'')+' / '+(item.progress||0)+'/10')+'<br>'
+          +esc(item.summary||'')+'<br>'+esc(item.detail||'')+'</div>';
+      }).join('');
+    }
+
+    renderList('next-actions', board.next_actions || []);
+    renderTable('queue-orders', ((board.queue_preview||{}).orders_open)||[]);
+    renderTable('queue-pickup', ((board.queue_preview||{}).pickup_waiting)||[]);
+    renderTable('backend-source-tabs', backendContract.source_tabs || []);
+
+    var backendPrintContract = document.getElementById('backend-print-contract');
+    if (backendPrintContract){
+      var bpi = []; var pc = backendContract.print_export_contract || {};
+      bpi.push('version: '+esc(backendContract.version||''));
+      bpi.push('mode: '+esc(pc.mode||''));
+      bpi.push('packet fields: '+esc((pc.packet_fields||[]).join(' / ')));
+      bpi.push('shipment fields: '+esc((pc.shipment_fields||[]).join(' / ')));
+      bpi.push('batch fields: '+esc((pc.batch_fields||[]).join(' / ')));
+      bpi.push('coverage fields: '+esc((pc.coverage_fields||[]).join(' / ')));
+      var oc = backendContract.capture_overlay_contract || {};
+      if (oc.policy) bpi.push('overlay: '+esc(oc.policy));
+      (pc.missing_upstream||[]).forEach(function(i){ bpi.push('upstream不足: '+esc(i)); });
+      backendPrintContract.innerHTML = bpi.map(function(i){ return '<div class="simple-item">'+i+'</div>'; }).join('');
+    }
+
+    var syncHealth = board.sync_health || {};
+    var syncHealthSummary = document.getElementById('sync-health-summary');
+    var syncHealthFetches = document.getElementById('sync-health-fetches');
+    if (syncHealthSummary){
+      syncHealthSummary.innerHTML = [
+        '状態: '+esc(syncHealth.badge||'未取得'),
+        '見立て: '+esc(syncHealth.headline||'未取得'),
+        '補足: '+esc(syncHealth.detail||'未取得'),
+        '確認時刻: '+esc(syncHealth.checked_at||'未取得'),
+        'last-good: '+esc(syncHealth.last_success_generated_at||'未取得'),
+        'next: '+esc(syncHealth.next_action||'未取得')
+      ].map(function(i){ return '<div class="simple-item">'+i+'</div>'; }).join('');
+    }
+    if (syncHealthFetches){
+      var sf = []; var pss = syncHealth.post_sale_sync || {};
+      sf.push('post-sale: '+esc(pss.status||'未取得')+' / '+esc(pss.completed_at||'未取得'));
+      sf.push('post-sale next: '+esc(pss.next_action||'未取得'));
+      (syncHealth.source_fetches||[]).forEach(function(item){
+        sf.push((item.label||'source')+': '+(item.status||'unknown')
+          +' / attempts='+(item.attempts||0)+' / rows='+(item.rows||0)+' / '+(item.elapsed_ms||0)+'ms'
+          +(item.error?' / '+item.error:''));
+      });
+      syncHealthFetches.innerHTML = sf.map(function(i){ return '<div class="simple-item">'+esc(i)+'</div>'; }).join('');
+    }
+
+    /* ── Export buttons ── */
+    var jsonPayloadText  = JSON.stringify(printExports.payload||{}, null, 2);
+    var shipmentCsvText  = rowsToCsvText(printExports.shipment_export_rows||[]);
+    var batchCsvText     = rowsToCsvText(printExports.batch_export_rows||[]);
+    var filenames        = printExports.filenames || {};
+    var hasJson          = !!jsonPayloadText && jsonPayloadText !== '{}';
+    var hasShipmentCsv   = !!(printExports.shipment_export_rows||[]).length;
+    var hasBatchCsv      = !!(printExports.batch_export_rows||[]).length;
+    var hasPrintTarget   = !!detailPackets.length || !!(printExports.batch_export_rows||[]).length;
+
+    function printableHtml(){
+      var missingItems = ((consoleData.print_center||{}).missing_upstream)||[];
+      var missingHtml  = missingItems.length?'<ul>'+missingItems.map(function(i){ return '<li>'+esc(i)+'</li>'; }).join('')+'</ul>':'<p>upstream不足はありません。</p>';
+      var batchRows2   = printExports.batch_export_rows || [];
+      var batchHtml    = batchRows2.length?(function(){
+        var hd=Object.keys(batchRows2[0]);
+        return '<table><thead><tr>'+hd.map(function(h){ return '<th>'+esc(h)+'</th>'; }).join('')+'</tr></thead><tbody>'
+          +batchRows2.map(function(r){ return '<tr>'+hd.map(function(h){ return '<td>'+esc(r[h])+'</td>'; }).join('')+'</tr>'; }).join('')
+          +'</tbody></table>';
+      })():'<p>集荷バッチはまだありません。</p>';
+      return '<!doctype html><html lang="ja"><head><meta charset="utf-8"><title>shipping print packet</title><style>'
+        +'body{font-family:"Noto Sans JP",sans-serif;padding:24px;color:#111}h1{font-size:24px;margin:0 0 10px}h2{font-size:16px;margin:0 0 10px}.packet{border:1px solid #ddd;border-radius:12px;padding:14px;margin-bottom:16px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.grid div{border:1px solid #ddd;border-radius:10px;padding:10px}strong{font-size:11px;text-transform:uppercase;letter-spacing:.04em}p,li,td,th{font-size:12px;line-height:1.6}table{width:100%;border-collapse:collapse}th,td{border:1px solid #ddd;padding:8px;text-align:left;vertical-align:top}@media print{body{padding:0}.packet{break-inside:avoid}}'
+        +'</style></head><body>'
+        +'<h1>発送印刷パケット</h1>'
+        +'<p>'+esc((consoleData.print_center||{}).detail||'')+'</p>'
+        +'<p>'+esc(printExports.note||'')+'</p>'
+        +'<h2>不足 source</h2>'+missingHtml
+        +(detailPackets.length ? detailPackets.map(function(packet){
+          var ll=realLabelHref(packet);
+          var ra=[packet.recipient_zip,packet.recipient_address].filter(Boolean).join(' ');
+          var st=[packet.sender_name,packet.sender_address,packet.sender_phone].filter(Boolean).join(' / ');
+          return '<section class="packet"><h2>'+esc(packet.shipment_id||'')+' <span>'+esc(packet.status||'')+'</span></h2>'
+            +'<div class="grid">'
+            +'<div><strong>注文ID</strong><br>'+esc(packet.order_id||'')+'</div>'
+            +'<div><strong>商品ID</strong><br>'+esc(packet.product_id||'')+'</div>'
+            +'<div><strong>商品名</strong><br>'+esc(packet.product_name||'')+'</div>'
+            +'<div><strong>レール</strong><br>'+esc(packet.lane||'')+'</div>'
+            +'<div><strong>印刷可否</strong><br>'+esc(packet.print_readiness||'')+'</div>'
+            +'<div><strong>配送サービス</strong><br>'+esc(packet.service_name||'')+'</div>'
+            +'<div><strong>送り状番号</strong><br>'+esc(packet.tracking_number||'')+'</div>'
+            +'<div><strong>受付番号</strong><br>'+esc(packet.reception_number||'')+'</div>'
+            +'<div><strong>引渡予定日</strong><br>'+esc(packet.pickup_date||'')+'</div>'
+            +'<div><strong>時間帯</strong><br>'+esc(packet.pickup_window||'')+'</div>'
+            +'<div><strong>提示方法</strong><br>'+esc(packet.display_method||'')+'</div>'
+            +'<div><strong>見せるコード</strong><br>'+esc(packet.printable_code||'')+'</div>'
+            +'<div><strong>宛先氏名</strong><br>'+esc(packet.recipient_name||'')+'</div>'
+            +'<div><strong>宛先住所</strong><br>'+esc(ra||'')+'</div>'
+            +'<div><strong>宛先電話番号</strong><br>'+esc(packet.recipient_phone||'')+'</div>'
+            +'<div><strong>ラベル</strong><br>'+esc(packet.label_status||'')+(ll?'<br>'+esc(ll):'')+'</div>'
+            +'<div><strong>発送元</strong><br>'+esc(st||'')+'</div>'
+            +'<div><strong>印刷メモ</strong><br>'+esc(packet.print_note||'')+'</div>'
+            +'</div>'
+            +'<p>不足: '+esc((packet.missing_fields||[]).join(' / ')||'なし')+'</p>'
+            +'<p>メモ: '+esc(packet.note||'')+'</p></section>';
+        }).join('') : '<p>出力対象はまだありません。</p>')
+        +'<h2>集荷バッチ</h2>'+batchHtml
+        +'</body></html>';
+    }
+
+    var jsonBtn    = document.getElementById('download-print-json');
+    var shipBtn    = document.getElementById('download-print-csv');
+    var batchBtn   = document.getElementById('download-batch-csv');
+    var printBtn   = document.getElementById('open-print-view');
+    var copyBtn    = document.getElementById('copy-print-json');
+
+    if (jsonBtn){ jsonBtn.disabled=!hasJson; jsonBtn.addEventListener('click',function(){ downloadText(filenames.json||'shipping_print_packets.json',jsonPayloadText,'application/json;charset=utf-8'); }); }
+    if (shipBtn){ shipBtn.disabled=!hasShipmentCsv; shipBtn.addEventListener('click',function(){ downloadText(filenames.shipment_csv||'shipping_print_packets.csv',shipmentCsvText,'text/csv;charset=utf-8'); }); }
+    if (batchBtn){ batchBtn.disabled=!hasBatchCsv; batchBtn.addEventListener('click',function(){ downloadText(filenames.batch_csv||'shipping_pickup_batches.csv',batchCsvText,'text/csv;charset=utf-8'); }); }
+    if (copyBtn){ copyBtn.disabled=!hasJson; copyBtn.addEventListener('click',function(){ copyText(jsonPayloadText,copyBtn); }); }
+    if (printBtn){
+      printBtn.disabled=!hasPrintTarget;
+      printBtn.addEventListener('click',function(){
+        var w=window.open('','_blank','noopener,noreferrer');
+        if (!w) return;
+        w.document.open(); w.document.write(printableHtml()); w.document.close();
+        w.focus(); setTimeout(function(){ w.print(); },250);
+      });
+    }
+  })();
+  </script>
+</body>
+</html>

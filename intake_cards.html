@@ -1,0 +1,1097 @@
+<!doctype html>
+<html lang="ja" data-page="intake">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>0円仕入れ物販事業 | 写真</title>
+  <link rel="stylesheet" href="./common.css">
+  <style>
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .hq-wrap { max-width: 1320px; }
+    .hero {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 18px;
+      margin-bottom: 14px;
+      box-shadow: 0 1px 2px rgba(15,23,42,.04);
+    }
+    .hero-title {
+      font-size: 28px;
+      font-weight: 900;
+      line-height: 1.15;
+      letter-spacing: -.02em;
+    }
+    .hero-note {
+      margin-top: 10px;
+      font-size: 14px;
+      color: var(--text-2);
+      line-height: 1.7;
+    }
+    .hero-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid #94a3b8;
+      background: linear-gradient(180deg, #ffffff 0%, #eef3f8 100%);
+      box-shadow: 0 2px 8px rgba(15,23,42,.06);
+      font-size: 12px;
+      font-weight: 800;
+      color: #0f172a;
+    }
+    .step-trail {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 10px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .step-dot {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text-3);
+    }
+    .step-dot.done {
+      border-color: rgba(21,128,61,.22);
+      background: rgba(21,128,61,.08);
+      color: var(--green);
+    }
+    .step-dot.current {
+      border-color: rgba(37,99,235,.24);
+      background: rgba(37,99,235,.08);
+      color: var(--accent);
+    }
+    .step-sep {
+      color: var(--text-3);
+      font-size: 10px;
+    }
+    .filter-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .filter-card {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      text-align: left;
+      padding: 10px 13px;
+      border-radius: 999px;
+      border: 1px solid #94a3b8;
+      background: linear-gradient(180deg, #ffffff 0%, #edf2f7 100%);
+      box-shadow: 0 2px 8px rgba(15,23,42,.06);
+      color: #0f172a;
+      cursor: pointer;
+      transition: border-color .16s, background .16s, box-shadow .16s, transform .16s;
+    }
+    .filter-card:hover {
+      border-color: #2563eb;
+      box-shadow: 0 8px 18px rgba(37,99,235,.16);
+      transform: translateY(-1px);
+    }
+    .filter-card:focus-visible {
+      outline: 2px solid #2563eb;
+      outline-offset: 2px;
+    }
+    .filter-card.active {
+      border-color: #1d4ed8;
+      background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+      box-shadow: 0 10px 24px rgba(37,99,235,.24);
+      color: #ffffff;
+    }
+    .filter-count {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 42px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid #94a3b8;
+      background: #e2e8f0;
+      font-size: 11px;
+      line-height: 1;
+      font-weight: 900;
+      color: #0f172a;
+    }
+    .filter-label {
+      margin-top: 0;
+      font-size: 12px;
+      font-weight: 900;
+      color: inherit;
+    }
+    .filter-card.active .filter-count {
+      border-color: rgba(255,255,255,.26);
+      background: rgba(255,255,255,.18);
+      color: #ffffff;
+    }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 12px;
+      position: sticky;
+      top: 53px;
+      z-index: 40;
+      background: var(--bg);
+      padding: 8px 0;
+    }
+    .search {
+      flex: 1;
+      min-width: 240px;
+      padding: 11px 14px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      font: 14px/1.4 inherit;
+    }
+    .sort-select,
+    .reset-btn {
+      padding: 11px 12px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text-2);
+      font: 13px/1.4 inherit;
+    }
+    .sort-select { cursor: pointer; }
+    .reset-btn {
+      cursor: pointer;
+      font-weight: 800;
+    }
+    .search:focus,
+    .sort-select:focus,
+    .reset-btn:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+    .count-pill {
+      padding: 7px 12px;
+      border-radius: 999px;
+      border: 1px solid #94a3b8;
+      background: linear-gradient(180deg, #ffffff 0%, #edf2f7 100%);
+      box-shadow: 0 2px 8px rgba(15,23,42,.06);
+      font-size: 12px;
+      font-weight: 800;
+      color: #0f172a;
+      white-space: nowrap;
+    }
+    .item-list {
+      display: grid;
+      gap: 12px;
+    }
+    .item-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: border-color .16s;
+      box-shadow: 0 1px 2px rgba(15,23,42,.04);
+    }
+    .item-card:hover {
+      border-color: var(--accent);
+    }
+    .item-card.deep-linked {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px rgba(37,99,235,.16);
+    }
+    .item-shell {
+      padding: 16px;
+    }
+    .item-top {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 12px;
+      align-items: start;
+    }
+    .item-id {
+      margin-top: 6px;
+      color: var(--text-3);
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 1.6;
+    }
+    .item-name {
+      margin-top: 6px;
+      font-size: 16px;
+      font-weight: 900;
+      line-height: 1.45;
+      letter-spacing: -.01em;
+    }
+    .item-sub {
+      margin-top: 5px;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-3);
+    }
+    .item-sequence-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .sequence-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid #94a3b8;
+      background: linear-gradient(180deg, #ffffff 0%, #edf2f7 100%);
+      font-size: 11px;
+      font-weight: 900;
+      color: #0f172a;
+    }
+    .sequence-chip.primary {
+      border-color: #1d4ed8;
+      background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+      color: #1d4ed8;
+    }
+    .status-stack {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 8px;
+    }
+    .item-action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--accent);
+      background: var(--accent);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 800;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .item-action:hover {
+      text-decoration: none;
+      opacity: .92;
+    }
+    .item-route {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    .item-body {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 14px;
+    }
+    .media-column {
+      display: grid;
+      gap: 12px;
+    }
+    .media-section {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 12px;
+      background: var(--surface-2);
+    }
+    .official-section {
+      border-color: rgba(37,99,235,.28);
+      background: rgba(37,99,235,.05);
+    }
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .section-kicker {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .03em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .section-title {
+      margin-top: 4px;
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--text);
+    }
+    .section-note {
+      font-size: 11px;
+      color: var(--text-3);
+      line-height: 1.5;
+      text-align: right;
+    }
+    .official-gallery {
+      display: grid;
+      gap: 10px;
+    }
+    .official-hero {
+      position: relative;
+      overflow: hidden;
+      border-radius: 14px;
+      border: 1px solid rgba(37,99,235,.18);
+      background: var(--surface-3);
+      min-height: 320px;
+    }
+    .official-hero img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      display: block;
+      background: var(--surface-3);
+    }
+    .source-pill,
+    .media-label {
+      position: absolute;
+      z-index: 1;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      box-shadow: 0 10px 22px rgba(15,23,42,.28);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+    .source-pill {
+      top: 8px;
+      right: 8px;
+      background: rgba(15,23,42,.88);
+      color: #ffffff;
+      border: 1px solid rgba(255,255,255,.18);
+    }
+    .media-label {
+      left: 8px;
+      bottom: 8px;
+      background: rgba(15,23,42,.92);
+      color: #ffffff;
+      border: 1px solid rgba(255,255,255,.2);
+    }
+    .official-thumb-grid,
+    .reference-grid,
+    .actual-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 8px;
+    }
+    .official-thumb,
+    .reference-card,
+    .actual-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      min-height: 140px;
+      background: var(--surface-3);
+      border: 1px solid var(--border);
+    }
+    .official-thumb {
+      border-color: rgba(37,99,235,.18);
+    }
+    .official-thumb img,
+    .reference-card img,
+    .actual-card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      display: block;
+      background: var(--surface-3);
+    }
+    .reference-wrap {
+      display: grid;
+      gap: 8px;
+      margin-top: 2px;
+    }
+    .reference-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-2);
+    }
+    .reference-title {
+      color: var(--text);
+      font-weight: 800;
+    }
+    .actual-missing,
+    .media-missing {
+      display: grid;
+      place-items: center;
+      min-height: 140px;
+      padding: 12px;
+      border-radius: 12px;
+      border: 1px dashed var(--border);
+      background: var(--surface-3);
+      font-size: 12px;
+      color: var(--text-2);
+      text-align: center;
+      line-height: 1.7;
+    }
+    .meta-panel {
+      display: grid;
+      gap: 10px;
+      align-content: start;
+    }
+    .decision-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .decision-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface-2);
+      padding: 12px;
+    }
+    .decision-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .03em;
+      text-transform: uppercase;
+      color: var(--text-3);
+    }
+    .decision-value {
+      margin-top: 6px;
+      font-size: 14px;
+      font-weight: 800;
+      line-height: 1.6;
+      color: var(--text);
+    }
+    .callout {
+      padding: 12px 14px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(37,99,235,.22);
+      background: var(--blue-bg);
+      color: var(--blue);
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.7;
+    }
+    .callout.red {
+      border-color: rgba(185,28,28,.24);
+      background: var(--red-bg);
+      color: var(--red);
+    }
+    .callout.orange {
+      border-color: rgba(180,83,9,.24);
+      background: var(--orange-bg);
+      color: var(--orange);
+    }
+    .fact-grid {
+      display: grid;
+      gap: 8px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface-2);
+      padding: 12px;
+    }
+    .fact-row {
+      display: grid;
+      grid-template-columns: 84px 1fr;
+      gap: 8px;
+      font-size: 12px;
+      line-height: 1.7;
+      color: var(--text-2);
+    }
+    .fact-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .03em;
+      text-transform: uppercase;
+      color: var(--text-3);
+    }
+    .source-row,
+    .link-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .link-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--surface-2);
+      color: var(--text-2);
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .link-chip:hover {
+      border-color: var(--accent);
+      color: var(--text);
+      text-decoration: none;
+    }
+    details.item-detail {
+      margin-top: 2px;
+    }
+    details.item-detail > summary {
+      list-style: none;
+      cursor: pointer;
+      color: var(--text-2);
+      font-size: 12px;
+      font-weight: 800;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 0;
+    }
+    details.item-detail > summary::-webkit-details-marker { display: none; }
+    .detail-chevron {
+      color: var(--accent);
+      transition: transform .15s;
+      display: inline-block;
+    }
+    details[open] .detail-chevron {
+      transform: rotate(90deg);
+    }
+    .detail-box {
+      margin-top: 8px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface-2);
+      padding: 12px;
+      display: grid;
+      gap: 8px;
+    }
+    .detail-line {
+      font-size: 12px;
+      line-height: 1.7;
+      color: var(--text-2);
+    }
+    .empty {
+      text-align: center;
+      padding: 60px;
+      color: var(--text-3);
+      font-size: 14px;
+    }
+    @media (max-width: 920px) {
+      .item-body {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (max-width: 640px) {
+      .toolbar { top: 49px; }
+      .item-top {
+        grid-template-columns: 1fr;
+      }
+      .status-stack {
+        justify-content: flex-start;
+      }
+      .decision-grid,
+      .official-thumb-grid,
+      .reference-grid,
+      .actual-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .official-hero img {
+        height: 240px;
+      }
+      .fact-row {
+        grid-template-columns: 1fr;
+        gap: 4px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hq-header">
+    <h1><span class="dot">●</span> 写真 · AI識別</h1>
+  </header>
+
+  <div class="hq-wrap">
+    <section class="hero">
+      <div id="hero-title" class="hero-title">番号ごとに確認する</div>
+      <div class="hero-note">今ある写真だけでまず判断します。バーコード / JAN / SKU、ブランド名、品番、台紙の裏、刻印やサイズ表記が見えると特定精度が上がります。</div>
+      <div class="hero-pills" id="hero-pills"></div>
+    </section>
+
+    <div class="filter-grid" id="filters"></div>
+
+    <div class="toolbar">
+      <input id="search" class="search" type="text" placeholder="番号・商品名で検索">
+      <select id="sort-select" class="sort-select">
+        <option value="id">番号順</option>
+        <option value="updated">更新日順</option>
+      </select>
+      <span id="count-pill" class="count-pill">- 件</span>
+    </div>
+
+    <div class="item-list" id="item-list"></div>
+    <div class="empty" id="empty" style="display:none">該当する商品がありません</div>
+  </div>
+
+  <script>
+    document.write('<script src="./intake_snapshot.js?fresh='
+      + encodeURIComponent(new URLSearchParams(window.location.search).get('fresh') || String(Date.now()))
+      + '"><\/script>');
+  </script>
+  <script src="./role_packets_snapshot.js"></script>
+  <script src="./common.js"></script>
+  <script>
+  (function(){
+    var snapshot = window.ZERO_COST_INTAKE || {};
+    var rolePackets = window.ZERO_COST_ROLE_PACKETS || {};
+    var requestedBoxId = '';
+    var requestedMid = '';
+    try {
+      var params = new URLSearchParams(window.location.search);
+      requestedBoxId = params.get('box') || '';
+      requestedMid = params.get('mid') || '';
+    } catch (_) {}
+    if (!requestedBoxId && requestedMid && requestedMid.indexOf('-ITEM-') !== -1) {
+      requestedBoxId = requestedMid.split('-ITEM-')[0];
+    }
+
+    function snapshotBoxList(data) {
+      var boxes = (Array.isArray(data.boxes) && data.boxes.length) ? data.boxes.slice() : [];
+      if (!boxes.length && data.box_id) boxes = [data];
+      return boxes;
+    }
+
+    var boxSnapshots = snapshotBoxList(snapshot);
+    var currentBoxSnapshot = null;
+    if (requestedBoxId) {
+      currentBoxSnapshot = boxSnapshots.filter(function(box) {
+        return String(box && box.box_id || '') === requestedBoxId;
+      })[0] || null;
+    }
+    if (!currentBoxSnapshot) {
+      currentBoxSnapshot = boxSnapshots.filter(function(box) {
+        return String(box && box.box_id || '') === String(snapshot.box_id || '');
+      })[0] || boxSnapshots[0] || null;
+    }
+    var hasSnapshotForRequest = Boolean(currentBoxSnapshot && (!requestedBoxId || requestedBoxId === String(currentBoxSnapshot.box_id || '')));
+    var viewSnapshot = currentBoxSnapshot || { box_id: requestedBoxId, box_label: requestedBoxId, items: [] };
+    var items = hasSnapshotForRequest ? (viewSnapshot.items || []) : [];
+    var search = document.getElementById('search');
+    var sortSelect = document.getElementById('sort-select');
+    var countPill = document.getElementById('count-pill');
+    var filtersEl = document.getElementById('filters');
+    var listEl = document.getElementById('item-list');
+    var emptyEl = document.getElementById('empty');
+    var heroPills = document.getElementById('hero-pills');
+    var heroTitle = document.getElementById('hero-title');
+    var activeFilter = 'all';
+    var sortMode = 'id';
+    var focusedRequestedMid = false;
+    var inquiryTargets = {};
+
+    (rolePackets.packets || []).forEach(function(packet) {
+      if (packet.role_name === '問い合わせ対応担当') {
+        (packet.target_ids || []).forEach(function(id) {
+          inquiryTargets[String(id || '').toUpperCase()] = true;
+        });
+      }
+    });
+
+    function escapeHtml(value) {
+      return String(value || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    function parseDate(value) {
+      if (!value) return null;
+      var normalized = String(value).replace(/ JST$/, '').replace(/ UTC$/, '').replace(' ', 'T');
+      var parsed = new Date(normalized);
+      return isNaN(parsed.getTime()) ? null : parsed;
+    }
+
+    function formatDate(value) {
+      var parsed = parseDate(value);
+      if (!parsed) return String(value || '');
+      return (parsed.getMonth() + 1) + '/' + parsed.getDate();
+    }
+
+    function formatPrice(value) {
+      if (!value && value !== 0) return '未設定';
+      var num = Number(value);
+      return isFinite(num) && !isNaN(num) ? '¥' + num.toLocaleString() : String(value);
+    }
+
+    function padSequence(value) {
+      var parsed = Number(value);
+      if (!isFinite(parsed) || isNaN(parsed)) return '----';
+      return String(Math.max(0, parsed)).padStart(4, '0');
+    }
+
+    function normalizeBoxLane(value) {
+      return String(value || '').toLowerCase() === 'alphabet' ? 'alphabet' : 'numeric';
+    }
+
+    function inferBoxLane(boxId, rawLane) {
+      if (/^BOX-[A-Z]+$/i.test(String(boxId || '').trim())) return 'alphabet';
+      if (/^BOX-\d+$/i.test(String(boxId || '').trim())) return 'numeric';
+      return normalizeBoxLane(rawLane);
+    }
+
+    function laneLabel(lane) {
+      return normalizeBoxLane(lane) === 'alphabet' ? '英字ロット' : '数字ロット';
+    }
+
+    function boxCodeFromId(boxId) {
+      var match = String(boxId || '').trim().match(/^BOX-([A-Z]+|\d+)$/i);
+      return match ? match[1].toUpperCase() : String(boxId || '').trim().toUpperCase();
+    }
+
+    function boxDisplayLabel(boxId, rawLabel, rawLane, rawCode) {
+      var lane = normalizeBoxLane(rawLane || inferBoxLane(boxId));
+      var code = String(rawCode || boxCodeFromId(boxId) || '').trim().toUpperCase();
+      var fallback = (lane === 'alphabet' ? '英字箱 ' : '数字箱 ') + code;
+      var label = String(rawLabel || '').trim();
+      if (!label || label === boxId) return fallback;
+      if (lane === 'numeric' && /^box\s*[A-Z]+$/i.test(label)) return fallback;
+      if (lane === 'alphabet' && /^box\s*\d+$/i.test(label)) return fallback;
+      return label;
+    }
+
+    function basename(path) {
+      var parts = String(path || '').split('/').filter(Boolean);
+      return parts.length ? parts[parts.length - 1] : '';
+    }
+
+    function shorten(value, max) {
+      var text = String(value || '').trim();
+      if (!text) return '';
+      return text.length > max ? text.slice(0, max - 1) + '…' : text;
+    }
+
+    function productName(item) {
+      return item.product_name || item.display_name || (item.commerce && item.commerce.product_name) || (item.resolved && item.resolved.product_name) || '未特定';
+    }
+
+    function routePlan(item) {
+      return item.route_plan || {};
+    }
+
+    function mediaSets(item) {
+      var images = item.comparison_images || item.reference_images || [];
+      return {
+        official: images.filter(function(img) { return img && img.url && img.source !== 'mercari_csv'; }),
+        listing: images.filter(function(img) { return img && img.url && img.source === 'mercari_csv'; })
+      };
+    }
+
+    function statusInfo(item) {
+      var mid = String(item.management_id || '').toUpperCase();
+      var publishState = (item.publish_state || (item.commerce && item.commerce.publish_state) || '').trim();
+      var identState = item.identification && item.identification.state || '';
+      var hqRes = item.qwen_hq_resolution || '';
+      var resolvedStatus = item.resolved && item.resolved.resolution_status || '';
+      if (inquiryTargets[mid]) return { label: '問い合わせ', cls: 'b-red', priority: 0 };
+      if (hqRes === 'blocked') return { label: 'HQ差し止め', cls: 'b-red', priority: 1 };
+      if (hqRes === 'needs_split' || identState === 'split_required') return { label: '要再束ね', cls: 'b-orange', priority: 2 };
+      if (publishState === 'カテゴリ審査待ち') return { label: '審査待ち', cls: 'b-yellow', priority: 3 };
+      if (publishState === '一時取り下げ') return { label: '一時取り下げ', cls: 'b-orange', priority: 4 };
+      if (publishState === 'API公開済み') return { label: '公開済み', cls: 'b-green', priority: 6 };
+      if (resolvedStatus === 'confirmed' || resolvedStatus === 'provisional' || resolvedStatus === 'accepted_exception') return { label: '下書き候補', cls: 'b-blue', priority: 4 };
+      return { label: '未特定', cls: 'b-gray', priority: 5 };
+    }
+
+    var FILTER_META = {
+      all: { label: '全部' },
+      unresolved: { label: '未特定' },
+      ready: { label: '出品へ' },
+      live: { label: '公開済み' }
+    };
+
+    function filterTests() {
+      return {
+        all: function() { return true; },
+        unresolved: function(item) {
+          var resolvedStatus = item.resolved && item.resolved.resolution_status || '';
+          return !resolvedStatus && !item.verified_exact_match;
+        },
+        ready: function(item) {
+          var resolvedStatus = item.resolved && item.resolved.resolution_status || '';
+          return Boolean(item.verified_exact_match || resolvedStatus === 'confirmed' || resolvedStatus === 'provisional' || resolvedStatus === 'accepted_exception');
+        },
+        live: function(item) { return (item.publish_state || (item.commerce && item.commerce.publish_state) || '').trim() === 'API公開済み'; },
+      };
+    }
+
+    function buildCounts() {
+      var tests = filterTests();
+      var counts = {};
+      Object.keys(tests).forEach(function(key) {
+        counts[key] = items.filter(tests[key]).length;
+      });
+      return counts;
+    }
+
+    var counts = buildCounts();
+
+    function renderHero() {
+      var officialReady = items.filter(function(item) { return mediaSets(item).official.length > 0; }).length;
+      var readyCount = items.filter(filterTests().ready).length;
+      var boxId = viewSnapshot.box_id || requestedBoxId || '箱';
+      var boxLane = hasSnapshotForRequest ? normalizeBoxLane(viewSnapshot.box_lane || inferBoxLane(boxId)) : inferBoxLane(boxId);
+      var boxCode = hasSnapshotForRequest ? (viewSnapshot.box_code || boxCodeFromId(boxId)) : boxCodeFromId(boxId);
+      var boxLabel = boxDisplayLabel(boxId, hasSnapshotForRequest ? viewSnapshot.box_label : '', boxLane, boxCode);
+      if (!hasSnapshotForRequest) {
+        heroTitle.textContent = boxLabel + ' は、まだ写真がありません';
+      } else {
+        heroTitle.textContent = boxLabel + ' / ' + items.length + '件';
+      }
+      heroPills.innerHTML = [
+        '<span class="hero-pill">総数 ' + items.length + '件</span>',
+        '<span class="hero-pill">AI画像 ' + officialReady + '件</span>',
+        '<span class="hero-pill">出品へ ' + readyCount + '件</span>'
+      ].join('');
+      emptyEl.textContent = hasSnapshotForRequest ? '該当する商品がありません' : 'この箱はまだ空です';
+    }
+
+    function renderFilters() {
+      filtersEl.innerHTML = Object.keys(FILTER_META).map(function(key) {
+        var meta = FILTER_META[key];
+        return '<button type="button" class="filter-card' + (activeFilter === key ? ' active' : '') + '" data-filter="' + key + '">'
+          + '<div class="filter-label">' + escapeHtml(meta.label) + '</div>'
+          + '<div class="filter-count">' + (counts[key] || 0) + '件</div>'
+          + '</button>';
+      }).join('');
+    }
+
+    function sortItems(rows) {
+      var copy = rows.slice();
+      if (sortMode === 'id') {
+        copy.sort(function(a, b) {
+          return String(a.management_id || '').localeCompare(String(b.management_id || ''));
+        });
+      } else if (sortMode === 'updated') {
+        copy.sort(function(a, b) {
+          var left = parseDate((a.commerce && a.commerce.updated_at) || routePlan(a)['更新時刻'] || '');
+          var right = parseDate((b.commerce && b.commerce.updated_at) || routePlan(b)['更新時刻'] || '');
+          return (right ? right.getTime() : 0) - (left ? left.getTime() : 0);
+        });
+      }
+      return copy;
+    }
+
+    function actualPhotosHtml(item) {
+      return (item.slots || []).map(function(slot) {
+        if (slot.status === 'present' && slot.resident_url) {
+          return '<div class="actual-card"><img src="' + escapeHtml(slot.resident_url) + '" alt="' + escapeHtml(slot.slot || '') + '" loading="lazy"><span class="media-label">' + escapeHtml(slot.slot || '') + '</span></div>';
+        }
+        return '<div class="actual-missing">' + escapeHtml(slot.slot || 'slot') + ' がありません</div>';
+      }).join('');
+    }
+
+    function officialSourceText(img) {
+      var source = String(img && img.source || '').trim();
+      if (!source) return 'web';
+      if (source === 'mercari_csv') return '既存出品画像';
+      return source;
+    }
+
+    function supplementalPageUrl(item) {
+      return (item.official && item.official.supplemental_url)
+        || (item.resolved && item.resolved.supplemental_url)
+        || '';
+    }
+
+    function officialHeroHtml(img) {
+      if (!img || !img.url) {
+        return '<div class="media-missing">公式画像がまだありません</div>';
+      }
+      return '<div class="official-hero">'
+        + '<img src="' + escapeHtml(img.url) + '" alt="' + escapeHtml(img.label || '公式画像') + '" loading="lazy">'
+        + '<span class="media-label">' + escapeHtml(img.label || '公式画像') + '</span>'
+        + '</div>';
+    }
+
+    function officialThumbHtml(img) {
+      return '<div class="official-thumb">'
+        + '<img src="' + escapeHtml(img.url) + '" alt="' + escapeHtml(img.label || '公式画像') + '" loading="lazy">'
+        + '<span class="media-label">' + escapeHtml(img.label || '公式画像') + '</span>'
+        + '</div>';
+    }
+
+    function listingReferenceHtml(images) {
+      if (!images.length) return '';
+      return '<div class="reference-wrap">'
+        + '<div class="reference-head"><span class="reference-title">既存の出品画像</span><span>比較用</span></div>'
+        + '<div class="reference-grid">' + images.map(function(img) {
+            return '<div class="reference-card">'
+              + '<img src="' + escapeHtml(img.url) + '" alt="' + escapeHtml(img.label || '出品画像') + '" loading="lazy">'
+              + '<span class="media-label">' + escapeHtml(img.label || '出品画像') + '</span>'
+              + '</div>';
+          }).join('') + '</div>'
+        + '</div>';
+    }
+
+    function officialGalleryHtml(item) {
+      var media = mediaSets(item);
+      var official = media.official;
+      var hero = official[0];
+      var thumbs = official.slice(1);
+      var pageUrl = (item.official && item.official.official_page_url) || (item.resolved && item.resolved.official_page_url) || (hero && hero.page_url) || '';
+      var extraPageUrl = supplementalPageUrl(item);
+      var parts = [];
+      parts.push('<div class="official-gallery">');
+      parts.push(officialHeroHtml(hero));
+      if (thumbs.length) {
+        parts.push('<div class="official-thumb-grid">' + thumbs.map(officialThumbHtml).join('') + '</div>');
+      }
+      parts.push('</div>');
+      if (!official.length) {
+        parts.push('');
+      } else {
+        parts.push('<div class="source-row">');
+        if (pageUrl) {
+          parts.push('<a class="link-chip" href="' + escapeHtml(pageUrl) + '" target="_blank" rel="noopener noreferrer">公式ページ →</a>');
+        }
+        if (extraPageUrl) {
+          parts.push('<a class="link-chip" href="' + escapeHtml(extraPageUrl) + '" target="_blank" rel="noopener noreferrer">関連ページ →</a>');
+        }
+        parts.push('</div>');
+      }
+      return parts.join('');
+    }
+
+    function itemActionLabel(item) {
+      var resolvedStatus = item.resolved && item.resolved.resolution_status || '';
+      return (item.verified_exact_match || resolvedStatus === 'confirmed' || resolvedStatus === 'provisional' || resolvedStatus === 'accepted_exception')
+        ? '⑥ 出品準備へ'
+        : '商品を見る';
+    }
+
+    function renderItem(item) {
+      var commerce = item.commerce || {};
+      var listingUrl = commerce.public_listing_url || item.public_listing_url || '';
+      var sequence = padSequence(item.sequence);
+      var actualCount = (item.slots || []).length;
+      var officialPageUrl = (item.official && item.official.official_page_url) || (item.resolved && item.resolved.official_page_url) || '';
+      var actionHref = './ops.html?mid=' + encodeURIComponent(item.management_id || '');
+
+      return '<div class="item-card" data-mid="' + escapeHtml(item.management_id || '') + '">'
+        + '<div class="item-shell">'
+        + '<div class="item-top">'
+        + '<div>'
+        + '<div class="item-sequence-row">'
+        + '<span class="sequence-chip primary">No.' + escapeHtml(sequence) + '</span>'
+        + '<span class="sequence-chip">' + escapeHtml(actualCount + '枚') + '</span>'
+        + '</div>'
+        + '<div class="item-name">' + escapeHtml(productName(item)) + '</div>'
+        + '<div class="item-id">管理番号 ' + escapeHtml(item.management_id || '') + '</div>'
+        + '</div>'
+        + '<a class="item-action" href="' + actionHref + '">' + itemActionLabel(item) + '</a>'
+        + '</div>'
+        + '<div class="item-body">'
+        + '<section class="media-section official-section">'
+        + '<div class="section-head">'
+        + '<div><div class="section-title">AIが集めた画像</div></div>'
+        + '</div>'
+        + officialGalleryHtml(item)
+        + '</section>'
+        + '<section class="media-section">'
+        + '<div class="section-head">'
+        + '<div><div class="section-title">実物写真</div></div>'
+        + '</div>'
+        + '<div class="actual-grid">' + actualPhotosHtml(item) + '</div>'
+        + '</section>'
+        + '</div>'
+        + '<div class="link-row">'
+        + (officialPageUrl ? '<a class="link-chip" href="' + escapeHtml(officialPageUrl) + '" target="_blank" rel="noopener noreferrer">公式ページ →</a>' : '')
+        + (listingUrl ? '<a class="link-chip" href="' + escapeHtml(listingUrl) + '" target="_blank" rel="noopener noreferrer">公開ページ →</a>' : '')
+        + '</div>'
+        + '</div>'
+        + '</div>';
+    }
+
+    function filteredItems() {
+      var tests = filterTests();
+      var query = String(search.value || '').trim().toUpperCase();
+      return items.filter(function(item) {
+        if (!tests[activeFilter](item)) return false;
+        if (!query) return true;
+        return [
+          item.management_id,
+          productName(item),
+          item.next_action,
+          item.manual_note,
+          item.qwen_hq_review_note,
+          item.split_plan_summary,
+          item.split_staging && item.split_staging.ui_summary,
+          item.publish_state,
+          routePlan(item)['メモ']
+        ].join(' ').toUpperCase().indexOf(query) !== -1;
+      });
+    }
+
+    function renderList() {
+      var rows = sortItems(filteredItems());
+      if (!rows.length) {
+        listEl.innerHTML = '';
+        emptyEl.style.display = '';
+        countPill.textContent = (boxDisplayLabel(viewSnapshot.box_id || requestedBoxId, viewSnapshot.box_label || requestedBoxId, viewSnapshot.box_lane, viewSnapshot.box_code) || '箱') + ' / 0件';
+        return;
+      }
+      emptyEl.style.display = 'none';
+      listEl.innerHTML = rows.map(renderItem).join('');
+      countPill.textContent = (boxDisplayLabel(viewSnapshot.box_id, viewSnapshot.box_label, viewSnapshot.box_lane, viewSnapshot.box_code) || '箱') + ' / ' + rows.length + '件';
+      focusRequestedMid();
+    }
+
+    function focusRequestedMid() {
+      if (focusedRequestedMid || !requestedMid) return;
+      var cards = listEl.querySelectorAll('[data-mid]');
+      for (var i = 0; i < cards.length; i += 1) {
+        if (cards[i].getAttribute('data-mid') === requestedMid) {
+          focusedRequestedMid = true;
+          cards[i].classList.add('deep-linked');
+          cards[i].scrollIntoView({block: 'center'});
+          break;
+        }
+      }
+    }
+
+    filtersEl.addEventListener('click', function(event) {
+      var btn = event.target.closest('[data-filter]');
+      if (!btn) return;
+      activeFilter = btn.getAttribute('data-filter') || 'all';
+      renderFilters();
+      renderList();
+    });
+
+    search.addEventListener('input', renderList);
+    sortSelect.addEventListener('change', function() {
+      sortMode = sortSelect.value || 'id';
+      renderList();
+    });
+
+    renderHero();
+    renderFilters();
+    renderList();
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,1615 @@
+<!doctype html>
+<html lang="ja" data-page="routing">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>0円仕入れ物販事業 | 販路ルーティング</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./common.css">
+  <style>
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: #818cf8; }
+    .hq-wrap { max-width: 1320px; }
+    .hero {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 18px;
+      margin-bottom: 14px;
+    }
+    .hero-title {
+      font-size: 24px;
+      font-weight: 900;
+      line-height: 1.2;
+      letter-spacing: -.02em;
+    }
+    .hero-note {
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 1.8;
+      color: var(--text-2);
+    }
+    .hero-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 11px;
+      border-radius: 999px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      color: var(--text-2);
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .hero-action {
+      margin-top: 12px;
+      padding: 12px 14px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(99,102,241,.2);
+      background: rgba(99,102,241,.08);
+      display: grid;
+      gap: 8px;
+    }
+    .hero-action-label {
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+    .hero-action-note {
+      font-size: 13px;
+      line-height: 1.7;
+      color: var(--text);
+      font-weight: 700;
+    }
+    .hero-action-meta {
+      font-size: 12px;
+      line-height: 1.7;
+      color: var(--text-2);
+    }
+    .hero-action-link {
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text-2);
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .proof-trail {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-items: center;
+    }
+    .proof-step {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 5px 9px;
+      border-radius: 999px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text-2);
+      font-size: 11px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .proof-step.done {
+      background: var(--green-bg);
+      border-color: rgba(34,197,94,.2);
+      color: var(--green);
+    }
+    .proof-arrow {
+      color: var(--text-3);
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .gate-banner {
+      margin-bottom: 14px;
+      padding: 12px 14px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: var(--surface);
+      display: grid;
+      gap: 4px;
+    }
+    .gate-banner.green {
+      border-color: rgba(34,197,94,.2);
+      background: var(--green-bg);
+    }
+    .gate-banner.yellow {
+      border-color: rgba(234,179,8,.2);
+      background: var(--yellow-bg);
+    }
+    .gate-banner.red {
+      border-color: rgba(239,68,68,.2);
+      background: var(--red-bg);
+    }
+    .gate-label {
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+    .gate-headline {
+      font-size: 13px;
+      line-height: 1.7;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .gate-detail {
+      font-size: 12px;
+      line-height: 1.7;
+      color: var(--text-2);
+    }
+    .route-options-section {
+      margin-bottom: 14px;
+    }
+    .decision-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .decision-card {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 16px;
+      display: grid;
+      gap: 8px;
+    }
+    .decision-card.green { border-left: 4px solid var(--green); }
+    .decision-card.blue { border-left: 4px solid var(--blue); }
+    .decision-card.yellow { border-left: 4px solid var(--yellow); }
+    .decision-card.orange { border-left: 4px solid var(--orange); }
+    .decision-card.red { border-left: 4px solid var(--red); }
+    .decision-card.gray { border-left: 4px solid var(--text-3); }
+    .decision-card.purple { border-left: 4px solid var(--purple); }
+    .decision-label {
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--text-3);
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+    .decision-title {
+      font-size: 17px;
+      font-weight: 800;
+      line-height: 1.45;
+    }
+    .decision-meta {
+      font-size: 12px;
+      line-height: 1.7;
+      color: var(--text-3);
+    }
+    .decision-note {
+      font-size: 13px;
+      line-height: 1.7;
+      color: var(--text-2);
+    }
+    .decision-detail {
+      font-size: 12px;
+      line-height: 1.7;
+      color: var(--text-3);
+    }
+    .decision-link {
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text-2);
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .matrix-wrap {
+      margin-top: 12px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: auto;
+      background: var(--surface);
+    }
+    .matrix-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 1120px;
+    }
+    .matrix-table th,
+    .matrix-table td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+    }
+    .matrix-table th {
+      background: var(--surface-2);
+      color: var(--text-3);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      white-space: nowrap;
+    }
+    .matrix-table tr:last-child td {
+      border-bottom: 0;
+    }
+    .matrix-main {
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.6;
+      color: var(--text);
+    }
+    .matrix-sub {
+      margin-top: 4px;
+      font-size: 12px;
+      line-height: 1.7;
+      color: var(--text-3);
+    }
+    .matrix-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 8px;
+    }
+    .route-options-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .route-option-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 16px;
+      display: grid;
+      gap: 10px;
+    }
+    .route-option-card.green { border-left: 4px solid var(--green); }
+    .route-option-card.blue { border-left: 4px solid var(--blue); }
+    .route-option-card.yellow { border-left: 4px solid var(--yellow); }
+    .route-option-card.orange { border-left: 4px solid var(--orange); }
+    .route-option-card.red { border-left: 4px solid var(--red); }
+    .route-option-card.gray { border-left: 4px solid var(--text-3); }
+    .route-option-card.purple { border-left: 4px solid var(--purple); }
+    .route-option-head {
+      display: grid;
+      gap: 6px;
+    }
+    .route-option-title {
+      font-size: 16px;
+      font-weight: 800;
+      line-height: 1.5;
+    }
+    .route-option-meta {
+      font-size: 12px;
+      color: var(--text-3);
+      line-height: 1.7;
+    }
+    .route-option-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .route-option-copy {
+      display: grid;
+      gap: 8px;
+      font-size: 12px;
+      color: var(--text-2);
+      line-height: 1.7;
+    }
+    .route-proof-block {
+      padding: 12px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: var(--surface-2);
+      display: grid;
+      gap: 8px;
+    }
+    .route-proof-head {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .route-proof-title {
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--text);
+    }
+    .route-proof-progress {
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--text-3);
+    }
+    .route-proof-list {
+      display: grid;
+      gap: 8px;
+    }
+    .route-proof-item {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 8px;
+      align-items: start;
+      padding: 8px 10px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+    }
+    .route-proof-item.done {
+      border-color: rgba(34,197,94,.2);
+      background: var(--green-bg);
+    }
+    .route-proof-item.pending {
+      border-color: rgba(99,102,241,.18);
+      background: rgba(99,102,241,.06);
+    }
+    .route-proof-item.blocked {
+      border-color: rgba(234,179,8,.2);
+      background: var(--yellow-bg);
+    }
+    .route-proof-status {
+      display: inline-flex;
+      align-items: center;
+      padding: 3px 7px;
+      border-radius: 999px;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      background: var(--surface-2);
+      color: var(--text-3);
+    }
+    .route-proof-item.done .route-proof-status {
+      color: var(--green);
+      background: rgba(34,197,94,.12);
+    }
+    .route-proof-item.pending .route-proof-status {
+      color: var(--accent);
+      background: rgba(99,102,241,.12);
+    }
+    .route-proof-item.blocked .route-proof-status {
+      color: #a16207;
+      background: rgba(234,179,8,.16);
+    }
+    .route-proof-body {
+      display: grid;
+      gap: 4px;
+    }
+    .route-proof-item-label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .route-proof-note {
+      font-size: 11px;
+      color: var(--text-2);
+      line-height: 1.6;
+    }
+    .route-option-next {
+      padding: 10px 12px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(99,102,241,.18);
+      background: rgba(99,102,241,.08);
+      color: var(--accent);
+      font-size: 12px;
+      line-height: 1.7;
+      font-weight: 700;
+    }
+    .route-option-link {
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      color: var(--text-2);
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .profit-focus-card {
+      margin-top: 12px;
+      padding: 14px;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(99,102,241,.2);
+      background: linear-gradient(180deg, rgba(99,102,241,.08), rgba(99,102,241,0));
+      display: grid;
+      gap: 10px;
+    }
+    .profit-focus-headline {
+      font-size: 16px;
+      font-weight: 800;
+      line-height: 1.5;
+      color: var(--text);
+    }
+    .profit-focus-note {
+      font-size: 12px;
+      line-height: 1.7;
+      color: var(--text-2);
+    }
+    .profit-focus-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 8px;
+    }
+    .profit-focus-stat {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 10px 12px;
+    }
+    .profit-focus-stat-label {
+      font-size: 10px;
+      color: var(--text-3);
+      font-weight: 700;
+    }
+    .profit-focus-stat-value {
+      margin-top: 4px;
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--text);
+    }
+    .profit-focus-list {
+      display: grid;
+      gap: 8px;
+    }
+    .profit-focus-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 12px;
+    }
+    .profit-focus-item.green { border-left-color: var(--green); }
+    .profit-focus-item.blue { border-left-color: var(--blue); }
+    .profit-focus-item.yellow { border-left-color: var(--yellow); }
+    .profit-focus-item.orange { border-left-color: var(--orange); }
+    .profit-focus-item.red { border-left-color: var(--red); }
+    .profit-focus-item.gray { border-left-color: var(--text-3); }
+    .profit-focus-item.purple { border-left-color: var(--purple); }
+    .profit-focus-item-label {
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--text);
+    }
+    .profit-focus-item-note {
+      margin-top: 4px;
+      font-size: 12px;
+      line-height: 1.7;
+      color: var(--text-2);
+    }
+    .profit-focus-link {
+      display: inline-flex;
+      width: fit-content;
+      margin-top: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .filter-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(146px, 1fr));
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .filter-card {
+      text-align: left;
+      padding: 14px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      cursor: pointer;
+      transition: border-color .15s, transform .15s;
+    }
+    .filter-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-1px);
+    }
+    .filter-card.active {
+      border-color: var(--accent);
+      box-shadow: inset 0 0 0 1px rgba(99,102,241,.18);
+      background: linear-gradient(180deg, rgba(99,102,241,.08), rgba(99,102,241,0));
+    }
+    .filter-card.red { border-left: 4px solid var(--red); }
+    .filter-card.orange { border-left: 4px solid var(--orange); }
+    .filter-card.yellow { border-left: 4px solid var(--yellow); }
+    .filter-card.green { border-left: 4px solid var(--green); }
+    .filter-card.blue { border-left: 4px solid var(--blue); }
+    .filter-card.gray { border-left: 4px solid var(--text-3); }
+    .filter-count {
+      font-size: 28px;
+      line-height: 1;
+      font-weight: 900;
+    }
+    .filter-label {
+      margin-top: 8px;
+      font-size: 13px;
+      font-weight: 800;
+    }
+    .filter-note {
+      margin-top: 5px;
+      font-size: 11px;
+      color: var(--text-3);
+      line-height: 1.6;
+    }
+    .toolbar {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 12px;
+      position: sticky;
+      top: 53px;
+      z-index: 40;
+      background: var(--bg);
+      padding: 8px 0;
+      flex-wrap: wrap;
+    }
+    .search {
+      flex: 1;
+      min-width: 240px;
+      padding: 10px 14px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--text);
+      font: 14px/1.4 inherit;
+      outline: none;
+    }
+    .search:focus,
+    .sort-select:focus,
+    .reset-btn:focus {
+      border-color: var(--accent);
+      outline: none;
+    }
+    .search::placeholder { color: var(--text-3); }
+    .sort-select,
+    .reset-btn {
+      padding: 10px 12px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--text-2);
+      font: 13px/1.4 inherit;
+    }
+    .sort-select { cursor: pointer; }
+    .reset-btn {
+      cursor: pointer;
+      font-weight: 700;
+    }
+    .count-pill {
+      padding: 6px 12px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-3);
+      white-space: nowrap;
+    }
+    .route-list {
+      display: grid;
+      gap: 10px;
+    }
+    .route-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: border-color .15s;
+    }
+    .route-card:hover {
+      border-color: rgba(99,102,241,.35);
+    }
+    .route-summary {
+      padding: 16px;
+      cursor: pointer;
+    }
+    .route-top {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 14px;
+      align-items: start;
+    }
+    .route-head {
+      min-width: 0;
+      display: grid;
+      gap: 6px;
+    }
+    .route-id {
+      color: var(--accent);
+      font-family: 'Inter', monospace;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .route-name {
+      font-size: 15px;
+      font-weight: 800;
+      line-height: 1.45;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .route-sub {
+      font-size: 11px;
+      color: var(--text-3);
+      font-weight: 700;
+    }
+    .route-status {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .route-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    .route-note {
+      margin-top: 10px;
+      font-size: 12px;
+      line-height: 1.7;
+      color: var(--text-2);
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .route-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    .route-link {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      color: var(--text-2);
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .route-detail {
+      display: none;
+      border-top: 1px solid var(--border);
+      background: var(--surface-2);
+      padding: 16px;
+    }
+    .route-card.open .route-detail {
+      display: block;
+    }
+    .detail-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .detail-panel {
+      display: grid;
+      gap: 10px;
+    }
+    .detail-title {
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      color: var(--text-3);
+    }
+    .detail-rows {
+      display: grid;
+      gap: 8px;
+    }
+    .detail-row {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 8px;
+      font-size: 13px;
+      line-height: 1.7;
+      color: var(--text-2);
+    }
+    .detail-label {
+      color: var(--text-3);
+      font-weight: 700;
+      font-size: 12px;
+    }
+    .detail-callout {
+      padding: 10px 12px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(99,102,241,.2);
+      background: rgba(99,102,241,.08);
+      color: var(--accent);
+      font-size: 13px;
+      line-height: 1.7;
+      font-weight: 700;
+    }
+    .detail-callout.red {
+      border-color: rgba(239,68,68,.25);
+      background: rgba(239,68,68,.08);
+      color: var(--red);
+    }
+    details.context-details {
+      margin-top: 18px;
+    }
+    details.context-details > summary {
+      list-style: none;
+      cursor: pointer;
+      color: var(--text-2);
+      font-size: 13px;
+      font-weight: 800;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 0;
+    }
+    details.context-details > summary::-webkit-details-marker {
+      display: none;
+    }
+    .summary-chevron {
+      color: var(--accent);
+      transition: transform .15s;
+      display: inline-block;
+    }
+    details[open] .summary-chevron {
+      transform: rotate(90deg);
+    }
+    .context-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 10px;
+    }
+    .context-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px;
+    }
+    .context-title {
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .context-list {
+      display: grid;
+      gap: 8px;
+    }
+    .context-item {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 11px 12px;
+      color: var(--text-2);
+      font-size: 12px;
+      line-height: 1.7;
+    }
+    .strategy-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .strategy-card {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 12px;
+    }
+    .strategy-label {
+      font-size: 10px;
+      font-weight: 800;
+      color: var(--text-3);
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+    .strategy-value {
+      margin-top: 6px;
+      font-size: 14px;
+      font-weight: 800;
+    }
+    .strategy-note {
+      margin-top: 4px;
+      font-size: 11px;
+      line-height: 1.6;
+      color: var(--text-3);
+    }
+    .empty {
+      text-align: center;
+      padding: 60px;
+      color: var(--text-3);
+      font-size: 14px;
+    }
+    @media (max-width: 900px) {
+      .detail-grid,
+      .context-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (max-width: 640px) {
+      .toolbar {
+        top: 49px;
+      }
+      .detail-row {
+        grid-template-columns: 1fr;
+        gap: 4px;
+      }
+      .strategy-grid {
+        grid-template-columns: 1fr;
+      }
+      .route-top {
+        grid-template-columns: 1fr;
+      }
+      .route-status {
+        justify-content: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hq-header">
+    <h1><span class="dot">●</span> 販路ルーティング</h1>
+    <span id="freshness-pill" class="hq-fresh" style="display:none"></span>
+  </header>
+
+  <div class="hq-wrap">
+    <section class="hero">
+      <div class="hero-title">販路・確認・AI作業を、商品単位で読む</div>
+      <div class="hero-note">
+        上段で発送 route 自体の比較と live証明を見て、下段で各商品の「今の状態」「どこで止まっているか」「次に誰が何をするか」を読む形に寄せています。
+      </div>
+      <div id="hero-action" class="hero-action" style="display:none"></div>
+      <div class="hero-pills" id="hero-pills"></div>
+    </section>
+
+    <div id="gate-banner" class="gate-banner" style="display:none"></div>
+
+    <section class="route-options-section">
+      <div class="context-card">
+        <div class="context-title">発送 route と live証明</div>
+        <div class="hero-note" id="route-guideline" style="margin-top:0"></div>
+        <div class="decision-grid" id="decision-grid"></div>
+        <div class="matrix-wrap">
+          <table class="matrix-table">
+            <thead>
+              <tr>
+                <th>route</th>
+                <th>証跡 / 位置づけ</th>
+                <th>実利 / コスト</th>
+                <th>必要アカウント / 画面導線</th>
+                <th>次にやること</th>
+              </tr>
+            </thead>
+            <tbody id="route-matrix-body"></tbody>
+          </table>
+        </div>
+        <div id="profit-focus-card" class="profit-focus-card" style="display:none"></div>
+        <div class="route-options-grid" id="route-options"></div>
+      </div>
+    </section>
+
+    <div class="filter-grid" id="filters"></div>
+
+    <div class="toolbar">
+      <input id="search" class="search" type="text" placeholder="管理番号・商品ID・商品名・メモで検索">
+      <select id="sort-select" class="sort-select">
+        <option value="priority">状態優先順</option>
+        <option value="updated">更新日順</option>
+        <option value="id">管理番号順</option>
+      </select>
+      <button id="reset-btn" class="reset-btn" type="button">絞り込み解除</button>
+      <span id="count-pill" class="count-pill">- 件</span>
+    </div>
+
+    <div class="route-list" id="route-list"></div>
+    <div class="empty" id="empty" style="display:none">該当するルーティングがありません</div>
+
+    <details class="context-details">
+      <summary><span class="summary-chevron">▶</span>詳細コンテキストを開く</summary>
+      <div class="context-grid">
+        <div class="context-card">
+          <div class="context-title">現場ログ</div>
+          <div class="context-list" id="next-actions"></div>
+        </div>
+        <div class="context-card">
+          <div class="context-title">販路スタック</div>
+          <div class="strategy-grid" id="strategy-grid"></div>
+          <div class="context-title" style="margin-top:16px">リンク</div>
+          <div class="context-list" id="link-list"></div>
+        </div>
+      </div>
+    </details>
+  </div>
+
+  <script src="./routing_snapshot.js"></script>
+  <script src="./common.js"></script>
+  <script>
+  (function(){
+    var snap = window.ZERO_COST_ROUTING || {};
+    var items = snap.items || [];
+    var strategy = snap.strategy || {};
+    var routeOptions = snap.route_options || strategy.route_options || [];
+    var ownerView = snap.owner_view || {};
+    var shippingGuard = snap.shipping_guard || {};
+    var search = document.getElementById('search');
+    var sortSelect = document.getElementById('sort-select');
+    var countPill = document.getElementById('count-pill');
+    var filtersEl = document.getElementById('filters');
+    var listEl = document.getElementById('route-list');
+    var emptyEl = document.getElementById('empty');
+    var heroPills = document.getElementById('hero-pills');
+    var heroActionEl = document.getElementById('hero-action');
+    var gateBannerEl = document.getElementById('gate-banner');
+    var routeOptionsEl = document.getElementById('route-options');
+    var routeGuidelineEl = document.getElementById('route-guideline');
+    var decisionGridEl = document.getElementById('decision-grid');
+    var routeMatrixBodyEl = document.getElementById('route-matrix-body');
+    var profitFocusEl = document.getElementById('profit-focus-card');
+    var activeFilter = 'all';
+    var sortMode = 'priority';
+
+    function escapeHtml(value) {
+      return String(value || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    function parseDate(value) {
+      if (!value) return null;
+      var normalized = String(value).replace(/ JST$/, '').replace(/ UTC$/, '').replace(' ', 'T');
+      var parsed = new Date(normalized);
+      return isNaN(parsed.getTime()) ? null : parsed;
+    }
+
+    function formatDate(value) {
+      var parsed = parseDate(value);
+      if (!parsed) return String(value || '');
+      return (parsed.getMonth() + 1) + '/' + parsed.getDate();
+    }
+
+    function containsSplit(item) {
+      var text = [
+        item['ルーティング状態'],
+        item['人確認理由'],
+        item['AI次アクション'],
+        item['メモ']
+      ].join(' ');
+      return /要再束ね|再分解|needs_split|split_stage/.test(text);
+    }
+
+    function extractName(item) {
+      var memo = String(item['メモ'] || '');
+      var match = memo.match(/name=([^/]+)/);
+      return match ? match[1].trim() : (item['商品ID'] || item['管理番号'] || '商品名未記録');
+    }
+
+    function badgeClass(value) {
+      if (value === 'HQ差し止め') return 'b-red';
+      if (value === '要再束ね') return 'b-orange';
+      if (value === '審査待ち') return 'b-yellow';
+      if (value === '販売中' || value === '公開済み' || value === '画像OK') return 'b-green';
+      if (value === '画像同一性確認待ち' || value === '公開可否確認待ち' || value === 'カテゴリ審査待ち') return 'b-yellow';
+      if (value === '人確認待ち' || value === '出品準備中') return 'b-blue';
+      return 'b-gray';
+    }
+
+    function toneClass(tone) {
+      return ['green', 'blue', 'yellow', 'orange', 'red', 'gray', 'purple'].indexOf(tone) !== -1 ? tone : 'gray';
+    }
+
+    function toneBadgeClass(tone) {
+      return 'b-' + toneClass(tone);
+    }
+
+    function findRouteOption(routeId) {
+      var target = String(routeId || '').trim();
+      if (!target) return null;
+      for (var i = 0; i < routeOptions.length; i += 1) {
+        if (String(routeOptions[i].id || '').trim() === target) return routeOptions[i];
+      }
+      return null;
+    }
+
+    function cleanList(values) {
+      if (!Array.isArray(values)) return [];
+      return values.map(function(value) {
+        return String(value || '').trim();
+      }).filter(Boolean);
+    }
+
+    function joinList(values, separator) {
+      return cleanList(values).join(separator || ' / ');
+    }
+
+    function normalizeProofCheckpoints(route) {
+      if (!route || !Array.isArray(route.proof_checkpoints)) return [];
+      return route.proof_checkpoints.map(function(item) {
+        if (!item || typeof item !== 'object') return null;
+        var label = String(item.label || '').trim();
+        if (!label) return null;
+        var status = String(item.status || 'pending').trim();
+        if (['done', 'pending', 'blocked'].indexOf(status) === -1) status = 'pending';
+        return {
+          label: label,
+          status: status,
+          note: String(item.note || '').trim()
+        };
+      }).filter(Boolean);
+    }
+
+    function proofStatusMeta(status) {
+      if (status === 'done') return { cls: 'done', label: '確認済み' };
+      if (status === 'blocked') return { cls: 'blocked', label: '要確認' };
+      return { cls: 'pending', label: '未完了' };
+    }
+
+    function renderProofChecklist(route) {
+      var checkpoints = normalizeProofCheckpoints(route);
+      if (!checkpoints.length) return '';
+      var total = Number(route.proof_total_count || checkpoints.length || 0);
+      var done = Number(route.proof_done_count || checkpoints.filter(function(item) {
+        return item.status === 'done';
+      }).length);
+      return '<div class="route-proof-block">'
+        + '<div class="route-proof-head">'
+        + '<div class="route-proof-title">live証明の現在地</div>'
+        + '<div class="route-proof-progress">' + done + '/' + total + ' 完了</div>'
+        + '</div>'
+        + '<div class="route-proof-list">' + checkpoints.map(function(item) {
+          var meta = proofStatusMeta(item.status);
+          return '<div class="route-proof-item ' + meta.cls + '">'
+            + '<span class="route-proof-status">' + escapeHtml(meta.label) + '</span>'
+            + '<div class="route-proof-body">'
+            + '<div class="route-proof-item-label">' + escapeHtml(item.label) + '</div>'
+            + (item.note ? '<div class="route-proof-note">' + escapeHtml(item.note) + '</div>' : '')
+            + '</div>'
+            + '</div>';
+        }).join('') + '</div>'
+        + '</div>';
+    }
+
+    function proofStepsFromRoute(route) {
+      if (!route || !route.next_step) return [];
+      var raw = String(route.next_step);
+      var match = raw.match(/(?:実注文1件で\\s*)?(.+?)(?:\\s+を|$)/);
+      var source = match ? match[1] : raw;
+      return source.split('->').map(function(part) {
+        return String(part || '').trim();
+      }).filter(Boolean);
+    }
+
+    function renderHeroAction() {
+      var ddToday = ownerView.dd_today || [];
+      var priorityAction = null;
+      for (var i = 0; i < ddToday.length; i += 1) {
+        if (String(ddToday[i].tone || '') === 'purple') {
+          priorityAction = ddToday[i];
+          break;
+        }
+      }
+      var priorityRoute = findRouteOption(strategy.priority_route_option_id);
+      if (!priorityAction && !priorityRoute) {
+        heroActionEl.style.display = 'none';
+        return;
+      }
+      var proofSteps = proofStepsFromRoute(priorityRoute);
+      var primaryNote = (priorityRoute && priorityRoute.next_step) || (priorityAction && priorityAction.note) || '未設定';
+      var secondaryNote = (priorityAction && priorityAction.note) || '';
+      heroActionEl.innerHTML = ''
+        + '<div class="hero-action-label">' + escapeHtml((priorityAction && priorityAction.label) || '今日の優先アクション') + '</div>'
+        + '<div class="hero-action-note">' + escapeHtml(primaryNote) + '</div>'
+        + (secondaryNote && secondaryNote !== primaryNote
+            ? '<div class="hero-action-meta">' + escapeHtml(secondaryNote) + '</div>'
+            : '')
+        + (proofSteps.length
+            ? '<div class="proof-trail">' + proofSteps.map(function(step, index) {
+                return '<span class="proof-step">' + escapeHtml(step) + '</span>'
+                  + (index < proofSteps.length - 1 ? '<span class="proof-arrow">→</span>' : '');
+              }).join('') + '</div>'
+            : '')
+        + ((priorityAction && priorityAction.href)
+            ? '<a class="hero-action-link" href="' + escapeHtml(priorityAction.href) + '">このアクションを見る →</a>'
+            : ((priorityRoute && priorityRoute.href)
+                ? '<a class="hero-action-link" href="' + escapeHtml(priorityRoute.href) + '">この route を見る →</a>'
+                : ''));
+      heroActionEl.style.display = '';
+    }
+
+    function renderGateBanner() {
+      if (!shippingGuard || (!shippingGuard.badge && !shippingGuard.headline && !shippingGuard.detail)) {
+        gateBannerEl.style.display = 'none';
+        return;
+      }
+      var tone = 'gray';
+      if (String(shippingGuard.status || '') === 'ok') tone = 'green';
+      else if (Number(shippingGuard.errors || 0) > 0) tone = 'red';
+      else if (Number(shippingGuard.warnings || 0) > 0) tone = 'yellow';
+      gateBannerEl.className = 'gate-banner ' + tone;
+      gateBannerEl.innerHTML = ''
+        + '<div class="gate-label">発送 gate ' + escapeHtml(shippingGuard.badge || '未設定') + '</div>'
+        + '<div class="gate-headline">' + escapeHtml(shippingGuard.headline || '未設定') + '</div>'
+        + (shippingGuard.detail ? '<div class="gate-detail">' + escapeHtml(shippingGuard.detail) + '</div>' : '');
+      gateBannerEl.style.display = '';
+    }
+
+    function renderDecisionGrid() {
+      var priorityRoute = findRouteOption(strategy.priority_route_option_id);
+      var officialRoute = findRouteOption(strategy.official_printerless_route_option_id);
+      var fallbackRoute = findRouteOption(strategy.fallback_route_option_id);
+      var cards = [];
+
+      function pushRouteCard(label, route, fallbackTone, noteKey) {
+        if (!route) return;
+        cards.push({
+          tone: toneClass(route.tone || fallbackTone || 'gray'),
+          label: label,
+          title: route.name || route.id || '未設定',
+          meta: [route.category, route.status, route.proof_level, route.screen_only_fit ? ('画面だけ ' + route.screen_only_fit) : ''].filter(Boolean).join(' / '),
+          note: route.cost_summary || route[noteKey] || route.next_step || route.strength || '未設定',
+          detail: joinList(route.required_accounts, ' / ') ? ('必要アカウント: ' + joinList(route.required_accounts, ' / ')) : '',
+          href: route.href || './routing.html',
+          linkLabel: 'この route を見る →'
+        });
+      }
+
+      pushRouteCard('いま証明する本命', priorityRoute, 'purple', 'next_step');
+      pushRouteCard('公開情報で強い線', officialRoute, 'blue', 'strength');
+      pushRouteCard('詰まった時の逃がし先', fallbackRoute, 'yellow', 'caution');
+
+      cards.push({
+        tone: 'gray',
+        label: 'いまの前提',
+        title: '比較に使う現在地',
+        meta: '件数は routing current truth から再生成',
+        note: [
+          'メルカリ公開済み ' + (snap.summary && snap.summary.mercari_live || 0) + '件',
+          'BASE準備可 ' + (snap.summary && snap.summary.base_ready || 0) + '件',
+          'Ship&co候補 ' + (snap.summary && snap.summary.shipco_candidate || 0) + '件',
+          '人確認要 ' + (snap.summary && snap.summary.human_review_needed || 0) + '件'
+        ].join(' / '),
+        href: './index.html',
+        linkLabel: 'owner cockpit を開く →'
+      });
+
+      decisionGridEl.innerHTML = cards.map(function(card) {
+        return '<div class="decision-card ' + toneClass(card.tone) + '">'
+          + '<div class="decision-label">' + escapeHtml(card.label || '') + '</div>'
+          + '<div class="decision-title">' + escapeHtml(card.title || '') + '</div>'
+          + (card.meta ? '<div class="decision-meta">' + escapeHtml(card.meta) + '</div>' : '')
+          + '<div class="decision-note">' + escapeHtml(card.note || '未設定') + '</div>'
+          + (card.detail ? '<div class="decision-detail">' + escapeHtml(card.detail) + '</div>' : '')
+          + '<a class="decision-link" href="' + escapeHtml(card.href || './routing.html') + '">' + escapeHtml(card.linkLabel || '開く →') + '</a>'
+          + '</div>';
+      }).join('');
+    }
+
+    function renderRouteMatrix() {
+      if (!routeOptions.length) {
+        routeMatrixBodyEl.innerHTML = '<tr><td colspan="5"><div class="matrix-sub">発送 route はまだありません。</div></td></tr>';
+        return;
+      }
+      routeMatrixBodyEl.innerHTML = routeOptions.map(function(route) {
+        var badges = [];
+        if (route.is_priority) badges.push('<span class="badge b-purple">優先</span>');
+        if (route.is_official) badges.push('<span class="badge b-blue">公式プリンタレス候補</span>');
+        if (route.is_fallback) badges.push('<span class="badge b-yellow">予備線</span>');
+        if (route.status) badges.push('<span class="badge ' + toneBadgeClass(route.tone) + '">' + escapeHtml(route.status) + '</span>');
+        return '<tr>'
+          + '<td>'
+          + '<div class="matrix-main">' + escapeHtml(route.name || route.id || '未設定') + '</div>'
+          + '<div class="matrix-sub">' + escapeHtml(route.lane || 'レーン未設定') + '</div>'
+          + '<div class="matrix-badges">' + badges.join('') + '</div>'
+          + '</td>'
+          + '<td>'
+            + '<div class="matrix-main">' + escapeHtml(route.proof_level || '未設定') + '</div>'
+            + '<div class="matrix-sub">' + escapeHtml([route.category, route.status].filter(Boolean).join(' / ') || '未設定') + '</div>'
+            + '<div class="matrix-sub">使いどころ: ' + escapeHtml(route.when_to_use || '未設定') + '</div>'
+          + '</td>'
+          + '<td>'
+            + '<div class="matrix-main">' + escapeHtml(route.cost_summary || '未設定') + '</div>'
+            + '<div class="matrix-sub">強み: ' + escapeHtml(route.strength || '未設定') + '</div>'
+            + '<div class="matrix-sub">注意: ' + escapeHtml(route.caution || '未設定') + '</div>'
+          + '</td>'
+          + '<td>'
+            + '<div class="matrix-main">' + escapeHtml(joinList(route.required_accounts, ' / ') || '未設定') + '</div>'
+            + '<div class="matrix-sub">初回セットアップ: ' + escapeHtml(joinList(route.setup_steps, ' → ') || '未設定') + '</div>'
+            + '<div class="matrix-sub">画面だけ導線: ' + escapeHtml(joinList(route.screen_flow, ' → ') || '未設定') + '</div>'
+            + '<div class="matrix-sub">画面だけ適性: ' + escapeHtml(((route.screen_only_fit || '未設定') + ' / ' + (route.screen_only_note || '未設定'))) + '</div>'
+          + '</td>'
+          + '<td>'
+            + '<div class="matrix-main">' + escapeHtml(route.next_step || '未設定') + '</div>'
+            + '<div class="matrix-sub"><a href="' + escapeHtml(route.href || './routing.html') + '">この route を開く →</a></div>'
+          + '</td>'
+          + '</tr>';
+      }).join('');
+    }
+
+    function renderProfitFocus() {
+      var profit = ownerView.profit_focus || {};
+      var stats = Array.isArray(profit.stats) ? profit.stats : [];
+      var items = Array.isArray(profit.items) ? profit.items : [];
+      if (!profit.headline && !stats.length && !items.length) {
+        profitFocusEl.style.display = 'none';
+        return;
+      }
+      profitFocusEl.innerHTML = ''
+        + '<div class="profit-focus-headline">' + escapeHtml(profit.headline || '利益ざっくりは未設定') + '</div>'
+        + '<div class="profit-focus-note">' + escapeHtml(profit.note || '') + '</div>'
+        + (stats.length
+            ? '<div class="profit-focus-grid">' + stats.map(function(stat) {
+                return '<div class="profit-focus-stat">'
+                  + '<div class="profit-focus-stat-label">' + escapeHtml(stat.label || '') + '</div>'
+                  + '<div class="profit-focus-stat-value">' + escapeHtml(stat.value || '') + '</div>'
+                  + '</div>';
+              }).join('') + '</div>'
+            : '')
+        + (items.length
+            ? '<div class="profit-focus-list">' + items.map(function(item) {
+                var tone = toneClass(item.tone || 'gray');
+                return '<div class="profit-focus-item ' + tone + '">'
+                  + '<div class="profit-focus-item-label">' + escapeHtml(item.label || '') + '</div>'
+                  + '<div class="profit-focus-item-note">' + escapeHtml(item.note || '') + '</div>'
+                  + (item.href ? '<a class="profit-focus-link" href="' + escapeHtml(item.href) + '">開く →</a>' : '')
+                  + '</div>';
+              }).join('') + '</div>'
+            : '');
+      profitFocusEl.style.display = '';
+    }
+
+    function filterTests() {
+      return {
+        all: function() { return true; },
+        'hq-blocked': function(item) { return item['ルーティング状態'] === 'HQ差し止め'; },
+        split: function(item) { return containsSplit(item); },
+        'image-wait': function(item) { return item['画像ゲート'] === '画像同一性確認待ち'; },
+        'publish-gate': function(item) { return item['メルカリ投入条件'] === '公開可否確認待ち'; },
+        review: function(item) { return item['メルカリ投入条件'] === 'カテゴリ審査待ち' || item['ルーティング状態'] === '審査待ち'; },
+        live: function(item) { return item['メルカリ本線'] === '公開済み' || item['ルーティング状態'] === '販売中'; }
+      };
+    }
+
+    var FILTER_META = {
+      all: { label: '全件', note: '今ある全ルーティング', cls: 'gray' },
+      'hq-blocked': { label: 'HQ差し止め', note: '高位判断で停止中', cls: 'red' },
+      split: { label: '要再束ね', note: '再分解・再束ねが必要', cls: 'orange' },
+      'image-wait': { label: '画像確認待ち', note: '画像ゲートが未完了', cls: 'yellow' },
+      'publish-gate': { label: '公開可否確認待ち', note: '投入前の最終確認', cls: 'yellow' },
+      review: { label: '審査待ち', note: 'カテゴリ審査などの待機', cls: 'blue' },
+      live: { label: '公開済み', note: 'メルカリ本線で販売中', cls: 'green' }
+    };
+
+    var STATUS_PRIORITY = ['HQ差し止め', '要再束ね', '審査待ち', '人確認待ち', '販売中'];
+
+    function buildCounts() {
+      var tests = filterTests();
+      var counts = {};
+      Object.keys(tests).forEach(function(key) {
+        counts[key] = items.filter(tests[key]).length;
+      });
+      return counts;
+    }
+
+    var counts = buildCounts();
+
+    function renderHero() {
+      var priorityRoute = findRouteOption(strategy.priority_route_option_id);
+      var officialRoute = findRouteOption(strategy.official_printerless_route_option_id);
+      var fallbackRoute = findRouteOption(strategy.fallback_route_option_id);
+      heroPills.innerHTML = [
+        priorityRoute ? '<span class="hero-pill">優先 route ' + escapeHtml(priorityRoute.name || priorityRoute.id || '-') + '</span>' : '',
+        officialRoute ? '<span class="hero-pill">公式プリンタレス ' + escapeHtml(officialRoute.name || officialRoute.id || '-') + '</span>' : '',
+        fallbackRoute ? '<span class="hero-pill">予備線 ' + escapeHtml(fallbackRoute.name || fallbackRoute.id || '-') + '</span>' : '',
+        '<span class="hero-pill">公開済み ' + (snap.summary && snap.summary.mercari_live || 0) + '件</span>',
+        '<span class="hero-pill">画像確認待ち ' + (snap.summary && snap.summary.image_review_waiting || 0) + '件</span>',
+        '<span class="hero-pill">公開可否確認待ち ' + (snap.summary && snap.summary.publish_gate_waiting || 0) + '件</span>',
+        '<span class="hero-pill">人確認要 ' + (snap.summary && snap.summary.human_review_needed || 0) + '件</span>'
+      ].filter(Boolean).join('');
+    }
+
+    function renderRouteOptions() {
+      var notes = [];
+      if (strategy.decision_driver) notes.push('判断軸: ' + strategy.decision_driver);
+      if (strategy.route_selection_guideline) notes.push('使い分け: ' + strategy.route_selection_guideline);
+      routeGuidelineEl.textContent = notes.join(' / ') || 'route の使い分けはまだ未設定です。';
+      if (!routeOptions.length) {
+        routeOptionsEl.innerHTML = '<div class="context-item">発送 route はまだありません。</div>';
+        return;
+      }
+      routeOptionsEl.innerHTML = routeOptions.map(function(route) {
+        var badges = [];
+        if (route.is_priority) badges.push('<span class="badge b-purple">優先</span>');
+        if (route.is_official) badges.push('<span class="badge b-blue">公式プリンタレス候補</span>');
+        if (route.is_fallback) badges.push('<span class="badge b-yellow">予備線</span>');
+        if (route.status) badges.push('<span class="badge ' + toneBadgeClass(route.tone) + '">' + escapeHtml(route.status) + '</span>');
+        if (route.proof_level) badges.push('<span class="badge b-gray">' + escapeHtml(route.proof_level) + '</span>');
+        return '<div class="route-option-card ' + toneClass(route.tone) + '">'
+          + '<div class="route-option-head">'
+          + '<div class="route-option-title">' + escapeHtml(route.name || route.id || '未設定') + '</div>'
+          + '<div class="route-option-meta">' + escapeHtml((route.category || '未設定') + ' / ' + (route.lane || 'レーン未設定')) + '</div>'
+          + '</div>'
+          + '<div class="route-option-badges">' + badges.join('') + '</div>'
+          + '<div class="route-option-copy">'
+          + '<div>使いどころ: ' + escapeHtml(route.when_to_use || '未設定') + '</div>'
+          + '<div>実利: ' + escapeHtml(route.cost_summary || '未設定') + '</div>'
+          + '<div>強み: ' + escapeHtml(route.strength || '未設定') + '</div>'
+          + '<div>注意: ' + escapeHtml(route.caution || '未設定') + '</div>'
+          + '<div>必要アカウント: ' + escapeHtml(joinList(route.required_accounts, ' / ') || '未設定') + '</div>'
+          + '<div>初回セットアップ: ' + escapeHtml(joinList(route.setup_steps, ' → ') || '未設定') + '</div>'
+          + '<div>画面だけ導線: ' + escapeHtml(joinList(route.screen_flow, ' → ') || '未設定') + '</div>'
+          + '<div>画面だけ適性: ' + escapeHtml(((route.screen_only_fit || '未設定') + ' / ' + (route.screen_only_note || '未設定'))) + '</div>'
+          + '</div>'
+          + renderProofChecklist(route)
+          + '<div class="route-option-next">次に証明する1件: ' + escapeHtml(route.next_step || '未設定') + '</div>'
+          + '<a class="route-option-link" href="' + escapeHtml(route.href || './routing.html') + '">この route を見る →</a>'
+          + '</div>';
+      }).join('');
+    }
+
+    function renderFilters() {
+      filtersEl.innerHTML = Object.keys(FILTER_META).map(function(key) {
+        var meta = FILTER_META[key];
+        return '<button type="button" class="filter-card ' + meta.cls + (activeFilter === key ? ' active' : '') + '" data-filter="' + key + '">'
+          + '<div class="filter-count">' + (counts[key] || 0) + '</div>'
+          + '<div class="filter-label">' + escapeHtml(meta.label) + '</div>'
+          + '<div class="filter-note">' + escapeHtml(meta.note) + '</div>'
+          + '</button>';
+      }).join('');
+    }
+
+    function itemPriority(item) {
+      var state = item['ルーティング状態'] || '';
+      var index = STATUS_PRIORITY.indexOf(state);
+      if (index !== -1) return index;
+      if (containsSplit(item)) return 1;
+      if (item['画像ゲート'] === '画像同一性確認待ち') return 3;
+      if (item['メルカリ投入条件'] === '公開可否確認待ち') return 4;
+      return 9;
+    }
+
+    function sortItems(rows) {
+      var copy = rows.slice();
+      if (sortMode === 'id') {
+        copy.sort(function(a, b) {
+          return String(a['管理番号'] || '').localeCompare(String(b['管理番号'] || ''));
+        });
+      } else if (sortMode === 'updated') {
+        copy.sort(function(a, b) {
+          var left = parseDate(a['更新時刻'] || '');
+          var right = parseDate(b['更新時刻'] || '');
+          var leftTime = left ? left.getTime() : 0;
+          var rightTime = right ? right.getTime() : 0;
+          return rightTime - leftTime;
+        });
+      } else {
+        copy.sort(function(a, b) {
+          var p = itemPriority(a) - itemPriority(b);
+          if (p !== 0) return p;
+          return String(a['管理番号'] || '').localeCompare(String(b['管理番号'] || ''));
+        });
+      }
+      return copy;
+    }
+
+    function renderItem(item) {
+      var managementId = item['管理番号'] || '';
+      var productId = item['商品ID'] || '';
+      var status = item['ルーティング状態'] || '未設定';
+      var note = item['AI次アクション'] || item['人確認理由'] || item['メモ'] || '';
+      var detailRowsLeft = [
+        ['商品ID', productId],
+        ['下書きID', item['下書きID'] || ''],
+        ['主販路', item['主販路'] || ''],
+        ['メルカリ本線', item['メルカリ本線'] || ''],
+        ['投入条件', item['メルカリ投入条件'] || ''],
+        ['画像ゲート', item['画像ゲート'] || ''],
+        ['更新', item['更新時刻'] || '']
+      ].filter(function(row) { return row[1]; });
+      var detailRowsRight = [
+        ['外部EC', item['外部EC'] || ''],
+        ['BASE同期条件', item['BASE同期条件'] || ''],
+        ['共通配送', item['共通配送'] || ''],
+        ['Ship&co条件', item['Ship&co条件'] || ''],
+        ['メルカリ配送', item['メルカリ配送'] || ''],
+        ['人確認', item['人確認'] || ''],
+        ['低コストAI作業', item['低コストAI作業'] || '']
+      ].filter(function(row) { return row[1]; });
+
+      return '<div class="route-card" data-mid="' + escapeHtml(managementId) + '">'
+        + '<div class="route-summary" onclick="toggleRoute(\'' + escapeHtml(managementId) + '\')">'
+        + '<div class="route-top">'
+        + '<div class="route-head">'
+        + '<div class="route-id">' + escapeHtml(managementId) + '</div>'
+        + '<div class="route-name">' + escapeHtml(extractName(item)) + '</div>'
+        + '<div class="route-sub">' + escapeHtml(productId) + ' · 更新 ' + escapeHtml(formatDate(item['更新時刻'] || '')) + '</div>'
+        + '</div>'
+        + '<div class="route-status"><span class="badge ' + badgeClass(status) + '">' + escapeHtml(status) + '</span></div>'
+        + '</div>'
+        + '<div class="route-badges">'
+        + '<span class="badge ' + badgeClass(item['メルカリ本線']) + '">' + escapeHtml(item['メルカリ本線'] || '未設定') + '</span>'
+        + '<span class="badge ' + badgeClass(item['画像ゲート']) + '">' + escapeHtml(item['画像ゲート'] || '未設定') + '</span>'
+        + '<span class="badge ' + badgeClass(item['メルカリ投入条件']) + '">' + escapeHtml(item['メルカリ投入条件'] || '未設定') + '</span>'
+        + '<span class="badge ' + badgeClass(item['人確認']) + '">' + escapeHtml(item['人確認'] || '未設定') + '</span>'
+        + '</div>'
+        + (note ? '<div class="route-note">' + escapeHtml(note) + '</div>' : '')
+        + '<div class="route-links">'
+        + '<a class="route-link" href="./ops.html?mid=' + encodeURIComponent(managementId) + '">出品リストで開く →</a>'
+        + '<a class="route-link" href="./intake_cards.html?mid=' + encodeURIComponent(managementId) + '">写真カードを見る →</a>'
+        + '</div>'
+        + '</div>'
+        + '<div class="route-detail" id="detail-' + escapeHtml(managementId) + '">'
+        + '<div class="detail-grid">'
+        + '<div class="detail-panel">'
+        + '<div class="detail-title">販路と投入状態</div>'
+        + '<div class="detail-rows">' + detailRowsLeft.map(function(row) {
+            return '<div class="detail-row"><div class="detail-label">' + escapeHtml(row[0]) + '</div><div>' + escapeHtml(row[1]) + '</div></div>';
+          }).join('') + '</div>'
+        + '<div class="detail-callout">' + escapeHtml(item['AI次アクション'] || '次アクション未設定') + '</div>'
+        + '</div>'
+        + '<div class="detail-panel">'
+        + '<div class="detail-title">外部EC / 配送 / メモ</div>'
+        + '<div class="detail-rows">' + detailRowsRight.map(function(row) {
+            return '<div class="detail-row"><div class="detail-label">' + escapeHtml(row[0]) + '</div><div>' + escapeHtml(row[1]) + '</div></div>';
+          }).join('') + '</div>'
+        + (item['人確認理由'] ? '<div class="detail-callout red">人確認理由: ' + escapeHtml(item['人確認理由']) + '</div>' : '')
+        + (item['メモ'] ? '<div class="detail-callout">メモ: ' + escapeHtml(item['メモ']) + '</div>' : '')
+        + '</div>'
+        + '</div>'
+        + '</div>'
+        + '</div>';
+    }
+
+    function filteredItems() {
+      var query = String(search.value || '').trim().toUpperCase();
+      var tests = filterTests();
+      return items.filter(function(item) {
+        if (!tests[activeFilter](item)) return false;
+        if (!query) return true;
+        return [
+          item['管理番号'],
+          item['商品ID'],
+          extractName(item),
+          item['人確認理由'],
+          item['低コストAI作業'],
+          item['AI次アクション'],
+          item['メモ'],
+          item['メルカリ本線'],
+          item['メルカリ投入条件'],
+          item['画像ゲート']
+        ].join(' ').toUpperCase().indexOf(query) !== -1;
+      });
+    }
+
+    function renderContext() {
+      document.getElementById('next-actions').innerHTML = (snap.next_actions || []).map(function(line) {
+        return '<div class="context-item">' + escapeHtml(line) + '</div>';
+      }).join('') || '<div class="context-item">現場ログはまだありません。</div>';
+
+      var officialRoute = findRouteOption(strategy.official_printerless_route_option_id);
+      var fallbackRoute = findRouteOption(strategy.fallback_route_option_id);
+      document.getElementById('strategy-grid').innerHTML = [
+        ['優先順位', strategy.priority || '-', 'いま最優先で守る判断'],
+        ['判断軸', strategy.decision_driver || '-', 'route 比較の基準'],
+        ['販売主軸', strategy.sales_channel || '-', '既存の主販路'],
+        ['まず楽にする route', strategy.immediate_easy_lane || (priorityRoute && (priorityRoute.name || priorityRoute.id)) || '-', strategy.immediate_easy_reason || '最初の1件を最短で閉じる線'],
+        ['次に共通化する route', strategy.multi_channel_first_lane || '-', strategy.multi_channel_first_reason || '多販路共通化へ進む線'],
+        ['EC基盤', strategy.ec_platform || '-', strategy.ec_reason || '副販路準備の受け皿'],
+        ['共通配送', strategy.shipping_platform || '-', strategy.shipping_reason || '配送共通化の土台'],
+        ['公式プリンタレス候補', officialRoute && (officialRoute.name || officialRoute.id) || '-', '公開情報で一番強い線'],
+        ['予備線', fallbackRoute && (fallbackRoute.name || fallbackRoute.id) || '-', '本命が詰まった時の逃がし先'],
+        ['後段拡張', strategy.future_upgrade || '-', strategy.future_reason || '量が増えたら再評価'],
+        ['使い分け', strategy.route_selection_guideline || '-', 'route を混ぜないための固定ルール']
+      ].map(function(row) {
+        return '<div class="strategy-card">'
+          + '<div class="strategy-label">' + escapeHtml(row[0]) + '</div>'
+          + '<div class="strategy-value">' + escapeHtml(row[1]) + '</div>'
+          + '<div class="strategy-note">' + escapeHtml(row[2]) + '</div>'
+          + '</div>';
+      }).join('');
+
+      document.getElementById('link-list').innerHTML = [
+        snap.workbook_url ? '<a class="context-item" href="' + snap.workbook_url + '" target="_blank" rel="noopener noreferrer">実行台帳を開く</a>' : '',
+        './ops.html',
+        './index.html'
+      ].map(function(line) {
+        if (!line) return '';
+        if (line.indexOf('./') === 0) {
+          var label = line === './ops.html' ? '出品リストを開く' : 'ダッシュボードへ戻る';
+          return '<a class="context-item" href="' + line + '">' + label + '</a>';
+        }
+        return line;
+      }).join('');
+    }
+
+    function renderList() {
+      var rows = sortItems(filteredItems());
+      if (!rows.length) {
+        listEl.innerHTML = '';
+        emptyEl.style.display = '';
+        countPill.textContent = '0 件';
+        return;
+      }
+      emptyEl.style.display = 'none';
+      countPill.textContent = rows.length + ' 件';
+      listEl.innerHTML = rows.map(renderItem).join('');
+    }
+
+    filtersEl.addEventListener('click', function(event) {
+      var button = event.target.closest('.filter-card');
+      if (!button) return;
+      activeFilter = button.dataset.filter;
+      renderFilters();
+      renderList();
+    });
+
+    search.addEventListener('input', renderList);
+    sortSelect.addEventListener('change', function() {
+      sortMode = sortSelect.value;
+      renderList();
+    });
+    document.getElementById('reset-btn').addEventListener('click', function() {
+      activeFilter = 'all';
+      sortMode = 'priority';
+      search.value = '';
+      sortSelect.value = 'priority';
+      renderFilters();
+      renderList();
+    });
+
+    window.toggleRoute = function(managementId) {
+      var card = document.querySelector('.route-card[data-mid="' + managementId + '"]');
+      if (card) card.classList.toggle('open');
+    };
+
+    var freshness = snap.generated_at || '';
+    if (freshness) {
+      var pill = document.getElementById('freshness-pill');
+      pill.textContent = '更新 ' + freshness.replace(/ UTC$/, '').replace(/ JST$/, '');
+      pill.style.display = '';
+    }
+
+    var params = new URLSearchParams(window.location.search);
+    var reqFilter = (params.get('filter') || '').trim();
+    var reqMid = (params.get('mid') || '').trim();
+    if (reqFilter && FILTER_META[reqFilter]) activeFilter = reqFilter;
+    if (reqMid) search.value = reqMid;
+
+    renderHero();
+    renderHeroAction();
+    renderGateBanner();
+    renderDecisionGrid();
+    renderRouteMatrix();
+    renderProfitFocus();
+    renderRouteOptions();
+    renderFilters();
+    renderContext();
+    renderList();
+
+    if (reqMid) {
+      var firstItem = document.querySelector('.route-card');
+      if (firstItem) firstItem.classList.add('open');
+    }
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="ja" data-page="channel_listings">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>出品 - 0円仕入れ物販事業</title>
+  <link rel="stylesheet" href="./common.css">
+  <style>
+    .hq-wrap { max-width: 1240px; }
+    .cl-hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 12px;
+      align-items: end;
+      margin-bottom: 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 18px;
+    }
+    .cl-hero-title {
+      font-size: 28px;
+      font-weight: 900;
+      line-height: 1.15;
+      letter-spacing: -.02em;
+    }
+    .cl-hero-note {
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--text-2);
+    }
+    .cl-hero-meta {
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--text-3);
+      white-space: nowrap;
+    }
+    .cl-summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .cl-summary-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px;
+    }
+    .cl-summary-card.green { border-color: rgba(34,197,94,.26); }
+    .cl-summary-card.blue { border-color: rgba(59,130,246,.26); }
+    .cl-summary-card.purple { border-color: rgba(168,85,247,.26); }
+    .cl-summary-card.yellow { border-color: rgba(234,179,8,.26); }
+    .cl-summary-name {
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--text-3);
+    }
+    .cl-summary-headline {
+      margin-top: 8px;
+      font-size: 24px;
+      line-height: 1;
+      font-weight: 900;
+      color: var(--text);
+    }
+    .cl-summary-card.green .cl-summary-headline { color: var(--green); }
+    .cl-summary-card.blue .cl-summary-headline { color: var(--blue); }
+    .cl-summary-card.purple .cl-summary-headline { color: var(--purple); }
+    .cl-summary-card.yellow .cl-summary-headline { color: var(--yellow); }
+    .cl-summary-detail {
+      margin-top: 8px;
+      font-size: 11px;
+      line-height: 1.6;
+      color: var(--text-2);
+    }
+    .cl-section-title {
+      margin: 0 0 10px;
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--text);
+    }
+    .cl-card {
+      display: flex; gap: 12px; background: var(--surface);
+      border: 1px solid var(--border); border-radius: var(--radius-lg);
+      padding: 14px; margin-bottom: 8px; transition: border-color .15s;
+    }
+    .cl-card:hover { border-color: var(--accent); }
+    .cl-photo-wrap {
+      width: 72px; height: 72px; flex-shrink: 0; border-radius: 10px;
+      overflow: hidden; background: var(--surface-2); border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .cl-photo { width: 100%; height: 100%; object-fit: cover; }
+    .cl-photo-placeholder { font-size: 9px; color: var(--text-3); text-align: center; line-height: 1.4; }
+    .cl-info { flex: 1; min-width: 0; }
+    .cl-id { font-size: 10px; font-family: monospace; color: var(--accent); font-weight: 700; }
+    .cl-name { font-size: 15px; font-weight: 800; margin-top: 4px; line-height: 1.45; }
+    .cl-channels { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); gap: 6px; margin-top: 6px; }
+    .cl-ch {
+      display: flex; align-items: center; gap: 6px; flex-wrap: wrap; padding: 8px 9px;
+      background: var(--surface-2); border-radius: 10px; font-size: 11px;
+    }
+    .cl-ch-label { font-weight: 800; color: var(--text-3); min-width: 78px; }
+    .cl-ch-status { font-weight: 800; }
+    .cl-ch-price { margin-left: auto; font-weight: 800; color: var(--green); }
+    .cl-ch-action {
+      margin-left: 4px; padding: 3px 8px; border-radius: 999px;
+      background: var(--accent); color: #fff; font-size: 10px; font-weight: 800;
+      text-decoration: none;
+    }
+    .cl-ch-note { width: 100%; color: var(--text-2); font-size: 11px; line-height: 1.6; }
+    .filter-bar { display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap; }
+    .filter-btn {
+      padding: 7px 12px; border-radius: 999px; font-size: 11px; font-weight: 800;
+      border: 1px solid var(--border); background: var(--surface-2);
+      color: var(--text-3); cursor: pointer;
+    }
+    .filter-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+    @media (max-width: 920px) {
+      .cl-hero { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .cl-channels { grid-template-columns: 1fr; }
+      .cl-summary-grid { grid-template-columns: 1fr; }
+      .cl-card { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hq-header">
+    <h1><span class="dot">●</span> 出品</h1>
+    <span class="hq-fresh">更新 2026-04-17 11:29:50+09:00</span>
+  </header>
+  <div class="hq-wrap">
+    <section class="cl-hero">
+      <div>
+        <div class="cl-hero-title">どこに、どれだけ出しているか</div>
+        <div class="cl-hero-note">メルカリ / BASE / ラクマ / Yahoo 系を同じ面で見ます。Yahoo!ショッピングは、まだ未接続です。</div>
+      </div>
+      <div class="cl-hero-meta">対象 13件</div>
+    </section>
+
+    <div class="cl-summary-grid">
+      <div class="cl-summary-card green"><div class="cl-summary-name">メルカリShops</div><div class="cl-summary-headline">公開 9</div><div class="cl-summary-detail">下書き 2 / 審査 1 / 一時取り下げ 1</div></div><div class="cl-summary-card blue"><div class="cl-summary-name">BASEショップ</div><div class="cl-summary-headline">公開 3</div><div class="cl-summary-detail">未出品 10</div></div><div class="cl-summary-card purple"><div class="cl-summary-name">ラクマ公式</div><div class="cl-summary-headline">下書き 2</div><div class="cl-summary-detail">未出品 11</div></div><div class="cl-summary-card yellow"><div class="cl-summary-name">Yahoo!フリマ</div><div class="cl-summary-headline">未出品 13</div><div class="cl-summary-detail">この repo では、まだ出品線は未接続です</div></div><div class="cl-summary-card yellow"><div class="cl-summary-name">ヤフオク</div><div class="cl-summary-headline">未出品 13</div><div class="cl-summary-detail">この repo では、まだ出品線は未接続です</div></div><div class="cl-summary-card gray"><div class="cl-summary-name">Yahoo!ショッピング</div><div class="cl-summary-headline">未接続</div><div class="cl-summary-detail">今の data / UI / adapter には、まだ線が入っていません</div></div>
+    </div>
+
+    <div class="cl-section-title">商品ごとの出品先</div>
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">全部 13</button>
+      <button class="filter-btn" data-filter="mercari_published" style="color:var(--green)">メルカリ公開 9</button>
+      <button class="filter-btn" data-filter="base_published" style="color:var(--blue)">BASE公開 3</button>
+      <button class="filter-btn" data-filter="draft" style="color:var(--purple)">下書きあり 3</button>
+      <button class="filter-btn" data-filter="paused" style="color:var(--orange)">一時取り下げ 1</button>
+    </div>
+    <div id="listing-list">
+<div class="cl-card" data-mercari-published="0" data-base-published="1" data-paused="0" data-draft="1">
+  <div class="cl-photo-wrap"><img class="cl-photo" src="./assets/intake/BOX-001-ITEM-0001/01_FRONT_IMG_4824_2.jpg" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="cl-photo-placeholder" style="display:none">写真<br>なし</div></div>
+  <div class="cl-info">
+    <div class="cl-id">BOX-001-ITEM-0001</div>
+    <div class="cl-name">WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り</div>
+    <div class="cl-channels"><div class="cl-ch"><span class="cl-ch-label">メルカリShops</span><span class="cl-ch-status b-yellow">審査中</span><span class="cl-ch-price">¥980</span></div><div class="cl-ch" title="価格 ¥2,480 / 在庫1 / 公開"><span class="cl-ch-label">BASEショップ</span><span class="cl-ch-status b-green">公開済</span><span class="cl-ch-price">¥2,480</span><span class="cl-ch-note">価格 ¥2,480 / 在庫1 / 公開</span></div><div class="cl-ch"><span class="cl-ch-label">ラクマ公式</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">Yahoo!フリマ</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">ヤフオク</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">eBay</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">Shopee</span><span class="cl-ch-status b-gray">未出品</span></div></div>
+  </div>
+</div><div class="cl-card" data-mercari-published="1" data-base-published="0" data-paused="0" data-draft="0">
+  <div class="cl-photo-wrap"><img class="cl-photo" src="./assets/intake/BOX-001-ITEM-0004/01_FRONT_IMG_4830.jpg" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="cl-photo-placeholder" style="display:none">写真<br>なし</div></div>
+  <div class="cl-info">
+    <div class="cl-id">BOX-001-ITEM-0004</div>
+    <div class="cl-name">IAWNI ショルダーバッグ メッセンジャーバッグ</div>
+    <div class="cl-channels"><div class="cl-ch"><span class="cl-ch-label">メルカリShops</span><span class="cl-ch-status b-green">公開済</span><span class="cl-ch-price">¥2,280</span></div><div class="cl-ch"><span class="cl-ch-label">BASEショップ</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch" title="メルカリ公開中。次に出す候補"><span class="cl-ch-label">ラクマ公式</span><span class="cl-ch-status b-gray">未出品</span><span class="cl-ch-note">メルカリ公開中。次に出す候補</span></div><div class="cl-ch"><span class="cl-ch-label">Yahoo!フリマ</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">ヤフオク</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">eBay</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">Shopee</span><span class="cl-ch-status b-gray">未出品</span></div></div>
+  </div>
+</div><div class="cl-card" data-mercari-published="1" data-base-published="0" data-paused="0" data-draft="0">
+  <div class="cl-photo-wrap"><img class="cl-photo" src="./assets/intake/BOX-001-ITEM-0005/01_FRONT_IMG_4831.jpg" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="cl-photo-placeholder" style="display:none">写真<br>なし</div></div>
+  <div class="cl-info">
+    <div class="cl-id">BOX-001-ITEM-0005</div>
+    <div class="cl-name">CEEN サルエルパンツ 七分丈 ワイドパンツ</div>
+    <div class="cl-channels"><div class="cl-ch"><span class="cl-ch-label">メルカリShops</span><span class="cl-ch-status b-green">公開済</span><span class="cl-ch-price">¥2,380</span></div><div class="cl-ch"><span class="cl-ch-label">BASEショップ</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch" title="メルカリ公開中。次に出す候補"><span class="cl-ch-label">ラクマ公式</span><span class="cl-ch-status b-gray">未出品</span><span class="cl-ch-note">メルカリ公開中。次に出す候補</span></div><div class="cl-ch"><span class="cl-ch-label">Yahoo!フリマ</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">ヤフオク</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">eBay</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">Shopee</span><span class="cl-ch-status b-gray">未出品</span></div></div>
+  </div>
+</div><div class="cl-card" data-mercari-published="1" data-base-published="0" data-paused="0" data-draft="0">
+  <div class="cl-photo-wrap"><img class="cl-photo" src="./assets/intake/BOX-001-ITEM-0008/01_FRONT_IMG_4834.jpg" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="cl-photo-placeholder" style="display:none">写真<br>なし</div></div>
+  <div class="cl-info">
+    <div class="cl-id">BOX-001-ITEM-0008</div>
+    <div class="cl-name">オナーファッション 綿100% トップス ミントグリーン 3XL</div>
+    <div class="cl-channels"><div class="cl-ch"><span class="cl-ch-label">メルカリShops</span><span class="cl-ch-status b-green">公開済</span><span class="cl-ch-price">¥1,280</span></div><div class="cl-ch"><span class="cl-ch-label">BASEショップ</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch" title="メルカリ公開中。次に出す候補"><span class="cl-ch-label">ラクマ公式</span><span class="cl-ch-status b-gray">未出品</span><span class="cl-ch-note">メルカリ公開中。次に出す候補</span></div><div class="cl-ch"><span class="cl-ch-label">Yahoo!フリマ</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">ヤフオク</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">eBay</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">Shopee</span><span class="cl-ch-status b-gray">未出品</span></div></div>
+  </div>
+</div><div class="cl-card" data-mercari-published="1" data-base-published="0" data-paused="0" data-draft="0">
+  <div class="cl-photo-wrap"><img class="cl-photo" src="./assets/intake/BOX-001-ITEM-0009/01_FRONT_IMG_4835.jpg" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="cl-photo-placeholder" style="display:none">写真<br>なし</div></div>
+  <div class="cl-info">
+    <div class="cl-id">BOX-001-ITEM-0009</div>
+    <div class="cl-name">Hotaty ピアス 金属アレルギー対応 ギフトBOX付き</div>
+    <div class="cl-channels"><div class="cl-ch"><span class="cl-ch-label">メルカリShops</span><span class="cl-ch-status b-green">公開済</span><span class="cl-ch-price">¥980</span></div><div class="cl-ch"><span class="cl-ch-label">BASEショップ</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch" title="メルカリ公開中。次に出す候補"><span class="cl-ch-label">ラクマ公式</span><span class="cl-ch-status b-gray">未出品</span><span class="cl-ch-note">メルカリ公開中。次に出す候補</span></div><div class="cl-ch"><span class="cl-ch-label">Yahoo!フリマ</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">ヤフオク</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">eBay</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">Shopee</span><span class="cl-ch-status b-gray">未出品</span></div></div>
+  </div>
+</div><div class="cl-card" data-mercari-published="1" data-base-published="0" data-paused="0" data-draft="0">
+  <div class="cl-photo-wrap"><img class="cl-photo" src="./assets/intake/BOX-001-ITEM-0011/01_FRONT_IMG_4837.jpg" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="cl-photo-placeholder" style="display:none">写真<br>なし</div></div>
+  <div class="cl-info">
+    <div class="cl-id">BOX-001-ITEM-0011</div>
+    <div class="cl-name">aieta 帽子 レディース ネックカバー付き 日よけ帽子</div>
+    <div class="cl-channels"><div class="cl-ch"><span class="cl-ch-label">メルカリShops</span><span class="cl-ch-status b-green">公開済</span><span class="cl-ch-price">¥1,480</span></div><div class="cl-ch"><span class="cl-ch-label">BASEショップ</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch" title="メルカリ公開中。次に出す候補"><span class="cl-ch-label">ラクマ公式</span><span class="cl-ch-status b-gray">未出品</span><span class="cl-ch-note">メルカリ公開中。次に出す候補</span></div><div class="cl-ch"><span class="cl-ch-label">Yahoo!フリマ</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">ヤフオク</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">eBay</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">Shopee</span><span class="cl-ch-status b-gray">未出品</span></div></div>
+  </div>
+</div><div class="cl-card" data-mercari-published="1" data-base-published="0" data-paused="0" data-draft="0">
+  <div class="cl-photo-wrap"><img class="cl-photo" src="./assets/intake/BOX-001-ITEM-0012/01_FRONT_IMG_4838.jpg" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="cl-photo-placeholder" style="display:none">写真<br>なし</div></div>
+  <div class="cl-info">
+    <div class="cl-id">BOX-001-ITEM-0012</div>
+    <div class="cl-name">gany ガーゼハンカチ 30×30cm 10枚セット 綿100%</div>
+    <div class="cl-channels"><div class="cl-ch"><span class="cl-ch-label">メルカリShops</span><span class="cl-ch-status b-green">公開済</span><span class="cl-ch-price">¥680</span></div><div class="cl-ch"><span class="cl-ch-label">BASEショップ</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch" title="メルカリ公開中。次に出す候補"><span class="cl-ch-label">ラクマ公式</span><span class="cl-ch-status b-gray">未出品</span><span class="cl-ch-note">メルカリ公開中。次に出す候補</span></div><div class="cl-ch"><span class="cl-ch-label">Yahoo!フリマ</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">ヤフオク</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">eBay</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">Shopee</span><span class="cl-ch-status b-gray">未出品</span></div></div>
+  </div>
+</div><div class="cl-card" data-mercari-published="1" data-base-published="0" data-paused="0" data-draft="0">
+  <div class="cl-photo-wrap"><img class="cl-photo" src="./assets/intake/BOX-001-ITEM-0014/01_FRONT_IMG_4840.jpg" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="cl-photo-placeholder" style="display:none">写真<br>なし</div></div>
+  <div class="cl-info">
+    <div class="cl-id">BOX-001-ITEM-0014</div>
+    <div class="cl-name">HAYAHARU キッズ靴下 LS4602LS</div>
+    <div class="cl-channels"><div class="cl-ch"><span class="cl-ch-label">メルカリShops</span><span class="cl-ch-status b-green">公開済</span><span class="cl-ch-price">¥580</span></div><div class="cl-ch"><span class="cl-ch-label">BASEショップ</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch" title="メルカリ公開中。次に出す候補"><span class="cl-ch-label">ラクマ公式</span><span class="cl-ch-status b-gray">未出品</span><span class="cl-ch-note">メルカリ公開中。次に出す候補</span></div><div class="cl-ch"><span class="cl-ch-label">Yahoo!フリマ</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">ヤフオク</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">eBay</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">Shopee</span><span class="cl-ch-status b-gray">未出品</span></div></div>
+  </div>
+</div><div class="cl-card" data-mercari-published="0" data-base-published="1" data-paused="0" data-draft="1">
+  <div class="cl-photo-wrap"><img class="cl-photo" src="./assets/intake/BOX-001-ITEM-0022/01_FRONT_IMG_4848.jpg" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="cl-photo-placeholder" style="display:none">写真<br>なし</div></div>
+  <div class="cl-info">
+    <div class="cl-id">BOX-001-ITEM-0022</div>
+    <div class="cl-name">LE BLANC フェムケアPRO 低刺激 デリケートゾーン 150mL</div>
+    <div class="cl-channels"><div class="cl-ch"><span class="cl-ch-label">メルカリShops</span><span class="cl-ch-status b-blue">下書き済</span><span class="cl-ch-price">¥980</span></div><div class="cl-ch" title="価格 ¥980 / 在庫1 / 公開"><span class="cl-ch-label">BASEショップ</span><span class="cl-ch-status b-green">公開済</span><span class="cl-ch-price">¥980</span><span class="cl-ch-note">価格 ¥980 / 在庫1 / 公開</span></div><div class="cl-ch"><span class="cl-ch-label">ラクマ公式</span><span class="cl-ch-status b-blue">下書き済</span><span class="cl-ch-price">¥980</span></div><div class="cl-ch"><span class="cl-ch-label">Yahoo!フリマ</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">ヤフオク</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">eBay</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">Shopee</span><span class="cl-ch-status b-gray">未出品</span></div></div>
+  </div>
+</div><div class="cl-card" data-mercari-published="0" data-base-published="1" data-paused="0" data-draft="1">
+  <div class="cl-photo-wrap"><img class="cl-photo" src="./assets/intake/BOX-001-ITEM-0026/01_FRONT_IMG_4852.jpg" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="cl-photo-placeholder" style="display:none">写真<br>なし</div></div>
+  <div class="cl-info">
+    <div class="cl-id">BOX-001-ITEM-0026</div>
+    <div class="cl-name">MMC FACE LOTION 240ml</div>
+    <div class="cl-channels"><div class="cl-ch"><span class="cl-ch-label">メルカリShops</span><span class="cl-ch-status b-blue">下書き済</span><span class="cl-ch-price">¥2,180</span></div><div class="cl-ch" title="価格 ¥2,180 / 在庫1 / 公開"><span class="cl-ch-label">BASEショップ</span><span class="cl-ch-status b-green">公開済</span><span class="cl-ch-price">¥2,180</span><span class="cl-ch-note">価格 ¥2,180 / 在庫1 / 公開</span></div><div class="cl-ch"><span class="cl-ch-label">ラクマ公式</span><span class="cl-ch-status b-blue">下書き済</span><span class="cl-ch-price">¥2,180</span></div><div class="cl-ch"><span class="cl-ch-label">Yahoo!フリマ</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">ヤフオク</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">eBay</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">Shopee</span><span class="cl-ch-status b-gray">未出品</span></div></div>
+  </div>
+</div><div class="cl-card" data-mercari-published="1" data-base-published="0" data-paused="0" data-draft="0">
+  <div class="cl-photo-wrap"><img class="cl-photo" src="./assets/intake/BOX-001-ITEM-0032/01_FRONT_IMG_4858.jpg" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="cl-photo-placeholder" style="display:none">写真<br>なし</div></div>
+  <div class="cl-info">
+    <div class="cl-id">BOX-001-ITEM-0032</div>
+    <div class="cl-name">ZUCCA CLUB リラックス リカバリー サンダル</div>
+    <div class="cl-channels"><div class="cl-ch"><span class="cl-ch-label">メルカリShops</span><span class="cl-ch-status b-green">公開済</span><span class="cl-ch-price">¥1,100</span></div><div class="cl-ch"><span class="cl-ch-label">BASEショップ</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch" title="メルカリ公開中。次に出す候補"><span class="cl-ch-label">ラクマ公式</span><span class="cl-ch-status b-gray">未出品</span><span class="cl-ch-note">メルカリ公開中。次に出す候補</span></div><div class="cl-ch"><span class="cl-ch-label">Yahoo!フリマ</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">ヤフオク</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">eBay</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">Shopee</span><span class="cl-ch-status b-gray">未出品</span></div></div>
+  </div>
+</div><div class="cl-card" data-mercari-published="1" data-base-published="0" data-paused="0" data-draft="0">
+  <div class="cl-photo-wrap"><img class="cl-photo" src="./assets/intake/BOX-001-ITEM-0057/01_FRONT_IMG_4883.jpg" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="cl-photo-placeholder" style="display:none">写真<br>なし</div></div>
+  <div class="cl-info">
+    <div class="cl-id">BOX-001-ITEM-0057</div>
+    <div class="cl-name">JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp</div>
+    <div class="cl-channels"><div class="cl-ch"><span class="cl-ch-label">メルカリShops</span><span class="cl-ch-status b-green">公開済</span><span class="cl-ch-price">¥2,780</span></div><div class="cl-ch"><span class="cl-ch-label">BASEショップ</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch" title="メルカリ公開中。次に出す候補"><span class="cl-ch-label">ラクマ公式</span><span class="cl-ch-status b-gray">未出品</span><span class="cl-ch-note">メルカリ公開中。次に出す候補</span></div><div class="cl-ch"><span class="cl-ch-label">Yahoo!フリマ</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">ヤフオク</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">eBay</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">Shopee</span><span class="cl-ch-status b-gray">未出品</span></div></div>
+  </div>
+</div><div class="cl-card" data-mercari-published="0" data-base-published="0" data-paused="1" data-draft="0">
+  <div class="cl-photo-wrap"><img class="cl-photo" src="./assets/intake/BOX-001-ITEM-0019/01_FRONT_IMG_4845.jpg" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="cl-photo-placeholder" style="display:none">写真<br>なし</div></div>
+  <div class="cl-info">
+    <div class="cl-id">BOX-001-ITEM-0019</div>
+    <div class="cl-name">ポロベア キャンバス トートバッグ POLO BEAR LAUREN</div>
+    <div class="cl-channels"><div class="cl-ch" title="DD指示で一時取り下げ。空き板は補充しません。"><span class="cl-ch-label">メルカリShops</span><span class="cl-ch-status b-orange">一時取り下げ</span><span class="cl-ch-price">最終¥3,980</span><span class="cl-ch-note">DD指示で一時取り下げ。空き板は補充しません。</span></div><div class="cl-ch"><span class="cl-ch-label">BASEショップ</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch" title="メルカリ公開中。次に出す候補"><span class="cl-ch-label">ラクマ公式</span><span class="cl-ch-status b-gray">未出品</span><span class="cl-ch-note">メルカリ公開中。次に出す候補</span></div><div class="cl-ch"><span class="cl-ch-label">Yahoo!フリマ</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">ヤフオク</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">eBay</span><span class="cl-ch-status b-gray">未出品</span></div><div class="cl-ch"><span class="cl-ch-label">Shopee</span><span class="cl-ch-status b-gray">未出品</span></div></div>
+  </div>
+</div>
+    </div>
+  </div>
+  <div class="hq-footer">
+    <span>スナップショット: 2026-04-17 11:29:50+09:00</span>
+  </div>
+  <script src="./common.js"></script>
+  <script>
+  (function(){
+    var cards = document.querySelectorAll('.cl-card');
+    var btns = document.querySelectorAll('.filter-btn');
+    var keyMap = {
+      mercari_published: 'mercariPublished',
+      base_published: 'basePublished',
+      paused: 'paused',
+      draft: 'draft'
+    };
+    btns.forEach(function(btn){
+      btn.addEventListener('click', function(){
+        btns.forEach(function(b){ b.classList.remove('active'); });
+        btn.classList.add('active');
+        var filter = btn.getAttribute('data-filter');
+        cards.forEach(function(card){
+          if (filter === 'all') {
+            card.style.display = '';
+            return;
+          }
+          var key = keyMap[filter];
+          card.style.display = card.dataset[key] === '1' ? '' : 'none';
+        });
+      });
+    });
+  })();
+  </script>
+</body>
+</html>

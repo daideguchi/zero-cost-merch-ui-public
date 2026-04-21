@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>0円仕入れ物販 — Merch Desk v3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    :root{
+      --bg:#0c0c0f;--bg-2:#141418;--surface:#1a1a20;--surface-2:#222228;--surface-3:#2c2c34;
+      --border:#33333c;--border-light:#40404c;
+      --text:#f0f0f3;--text-2:#b0b0b8;--text-3:#787880;
+      --accent:#6c7bf7;--accent-2:#818cf8;--accent-glow:rgba(108,123,247,.15);
+      --red:#ef4444;--red-bg:rgba(239,68,68,.12);
+      --orange:#f97316;--orange-bg:rgba(249,115,22,.12);
+      --yellow:#eab308;--yellow-bg:rgba(234,179,8,.12);
+      --blue:#3b82f6;--blue-bg:rgba(59,130,246,.12);
+      --green:#22c55e;--green-bg:rgba(34,197,94,.12);
+      --gray:#71717a;--gray-bg:rgba(113,113,122,.1);
+      --r:8px;--radius-lg:12px;
+    }
+    html{scroll-behavior:smooth}
+    body{font-family:'Noto Sans JP','Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.5;min-height:100vh}
+    a{color:var(--accent-2);text-decoration:none}
+    button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
+
+    /* ── Top Bar ── */
+    .topbar{position:sticky;top:0;z-index:100;display:flex;align-items:center;gap:12px;padding:0 20px;height:52px;background:rgba(12,12,15,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+    .topbar-logo{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:800;letter-spacing:-.02em;white-space:nowrap}
+    .topbar-logo .dot{color:var(--accent);font-size:16px}
+    .topbar-fresh{font-size:10px;color:var(--text-3);font-weight:600;margin-left:auto}
+    .topbar-links{display:flex;gap:4px;margin-left:12px}
+    .topbar-links a{padding:5px 10px;border-radius:999px;font-size:11px;font-weight:700;color:var(--text-3);transition:all .15s}
+    .topbar-links a:hover{color:var(--text);background:var(--surface-2)}
+    .topbar-links a.active{color:#fff;background:var(--accent)}
+
+    /* ── Tab Navigation ── */
+    .tabs{display:flex;gap:0;background:var(--bg-2);border-bottom:1px solid var(--border);padding:0 20px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+    .tabs::-webkit-scrollbar{display:none}
+    .tab{padding:10px 18px;font-size:12px;font-weight:700;color:var(--text-3);border-bottom:2px solid transparent;transition:all .15s;white-space:nowrap;cursor:pointer}
+    .tab:hover{color:var(--text)}
+    .tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+    .tab .badge-n{display:inline-block;padding:1px 6px;border-radius:999px;font-size:10px;font-weight:800;background:var(--surface-3);margin-left:4px}
+    .tab.active .badge-n{background:var(--accent-glow);color:var(--accent)}
+
+    /* ── Dashboard Summary Cards ── */
+    .dash-hero{padding:16px 20px;border-bottom:1px solid var(--border);background:var(--bg-2)}
+    .dash-hero-title{font-size:13px;font-weight:800;color:var(--text-3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px}
+    .dash-hero-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px}
+    .dash-hero-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:12px;text-align:center}
+    .dash-hero-card .val{font-size:24px;font-weight:900;line-height:1}
+    .dash-hero-card .lbl{font-size:10px;font-weight:700;color:var(--text-3);margin-top:4px}
+    .dash-hero-card.red{border-color:rgba(239,68,68,.28);background:var(--red-bg)}
+    .dash-hero-card.red .val{color:var(--red)}
+    .dash-hero-card.green{border-color:rgba(34,197,94,.28);background:var(--green-bg)}
+    .dash-hero-card.green .val{color:var(--green)}
+    .dash-hero-card.yellow{border-color:rgba(234,179,8,.28);background:var(--yellow-bg)}
+    .dash-hero-card.yellow .val{color:var(--yellow)}
+    .dash-hero-card.blue{border-color:rgba(59,130,246,.28);background:var(--blue-bg)}
+    .dash-hero-card.blue .val{color:var(--blue)}
+
+    /* ── Alert Banner ── */
+    .alert-banner{padding:10px 20px;border-bottom:1px solid var(--border);background:var(--red-bg)}
+    .alert-banner.hidden{display:none}
+    .alert-banner-row{display:flex;align-items:center;gap:8px}
+    .alert-banner-icon{font-size:16px;flex-shrink:0}
+    .alert-banner-text{flex:1;font-size:12px;font-weight:700;color:var(--red)}
+    .alert-banner-btn{font-size:10px;font-weight:800;color:var(--red);background:rgba(239,68,68,.18);padding:4px 10px;border-radius:999px;cursor:pointer;transition:background .15s}
+    .alert-banner-btn:hover{background:rgba(239,68,68,.3)}
+
+    /* ── Pipeline Progress ── */
+    .pipeline{padding:12px 20px;border-bottom:1px solid var(--border);background:var(--bg-2)}
+    .pipeline-label{font-size:10px;font-weight:800;color:var(--text-3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
+    .pipeline-bar{display:flex;height:8px;border-radius:999px;overflow:hidden;background:var(--surface-3)}
+    .pipeline-bar>span{transition:width .3s}
+    .pipeline-bar>span.red{background:var(--red)}
+    .pipeline-bar>span.orange{background:var(--orange)}
+    .pipeline-bar>span.yellow{background:var(--yellow)}
+    .pipeline-bar>span.blue{background:var(--blue)}
+    .pipeline-bar>span.green{background:var(--green)}
+    .pipeline-bar>span.gray{background:var(--gray)}
+    .pipeline-legend{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+    .pipeline-legend>span{font-size:10px;font-weight:700;color:var(--text-3);display:flex;align-items:center;gap:3px}
+    .pipeline-legend>span::before{content:'';display:inline-block;width:8px;height:8px;border-radius:50%}
+    .pipeline-legend>span.red::before{background:var(--red)}
+    .pipeline-legend>span.orange::before{background:var(--orange)}
+    .pipeline-legend>span.yellow::before{background:var(--yellow)}
+    .pipeline-legend>span.blue::before{background:var(--blue)}
+    .pipeline-legend>span.green::before{background:var(--green)}
+    .pipeline-legend>span.gray::before{background:var(--gray)}
+
+    /* ── Filter Bar ── */
+    .fbar{display:flex;align-items:center;gap:4px;padding:8px 20px;background:var(--bg);border-bottom:1px solid var(--border);overflow-x:auto;-webkit-overflow-scrolling:touch}
+    .fbar::-webkit-scrollbar{display:none}
+    .fbtn{flex-shrink:0;display:flex;align-items:center;gap:5px;padding:5px 12px;border-radius:999px;font-size:11px;font-weight:700;background:var(--surface);border:1px solid var(--border);transition:all .15s;white-space:nowrap}
+    .fbtn:hover{border-color:var(--accent)}
+    .fbtn.active{background:var(--accent);border-color:var(--accent);color:#fff}
+    .fbtn .n{font-size:10px;font-weight:800;padding:1px 5px;border-radius:999px;background:var(--surface-3)}
+    .fbtn.active .n{background:rgba(255,255,255,.2)}
+    .fbtn.all .n{background:var(--accent-glow);color:var(--accent)}
+    .fcount{font-size:11px;color:var(--text-3);margin-left:auto;padding-right:8px;white-space:nowrap}
+    .fcount span{font-weight:800;color:var(--text)}
+
+    /* ── Intake List ── */
+    .intake-header{display:grid;grid-template-columns:56px 1fr 90px 90px;padding:8px 20px;font-size:10px;font-weight:800;color:var(--text-3);text-transform:uppercase;letter-spacing:.05em;border-bottom:1px solid var(--border);background:var(--bg-2)}
+    .intake-row{display:grid;grid-template-columns:56px 1fr 90px 90px;padding:8px 20px;border-bottom:1px solid var(--border);cursor:pointer;transition:background .12s;align-items:center}
+    .intake-row:hover{background:var(--surface)}
+    .intake-row.analyzed{border-left:3px solid var(--green)}
+    .intake-row.pending{border-left:3px solid var(--yellow)}
+    .intake-thumb{width:48px;height:48px;object-fit:cover;border-radius:6px;border:1px solid var(--border)}
+    .intake-thumb-ph{width:48px;height:48px;border-radius:6px;background:var(--surface-3);border:1px dashed var(--border);display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--text-3)}
+    .intake-info{padding-left:8px;min-width:0}
+    .intake-mid{font-size:10px;font-weight:800;color:var(--accent);font-family:'Inter',monospace}
+    .intake-name{font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px}
+    .intake-status{font-size:10px;font-weight:700;text-align:center}
+    .intake-status.green{color:var(--green)}
+    .intake-status.yellow{color:var(--yellow)}
+
+    /* ── Product List (Card Style) ── */
+    .card-list{padding:12px 20px;display:grid;gap:10px}
+    .card-item{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;cursor:pointer;transition:border-color .15s,transform .12s}
+    .card-item:hover{border-color:var(--accent);transform:translateY(-1px)}
+    .card-item.red{border-left:4px solid var(--red)}
+    .card-item.orange{border-left:4px solid var(--orange)}
+    .card-item.yellow{border-left:4px solid var(--yellow)}
+    .card-item.blue{border-left:4px solid var(--blue)}
+    .card-item.green{border-left:4px solid var(--green)}
+    .card-item.gray{border-left:4px solid var(--gray)}
+    .card-top{display:grid;grid-template-columns:56px 1fr auto;gap:10px;padding:12px;align-items:center}
+    .card-thumb{width:56px;height:56px;object-fit:cover;border-radius:6px;border:1px solid var(--border);background:var(--surface-3)}
+    .card-thumb-ph{width:56px;height:56px;border-radius:6px;background:var(--surface-3);border:1px dashed var(--border);display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--text-3)}
+    .card-info{min-width:0}
+    .card-mid{font-size:10px;font-weight:800;color:var(--accent);font-family:'Inter',monospace}
+    .card-name{font-size:13px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px}
+    .card-meta{display:flex;gap:4px;margin-top:4px;flex-wrap:wrap}
+    .card-meta-tag{font-size:9px;font-weight:700;padding:2px 6px;border-radius:4px;background:var(--surface-3);color:var(--text-3)}
+    .card-meta-tag.exact{background:var(--green-bg);color:var(--green)}
+    .card-right{text-align:right;flex-shrink:0}
+    .card-price{font-size:16px;font-weight:900;color:var(--green)}
+    .card-price.muted{color:var(--text-3);font-size:12px}
+    .card-floor{font-size:9px;color:var(--text-3);margin-top:2px}
+    .card-bottom{padding:0 12px 10px;display:flex;align-items:center;justify-content:space-between}
+    .card-badge{font-size:10px;font-weight:800;padding:3px 8px;border-radius:999px}
+    .card-badge.red{background:var(--red-bg);color:var(--red)}
+    .card-badge.orange{background:var(--orange-bg);color:var(--orange)}
+    .card-badge.yellow{background:var(--yellow-bg);color:var(--yellow)}
+    .card-badge.blue{background:var(--blue-bg);color:var(--blue)}
+    .card-badge.green{background:var(--green-bg);color:var(--green)}
+    .card-badge.gray{background:var(--gray-bg);color:var(--gray)}
+    .card-date{font-size:10px;color:var(--text-3)}
+
+    /* ── Published List ── */
+    .pub-list{padding:12px 20px;display:grid;gap:10px}
+    .pub-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;cursor:pointer;transition:border-color .15s}
+    .pub-card:hover{border-color:var(--accent)}
+    .pub-card-top{display:grid;grid-template-columns:1fr auto;gap:12px;padding:12px;align-items:start}
+    .pub-card-info{min-width:0}
+    .pub-card-mid{font-size:10px;font-weight:800;color:var(--accent);font-family:'Inter',monospace}
+    .pub-card-name{font-size:13px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px}
+    .pub-card-stats{display:flex;gap:12px;margin-top:6px;flex-wrap:wrap}
+    .pub-stat-item{display:flex;flex-direction:column;align-items:center}
+    .pub-stat-item .val{font-size:14px;font-weight:800;color:var(--text)}
+    .pub-stat-item .val.muted{color:var(--text-3);font-size:11px}
+    .pub-stat-item .lbl{font-size:8px;font-weight:700;color:var(--text-3);margin-top:1px;text-transform:uppercase;letter-spacing:.04em}
+    .pub-card-right{text-align:right;flex-shrink:0}
+    .pub-card-price{font-size:18px;font-weight:900;color:var(--green)}
+    .pub-card-link{font-size:10px;font-weight:700;color:var(--accent);margin-top:4px;display:inline-block}
+    .pub-card-photos{padding:0 12px 10px;display:flex;gap:4px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+    .pub-card-photos::-webkit-scrollbar{display:none}
+    .pub-card-photos img{width:56px;height:56px;object-fit:cover;border-radius:4px;border:1px solid var(--border);flex-shrink:0}
+    .pub-card-photos .ph{width:56px;height:56px;border-radius:4px;background:var(--surface-3);border:1px dashed var(--border);display:flex;align-items:center;justify-content:center;font-size:8px;color:var(--text-3);font-weight:700;flex-shrink:0}
+
+    /* ── Empty ── */
+    .empty{text-align:center;padding:60px 20px;color:var(--text-3)}
+    .empty-icon{font-size:40px;margin-bottom:8px}
+    .empty-text{font-size:13px;font-weight:600}
+
+    /* ── Detail Panel ── */
+    .overlay{position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.6);opacity:0;pointer-events:none;transition:opacity .25s}
+    .overlay.open{opacity:1;pointer-events:auto}
+    .panel{position:fixed;top:0;right:0;bottom:0;z-index:210;width:min(640px,100vw);background:var(--bg-2);border-left:1px solid var(--border);overflow-y:auto;transform:translateX(100%);transition:transform .3s cubic-bezier(.4,0,.2,1)}
+    .panel.open{transform:translateX(0)}
+    .panel-header{position:sticky;top:0;z-index:10;display:flex;align-items:center;gap:10px;padding:14px 18px;background:rgba(20,20,24,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+    .panel-close{width:30px;height:30px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:16px;background:var(--surface-2);border:1px solid var(--border);transition:background .15s}
+    .panel-close:hover{background:var(--surface-3)}
+    .panel-title{flex:1;min-width:0}
+    .panel-mid{font-size:10px;font-weight:800;color:var(--accent);font-family:'Inter',monospace}
+    .panel-name{font-size:14px;font-weight:800;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .panel-section{padding:16px 18px;border-bottom:1px solid var(--border)}
+    .panel-section:last-child{border-bottom:none}
+    .panel-label{font-size:10px;font-weight:800;color:var(--text-3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
+    .photo-gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:6px}
+    .photo-gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:var(--r);border:1px solid var(--border);cursor:zoom-in;transition:opacity .15s}
+    .photo-gallery img:hover{opacity:.85}
+    .photo-gallery.ai img{border-color:rgba(108,123,247,.35)}
+    .photo-gallery .ph{aspect-ratio:1;display:flex;align-items:center;justify-content:center;border-radius:var(--r);border:1px dashed var(--border);font-size:10px;color:var(--text-3);font-weight:700;background:var(--surface-3)}
+    .photo-section-label{font-size:9px;font-weight:800;color:var(--text-3);margin-bottom:6px;text-transform:uppercase;letter-spacing:.06em}
+    .photo-section-label.ai{color:rgba(108,123,247,.7)}
+    .photo-divider{height:1px;background:var(--border);margin:12px 0}
+    .info-row{display:flex;gap:10px;padding:7px 0;font-size:12px;border-bottom:1px solid var(--border)}
+    .info-row:last-child{border-bottom:none}
+    .info-label{flex:0 0 80px;color:var(--text-3);font-weight:600}
+    .info-value{flex:1;color:var(--text);word-break:break-word}
+    .alert-box{padding:10px 12px;border-radius:var(--r);font-size:11px;line-height:1.7}
+    .alert-box.red{background:var(--red-bg);border:1px solid rgba(239,68,68,.2);color:var(--red)}
+    .alert-box.orange{background:var(--orange-bg);border:1px solid rgba(249,115,22,.2);color:var(--orange)}
+    .alert-box.yellow{background:var(--yellow-bg);border:1px solid rgba(234,179,8,.2);color:var(--yellow)}
+    .alert-box.blue{background:var(--blue-bg);border:1px solid rgba(59,130,246,.2);color:var(--blue)}
+    .action-btns{display:flex;gap:6px;padding:16px 18px;flex-wrap:wrap}
+    .abtn{display:inline-flex;align-items:center;gap:5px;padding:9px 16px;border-radius:var(--r);font-size:12px;font-weight:700;background:var(--accent);color:#fff;transition:background .15s}
+    .abtn:hover{background:var(--accent-2)}
+    .abtn.sec{background:var(--surface-2);border:1px solid var(--border)}
+    .abtn.sec:hover{background:var(--surface-3)}
+
+    /* ── Responsive ── */
+    @media(max-width:768px){
+      .dash-hero-grid{grid-template-columns:repeat(3,1fr)}
+      .card-top{grid-template-columns:48px 1fr auto;gap:8px}
+      .card-thumb,.card-thumb-ph{width:48px;height:48px}
+      .pub-card-top{grid-template-columns:1fr}
+      .intake-header{display:none}
+      .intake-row{grid-template-columns:48px 1fr}
+    }
+    @media(max-width:480px){
+      .dash-hero-grid{grid-template-columns:repeat(2,1fr)}
+      .topbar{padding:0 12px}
+      .topbar-links a{padding:4px 8px;font-size:10px}
+      .tabs{padding:0 12px}
+      .tab{padding:8px 14px;font-size:11px}
+      .fbar{padding:8px 12px}
+      .card-list,.pub-list{padding:10px 12px}
+      .dash-hero{padding:12px}
+    }
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-logo"><span class="dot">●</span>Merch Desk</div>
+  <div class="topbar-fresh" id="fresh"></div>
+  <nav class="topbar-links">
+    <a href="./index_v3.html" class="active">商品</a>
+    <a href="./shipping.html">発送</a>
+    <a href="./routing.html">販路</a>
+    <a href="./roles.html">AI役職</a>
+  </nav>
+</header>
+
+<div class="tabs" id="maintabs"></div>
+
+<!-- Dashboard Hero + Alerts + Pipeline (only visible on dashboard tab) -->
+<div id="dashboard-extra"></div>
+
+<div id="content"></div>
+
+<div class="overlay" id="overlay" onclick="closePanel()"></div>
+<div class="panel" id="panel"></div>
+
+<script src="./status_snapshot.js?v=10"></script>
+<script src="./intake_snapshot.js?v=10"></script>
+<script src="./milestone_snapshot.js?v=10"></script>
+<script>
+(function(){
+  var S=window.ZERO_COST_STATUS||{}, I=window.ZERO_COST_INTAKE||{};
+  var items=I.items||[];
+  var gen=S.generated_at||I.generated_at||'';
+  if(gen) document.getElementById('fresh').textContent='更新 '+gen.replace(/ JST$/,'').replace(/ UTC$/,'');
+
+  function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+  function pn(it){return it.product_name||(it.resolved&&it.resolved.product_name)||(it.commerce&&it.commerce.product_name)||'商品名未定'}
+
+  function classify(it){
+    var ps=String(it.publish_state||(it.commerce&&it.commerce.publish_state)||'').trim();
+    var rs=String((it.resolved&&it.resolved.resolution_status)||'');
+    var hq=String(it.qwen_hq_resolution||'');
+    var is_=String((it.identification&&it.identification.state)||'');
+    var img=String((it.resolved&&it.resolved.official_image_state)||'');
+    if(hq==='blocked') return {k:'blocked',l:'HQ差し止め',c:'red',p:0};
+    if(hq==='needs_split'||is_==='split_required') return {k:'split',l:'要再束ね',c:'orange',p:1};
+    if(ps==='API公開済み') return {k:'published',l:'公開済み',c:'green',p:6};
+    if(ps==='カテゴリ審査待ち') return {k:'review',l:'審査待ち',c:'yellow',p:3};
+    if(rs==='confirmed'||rs==='provisional'){
+      if(img.indexOf('actual-only')>=0) return {k:'actual',l:'実物一致',c:'blue',p:4};
+      if(img.indexOf('exact-match不可')>=0) return {k:'exact-no',l:'比較不一致',c:'yellow',p:2};
+      if(img.indexOf('exact-match保留')>=0) return {k:'exact-pend',l:'保留',c:'yellow',p:2};
+      if(img.indexOf('比較画像待ち')>=0||img.indexOf('調査画像待ち')>=0) return {k:'img-wait',l:'画像未取得',c:'yellow',p:2};
+      return {k:'draft',l:'出品準備可',c:'blue',p:4};
+    }
+    return {k:'unidentified',l:'特定待ち',c:'gray',p:5};
+  }
+
+  items.forEach(function(it){it._c=classify(it)});
+
+  function getRealThumbs(it){
+    var slots=it.slots||[],out=[];
+    ['FRONT','BACK','CODE'].forEach(function(sn){
+      var found=null;
+      for(var i=0;i<slots.length;i++){if(slots[i].slot===sn&&slots[i].resident_url){found=slots[i].resident_url;break}}
+      out.push(found?{url:found,l:sn}:{url:'',l:sn});
+    });
+    return out;
+  }
+
+  function getAIImages(it){
+    var urls=[];
+    if(it.resolved&&it.resolved.official_image_url) urls.push({url:it.resolved.official_image_url});
+    var src=it.comparison_images||it.reference_images||[];
+    for(var i=0;i<src.length;i++){var u=src[i].url||'';if(u&&!urls.find(function(x){return x.url===u}))urls.push({url:u})}
+    return urls;
+  }
+
+  // ── Counts ──
+  var counts={total:items.length,published:0,blocked:0,split:0,review:0,draft:0,unidentified:0,actual:0};
+  items.forEach(function(it){
+    var k=it._c.k;
+    if(k==='published')counts.published++;
+    else if(k==='blocked')counts.blocked++;
+    else if(k==='split')counts.split++;
+    else if(k==='review')counts.review++;
+    else if(k==='draft'||k==='actual')counts.draft++;
+    else if(k==='unidentified')counts.unidentified++;
+    if(k==='actual')counts.actual++;
+  });
+  var alertCount=counts.blocked+counts.split+counts.review;
+
+  // ── Tabs ──
+  var tabDefs=[
+    {k:'dashboard',l:'📊 概要',n:items.length},
+    {k:'intake',l:'写真受入',n:items.length},
+    {k:'products',l:'商品一覧',n:items.length},
+    {k:'published',l:'出品済み',n:counts.published}
+  ];
+  var activeTab='dashboard';
+
+  function renderTabs(){
+    document.getElementById('maintabs').innerHTML=tabDefs.map(function(t){
+      return '<div class="tab'+(activeTab===t.k?' active':'')+'" data-k="'+esc(t.k)+'" onclick="setTab(\''+esc(t.k)+'\')">'+esc(t.l)+' <span class="badge-n">'+t.n+'</span></div>';
+    }).join('');
+  }
+
+  window.setTab=function(k){activeTab=k;renderTabs();renderDashboardExtra();renderContent()};
+
+  // ── Dashboard Extra (Hero + Alerts + Pipeline) ──
+  function renderDashboardExtra(){
+    var el=document.getElementById('dashboard-extra');
+    if(activeTab!=='dashboard'){el.innerHTML='';return}
+
+    // Hero Cards
+    var heroHtml='<div class="dash-hero">'
+      +'<div class="dash-hero-title">現在の状況</div>'
+      +'<div class="dash-hero-grid">'
+      +'<div class="dash-hero-card green"><div class="val">'+counts.published+'</div><div class="lbl">公開済み</div></div>'
+      +'<div class="dash-hero-card blue"><div class="val">'+counts.draft+'</div><div class="lbl">出品準備可</div></div>'
+      +'<div class="dash-hero-card yellow"><div class="val">'+counts.review+'</div><div class="lbl">審査待ち</div></div>'
+      +'<div class="dash-hero-card orange"><div class="val">'+counts.split+'</div><div class="lbl">要再束ね</div></div>'
+      +'<div class="dash-hero-card red"><div class="val">'+counts.blocked+'</div><div class="lbl">HQ差し止め</div></div>'
+      +'<div class="dash-hero-card gray"><div class="val">'+counts.unidentified+'</div><div class="lbl">特定待ち</div></div>'
+      +'</div></div>';
+
+    // Alert Banner
+    var alertHtml='';
+    if(alertCount>0){
+      alertHtml='<div class="alert-banner"><div class="alert-banner-row">'
+        +'<span class="alert-banner-icon">⚠️</span>'
+        +'<span class="alert-banner-text">'+alertCount+'件の要注意アイテム（差し止め/再束ね/審査）</span>'
+        +'<button class="alert-banner-btn" onclick="setTab(\'products\');setTimeout(function(){setF(\'split\')},50)">見る →</button>'
+        +'</div></div>';
+    }
+
+    // Pipeline Progress
+    var total=items.length||1;
+    var pRed=counts.blocked*100/total;
+    var pOrange=counts.split*100/total;
+    var pYellow=(counts.review+counts.unidentified)*100/total;
+    var pBlue=counts.draft*100/total;
+    var pGreen=counts.published*100/total;
+    var pGray=0; // remaining
+    var pipelineHtml='<div class="pipeline">'
+      +'<div class="pipeline-label">全体パイプライン</div>'
+      +'<div class="pipeline-bar">'
+      +'<span class="red" style="width:'+pRed+'%"></span>'
+      +'<span class="orange" style="width:'+pOrange+'%"></span>'
+      +'<span class="yellow" style="width:'+pYellow+'%"></span>'
+      +'<span class="blue" style="width:'+pBlue+'%"></span>'
+      +'<span class="green" style="width:'+pGreen+'%"></span>'
+      +'</div>'
+      +'<div class="pipeline-legend">'
+      +'<span class="red">差し止め '+counts.blocked+'</span>'
+      +'<span class="orange">再束ね '+counts.split+'</span>'
+      +'<span class="yellow">審査/特定 '+(counts.review+counts.unidentified)+'</span>'
+      +'<span class="blue">準備可 '+counts.draft+'</span>'
+      +'<span class="green">公開済 '+counts.published+'</span>'
+      +'</div></div>';
+
+    el.innerHTML=heroHtml+alertHtml+pipelineHtml;
+  }
+
+  function renderContent(){
+    var el=document.getElementById('content');
+    if(activeTab==='dashboard'||activeTab==='intake') renderIntake(el);
+    else if(activeTab==='products') renderProducts(el);
+    else renderPublished(el);
+  }
+
+  // ── Intake Tab ──
+  function renderIntake(el){
+    var header='<div class="intake-header"><div class="lh-label">写真</div><div>商品</div><div style="text-align:center">状態</div><div style="text-align:center">価格</div></div>';
+    var rows=items.map(function(it){
+      var c=it._c;
+      var thumb=getRealThumbs(it)[0];
+      var analyzed=c.k!=='unidentified'&&c.k!=='split';
+      var price=it.commerce&&it.commerce.listing_price||it.listing_price;
+      return '<div class="intake-row '+(analyzed?'analyzed':'pending')+'" onclick="openD(\''+esc(it.management_id)+'\')">'
+        +(thumb.url?'<img class="intake-thumb" src="'+esc(thumb.url)+'" alt="" loading="lazy">':'<div class="intake-thumb-ph">📷</div>')
+        +'<div class="intake-info"><div class="intake-mid">'+esc(it.management_id)+'</div><div class="intake-name">'+esc(pn(it))+'</div></div>'
+        +'<div style="text-align:center"><span class="intake-status '+(analyzed?'green':'yellow')+'">'+(analyzed?'✅ 分析済':'⏳ 待ち')+'</span></div>'
+        +'<div style="text-align:right;font-size:12px;font-weight:700;color:var(--text-2)">'+(price?'¥'+Number(price).toLocaleString():'未定')+'</div>'
+        +'</div>';
+    }).join('');
+    el.innerHTML=header+rows;
+  }
+
+  // ── Products Tab (Card Style) ──
+  var af='all';
+  var cats=[
+    {k:'all',l:'全件'},{k:'published',l:'公開済み'},{k:'actual',l:'実物一致'},{k:'draft',l:'出品準備可'},
+    {k:'exact-pend',l:'保留'},{k:'exact-no',l:'比較不一致'},{k:'img-wait',l:'画像未取得'},
+    {k:'review',l:'審査待ち'},{k:'split',l:'要再束ね'},{k:'blocked',l:'HQ差し止め'},{k:'unidentified',l:'特定待ち'}
+  ];
+
+  function renderProducts(el){
+    var fbarHtml=cats.map(function(c){
+      var n=c.k==='all'?items.length:items.filter(function(it){return it._c.k===c.k}).length;
+      if(n===0&&c.k!=='all')return '';
+      var cls=c.k==='all'?'fbtn all':'fbtn';
+      if(af===c.k)cls+=' active';
+      return '<button class="'+cls+'" onclick="setF(\''+esc(c.k)+'\')">'+esc(c.l)+' <span class="n">'+n+'</span></button>';
+    }).join('');
+    var cnt=af==='all'?items.length:items.filter(function(it){return it._c.k===af}).length;
+    var fc='<div class="fcount"><span>'+cnt+'</span> / '+items.length+' 件</div>';
+
+    var filtered=af==='all'?items:items.filter(function(it){return it._c.k===af});
+    var cards='';
+    if(!filtered.length) cards='<div class="empty"><div class="empty-icon">📭</div><div class="empty-text">このカテゴリに商品はありません</div></div>';
+    else cards=filtered.map(function(it){
+      var c=it._c;
+      var thumb=getRealThumbs(it)[0];
+      var price=it.commerce&&it.commerce.listing_price||it.listing_price;
+      var fp=it.commerce&&it.commerce.market_floor_price;
+      var updatedAt=it.commerce&&it.commerce.updated_at||'';
+      var dateStr=updatedAt?updatedAt.split(' ')[0]:'';
+      var tags=[];
+      if(it.verified_exact_match) tags.push('<span class="card-meta-tag exact">画像OK</span>');
+      if(it.commerce&&it.commerce.brand) tags.push('<span class="card-meta-tag">'+esc(it.commerce.brand)+'</span>');
+      return '<div class="card-item '+c.c+'" onclick="openD(\''+esc(it.management_id)+'\')">'
+        +'<div class="card-top">'
+        +(thumb.url?'<img class="card-thumb" src="'+esc(thumb.url)+'" alt="" loading="lazy">':'<div class="card-thumb-ph">📷</div>')
+        +'<div class="card-info">'
+        +'<div class="card-mid">'+esc(it.management_id)+'</div>'
+        +'<div class="card-name">'+esc(pn(it))+'</div>'
+        +(tags.length?'<div class="card-meta">'+tags.join('')+'</div>':'')
+        +'</div>'
+        +'<div class="card-right">'
+        +'<div class="card-price'+(price?'':' muted')+'">'+(price?'¥'+Number(price).toLocaleString():'未定')+'</div>'
+        +(fp?'<div class="card-floor">相場 ¥'+Number(fp).toLocaleString()+'</div>':'')
+        +'</div>'
+        +'</div>'
+        +'<div class="card-bottom">'
+        +'<span class="card-badge '+c.c+'">'+esc(c.l)+'</span>'
+        +'<span class="card-date">'+(dateStr?'更新 '+dateStr:'')+'</span>'
+        +'</div>'
+        +'</div>';
+    }).join('');
+    el.innerHTML='<div class="fbar">'+fbarHtml+fc+'</div>'+'<div class="card-list">'+cards+'</div>';
+  }
+
+  window.setF=function(k){af=k;renderProducts(document.getElementById('content'))};
+
+  // ── Published Tab ──
+  function renderPublished(el){
+    var pub=items.filter(function(it){return it._c.k==='published'});
+    if(!pub.length){el.innerHTML='<div class="empty"><div class="empty-icon">📦</div><div class="empty-text">まだ出品済みの商品はありません</div></div>';return}
+    var cards=pub.map(function(it){
+      var com=it.commerce||{};
+      var price=com.listing_price||it.listing_price;
+      var fp=com.market_floor_price||'';
+      var updatedAt=com.updated_at||'';
+      var listDate=updatedAt?updatedAt.split(' ')[0]:'—';
+      var viewCount='—';
+      var inquiryCount='—';
+      var listingUrl=com.public_listing_url||'';
+
+      // 写真: AI収集 + 実物
+      var ai=getAIImages(it);
+      var real=getRealThumbs(it);
+      var allPhotos=[];
+      ai.forEach(function(x){allPhotos.push(x)});
+      real.forEach(function(r){if(r.url)allPhotos.push({url:r.url})});
+      var photoHtml=allPhotos.slice(0,8).map(function(p){
+        return p.url?'<img src="'+esc(p.url)+'" alt="" loading="lazy">':'<div class="ph">—</div>';
+      }).join('');
+
+      return '<div class="pub-card" onclick="openD(\''+esc(it.management_id)+'\')">'
+        +'<div class="pub-card-top">'
+        +'<div class="pub-card-info">'
+        +'<div class="pub-card-mid">'+esc(it.management_id)+'</div>'
+        +'<div class="pub-card-name">'+esc(pn(it))+'</div>'
+        +'<div class="pub-card-stats">'
+        +'<div class="pub-stat-item"><span class="val">'+(price?'¥'+Number(price).toLocaleString():'—')+'</span><span class="lbl">価格</span></div>'
+        +'<div class="pub-stat-item"><span class="val '+(fp?'':'muted')+'">'+(fp?'¥'+Number(fp).toLocaleString():'—')+'</span><span class="lbl">相場</span></div>'
+        +'<div class="pub-stat-item"><span class="val">'+listDate+'</span><span class="lbl">出品日</span></div>'
+        +'<div class="pub-stat-item"><span class="val muted">'+viewCount+'</span><span class="lbl">閲覧</span></div>'
+        +'<div class="pub-stat-item"><span class="val muted">'+inquiryCount+'</span><span class="lbl">問合せ</span></div>'
+        +'</div>'
+        +'</div>'
+        +'<div class="pub-card-right">'
+        +'<div class="pub-card-price">'+(price?'¥'+Number(price).toLocaleString():'—')+'</div>'
+        +(listingUrl?'<a class="pub-card-link" href="'+esc(listingUrl)+'" target="_blank" onclick="event.stopPropagation()">Mercari →</a>':'')
+        +'</div>'
+        +'</div>'
+        +'<div class="pub-card-photos">'+photoHtml+'</div>'
+        +'</div>';
+    }).join('');
+    el.innerHTML='<div class="pub-list">'+cards+'</div>';
+  }
+
+  renderTabs();
+  renderDashboardExtra();
+  renderContent();
+
+  // ── Detail Panel ──
+  window.openD=function(mid){
+    var it=null;
+    for(var i=0;i<items.length;i++){if(items[i].management_id===mid){it=items[i];break}}
+    if(!it)return;
+    var c=it._c;
+
+    var com=it.commerce||{};
+    var price=com.listing_price||it.listing_price;
+    var fp=com.market_floor_price||'';
+    var listingUrl=com.public_listing_url||'';
+    var updatedAt=com.updated_at||'';
+    var listingId=com.listing_id||'';
+
+    // 写真セクション
+    var realPhotos=getRealThumbs(it);
+    var aiPhotos=getAIImages(it);
+    var realHtml=realPhotos.map(function(t){
+      return t.url?'<img src="'+esc(t.url)+'" alt="'+esc(t.l)+'" loading="lazy">':'<div class="ph">'+esc(t.l)+'</div>';
+    }).join('');
+    var aiHtml=aiPhotos.map(function(t){
+      return t.url?'<img src="'+esc(t.url)+'" alt="" loading="lazy">':'<div class="ph">—</div>';
+    }).join('');
+
+    var rows=[];
+    if(com.brand) rows.push(['ブランド',com.brand]);
+    if(com.category) rows.push(['カテゴリ',com.category]);
+    if(com.barcode_primary) rows.push(['バーコード',com.barcode_primary]);
+    if(price) rows.push(['価格','¥'+Number(price).toLocaleString()]);
+    if(fp) rows.push(['相場','¥'+Number(fp).toLocaleString()]);
+    if(listingId) rows.push(['Listing ID',listingId]);
+    if(updatedAt) rows.push(['更新日',updatedAt]);
+
+    var route=it.route_plan||{};
+    if(route['メルカリ本線']) rows.push(['メルカリ本線',route['メルカリ本線']]);
+    if(route['メルカリ投入条件']) rows.push(['投入条件',route['メルカリ投入条件']]);
+    if(route['人確認理由']) rows.push(['確認理由',route['人確認理由']]);
+
+    var panel=document.getElementById('panel');
+    panel.innerHTML='<div class="panel-header">'
+      +'<button class="panel-close" onclick="closePanel()">✕</button>'
+      +'<div class="panel-title"><div class="panel-mid">'+esc(it.management_id)+'</div><div class="panel-name">'+esc(pn(it))+'</div></div>'
+      +'</div>'
+      +'<div class="panel-section">'
+      +'<div class="photo-section-label">実物写真</div>'
+      +'<div class="photo-gallery">'+realHtml+'</div>'
+      +'</div>'
+      +(aiPhotos.length?'<div class="panel-section">'
+      +'<div class="photo-section-label ai">AI収集 / 比較画像</div>'
+      +'<div class="photo-gallery ai">'+aiHtml+'</div>'
+      +'</div>':'')
+      +'<div class="panel-section">'
+      +'<div class="panel-label">商品情報</div>'
+      +rows.map(function(r){return '<div class="info-row"><div class="info-label">'+esc(r[0])+'</div><div class="info-value">'+esc(r[1])+'</div></div>';}).join('')
+      +'</div>'
+      +(c.k==='published'&&listingUrl?'<div class="panel-section">'
+      +'<a href="'+esc(listingUrl)+'" target="_blank" style="color:var(--accent);font-weight:700;font-size:13px">Mercariで開く →</a>'
+      +'</div>':'')
+      +'<div class="action-btns">'
+      +'<button class="abtn sec" onclick="closePanel()">閉じる</button>'
+      +'</div>';
+
+    document.getElementById('overlay').classList.add('open');
+    panel.classList.add('open');
+  };
+
+  window.closePanel=function(){
+    document.getElementById('overlay').classList.remove('open');
+    document.getElementById('panel').classList.remove('open');
+  };
+})();
+</script>
+</body>
+</html>
