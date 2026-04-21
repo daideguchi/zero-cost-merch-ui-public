@@ -1,5 +1,5 @@
 window.ZERO_COST_ROLE_PACKETS = {
-  "generated_at": "2026-04-21 15:54:12 JST",
+  "generated_at": "2026-04-21 16:50:31 JST",
   "business_name": "0円仕入れ物販事業",
   "meta": {
     "resident_url": "./roles.html",
@@ -15,8 +15,8 @@ window.ZERO_COST_ROLE_PACKETS = {
     "execution_git": "https://github.com/daideguchi/mercari-shops-bulk-branch"
   },
   "counts": {
-    "confirmed": 4,
-    "provisional": 54,
+    "confirmed": 2,
+    "provisional": 56,
     "official_image_pending": 0,
     "draft_ready": 19,
     "published": 9,
@@ -25,8 +25,8 @@ window.ZERO_COST_ROLE_PACKETS = {
     "ocr_ready": 0,
     "split_required": 21,
     "exception": 2,
-    "exact_pending": 54,
-    "official_pending": 14,
+    "exact_pending": 56,
+    "official_pending": 13,
     "market_priced": 5,
     "market_pending": 53,
     "pickup_pending": 0,
@@ -37,7 +37,8 @@ window.ZERO_COST_ROLE_PACKETS = {
     "base_ready_routing": 34,
     "qwen_review_pending": 0,
     "qwen_review_resolved": 2,
-    "hq_blocked": 0
+    "hq_blocked": 0,
+    "exact_confirmed": 2
   },
   "packets": [
     {
@@ -115,15 +116,15 @@ window.ZERO_COST_ROLE_PACKETS = {
       ],
       "split_required_ids": [
         "BOX-001-ITEM-0028",
-        "BOX-001-ITEM-0056",
-        "BOX-001-ITEM-0024",
         "BOX-001-ITEM-0052",
-        "BOX-001-ITEM-0048",
-        "BOX-001-ITEM-0030",
-        "BOX-001-ITEM-0039",
-        "BOX-001-ITEM-0049"
+        "BOX-001-ITEM-0049",
+        "BOX-001-ITEM-0044",
+        "BOX-001-ITEM-0025",
+        "BOX-001-ITEM-0053",
+        "BOX-001-ITEM-0036",
+        "BOX-001-ITEM-0040"
       ],
-      "launch_prompt": "あなたは 0円仕入れ物販事業の 0円出品部長 です。\nゴール: ショップ運営を優先し、問い合わせ・公開済み監査・審査待ち・下書き待ちを各担当へ振って resident と Git の整合まで持つ\n必ず見るもの:\n- README.md\n- docs/12_ルーティン運用マニュアル.md\n- docs/14_AI担当役職と起動プロンプト集.md\n- docs/16_UI起動パケット仕様.md\n制約:\n- 100%同一確認済みでない比較画像を出品画像へ上げない\n- README・resident・Z-98・Git を最後に必ずそろえる\n必要なら次の担当へ振ってください:\n- 商品特定担当\n- 比較画像精査担当\n- 相場調査担当\n- 出品下書き担当\n- API公開担当\n- 問い合わせ対応担当\n- 集荷運用担当\n次の条件では上位AIへ引き継いでください:\n- 顧客対応が絡む時\n- 商品同一性の断定に迷う時\n- カテゴリ審査や API 異常が絡む時\nいま優先して見るID:\n- BOX-001-ITEM-0001\n- BOX-001-ITEM-0013\n- BOX-001-ITEM-0026\n- BOX-001-ITEM-0027\n- BOX-001-ITEM-0032\n- BOX-001-ITEM-0034\n- BOX-001-ITEM-0003\n- BOX-001-ITEM-0004\n要再束ねのID:\n- BOX-001-ITEM-0028\n- BOX-001-ITEM-0056\n- BOX-001-ITEM-0024\n- BOX-001-ITEM-0052\n- BOX-001-ITEM-0048\n- BOX-001-ITEM-0030\n- BOX-001-ITEM-0039\n- BOX-001-ITEM-0049\n今回の対象ID:\n- BOX-001-ITEM-0004\n- BOX-001-ITEM-0005\n- BOX-001-ITEM-0008\n- BOX-001-ITEM-0009\n- BOX-001-ITEM-0011\n- BOX-001-ITEM-0012\n期待する出力:\n- 今の件数\n- 次に進める商品ID\n- どの担当へ何を振るか\n- 更新した正本\n最後に resident・README・Z-98・Git をそろえてください。"
+      "launch_prompt": "あなたは 0円仕入れ物販事業の 0円出品部長 です。\nゴール: ショップ運営を優先し、問い合わせ・公開済み監査・審査待ち・下書き待ちを各担当へ振って resident と Git の整合まで持つ\n必ず見るもの:\n- README.md\n- docs/12_ルーティン運用マニュアル.md\n- docs/14_AI担当役職と起動プロンプト集.md\n- docs/16_UI起動パケット仕様.md\n制約:\n- 100%同一確認済みでない比較画像を出品画像へ上げない\n- README・resident・Z-98・Git を最後に必ずそろえる\n必要なら次の担当へ振ってください:\n- 商品特定担当\n- 比較画像精査担当\n- 相場調査担当\n- 出品下書き担当\n- API公開担当\n- 問い合わせ対応担当\n- 集荷運用担当\n次の条件では上位AIへ引き継いでください:\n- 顧客対応が絡む時\n- 商品同一性の断定に迷う時\n- カテゴリ審査や API 異常が絡む時\nいま優先して見るID:\n- BOX-001-ITEM-0001\n- BOX-001-ITEM-0013\n- BOX-001-ITEM-0026\n- BOX-001-ITEM-0027\n- BOX-001-ITEM-0032\n- BOX-001-ITEM-0034\n- BOX-001-ITEM-0003\n- BOX-001-ITEM-0004\n要再束ねのID:\n- BOX-001-ITEM-0028\n- BOX-001-ITEM-0052\n- BOX-001-ITEM-0049\n- BOX-001-ITEM-0044\n- BOX-001-ITEM-0025\n- BOX-001-ITEM-0053\n- BOX-001-ITEM-0036\n- BOX-001-ITEM-0040\n今回の対象ID:\n- BOX-001-ITEM-0004\n- BOX-001-ITEM-0005\n- BOX-001-ITEM-0008\n- BOX-001-ITEM-0009\n- BOX-001-ITEM-0011\n- BOX-001-ITEM-0012\n期待する出力:\n- 今の件数\n- 次に進める商品ID\n- どの担当へ何を振るか\n- 更新した正本\n最後に resident・README・Z-98・Git をそろえてください。"
     },
     {
       "role_name": "商品特定担当",
@@ -142,7 +143,9 @@ window.ZERO_COST_ROLE_PACKETS = {
       ],
       "constraints": [
         "コードラベルと本体表示が食い違う時は confirmed にしない",
-        "split_required と exception は勝手に閉じない"
+        "split_required と exception は勝手に閉じない",
+        "追加写真は求めず、いまある写真だけで判断する",
+        "断定不能ならその旨を明記する"
       ],
       "expected_outputs": [
         "product_name",
@@ -163,13 +166,13 @@ window.ZERO_COST_ROLE_PACKETS = {
         "本体表示とコードラベルが食い違う時",
         "医療・美容・健康系の断定が必要な時"
       ],
-      "launch_prompt": "あなたは 0円仕入れ物販事業の 商品特定担当 です。\nゴール: 商品を confirmed / provisional / 要再束ね / 不明 に分ける\n必ず見るもの:\n- docs/13_AI作業リード_商品特定担当.md\n- state/intake/BOX-001_confirmed_identifications.json\n- resident 商品カードDB\n制約:\n- コードラベルと本体表示が食い違う時は confirmed にしない\n- split_required と exception は勝手に閉じない\n次の条件では上位AIへ引き継いでください:\n- 本体表示とコードラベルが食い違う時\n- 医療・美容・健康系の断定が必要な時\n今回の対象ID:\n- いま固定の対象IDはありません\n期待する出力:\n- product_name\n- status\n- evidence\n- next_action\n最後に resident・README・Z-98・Git をそろえてください。"
+      "launch_prompt": "あなたは 0円仕入れ物販事業の 商品特定担当 です。\nゴール: 商品を confirmed / provisional / 要再束ね / 不明 に分ける\n必ず見るもの:\n- docs/13_AI作業リード_商品特定担当.md\n- state/intake/BOX-001_confirmed_identifications.json\n- resident 商品カードDB\n制約:\n- コードラベルと本体表示が食い違う時は confirmed にしない\n- split_required と exception は勝手に閉じない\n- 追加写真は求めず、いまある写真だけで判断する\n- 断定不能ならその旨を明記する\n次の条件では上位AIへ引き継いでください:\n- 本体表示とコードラベルが食い違う時\n- 医療・美容・健康系の断定が必要な時\n今回の対象ID:\n- いま固定の対象IDはありません\n期待する出力:\n- product_name\n- status\n- evidence\n- next_action\n最後に resident・README・Z-98・Git をそろえてください。"
     },
     {
       "role_name": "比較画像精査担当",
       "goal": "100%同一確認済み / 保留 / 不可 を判定する",
       "current_counts": {
-        "verified_exact_match": 4,
+        "verified_exact_match": 2,
         "pending_review": 0,
         "official_image_pending": 0
       },
@@ -209,7 +212,7 @@ window.ZERO_COST_ROLE_PACKETS = {
       "current_counts": {
         "priced": 5,
         "market_pending": 8,
-        "provisional": 54
+        "provisional": 56
       },
       "target_ids": [
         "BOX-001-ITEM-0001",
@@ -251,15 +254,15 @@ window.ZERO_COST_ROLE_PACKETS = {
       "goal": "商品マスタと比較画像判定を踏まえて出品下書きを整える",
       "current_counts": {
         "draft_ready": 19,
-        "confirmed": 4,
-        "provisional": 54
+        "confirmed": 2,
+        "provisional": 56
       },
       "target_ids": [
         "BOX-001-ITEM-0001",
         "BOX-001-ITEM-0013",
-        "BOX-001-ITEM-0028",
-        "BOX-001-ITEM-0040",
-        "BOX-001-ITEM-0004"
+        "BOX-001-ITEM-0004",
+        "BOX-001-ITEM-0005",
+        "BOX-001-ITEM-0026"
       ],
       "must_read": [
         "README.md",
@@ -289,7 +292,7 @@ window.ZERO_COST_ROLE_PACKETS = {
         "実物画像と比較画像の扱いに迷う時",
         "説明欄の表現が誤認を生みそうな時"
       ],
-      "launch_prompt": "あなたは 0円仕入れ物販事業の 出品下書き担当 です。\nゴール: 商品マスタと比較画像判定を踏まえて出品下書きを整える\n必ず見るもの:\n- README.md\n- docs/08_1商品を出品まで進める最短ルート.md\n- resident 商品カードDB\n制約:\n- 説明欄は 管理番号:+最低価格 の形式を守る\n- 出品画像の基本は実物画像とする\n次の条件では上位AIへ引き継いでください:\n- 実物画像と比較画像の扱いに迷う時\n- 説明欄の表現が誤認を生みそうな時\n今回の対象ID:\n- BOX-001-ITEM-0001\n- BOX-001-ITEM-0013\n- BOX-001-ITEM-0028\n- BOX-001-ITEM-0040\n- BOX-001-ITEM-0004\n期待する出力:\n- listing_title\n- description\n- image_order\n- publish_ready_state\n最後に resident・README・Z-98・Git をそろえてください。"
+      "launch_prompt": "あなたは 0円仕入れ物販事業の 出品下書き担当 です。\nゴール: 商品マスタと比較画像判定を踏まえて出品下書きを整える\n必ず見るもの:\n- README.md\n- docs/08_1商品を出品まで進める最短ルート.md\n- resident 商品カードDB\n制約:\n- 説明欄は 管理番号:+最低価格 の形式を守る\n- 出品画像の基本は実物画像とする\n次の条件では上位AIへ引き継いでください:\n- 実物画像と比較画像の扱いに迷う時\n- 説明欄の表現が誤認を生みそうな時\n今回の対象ID:\n- BOX-001-ITEM-0001\n- BOX-001-ITEM-0013\n- BOX-001-ITEM-0004\n- BOX-001-ITEM-0005\n- BOX-001-ITEM-0026\n期待する出力:\n- listing_title\n- description\n- image_order\n- publish_ready_state\n最後に resident・README・Z-98・Git をそろえてください。"
     },
     {
       "role_name": "API公開担当",
@@ -300,11 +303,11 @@ window.ZERO_COST_ROLE_PACKETS = {
         "category_review_waiting": 1
       },
       "target_ids": [
-        "BOX-001-ITEM-0006",
-        "BOX-001-ITEM-0021",
-        "BOX-001-ITEM-0023",
-        "BOX-001-ITEM-0024",
-        "BOX-001-ITEM-0025"
+        "BOX-001-ITEM-0037",
+        "BOX-001-ITEM-0001",
+        "BOX-001-ITEM-0026",
+        "BOX-001-ITEM-0057",
+        "BOX-001-ITEM-0019"
       ],
       "must_read": [
         "docs/09_公開から集荷までの自動化設計.md",
@@ -333,7 +336,7 @@ window.ZERO_COST_ROLE_PACKETS = {
         "API がエラーを返す時",
         "カテゴリ審査待ちと API 不良の切り分けが必要な時"
       ],
-      "launch_prompt": "あなたは 0円仕入れ物販事業の API公開担当 です。\nゴール: seller session GraphQL API で公開し、listing_id と公開URLを残す\n必ず見るもの:\n- docs/09_公開から集荷までの自動化設計.md\n- state/mercari_api_status.json\n- README.md\n制約:\n- actual-only 画像ポリシーを守る\n- カテゴリ審査待ちと API 不良を混同しない\n次の条件では上位AIへ引き継いでください:\n- API がエラーを返す時\n- カテゴリ審査待ちと API 不良の切り分けが必要な時\n今回の対象ID:\n- BOX-001-ITEM-0006\n- BOX-001-ITEM-0021\n- BOX-001-ITEM-0023\n- BOX-001-ITEM-0024\n- BOX-001-ITEM-0025\n期待する出力:\n- listing_id\n- public_url\n- image_check_result\n最後に resident・README・Z-98・Git をそろえてください。"
+      "launch_prompt": "あなたは 0円仕入れ物販事業の API公開担当 です。\nゴール: seller session GraphQL API で公開し、listing_id と公開URLを残す\n必ず見るもの:\n- docs/09_公開から集荷までの自動化設計.md\n- state/mercari_api_status.json\n- README.md\n制約:\n- actual-only 画像ポリシーを守る\n- カテゴリ審査待ちと API 不良を混同しない\n次の条件では上位AIへ引き継いでください:\n- API がエラーを返す時\n- カテゴリ審査待ちと API 不良の切り分けが必要な時\n今回の対象ID:\n- BOX-001-ITEM-0037\n- BOX-001-ITEM-0001\n- BOX-001-ITEM-0026\n- BOX-001-ITEM-0057\n- BOX-001-ITEM-0019\n期待する出力:\n- listing_id\n- public_url\n- image_check_result\n最後に resident・README・Z-98・Git をそろえてください。"
     },
     {
       "role_name": "問い合わせ対応担当",
@@ -384,9 +387,9 @@ window.ZERO_COST_ROLE_PACKETS = {
       "target_ids": [
         "BOX-001-ITEM-0001",
         "BOX-001-ITEM-0013",
-        "BOX-001-ITEM-0028",
-        "BOX-001-ITEM-0040",
-        "BOX-001-ITEM-0004"
+        "BOX-001-ITEM-0004",
+        "BOX-001-ITEM-0005",
+        "BOX-001-ITEM-0026"
       ],
       "must_read": [
         "docs/04_受注_発送_集荷自動化.md",
@@ -414,7 +417,7 @@ window.ZERO_COST_ROLE_PACKETS = {
       "handoff_when": [
         "配送ラベルや送り状運用が変わる時"
       ],
-      "launch_prompt": "あなたは 0円仕入れ物販事業の 集荷運用担当 です。\nゴール: メルカリBiz配送 + 送り状印刷 + ヤマト集荷の本線を維持する\n必ず見るもの:\n- docs/04_受注_発送_集荷自動化.md\n- docs/06_集荷ルール_現場版.md\n- README.md\n制約:\n- 手書きしない\n- 印刷ラベルは予備線として保持する\n次の条件では上位AIへ引き継いでください:\n- 配送ラベルや送り状運用が変わる時\n今回の対象ID:\n- BOX-001-ITEM-0001\n- BOX-001-ITEM-0013\n- BOX-001-ITEM-0028\n- BOX-001-ITEM-0040\n- BOX-001-ITEM-0004\n期待する出力:\n- pickup_mode\n- shipment_tracking_plan\n- resident_status_update\n最後に resident・README・Z-98・Git をそろえてください。"
+      "launch_prompt": "あなたは 0円仕入れ物販事業の 集荷運用担当 です。\nゴール: メルカリBiz配送 + 送り状印刷 + ヤマト集荷の本線を維持する\n必ず見るもの:\n- docs/04_受注_発送_集荷自動化.md\n- docs/06_集荷ルール_現場版.md\n- README.md\n制約:\n- 手書きしない\n- 印刷ラベルは予備線として保持する\n次の条件では上位AIへ引き継いでください:\n- 配送ラベルや送り状運用が変わる時\n今回の対象ID:\n- BOX-001-ITEM-0001\n- BOX-001-ITEM-0013\n- BOX-001-ITEM-0004\n- BOX-001-ITEM-0005\n- BOX-001-ITEM-0026\n期待する出力:\n- pickup_mode\n- shipment_tracking_plan\n- resident_status_update\n最後に resident・README・Z-98・Git をそろえてください。"
     }
   ],
   "task_cards": [
@@ -474,7 +477,7 @@ window.ZERO_COST_ROLE_PACKETS = {
       "role_name": "低コストAI",
       "goal": "比較画像候補を集めて、同一性判断の材料だけを残す",
       "current_counts": {
-        "exact_pending": 54,
+        "exact_pending": 56,
         "official_image_pending": 0
       },
       "target_ids": [],
@@ -740,7 +743,7 @@ window.ZERO_COST_ROLE_PACKETS = {
       "goal": "最低価格と根拠URLと調査時刻を集める",
       "current_counts": {
         "market_pending": 53,
-        "provisional": 54,
+        "provisional": 56,
         "published": 9
       },
       "target_ids": [

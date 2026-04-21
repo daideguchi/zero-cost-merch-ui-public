@@ -35,6 +35,58 @@
       gap: 8px;
       margin-top: 12px;
     }
+    .box-switchbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+    .box-switch {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid #94a3b8;
+      background: linear-gradient(180deg, #ffffff 0%, #edf2f7 100%);
+      box-shadow: 0 2px 8px rgba(15,23,42,.06);
+      color: #0f172a;
+      font-size: 12px;
+      font-weight: 800;
+      text-decoration: none;
+      transition: border-color .16s, box-shadow .16s, transform .16s;
+    }
+    .box-switch:hover {
+      border-color: #2563eb;
+      box-shadow: 0 8px 18px rgba(37,99,235,.16);
+      transform: translateY(-1px);
+      text-decoration: none;
+    }
+    .box-switch.active {
+      border-color: #1d4ed8;
+      background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+      box-shadow: 0 10px 24px rgba(37,99,235,.24);
+      color: #ffffff;
+    }
+    .box-switch-count {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 36px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid #94a3b8;
+      background: #e2e8f0;
+      font-size: 11px;
+      line-height: 1;
+      font-weight: 900;
+      color: #0f172a;
+    }
+    .box-switch.active .box-switch-count {
+      border-color: rgba(255,255,255,.28);
+      background: rgba(255,255,255,.18);
+      color: #ffffff;
+    }
     .hero-pill {
       display: inline-flex;
       align-items: center;
@@ -629,6 +681,7 @@
       <div id="hero-title" class="hero-title">番号ごとに確認する</div>
       <div class="hero-note">今ある写真だけでまず判断します。バーコード / JAN / SKU、ブランド名、品番、台紙の裏、刻印やサイズ表記が見えると特定精度が上がります。</div>
       <div class="hero-pills" id="hero-pills"></div>
+      <div class="box-switchbar" id="box-switchbar"></div>
     </section>
 
     <div class="filter-grid" id="filters"></div>
@@ -652,6 +705,7 @@
       + '"><\/script>');
   </script>
   <script src="./role_packets_snapshot.js"></script>
+  <script src="./api_config.js"></script>
   <script src="./common.js"></script>
   <script>
   (function(){
@@ -686,6 +740,12 @@
         return String(box && box.box_id || '') === String(snapshot.box_id || '');
       })[0] || boxSnapshots[0] || null;
     }
+    requestedBoxId = requestedBoxId || String(currentBoxSnapshot && currentBoxSnapshot.box_id || '').trim();
+    if (requestedBoxId) {
+      try {
+        if (window.localStorage) window.localStorage.setItem('zeroCostSelectedBox', requestedBoxId);
+      } catch (_) {}
+    }
     var hasSnapshotForRequest = Boolean(currentBoxSnapshot && (!requestedBoxId || requestedBoxId === String(currentBoxSnapshot.box_id || '')));
     var viewSnapshot = currentBoxSnapshot || { box_id: requestedBoxId, box_label: requestedBoxId, items: [] };
     var items = hasSnapshotForRequest ? (viewSnapshot.items || []) : [];
@@ -697,6 +757,7 @@
     var emptyEl = document.getElementById('empty');
     var heroPills = document.getElementById('hero-pills');
     var heroTitle = document.getElementById('hero-title');
+    var boxSwitchbar = document.getElementById('box-switchbar');
     var activeFilter = 'all';
     var sortMode = 'id';
     var focusedRequestedMid = false;
@@ -772,6 +833,24 @@
       if (lane === 'numeric' && /^box\s*[A-Z]+$/i.test(label)) return fallback;
       if (lane === 'alphabet' && /^box\s*\d+$/i.test(label)) return fallback;
       return label;
+    }
+
+    function renderBoxSwitch() {
+      if (!boxSnapshots.length) {
+        boxSwitchbar.style.display = 'none';
+        return;
+      }
+      boxSwitchbar.style.display = '';
+      boxSwitchbar.innerHTML = boxSnapshots.map(function(box) {
+        var boxId = String(box && box.box_id || '').trim();
+        var label = boxDisplayLabel(boxId, box && box.box_label, box && box.box_lane, box && box.box_code);
+        var count = Array.isArray(box && box.items) ? box.items.length : 0;
+        var href = './intake_cards.html?box=' + encodeURIComponent(boxId);
+        return '<a class="box-switch' + (boxId === (viewSnapshot.box_id || requestedBoxId) ? ' active' : '') + '" href="' + href + '">'
+          + '<span>' + escapeHtml(label) + '</span>'
+          + '<span class="box-switch-count">' + count + '</span>'
+          + '</a>';
+      }).join('');
     }
 
     function basename(path) {
@@ -990,7 +1069,8 @@
       var sequence = padSequence(item.sequence);
       var actualCount = (item.slots || []).length;
       var officialPageUrl = (item.official && item.official.official_page_url) || (item.resolved && item.resolved.official_page_url) || '';
-      var actionHref = './ops.html?mid=' + encodeURIComponent(item.management_id || '');
+      var actionHref = './ops.html?box=' + encodeURIComponent(viewSnapshot.box_id || requestedBoxId || '')
+        + '&mid=' + encodeURIComponent(item.management_id || '');
 
       return '<div class="item-card" data-mid="' + escapeHtml(item.management_id || '') + '">'
         + '<div class="item-shell">'
@@ -1088,6 +1168,7 @@
       renderList();
     });
 
+    renderBoxSwitch();
     renderHero();
     renderFilters();
     renderList();

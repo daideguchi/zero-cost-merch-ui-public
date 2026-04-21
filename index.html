@@ -258,6 +258,84 @@
       pointer-events: none;
       transform: none;
     }
+    .drive-panel {
+      margin-top: 14px;
+      padding: 14px;
+      border: 1px solid rgba(2,132,199,.22);
+      border-radius: var(--radius-lg);
+      background:
+        linear-gradient(180deg, rgba(240,249,255,.95), rgba(255,255,255,.98)),
+        var(--surface);
+      box-shadow: 0 1px 2px rgba(15,23,42,.04);
+    }
+    .drive-header {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .drive-title {
+      font-size: 14px;
+      font-weight: 900;
+      color: #0f172a;
+      letter-spacing: -.01em;
+    }
+    .drive-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: rgba(2,132,199,.1);
+      border: 1px solid rgba(2,132,199,.18);
+      color: #0369a1;
+      font-size: 11px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .drive-note {
+      margin-top: 10px;
+      font-size: 12px;
+      line-height: 1.75;
+      color: #334155;
+    }
+    .drive-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    .drive-actions .action-link {
+      background: #fff;
+      border-color: rgba(2,132,199,.2);
+      color: #0f172a;
+    }
+    .drive-actions .action-link.primary {
+      background: #0284c7;
+      border-color: #0284c7;
+      color: #fff;
+    }
+    .drive-status {
+      margin-top: 10px;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1.7;
+      color: #334155;
+    }
+    .drive-status.ok { color: #166534; }
+    .drive-status.error { color: #b91c1c; }
+    .drive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 10px;
+      font-size: 12px;
+      font-weight: 800;
+      color: #0369a1;
+      text-decoration: none;
+      word-break: break-all;
+    }
+    .drive-link:hover { text-decoration: underline; }
     .focus-card {
       display: grid;
       gap: 12px;
@@ -705,6 +783,22 @@
           <a id="intake-link" class="action-link primary" href="./intake_cards.html">④⑤ 写真・AI識別へ →</a>
           <a id="ops-link" class="action-link" href="./ops.html">⑥ 出品準備 →</a>
         </div>
+        <div class="drive-panel">
+          <div class="drive-header">
+            <div class="drive-title">別メンバー用 Google Drive 共有</div>
+            <div class="drive-badge">相手はアプリ不要</div>
+          </div>
+          <div class="drive-note">
+            基本は <strong>今ある画像だけで判断</strong> します。追加メモは不要です。バーコード・型番・成分表示・サイズ表記が写る写真を優先してください。
+            Drive取り込みは <strong>アップロード時刻順 → ファイル名順</strong> で束ねるので、1商品ごとにまとまった順で入れてください。
+          </div>
+          <div class="drive-actions">
+            <button id="drive-share-btn" class="action-link" type="button">Google Drive URLを作る</button>
+            <button id="drive-sync-btn" class="action-link primary" type="button">Drive写真を取り込む</button>
+          </div>
+          <div id="drive-status" class="drive-status">箱を選ぶと、共有URLを作って別メンバーへ渡せます。</div>
+          <a id="drive-link" class="drive-link" href="#" target="_blank" rel="noreferrer noopener" hidden>Google Drive フォルダを開く</a>
+        </div>
       </div>
     </section>
   </div>
@@ -731,6 +825,7 @@
       + '"><\\/script>');
   </script>
   <script src="./milestone_snapshot.js"></script>
+  <script src="./api_config.js"></script>
   <script src="./common.js"></script>
   <script>
   (function(){
@@ -746,6 +841,10 @@
     var boxGrid = document.getElementById('box-grid');
     var intakeLink = document.getElementById('intake-link');
     var opsLink = document.getElementById('ops-link');
+    var driveShareBtn = document.getElementById('drive-share-btn');
+    var driveSyncBtn = document.getElementById('drive-sync-btn');
+    var driveStatusEl = document.getElementById('drive-status');
+    var driveLinkEl = document.getElementById('drive-link');
     var boxCreateBtn = document.getElementById('box-create-btn');
     var boxModal = document.getElementById('box-modal');
     var boxModalLane = document.getElementById('box-modal-lane');
@@ -754,6 +853,7 @@
     var boxModalCancel = document.getElementById('box-modal-cancel');
     var selectedFiles = [];
     var isUploading = false;
+    var isDriveBusy = false;
 
     function esc(value){
       return String(value || '')
@@ -1046,6 +1146,44 @@
       })[0] || boxOptions[0] || null;
     }
 
+    function driveLinkStorageKey(boxId) {
+      return 'zeroCostDriveShareUrl:' + String(boxId || '');
+    }
+
+    function rememberDriveLink(boxId, url) {
+      try {
+        if (!window.localStorage || !boxId || !url) return;
+        window.localStorage.setItem(driveLinkStorageKey(boxId), String(url));
+      } catch (_) {}
+    }
+
+    function storedDriveLink(boxId) {
+      try {
+        if (!window.localStorage || !boxId) return '';
+        return window.localStorage.getItem(driveLinkStorageKey(boxId)) || '';
+      } catch (_) {
+        return '';
+      }
+    }
+
+    function setDriveStatus(message, tone) {
+      driveStatusEl.textContent = message || '';
+      driveStatusEl.classList.remove('ok', 'error');
+      if (tone === 'ok') driveStatusEl.classList.add('ok');
+      if (tone === 'error') driveStatusEl.classList.add('error');
+    }
+
+    function setDriveLink(url) {
+      if (url) {
+        driveLinkEl.href = url;
+        driveLinkEl.textContent = 'Google Drive フォルダを開く';
+        driveLinkEl.hidden = false;
+        return;
+      }
+      driveLinkEl.href = '#';
+      driveLinkEl.hidden = true;
+    }
+
     function setActionLinkState(link, href, enabled) {
       link.href = enabled ? href : '#';
       link.classList.toggle('disabled', !enabled);
@@ -1070,6 +1208,10 @@
         statusEl.textContent = '箱の情報がありません';
         uploadSubmit.disabled = true;
         updateActionLinks(null);
+        driveShareBtn.disabled = true;
+        driveSyncBtn.disabled = true;
+        setDriveStatus('箱の情報がありません。', 'error');
+        setDriveLink('');
         return;
       }
 
@@ -1090,6 +1232,10 @@
       statusEl.textContent = box.laneLabel + ' / ' + box.label + ' / 次 No.' + padSequence(box.nextSequence);
       statusEl.style.color = 'var(--text-2)';
       updateActionLinks(box);
+      driveShareBtn.disabled = isUploading || isDriveBusy;
+      driveSyncBtn.disabled = isUploading || isDriveBusy;
+      setDriveLink(storedDriveLink(box.id));
+      setDriveStatus(box.label + ' の共有URLを作るか、Driveに入った写真を取り込めます。', '');
       if (selectedFiles.length) {
         renderSelectedFiles(selectedFiles, box);
       } else {
@@ -1186,21 +1332,43 @@
       intakeLink.hidden = hasPending;
       opsLink.hidden = hasPending;
       uploadSubmit.disabled = isUploading || !hasPending || !box;
+      driveShareBtn.disabled = isUploading || isDriveBusy || !box;
+      driveSyncBtn.disabled = isUploading || isDriveBusy || !box;
       if (!isUploading) {
         uploadSubmit.textContent = box && hasPending ? (box.label + ' に取り込む') : '写真を取り込む';
       }
     }
 
+    function portalOrigin() {
+      if (window.location.protocol === 'http:' || window.location.protocol === 'https:') {
+        return window.location.origin;
+      }
+      return 'http://127.0.0.1:18777';
+    }
+
+    function apiUrl(path) {
+      try {
+        return new URL(path, portalOrigin()).toString();
+      } catch (_) {
+        return portalOrigin().replace(/\/$/, '') + path;
+      }
+    }
+
     function uploadApiUrl() {
-      return 'http://127.0.0.1:18779/api/zero-cost/intake-upload';
+      return apiUrl('/api/zero-cost/intake-upload');
+    }
+
+    function driveShareApiUrl() {
+      return apiUrl('/api/zero-cost/drive-share');
+    }
+
+    function driveSyncApiUrl() {
+      return apiUrl('/api/zero-cost/drive-sync');
     }
 
     function assertUploadApiReady() {
       if (window.location.protocol === 'file:') {
         return Promise.reject(new Error('この画面を file:// で開いています。http://127.0.0.1:18777/merch/zero-cost/index.html か resident URL で開いてください。'));
-      }
-      if (window.location.protocol === 'https:') {
-        return Promise.reject(new Error('写真取り込みはローカルURL http://127.0.0.1:18777/merch/zero-cost/index.html で開いてください。'));
       }
       return fetch(uploadApiUrl() + '/health?ts=' + encodeURIComponent(String(Date.now())), { cache: 'no-store' })
         .then(function(response) {
@@ -1214,6 +1382,103 @@
             throw new Error('アップロードAPIの準備ができていません。');
           }
           return data;
+        });
+    }
+
+    function postJson(url, payload) {
+      return fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload || {})
+      }).then(function(response) {
+        return response.text().then(function(text) {
+          var data = {};
+          try {
+            data = text ? JSON.parse(text) : {};
+          } catch (_) {
+            data = {};
+          }
+          if (!response.ok || !data.ok) {
+            throw new Error((data && data.error) || ('HTTP ' + response.status + ' / ' + text.slice(0, 160)));
+          }
+          return data;
+        });
+      });
+    }
+
+    function boxPayload(box) {
+      return {
+        box_id: box.id,
+        box_label: box.label,
+        box_lane: box.lane,
+        box_code: box.code,
+        next_sequence: box.nextSequence || 1,
+        slots_per_item: box.slotsPerItem || 3
+      };
+    }
+
+    function requestDriveShare() {
+      var box = currentBox();
+      if (!box || isDriveBusy || isUploading) return;
+      isDriveBusy = true;
+      setUploadButtonState();
+      driveShareBtn.textContent = 'URL作成中...';
+      setDriveStatus(box.label + ' の共有URLを作っています。', '');
+      postJson(driveShareApiUrl(), boxPayload(box))
+        .then(function(data) {
+          var folderUrl = String(data.folder_url || '');
+          if (folderUrl) {
+            rememberDriveLink(box.id, folderUrl);
+            setDriveLink(folderUrl);
+          }
+          setDriveStatus(box.label + ' の共有URLを作りました。相手はこのURLに写真を入れてください。', 'ok');
+        })
+        .catch(function(error) {
+          setDriveStatus('Google Drive URL 作成に失敗しました。' + (error && error.message ? ' ' + error.message : ''), 'error');
+        })
+        .finally(function() {
+          isDriveBusy = false;
+          driveShareBtn.textContent = 'Google Drive URLを作る';
+          setUploadButtonState();
+        });
+    }
+
+    function syncDrivePhotos() {
+      var box = currentBox();
+      if (!box || isDriveBusy || isUploading) return;
+      isDriveBusy = true;
+      setUploadButtonState();
+      driveSyncBtn.textContent = 'Drive取り込み中...';
+      setDriveStatus(box.label + ' の Drive 新着を確認しています。', '');
+      postJson(driveSyncApiUrl(), boxPayload(box))
+        .then(function(data) {
+          var folderUrl = String(data.folder_url || '');
+          if (folderUrl) {
+            rememberDriveLink(box.id, folderUrl);
+            setDriveLink(folderUrl);
+          }
+          if (!num(data.file_count) || !num(data.item_count)) {
+            setDriveStatus(box.label + ' にはまだ新着画像がありません。相手が写真を入れたあとで、もう一度取り込んでください。', '');
+            return;
+          }
+          setDriveStatus((data.box_label || box.label) + ' に '
+            + num(data.file_count) + '枚 / ' + num(data.item_count) + '商品ぶんを取り込みました。確認画面を開きます。', 'ok');
+          try {
+            if (window.localStorage && data.box_id) window.localStorage.setItem('zeroCostSelectedBox', data.box_id);
+          } catch (_) {}
+          setTimeout(function() {
+            window.location.href = './intake_cards.html?box='
+              + encodeURIComponent(data.box_id || box.id)
+              + '&fresh=' + encodeURIComponent(String(Date.now()));
+          }, 700);
+        })
+        .catch(function(error) {
+          setDriveStatus('Drive写真の取り込みに失敗しました。' + (error && error.message ? ' ' + error.message : ''), 'error');
+        })
+        .finally(function() {
+          isDriveBusy = false;
+          driveSyncBtn.textContent = 'Drive写真を取り込む';
+          setUploadButtonState();
         });
     }
 
@@ -1581,6 +1846,8 @@
         renderSelectedFiles(files, currentBox());
       });
       uploadSubmit.addEventListener('click', uploadSelectedFiles);
+      driveShareBtn.addEventListener('click', requestDriveShare);
+      driveSyncBtn.addEventListener('click', syncDrivePhotos);
     }
 
     renderBoxPanel();

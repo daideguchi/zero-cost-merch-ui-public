@@ -25,8 +25,8 @@ window.ZERO_COST_INTAKE = {
     "split_required": 21
   },
   "resolution_counts": {
-    "confirmed": 4,
-    "provisional": 54,
+    "confirmed": 2,
+    "provisional": 56,
     "official_image_pending": 0,
     "accepted_exception": 2
   },
@@ -141,7 +141,8 @@ window.ZERO_COST_INTAKE = {
         "official_page_url": "https://www.gwenchanda.com/shop/health-wellness/acne/forehead-focused-patch-18p/",
         "official_image_url": "https://www.gwenchanda.com/wp-content/uploads/2025/05/GWENCHANDA-GA230719741-1.jpg",
         "official_image_local": "state/intake/official_images/BOX-001-ITEM-0001_gwenchanda_forehead_patch.jpg",
-        "image_source": "Gwenchanda product page"
+        "image_source": "Gwenchanda product page",
+        "exact_match_guard_state": "clear"
       },
       "official": {
         "management_id": "BOX-001-ITEM-0001",
@@ -155,7 +156,8 @@ window.ZERO_COST_INTAKE = {
         "image_source": "Gwenchanda product page",
         "verified_exact_match": true,
         "official_image_state": "100%同一確認済み / 候補1枚確保",
-        "note": "GTIN 8809409185224 と実物パッケージ表面・背面が Gwenchanda 商品ページ画像と一致。比較画像は 100%同一確認済み。2026-04-17 live で BASE 公開商品の先頭画像へ採用。"
+        "note": "GTIN 8809409185224 と実物パッケージ表面・背面が Gwenchanda 商品ページ画像と一致。比較画像は 100%同一確認済み。2026-04-17 live で BASE 公開商品の先頭画像へ採用。",
+        "exact_match_guard_state": "clear"
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0001",
@@ -255,6 +257,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り",
       "verified_exact_match": true,
       "official_image_state": "100%同一確認済み / 候補1枚確保",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -286,7 +289,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "審査監視",
         "AI次アクション": "カテゴリ審査反映待ち",
         "ルーティング状態": "審査待ち",
-        "更新時刻": "2026-04-21 15:43:51 JST",
+        "更新時刻": "2026-04-21 16:45:13 JST",
         "メモ": "name=WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り / publish_ok=カテゴリ審査待ち / draft_status=カテゴリ審査待ち / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量"
       }
     },
@@ -388,7 +391,15 @@ window.ZERO_COST_INTAKE = {
         "check_items_override": "色味ネイビー / 保冷仕様 / ショルダーストラップ / サイズ感確認",
         "official_page_url": "",
         "official_image_url": "",
-        "image_source": "actual-only"
+        "image_source": "actual-only",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "色違い",
+          "型番違い",
+          "サイズ違い",
+          "セット違い"
+        ],
+        "qwen_hq_review_note": "2026-04-21 current truth: actual-only固定。比較画像は見つからなかったが、実物写真のみで進行する。"
       },
       "official": {
         "management_id": "BOX-001-ITEM-0002",
@@ -425,7 +436,14 @@ window.ZERO_COST_INTAKE = {
         "qwen_hq_review_status": "",
         "qwen_hq_resolution": "",
         "qwen_hq_review_at": "",
-        "qwen_hq_review_note": "2026-04-21 current truth: actual-only固定。比較画像は見つからなかったが、実物写真のみで進行する。"
+        "qwen_hq_review_note": "2026-04-21 current truth: actual-only固定。比較画像は見つからなかったが、実物写真のみで進行する。",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "色違い",
+          "型番違い",
+          "サイズ違い",
+          "セット違い"
+        ]
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0002",
@@ -459,6 +477,13 @@ window.ZERO_COST_INTAKE = {
       "product_name": "保冷クーラーバッグ ネイビー ショルダー付",
       "verified_exact_match": false,
       "official_image_state": "actual-only固定 / 比較画像なし",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "色違い",
+        "型番違い",
+        "サイズ違い",
+        "セット違い"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "2026-04-21 current truth: actual-only固定。比較画像は見つからなかったが、実物写真のみで進行する。",
@@ -490,7 +515,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "実物のみで進める / 比較画像は後追い",
         "ルーティング状態": "HQ判断済み",
-        "更新時刻": "2026-04-21 15:43:51 JST",
+        "更新時刻": "2026-04-21 16:45:13 JST",
         "メモ": "name=保冷クーラーバッグ ネイビー ショルダー付 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / qwen_hq=actual-only固定優先 / 2026-04-21 current truth: actual-only固定。比較画像なしでも実物写真のみで進める。"
       }
     },
@@ -594,7 +619,8 @@ window.ZERO_COST_INTAKE = {
         "check_items_override": "レンズ色 / フレーム形状 / ケース付属 / 偏光表記確認",
         "official_page_url": "",
         "official_image_url": "",
-        "image_source": "actual-only"
+        "image_source": "actual-only",
+        "exact_match_guard_state": "clear"
       },
       "official": {
         "management_id": "BOX-001-ITEM-0003",
@@ -607,7 +633,8 @@ window.ZERO_COST_INTAKE = {
         "image_source": "actual-only",
         "verified_exact_match": false,
         "official_image_state": "actual-only固定 / 比較画像なし",
-        "note": "YUGYUG / 2023モデル4 / ブラック・グレー / サングラス / ケース付き までは実物ラベルと現物で強く取れている。比較画像検索も実施したが、ケース付き同一商品を 100% 同一と断定できる公開画像は確保できなかったため、actual-only 固定で進める。"
+        "note": "YUGYUG / 2023モデル4 / ブラック・グレー / サングラス / ケース付き までは実物ラベルと現物で強く取れている。比較画像検索も実施したが、ケース付き同一商品を 100% 同一と断定できる公開画像は確保できなかったため、actual-only 固定で進める。",
+        "exact_match_guard_state": "clear"
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0003",
@@ -641,6 +668,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "YUGYUG サングラス ブラック/グレー ケース付き",
       "verified_exact_match": false,
       "official_image_state": "actual-only固定 / 比較画像なし",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -672,7 +700,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 15:43:51 JST",
+        "更新時刻": "2026-04-21 16:45:13 JST",
         "メモ": "name=YUGYUG サングラス ブラック/グレー ケース付き / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
       }
     },
@@ -776,7 +804,12 @@ window.ZERO_COST_INTAKE = {
         "check_items_override": "サイズ / ポケット数 / ショルダーストラップ確認",
         "official_page_url": "https://www.amazon.co.jp/maytopia-%E3%82%B7%E3%83%A7%E3%83%AB%E3%83%80%E3%83%BC%E3%83%90%E3%83%83%E3%82%B0-%E3%83%A1%E3%83%83%E3%82%BB%E3%83%B3%E3%82%B8%E3%83%A3%E3%83%BC%E3%83%90%E3%83%83%E3%82%B0-%E6%96%9C%E3%82%81%E3%81%8C%E3%81%91%E3%83%90%E3%83%83%E3%82%B0-DJ2031/dp/B0DP4XSCJD",
         "official_image_url": "https://m.media-amazon.com/images/I/71QdZl8B1zL._AC_UL320_.jpg",
-        "image_source": "Amazon search candidate"
+        "image_source": "Amazon search candidate",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "ブランド不一致"
+        ],
+        "official_image_local": "state/intake/official_images/BOX-001-ITEM-0004_bag_candidate.jpg"
       },
       "official": {
         "management_id": "BOX-001-ITEM-0004",
@@ -786,7 +819,11 @@ window.ZERO_COST_INTAKE = {
         "official_image_local": "state/intake/official_images/BOX-001-ITEM-0004_bag_candidate.jpg",
         "verified_exact_match": false,
         "official_image_state": "比較画像候補あり / exact-match不可",
-        "note": "IAWNI 本体に対して Amazon 検索上の maytopia 候補。ブランド不一致のため出品採用不可、比較用のみ。"
+        "note": "IAWNI 本体に対して Amazon 検索上の maytopia 候補。ブランド不一致のため出品採用不可、比較用のみ。",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "ブランド不一致"
+        ]
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0004",
@@ -886,6 +923,10 @@ window.ZERO_COST_INTAKE = {
       "product_name": "IAWNI ショルダーバッグ メッセンジャーバッグ",
       "verified_exact_match": false,
       "official_image_state": "比較画像候補あり / exact-match不可",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "ブランド不一致"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -917,7 +958,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 15:43:51 JST",
+        "更新時刻": "2026-04-21 16:45:13 JST",
         "メモ": "name=IAWNI ショルダーバッグ メッセンジャーバッグ / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMJHwgfzNjEkYfN8SMv"
       }
     },
@@ -1022,7 +1063,12 @@ window.ZERO_COST_INTAKE = {
         "check_items_override": "サイズ表記 / 素材 / ウエスト仕様確認",
         "official_page_url": "https://www.amazon.co.jp/dp/B0CW59W9XG",
         "image_source": "web candidate",
-        "official_image_url": "https://m.media-amazon.com/images/I/61wX2zUNpFL.jpg"
+        "official_image_url": "https://m.media-amazon.com/images/I/61wX2zUNpFL.jpg",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "柄違い"
+        ],
+        "official_image_local": "state/intake/official_images/BOX-001-ITEM-0005_ceen_saruel.jpg"
       },
       "official": {
         "management_id": "BOX-001-ITEM-0005",
@@ -1031,7 +1077,11 @@ window.ZERO_COST_INTAKE = {
         "official_image_local": "state/intake/official_images/BOX-001-ITEM-0005_ceen_saruel.jpg",
         "verified_exact_match": false,
         "official_image_state": "比較画像候補あり / exact-match不可",
-        "note": "Amazon B0CW59W9XG からメイン画像をダウンロードしたが、候補画像は縦ストライプ柄、実物はヘリンボーン調の総柄で生地パターンが一致しない。ブランド CEEN と七分丈系までは近いが、出品画像採用は不可で比較用のみ。"
+        "note": "Amazon B0CW59W9XG からメイン画像をダウンロードしたが、候補画像は縦ストライプ柄、実物はヘリンボーン調の総柄で生地パターンが一致しない。ブランド CEEN と七分丈系までは近いが、出品画像採用は不可で比較用のみ。",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "柄違い"
+        ]
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0005",
@@ -1131,6 +1181,10 @@ window.ZERO_COST_INTAKE = {
       "product_name": "CEEN サルエルパンツ 七分丈 ワイドパンツ",
       "verified_exact_match": false,
       "official_image_state": "比較画像候補あり / exact-match不可",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "柄違い"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -1162,7 +1216,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 15:43:51 JST",
+        "更新時刻": "2026-04-21 16:45:13 JST",
         "メモ": "name=CEEN サルエルパンツ 七分丈 ワイドパンツ / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPQCYwtnC7WCswDeG37b9"
       }
     },
@@ -1269,7 +1323,8 @@ window.ZERO_COST_INTAKE = {
         "check_items_override": "内容物確認 / 箱状態 / サイズ感 / ギフト箱として出すか判断",
         "official_page_url": "",
         "official_image_url": "",
-        "image_source": "actual-only"
+        "image_source": "actual-only",
+        "exact_match_guard_state": "clear"
       },
       "official": {
         "management_id": "BOX-001-ITEM-0006",
@@ -1282,7 +1337,8 @@ window.ZERO_COST_INTAKE = {
         "image_source": "actual-only",
         "verified_exact_match": false,
         "official_image_state": "actual-only固定 / 内容物未確認",
-        "note": "X001943Q5H / FirstC / ティアグッズ記念品ギフトまでは現物ラベルで確認。中身が見えず、公式・比較画像も安全に確保できないため、出品画像は実物のみ。"
+        "note": "X001943Q5H / FirstC / ティアグッズ記念品ギフトまでは現物ラベルで確認。中身が見えず、公式・比較画像も安全に確保できないため、出品画像は実物のみ。",
+        "exact_match_guard_state": "clear"
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0006",
@@ -1316,6 +1372,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "FirstC ティアグッズ記念品ギフト箱（内容物不明）",
       "verified_exact_match": false,
       "official_image_state": "actual-only固定 / 内容物未確認",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -1441,7 +1498,8 @@ window.ZERO_COST_INTAKE = {
         "check_items_override": "色味 / 袖丈 / 首元形状 / 素材確認",
         "official_page_url": "",
         "official_image_url": "",
-        "image_source": "actual-only"
+        "image_source": "actual-only",
+        "exact_match_guard_state": "clear"
       },
       "official": {
         "management_id": "BOX-001-ITEM-0007",
@@ -1454,7 +1512,8 @@ window.ZERO_COST_INTAKE = {
         "image_source": "actual-only",
         "verified_exact_match": false,
         "official_image_state": "actual-only固定 / 比較画像なし",
-        "note": "GIOVANA / tshirt / 302 / 2XL / ベージュ までは実物ラベルと現物で強く取れている。qwen 候補URL収集担当で GIOVANA / X00143KK11 / beige 2XL を確認したが、100%同一確認に使える安全な比較画像候補は取れなかった。出品画像は実物のみで扱う。"
+        "note": "GIOVANA / tshirt / 302 / 2XL / ベージュ までは実物ラベルと現物で強く取れている。qwen 候補URL収集担当で GIOVANA / X00143KK11 / beige 2XL を確認したが、100%同一確認に使える安全な比較画像候補は取れなかった。出品画像は実物のみで扱う。",
+        "exact_match_guard_state": "clear"
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0007",
@@ -1488,6 +1547,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "GIOVANA Tシャツ ベージュ 2XL",
       "verified_exact_match": false,
       "official_image_state": "actual-only固定 / 比較画像なし",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -1519,7 +1579,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 15:43:51 JST",
+        "更新時刻": "2026-04-21 16:45:13 JST",
         "メモ": "name=GIOVANA Tシャツ ベージュ 2XL / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
       }
     },
@@ -1626,7 +1686,9 @@ window.ZERO_COST_INTAKE = {
         "check_items_override": "素材確認 / サイズ確認 / 色確認",
         "official_page_url": "https://www.amazon.co.jp/%E3%83%97%E3%83%AA%E3%83%B3%E3%83%88%E3%82%B9%E3%82%BF%E3%83%BC-5-0%E3%82%AA%E3%83%B3%E3%82%B9-%E3%83%99%E3%83%BC%E3%82%B7%E3%83%83%E3%82%AF-T%E3%82%B7%E3%83%A3%E3%83%84-%E3%83%9F%E3%83%B3%E3%83%88%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3/dp/B085LFKN5W",
         "official_image_url": "https://m.media-amazon.com/images/I/71fxiPBZBqL._AC_UL320_.jpg",
-        "image_source": "Amazon search candidate"
+        "image_source": "Amazon search candidate",
+        "exact_match_guard_state": "clear",
+        "official_image_local": "state/intake/official_images/BOX-001-ITEM-0008_mint_top_candidate.jpg"
       },
       "official": {
         "management_id": "BOX-001-ITEM-0008",
@@ -1636,7 +1698,8 @@ window.ZERO_COST_INTAKE = {
         "official_image_local": "state/intake/official_images/BOX-001-ITEM-0008_mint_top_candidate.jpg",
         "verified_exact_match": false,
         "official_image_state": "比較画像候補あり / exact-match不可",
-        "note": "実物はオナーファッション表記のミントトップスだが、候補ページは Printstar 無地Tシャツ。ブランド違いのため出品採用不可、比較用のみ。"
+        "note": "実物はオナーファッション表記のミントトップスだが、候補ページは Printstar 無地Tシャツ。ブランド違いのため出品採用不可、比較用のみ。",
+        "exact_match_guard_state": "clear"
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0008",
@@ -1736,6 +1799,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "オナーファッション 綿100% トップス ミントグリーン 3XL",
       "verified_exact_match": false,
       "official_image_state": "比較画像候補あり / exact-match不可",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -1767,7 +1831,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 15:43:51 JST",
+        "更新時刻": "2026-04-21 16:45:13 JST",
         "メモ": "name=オナーファッション 綿100% トップス ミントグリーン 3XL / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMSqu7EDWJu3jDcTo5h"
       }
     },
@@ -1883,7 +1947,9 @@ window.ZERO_COST_INTAKE = {
         "supplemental_image_locals": [
           "state/intake/official_images/BOX-001-ITEM-0009_extra_2.jpg",
           "state/intake/official_images/BOX-001-ITEM-0009_extra_3.jpg"
-        ]
+        ],
+        "exact_match_guard_state": "clear",
+        "official_image_local": "state/intake/official_images/BOX-001-ITEM-0009_hothrty_pearl_earrings.jpg"
       },
       "official": {
         "management_id": "BOX-001-ITEM-0009",
@@ -1901,7 +1967,8 @@ window.ZERO_COST_INTAKE = {
         "supplemental_image_locals": [
           "state/intake/official_images/BOX-001-ITEM-0009_extra_2.jpg",
           "state/intake/official_images/BOX-001-ITEM-0009_extra_3.jpg"
-        ]
+        ],
+        "exact_match_guard_state": "clear"
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0009",
@@ -2001,6 +2068,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "Hotaty ピアス 金属アレルギー対応 ギフトBOX付き",
       "verified_exact_match": false,
       "official_image_state": "比較画像候補あり / exact-match保留",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -2032,7 +2100,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 15:43:51 JST",
+        "更新時刻": "2026-04-21 16:45:13 JST",
         "メモ": "name=Hotaty ピアス 金属アレルギー対応 ギフトBOX付き / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMUTrpVNxK6fGZdtMqT"
       }
     },
@@ -2137,7 +2205,12 @@ window.ZERO_COST_INTAKE = {
         "check_items_override": "サイズ4XL / 黒 / ボタン配列 / 前面ロゴ位置 / 袋越し確認",
         "official_page_url": "https://www.daraz.com.bd/products/shangchu-chefs-uniform-mens-dining-hotel-rear-kitchen-workwear-customization-cafeteria-restaurant-hot-pot-restaurant-workwear-women-i304062387.html",
         "official_image_url": "https://img.drz.lazcdn.com/static/bd/p/5352eddc86565ede7986d473209329da.jpg_720x720q80.jpg_.webp",
-        "image_source": "Daraz product page"
+        "image_source": "Daraz product page",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "色違い"
+        ],
+        "official_image_local": "state/intake/official_images/BOX-001-ITEM-0010_shangchu_chef_uniform.webp"
       },
       "official": {
         "management_id": "BOX-001-ITEM-0010",
@@ -2151,7 +2224,11 @@ window.ZERO_COST_INTAKE = {
         "official_image_local": "state/intake/official_images/BOX-001-ITEM-0010_shangchu_chef_uniform.webp",
         "verified_exact_match": false,
         "official_image_state": "比較画像候補あり / exact-match不可",
-        "note": "現物は X00168HK8P / SHANGCHU / ブラック / 4XL。Daraz候補はブランド・商品系統は近いが、保持画像が白ユニフォームで現物色と一致しないため出品採用不可、比較用のみ。"
+        "note": "現物は X00168HK8P / SHANGCHU / ブラック / 4XL。Daraz候補はブランド・商品系統は近いが、保持画像が白ユニフォームで現物色と一致しないため出品採用不可、比較用のみ。",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "色違い"
+        ]
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0010",
@@ -2203,6 +2280,10 @@ window.ZERO_COST_INTAKE = {
       "product_name": "SHANGCHU シェフユニフォーム ブラック 4XL",
       "verified_exact_match": false,
       "official_image_state": "比較画像候補あり / exact-match不可",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "色違い"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -2234,7 +2315,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 15:43:51 JST",
+        "更新時刻": "2026-04-21 16:45:13 JST",
         "メモ": "name=SHANGCHU シェフユニフォーム ブラック 4XL / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -2336,7 +2417,12 @@ window.ZERO_COST_INTAKE = {
         "check_items_override": "ブランド表記Dkieta目視確認 / ネックカバー / 花柄 / サイズ確認",
         "official_page_url": "https://www.amazon.co.jp/Teddy-%E3%82%B5%E3%83%B3%E3%83%90%E3%82%A4%E3%82%B6%E3%83%BC-%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B9-UV%E3%82%AB%E3%83%83%E3%83%88-hat209/dp/B0C3ZQK9GC",
         "official_image_url": "https://m.media-amazon.com/images/I/51x1EHPQCZL._AC_UL320_.jpg",
-        "image_source": "Amazon search candidate"
+        "image_source": "Amazon search candidate",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "柄違い"
+        ],
+        "official_image_local": "state/intake/official_images/BOX-001-ITEM-0011_hat_candidate.jpg"
       },
       "official": {
         "management_id": "BOX-001-ITEM-0011",
@@ -2346,7 +2432,11 @@ window.ZERO_COST_INTAKE = {
         "official_image_local": "state/intake/official_images/BOX-001-ITEM-0011_hat_candidate.jpg",
         "verified_exact_match": false,
         "official_image_state": "比較画像候補あり / exact-match不可",
-        "note": "実物は Dkieta 表記の白地赤花柄ネックカバー付き日よけ帽子。候補ページは無地系で柄・形状が一致しないため出品採用不可、比較用のみ。"
+        "note": "実物は Dkieta 表記の白地赤花柄ネックカバー付き日よけ帽子。候補ページは無地系で柄・形状が一致しないため出品採用不可、比較用のみ。",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "柄違い"
+        ]
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0011",
@@ -2446,6 +2536,10 @@ window.ZERO_COST_INTAKE = {
       "product_name": "Dkieta 帽子 レディース ネックカバー付き 花柄日よけ帽子",
       "verified_exact_match": false,
       "official_image_state": "比較画像候補あり / exact-match不可",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "柄違い"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -2477,7 +2571,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 15:43:51 JST",
+        "更新時刻": "2026-04-21 16:45:13 JST",
         "メモ": "name=Dkieta 帽子 レディース ネックカバー付き 花柄日よけ帽子 / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMPEuG8NMB3ZieyYzHU"
       }
     },
@@ -2581,7 +2675,12 @@ window.ZERO_COST_INTAKE = {
         "check_items_override": "枚数確認 / サイズ確認 / 素材確認",
         "official_page_url": "https://www.amazon.co.jp/%E3%82%AC%E3%83%BC%E3%82%BC%E3%83%8F%E3%83%B3%E3%82%AB%E3%83%81-%E6%B4%97%E3%81%86%E3%81%A8%E3%81%B5%E3%82%8F%E3%81%B5%E3%82%8F%E3%81%AB%E3%81%AA%E3%82%8B%E3%82%AC%E3%83%BC%E3%82%BC%E3%83%8F%E3%83%B3%E3%82%AB%E3%83%81-%E3%83%80%E3%83%96%E3%83%AB%E3%82%AC%E3%83%BC%E3%82%BC-30%C3%9730cm-12%E6%9E%9A%E3%82%BB%E3%83%83%E3%83%88/dp/B08K8NC4TS",
         "official_image_url": "https://m.media-amazon.com/images/I/51Dn05glhdS._AC_UL320_.jpg",
-        "image_source": "Amazon search candidate"
+        "image_source": "Amazon search candidate",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "セット違い"
+        ],
+        "official_image_local": "state/intake/official_images/BOX-001-ITEM-0012_gauze_candidate.jpg"
       },
       "official": {
         "management_id": "BOX-001-ITEM-0012",
@@ -2591,7 +2690,11 @@ window.ZERO_COST_INTAKE = {
         "official_image_local": "state/intake/official_images/BOX-001-ITEM-0012_gauze_candidate.jpg",
         "verified_exact_match": false,
         "official_image_state": "比較画像候補あり / exact-match不可",
-        "note": "実物は 30x30cm 10枚セットだが、候補ページは 12枚セット。枚数不一致のため出品採用不可、比較用のみ。"
+        "note": "実物は 30x30cm 10枚セットだが、候補ページは 12枚セット。枚数不一致のため出品採用不可、比較用のみ。",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "セット違い"
+        ]
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0012",
@@ -2691,6 +2794,10 @@ window.ZERO_COST_INTAKE = {
       "product_name": "gany ガーゼハンカチ 30×30cm 10枚セット 綿100%",
       "verified_exact_match": false,
       "official_image_state": "比較画像候補あり / exact-match不可",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "セット違い"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -2722,7 +2829,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 15:43:51 JST",
+        "更新時刻": "2026-04-21 16:45:13 JST",
         "メモ": "name=gany ガーゼハンカチ 30×30cm 10枚セット 綿100% / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPTBgBM5kND3h8AhVf4bf"
       }
     },
@@ -2823,7 +2930,9 @@ window.ZERO_COST_INTAKE = {
         ],
         "official_page_url": "https://www.gwenchanda.com/shop/health-wellness/acne/forehead-focused-patch-18p/",
         "official_image_url": "https://www.gwenchanda.com/wp-content/uploads/2025/05/GWENCHANDA-GA230719741-1.jpg",
-        "image_source": "Gwenchanda product page"
+        "image_source": "Gwenchanda product page",
+        "exact_match_guard_state": "clear",
+        "official_image_local": "state/intake/official_images/BOX-001-ITEM-0001_gwenchanda_forehead_patch.jpg"
       },
       "official": {
         "management_id": "BOX-001-ITEM-0013",
@@ -2837,7 +2946,8 @@ window.ZERO_COST_INTAKE = {
         "verified_exact_match": true,
         "official_image_state": "100%同一確認済み / 候補1枚確保",
         "note": "0001と同一商品。GTIN 8809409185224 と実物パッケージ表面・背面が Gwenchanda 商品ページ画像と一致。比較画像は 100%同一確認済み。",
-        "official_image_local": "state/intake/official_images/BOX-001-ITEM-0001_gwenchanda_forehead_patch.jpg"
+        "official_image_local": "state/intake/official_images/BOX-001-ITEM-0001_gwenchanda_forehead_patch.jpg",
+        "exact_match_guard_state": "clear"
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0013",
@@ -2889,6 +2999,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り",
       "verified_exact_match": true,
       "official_image_state": "100%同一確認済み / 候補1枚確保",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -2920,7 +3031,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 15:43:51 JST",
+        "更新時刻": "2026-04-21 16:45:13 JST",
         "メモ": "name=WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り / publish_ok=公開待ち / draft_status=公開待ち / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量"
       }
     },
@@ -3033,7 +3144,13 @@ window.ZERO_COST_INTAKE = {
         "supplemental_image_locals": [
           "state/intake/official_images/BOX-001-ITEM-0014_extra_2.jpg",
           "state/intake/official_images/BOX-001-ITEM-0014_extra_3.jpg"
-        ]
+        ],
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "柄違い",
+          "セット違い"
+        ],
+        "official_image_local": "state/intake/official_images/BOX-001-ITEM-0014_hayaharu_kids_socks.jpg"
       },
       "official": {
         "management_id": "BOX-001-ITEM-0014",
@@ -3051,6 +3168,10 @@ window.ZERO_COST_INTAKE = {
         "supplemental_image_locals": [
           "state/intake/official_images/BOX-001-ITEM-0014_extra_2.jpg",
           "state/intake/official_images/BOX-001-ITEM-0014_extra_3.jpg"
+        ],
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "セット違い"
         ]
       },
       "commerce": {
@@ -3151,6 +3272,11 @@ window.ZERO_COST_INTAKE = {
       "product_name": "HAYAHARU キッズ靴下 LS4602LS",
       "verified_exact_match": false,
       "official_image_state": "比較画像候補あり / exact-match不可",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "柄違い",
+        "セット違い"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -3182,7 +3308,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 15:43:51 JST",
+        "更新時刻": "2026-04-21 16:45:13 JST",
         "メモ": "name=HAYAHARU キッズ靴下 LS4602LS / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMLyKhRCgPASDJFH2dc"
       }
     },
@@ -3287,7 +3413,8 @@ window.ZERO_COST_INTAKE = {
         "check_items_override": "5足セット構成 / 色柄 / サイズ表記確認",
         "official_page_url": "",
         "official_image_url": "",
-        "image_source": "actual-only"
+        "image_source": "actual-only",
+        "exact_match_guard_state": "clear"
       },
       "official": {
         "management_id": "BOX-001-ITEM-0015",
@@ -3300,7 +3427,8 @@ window.ZERO_COST_INTAKE = {
         "image_source": "actual-only",
         "verified_exact_match": false,
         "official_image_state": "actual-only固定 / 比較画像なし",
-        "note": "Llink / 靴下 / 5足セット / ボーダー柄までは実物ラベルと現物で強く取れている。比較画像検索も実施したが、5足構成と柄まで 100% 同一と断定できる公開画像は確保できなかったため、actual-only 固定で進める。"
+        "note": "Llink / 靴下 / 5足セット / ボーダー柄までは実物ラベルと現物で強く取れている。比較画像検索も実施したが、5足構成と柄まで 100% 同一と断定できる公開画像は確保できなかったため、actual-only 固定で進める。",
+        "exact_match_guard_state": "clear"
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0015",
@@ -3334,6 +3462,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "Llink 靴下 5足セット ボーダー パステル",
       "verified_exact_match": false,
       "official_image_state": "actual-only固定 / 比較画像なし",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -3365,7 +3494,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 15:43:51 JST",
+        "更新時刻": "2026-04-21 16:45:13 JST",
         "メモ": "name=Llink 靴下 5足セット ボーダー パステル / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
       }
     },
@@ -3468,7 +3597,8 @@ window.ZERO_COST_INTAKE = {
         "check_items_override": "5足セット構成 / 蝶リボン装飾 / サイズ表記確認",
         "official_page_url": "",
         "official_image_url": "",
-        "image_source": "actual-only"
+        "image_source": "actual-only",
+        "exact_match_guard_state": "clear"
       },
       "official": {
         "management_id": "BOX-001-ITEM-0016",
@@ -3481,7 +3611,8 @@ window.ZERO_COST_INTAKE = {
         "image_source": "actual-only",
         "verified_exact_match": false,
         "official_image_state": "actual-only固定 / 比較画像なし",
-        "note": "ZERUI / 靴下キッズ / 蝶リボン / パステル系 5足セットまでは実物ラベルで強く取れている。比較画像検索も実施したが、5足構成と蝶リボン装飾まで 100% 同一と断定できる公開画像は確保できなかったため、actual-only 固定で進める。"
+        "note": "ZERUI / 靴下キッズ / 蝶リボン / パステル系 5足セットまでは実物ラベルで強く取れている。比較画像検索も実施したが、5足構成と蝶リボン装飾まで 100% 同一と断定できる公開画像は確保できなかったため、actual-only 固定で進める。",
+        "exact_match_guard_state": "clear"
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0016",
@@ -3515,6 +3646,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "ZERUI 靴下 5足セット パステル 蝶リボン",
       "verified_exact_match": false,
       "official_image_state": "actual-only固定 / 比較画像なし",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -3546,7 +3678,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 15:43:51 JST",
+        "更新時刻": "2026-04-21 16:45:13 JST",
         "メモ": "name=ZERUI 靴下 5足セット パステル 蝶リボン / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
       }
     },
@@ -3649,7 +3781,13 @@ window.ZERO_COST_INTAKE = {
         "check_items_override": "用途確認 / 中身・展開形状確認 / オレンジ丸型ポーチ / プリント柄確認",
         "official_page_url": "",
         "official_image_url": "",
-        "image_source": "actual-only"
+        "image_source": "actual-only",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "柄違い",
+          "型番違い",
+          "形状違い"
+        ]
       },
       "official": {
         "management_id": "BOX-001-ITEM-0017",
@@ -3662,7 +3800,13 @@ window.ZERO_COST_INTAKE = {
         "image_source": "actual-only",
         "verified_exact_match": false,
         "official_image_state": "actual-only固定 / 用途要確認",
-        "note": "X00194HN9H / FirstC / ティアグッズ記念品ギフトまでは現物ラベルで確認。既存のYahoo!サファリハット候補は柄・構造・型番が一致しないため不採用。用途確認が終わるまで比較画像は使わない。"
+        "note": "X00194HN9H / FirstC / ティアグッズ記念品ギフトまでは現物ラベルで確認。既存のYahoo!サファリハット候補は柄・構造・型番が一致しないため不採用。用途確認が終わるまで比較画像は使わない。",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "柄違い",
+          "型番違い",
+          "形状違い"
+        ]
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0017",
@@ -3696,6 +3840,12 @@ window.ZERO_COST_INTAKE = {
       "product_name": "FirstC ティアグッズ記念品ギフト オレンジ丸型ポーチ（用途要確認）",
       "verified_exact_match": false,
       "official_image_state": "actual-only固定 / 用途要確認",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "柄違い",
+        "型番違い",
+        "形状違い"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -3727,7 +3877,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 15:43:51 JST",
+        "更新時刻": "2026-04-21 16:45:13 JST",
         "メモ": "name=FirstC ティアグッズ記念品ギフト オレンジ丸型ポーチ（用途要確認） / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 用途要確認 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -3831,7 +3981,8 @@ window.ZERO_COST_INTAKE = {
         "check_items_override": "サイズ130 / フード有無 / 袖口色切替 / ワッペン位置確認",
         "official_page_url": "",
         "official_image_url": "",
-        "image_source": "actual-only"
+        "image_source": "actual-only",
+        "exact_match_guard_state": "clear"
       },
       "official": {
         "management_id": "BOX-001-ITEM-0018",
@@ -3844,7 +3995,8 @@ window.ZERO_COST_INTAKE = {
         "image_source": "actual-only",
         "verified_exact_match": false,
         "official_image_state": "actual-only固定 / 比較画像なし",
-        "note": "SWEETBOY / 子供パーカー / ネイビー×イエロー / 130 までは実物ラベルで強く取れている。比較画像検索も実施したが、色・サイズ・細部が 100% 同一と断定できる公開画像は確保できなかったため、actual-only 固定で進める。"
+        "note": "SWEETBOY / 子供パーカー / ネイビー×イエロー / 130 までは実物ラベルで強く取れている。比較画像検索も実施したが、色・サイズ・細部が 100% 同一と断定できる公開画像は確保できなかったため、actual-only 固定で進める。",
+        "exact_match_guard_state": "clear"
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0018",
@@ -3878,6 +4030,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "SWEETBOY 子供パーカー ネイビー×イエロー 130",
       "verified_exact_match": false,
       "official_image_state": "actual-only固定 / 比較画像なし",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -3909,7 +4062,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 15:43:51 JST",
+        "更新時刻": "2026-04-21 16:45:13 JST",
         "メモ": "name=SWEETBOY 子供パーカー ネイビー×イエロー 130 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
       }
     },
@@ -4017,7 +4170,9 @@ window.ZERO_COST_INTAKE = {
         "official_page_url": "https://www.amazon.co.jp/dp/B0CKQQZVW2",
         "official_image_url": "https://m.media-amazon.com/images/I/61YEwSdbQgL._AC_SL1500_.jpg",
         "image_source": "web candidate",
-        "requires_authenticity_review": true
+        "requires_authenticity_review": true,
+        "exact_match_guard_state": "clear",
+        "official_image_local": "state/intake/official_images/BOX-001-ITEM-0019_polo_bear_tote.jpg"
       },
       "official": {
         "management_id": "BOX-001-ITEM-0019",
@@ -4027,7 +4182,8 @@ window.ZERO_COST_INTAKE = {
         "verified_exact_match": false,
         "official_image_state": "比較画像候補あり / exact-match保留",
         "note": "Polo Ralph Lauren 9AR021-W3Y 系比較画像として保持。袋越しのため底マチ・持ち手仕様・内タグが見えず exact-match保留。ブランド・商標品のため公開前に真贋/権利リスク確認必須。",
-        "image_source": "Amazon product page candidate"
+        "image_source": "Amazon product page candidate",
+        "exact_match_guard_state": "clear"
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0019",
@@ -4127,6 +4283,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "ポロベア キャンバス トートバッグ POLO BEAR LAUREN",
       "verified_exact_match": false,
       "official_image_state": "比較画像候補あり / exact-match保留",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -4158,7 +4315,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "停止",
         "AI次アクション": "空き板を維持",
         "ルーティング状態": "一時停止",
-        "更新時刻": "2026-04-21 15:43:51 JST",
+        "更新時刻": "2026-04-21 16:45:13 JST",
         "メモ": "name=ポロベア キャンバス トートバッグ POLO BEAR LAUREN / publish_ok=確認待ち / draft_status=一時取り下げ / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=一時取り下げ"
       }
     },
@@ -4266,7 +4423,8 @@ window.ZERO_COST_INTAKE = {
         "check_items_override": "色味 / サイズM表記 / HJ-GY-M / カバー有無 / パッケージ状態",
         "official_page_url": "",
         "official_image_url": "",
-        "image_source": "actual-only"
+        "image_source": "actual-only",
+        "exact_match_guard_state": "clear"
       },
       "official": {
         "management_id": "BOX-001-ITEM-0020",
@@ -4279,7 +4437,8 @@ window.ZERO_COST_INTAKE = {
         "image_source": "actual-only",
         "verified_exact_match": false,
         "official_image_state": "actual-only固定 / 比較画像なし",
-        "note": "X001AIILBV / HJ-GY-M / 首サポーター / カバー付き / グレー / M は実物パッケージで確認。ジモティー候補は公式でも型番一致でもないため破棄し、実物写真のみで扱う。"
+        "note": "X001AIILBV / HJ-GY-M / 首サポーター / カバー付き / グレー / M は実物パッケージで確認。ジモティー候補は公式でも型番一致でもないため破棄し、実物写真のみで扱う。",
+        "exact_match_guard_state": "clear"
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0020",
@@ -4313,6 +4472,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "首サポーター カバー付き グレー M HJ-GY-M",
       "verified_exact_match": false,
       "official_image_state": "actual-only固定 / 比較画像なし",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -4344,7 +4504,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 15:43:51 JST",
+        "更新時刻": "2026-04-21 16:45:13 JST",
         "メモ": "name=首サポーター カバー付き グレー M HJ-GY-M / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -4446,7 +4606,8 @@ window.ZERO_COST_INTAKE = {
           "レモンクォーツ",
           "シルバーリング",
           "サイズ10"
-        ]
+        ],
+        "exact_match_guard_state": "clear"
       },
       "official": {},
       "commerce": {
@@ -4481,6 +4642,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "1.1CT レモンクォーツ シルバーリング サイズ10",
       "verified_exact_match": false,
       "official_image_state": "実物のみ",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -4599,7 +4761,9 @@ window.ZERO_COST_INTAKE = {
         "check_items_override": "容量確認 / 成分表示 / 使用期限確認 / シール未開封確認",
         "official_page_url": "https://jp.mercari.com/item/m52972642431",
         "image_source": "web candidate",
-        "official_image_url": "https://static.mercdn.net/item/detail/orig/photos/m52972642431_1.jpg"
+        "official_image_url": "https://static.mercdn.net/item/detail/orig/photos/m52972642431_1.jpg",
+        "exact_match_guard_state": "clear",
+        "official_image_local": "state/intake/official_images/BOX-001-ITEM-0022_emcarepro_le_blanc.jpg"
       },
       "official": {
         "management_id": "BOX-001-ITEM-0022",
@@ -4607,7 +4771,8 @@ window.ZERO_COST_INTAKE = {
         "official_image_url": "https://static.mercdn.net/item/detail/orig/photos/m52972642431_1.jpg",
         "official_image_local": "state/intake/official_images/BOX-001-ITEM-0022_emcarepro_le_blanc.jpg",
         "official_image_state": "調査画像取得済み",
-        "note": "メルカリ出品画像からFEMCARE PRO LE BLANC 150mlの商品画像をダウンロード。公式サイトなし。1080x1080px 45KB。"
+        "note": "メルカリ出品画像からFEMCARE PRO LE BLANC 150mlの商品画像をダウンロード。公式サイトなし。1080x1080px 45KB。",
+        "exact_match_guard_state": "clear"
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0022",
@@ -4659,6 +4824,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "LE BLANC フェムケアPRO 低刺激 デリケートゾーン 150mL",
       "verified_exact_match": false,
       "official_image_state": "調査画像取得済み",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -4690,7 +4856,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 15:43:51 JST",
+        "更新時刻": "2026-04-21 16:45:13 JST",
         "メモ": "name=LE BLANC フェムケアPRO 低刺激 デリケートゾーン 150mL / publish_ok=確認待ち / draft_status=下書き / image_state=調査画像取得済み / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -4783,11 +4949,15 @@ window.ZERO_COST_INTAKE = {
         "product_name": "FEMCARE PRO 150ml",
         "barcode_primary": "",
         "product_code_type": "package_text",
-        "official_image_state": "実物のみ",
+        "official_image_state": "実物のみ / 現写真では1商品に断定不能",
         "note": "FRONTにFEMCARE PRO 150mlボトル。BACK/CODEはTrekking Pole-Blue収納袋（別商品混線）。FRONT側が本命。2026-04-15商品特定分析によりprovisional登録。",
         "evidence": [
           "FEMCARE PRO",
           "150ml"
+        ],
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "別商品mix"
         ]
       },
       "official": {},
@@ -4822,7 +4992,11 @@ window.ZERO_COST_INTAKE = {
       "display_name": "FEMCARE PRO 150ml",
       "product_name": "FEMCARE PRO 150ml",
       "verified_exact_match": false,
-      "official_image_state": "実物のみ",
+      "official_image_state": "実物のみ / 現写真では1商品に断定不能",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "別商品mix"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -4932,7 +5106,8 @@ window.ZERO_COST_INTAKE = {
           "サングラス レディース",
           "#016",
           "ブラック・ブルー"
-        ]
+        ],
+        "exact_match_guard_state": "clear"
       },
       "official": {},
       "commerce": {
@@ -4967,6 +5142,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
       "verified_exact_match": false,
       "official_image_state": "実物のみ",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -5079,7 +5255,8 @@ window.ZERO_COST_INTAKE = {
           "サングラス レディース",
           "#016",
           "ブラック・ブルー"
-        ]
+        ],
+        "exact_match_guard_state": "clear"
       },
       "official": {},
       "commerce": {
@@ -5114,6 +5291,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
       "verified_exact_match": false,
       "official_image_state": "実物のみ",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -5228,7 +5406,8 @@ window.ZERO_COST_INTAKE = {
         "official_page_url": "https://mens-make-collection.jp/blogs/original-skincare/",
         "official_image_url": "https://mens-make-collection.jp/_img/ja/cms/10318/image/_/?1775133797",
         "image_source": "MMC公式記事",
-        "supplemental_url": "https://www.amazon.co.jp/MMC化粧水-メンズスキンケア-敏感肌-乾燥肌-240ml/dp/B0DCBBHC1V/"
+        "supplemental_url": "https://www.amazon.co.jp/MMC化粧水-メンズスキンケア-敏感肌-乾燥肌-240ml/dp/B0DCBBHC1V/",
+        "exact_match_guard_state": "clear"
       },
       "official": {
         "management_id": "BOX-001-ITEM-0026",
@@ -5241,7 +5420,8 @@ window.ZERO_COST_INTAKE = {
         "image_source": "MMC公式記事",
         "supplemental_url": "https://www.amazon.co.jp/MMC化粧水-メンズスキンケア-敏感肌-乾燥肌-240ml/dp/B0DCBBHC1V/",
         "official_image_state": "候補1枚確保",
-        "note": "MMC公式記事の化粧水枠と Amazon 商品ページを確保。"
+        "note": "MMC公式記事の化粧水枠と Amazon 商品ページを確保。",
+        "exact_match_guard_state": "clear"
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0026",
@@ -5293,6 +5473,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "MMC FACE LOTION 240ml",
       "verified_exact_match": false,
       "official_image_state": "候補1枚確保",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -5324,7 +5505,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 15:43:51 JST",
+        "更新時刻": "2026-04-21 16:45:13 JST",
         "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -5416,17 +5597,22 @@ window.ZERO_COST_INTAKE = {
         "product_name": "MMC FACE LOTION 240ml",
         "barcode_primary": "4595987734025",
         "product_code_type": "gtin",
-        "official_image_state": "候補1枚確保",
-        "note": "本体は MMC 化粧水。コード側に Amazon 内部コードが混在するため GTIN 優先で暫定特定。 / 0026と同一商品。GTIN優先の暫定特定に画像候補を付与。",
+        "official_image_state": "候補1枚確保 / 現写真では1商品に断定不能",
+        "note": "FRONT で MMC 化粧水 240ml と GTIN 4595987734025 を確認。一方 BACK/CODE は [wolass] メンズセーター X0018UBQX1 の別商品。現写真では同一管理番号の1商品に断定不能のため、MMC 側候補の provisional に留める。",
         "evidence": [
           "GTIN 4595987734025",
           "MMC 化粧水",
-          "240ml"
+          "240ml",
+          "BACK/CODE=[wolass] セーター X0018UBQX1"
         ],
         "official_page_url": "https://mens-make-collection.jp/blogs/original-skincare/",
         "official_image_url": "https://mens-make-collection.jp/_img/ja/cms/10318/image/_/?1775133797",
         "image_source": "MMC公式記事",
-        "supplemental_url": "https://www.amazon.co.jp/MMC化粧水-メンズスキンケア-敏感肌-乾燥肌-240ml/dp/B0DCBBHC1V/"
+        "supplemental_url": "https://www.amazon.co.jp/MMC化粧水-メンズスキンケア-敏感肌-乾燥肌-240ml/dp/B0DCBBHC1V/",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "別商品mix"
+        ]
       },
       "official": {
         "management_id": "BOX-001-ITEM-0027",
@@ -5438,8 +5624,12 @@ window.ZERO_COST_INTAKE = {
         "official_image_url": "https://mens-make-collection.jp/_img/ja/cms/10318/image/_/?1775133797",
         "image_source": "MMC公式記事",
         "supplemental_url": "https://www.amazon.co.jp/MMC化粧水-メンズスキンケア-敏感肌-乾燥肌-240ml/dp/B0DCBBHC1V/",
-        "official_image_state": "候補1枚確保",
-        "note": "0026と同一商品。GTIN優先の暫定特定に画像候補を付与。"
+        "official_image_state": "候補1枚確保 / 現写真では1商品に断定不能",
+        "note": "FRONT は MMC FACE LOTION 240ml、BACK/CODE は [wolass] メンズセーター X0018UBQX1 の別商品。現写真では1商品に断定不能のため、比較画像候補は保持するが出品判定には使わない。",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "別商品mix"
+        ]
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0027",
@@ -5472,7 +5662,7 @@ window.ZERO_COST_INTAKE = {
           "label": "比較-1",
           "url": "./assets/official_images/BOX-001-ITEM-0027_official_1.jpg",
           "page_url": "https://mens-make-collection.jp/blogs/original-skincare/",
-          "state": "候補1枚確保",
+          "state": "候補1枚確保 / 現写真では1商品に断定不能",
           "source": "MMC公式記事",
           "verified_exact_match": false
         }
@@ -5482,7 +5672,7 @@ window.ZERO_COST_INTAKE = {
           "label": "比較-1",
           "url": "./assets/official_images/BOX-001-ITEM-0027_official_1.jpg",
           "page_url": "https://mens-make-collection.jp/blogs/original-skincare/",
-          "state": "候補1枚確保",
+          "state": "候補1枚確保 / 現写真では1商品に断定不能",
           "source": "MMC公式記事",
           "verified_exact_match": false
         }
@@ -5490,7 +5680,11 @@ window.ZERO_COST_INTAKE = {
       "display_name": "MMC FACE LOTION 240ml",
       "product_name": "MMC FACE LOTION 240ml",
       "verified_exact_match": false,
-      "official_image_state": "候補1枚確保",
+      "official_image_state": "候補1枚確保 / 現写真では1商品に断定不能",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "別商品mix"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -5522,8 +5716,8 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 15:43:51 JST",
-        "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+        "更新時刻": "2026-04-21 16:45:13 JST",
+        "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=候補1枚確保 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
     {
@@ -5610,19 +5804,29 @@ window.ZERO_COST_INTAKE = {
       "manual_note": "FRONT は黒/緑の冬小物系、BACK/CODE は Zukida 車のフック（Red）の箱でした。",
       "resolved": {
         "management_id": "BOX-001-ITEM-0028",
-        "resolution_status": "confirmed",
-        "product_name": "Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製",
+        "resolution_status": "provisional",
+        "product_name": "Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red",
         "barcode_primary": "X0010CU9L7",
         "product_code_type": "amazon_internal",
-        "verified_exact_match": true,
-        "official_image_state": "実物のみ",
-        "note": "BACK/CODEにZukida車のフック(Red) X0010CU9L7。既存のconfirmedデータと一致。staging済み。2026-04-15商品特定分析によりconfirmedに昇格。",
+        "verified_exact_match": false,
+        "official_image_state": "管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能",
+        "note": "BACK のラベルで X0010CU9L7 / Zukida 車のフック 後部座席 (Red) を確認し、CODE 面も car hook mobile phone holder 箱で同系統。一方 FRONT は黒緑の冬小物系で別商品。現IDは Zukida anchor を維持するが、現写真では1商品に断定不能のため provisional に降格する。",
         "evidence": [
           "X0010CU9L7",
           "Zukida",
           "車のフック",
-          "Red"
-        ]
+          "Red",
+          "FRONT=冬小物系の別商品"
+        ],
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "別商品mix",
+          "要再束ね"
+        ],
+        "qwen_hq_review_status": "resolved",
+        "qwen_hq_resolution": "needs_split",
+        "qwen_hq_review_at": "2026-04-13 08:25:22 JST",
+        "qwen_hq_review_note": "0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式再束ねと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。"
       },
       "official": {
         "management_id": "BOX-001-ITEM-0028",
@@ -5634,7 +5838,7 @@ window.ZERO_COST_INTAKE = {
         "official_image_url": "",
         "image_source": "",
         "verified_exact_match": false,
-        "official_image_state": "管理番号再分解待ち / HQレビュー済み",
+        "official_image_state": "管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能",
         "note": "Qwen 公開前チェック担当: CRITICAL: FRONT/BACK/CODE が別商品 mix 状態（intake_manual_overrides.json で split_required 登録済み） / CRITICAL: Hello Kitty 50TH ANNIVERSARY はサンリオ著作権/商標権関連リスク。正規品出所証明がないと削除・制限対象の可能性 / ほか3件 / HQ 公開前チェック担当: 管理番号の再分解: 0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式再束ねと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。",
         "qwen_last_task_name": "公開前チェック担当",
         "qwen_last_review_at": "2026-04-12 06:38:33 JST",
@@ -5644,7 +5848,12 @@ window.ZERO_COST_INTAKE = {
         "qwen_hq_review_status": "resolved",
         "qwen_hq_resolution": "needs_split",
         "qwen_hq_review_at": "2026-04-13 08:25:22 JST",
-        "qwen_hq_review_note": "0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式再束ねと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。"
+        "qwen_hq_review_note": "0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式再束ねと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "別商品mix",
+          "要再束ね"
+        ]
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0028",
@@ -5652,13 +5861,13 @@ window.ZERO_COST_INTAKE = {
         "product_id": "PRD-BOX-001-028",
         "draft_id": "DRF-BOX-001-028",
         "research_id": "RES-BOX-001-028",
-        "product_name": "Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製",
+        "product_name": "Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red",
         "brand": "Zukida",
-        "category": "車&バイク > カー用品 > 収納アクセサリー",
+        "category": "コスメ・美容 > その他",
         "barcode_primary": "X0010CU9L7",
         "product_code_type": "amazon_internal",
-        "listing_title": "Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製",
-        "listing_price": "780",
+        "listing_title": "Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red",
+        "listing_price": "980",
         "market_floor_price": "",
         "market_floor_state": "未調査",
         "market_source_label": "",
@@ -5666,7 +5875,7 @@ window.ZERO_COST_INTAKE = {
         "market_checked_at": "",
         "market_note": "",
         "publish_state": "下書き",
-        "publish_detail": "コードラベルに X0010CU9L7 / Zukida / 後部座席フック / Red が読める。Web検索でヘッドレスト取り付け型アルミ合金製フックと確認。楽天・メルカリにも流通あり。",
+        "publish_detail": "BACK のラベルで X0010CU9L7 / Zukida 車のフック 後部座席 (Red) を確認し、CODE 面も car hook mobile phone holder 箱で同系統。一方 FRONT は黒緑の冬小物系で別商品。現IDは Zukida anchor を維持するが、現写真では1商品に断定不能のため provisional に降格する。",
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
@@ -5674,10 +5883,15 @@ window.ZERO_COST_INTAKE = {
       },
       "comparison_images": [],
       "reference_images": [],
-      "display_name": "Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製",
-      "product_name": "Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製",
-      "verified_exact_match": true,
-      "official_image_state": "管理番号再分解待ち / HQレビュー済み",
+      "display_name": "Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red",
+      "product_name": "Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red",
+      "verified_exact_match": false,
+      "official_image_state": "管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "別商品mix",
+        "要再束ね"
+      ],
       "qwen_hq_review_status": "resolved",
       "qwen_hq_resolution": "needs_split",
       "qwen_hq_review_note": "0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式再束ねと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。",
@@ -5689,7 +5903,7 @@ window.ZERO_COST_INTAKE = {
       "reference_image_ref": "",
       "minimum_price": "",
       "market_floor_price_label": "未調査",
-      "listing_price": "780",
+      "listing_price": "980",
       "exception": {},
       "route_plan": {
         "商品ID": "PRD-BOX-001-028",
@@ -5709,8 +5923,8 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "管理番号再分解と再撮影",
         "ルーティング状態": "要再束ね",
-        "更新時刻": "2026-04-21 15:43:51 JST",
-        "メモ": "name=Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 / publish_ok=確認待ち / draft_status=下書き / image_state=実物のみ / 管理番号再分解待ち / HQレビュー済み / image_ready=実物あり / 参考画像待ち / delivery=小型軽量 / qwen_hq=needs_split / 0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式再束ねと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。"
+        "更新時刻": "2026-04-21 16:45:13 JST",
+        "メモ": "name=Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / qwen_hq=needs_split / 0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式再束ねと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。"
       },
       "split_staging": {
         "management_id": "BOX-001-ITEM-0028",
@@ -5933,15 +6147,20 @@ window.ZERO_COST_INTAKE = {
       "resolved": {
         "management_id": "BOX-001-ITEM-0029",
         "resolution_status": "provisional",
-        "product_name": "Car hook mobile phone holder Storage and rear entertainment",
+        "product_name": "Car hook mobile phone holder NO-FE040",
         "barcode_primary": "",
         "product_code_type": "package_text",
-        "official_image_state": "実物のみ",
-        "note": "FRONT/BACKにcar hook mobile phone holder。CODEはnetwork tool系（別商品混線）。FRONT/BACK側が本命。2026-04-15商品特定分析によりprovisional登録。",
+        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "note": "FRONT に Car hook mobile phone holder / NO-FE040 を確認。一方 BACK/CODE は SPEEDWOX ワイヤーストリッパー X00162U47P の別商品。現写真では car hook 側は FRONT しか揃わず、同一管理番号の1商品に断定不能のため provisional に留める。",
         "evidence": [
           "Car hook",
           "mobile phone holder",
-          "Storage and rear entertainment"
+          "NO-FE040",
+          "BACK/CODE=SPEEDWOX X00162U47P"
+        ],
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "別商品mix"
         ]
       },
       "official": {},
@@ -5951,12 +6170,12 @@ window.ZERO_COST_INTAKE = {
         "product_id": "PRD-BOX-001-029",
         "draft_id": "DRF-BOX-001-029",
         "research_id": "RES-BOX-001-029",
-        "product_name": "Car hook mobile phone holder Storage and rear entertainment",
+        "product_name": "Car hook mobile phone holder NO-FE040",
         "brand": "",
         "category": "",
         "barcode_primary": "",
         "product_code_type": "package_text",
-        "listing_title": "Car hook mobile phone holder Storage and rear entertainment",
+        "listing_title": "Car hook mobile phone holder NO-FE040",
         "listing_price": "",
         "market_floor_price": "",
         "market_floor_state": "未調査",
@@ -5973,10 +6192,14 @@ window.ZERO_COST_INTAKE = {
       },
       "comparison_images": [],
       "reference_images": [],
-      "display_name": "Car hook mobile phone holder Storage and rear entertainment",
-      "product_name": "Car hook mobile phone holder Storage and rear entertainment",
+      "display_name": "Car hook mobile phone holder NO-FE040",
+      "product_name": "Car hook mobile phone holder NO-FE040",
       "verified_exact_match": false,
-      "official_image_state": "実物のみ",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "別商品mix"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -6079,15 +6302,21 @@ window.ZERO_COST_INTAKE = {
       "resolved": {
         "management_id": "BOX-001-ITEM-0030",
         "resolution_status": "provisional",
-        "product_name": "2IN1 WIRE STRIPPER & CUTTER",
-        "barcode_primary": "",
-        "product_code_type": "package_text",
-        "official_image_state": "実物のみ",
-        "note": "FRONTにワイヤーストリッパー箱。BACK/CODEは女性衣類パッケージ（別商品混線）。FRONT側が本命。2026-04-15商品特定分析によりprovisional登録。",
+        "product_name": "SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556",
+        "barcode_primary": "X00162U47P",
+        "product_code_type": "amazon_internal",
+        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "note": "FRONT で 2IN1 WIRE STRIPPER & CUTTER / ACS-1556 / X00162U47P を確認。一方 BACK/CODE は婦人服ラベル X001AQYKV3 / M36026 の別商品。現写真では wire stripper 側は FRONT しか coherent でないため provisional に留める。",
         "evidence": [
-          "2IN1",
-          "WIRE STRIPPER",
-          "CUTTER"
+          "X00162U47P",
+          "SPEEDWOX",
+          "2IN1 WIRE STRIPPER & CUTTER",
+          "ACS-1556",
+          "BACK/CODE=婦人服 X001AQYKV3"
+        ],
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "別商品mix"
         ]
       },
       "official": {},
@@ -6097,12 +6326,12 @@ window.ZERO_COST_INTAKE = {
         "product_id": "PRD-BOX-001-030",
         "draft_id": "DRF-BOX-001-030",
         "research_id": "RES-BOX-001-030",
-        "product_name": "2IN1 WIRE STRIPPER & CUTTER",
+        "product_name": "SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556",
         "brand": "",
         "category": "",
-        "barcode_primary": "",
-        "product_code_type": "package_text",
-        "listing_title": "2IN1 WIRE STRIPPER & CUTTER",
+        "barcode_primary": "X00162U47P",
+        "product_code_type": "amazon_internal",
+        "listing_title": "SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556",
         "listing_price": "",
         "market_floor_price": "",
         "market_floor_state": "未調査",
@@ -6119,10 +6348,14 @@ window.ZERO_COST_INTAKE = {
       },
       "comparison_images": [],
       "reference_images": [],
-      "display_name": "2IN1 WIRE STRIPPER & CUTTER",
-      "product_name": "2IN1 WIRE STRIPPER & CUTTER",
+      "display_name": "SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556",
+      "product_name": "SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556",
       "verified_exact_match": false,
-      "official_image_state": "実物のみ",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "別商品mix"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -6239,7 +6472,8 @@ window.ZERO_COST_INTAKE = {
         "check_items_override": "色味ベージュ系 / 衣類種別 / サイズ表記不明 / ロゴ表記確認",
         "official_page_url": "",
         "official_image_url": "",
-        "image_source": "比較画像待ち"
+        "image_source": "比較画像待ち",
+        "exact_match_guard_state": "clear"
       },
       "official": {},
       "commerce": {
@@ -6274,6 +6508,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "LEISURE WEAR ベージュ系レディース衣類",
       "verified_exact_match": false,
       "official_image_state": "比較画像待ち / exact-match保留",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -6305,7 +6540,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 15:43:51 JST",
+        "更新時刻": "2026-04-21 16:45:13 JST",
         "メモ": "name=LEISURE WEAR ベージュ系レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -6408,7 +6643,12 @@ window.ZERO_COST_INTAKE = {
         "official_page_url": "https://www.ebay.com/itm/306550440795",
         "official_image_url": "https://i.ebayimg.com/images/g/CG8AAeSwnKBo70Z5/s-l400.jpg",
         "image_source": "eBay GTIN match candidate",
-        "supplemental_url": "https://www.ebay.ca/itm/297690728964"
+        "supplemental_url": "https://www.ebay.ca/itm/297690728964",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "色違い",
+          "形状違い"
+        ]
       },
       "official": {
         "management_id": "BOX-001-ITEM-0032",
@@ -6422,7 +6662,11 @@ window.ZERO_COST_INTAKE = {
         "supplemental_url": "https://www.ebay.ca/itm/297690728964",
         "verified_exact_match": false,
         "official_image_state": "比較画像候補あり / exact-match不可",
-        "note": "GTIN 4550247611409 と item#24117 / Color GR / Size L は実物と一致。以前のネイビー比較画像は形状不一致のため除外し、GTIN一致の比較候補へ差し替え。"
+        "note": "GTIN 4550247611409 と item#24117 / Color GR / Size L は実物と一致。以前のネイビー比較画像は形状不一致のため除外し、GTIN一致の比較候補へ差し替え。",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "形状違い"
+        ]
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0032",
@@ -6522,6 +6766,11 @@ window.ZERO_COST_INTAKE = {
       "product_name": "ZUCCA CLUB リラックス リカバリー サンダル",
       "verified_exact_match": false,
       "official_image_state": "比較画像候補あり / exact-match不可",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "色違い",
+        "形状違い"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -6553,7 +6802,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 15:43:51 JST",
+        "更新時刻": "2026-04-21 16:45:13 JST",
         "メモ": "name=ZUCCA CLUB リラックス リカバリー サンダル / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPTBkWndxGku2L9EVw4UP"
       }
     },
@@ -6644,8 +6893,8 @@ window.ZERO_COST_INTAKE = {
         "product_name": "jchinjia リュック メンズ ビジネスリュック 男女兼用 カジュアルバッグ おしゃれ トラベルバッグ",
         "barcode_primary": "X00187HP11",
         "product_code_type": "amazon_internal",
-        "official_image_state": "比較画像候補あり / exact-match保留",
-        "note": "コードラベルに [jchinjia] / ブラック / 出張トラベル / リュックサック が読める。比較画像は同名候補と黒い大容量リュック形状まで一致するが、外ポケット構成とサイズ詳細を袋越しに断定できないため exact-match保留。 / コードラベルに [jchinjia] / ブラック / 出張トラベル / リュックサック が読める。黒い大容量リュック形状は近いが、外ポケット構成とサイズ詳細を袋越しに断定できないため exact-match保留。",
+        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能",
+        "note": "BACK/CODE の2枚で黒リュック本体と X00187HP11 / [jchinjia] ブラック / 出張トラベル / リュックサック が一致。一方 FRONT は靴の注意書き台紙で別商品。現写真では1商品に断定不能のため provisional に留め、公開停止とする。",
         "evidence": [
           "X00187HP11",
           "jchinjia",
@@ -6657,9 +6906,15 @@ window.ZERO_COST_INTAKE = {
         "category_override": "ファッション > メンズ > バッグ > リュック・バックパック",
         "price_override": 2980,
         "check_items_override": "前面ポケット形状 / 持ち手 / サイズ確認",
-        "official_page_url": "https://kurashi.biglobe.ne.jp/items/665649/",
-        "official_image_url": "https://m.media-amazon.com/images/I/41ChhN2IvRL._SL500_.jpg",
-        "image_source": "kurashi.biglobe via Amazon image"
+        "official_page_url": null,
+        "official_image_url": null,
+        "image_source": null,
+        "exact_match_guard_state": "review_required",
+        "official_image_local": null,
+        "exact_match_guard_reasons": [
+          "別商品mix",
+          "要再束ね"
+        ]
       },
       "official": {
         "management_id": "BOX-001-ITEM-0033",
@@ -6667,13 +6922,18 @@ window.ZERO_COST_INTAKE = {
         "product_id": "PRD-BOX-001-033",
         "draft_id": "DRF-BOX-001-033",
         "research_id": "RES-BOX-001-033",
-        "official_page_url": "https://kurashi.biglobe.ne.jp/items/665649/",
-        "official_image_url": "https://m.media-amazon.com/images/I/41ChhN2IvRL._SL500_.jpg",
-        "image_source": "kurashi.biglobe via Amazon image",
-        "official_image_local": "state/intake/official_images/BOX-001-ITEM-0033_jchinjia_backpack.jpg",
+        "official_page_url": null,
+        "official_image_url": null,
+        "image_source": null,
+        "official_image_local": null,
         "verified_exact_match": false,
-        "official_image_state": "比較画像候補あり / exact-match保留",
-        "note": "コードラベルに [jchinjia] / ブラック / 出張トラベル / リュックサック が読める。黒い大容量リュック形状は近いが、外ポケット構成とサイズ詳細を袋越しに断定できないため exact-match保留。"
+        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能",
+        "note": "BACK/CODE は X00187HP11 の jchinjia 黒リュックで一致するが、FRONT は靴の注意書き台紙で別商品。現写真では1商品に断定不能のため比較画像は退避し、公開停止とする。",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "別商品mix",
+          "要再束ね"
+        ]
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0033",
@@ -6701,30 +6961,17 @@ window.ZERO_COST_INTAKE = {
         "csv_status": "",
         "updated_at": "2026-04-04 17:34:58 JST"
       },
-      "comparison_images": [
-        {
-          "label": "比較-1",
-          "url": "./assets/official_images/BOX-001-ITEM-0033_official_1.jpg",
-          "page_url": "https://kurashi.biglobe.ne.jp/items/665649/",
-          "state": "比較画像候補あり / exact-match保留",
-          "source": "kurashi.biglobe via Amazon image",
-          "verified_exact_match": false
-        }
-      ],
-      "reference_images": [
-        {
-          "label": "比較-1",
-          "url": "./assets/official_images/BOX-001-ITEM-0033_official_1.jpg",
-          "page_url": "https://kurashi.biglobe.ne.jp/items/665649/",
-          "state": "比較画像候補あり / exact-match保留",
-          "source": "kurashi.biglobe via Amazon image",
-          "verified_exact_match": false
-        }
-      ],
+      "comparison_images": [],
+      "reference_images": [],
       "display_name": "jchinjia リュック メンズ ビジネスリュック 男女兼用 カジュアルバッグ おしゃれ トラベルバッグ",
       "product_name": "jchinjia リュック メンズ ビジネスリュック 男女兼用 カジュアルバッグ おしゃれ トラベルバッグ",
       "verified_exact_match": false,
-      "official_image_state": "比較画像候補あり / exact-match保留",
+      "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "別商品mix",
+        "要再束ね"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -6732,8 +6979,8 @@ window.ZERO_COST_INTAKE = {
       "publish_state": "下書き",
       "public_listing_url": "",
       "listing_id": "",
-      "comparison_image_ref": "./assets/official_images/BOX-001-ITEM-0033_official_1.jpg",
-      "reference_image_ref": "./assets/official_images/BOX-001-ITEM-0033_official_1.jpg",
+      "comparison_image_ref": "",
+      "reference_image_ref": "",
       "minimum_price": "",
       "market_floor_price_label": "未調査",
       "listing_price": "2980",
@@ -6756,8 +7003,8 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 15:43:51 JST",
-        "メモ": "name=jchinjia リュック メンズ ビジネスリュック 男女兼用 カジュアルバッグ おしゃれ トラベルバッグ / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+        "更新時刻": "2026-04-21 16:45:13 JST",
+        "メモ": "name=jchinjia リュック メンズ ビジネスリュック 男女兼用 カジュアルバッグ おしゃれ トラベルバッグ / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
     {
@@ -6858,7 +7105,8 @@ window.ZERO_COST_INTAKE = {
           "女教師",
           "クリスマス",
           "ホワイトレース衣装"
-        ]
+        ],
+        "exact_match_guard_state": "clear"
       },
       "official": {},
       "commerce": {
@@ -6893,6 +7141,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "RemeeHi 女教師コスプレ衣装 ホワイトレース系",
       "verified_exact_match": false,
       "official_image_state": "実物のみ",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -7012,7 +7261,8 @@ window.ZERO_COST_INTAKE = {
         "check_items_override": "色味ピンク / 110cm表記 / 前面ボタン / 股スナップ / ロンパース形状確認",
         "official_page_url": "",
         "official_image_url": "",
-        "image_source": "actual-only"
+        "image_source": "actual-only",
+        "exact_match_guard_state": "clear"
       },
       "official": {
         "management_id": "BOX-001-ITEM-0035",
@@ -7025,7 +7275,8 @@ window.ZERO_COST_INTAKE = {
         "image_source": "actual-only",
         "verified_exact_match": false,
         "official_image_state": "actual-only固定 / 比較画像なし",
-        "note": "X00182NEB1 / Letshe / 110cm / ピンク / 前開きロンパース / 股スナップ は実物で確認できる。qwen 候補URL収集担当で確認したが、100%同一確認に使える安全な比較画像候補は取れなかった。出品画像は実物のみで扱う。"
+        "note": "X00182NEB1 / Letshe / 110cm / ピンク / 前開きロンパース / 股スナップ は実物で確認できる。qwen 候補URL収集担当で確認したが、100%同一確認に使える安全な比較画像候補は取れなかった。出品画像は実物のみで扱う。",
+        "exact_match_guard_state": "clear"
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0035",
@@ -7059,6 +7310,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "Letshe ベビー前開きロンパース ピンク 110cm",
       "verified_exact_match": false,
       "official_image_state": "actual-only固定 / 比較画像なし",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -7090,7 +7342,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 15:43:51 JST",
+        "更新時刻": "2026-04-21 16:45:13 JST",
         "メモ": "name=Letshe ベビー前開きロンパース ピンク 110cm / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
       }
     },
@@ -7191,7 +7443,8 @@ window.ZERO_COST_INTAKE = {
           "Cycling shorts",
           "Black",
           "Size S"
-        ]
+        ],
+        "exact_match_guard_state": "clear"
       },
       "official": {},
       "commerce": {
@@ -7226,6 +7479,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "SOUKE SPORTS Cycling shorts ブラック S",
       "verified_exact_match": false,
       "official_image_state": "実物のみ",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -7340,7 +7594,8 @@ window.ZERO_COST_INTAKE = {
         "check_items_override": "色味ブラウン / マフラー形状 / ふわふわ素材 / 収納袋入り確認",
         "official_page_url": "",
         "official_image_url": "",
-        "image_source": "actual-only"
+        "image_source": "actual-only",
+        "exact_match_guard_state": "clear"
       },
       "official": {
         "management_id": "BOX-001-ITEM-0037",
@@ -7353,7 +7608,8 @@ window.ZERO_COST_INTAKE = {
         "image_source": "actual-only",
         "verified_exact_match": false,
         "official_image_state": "actual-only固定 / 比較画像なし",
-        "note": "X0016MZBL9 / 可愛い小顔効果ふわふ / ブラウン系ふわふわマフラー は実物で確認できるが、2026-04-11 の Qwen 候補URL収集では型番を明示する 100%同一確認材料なし。比較画像は使わない。"
+        "note": "X0016MZBL9 / 可愛い小顔効果ふわふ / ブラウン系ふわふわマフラー は実物で確認できるが、2026-04-11 の Qwen 候補URL収集では型番を明示する 100%同一確認材料なし。比較画像は使わない。",
+        "exact_match_guard_state": "clear"
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0037",
@@ -7387,6 +7643,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "ふわふわマフラー ブラウン",
       "verified_exact_match": false,
       "official_image_state": "actual-only固定 / 比較画像なし",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -7505,7 +7762,8 @@ window.ZERO_COST_INTAKE = {
         "check_items_override": "色味オフホワイト / サイズL表記 / 裏起毛 / ロゴ位置 / 首元形状確認",
         "official_page_url": "",
         "official_image_url": "",
-        "image_source": "比較画像待ち"
+        "image_source": "比較画像待ち",
+        "exact_match_guard_state": "clear"
       },
       "official": {
         "management_id": "BOX-001-ITEM-0038",
@@ -7518,7 +7776,8 @@ window.ZERO_COST_INTAKE = {
         "image_source": "比較画像待ち",
         "verified_exact_match": false,
         "official_image_state": "比較画像待ち / exact-match保留",
-        "note": "X001AVKCQ5 / 裏起毛 / オフホワイト / L / トップス は実物で確認できるが、比較画像は未確保。"
+        "note": "X001AVKCQ5 / 裏起毛 / オフホワイト / L / トップス は実物で確認できるが、比較画像は未確保。",
+        "exact_match_guard_state": "clear"
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0038",
@@ -7552,6 +7811,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "裏起毛トップス オフホワイト L",
       "verified_exact_match": false,
       "official_image_state": "比較画像待ち / exact-match保留",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -7583,7 +7843,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 15:43:51 JST",
+        "更新時刻": "2026-04-21 16:45:13 JST",
         "メモ": "name=裏起毛トップス オフホワイト L / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -7672,14 +7932,18 @@ window.ZERO_COST_INTAKE = {
         "product_name": "fivihoc レディースペンダント（ゴールド/582）",
         "barcode_primary": "X0010634F1",
         "product_code_type": "amazon_internal",
-        "official_image_state": "実物のみ",
-        "note": "FRONT/CODEの2枚でハート型ペンダントとラベル X0010634F1 / fivihoc レディースペンダント（ゴールド/582）が一致。BACKのベージュ衣類は別商品で混線しているため、ペンダント側を本命として provisional 登録する。0040と同系統の重複候補。",
+        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "note": "BACK/CODE の2枚でハート型ペンダント箱とラベル X0010634F1 / fivihoc レディースペンダント（ゴールド/582）が一致。一方 FRONT は X001AVKCQ5 のベージュ衣類で別商品。現写真では1商品に断定不能のため provisional に留める。",
         "evidence": [
           "X0010634F1",
           "fivihoc",
           "レディースペンダント",
           "ゴールド",
           "582"
+        ],
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "別商品mix"
         ]
       },
       "official": {},
@@ -7714,7 +7978,11 @@ window.ZERO_COST_INTAKE = {
       "display_name": "fivihoc レディースペンダント（ゴールド/582）",
       "product_name": "fivihoc レディースペンダント（ゴールド/582）",
       "verified_exact_match": false,
-      "official_image_state": "実物のみ",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "別商品mix"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -7815,18 +8083,22 @@ window.ZERO_COST_INTAKE = {
       "manual_note": "FRONT は レディースペンダント（ゴールド/582）の箱、BACK/CODE は Bluetooth マウス PC/Mac 用でした。",
       "resolved": {
         "management_id": "BOX-001-ITEM-0040",
-        "resolution_status": "confirmed",
-        "product_name": "fiwihoc レディースペンダント ネックレス ゴールド/582",
-        "barcode_primary": "X0010634F1",
+        "resolution_status": "provisional",
+        "product_name": "Bluetooth 無線マウス PC/Mac用",
+        "barcode_primary": "X0017GVXBV",
         "product_code_type": "amazon_internal",
-        "verified_exact_match": true,
-        "official_image_state": "実物のみ",
-        "note": "FRONTにレディースペンダント箱、barcode X0010634F1でfiwihoc製品を特定。2026-04-15商品特定分析によりconfirmedに昇格。",
+        "verified_exact_match": false,
+        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "note": "BACK/CODE の2枚で X0017GVXBV / Bluetooth マウス / 無線マウス / PC/Mac用 が一致。一方 FRONT は X0010634F1 のレディースペンダント箱で別商品。現写真では1商品に断定不能のため、mouse 側を仮採用して provisional に留める。",
         "evidence": [
-          "X0010634F1",
-          "fiwihoc",
-          "レディースペンダント",
-          "ゴールド/582"
+          "X0017GVXBV",
+          "Bluetooth マウス",
+          "無線マウス",
+          "PC/Mac用"
+        ],
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "別商品mix"
         ]
       },
       "official": {},
@@ -7836,12 +8108,12 @@ window.ZERO_COST_INTAKE = {
         "product_id": "PRD-BOX-001-040",
         "draft_id": "DRF-BOX-001-040",
         "research_id": "RES-BOX-001-040",
-        "product_name": "fiwihoc レディースペンダント ネックレス ゴールド/582",
+        "product_name": "Bluetooth 無線マウス PC/Mac用",
         "brand": "",
         "category": "",
-        "barcode_primary": "X0010634F1",
+        "barcode_primary": "X0017GVXBV",
         "product_code_type": "amazon_internal",
-        "listing_title": "fiwihoc レディースペンダント ネックレス ゴールド/582",
+        "listing_title": "Bluetooth 無線マウス PC/Mac用",
         "listing_price": "",
         "market_floor_price": "",
         "market_floor_state": "未調査",
@@ -7858,10 +8130,14 @@ window.ZERO_COST_INTAKE = {
       },
       "comparison_images": [],
       "reference_images": [],
-      "display_name": "fiwihoc レディースペンダント ネックレス ゴールド/582",
-      "product_name": "fiwihoc レディースペンダント ネックレス ゴールド/582",
-      "verified_exact_match": true,
-      "official_image_state": "実物のみ",
+      "display_name": "Bluetooth 無線マウス PC/Mac用",
+      "product_name": "Bluetooth 無線マウス PC/Mac用",
+      "verified_exact_match": false,
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "別商品mix"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -7963,17 +8239,21 @@ window.ZERO_COST_INTAKE = {
       "resolved": {
         "management_id": "BOX-001-ITEM-0041",
         "resolution_status": "provisional",
-        "product_name": "ライトグレー メンズ前開きルームウェア XL",
-        "barcode_primary": "X00147IEGF",
+        "product_name": "Ecicvvi カジュアルストリート系秋冬服 グレー 4XL",
+        "barcode_primary": "X0013CHY1R",
         "product_code_type": "amazon_internal",
-        "official_image_state": "実物のみ",
-        "note": "BACK/CODEの2枚でグレー前開きルームウェアとラベル SYM002-Lightgray-XL / X00147IEGF が一致。FRONTの Lileutalily 箱物は別商品で混線しているため、ルームウェア側を本命として provisional 登録する。ブランド名は判別不能のため一般名で保持する。",
+        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "note": "BACK/CODE の2枚で Ecicvvi グレー衣類本体と X0013CHY1R / カジュアルストリート系秋冬服 / 4XL が一致。一方 FRONT は X0017GVXBV の Bluetooth 無線マウス箱で別商品。現写真では1商品に断定不能のため、衣類側を provisional に留める。",
         "evidence": [
-          "X00147IEGF",
-          "SYM002-Lightgray-XL",
-          "Lightgray",
-          "XL",
-          "前開きルームウェア"
+          "X0013CHY1R",
+          "Ecicvvi",
+          "カジュアルストリート系秋冬服",
+          "4XL",
+          "グレー"
+        ],
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "別商品mix"
         ]
       },
       "official": {},
@@ -7983,12 +8263,12 @@ window.ZERO_COST_INTAKE = {
         "product_id": "PRD-BOX-001-041",
         "draft_id": "DRF-BOX-001-041",
         "research_id": "RES-BOX-001-041",
-        "product_name": "ライトグレー メンズ前開きルームウェア XL",
+        "product_name": "Ecicvvi カジュアルストリート系秋冬服 グレー 4XL",
         "brand": "",
         "category": "",
-        "barcode_primary": "X00147IEGF",
+        "barcode_primary": "X0013CHY1R",
         "product_code_type": "amazon_internal",
-        "listing_title": "ライトグレー メンズ前開きルームウェア XL",
+        "listing_title": "Ecicvvi カジュアルストリート系秋冬服 グレー 4XL",
         "listing_price": "",
         "market_floor_price": "",
         "market_floor_state": "未調査",
@@ -8005,10 +8285,14 @@ window.ZERO_COST_INTAKE = {
       },
       "comparison_images": [],
       "reference_images": [],
-      "display_name": "ライトグレー メンズ前開きルームウェア XL",
-      "product_name": "ライトグレー メンズ前開きルームウェア XL",
+      "display_name": "Ecicvvi カジュアルストリート系秋冬服 グレー 4XL",
+      "product_name": "Ecicvvi カジュアルストリート系秋冬服 グレー 4XL",
       "verified_exact_match": false,
-      "official_image_state": "実物のみ",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "別商品mix"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -8112,13 +8396,14 @@ window.ZERO_COST_INTAKE = {
         "product_name": "NEEDLY Sleeping Lip Mask 10ml",
         "barcode_primary": "",
         "product_code_type": "package_text",
-        "official_image_state": "実物のみ",
-        "note": "CODEにNEEDLY Sleeping lip mask 10ml箱。FRONT/BACKは青系ぬいぐるみ（別商品混線）。CODE側が本命。2026-04-15商品特定分析によりprovisional登録。",
+        "official_image_state": "actual-only固定 / 比較画像なし",
+        "note": "FRONT は箱側面ラベル、BACK は表面、CODE は成分面で、3枚とも NEEDLY Sleeping lip mask 10ml の同一箱を示している。混線ではない。比較画像は未確保のため、actual-only の provisional で扱う。",
         "evidence": [
           "NEEDLY",
           "Sleeping Lip Mask",
           "10ml"
-        ]
+        ],
+        "exact_match_guard_state": "clear"
       },
       "official": {},
       "commerce": {
@@ -8152,7 +8437,8 @@ window.ZERO_COST_INTAKE = {
       "display_name": "NEEDLY Sleeping Lip Mask 10ml",
       "product_name": "NEEDLY Sleeping Lip Mask 10ml",
       "verified_exact_match": false,
-      "official_image_state": "実物のみ",
+      "official_image_state": "actual-only固定 / 比較画像なし",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -8252,14 +8538,20 @@ window.ZERO_COST_INTAKE = {
       "resolved": {
         "management_id": "BOX-001-ITEM-0043",
         "resolution_status": "provisional",
-        "product_name": "NEEDLY SLEEPING LIP MASK",
-        "barcode_primary": "",
-        "product_code_type": "package_text",
-        "official_image_state": "実物のみ",
-        "note": "FRONTにNEEDLY SLEEPING LIP MASK。BACK/CODEはDOMATメンズ財布箱（別商品混線）。FRONT側が本命。2026-04-15商品特定分析によりprovisional登録。",
+        "product_name": "DOMAT 財布 レッドブラウン",
+        "barcode_primary": "X00174LMFZ",
+        "product_code_type": "amazon_internal",
+        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "note": "BACK/CODE の2枚で DOMAT 箱と X00174LMFZ / 財布 / 赤褐色 が一致。一方 FRONT は NEEDLY SLEEPING LIP MASK 箱の別面で別商品。現写真では1商品に断定不能のため、DOMAT 側を provisional に留める。",
         "evidence": [
-          "NEEDLY",
-          "SLEEPING LIP MASK"
+          "X00174LMFZ",
+          "DOMAT",
+          "財布",
+          "赤褐色"
+        ],
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "別商品mix"
         ]
       },
       "official": {},
@@ -8269,12 +8561,12 @@ window.ZERO_COST_INTAKE = {
         "product_id": "PRD-BOX-001-043",
         "draft_id": "DRF-BOX-001-043",
         "research_id": "RES-BOX-001-043",
-        "product_name": "NEEDLY SLEEPING LIP MASK",
+        "product_name": "DOMAT 財布 レッドブラウン",
         "brand": "",
         "category": "",
-        "barcode_primary": "",
-        "product_code_type": "package_text",
-        "listing_title": "NEEDLY SLEEPING LIP MASK",
+        "barcode_primary": "X00174LMFZ",
+        "product_code_type": "amazon_internal",
+        "listing_title": "DOMAT 財布 レッドブラウン",
         "listing_price": "",
         "market_floor_price": "",
         "market_floor_state": "未調査",
@@ -8291,10 +8583,14 @@ window.ZERO_COST_INTAKE = {
       },
       "comparison_images": [],
       "reference_images": [],
-      "display_name": "NEEDLY SLEEPING LIP MASK",
-      "product_name": "NEEDLY SLEEPING LIP MASK",
+      "display_name": "DOMAT 財布 レッドブラウン",
+      "product_name": "DOMAT 財布 レッドブラウン",
       "verified_exact_match": false,
-      "official_image_state": "実物のみ",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "別商品mix"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -8398,14 +8694,17 @@ window.ZERO_COST_INTAKE = {
         "product_name": "Qzkouma バケットハット ブラック",
         "barcode_primary": "X0018K5KPV",
         "product_code_type": "amazon_internal",
-        "official_image_state": "実物のみ",
-        "note": "BACK/CODEの2枚で黒い帽子本体とラベル X0018K5KPV / [Qzkouma] キャップ...ハット DBQ-62（ブラック）が一致。FRONTの DOMAT ケース入り小物は別商品で混線しているため、帽子側を本命として provisional 登録する。",
+        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "note": "BACK/CODE の2枚で黒い帽子本体と X0018K5KPV / [Qzkouma] キャップ・ハット DBQ-62（ブラック）が一致。一方 FRONT は DOMAT 箱の中身写真で別商品。現写真では1商品に断定不能のため、帽子側を provisional に留める。",
         "evidence": [
           "X0018K5KPV",
           "Qzkouma",
           "ハット",
-          "DBQ-62",
           "ブラック"
+        ],
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "別商品mix"
         ]
       },
       "official": {},
@@ -8440,7 +8739,11 @@ window.ZERO_COST_INTAKE = {
       "display_name": "Qzkouma バケットハット ブラック",
       "product_name": "Qzkouma バケットハット ブラック",
       "verified_exact_match": false,
-      "official_image_state": "実物のみ",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "別商品mix"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -8535,11 +8838,11 @@ window.ZERO_COST_INTAKE = {
       "resolved": {
         "management_id": "BOX-001-ITEM-0045",
         "resolution_status": "provisional",
-        "product_name": "ロゴ刺繍ベースボールキャップ ネイビー系",
+        "product_name": "ロゴ刺繍ベースボールキャップ ブラック系",
         "barcode_primary": "X0015NW4BJ",
         "product_code_type": "amazon_internal",
-        "official_image_state": "比較画像待ち / exact-match保留",
-        "note": "実物写真では、ネイビー系のベースボールキャップ本体、白いロゴ刺繍、コードラベル X0015NW4BJ / Y5AQTX2313-BlueR-L2 までは確認できる。ただしブランド名や商品名は断定せず、コードラベルの説明文も本体との一致が弱い。比較画像は未確保のため、generic な actual-only provisional として扱い、出品画像は実物のみで扱う。 / X0015NW4BJ / Y5AQTX2313-BlueR-L2 / ネイビー系キャップ / 白ロゴ刺繍 は実物で確認できる。 / X0015NW4BJ / Y5AQTX2313-BlueR-L2 / ネイビー系キャップ / 白ロゴ刺繍 は実物で確認できるが、比較画像は未確保。generic な actual-only provisional として扱う。",
+        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能",
+        "note": "FRONT では黒系ベースボールキャップ本体と白い Youth 風ロゴ刺繍を確認できる。一方 BACK のラベル X0015NW4BJ / Y5AQTX2313-BlueR-L2 は KumiModa の Tシャツ文言で、CODE も無地袋面しかなく、現写真ではそのラベルが帽子を指すと断定できない。現写真では1商品に断定不能のため generic cap として provisional に留め、公開停止とする。",
         "evidence": [
           "X0015NW4BJ",
           "Y5AQTX2313-BlueR-L2",
@@ -8552,7 +8855,12 @@ window.ZERO_COST_INTAKE = {
         "check_items_override": "色味ネイビー系 / 白ロゴ刺繍 / つば形状 / サイズ表記不明",
         "official_page_url": "",
         "official_image_url": "",
-        "image_source": "比較画像待ち"
+        "image_source": "比較画像待ち",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "別商品mix",
+          "要再束ね"
+        ]
       },
       "official": {
         "management_id": "BOX-001-ITEM-0045",
@@ -8560,12 +8868,18 @@ window.ZERO_COST_INTAKE = {
         "product_id": "PRD-BOX-001-045",
         "draft_id": "DRF-BOX-001-045",
         "research_id": "RES-BOX-001-045",
-        "official_page_url": "",
-        "official_image_url": "",
-        "image_source": "比較画像待ち",
+        "official_page_url": null,
+        "official_image_url": null,
+        "image_source": "actual-only",
         "verified_exact_match": false,
-        "official_image_state": "比較画像待ち / exact-match保留",
-        "note": "X0015NW4BJ / Y5AQTX2313-BlueR-L2 / ネイビー系キャップ / 白ロゴ刺繍 は実物で確認できるが、比較画像は未確保。generic な actual-only provisional として扱う。"
+        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能",
+        "note": "FRONT では黒系キャップ本体を確認できるが、BACK ラベル X0015NW4BJ は KumiModa Tシャツ文言で帽子との一致が弱い。現写真では1商品に断定不能のため比較画像は使わず、公開停止とする。",
+        "exact_match_guard_state": "review_required",
+        "official_image_local": null,
+        "exact_match_guard_reasons": [
+          "別商品mix",
+          "要再束ね"
+        ]
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0045",
@@ -8573,12 +8887,12 @@ window.ZERO_COST_INTAKE = {
         "product_id": "PRD-BOX-001-045",
         "draft_id": "DRF-BOX-001-045",
         "research_id": "RES-BOX-001-045",
-        "product_name": "ロゴ刺繍ベースボールキャップ ネイビー系",
+        "product_name": "ロゴ刺繍ベースボールキャップ ブラック系",
         "brand": "不明",
         "category": "ファッション > メンズ > 帽子 > キャップ",
         "barcode_primary": "X0015NW4BJ",
         "product_code_type": "amazon_internal",
-        "listing_title": "ロゴ刺繍ベースボールキャップ ネイビー系",
+        "listing_title": "ロゴ刺繍ベースボールキャップ ブラック系",
         "listing_price": "1380",
         "market_floor_price": "",
         "market_floor_state": "未調査",
@@ -8595,10 +8909,15 @@ window.ZERO_COST_INTAKE = {
       },
       "comparison_images": [],
       "reference_images": [],
-      "display_name": "ロゴ刺繍ベースボールキャップ ネイビー系",
-      "product_name": "ロゴ刺繍ベースボールキャップ ネイビー系",
+      "display_name": "ロゴ刺繍ベースボールキャップ ブラック系",
+      "product_name": "ロゴ刺繍ベースボールキャップ ブラック系",
       "verified_exact_match": false,
-      "official_image_state": "比較画像待ち / exact-match保留",
+      "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "別商品mix",
+        "要再束ね"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -8630,8 +8949,8 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 15:43:51 JST",
-        "メモ": "name=ロゴ刺繍ベースボールキャップ ネイビー系 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+        "更新時刻": "2026-04-21 16:45:13 JST",
+        "メモ": "name=ロゴ刺繍ベースボールキャップ ブラック系 / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
     {
@@ -8721,8 +9040,8 @@ window.ZERO_COST_INTAKE = {
         "product_name": "ホワイト レディーストップス M",
         "barcode_primary": "X001B8TZTR",
         "product_code_type": "amazon_internal",
-        "official_image_state": "比較画像待ち / exact-match保留",
-        "note": "実物写真では、ホワイトのレディース衣類本体、コードラベル X001B8TZTR、および M / ホワイト の表記までは確認できる。以前の BlueR-L2 などの OCR 混入は採用せず、色違い事故を避けるため actual-only 前提で provisional に上げる。比較画像はまだ 100%同一確認できるものを確保できていないため、出品画像は実物のみで扱う。",
+        "official_image_state": "比較画像待ち / exact-match保留 / 現写真では1商品に断定不能",
+        "note": "BACK/CODE の2枚でホワイト衣類本体と X001B8TZTR / M / ホワイト が一致。一方 FRONT は X0015NW4BJ / Y5AQTX2313-BlueR-L2 の別ラベルだけが残った袋面で別商品混線。現写真では1商品に断定不能のため、ホワイト衣類側を provisional に留める。",
         "evidence": [
           "X001B8TZTR",
           "M",
@@ -8736,7 +9055,11 @@ window.ZERO_COST_INTAKE = {
         "check_items_override": "色味ホワイト / サイズM表記 / トップス形状 / 素材感確認",
         "official_page_url": "",
         "official_image_url": "",
-        "image_source": "比較画像待ち"
+        "image_source": "比較画像待ち",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "別商品mix"
+        ]
       },
       "official": {
         "management_id": "BOX-001-ITEM-0046",
@@ -8749,7 +9072,8 @@ window.ZERO_COST_INTAKE = {
         "image_source": "比較画像待ち",
         "verified_exact_match": false,
         "official_image_state": "比較画像待ち / exact-match保留",
-        "note": "X001B8TZTR / M / ホワイト / レディーストップス は実物で確認できるが、比較画像は未確保。"
+        "note": "X001B8TZTR / M / ホワイト / レディーストップス は実物で確認できるが、比較画像は未確保。",
+        "exact_match_guard_state": "clear"
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0046",
@@ -8782,7 +9106,11 @@ window.ZERO_COST_INTAKE = {
       "display_name": "ホワイト レディーストップス M",
       "product_name": "ホワイト レディーストップス M",
       "verified_exact_match": false,
-      "official_image_state": "比較画像待ち / exact-match保留",
+      "official_image_state": "比較画像待ち / exact-match保留 / 現写真では1商品に断定不能",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "別商品mix"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -8814,8 +9142,8 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 15:43:51 JST",
-        "メモ": "name=ホワイト レディーストップス M / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+        "更新時刻": "2026-04-21 16:45:13 JST",
+        "メモ": "name=ホワイト レディーストップス M / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
     {
@@ -8920,7 +9248,8 @@ window.ZERO_COST_INTAKE = {
         "check_items_override": "反射帯位置 / サイズ表記 / ポケット有無 / 留め具仕様確認",
         "official_page_url": "",
         "official_image_url": "",
-        "image_source": "比較画像待ち"
+        "image_source": "比較画像待ち",
+        "exact_match_guard_state": "clear"
       },
       "official": {
         "management_id": "BOX-001-ITEM-0047",
@@ -8933,7 +9262,8 @@ window.ZERO_COST_INTAKE = {
         "image_source": "比較画像待ち",
         "verified_exact_match": false,
         "official_image_state": "比較画像待ち / exact-match保留",
-        "note": "蛍光イエローの高視認性安全ベストであることまでは実物とコードラベルで一致する。比較画像はまだ 100%同一確認できるものを確保できていないため、出品採用不可。"
+        "note": "蛍光イエローの高視認性安全ベストであることまでは実物とコードラベルで一致する。比較画像はまだ 100%同一確認できるものを確保できていないため、出品採用不可。",
+        "exact_match_guard_state": "clear"
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0047",
@@ -8967,6 +9297,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "高視認性安全ベスト 蛍光イエロー",
       "verified_exact_match": false,
       "official_image_state": "比較画像待ち / exact-match保留",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -8998,7 +9329,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 15:43:51 JST",
+        "更新時刻": "2026-04-21 16:45:13 JST",
         "メモ": "name=高視認性安全ベスト 蛍光イエロー / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -9086,15 +9417,17 @@ window.ZERO_COST_INTAKE = {
         "management_id": "BOX-001-ITEM-0048",
         "resolution_status": "provisional",
         "product_name": "高視認性安全ベスト 蛍光イエロー",
-        "barcode_primary": "",
-        "product_code_type": "actual_only",
-        "official_image_state": "実物のみ",
-        "note": "FRONTで蛍光イエローの高視認性安全ベスト本体を確認。BACK/CODEは花柄シュシュ束で別商品が混線し、ラベルも tote bag と誤記されているため採用しない。安全ベスト側を本命として provisional 登録する。",
+        "barcode_primary": "X0019A7Y7H",
+        "product_code_type": "amazon_internal",
+        "official_image_state": "actual-only固定 / 比較画像なし",
+        "note": "FRONT/BACK/CODE の3枚で蛍光イエローの高視認性安全ベスト本体と X0019A7Y7H / CNSS161 / ネオンイエロー のラベルが一致する。0047 と同系統の重複候補。比較画像は未確保のため、actual-only の provisional で扱う。",
         "evidence": [
-          "蛍光イエロー",
-          "高視認性",
-          "安全ベスト"
-        ]
+          "X0019A7Y7H",
+          "高視認性安全ベスト",
+          "ネオンイエロー",
+          "CNSS161"
+        ],
+        "exact_match_guard_state": "clear"
       },
       "official": {},
       "commerce": {
@@ -9106,8 +9439,8 @@ window.ZERO_COST_INTAKE = {
         "product_name": "高視認性安全ベスト 蛍光イエロー",
         "brand": "",
         "category": "",
-        "barcode_primary": "",
-        "product_code_type": "actual_only",
+        "barcode_primary": "X0019A7Y7H",
+        "product_code_type": "amazon_internal",
         "listing_title": "高視認性安全ベスト 蛍光イエロー",
         "listing_price": "",
         "market_floor_price": "",
@@ -9128,7 +9461,8 @@ window.ZERO_COST_INTAKE = {
       "display_name": "高視認性安全ベスト 蛍光イエロー",
       "product_name": "高視認性安全ベスト 蛍光イエロー",
       "verified_exact_match": false,
-      "official_image_state": "実物のみ",
+      "official_image_state": "actual-only固定 / 比較画像なし",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -9238,7 +9572,8 @@ window.ZERO_COST_INTAKE = {
           "花柄",
           "シュシュ",
           "セット"
-        ]
+        ],
+        "exact_match_guard_state": "clear"
       },
       "official": {},
       "commerce": {
@@ -9273,6 +9608,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "花柄シュシュセット",
       "verified_exact_match": false,
       "official_image_state": "実物のみ",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -9391,7 +9727,8 @@ window.ZERO_COST_INTAKE = {
         "check_items_override": "色味ダークグレー系 / 股下24インチ / サイズ表記 / ポケット有無 / ロゴ位置確認",
         "official_page_url": "https://item.rakuten.co.jp/plays23/b0fjgd52zd/",
         "official_image_url": "https://shop.r10s.jp/plays23/cabinet/rakub100_0544/b0fjgd52zd00.jpg",
-        "image_source": "楽天市場"
+        "image_source": "楽天市場",
+        "exact_match_guard_state": "clear"
       },
       "official": {
         "management_id": "BOX-001-ITEM-0050",
@@ -9404,7 +9741,8 @@ window.ZERO_COST_INTAKE = {
         "image_source": "楽天市場",
         "verified_exact_match": false,
         "official_image_state": "比較画像候補あり / exact-match保留",
-        "note": "X0019BVI05 / CRZ YOGA / 股下24インチ / ダークグレー系レギンス は実物で確認できる。比較画像候補はあるが、色名とサイズまで 100% 同一とはまだ断定しないため、出品採用不可。"
+        "note": "X0019BVI05 / CRZ YOGA / 股下24インチ / ダークグレー系レギンス は実物で確認できる。比較画像候補はあるが、色名とサイズまで 100% 同一とはまだ断定しないため、出品採用不可。",
+        "exact_match_guard_state": "clear"
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0050",
@@ -9456,6 +9794,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "CRZ YOGA レギンス 股下24インチ ダークグレー系",
       "verified_exact_match": false,
       "official_image_state": "比較画像候補あり / exact-match保留",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -9487,7 +9826,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 15:43:51 JST",
+        "更新時刻": "2026-04-21 16:45:13 JST",
         "メモ": "name=CRZ YOGA レギンス 股下24インチ ダークグレー系 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -9579,10 +9918,14 @@ window.ZERO_COST_INTAKE = {
         "product_name": "Heated Socks",
         "barcode_primary": "",
         "product_code_type": "package_text",
-        "official_image_state": "実物のみ",
+        "official_image_state": "実物のみ / 現写真では1商品に断定不能",
         "note": "CODEにHeated Socks箱。FRONT/BACKは黒い衣類パッケージ（別商品混線）。CODE側が本命。2026-04-15商品特定分析によりprovisional登録。",
         "evidence": [
           "Heated Socks"
+        ],
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "別商品mix"
         ]
       },
       "official": {},
@@ -9617,7 +9960,11 @@ window.ZERO_COST_INTAKE = {
       "display_name": "Heated Socks",
       "product_name": "Heated Socks",
       "verified_exact_match": false,
-      "official_image_state": "実物のみ",
+      "official_image_state": "実物のみ / 現写真では1商品に断定不能",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "別商品mix"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -9722,7 +10069,8 @@ window.ZERO_COST_INTAKE = {
         "evidence": [
           "X00197BVHJ",
           "白箱"
-        ]
+        ],
+        "exact_match_guard_state": "clear"
       },
       "official": {},
       "commerce": {
@@ -9757,6 +10105,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "白箱 X00197BVHJ",
       "verified_exact_match": false,
       "official_image_state": "実物のみ",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -10001,7 +10350,8 @@ window.ZERO_COST_INTAKE = {
           "Hello Kitty",
           "50TH ANNIVERSARY",
           "ぬいぐるみ"
-        ]
+        ],
+        "exact_match_guard_state": "clear"
       },
       "official": {},
       "commerce": {
@@ -10036,6 +10386,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "Hello Kitty 50TH ANNIVERSARY ぬいぐるみ",
       "verified_exact_match": false,
       "official_image_state": "実物のみ",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -10288,7 +10639,8 @@ window.ZERO_COST_INTAKE = {
         "check_items_override": "色味ブラック / 3XL表記 / 衣類種別 / シルエット確認",
         "official_page_url": "",
         "official_image_url": "",
-        "image_source": "比較画像待ち"
+        "image_source": "比較画像待ち",
+        "exact_match_guard_state": "clear"
       },
       "official": {},
       "commerce": {
@@ -10323,6 +10675,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "Poperdision ブラック 3XL レディース衣類",
       "verified_exact_match": false,
       "official_image_state": "比較画像待ち / exact-match保留",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -10354,7 +10707,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 15:43:51 JST",
+        "更新時刻": "2026-04-21 16:45:13 JST",
         "メモ": "name=Poperdision ブラック 3XL レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -10460,7 +10813,8 @@ window.ZERO_COST_INTAKE = {
         "check_items_override": "箱デザイン / 容量表記 / 成分表記 / 日本製表記確認",
         "official_page_url": "https://atidimu.com/products/%E3%82%A2%E3%83%86%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A0-%E7%BE%8E%E5%AE%B9%E6%B6%B2-atidimu-serum",
         "official_image_url": "http://atidimu.com/cdn/shop/files/3-1.jpg?v=1759996277",
-        "image_source": "ATIDIMU公式"
+        "image_source": "ATIDIMU公式",
+        "exact_match_guard_state": "clear"
       },
       "official": {
         "management_id": "BOX-001-ITEM-0055",
@@ -10473,7 +10827,8 @@ window.ZERO_COST_INTAKE = {
         "image_source": "ATIDIMU公式",
         "verified_exact_match": false,
         "official_image_state": "比較画像候補あり / exact-match保留",
-        "note": "X001BGAPFR / ATIDIMU / 美容液 / 7種植物エキス配合 は実物で確認できる。公式候補ページはあるが、容量や外箱細部まで 100% 同一とはまだ断定しないため、出品採用不可。"
+        "note": "X001BGAPFR / ATIDIMU / 美容液 / 7種植物エキス配合 は実物で確認できる。公式候補ページはあるが、容量や外箱細部まで 100% 同一とはまだ断定しないため、出品採用不可。",
+        "exact_match_guard_state": "clear"
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0055",
@@ -10525,6 +10880,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "ATIDIMU 美容液",
       "verified_exact_match": false,
       "official_image_state": "比較画像候補あり / exact-match保留",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -10556,7 +10912,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 15:43:51 JST",
+        "更新時刻": "2026-04-21 16:45:13 JST",
         "メモ": "name=ATIDIMU 美容液 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -10654,7 +11010,8 @@ window.ZERO_COST_INTAKE = {
           "JODSONE",
           "UV LED",
           "ネイルランプ"
-        ]
+        ],
+        "exact_match_guard_state": "clear"
       },
       "official": {},
       "commerce": {
@@ -10689,6 +11046,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "JODSONE UV LEDネイルランプ",
       "verified_exact_match": false,
       "official_image_state": "実物のみ",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -10802,7 +11160,9 @@ window.ZERO_COST_INTAKE = {
         "check_items_override": "点灯確認 / タイマーボタン / 付属品有無 / 開封痕確認",
         "official_page_url": "https://www.jodsonebeauty.com/product/jodsone-120w-u-v-led-nail-lamp-for-two-hand-led-light-for-gel-with-54-pcs-light-bead-quick-curing-gel-polish-nail-dryer-suitable-salon-and-home-use-blackblack/",
         "image_source": "web candidate",
-        "official_image_url": "https://cdn.jodsonebeauty.com/cdn/10954/2025/1108/90301857d3d2d1b0c04a2b85dcefd247-1.webp"
+        "official_image_url": "https://cdn.jodsonebeauty.com/cdn/10954/2025/1108/90301857d3d2d1b0c04a2b85dcefd247-1.webp",
+        "exact_match_guard_state": "clear",
+        "official_image_local": "state/intake/official_images/BOX-001-ITEM-0057_jodsone_nail_lamp.webp"
       },
       "official": {
         "management_id": "BOX-001-ITEM-0057",
@@ -10811,7 +11171,8 @@ window.ZERO_COST_INTAKE = {
         "official_image_local": "state/intake/official_images/BOX-001-ITEM-0057_jodsone_nail_lamp.webp",
         "verified_exact_match": false,
         "official_image_state": "比較画像候補あり / exact-match保留",
-        "note": "JODSONE公式ページから比較画像を保持。外箱一致は強いが、本体現物未確認のため exact-match保留。"
+        "note": "JODSONE公式ページから比較画像を保持。外箱一致は強いが、本体現物未確認のため exact-match保留。",
+        "exact_match_guard_state": "clear"
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0057",
@@ -10911,6 +11272,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp",
       "verified_exact_match": false,
       "official_image_state": "比較画像候補あり / exact-match保留",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -10942,7 +11304,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 15:43:51 JST",
+        "更新時刻": "2026-04-21 16:45:13 JST",
         "メモ": "name=JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSNX6qATG7NwnssYkshh"
       }
     },
@@ -11027,7 +11389,8 @@ window.ZERO_COST_INTAKE = {
           "AUTOMATIC WATER DISPENSER",
           "Upgraded Stainless Steel Basin",
           "304 Stainless Steel"
-        ]
+        ],
+        "exact_match_guard_state": "clear"
       },
       "official": {},
       "commerce": {
@@ -11062,6 +11425,7 @@ window.ZERO_COST_INTAKE = {
       "product_name": "AUTOMATIC WATER DISPENSER Upgraded Stainless Steel Basin",
       "verified_exact_match": false,
       "official_image_state": "実物のみ",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -11113,8 +11477,8 @@ window.ZERO_COST_INTAKE = {
         "split_required": 21
       },
       "resolution_counts": {
-        "confirmed": 4,
-        "provisional": 54,
+        "confirmed": 2,
+        "provisional": 56,
         "official_image_pending": 0,
         "accepted_exception": 2
       },
@@ -11229,7 +11593,8 @@ window.ZERO_COST_INTAKE = {
             "official_page_url": "https://www.gwenchanda.com/shop/health-wellness/acne/forehead-focused-patch-18p/",
             "official_image_url": "https://www.gwenchanda.com/wp-content/uploads/2025/05/GWENCHANDA-GA230719741-1.jpg",
             "official_image_local": "state/intake/official_images/BOX-001-ITEM-0001_gwenchanda_forehead_patch.jpg",
-            "image_source": "Gwenchanda product page"
+            "image_source": "Gwenchanda product page",
+            "exact_match_guard_state": "clear"
           },
           "official": {
             "management_id": "BOX-001-ITEM-0001",
@@ -11243,7 +11608,8 @@ window.ZERO_COST_INTAKE = {
             "image_source": "Gwenchanda product page",
             "verified_exact_match": true,
             "official_image_state": "100%同一確認済み / 候補1枚確保",
-            "note": "GTIN 8809409185224 と実物パッケージ表面・背面が Gwenchanda 商品ページ画像と一致。比較画像は 100%同一確認済み。2026-04-17 live で BASE 公開商品の先頭画像へ採用。"
+            "note": "GTIN 8809409185224 と実物パッケージ表面・背面が Gwenchanda 商品ページ画像と一致。比較画像は 100%同一確認済み。2026-04-17 live で BASE 公開商品の先頭画像へ採用。",
+            "exact_match_guard_state": "clear"
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0001",
@@ -11343,6 +11709,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り",
           "verified_exact_match": true,
           "official_image_state": "100%同一確認済み / 候補1枚確保",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -11374,7 +11741,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "審査監視",
             "AI次アクション": "カテゴリ審査反映待ち",
             "ルーティング状態": "審査待ち",
-            "更新時刻": "2026-04-21 15:43:51 JST",
+            "更新時刻": "2026-04-21 16:45:13 JST",
             "メモ": "name=WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り / publish_ok=カテゴリ審査待ち / draft_status=カテゴリ審査待ち / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量"
           }
         },
@@ -11476,7 +11843,15 @@ window.ZERO_COST_INTAKE = {
             "check_items_override": "色味ネイビー / 保冷仕様 / ショルダーストラップ / サイズ感確認",
             "official_page_url": "",
             "official_image_url": "",
-            "image_source": "actual-only"
+            "image_source": "actual-only",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "色違い",
+              "型番違い",
+              "サイズ違い",
+              "セット違い"
+            ],
+            "qwen_hq_review_note": "2026-04-21 current truth: actual-only固定。比較画像は見つからなかったが、実物写真のみで進行する。"
           },
           "official": {
             "management_id": "BOX-001-ITEM-0002",
@@ -11513,7 +11888,14 @@ window.ZERO_COST_INTAKE = {
             "qwen_hq_review_status": "",
             "qwen_hq_resolution": "",
             "qwen_hq_review_at": "",
-            "qwen_hq_review_note": "2026-04-21 current truth: actual-only固定。比較画像は見つからなかったが、実物写真のみで進行する。"
+            "qwen_hq_review_note": "2026-04-21 current truth: actual-only固定。比較画像は見つからなかったが、実物写真のみで進行する。",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "色違い",
+              "型番違い",
+              "サイズ違い",
+              "セット違い"
+            ]
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0002",
@@ -11547,6 +11929,13 @@ window.ZERO_COST_INTAKE = {
           "product_name": "保冷クーラーバッグ ネイビー ショルダー付",
           "verified_exact_match": false,
           "official_image_state": "actual-only固定 / 比較画像なし",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "色違い",
+            "型番違い",
+            "サイズ違い",
+            "セット違い"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "2026-04-21 current truth: actual-only固定。比較画像は見つからなかったが、実物写真のみで進行する。",
@@ -11578,7 +11967,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "実物のみで進める / 比較画像は後追い",
             "ルーティング状態": "HQ判断済み",
-            "更新時刻": "2026-04-21 15:43:51 JST",
+            "更新時刻": "2026-04-21 16:45:13 JST",
             "メモ": "name=保冷クーラーバッグ ネイビー ショルダー付 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / qwen_hq=actual-only固定優先 / 2026-04-21 current truth: actual-only固定。比較画像なしでも実物写真のみで進める。"
           }
         },
@@ -11682,7 +12071,8 @@ window.ZERO_COST_INTAKE = {
             "check_items_override": "レンズ色 / フレーム形状 / ケース付属 / 偏光表記確認",
             "official_page_url": "",
             "official_image_url": "",
-            "image_source": "actual-only"
+            "image_source": "actual-only",
+            "exact_match_guard_state": "clear"
           },
           "official": {
             "management_id": "BOX-001-ITEM-0003",
@@ -11695,7 +12085,8 @@ window.ZERO_COST_INTAKE = {
             "image_source": "actual-only",
             "verified_exact_match": false,
             "official_image_state": "actual-only固定 / 比較画像なし",
-            "note": "YUGYUG / 2023モデル4 / ブラック・グレー / サングラス / ケース付き までは実物ラベルと現物で強く取れている。比較画像検索も実施したが、ケース付き同一商品を 100% 同一と断定できる公開画像は確保できなかったため、actual-only 固定で進める。"
+            "note": "YUGYUG / 2023モデル4 / ブラック・グレー / サングラス / ケース付き までは実物ラベルと現物で強く取れている。比較画像検索も実施したが、ケース付き同一商品を 100% 同一と断定できる公開画像は確保できなかったため、actual-only 固定で進める。",
+            "exact_match_guard_state": "clear"
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0003",
@@ -11729,6 +12120,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "YUGYUG サングラス ブラック/グレー ケース付き",
           "verified_exact_match": false,
           "official_image_state": "actual-only固定 / 比較画像なし",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -11760,7 +12152,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 15:43:51 JST",
+            "更新時刻": "2026-04-21 16:45:13 JST",
             "メモ": "name=YUGYUG サングラス ブラック/グレー ケース付き / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
           }
         },
@@ -11864,7 +12256,12 @@ window.ZERO_COST_INTAKE = {
             "check_items_override": "サイズ / ポケット数 / ショルダーストラップ確認",
             "official_page_url": "https://www.amazon.co.jp/maytopia-%E3%82%B7%E3%83%A7%E3%83%AB%E3%83%80%E3%83%BC%E3%83%90%E3%83%83%E3%82%B0-%E3%83%A1%E3%83%83%E3%82%BB%E3%83%B3%E3%82%B8%E3%83%A3%E3%83%BC%E3%83%90%E3%83%83%E3%82%B0-%E6%96%9C%E3%82%81%E3%81%8C%E3%81%91%E3%83%90%E3%83%83%E3%82%B0-DJ2031/dp/B0DP4XSCJD",
             "official_image_url": "https://m.media-amazon.com/images/I/71QdZl8B1zL._AC_UL320_.jpg",
-            "image_source": "Amazon search candidate"
+            "image_source": "Amazon search candidate",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "ブランド不一致"
+            ],
+            "official_image_local": "state/intake/official_images/BOX-001-ITEM-0004_bag_candidate.jpg"
           },
           "official": {
             "management_id": "BOX-001-ITEM-0004",
@@ -11874,7 +12271,11 @@ window.ZERO_COST_INTAKE = {
             "official_image_local": "state/intake/official_images/BOX-001-ITEM-0004_bag_candidate.jpg",
             "verified_exact_match": false,
             "official_image_state": "比較画像候補あり / exact-match不可",
-            "note": "IAWNI 本体に対して Amazon 検索上の maytopia 候補。ブランド不一致のため出品採用不可、比較用のみ。"
+            "note": "IAWNI 本体に対して Amazon 検索上の maytopia 候補。ブランド不一致のため出品採用不可、比較用のみ。",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "ブランド不一致"
+            ]
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0004",
@@ -11974,6 +12375,10 @@ window.ZERO_COST_INTAKE = {
           "product_name": "IAWNI ショルダーバッグ メッセンジャーバッグ",
           "verified_exact_match": false,
           "official_image_state": "比較画像候補あり / exact-match不可",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "ブランド不一致"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -12005,7 +12410,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 15:43:51 JST",
+            "更新時刻": "2026-04-21 16:45:13 JST",
             "メモ": "name=IAWNI ショルダーバッグ メッセンジャーバッグ / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMJHwgfzNjEkYfN8SMv"
           }
         },
@@ -12110,7 +12515,12 @@ window.ZERO_COST_INTAKE = {
             "check_items_override": "サイズ表記 / 素材 / ウエスト仕様確認",
             "official_page_url": "https://www.amazon.co.jp/dp/B0CW59W9XG",
             "image_source": "web candidate",
-            "official_image_url": "https://m.media-amazon.com/images/I/61wX2zUNpFL.jpg"
+            "official_image_url": "https://m.media-amazon.com/images/I/61wX2zUNpFL.jpg",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "柄違い"
+            ],
+            "official_image_local": "state/intake/official_images/BOX-001-ITEM-0005_ceen_saruel.jpg"
           },
           "official": {
             "management_id": "BOX-001-ITEM-0005",
@@ -12119,7 +12529,11 @@ window.ZERO_COST_INTAKE = {
             "official_image_local": "state/intake/official_images/BOX-001-ITEM-0005_ceen_saruel.jpg",
             "verified_exact_match": false,
             "official_image_state": "比較画像候補あり / exact-match不可",
-            "note": "Amazon B0CW59W9XG からメイン画像をダウンロードしたが、候補画像は縦ストライプ柄、実物はヘリンボーン調の総柄で生地パターンが一致しない。ブランド CEEN と七分丈系までは近いが、出品画像採用は不可で比較用のみ。"
+            "note": "Amazon B0CW59W9XG からメイン画像をダウンロードしたが、候補画像は縦ストライプ柄、実物はヘリンボーン調の総柄で生地パターンが一致しない。ブランド CEEN と七分丈系までは近いが、出品画像採用は不可で比較用のみ。",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "柄違い"
+            ]
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0005",
@@ -12219,6 +12633,10 @@ window.ZERO_COST_INTAKE = {
           "product_name": "CEEN サルエルパンツ 七分丈 ワイドパンツ",
           "verified_exact_match": false,
           "official_image_state": "比較画像候補あり / exact-match不可",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "柄違い"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -12250,7 +12668,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 15:43:51 JST",
+            "更新時刻": "2026-04-21 16:45:13 JST",
             "メモ": "name=CEEN サルエルパンツ 七分丈 ワイドパンツ / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPQCYwtnC7WCswDeG37b9"
           }
         },
@@ -12357,7 +12775,8 @@ window.ZERO_COST_INTAKE = {
             "check_items_override": "内容物確認 / 箱状態 / サイズ感 / ギフト箱として出すか判断",
             "official_page_url": "",
             "official_image_url": "",
-            "image_source": "actual-only"
+            "image_source": "actual-only",
+            "exact_match_guard_state": "clear"
           },
           "official": {
             "management_id": "BOX-001-ITEM-0006",
@@ -12370,7 +12789,8 @@ window.ZERO_COST_INTAKE = {
             "image_source": "actual-only",
             "verified_exact_match": false,
             "official_image_state": "actual-only固定 / 内容物未確認",
-            "note": "X001943Q5H / FirstC / ティアグッズ記念品ギフトまでは現物ラベルで確認。中身が見えず、公式・比較画像も安全に確保できないため、出品画像は実物のみ。"
+            "note": "X001943Q5H / FirstC / ティアグッズ記念品ギフトまでは現物ラベルで確認。中身が見えず、公式・比較画像も安全に確保できないため、出品画像は実物のみ。",
+            "exact_match_guard_state": "clear"
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0006",
@@ -12404,6 +12824,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "FirstC ティアグッズ記念品ギフト箱（内容物不明）",
           "verified_exact_match": false,
           "official_image_state": "actual-only固定 / 内容物未確認",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -12529,7 +12950,8 @@ window.ZERO_COST_INTAKE = {
             "check_items_override": "色味 / 袖丈 / 首元形状 / 素材確認",
             "official_page_url": "",
             "official_image_url": "",
-            "image_source": "actual-only"
+            "image_source": "actual-only",
+            "exact_match_guard_state": "clear"
           },
           "official": {
             "management_id": "BOX-001-ITEM-0007",
@@ -12542,7 +12964,8 @@ window.ZERO_COST_INTAKE = {
             "image_source": "actual-only",
             "verified_exact_match": false,
             "official_image_state": "actual-only固定 / 比較画像なし",
-            "note": "GIOVANA / tshirt / 302 / 2XL / ベージュ までは実物ラベルと現物で強く取れている。qwen 候補URL収集担当で GIOVANA / X00143KK11 / beige 2XL を確認したが、100%同一確認に使える安全な比較画像候補は取れなかった。出品画像は実物のみで扱う。"
+            "note": "GIOVANA / tshirt / 302 / 2XL / ベージュ までは実物ラベルと現物で強く取れている。qwen 候補URL収集担当で GIOVANA / X00143KK11 / beige 2XL を確認したが、100%同一確認に使える安全な比較画像候補は取れなかった。出品画像は実物のみで扱う。",
+            "exact_match_guard_state": "clear"
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0007",
@@ -12576,6 +12999,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "GIOVANA Tシャツ ベージュ 2XL",
           "verified_exact_match": false,
           "official_image_state": "actual-only固定 / 比較画像なし",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -12607,7 +13031,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 15:43:51 JST",
+            "更新時刻": "2026-04-21 16:45:13 JST",
             "メモ": "name=GIOVANA Tシャツ ベージュ 2XL / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
           }
         },
@@ -12714,7 +13138,9 @@ window.ZERO_COST_INTAKE = {
             "check_items_override": "素材確認 / サイズ確認 / 色確認",
             "official_page_url": "https://www.amazon.co.jp/%E3%83%97%E3%83%AA%E3%83%B3%E3%83%88%E3%82%B9%E3%82%BF%E3%83%BC-5-0%E3%82%AA%E3%83%B3%E3%82%B9-%E3%83%99%E3%83%BC%E3%82%B7%E3%83%83%E3%82%AF-T%E3%82%B7%E3%83%A3%E3%83%84-%E3%83%9F%E3%83%B3%E3%83%88%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3/dp/B085LFKN5W",
             "official_image_url": "https://m.media-amazon.com/images/I/71fxiPBZBqL._AC_UL320_.jpg",
-            "image_source": "Amazon search candidate"
+            "image_source": "Amazon search candidate",
+            "exact_match_guard_state": "clear",
+            "official_image_local": "state/intake/official_images/BOX-001-ITEM-0008_mint_top_candidate.jpg"
           },
           "official": {
             "management_id": "BOX-001-ITEM-0008",
@@ -12724,7 +13150,8 @@ window.ZERO_COST_INTAKE = {
             "official_image_local": "state/intake/official_images/BOX-001-ITEM-0008_mint_top_candidate.jpg",
             "verified_exact_match": false,
             "official_image_state": "比較画像候補あり / exact-match不可",
-            "note": "実物はオナーファッション表記のミントトップスだが、候補ページは Printstar 無地Tシャツ。ブランド違いのため出品採用不可、比較用のみ。"
+            "note": "実物はオナーファッション表記のミントトップスだが、候補ページは Printstar 無地Tシャツ。ブランド違いのため出品採用不可、比較用のみ。",
+            "exact_match_guard_state": "clear"
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0008",
@@ -12824,6 +13251,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "オナーファッション 綿100% トップス ミントグリーン 3XL",
           "verified_exact_match": false,
           "official_image_state": "比較画像候補あり / exact-match不可",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -12855,7 +13283,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 15:43:51 JST",
+            "更新時刻": "2026-04-21 16:45:13 JST",
             "メモ": "name=オナーファッション 綿100% トップス ミントグリーン 3XL / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMSqu7EDWJu3jDcTo5h"
           }
         },
@@ -12971,7 +13399,9 @@ window.ZERO_COST_INTAKE = {
             "supplemental_image_locals": [
               "state/intake/official_images/BOX-001-ITEM-0009_extra_2.jpg",
               "state/intake/official_images/BOX-001-ITEM-0009_extra_3.jpg"
-            ]
+            ],
+            "exact_match_guard_state": "clear",
+            "official_image_local": "state/intake/official_images/BOX-001-ITEM-0009_hothrty_pearl_earrings.jpg"
           },
           "official": {
             "management_id": "BOX-001-ITEM-0009",
@@ -12989,7 +13419,8 @@ window.ZERO_COST_INTAKE = {
             "supplemental_image_locals": [
               "state/intake/official_images/BOX-001-ITEM-0009_extra_2.jpg",
               "state/intake/official_images/BOX-001-ITEM-0009_extra_3.jpg"
-            ]
+            ],
+            "exact_match_guard_state": "clear"
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0009",
@@ -13089,6 +13520,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "Hotaty ピアス 金属アレルギー対応 ギフトBOX付き",
           "verified_exact_match": false,
           "official_image_state": "比較画像候補あり / exact-match保留",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -13120,7 +13552,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 15:43:51 JST",
+            "更新時刻": "2026-04-21 16:45:13 JST",
             "メモ": "name=Hotaty ピアス 金属アレルギー対応 ギフトBOX付き / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMUTrpVNxK6fGZdtMqT"
           }
         },
@@ -13225,7 +13657,12 @@ window.ZERO_COST_INTAKE = {
             "check_items_override": "サイズ4XL / 黒 / ボタン配列 / 前面ロゴ位置 / 袋越し確認",
             "official_page_url": "https://www.daraz.com.bd/products/shangchu-chefs-uniform-mens-dining-hotel-rear-kitchen-workwear-customization-cafeteria-restaurant-hot-pot-restaurant-workwear-women-i304062387.html",
             "official_image_url": "https://img.drz.lazcdn.com/static/bd/p/5352eddc86565ede7986d473209329da.jpg_720x720q80.jpg_.webp",
-            "image_source": "Daraz product page"
+            "image_source": "Daraz product page",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "色違い"
+            ],
+            "official_image_local": "state/intake/official_images/BOX-001-ITEM-0010_shangchu_chef_uniform.webp"
           },
           "official": {
             "management_id": "BOX-001-ITEM-0010",
@@ -13239,7 +13676,11 @@ window.ZERO_COST_INTAKE = {
             "official_image_local": "state/intake/official_images/BOX-001-ITEM-0010_shangchu_chef_uniform.webp",
             "verified_exact_match": false,
             "official_image_state": "比較画像候補あり / exact-match不可",
-            "note": "現物は X00168HK8P / SHANGCHU / ブラック / 4XL。Daraz候補はブランド・商品系統は近いが、保持画像が白ユニフォームで現物色と一致しないため出品採用不可、比較用のみ。"
+            "note": "現物は X00168HK8P / SHANGCHU / ブラック / 4XL。Daraz候補はブランド・商品系統は近いが、保持画像が白ユニフォームで現物色と一致しないため出品採用不可、比較用のみ。",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "色違い"
+            ]
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0010",
@@ -13291,6 +13732,10 @@ window.ZERO_COST_INTAKE = {
           "product_name": "SHANGCHU シェフユニフォーム ブラック 4XL",
           "verified_exact_match": false,
           "official_image_state": "比較画像候補あり / exact-match不可",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "色違い"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -13322,7 +13767,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 15:43:51 JST",
+            "更新時刻": "2026-04-21 16:45:13 JST",
             "メモ": "name=SHANGCHU シェフユニフォーム ブラック 4XL / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -13424,7 +13869,12 @@ window.ZERO_COST_INTAKE = {
             "check_items_override": "ブランド表記Dkieta目視確認 / ネックカバー / 花柄 / サイズ確認",
             "official_page_url": "https://www.amazon.co.jp/Teddy-%E3%82%B5%E3%83%B3%E3%83%90%E3%82%A4%E3%82%B6%E3%83%BC-%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B9-UV%E3%82%AB%E3%83%83%E3%83%88-hat209/dp/B0C3ZQK9GC",
             "official_image_url": "https://m.media-amazon.com/images/I/51x1EHPQCZL._AC_UL320_.jpg",
-            "image_source": "Amazon search candidate"
+            "image_source": "Amazon search candidate",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "柄違い"
+            ],
+            "official_image_local": "state/intake/official_images/BOX-001-ITEM-0011_hat_candidate.jpg"
           },
           "official": {
             "management_id": "BOX-001-ITEM-0011",
@@ -13434,7 +13884,11 @@ window.ZERO_COST_INTAKE = {
             "official_image_local": "state/intake/official_images/BOX-001-ITEM-0011_hat_candidate.jpg",
             "verified_exact_match": false,
             "official_image_state": "比較画像候補あり / exact-match不可",
-            "note": "実物は Dkieta 表記の白地赤花柄ネックカバー付き日よけ帽子。候補ページは無地系で柄・形状が一致しないため出品採用不可、比較用のみ。"
+            "note": "実物は Dkieta 表記の白地赤花柄ネックカバー付き日よけ帽子。候補ページは無地系で柄・形状が一致しないため出品採用不可、比較用のみ。",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "柄違い"
+            ]
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0011",
@@ -13534,6 +13988,10 @@ window.ZERO_COST_INTAKE = {
           "product_name": "Dkieta 帽子 レディース ネックカバー付き 花柄日よけ帽子",
           "verified_exact_match": false,
           "official_image_state": "比較画像候補あり / exact-match不可",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "柄違い"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -13565,7 +14023,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 15:43:51 JST",
+            "更新時刻": "2026-04-21 16:45:13 JST",
             "メモ": "name=Dkieta 帽子 レディース ネックカバー付き 花柄日よけ帽子 / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMPEuG8NMB3ZieyYzHU"
           }
         },
@@ -13669,7 +14127,12 @@ window.ZERO_COST_INTAKE = {
             "check_items_override": "枚数確認 / サイズ確認 / 素材確認",
             "official_page_url": "https://www.amazon.co.jp/%E3%82%AC%E3%83%BC%E3%82%BC%E3%83%8F%E3%83%B3%E3%82%AB%E3%83%81-%E6%B4%97%E3%81%86%E3%81%A8%E3%81%B5%E3%82%8F%E3%81%B5%E3%82%8F%E3%81%AB%E3%81%AA%E3%82%8B%E3%82%AC%E3%83%BC%E3%82%BC%E3%83%8F%E3%83%B3%E3%82%AB%E3%83%81-%E3%83%80%E3%83%96%E3%83%AB%E3%82%AC%E3%83%BC%E3%82%BC-30%C3%9730cm-12%E6%9E%9A%E3%82%BB%E3%83%83%E3%83%88/dp/B08K8NC4TS",
             "official_image_url": "https://m.media-amazon.com/images/I/51Dn05glhdS._AC_UL320_.jpg",
-            "image_source": "Amazon search candidate"
+            "image_source": "Amazon search candidate",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "セット違い"
+            ],
+            "official_image_local": "state/intake/official_images/BOX-001-ITEM-0012_gauze_candidate.jpg"
           },
           "official": {
             "management_id": "BOX-001-ITEM-0012",
@@ -13679,7 +14142,11 @@ window.ZERO_COST_INTAKE = {
             "official_image_local": "state/intake/official_images/BOX-001-ITEM-0012_gauze_candidate.jpg",
             "verified_exact_match": false,
             "official_image_state": "比較画像候補あり / exact-match不可",
-            "note": "実物は 30x30cm 10枚セットだが、候補ページは 12枚セット。枚数不一致のため出品採用不可、比較用のみ。"
+            "note": "実物は 30x30cm 10枚セットだが、候補ページは 12枚セット。枚数不一致のため出品採用不可、比較用のみ。",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "セット違い"
+            ]
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0012",
@@ -13779,6 +14246,10 @@ window.ZERO_COST_INTAKE = {
           "product_name": "gany ガーゼハンカチ 30×30cm 10枚セット 綿100%",
           "verified_exact_match": false,
           "official_image_state": "比較画像候補あり / exact-match不可",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "セット違い"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -13810,7 +14281,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 15:43:51 JST",
+            "更新時刻": "2026-04-21 16:45:13 JST",
             "メモ": "name=gany ガーゼハンカチ 30×30cm 10枚セット 綿100% / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPTBgBM5kND3h8AhVf4bf"
           }
         },
@@ -13911,7 +14382,9 @@ window.ZERO_COST_INTAKE = {
             ],
             "official_page_url": "https://www.gwenchanda.com/shop/health-wellness/acne/forehead-focused-patch-18p/",
             "official_image_url": "https://www.gwenchanda.com/wp-content/uploads/2025/05/GWENCHANDA-GA230719741-1.jpg",
-            "image_source": "Gwenchanda product page"
+            "image_source": "Gwenchanda product page",
+            "exact_match_guard_state": "clear",
+            "official_image_local": "state/intake/official_images/BOX-001-ITEM-0001_gwenchanda_forehead_patch.jpg"
           },
           "official": {
             "management_id": "BOX-001-ITEM-0013",
@@ -13925,7 +14398,8 @@ window.ZERO_COST_INTAKE = {
             "verified_exact_match": true,
             "official_image_state": "100%同一確認済み / 候補1枚確保",
             "note": "0001と同一商品。GTIN 8809409185224 と実物パッケージ表面・背面が Gwenchanda 商品ページ画像と一致。比較画像は 100%同一確認済み。",
-            "official_image_local": "state/intake/official_images/BOX-001-ITEM-0001_gwenchanda_forehead_patch.jpg"
+            "official_image_local": "state/intake/official_images/BOX-001-ITEM-0001_gwenchanda_forehead_patch.jpg",
+            "exact_match_guard_state": "clear"
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0013",
@@ -13977,6 +14451,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り",
           "verified_exact_match": true,
           "official_image_state": "100%同一確認済み / 候補1枚確保",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -14008,7 +14483,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 15:43:51 JST",
+            "更新時刻": "2026-04-21 16:45:13 JST",
             "メモ": "name=WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り / publish_ok=公開待ち / draft_status=公開待ち / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量"
           }
         },
@@ -14121,7 +14596,13 @@ window.ZERO_COST_INTAKE = {
             "supplemental_image_locals": [
               "state/intake/official_images/BOX-001-ITEM-0014_extra_2.jpg",
               "state/intake/official_images/BOX-001-ITEM-0014_extra_3.jpg"
-            ]
+            ],
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "柄違い",
+              "セット違い"
+            ],
+            "official_image_local": "state/intake/official_images/BOX-001-ITEM-0014_hayaharu_kids_socks.jpg"
           },
           "official": {
             "management_id": "BOX-001-ITEM-0014",
@@ -14139,6 +14620,10 @@ window.ZERO_COST_INTAKE = {
             "supplemental_image_locals": [
               "state/intake/official_images/BOX-001-ITEM-0014_extra_2.jpg",
               "state/intake/official_images/BOX-001-ITEM-0014_extra_3.jpg"
+            ],
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "セット違い"
             ]
           },
           "commerce": {
@@ -14239,6 +14724,11 @@ window.ZERO_COST_INTAKE = {
           "product_name": "HAYAHARU キッズ靴下 LS4602LS",
           "verified_exact_match": false,
           "official_image_state": "比較画像候補あり / exact-match不可",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "柄違い",
+            "セット違い"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -14270,7 +14760,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 15:43:51 JST",
+            "更新時刻": "2026-04-21 16:45:13 JST",
             "メモ": "name=HAYAHARU キッズ靴下 LS4602LS / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMLyKhRCgPASDJFH2dc"
           }
         },
@@ -14375,7 +14865,8 @@ window.ZERO_COST_INTAKE = {
             "check_items_override": "5足セット構成 / 色柄 / サイズ表記確認",
             "official_page_url": "",
             "official_image_url": "",
-            "image_source": "actual-only"
+            "image_source": "actual-only",
+            "exact_match_guard_state": "clear"
           },
           "official": {
             "management_id": "BOX-001-ITEM-0015",
@@ -14388,7 +14879,8 @@ window.ZERO_COST_INTAKE = {
             "image_source": "actual-only",
             "verified_exact_match": false,
             "official_image_state": "actual-only固定 / 比較画像なし",
-            "note": "Llink / 靴下 / 5足セット / ボーダー柄までは実物ラベルと現物で強く取れている。比較画像検索も実施したが、5足構成と柄まで 100% 同一と断定できる公開画像は確保できなかったため、actual-only 固定で進める。"
+            "note": "Llink / 靴下 / 5足セット / ボーダー柄までは実物ラベルと現物で強く取れている。比較画像検索も実施したが、5足構成と柄まで 100% 同一と断定できる公開画像は確保できなかったため、actual-only 固定で進める。",
+            "exact_match_guard_state": "clear"
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0015",
@@ -14422,6 +14914,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "Llink 靴下 5足セット ボーダー パステル",
           "verified_exact_match": false,
           "official_image_state": "actual-only固定 / 比較画像なし",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -14453,7 +14946,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 15:43:51 JST",
+            "更新時刻": "2026-04-21 16:45:13 JST",
             "メモ": "name=Llink 靴下 5足セット ボーダー パステル / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
           }
         },
@@ -14556,7 +15049,8 @@ window.ZERO_COST_INTAKE = {
             "check_items_override": "5足セット構成 / 蝶リボン装飾 / サイズ表記確認",
             "official_page_url": "",
             "official_image_url": "",
-            "image_source": "actual-only"
+            "image_source": "actual-only",
+            "exact_match_guard_state": "clear"
           },
           "official": {
             "management_id": "BOX-001-ITEM-0016",
@@ -14569,7 +15063,8 @@ window.ZERO_COST_INTAKE = {
             "image_source": "actual-only",
             "verified_exact_match": false,
             "official_image_state": "actual-only固定 / 比較画像なし",
-            "note": "ZERUI / 靴下キッズ / 蝶リボン / パステル系 5足セットまでは実物ラベルで強く取れている。比較画像検索も実施したが、5足構成と蝶リボン装飾まで 100% 同一と断定できる公開画像は確保できなかったため、actual-only 固定で進める。"
+            "note": "ZERUI / 靴下キッズ / 蝶リボン / パステル系 5足セットまでは実物ラベルで強く取れている。比較画像検索も実施したが、5足構成と蝶リボン装飾まで 100% 同一と断定できる公開画像は確保できなかったため、actual-only 固定で進める。",
+            "exact_match_guard_state": "clear"
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0016",
@@ -14603,6 +15098,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "ZERUI 靴下 5足セット パステル 蝶リボン",
           "verified_exact_match": false,
           "official_image_state": "actual-only固定 / 比較画像なし",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -14634,7 +15130,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 15:43:51 JST",
+            "更新時刻": "2026-04-21 16:45:13 JST",
             "メモ": "name=ZERUI 靴下 5足セット パステル 蝶リボン / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
           }
         },
@@ -14737,7 +15233,13 @@ window.ZERO_COST_INTAKE = {
             "check_items_override": "用途確認 / 中身・展開形状確認 / オレンジ丸型ポーチ / プリント柄確認",
             "official_page_url": "",
             "official_image_url": "",
-            "image_source": "actual-only"
+            "image_source": "actual-only",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "柄違い",
+              "型番違い",
+              "形状違い"
+            ]
           },
           "official": {
             "management_id": "BOX-001-ITEM-0017",
@@ -14750,7 +15252,13 @@ window.ZERO_COST_INTAKE = {
             "image_source": "actual-only",
             "verified_exact_match": false,
             "official_image_state": "actual-only固定 / 用途要確認",
-            "note": "X00194HN9H / FirstC / ティアグッズ記念品ギフトまでは現物ラベルで確認。既存のYahoo!サファリハット候補は柄・構造・型番が一致しないため不採用。用途確認が終わるまで比較画像は使わない。"
+            "note": "X00194HN9H / FirstC / ティアグッズ記念品ギフトまでは現物ラベルで確認。既存のYahoo!サファリハット候補は柄・構造・型番が一致しないため不採用。用途確認が終わるまで比較画像は使わない。",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "柄違い",
+              "型番違い",
+              "形状違い"
+            ]
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0017",
@@ -14784,6 +15292,12 @@ window.ZERO_COST_INTAKE = {
           "product_name": "FirstC ティアグッズ記念品ギフト オレンジ丸型ポーチ（用途要確認）",
           "verified_exact_match": false,
           "official_image_state": "actual-only固定 / 用途要確認",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "柄違い",
+            "型番違い",
+            "形状違い"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -14815,7 +15329,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 15:43:51 JST",
+            "更新時刻": "2026-04-21 16:45:13 JST",
             "メモ": "name=FirstC ティアグッズ記念品ギフト オレンジ丸型ポーチ（用途要確認） / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 用途要確認 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -14919,7 +15433,8 @@ window.ZERO_COST_INTAKE = {
             "check_items_override": "サイズ130 / フード有無 / 袖口色切替 / ワッペン位置確認",
             "official_page_url": "",
             "official_image_url": "",
-            "image_source": "actual-only"
+            "image_source": "actual-only",
+            "exact_match_guard_state": "clear"
           },
           "official": {
             "management_id": "BOX-001-ITEM-0018",
@@ -14932,7 +15447,8 @@ window.ZERO_COST_INTAKE = {
             "image_source": "actual-only",
             "verified_exact_match": false,
             "official_image_state": "actual-only固定 / 比較画像なし",
-            "note": "SWEETBOY / 子供パーカー / ネイビー×イエロー / 130 までは実物ラベルで強く取れている。比較画像検索も実施したが、色・サイズ・細部が 100% 同一と断定できる公開画像は確保できなかったため、actual-only 固定で進める。"
+            "note": "SWEETBOY / 子供パーカー / ネイビー×イエロー / 130 までは実物ラベルで強く取れている。比較画像検索も実施したが、色・サイズ・細部が 100% 同一と断定できる公開画像は確保できなかったため、actual-only 固定で進める。",
+            "exact_match_guard_state": "clear"
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0018",
@@ -14966,6 +15482,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "SWEETBOY 子供パーカー ネイビー×イエロー 130",
           "verified_exact_match": false,
           "official_image_state": "actual-only固定 / 比較画像なし",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -14997,7 +15514,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 15:43:51 JST",
+            "更新時刻": "2026-04-21 16:45:13 JST",
             "メモ": "name=SWEETBOY 子供パーカー ネイビー×イエロー 130 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
           }
         },
@@ -15105,7 +15622,9 @@ window.ZERO_COST_INTAKE = {
             "official_page_url": "https://www.amazon.co.jp/dp/B0CKQQZVW2",
             "official_image_url": "https://m.media-amazon.com/images/I/61YEwSdbQgL._AC_SL1500_.jpg",
             "image_source": "web candidate",
-            "requires_authenticity_review": true
+            "requires_authenticity_review": true,
+            "exact_match_guard_state": "clear",
+            "official_image_local": "state/intake/official_images/BOX-001-ITEM-0019_polo_bear_tote.jpg"
           },
           "official": {
             "management_id": "BOX-001-ITEM-0019",
@@ -15115,7 +15634,8 @@ window.ZERO_COST_INTAKE = {
             "verified_exact_match": false,
             "official_image_state": "比較画像候補あり / exact-match保留",
             "note": "Polo Ralph Lauren 9AR021-W3Y 系比較画像として保持。袋越しのため底マチ・持ち手仕様・内タグが見えず exact-match保留。ブランド・商標品のため公開前に真贋/権利リスク確認必須。",
-            "image_source": "Amazon product page candidate"
+            "image_source": "Amazon product page candidate",
+            "exact_match_guard_state": "clear"
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0019",
@@ -15215,6 +15735,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "ポロベア キャンバス トートバッグ POLO BEAR LAUREN",
           "verified_exact_match": false,
           "official_image_state": "比較画像候補あり / exact-match保留",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -15246,7 +15767,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "停止",
             "AI次アクション": "空き板を維持",
             "ルーティング状態": "一時停止",
-            "更新時刻": "2026-04-21 15:43:51 JST",
+            "更新時刻": "2026-04-21 16:45:13 JST",
             "メモ": "name=ポロベア キャンバス トートバッグ POLO BEAR LAUREN / publish_ok=確認待ち / draft_status=一時取り下げ / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=一時取り下げ"
           }
         },
@@ -15354,7 +15875,8 @@ window.ZERO_COST_INTAKE = {
             "check_items_override": "色味 / サイズM表記 / HJ-GY-M / カバー有無 / パッケージ状態",
             "official_page_url": "",
             "official_image_url": "",
-            "image_source": "actual-only"
+            "image_source": "actual-only",
+            "exact_match_guard_state": "clear"
           },
           "official": {
             "management_id": "BOX-001-ITEM-0020",
@@ -15367,7 +15889,8 @@ window.ZERO_COST_INTAKE = {
             "image_source": "actual-only",
             "verified_exact_match": false,
             "official_image_state": "actual-only固定 / 比較画像なし",
-            "note": "X001AIILBV / HJ-GY-M / 首サポーター / カバー付き / グレー / M は実物パッケージで確認。ジモティー候補は公式でも型番一致でもないため破棄し、実物写真のみで扱う。"
+            "note": "X001AIILBV / HJ-GY-M / 首サポーター / カバー付き / グレー / M は実物パッケージで確認。ジモティー候補は公式でも型番一致でもないため破棄し、実物写真のみで扱う。",
+            "exact_match_guard_state": "clear"
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0020",
@@ -15401,6 +15924,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "首サポーター カバー付き グレー M HJ-GY-M",
           "verified_exact_match": false,
           "official_image_state": "actual-only固定 / 比較画像なし",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -15432,7 +15956,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 15:43:51 JST",
+            "更新時刻": "2026-04-21 16:45:13 JST",
             "メモ": "name=首サポーター カバー付き グレー M HJ-GY-M / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -15534,7 +16058,8 @@ window.ZERO_COST_INTAKE = {
               "レモンクォーツ",
               "シルバーリング",
               "サイズ10"
-            ]
+            ],
+            "exact_match_guard_state": "clear"
           },
           "official": {},
           "commerce": {
@@ -15569,6 +16094,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "1.1CT レモンクォーツ シルバーリング サイズ10",
           "verified_exact_match": false,
           "official_image_state": "実物のみ",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -15687,7 +16213,9 @@ window.ZERO_COST_INTAKE = {
             "check_items_override": "容量確認 / 成分表示 / 使用期限確認 / シール未開封確認",
             "official_page_url": "https://jp.mercari.com/item/m52972642431",
             "image_source": "web candidate",
-            "official_image_url": "https://static.mercdn.net/item/detail/orig/photos/m52972642431_1.jpg"
+            "official_image_url": "https://static.mercdn.net/item/detail/orig/photos/m52972642431_1.jpg",
+            "exact_match_guard_state": "clear",
+            "official_image_local": "state/intake/official_images/BOX-001-ITEM-0022_emcarepro_le_blanc.jpg"
           },
           "official": {
             "management_id": "BOX-001-ITEM-0022",
@@ -15695,7 +16223,8 @@ window.ZERO_COST_INTAKE = {
             "official_image_url": "https://static.mercdn.net/item/detail/orig/photos/m52972642431_1.jpg",
             "official_image_local": "state/intake/official_images/BOX-001-ITEM-0022_emcarepro_le_blanc.jpg",
             "official_image_state": "調査画像取得済み",
-            "note": "メルカリ出品画像からFEMCARE PRO LE BLANC 150mlの商品画像をダウンロード。公式サイトなし。1080x1080px 45KB。"
+            "note": "メルカリ出品画像からFEMCARE PRO LE BLANC 150mlの商品画像をダウンロード。公式サイトなし。1080x1080px 45KB。",
+            "exact_match_guard_state": "clear"
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0022",
@@ -15747,6 +16276,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "LE BLANC フェムケアPRO 低刺激 デリケートゾーン 150mL",
           "verified_exact_match": false,
           "official_image_state": "調査画像取得済み",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -15778,7 +16308,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 15:43:51 JST",
+            "更新時刻": "2026-04-21 16:45:13 JST",
             "メモ": "name=LE BLANC フェムケアPRO 低刺激 デリケートゾーン 150mL / publish_ok=確認待ち / draft_status=下書き / image_state=調査画像取得済み / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -15871,11 +16401,15 @@ window.ZERO_COST_INTAKE = {
             "product_name": "FEMCARE PRO 150ml",
             "barcode_primary": "",
             "product_code_type": "package_text",
-            "official_image_state": "実物のみ",
+            "official_image_state": "実物のみ / 現写真では1商品に断定不能",
             "note": "FRONTにFEMCARE PRO 150mlボトル。BACK/CODEはTrekking Pole-Blue収納袋（別商品混線）。FRONT側が本命。2026-04-15商品特定分析によりprovisional登録。",
             "evidence": [
               "FEMCARE PRO",
               "150ml"
+            ],
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "別商品mix"
             ]
           },
           "official": {},
@@ -15910,7 +16444,11 @@ window.ZERO_COST_INTAKE = {
           "display_name": "FEMCARE PRO 150ml",
           "product_name": "FEMCARE PRO 150ml",
           "verified_exact_match": false,
-          "official_image_state": "実物のみ",
+          "official_image_state": "実物のみ / 現写真では1商品に断定不能",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "別商品mix"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -16020,7 +16558,8 @@ window.ZERO_COST_INTAKE = {
               "サングラス レディース",
               "#016",
               "ブラック・ブルー"
-            ]
+            ],
+            "exact_match_guard_state": "clear"
           },
           "official": {},
           "commerce": {
@@ -16055,6 +16594,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
           "verified_exact_match": false,
           "official_image_state": "実物のみ",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -16167,7 +16707,8 @@ window.ZERO_COST_INTAKE = {
               "サングラス レディース",
               "#016",
               "ブラック・ブルー"
-            ]
+            ],
+            "exact_match_guard_state": "clear"
           },
           "official": {},
           "commerce": {
@@ -16202,6 +16743,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
           "verified_exact_match": false,
           "official_image_state": "実物のみ",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -16316,7 +16858,8 @@ window.ZERO_COST_INTAKE = {
             "official_page_url": "https://mens-make-collection.jp/blogs/original-skincare/",
             "official_image_url": "https://mens-make-collection.jp/_img/ja/cms/10318/image/_/?1775133797",
             "image_source": "MMC公式記事",
-            "supplemental_url": "https://www.amazon.co.jp/MMC化粧水-メンズスキンケア-敏感肌-乾燥肌-240ml/dp/B0DCBBHC1V/"
+            "supplemental_url": "https://www.amazon.co.jp/MMC化粧水-メンズスキンケア-敏感肌-乾燥肌-240ml/dp/B0DCBBHC1V/",
+            "exact_match_guard_state": "clear"
           },
           "official": {
             "management_id": "BOX-001-ITEM-0026",
@@ -16329,7 +16872,8 @@ window.ZERO_COST_INTAKE = {
             "image_source": "MMC公式記事",
             "supplemental_url": "https://www.amazon.co.jp/MMC化粧水-メンズスキンケア-敏感肌-乾燥肌-240ml/dp/B0DCBBHC1V/",
             "official_image_state": "候補1枚確保",
-            "note": "MMC公式記事の化粧水枠と Amazon 商品ページを確保。"
+            "note": "MMC公式記事の化粧水枠と Amazon 商品ページを確保。",
+            "exact_match_guard_state": "clear"
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0026",
@@ -16381,6 +16925,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "MMC FACE LOTION 240ml",
           "verified_exact_match": false,
           "official_image_state": "候補1枚確保",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -16412,7 +16957,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 15:43:51 JST",
+            "更新時刻": "2026-04-21 16:45:13 JST",
             "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -16504,17 +17049,22 @@ window.ZERO_COST_INTAKE = {
             "product_name": "MMC FACE LOTION 240ml",
             "barcode_primary": "4595987734025",
             "product_code_type": "gtin",
-            "official_image_state": "候補1枚確保",
-            "note": "本体は MMC 化粧水。コード側に Amazon 内部コードが混在するため GTIN 優先で暫定特定。 / 0026と同一商品。GTIN優先の暫定特定に画像候補を付与。",
+            "official_image_state": "候補1枚確保 / 現写真では1商品に断定不能",
+            "note": "FRONT で MMC 化粧水 240ml と GTIN 4595987734025 を確認。一方 BACK/CODE は [wolass] メンズセーター X0018UBQX1 の別商品。現写真では同一管理番号の1商品に断定不能のため、MMC 側候補の provisional に留める。",
             "evidence": [
               "GTIN 4595987734025",
               "MMC 化粧水",
-              "240ml"
+              "240ml",
+              "BACK/CODE=[wolass] セーター X0018UBQX1"
             ],
             "official_page_url": "https://mens-make-collection.jp/blogs/original-skincare/",
             "official_image_url": "https://mens-make-collection.jp/_img/ja/cms/10318/image/_/?1775133797",
             "image_source": "MMC公式記事",
-            "supplemental_url": "https://www.amazon.co.jp/MMC化粧水-メンズスキンケア-敏感肌-乾燥肌-240ml/dp/B0DCBBHC1V/"
+            "supplemental_url": "https://www.amazon.co.jp/MMC化粧水-メンズスキンケア-敏感肌-乾燥肌-240ml/dp/B0DCBBHC1V/",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "別商品mix"
+            ]
           },
           "official": {
             "management_id": "BOX-001-ITEM-0027",
@@ -16526,8 +17076,12 @@ window.ZERO_COST_INTAKE = {
             "official_image_url": "https://mens-make-collection.jp/_img/ja/cms/10318/image/_/?1775133797",
             "image_source": "MMC公式記事",
             "supplemental_url": "https://www.amazon.co.jp/MMC化粧水-メンズスキンケア-敏感肌-乾燥肌-240ml/dp/B0DCBBHC1V/",
-            "official_image_state": "候補1枚確保",
-            "note": "0026と同一商品。GTIN優先の暫定特定に画像候補を付与。"
+            "official_image_state": "候補1枚確保 / 現写真では1商品に断定不能",
+            "note": "FRONT は MMC FACE LOTION 240ml、BACK/CODE は [wolass] メンズセーター X0018UBQX1 の別商品。現写真では1商品に断定不能のため、比較画像候補は保持するが出品判定には使わない。",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "別商品mix"
+            ]
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0027",
@@ -16560,7 +17114,7 @@ window.ZERO_COST_INTAKE = {
               "label": "比較-1",
               "url": "./assets/official_images/BOX-001-ITEM-0027_official_1.jpg",
               "page_url": "https://mens-make-collection.jp/blogs/original-skincare/",
-              "state": "候補1枚確保",
+              "state": "候補1枚確保 / 現写真では1商品に断定不能",
               "source": "MMC公式記事",
               "verified_exact_match": false
             }
@@ -16570,7 +17124,7 @@ window.ZERO_COST_INTAKE = {
               "label": "比較-1",
               "url": "./assets/official_images/BOX-001-ITEM-0027_official_1.jpg",
               "page_url": "https://mens-make-collection.jp/blogs/original-skincare/",
-              "state": "候補1枚確保",
+              "state": "候補1枚確保 / 現写真では1商品に断定不能",
               "source": "MMC公式記事",
               "verified_exact_match": false
             }
@@ -16578,7 +17132,11 @@ window.ZERO_COST_INTAKE = {
           "display_name": "MMC FACE LOTION 240ml",
           "product_name": "MMC FACE LOTION 240ml",
           "verified_exact_match": false,
-          "official_image_state": "候補1枚確保",
+          "official_image_state": "候補1枚確保 / 現写真では1商品に断定不能",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "別商品mix"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -16610,8 +17168,8 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 15:43:51 JST",
-            "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+            "更新時刻": "2026-04-21 16:45:13 JST",
+            "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=候補1枚確保 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
         {
@@ -16698,19 +17256,29 @@ window.ZERO_COST_INTAKE = {
           "manual_note": "FRONT は黒/緑の冬小物系、BACK/CODE は Zukida 車のフック（Red）の箱でした。",
           "resolved": {
             "management_id": "BOX-001-ITEM-0028",
-            "resolution_status": "confirmed",
-            "product_name": "Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製",
+            "resolution_status": "provisional",
+            "product_name": "Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red",
             "barcode_primary": "X0010CU9L7",
             "product_code_type": "amazon_internal",
-            "verified_exact_match": true,
-            "official_image_state": "実物のみ",
-            "note": "BACK/CODEにZukida車のフック(Red) X0010CU9L7。既存のconfirmedデータと一致。staging済み。2026-04-15商品特定分析によりconfirmedに昇格。",
+            "verified_exact_match": false,
+            "official_image_state": "管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能",
+            "note": "BACK のラベルで X0010CU9L7 / Zukida 車のフック 後部座席 (Red) を確認し、CODE 面も car hook mobile phone holder 箱で同系統。一方 FRONT は黒緑の冬小物系で別商品。現IDは Zukida anchor を維持するが、現写真では1商品に断定不能のため provisional に降格する。",
             "evidence": [
               "X0010CU9L7",
               "Zukida",
               "車のフック",
-              "Red"
-            ]
+              "Red",
+              "FRONT=冬小物系の別商品"
+            ],
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "別商品mix",
+              "要再束ね"
+            ],
+            "qwen_hq_review_status": "resolved",
+            "qwen_hq_resolution": "needs_split",
+            "qwen_hq_review_at": "2026-04-13 08:25:22 JST",
+            "qwen_hq_review_note": "0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式再束ねと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。"
           },
           "official": {
             "management_id": "BOX-001-ITEM-0028",
@@ -16722,7 +17290,7 @@ window.ZERO_COST_INTAKE = {
             "official_image_url": "",
             "image_source": "",
             "verified_exact_match": false,
-            "official_image_state": "管理番号再分解待ち / HQレビュー済み",
+            "official_image_state": "管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能",
             "note": "Qwen 公開前チェック担当: CRITICAL: FRONT/BACK/CODE が別商品 mix 状態（intake_manual_overrides.json で split_required 登録済み） / CRITICAL: Hello Kitty 50TH ANNIVERSARY はサンリオ著作権/商標権関連リスク。正規品出所証明がないと削除・制限対象の可能性 / ほか3件 / HQ 公開前チェック担当: 管理番号の再分解: 0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式再束ねと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。",
             "qwen_last_task_name": "公開前チェック担当",
             "qwen_last_review_at": "2026-04-12 06:38:33 JST",
@@ -16732,7 +17300,12 @@ window.ZERO_COST_INTAKE = {
             "qwen_hq_review_status": "resolved",
             "qwen_hq_resolution": "needs_split",
             "qwen_hq_review_at": "2026-04-13 08:25:22 JST",
-            "qwen_hq_review_note": "0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式再束ねと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。"
+            "qwen_hq_review_note": "0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式再束ねと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "別商品mix",
+              "要再束ね"
+            ]
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0028",
@@ -16740,13 +17313,13 @@ window.ZERO_COST_INTAKE = {
             "product_id": "PRD-BOX-001-028",
             "draft_id": "DRF-BOX-001-028",
             "research_id": "RES-BOX-001-028",
-            "product_name": "Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製",
+            "product_name": "Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red",
             "brand": "Zukida",
-            "category": "車&バイク > カー用品 > 収納アクセサリー",
+            "category": "コスメ・美容 > その他",
             "barcode_primary": "X0010CU9L7",
             "product_code_type": "amazon_internal",
-            "listing_title": "Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製",
-            "listing_price": "780",
+            "listing_title": "Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red",
+            "listing_price": "980",
             "market_floor_price": "",
             "market_floor_state": "未調査",
             "market_source_label": "",
@@ -16754,7 +17327,7 @@ window.ZERO_COST_INTAKE = {
             "market_checked_at": "",
             "market_note": "",
             "publish_state": "下書き",
-            "publish_detail": "コードラベルに X0010CU9L7 / Zukida / 後部座席フック / Red が読める。Web検索でヘッドレスト取り付け型アルミ合金製フックと確認。楽天・メルカリにも流通あり。",
+            "publish_detail": "BACK のラベルで X0010CU9L7 / Zukida 車のフック 後部座席 (Red) を確認し、CODE 面も car hook mobile phone holder 箱で同系統。一方 FRONT は黒緑の冬小物系で別商品。現IDは Zukida anchor を維持するが、現写真では1商品に断定不能のため provisional に降格する。",
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
@@ -16762,10 +17335,15 @@ window.ZERO_COST_INTAKE = {
           },
           "comparison_images": [],
           "reference_images": [],
-          "display_name": "Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製",
-          "product_name": "Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製",
-          "verified_exact_match": true,
-          "official_image_state": "管理番号再分解待ち / HQレビュー済み",
+          "display_name": "Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red",
+          "product_name": "Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red",
+          "verified_exact_match": false,
+          "official_image_state": "管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "別商品mix",
+            "要再束ね"
+          ],
           "qwen_hq_review_status": "resolved",
           "qwen_hq_resolution": "needs_split",
           "qwen_hq_review_note": "0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式再束ねと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。",
@@ -16777,7 +17355,7 @@ window.ZERO_COST_INTAKE = {
           "reference_image_ref": "",
           "minimum_price": "",
           "market_floor_price_label": "未調査",
-          "listing_price": "780",
+          "listing_price": "980",
           "exception": {},
           "route_plan": {
             "商品ID": "PRD-BOX-001-028",
@@ -16797,8 +17375,8 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "管理番号再分解と再撮影",
             "ルーティング状態": "要再束ね",
-            "更新時刻": "2026-04-21 15:43:51 JST",
-            "メモ": "name=Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 / publish_ok=確認待ち / draft_status=下書き / image_state=実物のみ / 管理番号再分解待ち / HQレビュー済み / image_ready=実物あり / 参考画像待ち / delivery=小型軽量 / qwen_hq=needs_split / 0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式再束ねと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。"
+            "更新時刻": "2026-04-21 16:45:13 JST",
+            "メモ": "name=Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / qwen_hq=needs_split / 0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式再束ねと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。"
           },
           "split_staging": {
             "management_id": "BOX-001-ITEM-0028",
@@ -17021,15 +17599,20 @@ window.ZERO_COST_INTAKE = {
           "resolved": {
             "management_id": "BOX-001-ITEM-0029",
             "resolution_status": "provisional",
-            "product_name": "Car hook mobile phone holder Storage and rear entertainment",
+            "product_name": "Car hook mobile phone holder NO-FE040",
             "barcode_primary": "",
             "product_code_type": "package_text",
-            "official_image_state": "実物のみ",
-            "note": "FRONT/BACKにcar hook mobile phone holder。CODEはnetwork tool系（別商品混線）。FRONT/BACK側が本命。2026-04-15商品特定分析によりprovisional登録。",
+            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "note": "FRONT に Car hook mobile phone holder / NO-FE040 を確認。一方 BACK/CODE は SPEEDWOX ワイヤーストリッパー X00162U47P の別商品。現写真では car hook 側は FRONT しか揃わず、同一管理番号の1商品に断定不能のため provisional に留める。",
             "evidence": [
               "Car hook",
               "mobile phone holder",
-              "Storage and rear entertainment"
+              "NO-FE040",
+              "BACK/CODE=SPEEDWOX X00162U47P"
+            ],
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "別商品mix"
             ]
           },
           "official": {},
@@ -17039,12 +17622,12 @@ window.ZERO_COST_INTAKE = {
             "product_id": "PRD-BOX-001-029",
             "draft_id": "DRF-BOX-001-029",
             "research_id": "RES-BOX-001-029",
-            "product_name": "Car hook mobile phone holder Storage and rear entertainment",
+            "product_name": "Car hook mobile phone holder NO-FE040",
             "brand": "",
             "category": "",
             "barcode_primary": "",
             "product_code_type": "package_text",
-            "listing_title": "Car hook mobile phone holder Storage and rear entertainment",
+            "listing_title": "Car hook mobile phone holder NO-FE040",
             "listing_price": "",
             "market_floor_price": "",
             "market_floor_state": "未調査",
@@ -17061,10 +17644,14 @@ window.ZERO_COST_INTAKE = {
           },
           "comparison_images": [],
           "reference_images": [],
-          "display_name": "Car hook mobile phone holder Storage and rear entertainment",
-          "product_name": "Car hook mobile phone holder Storage and rear entertainment",
+          "display_name": "Car hook mobile phone holder NO-FE040",
+          "product_name": "Car hook mobile phone holder NO-FE040",
           "verified_exact_match": false,
-          "official_image_state": "実物のみ",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "別商品mix"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -17167,15 +17754,21 @@ window.ZERO_COST_INTAKE = {
           "resolved": {
             "management_id": "BOX-001-ITEM-0030",
             "resolution_status": "provisional",
-            "product_name": "2IN1 WIRE STRIPPER & CUTTER",
-            "barcode_primary": "",
-            "product_code_type": "package_text",
-            "official_image_state": "実物のみ",
-            "note": "FRONTにワイヤーストリッパー箱。BACK/CODEは女性衣類パッケージ（別商品混線）。FRONT側が本命。2026-04-15商品特定分析によりprovisional登録。",
+            "product_name": "SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556",
+            "barcode_primary": "X00162U47P",
+            "product_code_type": "amazon_internal",
+            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "note": "FRONT で 2IN1 WIRE STRIPPER & CUTTER / ACS-1556 / X00162U47P を確認。一方 BACK/CODE は婦人服ラベル X001AQYKV3 / M36026 の別商品。現写真では wire stripper 側は FRONT しか coherent でないため provisional に留める。",
             "evidence": [
-              "2IN1",
-              "WIRE STRIPPER",
-              "CUTTER"
+              "X00162U47P",
+              "SPEEDWOX",
+              "2IN1 WIRE STRIPPER & CUTTER",
+              "ACS-1556",
+              "BACK/CODE=婦人服 X001AQYKV3"
+            ],
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "別商品mix"
             ]
           },
           "official": {},
@@ -17185,12 +17778,12 @@ window.ZERO_COST_INTAKE = {
             "product_id": "PRD-BOX-001-030",
             "draft_id": "DRF-BOX-001-030",
             "research_id": "RES-BOX-001-030",
-            "product_name": "2IN1 WIRE STRIPPER & CUTTER",
+            "product_name": "SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556",
             "brand": "",
             "category": "",
-            "barcode_primary": "",
-            "product_code_type": "package_text",
-            "listing_title": "2IN1 WIRE STRIPPER & CUTTER",
+            "barcode_primary": "X00162U47P",
+            "product_code_type": "amazon_internal",
+            "listing_title": "SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556",
             "listing_price": "",
             "market_floor_price": "",
             "market_floor_state": "未調査",
@@ -17207,10 +17800,14 @@ window.ZERO_COST_INTAKE = {
           },
           "comparison_images": [],
           "reference_images": [],
-          "display_name": "2IN1 WIRE STRIPPER & CUTTER",
-          "product_name": "2IN1 WIRE STRIPPER & CUTTER",
+          "display_name": "SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556",
+          "product_name": "SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556",
           "verified_exact_match": false,
-          "official_image_state": "実物のみ",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "別商品mix"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -17327,7 +17924,8 @@ window.ZERO_COST_INTAKE = {
             "check_items_override": "色味ベージュ系 / 衣類種別 / サイズ表記不明 / ロゴ表記確認",
             "official_page_url": "",
             "official_image_url": "",
-            "image_source": "比較画像待ち"
+            "image_source": "比較画像待ち",
+            "exact_match_guard_state": "clear"
           },
           "official": {},
           "commerce": {
@@ -17362,6 +17960,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "LEISURE WEAR ベージュ系レディース衣類",
           "verified_exact_match": false,
           "official_image_state": "比較画像待ち / exact-match保留",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -17393,7 +17992,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 15:43:51 JST",
+            "更新時刻": "2026-04-21 16:45:13 JST",
             "メモ": "name=LEISURE WEAR ベージュ系レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -17496,7 +18095,12 @@ window.ZERO_COST_INTAKE = {
             "official_page_url": "https://www.ebay.com/itm/306550440795",
             "official_image_url": "https://i.ebayimg.com/images/g/CG8AAeSwnKBo70Z5/s-l400.jpg",
             "image_source": "eBay GTIN match candidate",
-            "supplemental_url": "https://www.ebay.ca/itm/297690728964"
+            "supplemental_url": "https://www.ebay.ca/itm/297690728964",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "色違い",
+              "形状違い"
+            ]
           },
           "official": {
             "management_id": "BOX-001-ITEM-0032",
@@ -17510,7 +18114,11 @@ window.ZERO_COST_INTAKE = {
             "supplemental_url": "https://www.ebay.ca/itm/297690728964",
             "verified_exact_match": false,
             "official_image_state": "比較画像候補あり / exact-match不可",
-            "note": "GTIN 4550247611409 と item#24117 / Color GR / Size L は実物と一致。以前のネイビー比較画像は形状不一致のため除外し、GTIN一致の比較候補へ差し替え。"
+            "note": "GTIN 4550247611409 と item#24117 / Color GR / Size L は実物と一致。以前のネイビー比較画像は形状不一致のため除外し、GTIN一致の比較候補へ差し替え。",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "形状違い"
+            ]
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0032",
@@ -17610,6 +18218,11 @@ window.ZERO_COST_INTAKE = {
           "product_name": "ZUCCA CLUB リラックス リカバリー サンダル",
           "verified_exact_match": false,
           "official_image_state": "比較画像候補あり / exact-match不可",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "色違い",
+            "形状違い"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -17641,7 +18254,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 15:43:51 JST",
+            "更新時刻": "2026-04-21 16:45:13 JST",
             "メモ": "name=ZUCCA CLUB リラックス リカバリー サンダル / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPTBkWndxGku2L9EVw4UP"
           }
         },
@@ -17732,8 +18345,8 @@ window.ZERO_COST_INTAKE = {
             "product_name": "jchinjia リュック メンズ ビジネスリュック 男女兼用 カジュアルバッグ おしゃれ トラベルバッグ",
             "barcode_primary": "X00187HP11",
             "product_code_type": "amazon_internal",
-            "official_image_state": "比較画像候補あり / exact-match保留",
-            "note": "コードラベルに [jchinjia] / ブラック / 出張トラベル / リュックサック が読める。比較画像は同名候補と黒い大容量リュック形状まで一致するが、外ポケット構成とサイズ詳細を袋越しに断定できないため exact-match保留。 / コードラベルに [jchinjia] / ブラック / 出張トラベル / リュックサック が読める。黒い大容量リュック形状は近いが、外ポケット構成とサイズ詳細を袋越しに断定できないため exact-match保留。",
+            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能",
+            "note": "BACK/CODE の2枚で黒リュック本体と X00187HP11 / [jchinjia] ブラック / 出張トラベル / リュックサック が一致。一方 FRONT は靴の注意書き台紙で別商品。現写真では1商品に断定不能のため provisional に留め、公開停止とする。",
             "evidence": [
               "X00187HP11",
               "jchinjia",
@@ -17745,9 +18358,15 @@ window.ZERO_COST_INTAKE = {
             "category_override": "ファッション > メンズ > バッグ > リュック・バックパック",
             "price_override": 2980,
             "check_items_override": "前面ポケット形状 / 持ち手 / サイズ確認",
-            "official_page_url": "https://kurashi.biglobe.ne.jp/items/665649/",
-            "official_image_url": "https://m.media-amazon.com/images/I/41ChhN2IvRL._SL500_.jpg",
-            "image_source": "kurashi.biglobe via Amazon image"
+            "official_page_url": null,
+            "official_image_url": null,
+            "image_source": null,
+            "exact_match_guard_state": "review_required",
+            "official_image_local": null,
+            "exact_match_guard_reasons": [
+              "別商品mix",
+              "要再束ね"
+            ]
           },
           "official": {
             "management_id": "BOX-001-ITEM-0033",
@@ -17755,13 +18374,18 @@ window.ZERO_COST_INTAKE = {
             "product_id": "PRD-BOX-001-033",
             "draft_id": "DRF-BOX-001-033",
             "research_id": "RES-BOX-001-033",
-            "official_page_url": "https://kurashi.biglobe.ne.jp/items/665649/",
-            "official_image_url": "https://m.media-amazon.com/images/I/41ChhN2IvRL._SL500_.jpg",
-            "image_source": "kurashi.biglobe via Amazon image",
-            "official_image_local": "state/intake/official_images/BOX-001-ITEM-0033_jchinjia_backpack.jpg",
+            "official_page_url": null,
+            "official_image_url": null,
+            "image_source": null,
+            "official_image_local": null,
             "verified_exact_match": false,
-            "official_image_state": "比較画像候補あり / exact-match保留",
-            "note": "コードラベルに [jchinjia] / ブラック / 出張トラベル / リュックサック が読める。黒い大容量リュック形状は近いが、外ポケット構成とサイズ詳細を袋越しに断定できないため exact-match保留。"
+            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能",
+            "note": "BACK/CODE は X00187HP11 の jchinjia 黒リュックで一致するが、FRONT は靴の注意書き台紙で別商品。現写真では1商品に断定不能のため比較画像は退避し、公開停止とする。",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "別商品mix",
+              "要再束ね"
+            ]
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0033",
@@ -17789,30 +18413,17 @@ window.ZERO_COST_INTAKE = {
             "csv_status": "",
             "updated_at": "2026-04-04 17:34:58 JST"
           },
-          "comparison_images": [
-            {
-              "label": "比較-1",
-              "url": "./assets/official_images/BOX-001-ITEM-0033_official_1.jpg",
-              "page_url": "https://kurashi.biglobe.ne.jp/items/665649/",
-              "state": "比較画像候補あり / exact-match保留",
-              "source": "kurashi.biglobe via Amazon image",
-              "verified_exact_match": false
-            }
-          ],
-          "reference_images": [
-            {
-              "label": "比較-1",
-              "url": "./assets/official_images/BOX-001-ITEM-0033_official_1.jpg",
-              "page_url": "https://kurashi.biglobe.ne.jp/items/665649/",
-              "state": "比較画像候補あり / exact-match保留",
-              "source": "kurashi.biglobe via Amazon image",
-              "verified_exact_match": false
-            }
-          ],
+          "comparison_images": [],
+          "reference_images": [],
           "display_name": "jchinjia リュック メンズ ビジネスリュック 男女兼用 カジュアルバッグ おしゃれ トラベルバッグ",
           "product_name": "jchinjia リュック メンズ ビジネスリュック 男女兼用 カジュアルバッグ おしゃれ トラベルバッグ",
           "verified_exact_match": false,
-          "official_image_state": "比較画像候補あり / exact-match保留",
+          "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "別商品mix",
+            "要再束ね"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -17820,8 +18431,8 @@ window.ZERO_COST_INTAKE = {
           "publish_state": "下書き",
           "public_listing_url": "",
           "listing_id": "",
-          "comparison_image_ref": "./assets/official_images/BOX-001-ITEM-0033_official_1.jpg",
-          "reference_image_ref": "./assets/official_images/BOX-001-ITEM-0033_official_1.jpg",
+          "comparison_image_ref": "",
+          "reference_image_ref": "",
           "minimum_price": "",
           "market_floor_price_label": "未調査",
           "listing_price": "2980",
@@ -17844,8 +18455,8 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 15:43:51 JST",
-            "メモ": "name=jchinjia リュック メンズ ビジネスリュック 男女兼用 カジュアルバッグ おしゃれ トラベルバッグ / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+            "更新時刻": "2026-04-21 16:45:13 JST",
+            "メモ": "name=jchinjia リュック メンズ ビジネスリュック 男女兼用 カジュアルバッグ おしゃれ トラベルバッグ / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
         {
@@ -17946,7 +18557,8 @@ window.ZERO_COST_INTAKE = {
               "女教師",
               "クリスマス",
               "ホワイトレース衣装"
-            ]
+            ],
+            "exact_match_guard_state": "clear"
           },
           "official": {},
           "commerce": {
@@ -17981,6 +18593,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "RemeeHi 女教師コスプレ衣装 ホワイトレース系",
           "verified_exact_match": false,
           "official_image_state": "実物のみ",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -18100,7 +18713,8 @@ window.ZERO_COST_INTAKE = {
             "check_items_override": "色味ピンク / 110cm表記 / 前面ボタン / 股スナップ / ロンパース形状確認",
             "official_page_url": "",
             "official_image_url": "",
-            "image_source": "actual-only"
+            "image_source": "actual-only",
+            "exact_match_guard_state": "clear"
           },
           "official": {
             "management_id": "BOX-001-ITEM-0035",
@@ -18113,7 +18727,8 @@ window.ZERO_COST_INTAKE = {
             "image_source": "actual-only",
             "verified_exact_match": false,
             "official_image_state": "actual-only固定 / 比較画像なし",
-            "note": "X00182NEB1 / Letshe / 110cm / ピンク / 前開きロンパース / 股スナップ は実物で確認できる。qwen 候補URL収集担当で確認したが、100%同一確認に使える安全な比較画像候補は取れなかった。出品画像は実物のみで扱う。"
+            "note": "X00182NEB1 / Letshe / 110cm / ピンク / 前開きロンパース / 股スナップ は実物で確認できる。qwen 候補URL収集担当で確認したが、100%同一確認に使える安全な比較画像候補は取れなかった。出品画像は実物のみで扱う。",
+            "exact_match_guard_state": "clear"
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0035",
@@ -18147,6 +18762,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "Letshe ベビー前開きロンパース ピンク 110cm",
           "verified_exact_match": false,
           "official_image_state": "actual-only固定 / 比較画像なし",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -18178,7 +18794,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 15:43:51 JST",
+            "更新時刻": "2026-04-21 16:45:13 JST",
             "メモ": "name=Letshe ベビー前開きロンパース ピンク 110cm / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
           }
         },
@@ -18279,7 +18895,8 @@ window.ZERO_COST_INTAKE = {
               "Cycling shorts",
               "Black",
               "Size S"
-            ]
+            ],
+            "exact_match_guard_state": "clear"
           },
           "official": {},
           "commerce": {
@@ -18314,6 +18931,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "SOUKE SPORTS Cycling shorts ブラック S",
           "verified_exact_match": false,
           "official_image_state": "実物のみ",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -18428,7 +19046,8 @@ window.ZERO_COST_INTAKE = {
             "check_items_override": "色味ブラウン / マフラー形状 / ふわふわ素材 / 収納袋入り確認",
             "official_page_url": "",
             "official_image_url": "",
-            "image_source": "actual-only"
+            "image_source": "actual-only",
+            "exact_match_guard_state": "clear"
           },
           "official": {
             "management_id": "BOX-001-ITEM-0037",
@@ -18441,7 +19060,8 @@ window.ZERO_COST_INTAKE = {
             "image_source": "actual-only",
             "verified_exact_match": false,
             "official_image_state": "actual-only固定 / 比較画像なし",
-            "note": "X0016MZBL9 / 可愛い小顔効果ふわふ / ブラウン系ふわふわマフラー は実物で確認できるが、2026-04-11 の Qwen 候補URL収集では型番を明示する 100%同一確認材料なし。比較画像は使わない。"
+            "note": "X0016MZBL9 / 可愛い小顔効果ふわふ / ブラウン系ふわふわマフラー は実物で確認できるが、2026-04-11 の Qwen 候補URL収集では型番を明示する 100%同一確認材料なし。比較画像は使わない。",
+            "exact_match_guard_state": "clear"
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0037",
@@ -18475,6 +19095,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "ふわふわマフラー ブラウン",
           "verified_exact_match": false,
           "official_image_state": "actual-only固定 / 比較画像なし",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -18593,7 +19214,8 @@ window.ZERO_COST_INTAKE = {
             "check_items_override": "色味オフホワイト / サイズL表記 / 裏起毛 / ロゴ位置 / 首元形状確認",
             "official_page_url": "",
             "official_image_url": "",
-            "image_source": "比較画像待ち"
+            "image_source": "比較画像待ち",
+            "exact_match_guard_state": "clear"
           },
           "official": {
             "management_id": "BOX-001-ITEM-0038",
@@ -18606,7 +19228,8 @@ window.ZERO_COST_INTAKE = {
             "image_source": "比較画像待ち",
             "verified_exact_match": false,
             "official_image_state": "比較画像待ち / exact-match保留",
-            "note": "X001AVKCQ5 / 裏起毛 / オフホワイト / L / トップス は実物で確認できるが、比較画像は未確保。"
+            "note": "X001AVKCQ5 / 裏起毛 / オフホワイト / L / トップス は実物で確認できるが、比較画像は未確保。",
+            "exact_match_guard_state": "clear"
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0038",
@@ -18640,6 +19263,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "裏起毛トップス オフホワイト L",
           "verified_exact_match": false,
           "official_image_state": "比較画像待ち / exact-match保留",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -18671,7 +19295,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 15:43:51 JST",
+            "更新時刻": "2026-04-21 16:45:13 JST",
             "メモ": "name=裏起毛トップス オフホワイト L / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -18760,14 +19384,18 @@ window.ZERO_COST_INTAKE = {
             "product_name": "fivihoc レディースペンダント（ゴールド/582）",
             "barcode_primary": "X0010634F1",
             "product_code_type": "amazon_internal",
-            "official_image_state": "実物のみ",
-            "note": "FRONT/CODEの2枚でハート型ペンダントとラベル X0010634F1 / fivihoc レディースペンダント（ゴールド/582）が一致。BACKのベージュ衣類は別商品で混線しているため、ペンダント側を本命として provisional 登録する。0040と同系統の重複候補。",
+            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "note": "BACK/CODE の2枚でハート型ペンダント箱とラベル X0010634F1 / fivihoc レディースペンダント（ゴールド/582）が一致。一方 FRONT は X001AVKCQ5 のベージュ衣類で別商品。現写真では1商品に断定不能のため provisional に留める。",
             "evidence": [
               "X0010634F1",
               "fivihoc",
               "レディースペンダント",
               "ゴールド",
               "582"
+            ],
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "別商品mix"
             ]
           },
           "official": {},
@@ -18802,7 +19430,11 @@ window.ZERO_COST_INTAKE = {
           "display_name": "fivihoc レディースペンダント（ゴールド/582）",
           "product_name": "fivihoc レディースペンダント（ゴールド/582）",
           "verified_exact_match": false,
-          "official_image_state": "実物のみ",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "別商品mix"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -18903,18 +19535,22 @@ window.ZERO_COST_INTAKE = {
           "manual_note": "FRONT は レディースペンダント（ゴールド/582）の箱、BACK/CODE は Bluetooth マウス PC/Mac 用でした。",
           "resolved": {
             "management_id": "BOX-001-ITEM-0040",
-            "resolution_status": "confirmed",
-            "product_name": "fiwihoc レディースペンダント ネックレス ゴールド/582",
-            "barcode_primary": "X0010634F1",
+            "resolution_status": "provisional",
+            "product_name": "Bluetooth 無線マウス PC/Mac用",
+            "barcode_primary": "X0017GVXBV",
             "product_code_type": "amazon_internal",
-            "verified_exact_match": true,
-            "official_image_state": "実物のみ",
-            "note": "FRONTにレディースペンダント箱、barcode X0010634F1でfiwihoc製品を特定。2026-04-15商品特定分析によりconfirmedに昇格。",
+            "verified_exact_match": false,
+            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "note": "BACK/CODE の2枚で X0017GVXBV / Bluetooth マウス / 無線マウス / PC/Mac用 が一致。一方 FRONT は X0010634F1 のレディースペンダント箱で別商品。現写真では1商品に断定不能のため、mouse 側を仮採用して provisional に留める。",
             "evidence": [
-              "X0010634F1",
-              "fiwihoc",
-              "レディースペンダント",
-              "ゴールド/582"
+              "X0017GVXBV",
+              "Bluetooth マウス",
+              "無線マウス",
+              "PC/Mac用"
+            ],
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "別商品mix"
             ]
           },
           "official": {},
@@ -18924,12 +19560,12 @@ window.ZERO_COST_INTAKE = {
             "product_id": "PRD-BOX-001-040",
             "draft_id": "DRF-BOX-001-040",
             "research_id": "RES-BOX-001-040",
-            "product_name": "fiwihoc レディースペンダント ネックレス ゴールド/582",
+            "product_name": "Bluetooth 無線マウス PC/Mac用",
             "brand": "",
             "category": "",
-            "barcode_primary": "X0010634F1",
+            "barcode_primary": "X0017GVXBV",
             "product_code_type": "amazon_internal",
-            "listing_title": "fiwihoc レディースペンダント ネックレス ゴールド/582",
+            "listing_title": "Bluetooth 無線マウス PC/Mac用",
             "listing_price": "",
             "market_floor_price": "",
             "market_floor_state": "未調査",
@@ -18946,10 +19582,14 @@ window.ZERO_COST_INTAKE = {
           },
           "comparison_images": [],
           "reference_images": [],
-          "display_name": "fiwihoc レディースペンダント ネックレス ゴールド/582",
-          "product_name": "fiwihoc レディースペンダント ネックレス ゴールド/582",
-          "verified_exact_match": true,
-          "official_image_state": "実物のみ",
+          "display_name": "Bluetooth 無線マウス PC/Mac用",
+          "product_name": "Bluetooth 無線マウス PC/Mac用",
+          "verified_exact_match": false,
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "別商品mix"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -19051,17 +19691,21 @@ window.ZERO_COST_INTAKE = {
           "resolved": {
             "management_id": "BOX-001-ITEM-0041",
             "resolution_status": "provisional",
-            "product_name": "ライトグレー メンズ前開きルームウェア XL",
-            "barcode_primary": "X00147IEGF",
+            "product_name": "Ecicvvi カジュアルストリート系秋冬服 グレー 4XL",
+            "barcode_primary": "X0013CHY1R",
             "product_code_type": "amazon_internal",
-            "official_image_state": "実物のみ",
-            "note": "BACK/CODEの2枚でグレー前開きルームウェアとラベル SYM002-Lightgray-XL / X00147IEGF が一致。FRONTの Lileutalily 箱物は別商品で混線しているため、ルームウェア側を本命として provisional 登録する。ブランド名は判別不能のため一般名で保持する。",
+            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "note": "BACK/CODE の2枚で Ecicvvi グレー衣類本体と X0013CHY1R / カジュアルストリート系秋冬服 / 4XL が一致。一方 FRONT は X0017GVXBV の Bluetooth 無線マウス箱で別商品。現写真では1商品に断定不能のため、衣類側を provisional に留める。",
             "evidence": [
-              "X00147IEGF",
-              "SYM002-Lightgray-XL",
-              "Lightgray",
-              "XL",
-              "前開きルームウェア"
+              "X0013CHY1R",
+              "Ecicvvi",
+              "カジュアルストリート系秋冬服",
+              "4XL",
+              "グレー"
+            ],
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "別商品mix"
             ]
           },
           "official": {},
@@ -19071,12 +19715,12 @@ window.ZERO_COST_INTAKE = {
             "product_id": "PRD-BOX-001-041",
             "draft_id": "DRF-BOX-001-041",
             "research_id": "RES-BOX-001-041",
-            "product_name": "ライトグレー メンズ前開きルームウェア XL",
+            "product_name": "Ecicvvi カジュアルストリート系秋冬服 グレー 4XL",
             "brand": "",
             "category": "",
-            "barcode_primary": "X00147IEGF",
+            "barcode_primary": "X0013CHY1R",
             "product_code_type": "amazon_internal",
-            "listing_title": "ライトグレー メンズ前開きルームウェア XL",
+            "listing_title": "Ecicvvi カジュアルストリート系秋冬服 グレー 4XL",
             "listing_price": "",
             "market_floor_price": "",
             "market_floor_state": "未調査",
@@ -19093,10 +19737,14 @@ window.ZERO_COST_INTAKE = {
           },
           "comparison_images": [],
           "reference_images": [],
-          "display_name": "ライトグレー メンズ前開きルームウェア XL",
-          "product_name": "ライトグレー メンズ前開きルームウェア XL",
+          "display_name": "Ecicvvi カジュアルストリート系秋冬服 グレー 4XL",
+          "product_name": "Ecicvvi カジュアルストリート系秋冬服 グレー 4XL",
           "verified_exact_match": false,
-          "official_image_state": "実物のみ",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "別商品mix"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -19200,13 +19848,14 @@ window.ZERO_COST_INTAKE = {
             "product_name": "NEEDLY Sleeping Lip Mask 10ml",
             "barcode_primary": "",
             "product_code_type": "package_text",
-            "official_image_state": "実物のみ",
-            "note": "CODEにNEEDLY Sleeping lip mask 10ml箱。FRONT/BACKは青系ぬいぐるみ（別商品混線）。CODE側が本命。2026-04-15商品特定分析によりprovisional登録。",
+            "official_image_state": "actual-only固定 / 比較画像なし",
+            "note": "FRONT は箱側面ラベル、BACK は表面、CODE は成分面で、3枚とも NEEDLY Sleeping lip mask 10ml の同一箱を示している。混線ではない。比較画像は未確保のため、actual-only の provisional で扱う。",
             "evidence": [
               "NEEDLY",
               "Sleeping Lip Mask",
               "10ml"
-            ]
+            ],
+            "exact_match_guard_state": "clear"
           },
           "official": {},
           "commerce": {
@@ -19240,7 +19889,8 @@ window.ZERO_COST_INTAKE = {
           "display_name": "NEEDLY Sleeping Lip Mask 10ml",
           "product_name": "NEEDLY Sleeping Lip Mask 10ml",
           "verified_exact_match": false,
-          "official_image_state": "実物のみ",
+          "official_image_state": "actual-only固定 / 比較画像なし",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -19340,14 +19990,20 @@ window.ZERO_COST_INTAKE = {
           "resolved": {
             "management_id": "BOX-001-ITEM-0043",
             "resolution_status": "provisional",
-            "product_name": "NEEDLY SLEEPING LIP MASK",
-            "barcode_primary": "",
-            "product_code_type": "package_text",
-            "official_image_state": "実物のみ",
-            "note": "FRONTにNEEDLY SLEEPING LIP MASK。BACK/CODEはDOMATメンズ財布箱（別商品混線）。FRONT側が本命。2026-04-15商品特定分析によりprovisional登録。",
+            "product_name": "DOMAT 財布 レッドブラウン",
+            "barcode_primary": "X00174LMFZ",
+            "product_code_type": "amazon_internal",
+            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "note": "BACK/CODE の2枚で DOMAT 箱と X00174LMFZ / 財布 / 赤褐色 が一致。一方 FRONT は NEEDLY SLEEPING LIP MASK 箱の別面で別商品。現写真では1商品に断定不能のため、DOMAT 側を provisional に留める。",
             "evidence": [
-              "NEEDLY",
-              "SLEEPING LIP MASK"
+              "X00174LMFZ",
+              "DOMAT",
+              "財布",
+              "赤褐色"
+            ],
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "別商品mix"
             ]
           },
           "official": {},
@@ -19357,12 +20013,12 @@ window.ZERO_COST_INTAKE = {
             "product_id": "PRD-BOX-001-043",
             "draft_id": "DRF-BOX-001-043",
             "research_id": "RES-BOX-001-043",
-            "product_name": "NEEDLY SLEEPING LIP MASK",
+            "product_name": "DOMAT 財布 レッドブラウン",
             "brand": "",
             "category": "",
-            "barcode_primary": "",
-            "product_code_type": "package_text",
-            "listing_title": "NEEDLY SLEEPING LIP MASK",
+            "barcode_primary": "X00174LMFZ",
+            "product_code_type": "amazon_internal",
+            "listing_title": "DOMAT 財布 レッドブラウン",
             "listing_price": "",
             "market_floor_price": "",
             "market_floor_state": "未調査",
@@ -19379,10 +20035,14 @@ window.ZERO_COST_INTAKE = {
           },
           "comparison_images": [],
           "reference_images": [],
-          "display_name": "NEEDLY SLEEPING LIP MASK",
-          "product_name": "NEEDLY SLEEPING LIP MASK",
+          "display_name": "DOMAT 財布 レッドブラウン",
+          "product_name": "DOMAT 財布 レッドブラウン",
           "verified_exact_match": false,
-          "official_image_state": "実物のみ",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "別商品mix"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -19486,14 +20146,17 @@ window.ZERO_COST_INTAKE = {
             "product_name": "Qzkouma バケットハット ブラック",
             "barcode_primary": "X0018K5KPV",
             "product_code_type": "amazon_internal",
-            "official_image_state": "実物のみ",
-            "note": "BACK/CODEの2枚で黒い帽子本体とラベル X0018K5KPV / [Qzkouma] キャップ...ハット DBQ-62（ブラック）が一致。FRONTの DOMAT ケース入り小物は別商品で混線しているため、帽子側を本命として provisional 登録する。",
+            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "note": "BACK/CODE の2枚で黒い帽子本体と X0018K5KPV / [Qzkouma] キャップ・ハット DBQ-62（ブラック）が一致。一方 FRONT は DOMAT 箱の中身写真で別商品。現写真では1商品に断定不能のため、帽子側を provisional に留める。",
             "evidence": [
               "X0018K5KPV",
               "Qzkouma",
               "ハット",
-              "DBQ-62",
               "ブラック"
+            ],
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "別商品mix"
             ]
           },
           "official": {},
@@ -19528,7 +20191,11 @@ window.ZERO_COST_INTAKE = {
           "display_name": "Qzkouma バケットハット ブラック",
           "product_name": "Qzkouma バケットハット ブラック",
           "verified_exact_match": false,
-          "official_image_state": "実物のみ",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "別商品mix"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -19623,11 +20290,11 @@ window.ZERO_COST_INTAKE = {
           "resolved": {
             "management_id": "BOX-001-ITEM-0045",
             "resolution_status": "provisional",
-            "product_name": "ロゴ刺繍ベースボールキャップ ネイビー系",
+            "product_name": "ロゴ刺繍ベースボールキャップ ブラック系",
             "barcode_primary": "X0015NW4BJ",
             "product_code_type": "amazon_internal",
-            "official_image_state": "比較画像待ち / exact-match保留",
-            "note": "実物写真では、ネイビー系のベースボールキャップ本体、白いロゴ刺繍、コードラベル X0015NW4BJ / Y5AQTX2313-BlueR-L2 までは確認できる。ただしブランド名や商品名は断定せず、コードラベルの説明文も本体との一致が弱い。比較画像は未確保のため、generic な actual-only provisional として扱い、出品画像は実物のみで扱う。 / X0015NW4BJ / Y5AQTX2313-BlueR-L2 / ネイビー系キャップ / 白ロゴ刺繍 は実物で確認できる。 / X0015NW4BJ / Y5AQTX2313-BlueR-L2 / ネイビー系キャップ / 白ロゴ刺繍 は実物で確認できるが、比較画像は未確保。generic な actual-only provisional として扱う。",
+            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能",
+            "note": "FRONT では黒系ベースボールキャップ本体と白い Youth 風ロゴ刺繍を確認できる。一方 BACK のラベル X0015NW4BJ / Y5AQTX2313-BlueR-L2 は KumiModa の Tシャツ文言で、CODE も無地袋面しかなく、現写真ではそのラベルが帽子を指すと断定できない。現写真では1商品に断定不能のため generic cap として provisional に留め、公開停止とする。",
             "evidence": [
               "X0015NW4BJ",
               "Y5AQTX2313-BlueR-L2",
@@ -19640,7 +20307,12 @@ window.ZERO_COST_INTAKE = {
             "check_items_override": "色味ネイビー系 / 白ロゴ刺繍 / つば形状 / サイズ表記不明",
             "official_page_url": "",
             "official_image_url": "",
-            "image_source": "比較画像待ち"
+            "image_source": "比較画像待ち",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "別商品mix",
+              "要再束ね"
+            ]
           },
           "official": {
             "management_id": "BOX-001-ITEM-0045",
@@ -19648,12 +20320,18 @@ window.ZERO_COST_INTAKE = {
             "product_id": "PRD-BOX-001-045",
             "draft_id": "DRF-BOX-001-045",
             "research_id": "RES-BOX-001-045",
-            "official_page_url": "",
-            "official_image_url": "",
-            "image_source": "比較画像待ち",
+            "official_page_url": null,
+            "official_image_url": null,
+            "image_source": "actual-only",
             "verified_exact_match": false,
-            "official_image_state": "比較画像待ち / exact-match保留",
-            "note": "X0015NW4BJ / Y5AQTX2313-BlueR-L2 / ネイビー系キャップ / 白ロゴ刺繍 は実物で確認できるが、比較画像は未確保。generic な actual-only provisional として扱う。"
+            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能",
+            "note": "FRONT では黒系キャップ本体を確認できるが、BACK ラベル X0015NW4BJ は KumiModa Tシャツ文言で帽子との一致が弱い。現写真では1商品に断定不能のため比較画像は使わず、公開停止とする。",
+            "exact_match_guard_state": "review_required",
+            "official_image_local": null,
+            "exact_match_guard_reasons": [
+              "別商品mix",
+              "要再束ね"
+            ]
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0045",
@@ -19661,12 +20339,12 @@ window.ZERO_COST_INTAKE = {
             "product_id": "PRD-BOX-001-045",
             "draft_id": "DRF-BOX-001-045",
             "research_id": "RES-BOX-001-045",
-            "product_name": "ロゴ刺繍ベースボールキャップ ネイビー系",
+            "product_name": "ロゴ刺繍ベースボールキャップ ブラック系",
             "brand": "不明",
             "category": "ファッション > メンズ > 帽子 > キャップ",
             "barcode_primary": "X0015NW4BJ",
             "product_code_type": "amazon_internal",
-            "listing_title": "ロゴ刺繍ベースボールキャップ ネイビー系",
+            "listing_title": "ロゴ刺繍ベースボールキャップ ブラック系",
             "listing_price": "1380",
             "market_floor_price": "",
             "market_floor_state": "未調査",
@@ -19683,10 +20361,15 @@ window.ZERO_COST_INTAKE = {
           },
           "comparison_images": [],
           "reference_images": [],
-          "display_name": "ロゴ刺繍ベースボールキャップ ネイビー系",
-          "product_name": "ロゴ刺繍ベースボールキャップ ネイビー系",
+          "display_name": "ロゴ刺繍ベースボールキャップ ブラック系",
+          "product_name": "ロゴ刺繍ベースボールキャップ ブラック系",
           "verified_exact_match": false,
-          "official_image_state": "比較画像待ち / exact-match保留",
+          "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "別商品mix",
+            "要再束ね"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -19718,8 +20401,8 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 15:43:51 JST",
-            "メモ": "name=ロゴ刺繍ベースボールキャップ ネイビー系 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+            "更新時刻": "2026-04-21 16:45:13 JST",
+            "メモ": "name=ロゴ刺繍ベースボールキャップ ブラック系 / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
         {
@@ -19809,8 +20492,8 @@ window.ZERO_COST_INTAKE = {
             "product_name": "ホワイト レディーストップス M",
             "barcode_primary": "X001B8TZTR",
             "product_code_type": "amazon_internal",
-            "official_image_state": "比較画像待ち / exact-match保留",
-            "note": "実物写真では、ホワイトのレディース衣類本体、コードラベル X001B8TZTR、および M / ホワイト の表記までは確認できる。以前の BlueR-L2 などの OCR 混入は採用せず、色違い事故を避けるため actual-only 前提で provisional に上げる。比較画像はまだ 100%同一確認できるものを確保できていないため、出品画像は実物のみで扱う。",
+            "official_image_state": "比較画像待ち / exact-match保留 / 現写真では1商品に断定不能",
+            "note": "BACK/CODE の2枚でホワイト衣類本体と X001B8TZTR / M / ホワイト が一致。一方 FRONT は X0015NW4BJ / Y5AQTX2313-BlueR-L2 の別ラベルだけが残った袋面で別商品混線。現写真では1商品に断定不能のため、ホワイト衣類側を provisional に留める。",
             "evidence": [
               "X001B8TZTR",
               "M",
@@ -19824,7 +20507,11 @@ window.ZERO_COST_INTAKE = {
             "check_items_override": "色味ホワイト / サイズM表記 / トップス形状 / 素材感確認",
             "official_page_url": "",
             "official_image_url": "",
-            "image_source": "比較画像待ち"
+            "image_source": "比較画像待ち",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "別商品mix"
+            ]
           },
           "official": {
             "management_id": "BOX-001-ITEM-0046",
@@ -19837,7 +20524,8 @@ window.ZERO_COST_INTAKE = {
             "image_source": "比較画像待ち",
             "verified_exact_match": false,
             "official_image_state": "比較画像待ち / exact-match保留",
-            "note": "X001B8TZTR / M / ホワイト / レディーストップス は実物で確認できるが、比較画像は未確保。"
+            "note": "X001B8TZTR / M / ホワイト / レディーストップス は実物で確認できるが、比較画像は未確保。",
+            "exact_match_guard_state": "clear"
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0046",
@@ -19870,7 +20558,11 @@ window.ZERO_COST_INTAKE = {
           "display_name": "ホワイト レディーストップス M",
           "product_name": "ホワイト レディーストップス M",
           "verified_exact_match": false,
-          "official_image_state": "比較画像待ち / exact-match保留",
+          "official_image_state": "比較画像待ち / exact-match保留 / 現写真では1商品に断定不能",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "別商品mix"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -19902,8 +20594,8 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 15:43:51 JST",
-            "メモ": "name=ホワイト レディーストップス M / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+            "更新時刻": "2026-04-21 16:45:13 JST",
+            "メモ": "name=ホワイト レディーストップス M / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
         {
@@ -20008,7 +20700,8 @@ window.ZERO_COST_INTAKE = {
             "check_items_override": "反射帯位置 / サイズ表記 / ポケット有無 / 留め具仕様確認",
             "official_page_url": "",
             "official_image_url": "",
-            "image_source": "比較画像待ち"
+            "image_source": "比較画像待ち",
+            "exact_match_guard_state": "clear"
           },
           "official": {
             "management_id": "BOX-001-ITEM-0047",
@@ -20021,7 +20714,8 @@ window.ZERO_COST_INTAKE = {
             "image_source": "比較画像待ち",
             "verified_exact_match": false,
             "official_image_state": "比較画像待ち / exact-match保留",
-            "note": "蛍光イエローの高視認性安全ベストであることまでは実物とコードラベルで一致する。比較画像はまだ 100%同一確認できるものを確保できていないため、出品採用不可。"
+            "note": "蛍光イエローの高視認性安全ベストであることまでは実物とコードラベルで一致する。比較画像はまだ 100%同一確認できるものを確保できていないため、出品採用不可。",
+            "exact_match_guard_state": "clear"
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0047",
@@ -20055,6 +20749,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "高視認性安全ベスト 蛍光イエロー",
           "verified_exact_match": false,
           "official_image_state": "比較画像待ち / exact-match保留",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -20086,7 +20781,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 15:43:51 JST",
+            "更新時刻": "2026-04-21 16:45:13 JST",
             "メモ": "name=高視認性安全ベスト 蛍光イエロー / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -20174,15 +20869,17 @@ window.ZERO_COST_INTAKE = {
             "management_id": "BOX-001-ITEM-0048",
             "resolution_status": "provisional",
             "product_name": "高視認性安全ベスト 蛍光イエロー",
-            "barcode_primary": "",
-            "product_code_type": "actual_only",
-            "official_image_state": "実物のみ",
-            "note": "FRONTで蛍光イエローの高視認性安全ベスト本体を確認。BACK/CODEは花柄シュシュ束で別商品が混線し、ラベルも tote bag と誤記されているため採用しない。安全ベスト側を本命として provisional 登録する。",
+            "barcode_primary": "X0019A7Y7H",
+            "product_code_type": "amazon_internal",
+            "official_image_state": "actual-only固定 / 比較画像なし",
+            "note": "FRONT/BACK/CODE の3枚で蛍光イエローの高視認性安全ベスト本体と X0019A7Y7H / CNSS161 / ネオンイエロー のラベルが一致する。0047 と同系統の重複候補。比較画像は未確保のため、actual-only の provisional で扱う。",
             "evidence": [
-              "蛍光イエロー",
-              "高視認性",
-              "安全ベスト"
-            ]
+              "X0019A7Y7H",
+              "高視認性安全ベスト",
+              "ネオンイエロー",
+              "CNSS161"
+            ],
+            "exact_match_guard_state": "clear"
           },
           "official": {},
           "commerce": {
@@ -20194,8 +20891,8 @@ window.ZERO_COST_INTAKE = {
             "product_name": "高視認性安全ベスト 蛍光イエロー",
             "brand": "",
             "category": "",
-            "barcode_primary": "",
-            "product_code_type": "actual_only",
+            "barcode_primary": "X0019A7Y7H",
+            "product_code_type": "amazon_internal",
             "listing_title": "高視認性安全ベスト 蛍光イエロー",
             "listing_price": "",
             "market_floor_price": "",
@@ -20216,7 +20913,8 @@ window.ZERO_COST_INTAKE = {
           "display_name": "高視認性安全ベスト 蛍光イエロー",
           "product_name": "高視認性安全ベスト 蛍光イエロー",
           "verified_exact_match": false,
-          "official_image_state": "実物のみ",
+          "official_image_state": "actual-only固定 / 比較画像なし",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -20326,7 +21024,8 @@ window.ZERO_COST_INTAKE = {
               "花柄",
               "シュシュ",
               "セット"
-            ]
+            ],
+            "exact_match_guard_state": "clear"
           },
           "official": {},
           "commerce": {
@@ -20361,6 +21060,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "花柄シュシュセット",
           "verified_exact_match": false,
           "official_image_state": "実物のみ",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -20479,7 +21179,8 @@ window.ZERO_COST_INTAKE = {
             "check_items_override": "色味ダークグレー系 / 股下24インチ / サイズ表記 / ポケット有無 / ロゴ位置確認",
             "official_page_url": "https://item.rakuten.co.jp/plays23/b0fjgd52zd/",
             "official_image_url": "https://shop.r10s.jp/plays23/cabinet/rakub100_0544/b0fjgd52zd00.jpg",
-            "image_source": "楽天市場"
+            "image_source": "楽天市場",
+            "exact_match_guard_state": "clear"
           },
           "official": {
             "management_id": "BOX-001-ITEM-0050",
@@ -20492,7 +21193,8 @@ window.ZERO_COST_INTAKE = {
             "image_source": "楽天市場",
             "verified_exact_match": false,
             "official_image_state": "比較画像候補あり / exact-match保留",
-            "note": "X0019BVI05 / CRZ YOGA / 股下24インチ / ダークグレー系レギンス は実物で確認できる。比較画像候補はあるが、色名とサイズまで 100% 同一とはまだ断定しないため、出品採用不可。"
+            "note": "X0019BVI05 / CRZ YOGA / 股下24インチ / ダークグレー系レギンス は実物で確認できる。比較画像候補はあるが、色名とサイズまで 100% 同一とはまだ断定しないため、出品採用不可。",
+            "exact_match_guard_state": "clear"
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0050",
@@ -20544,6 +21246,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "CRZ YOGA レギンス 股下24インチ ダークグレー系",
           "verified_exact_match": false,
           "official_image_state": "比較画像候補あり / exact-match保留",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -20575,7 +21278,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 15:43:51 JST",
+            "更新時刻": "2026-04-21 16:45:13 JST",
             "メモ": "name=CRZ YOGA レギンス 股下24インチ ダークグレー系 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -20667,10 +21370,14 @@ window.ZERO_COST_INTAKE = {
             "product_name": "Heated Socks",
             "barcode_primary": "",
             "product_code_type": "package_text",
-            "official_image_state": "実物のみ",
+            "official_image_state": "実物のみ / 現写真では1商品に断定不能",
             "note": "CODEにHeated Socks箱。FRONT/BACKは黒い衣類パッケージ（別商品混線）。CODE側が本命。2026-04-15商品特定分析によりprovisional登録。",
             "evidence": [
               "Heated Socks"
+            ],
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "別商品mix"
             ]
           },
           "official": {},
@@ -20705,7 +21412,11 @@ window.ZERO_COST_INTAKE = {
           "display_name": "Heated Socks",
           "product_name": "Heated Socks",
           "verified_exact_match": false,
-          "official_image_state": "実物のみ",
+          "official_image_state": "実物のみ / 現写真では1商品に断定不能",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "別商品mix"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -20810,7 +21521,8 @@ window.ZERO_COST_INTAKE = {
             "evidence": [
               "X00197BVHJ",
               "白箱"
-            ]
+            ],
+            "exact_match_guard_state": "clear"
           },
           "official": {},
           "commerce": {
@@ -20845,6 +21557,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "白箱 X00197BVHJ",
           "verified_exact_match": false,
           "official_image_state": "実物のみ",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -21089,7 +21802,8 @@ window.ZERO_COST_INTAKE = {
               "Hello Kitty",
               "50TH ANNIVERSARY",
               "ぬいぐるみ"
-            ]
+            ],
+            "exact_match_guard_state": "clear"
           },
           "official": {},
           "commerce": {
@@ -21124,6 +21838,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "Hello Kitty 50TH ANNIVERSARY ぬいぐるみ",
           "verified_exact_match": false,
           "official_image_state": "実物のみ",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -21376,7 +22091,8 @@ window.ZERO_COST_INTAKE = {
             "check_items_override": "色味ブラック / 3XL表記 / 衣類種別 / シルエット確認",
             "official_page_url": "",
             "official_image_url": "",
-            "image_source": "比較画像待ち"
+            "image_source": "比較画像待ち",
+            "exact_match_guard_state": "clear"
           },
           "official": {},
           "commerce": {
@@ -21411,6 +22127,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "Poperdision ブラック 3XL レディース衣類",
           "verified_exact_match": false,
           "official_image_state": "比較画像待ち / exact-match保留",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -21442,7 +22159,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 15:43:51 JST",
+            "更新時刻": "2026-04-21 16:45:13 JST",
             "メモ": "name=Poperdision ブラック 3XL レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -21548,7 +22265,8 @@ window.ZERO_COST_INTAKE = {
             "check_items_override": "箱デザイン / 容量表記 / 成分表記 / 日本製表記確認",
             "official_page_url": "https://atidimu.com/products/%E3%82%A2%E3%83%86%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A0-%E7%BE%8E%E5%AE%B9%E6%B6%B2-atidimu-serum",
             "official_image_url": "http://atidimu.com/cdn/shop/files/3-1.jpg?v=1759996277",
-            "image_source": "ATIDIMU公式"
+            "image_source": "ATIDIMU公式",
+            "exact_match_guard_state": "clear"
           },
           "official": {
             "management_id": "BOX-001-ITEM-0055",
@@ -21561,7 +22279,8 @@ window.ZERO_COST_INTAKE = {
             "image_source": "ATIDIMU公式",
             "verified_exact_match": false,
             "official_image_state": "比較画像候補あり / exact-match保留",
-            "note": "X001BGAPFR / ATIDIMU / 美容液 / 7種植物エキス配合 は実物で確認できる。公式候補ページはあるが、容量や外箱細部まで 100% 同一とはまだ断定しないため、出品採用不可。"
+            "note": "X001BGAPFR / ATIDIMU / 美容液 / 7種植物エキス配合 は実物で確認できる。公式候補ページはあるが、容量や外箱細部まで 100% 同一とはまだ断定しないため、出品採用不可。",
+            "exact_match_guard_state": "clear"
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0055",
@@ -21613,6 +22332,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "ATIDIMU 美容液",
           "verified_exact_match": false,
           "official_image_state": "比較画像候補あり / exact-match保留",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -21644,7 +22364,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 15:43:51 JST",
+            "更新時刻": "2026-04-21 16:45:13 JST",
             "メモ": "name=ATIDIMU 美容液 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -21742,7 +22462,8 @@ window.ZERO_COST_INTAKE = {
               "JODSONE",
               "UV LED",
               "ネイルランプ"
-            ]
+            ],
+            "exact_match_guard_state": "clear"
           },
           "official": {},
           "commerce": {
@@ -21777,6 +22498,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "JODSONE UV LEDネイルランプ",
           "verified_exact_match": false,
           "official_image_state": "実物のみ",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -21890,7 +22612,9 @@ window.ZERO_COST_INTAKE = {
             "check_items_override": "点灯確認 / タイマーボタン / 付属品有無 / 開封痕確認",
             "official_page_url": "https://www.jodsonebeauty.com/product/jodsone-120w-u-v-led-nail-lamp-for-two-hand-led-light-for-gel-with-54-pcs-light-bead-quick-curing-gel-polish-nail-dryer-suitable-salon-and-home-use-blackblack/",
             "image_source": "web candidate",
-            "official_image_url": "https://cdn.jodsonebeauty.com/cdn/10954/2025/1108/90301857d3d2d1b0c04a2b85dcefd247-1.webp"
+            "official_image_url": "https://cdn.jodsonebeauty.com/cdn/10954/2025/1108/90301857d3d2d1b0c04a2b85dcefd247-1.webp",
+            "exact_match_guard_state": "clear",
+            "official_image_local": "state/intake/official_images/BOX-001-ITEM-0057_jodsone_nail_lamp.webp"
           },
           "official": {
             "management_id": "BOX-001-ITEM-0057",
@@ -21899,7 +22623,8 @@ window.ZERO_COST_INTAKE = {
             "official_image_local": "state/intake/official_images/BOX-001-ITEM-0057_jodsone_nail_lamp.webp",
             "verified_exact_match": false,
             "official_image_state": "比較画像候補あり / exact-match保留",
-            "note": "JODSONE公式ページから比較画像を保持。外箱一致は強いが、本体現物未確認のため exact-match保留。"
+            "note": "JODSONE公式ページから比較画像を保持。外箱一致は強いが、本体現物未確認のため exact-match保留。",
+            "exact_match_guard_state": "clear"
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0057",
@@ -21999,6 +22724,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp",
           "verified_exact_match": false,
           "official_image_state": "比較画像候補あり / exact-match保留",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -22030,7 +22756,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 15:43:51 JST",
+            "更新時刻": "2026-04-21 16:45:13 JST",
             "メモ": "name=JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSNX6qATG7NwnssYkshh"
           }
         },
@@ -22115,7 +22841,8 @@ window.ZERO_COST_INTAKE = {
               "AUTOMATIC WATER DISPENSER",
               "Upgraded Stainless Steel Basin",
               "304 Stainless Steel"
-            ]
+            ],
+            "exact_match_guard_state": "clear"
           },
           "official": {},
           "commerce": {
@@ -22150,6 +22877,7 @@ window.ZERO_COST_INTAKE = {
           "product_name": "AUTOMATIC WATER DISPENSER Upgraded Stainless Steel Basin",
           "verified_exact_match": false,
           "official_image_state": "実物のみ",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",

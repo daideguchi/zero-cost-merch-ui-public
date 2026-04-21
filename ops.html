@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ja">
+<html lang="ja" data-page="ops">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -54,6 +54,26 @@
     }
     .ops-link:hover { text-decoration: underline; }
     .ops-count { font-size: 11px; color: var(--text-3); margin-bottom: 8px; }
+    .ops-boxbar {
+      display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px;
+    }
+    .ops-boxbtn {
+      padding: 6px 11px; border-radius: 999px; font-size: 11px; font-weight: 800;
+      border: 1px solid var(--border); background: var(--surface);
+      color: var(--text-2); cursor: pointer;
+    }
+    .ops-boxbtn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .ops-empty {
+      display: none;
+      padding: 18px;
+      border: 1px dashed var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      color: var(--text-3);
+      font-size: 12px;
+      text-align: center;
+      margin-top: 8px;
+    }
   </style>
 </head>
 <body>
@@ -68,7 +88,8 @@
     </nav>
   </header>
   <div class="hq-wrap">
-    <div class="section-head"><span class="dot" style="background:var(--accent)"></span>商品一覧（全58件）</div>
+    <div id="ops-section-head" class="section-head"><span class="dot" style="background:var(--accent)"></span>商品一覧（全58件）</div>
+    <div id="ops-boxbar" class="ops-boxbar"></div>
     <div class="ops-filter">
       <button class="ops-filter-btn active" data-f="all">全部 58</button>
       <button class="ops-filter-btn" data-f="blocked" style="color:var(--red)">⛔HQ差 1</button>
@@ -81,6 +102,7 @@
       <button class="ops-filter-btn" data-f="confirmed">確認済 1</button>
       <button class="ops-filter-btn" data-f="unidentified">❓未特定 2</button>
     </div>
+    <div id="ops-empty" class="ops-empty">この箱のカードはまだありません。</div>
     <div class="ops-grid">
     <div class="ops-card" data-cat="blocked">
       <div class="ops-photo-wrap"><img class="ops-photo" src="./assets/intake/BOX-001-ITEM-0002/01_FRONT_IMG_4827.jpg" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="ops-photo-placeholder" style="display:none">写真<br>なし</div></div>
@@ -781,38 +803,336 @@
     </div>
   </div>
   <div class="hq-footer"><span>スナップショット: 2026-04-15</span></div>
+  <script src="./api_config.js"></script>
   <script>
   (function(){
-    var cards = document.querySelectorAll('.ops-card');
-    var btns = document.querySelectorAll('.ops-filter-btn');
-    btns.forEach(function(btn){
-      btn.addEventListener('click', function(){
-        btns.forEach(function(b){ b.classList.remove('active'); });
-        btn.classList.add('active');
-        var f = btn.getAttribute('data-f');
-        cards.forEach(function(c){
-          c.style.display = (f==='all' || c.getAttribute('data-cat')===f) ? '' : 'none';
+    function normalizedBase(value) {
+      value = String(value || '').trim().replace(/\/$/, '');
+      if (!value || value === 'null') return '';
+      return value;
+    }
+    var appBase = normalizedBase(window.ZERO_COST_APP_BASE || window.ZERO_COST_API_BASE || '');
+    var current = normalizedBase(window.location.origin || '');
+    if (!appBase || !current || appBase === current) return;
+    var prefix = String(window.ZERO_COST_PUBLIC_PATH_PREFIX || '').trim();
+    var path = String(window.location.pathname || '/');
+    if (prefix && path.indexOf(prefix) === 0) path = path.slice(prefix.length);
+    if (!path) path = '/';
+    if (path.charAt(0) !== '/') path = '/' + path;
+    var target = new URL(path + window.location.search + window.location.hash, appBase);
+    if (target.toString() !== window.location.href) window.location.replace(target.toString());
+  })();
+  </script>
+  <script>
+    document.write('<script src="./intake_snapshot.js?fresh='
+      + encodeURIComponent(new URLSearchParams(window.location.search).get('fresh') || String(Date.now()))
+      + '"><\/script>');
+  </script>
+  <script>
+  (function(){
+    var snapshot = window.ZERO_COST_INTAKE || {};
+    var boxbar = document.getElementById('ops-boxbar');
+    var emptyEl = document.getElementById('ops-empty');
+    var headEl = document.getElementById('ops-section-head');
+    var gridEl = document.querySelector('.ops-grid');
+    var navLinks = document.querySelectorAll('.hq-nav a');
+    var btns = Array.prototype.slice.call(document.querySelectorAll('.ops-filter-btn'));
+    var labels = {
+      all: '全部',
+      blocked: '⛔HQ差',
+      split: '🔀再束ね',
+      review: '🔍審査',
+      draft: '📝準備',
+      published: '✅公開',
+      paused: '⏸取り下げ',
+      provisional: '仮特定',
+      confirmed: '確認済',
+      unidentified: '❓未特定'
+    };
+    var activeFilter = 'all';
+    var requestedMid = '';
+    var selectedBoxId = '';
+
+    function boxFromMid(mid) {
+      var match = String(mid || '').trim().toUpperCase().match(/^(BOX-[A-Z0-9]+)-ITEM-/);
+      return match ? match[1] : '';
+    }
+
+    function inferBoxLane(boxId) {
+      if (/^BOX-[A-Z]+$/i.test(String(boxId || '').trim())) return 'alphabet';
+      return 'numeric';
+    }
+
+    function boxCodeFromId(boxId) {
+      var match = String(boxId || '').trim().match(/^BOX-([A-Z]+|\d+)$/i);
+      return match ? match[1].toUpperCase() : String(boxId || '').trim().toUpperCase();
+    }
+
+    function boxDisplayLabel(boxId, rawLabel, rawLane, rawCode) {
+      var lane = String(rawLane || inferBoxLane(boxId)).toLowerCase() === 'alphabet' ? 'alphabet' : 'numeric';
+      var code = String(rawCode || boxCodeFromId(boxId) || '').trim().toUpperCase();
+      var fallback = (lane === 'alphabet' ? '英字箱 ' : '数字箱 ') + code;
+      var label = String(rawLabel || '').trim();
+      if (!label || label === boxId) return fallback;
+      if (lane === 'numeric' && /^box\s*[A-Z]+$/i.test(label)) return fallback;
+      if (lane === 'alphabet' && /^box\s*\d+$/i.test(label)) return fallback;
+      return label;
+    }
+
+    function snapshotBoxList(data) {
+      var boxes = (Array.isArray(data.boxes) && data.boxes.length) ? data.boxes.slice() : [];
+      if (!boxes.length && data.box_id) boxes = [data];
+      return boxes;
+    }
+
+    function snapshotItemName(item) {
+      return item.product_name || item.display_name || (item.commerce && item.commerce.product_name) || (item.resolved && item.resolved.product_name) || '未特定';
+    }
+
+    function snapshotStatus(item) {
+      var publishState = String(item.publish_state || (item.commerce && item.commerce.publish_state) || '').trim();
+      var identState = item.identification && item.identification.state || '';
+      var hqRes = String(item.qwen_hq_resolution || '').trim();
+      var resolvedStatus = String(item.resolved && item.resolved.resolution_status || '').trim();
+      if (hqRes === 'blocked') return { category: 'blocked', badge: 'b-red', label: 'HQ差し止め' };
+      if (hqRes === 'needs_split' || identState === 'split_required') return { category: 'split', badge: 'b-orange', label: '要再束ね' };
+      if (publishState === 'API公開済み') return { category: 'published', badge: 'b-green', label: '公開済み' };
+      if (publishState === '一時取り下げ') return { category: 'paused', badge: 'b-orange', label: '一時取り下げ' };
+      if (publishState === 'カテゴリ審査待ち') return { category: 'review', badge: 'b-yellow', label: '審査待ち' };
+      if (resolvedStatus === 'confirmed') return { category: 'confirmed', badge: 'b-green', label: '確認済み' };
+      if (resolvedStatus === 'provisional' || resolvedStatus === 'accepted_exception') return { category: 'provisional', badge: 'b-blue', label: '仮特定' };
+      if (resolvedStatus || publishState) return { category: 'draft', badge: 'b-blue', label: '出品候補' };
+      return { category: 'unidentified', badge: 'b-gray', label: '未特定' };
+    }
+
+    function firstPhotoUrl(item) {
+      var photos = item.photos || [];
+      for (var i = 0; i < photos.length; i += 1) {
+        var photo = photos[i] || {};
+        if (photo.resident_url) return photo.resident_url;
+        if (photo.url) return photo.url;
+      }
+      var slots = item.slots || [];
+      for (var j = 0; j < slots.length; j += 1) {
+        if (slots[j] && slots[j].resident_url) return slots[j].resident_url;
+      }
+      return '';
+    }
+
+    function escapeHtml(value) {
+      return String(value || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    function allCards() {
+      return Array.prototype.slice.call(document.querySelectorAll('.ops-card'));
+    }
+
+    function cardMid(card) {
+      var idEl = card.querySelector('.ops-id');
+      return idEl ? idEl.textContent.trim() : '';
+    }
+
+    function boxIdsSorted(ids) {
+      return ids.slice().sort(function(left, right) {
+        var leftLane = inferBoxLane(left);
+        var rightLane = inferBoxLane(right);
+        if (leftLane !== rightLane) return leftLane === 'numeric' ? -1 : 1;
+        return String(left).localeCompare(String(right), 'ja', { numeric: true });
+      });
+    }
+
+    function syncNavLinks() {
+      navLinks.forEach(function(link) {
+        var href = link.getAttribute('href') || '';
+        if (!href || href.indexOf('mid=') !== -1) return;
+        try {
+          var target = new URL(href, window.location.href);
+          if (selectedBoxId) target.searchParams.set('box', selectedBoxId);
+          else target.searchParams.delete('box');
+          link.setAttribute('href', target.pathname + target.search + target.hash);
+        } catch (_) {}
+      });
+    }
+
+    function updateUrl() {
+      try {
+        var params = new URLSearchParams(window.location.search);
+        if (selectedBoxId) params.set('box', selectedBoxId);
+        else params.delete('box');
+        if (requestedMid) params.set('mid', requestedMid);
+        var query = params.toString();
+        window.history.replaceState(null, '', window.location.pathname + (query ? '?' + query : ''));
+      } catch (_) {}
+    }
+
+    function annotateExistingCards() {
+      allCards().forEach(function(card) {
+        var mid = cardMid(card);
+        card.dataset.boxId = boxFromMid(mid);
+      });
+    }
+
+    function appendMissingSnapshotCards() {
+      var known = {};
+      allCards().forEach(function(card) {
+        var mid = cardMid(card);
+        if (mid) known[mid] = true;
+      });
+      snapshotBoxList(snapshot).forEach(function(box) {
+        (box.items || []).forEach(function(item) {
+          var mid = String(item.management_id || '').trim();
+          if (!mid || known[mid]) return;
+          var status = snapshotStatus(item);
+          var photoUrl = firstPhotoUrl(item);
+          var boxId = boxFromMid(mid);
+          var html = ''
+            + '<div class="ops-card" data-cat="' + escapeHtml(status.category) + '" data-box-id="' + escapeHtml(boxId) + '">'
+            + '<div class="ops-photo-wrap">'
+            + (photoUrl
+              ? '<img class="ops-photo" src="' + escapeHtml(photoUrl) + '" alt="" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'"><div class="ops-photo-placeholder" style="display:none">写真<br>なし</div>'
+              : '<div class="ops-photo-placeholder">写真<br>なし</div>')
+            + '</div>'
+            + '<div class="ops-info">'
+            + '<div class="ops-id">' + escapeHtml(mid) + '</div>'
+            + '<div class="ops-name">' + escapeHtml(snapshotItemName(item)) + '</div>'
+            + '<div class="ops-meta"><span class="badge ' + escapeHtml(status.badge) + '">' + escapeHtml(status.label) + '</span></div>'
+            + '</div>'
+            + '<a class="ops-link" href="./ops.html?box=' + encodeURIComponent(boxId) + '&mid=' + encodeURIComponent(mid) + '">詳細→</a>'
+            + '</div>';
+          gridEl.insertAdjacentHTML('beforeend', html);
+          known[mid] = true;
         });
       });
-    });
+      annotateExistingCards();
+    }
+
+    function cardMatches(card) {
+      var boxOk = !selectedBoxId || card.dataset.boxId === selectedBoxId;
+      var filterOk = activeFilter === 'all' || card.getAttribute('data-cat') === activeFilter;
+      return boxOk && filterOk;
+    }
+
+    function countForFilter(filterKey) {
+      return allCards().filter(function(card) {
+        var boxOk = !selectedBoxId || card.dataset.boxId === selectedBoxId;
+        if (!boxOk) return false;
+        return filterKey === 'all' || card.getAttribute('data-cat') === filterKey;
+      }).length;
+    }
+
+    function renderBoxButtons() {
+      var ids = {};
+      allCards().forEach(function(card) {
+        if (card.dataset.boxId) ids[card.dataset.boxId] = true;
+      });
+      var boxIds = boxIdsSorted(Object.keys(ids));
+      if (!boxIds.length) {
+        boxbar.innerHTML = '';
+        return;
+      }
+      boxbar.innerHTML = ['<button type="button" class="ops-boxbtn' + (!selectedBoxId ? ' active' : '') + '" data-box="">全部の箱</button>']
+        .concat(boxIds.map(function(boxId) {
+          var meta = (snapshotBoxList(snapshot).filter(function(box) { return String(box && box.box_id || '') === boxId; })[0]) || {};
+          var label = boxDisplayLabel(boxId, meta.box_label, meta.box_lane, meta.box_code);
+          var count = allCards().filter(function(card) { return card.dataset.boxId === boxId; }).length;
+          return '<button type="button" class="ops-boxbtn' + (selectedBoxId === boxId ? ' active' : '') + '" data-box="' + escapeHtml(boxId) + '">'
+            + escapeHtml(label) + ' ' + count + '</button>';
+        }))
+        .join('');
+      Array.prototype.slice.call(boxbar.querySelectorAll('.ops-boxbtn')).forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          selectedBoxId = String(btn.getAttribute('data-box') || '').trim().toUpperCase();
+          try {
+            if (window.localStorage) {
+              if (selectedBoxId) window.localStorage.setItem('zeroCostSelectedBox', selectedBoxId);
+              else window.localStorage.removeItem('zeroCostSelectedBox');
+            }
+          } catch (_) {}
+          updateUrl();
+          syncNavLinks();
+          applyView();
+        });
+      });
+    }
+
+    function updateHead(visibleCount) {
+      if (!headEl) return;
+      var label = selectedBoxId ? boxDisplayLabel(selectedBoxId) : '全箱';
+      headEl.innerHTML = '<span class="dot" style="background:var(--accent)"></span>商品一覧（' + escapeHtml(label) + ' / ' + visibleCount + '件）';
+    }
+
+    function updateFilterLabels() {
+      btns.forEach(function(btn) {
+        var key = btn.getAttribute('data-f') || 'all';
+        btn.textContent = (labels[key] || key) + ' ' + countForFilter(key);
+      });
+    }
+
+    function focusRequestedCard() {
+      if (!requestedMid) return;
+      var matched = null;
+      allCards().forEach(function(card) {
+        card.classList.remove('deep-linked');
+        if (cardMid(card) === requestedMid) matched = card;
+      });
+      if (matched) {
+        matched.classList.add('deep-linked');
+        matched.scrollIntoView({block: 'center'});
+      } else if (requestedMid.indexOf('-ITEM-') !== -1) {
+        var boxId = boxFromMid(requestedMid);
+        window.location.replace('./intake_cards.html?box=' + encodeURIComponent(boxId) + '&mid=' + encodeURIComponent(requestedMid));
+      }
+    }
+
+    function applyView() {
+      var visibleCount = 0;
+      allCards().forEach(function(card) {
+        var show = cardMatches(card);
+        card.style.display = show ? '' : 'none';
+        if (show) visibleCount += 1;
+      });
+      updateFilterLabels();
+      renderBoxButtons();
+      updateHead(visibleCount);
+      emptyEl.style.display = visibleCount ? 'none' : 'block';
+      focusRequestedCard();
+    }
+
     try {
       var params = new URLSearchParams(window.location.search);
-      var requestedMid = params.get('mid') || '';
-      if (requestedMid) {
-        var matched = null;
-        cards.forEach(function(card){
-          var idEl = card.querySelector('.ops-id');
-          if (idEl && idEl.textContent.trim() === requestedMid) matched = card;
-        });
-        if (matched) {
-          matched.classList.add('deep-linked');
-          matched.scrollIntoView({block: 'center'});
-        } else if (requestedMid.indexOf('-ITEM-') !== -1) {
-          var boxId = requestedMid.split('-ITEM-')[0];
-          window.location.replace('./intake_cards.html?box=' + encodeURIComponent(boxId) + '&mid=' + encodeURIComponent(requestedMid));
-        }
-      }
+      requestedMid = params.get('mid') || '';
+      selectedBoxId = String(params.get('box') || boxFromMid(requestedMid)).trim().toUpperCase();
     } catch (_) {}
+    if (!selectedBoxId) {
+      try {
+        selectedBoxId = window.localStorage ? (window.localStorage.getItem('zeroCostSelectedBox') || '') : '';
+      } catch (_) {}
+    }
+    if (selectedBoxId) {
+      try {
+        if (window.localStorage) window.localStorage.setItem('zeroCostSelectedBox', selectedBoxId);
+      } catch (_) {}
+    }
+
+    btns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        btns.forEach(function(other) { other.classList.remove('active'); });
+        btn.classList.add('active');
+        activeFilter = btn.getAttribute('data-f') || 'all';
+        applyView();
+      });
+    });
+
+    annotateExistingCards();
+    appendMissingSnapshotCards();
+    syncNavLinks();
+    updateUrl();
+    applyView();
   })();
   </script>
 </body>
