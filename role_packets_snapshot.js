@@ -1,5 +1,5 @@
 window.ZERO_COST_ROLE_PACKETS = {
-  "generated_at": "2026-04-21 23:08:53 JST",
+  "generated_at": "2026-04-21 23:17:27 JST",
   "business_name": "0円仕入れ物販事業",
   "meta": {
     "resident_url": "./roles.html",
@@ -16,7 +16,7 @@ window.ZERO_COST_ROLE_PACKETS = {
   },
   "counts": {
     "confirmed": 2,
-    "provisional": 58,
+    "provisional": 59,
     "official_image_pending": 0,
     "draft_ready": 19,
     "published": 9,
@@ -25,10 +25,10 @@ window.ZERO_COST_ROLE_PACKETS = {
     "ocr_ready": 0,
     "split_required": 21,
     "exception": 2,
-    "exact_pending": 58,
+    "exact_pending": 59,
     "official_pending": 10,
     "market_priced": 5,
-    "market_pending": 55,
+    "market_pending": 56,
     "pickup_pending": 0,
     "category_review_waiting": 1,
     "routing_total": 36,
@@ -116,15 +116,15 @@ window.ZERO_COST_ROLE_PACKETS = {
       ],
       "split_required_ids": [
         "BOX-001-ITEM-0028",
-        "BOX-001-ITEM-0040",
-        "BOX-001-ITEM-0024",
-        "BOX-001-ITEM-0043",
+        "BOX-001-ITEM-0036",
         "BOX-001-ITEM-0052",
-        "BOX-001-ITEM-0023",
-        "BOX-001-ITEM-0049",
-        "BOX-001-ITEM-0042"
+        "BOX-001-ITEM-0051",
+        "BOX-001-ITEM-0041",
+        "BOX-001-ITEM-0030",
+        "BOX-001-ITEM-0025",
+        "BOX-001-ITEM-0021"
       ],
-      "launch_prompt": "あなたは 0円仕入れ物販事業の 0円出品部長 です。\nゴール: ショップ運営を優先し、問い合わせ・公開済み監査・審査待ち・下書き待ちを各担当へ振って resident と Git の整合まで持つ\n必ず見るもの:\n- README.md\n- docs/12_ルーティン運用マニュアル.md\n- docs/14_AI担当役職と起動プロンプト集.md\n- docs/16_UI起動パケット仕様.md\n制約:\n- 100%同一確認済みでない比較画像を出品画像へ上げない\n- README・resident・Z-98・Git を最後に必ずそろえる\n必要なら次の担当へ振ってください:\n- 商品特定担当\n- 比較画像精査担当\n- 相場調査担当\n- 出品下書き担当\n- API公開担当\n- 問い合わせ対応担当\n- 集荷運用担当\n次の条件では上位AIへ引き継いでください:\n- 顧客対応が絡む時\n- 商品同一性の断定に迷う時\n- カテゴリ審査や API 異常が絡む時\nいま優先して見るID:\n- BOX-001-ITEM-0001\n- BOX-001-ITEM-0013\n- BOX-001-ITEM-0026\n- BOX-001-ITEM-0027\n- BOX-001-ITEM-0032\n- BOX-001-ITEM-0034\n- BOX-001-ITEM-0003\n- BOX-001-ITEM-0004\n写真セット組み直しが必要なID:\n- BOX-001-ITEM-0028\n- BOX-001-ITEM-0040\n- BOX-001-ITEM-0024\n- BOX-001-ITEM-0043\n- BOX-001-ITEM-0052\n- BOX-001-ITEM-0023\n- BOX-001-ITEM-0049\n- BOX-001-ITEM-0042\n今回の対象ID:\n- BOX-001-ITEM-0004\n- BOX-001-ITEM-0005\n- BOX-001-ITEM-0008\n- BOX-001-ITEM-0009\n- BOX-001-ITEM-0011\n- BOX-001-ITEM-0012\n期待する出力:\n- 今の件数\n- 次に進める商品ID\n- どの担当へ何を振るか\n- 更新した正本\n最後に resident・README・Z-98・Git をそろえてください。"
+      "launch_prompt": "あなたは 0円仕入れ物販事業の 0円出品部長 です。\nゴール: ショップ運営を優先し、問い合わせ・公開済み監査・審査待ち・下書き待ちを各担当へ振って resident と Git の整合まで持つ\n必ず見るもの:\n- README.md\n- docs/12_ルーティン運用マニュアル.md\n- docs/14_AI担当役職と起動プロンプト集.md\n- docs/16_UI起動パケット仕様.md\n制約:\n- 100%同一確認済みでない比較画像を出品画像へ上げない\n- README・resident・Z-98・Git を最後に必ずそろえる\n必要なら次の担当へ振ってください:\n- 商品特定担当\n- 比較画像精査担当\n- 相場調査担当\n- 出品下書き担当\n- API公開担当\n- 問い合わせ対応担当\n- 集荷運用担当\n次の条件では上位AIへ引き継いでください:\n- 顧客対応が絡む時\n- 商品同一性の断定に迷う時\n- カテゴリ審査や API 異常が絡む時\nいま優先して見るID:\n- BOX-001-ITEM-0001\n- BOX-001-ITEM-0013\n- BOX-001-ITEM-0026\n- BOX-001-ITEM-0027\n- BOX-001-ITEM-0032\n- BOX-001-ITEM-0034\n- BOX-001-ITEM-0003\n- BOX-001-ITEM-0004\n写真セット組み直しが必要なID:\n- BOX-001-ITEM-0028\n- BOX-001-ITEM-0036\n- BOX-001-ITEM-0052\n- BOX-001-ITEM-0051\n- BOX-001-ITEM-0041\n- BOX-001-ITEM-0030\n- BOX-001-ITEM-0025\n- BOX-001-ITEM-0021\n今回の対象ID:\n- BOX-001-ITEM-0004\n- BOX-001-ITEM-0005\n- BOX-001-ITEM-0008\n- BOX-001-ITEM-0009\n- BOX-001-ITEM-0011\n- BOX-001-ITEM-0012\n期待する出力:\n- 今の件数\n- 次に進める商品ID\n- どの担当へ何を振るか\n- 更新した正本\n最後に resident・README・Z-98・Git をそろえてください。"
     },
     {
       "role_name": "商品特定担当",
@@ -214,7 +214,7 @@ window.ZERO_COST_ROLE_PACKETS = {
       "current_counts": {
         "priced": 5,
         "market_pending": 8,
-        "provisional": 58
+        "provisional": 59
       },
       "target_ids": [
         "BOX-001-ITEM-0001",
@@ -257,7 +257,7 @@ window.ZERO_COST_ROLE_PACKETS = {
       "current_counts": {
         "draft_ready": 19,
         "confirmed": 2,
-        "provisional": 58
+        "provisional": 59
       },
       "target_ids": [
         "BOX-001-ITEM-0001",
@@ -479,7 +479,7 @@ window.ZERO_COST_ROLE_PACKETS = {
       "role_name": "低コストAI",
       "goal": "比較画像候補を集めて、同一性判断の材料だけを残す",
       "current_counts": {
-        "exact_pending": 58,
+        "exact_pending": 59,
         "official_image_pending": 0
       },
       "target_ids": [
@@ -752,8 +752,8 @@ window.ZERO_COST_ROLE_PACKETS = {
       "role_name": "低コストAI",
       "goal": "最低価格と根拠URLと調査時刻を集める",
       "current_counts": {
-        "market_pending": 55,
-        "provisional": 58,
+        "market_pending": 56,
+        "provisional": 59,
         "published": 9
       },
       "target_ids": [

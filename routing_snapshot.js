@@ -1,5 +1,5 @@
 window.ZERO_COST_ROUTING = {
-  "generated_at": "2026-04-21 23:08:40 JST",
+  "generated_at": "2026-04-21 23:17:49 JST",
   "source_generated_at": "2026-04-21 23:08:31 JST",
   "workbook_url": "https://docs.google.com/spreadsheets/d/1VjdUJavoijOkdjKtkdKy_zUcdkQqZwG0oRty57H5_lk/edit",
   "routing_tab": "94_販路配送ルーティング",
@@ -373,7 +373,7 @@ window.ZERO_COST_ROUTING = {
       {
         "tone": "blue",
         "label": "いま優先するルート",
-        "note": "BASE標準 かんたん発送 / 公式プリンタレス候補 / BASE準備可 33件 を前提に、注文画面 -> ヤマト集荷 -> 発送完了 の 1件通しを証跡化する",
+        "note": "BASE標準 かんたん発送 / 公式プリンタレス候補 / BASE準備可 17件 を前提に、注文画面 -> ヤマト集荷 -> 発送完了 の 1件通しを証跡化する",
         "href": "./routing.html"
       }
     ],
@@ -399,7 +399,7 @@ window.ZERO_COST_ROUTING = {
       {
         "tone": "blue",
         "label": "多販路下地",
-        "note": "BASE準備可 33件 / Ship&co候補 33件",
+        "note": "BASE準備可 17件 / Ship&co候補 17件",
         "href": "./routing.html"
       }
     ],
@@ -463,7 +463,7 @@ window.ZERO_COST_ROUTING = {
       "proof_done_count": 3,
       "proof_total_count": 4,
       "proof_progress_label": "3/4 完了",
-      "next_step": "BASE準備可 33件 を前提に、注文画面 -> ヤマト集荷 -> 発送完了 の 1件通しを証跡化する",
+      "next_step": "BASE準備可 17件 を前提に、注文画面 -> ヤマト集荷 -> 発送完了 の 1件通しを証跡化する",
       "href": "./routing.html"
     },
     "route_options_title": "選べる発送ルート",
@@ -574,9 +574,16 @@ window.ZERO_COST_ROUTING = {
       },
       {
         "severity": "orange",
-        "key": "26件",
+        "key": "33件",
         "title": "販路ルーティングで人確認が必要です",
-        "note": "公開可否 23件 / 画像確認 2件",
+        "note": "公開可否 15件 / 画像確認 1件",
+        "href": "./routing.html"
+      },
+      {
+        "severity": "orange",
+        "key": "8件差",
+        "title": "メルカリ公開件数の見え方に差があります",
+        "note": "routing と channel config の counts を揃える必要があります。",
         "href": "./routing.html"
       }
     ]
@@ -1438,10 +1445,10 @@ window.ZERO_COST_ROUTING = {
       "人確認": "要",
       "人確認理由": "precision guard: 別商品mix / 写真セット組み直し必要 / 内容物未確認 / 停止条件あり / Qwen HQ判断: 公開前チェック担当 / needs_split / 写真セット組み直し計画: ローカル写真セット作成済み",
       "低コストAI作業": "商品特定再調査",
-      "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す / 現ID=Zukida維持 / 0028 FRONT保留 / 0029 FRONTは car hook 側として別扱い / 0059白箱は管理表・出品判断の止めどころ確認待ち / 0060SPEEDWOXは管理表・出品判断の止めどころ確認待ち",
+      "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す / 現ID=Zukida維持 / 0028 FRONT保留 / 0029 FRONTは car hook 側として別扱い / 0059白箱は管理表・出品判断の止めどころ確認待ち / 0060SPEEDWOXは管理表・出品判断の止めどころ確認待ち / BOX-001-ITEM-0061 は管理表 / 出品判断の止めどころを決めてから正式反映",
       "ルーティング状態": "写真セット組み直し必要",
       "更新時刻": "2026-04-21 23:08:31 JST",
-      "メモ": "name=写真セット組み直し候補: Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 管理番号再分解待ち / HQレビュー済み / 新管理番号未採番 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=review_required / guard_reasons=別商品mix / 写真セット組み直し必要 / 内容物未確認 / qwen_hq=needs_split / 0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。 / 写真セット組み直しメモ=現IDは Zukida を保持。0028 FRONT は未一致の冬小物系。0029 FRONT は car hook 側として別扱い。0053 FRONT と 0052 BACK/CODE は同一白箱として視認確認済みで、0052 FRONT は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。"
+      "メモ": "name=写真セット組み直し候補: Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 管理番号再分解待ち / HQレビュー済み / 新管理番号未採番 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=review_required / guard_reasons=別商品mix / 写真セット組み直し必要 / 内容物未確認 / qwen_hq=needs_split / 0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。 / 写真セット組み直しメモ=現IDは Zukida を保持。0028 FRONT は未一致の冬小物系。0029 FRONT は car hook 側として別扱い。0053 FRONT と 0052 BACK/CODE は同一白箱として視認確認済みで、0052 FRONT は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。 / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み"
     },
     {
       "商品ID": "PRD-BOX-001-033",

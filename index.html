@@ -1005,14 +1005,14 @@
             <div class="drive-badge">1日1回確認</div>
           </div>
           <div class="drive-note">
-            1. <strong>共有フォルダを用意</strong> を押します。 2. 出たリンクを相手に送ります。 3. 相手はそのフォルダへ写真をまとめて入れるだけです。
-            フォルダ追加は不要です。通常確認は <strong>1日1回</strong>、急ぐ時だけ「今すぐ共有フォルダ確認」を使います。
+            1. <strong>共有フォルダを用意</strong> を押します。 2. 出たリンクを相手に送ります。 3. 相手はそのフォルダへ <strong>撮影順のまま</strong> 写真を入れるだけです。
+            フォルダ追加は不要です。Acer 側で <strong>時系列順 + バーコード写真を区切り</strong> にまとめます。通常確認は <strong>1日1回</strong>、急ぐ時だけ「今すぐ共有フォルダ確認」を使います。
           </div>
           <div class="drive-actions">
             <button id="drive-share-btn" class="action-link" type="button">共有フォルダを用意</button>
             <button id="drive-sync-btn" class="action-link primary" type="button">今すぐ共有フォルダ確認</button>
           </div>
-          <div id="drive-status" class="drive-status">箱を選ぶと共有フォルダを1つ用意できます。相手はそのフォルダへ写真を入れるだけです。</div>
+          <div id="drive-status" class="drive-status">箱を選ぶと共有フォルダを1つこちらで用意します。相手はそのフォルダへ撮影順のまま写真を入れるだけです。</div>
           <a id="drive-link" class="drive-link" href="#" target="_blank" rel="noreferrer noopener" hidden>共有フォルダを開く</a>
         </div>
       </div>
@@ -1475,7 +1475,7 @@
       driveShareBtn.disabled = isUploading || isDriveBusy;
       driveSyncBtn.disabled = isUploading || isDriveBusy;
       setDriveLink(storedDriveLink(box.id));
-      setDriveStatus(box.label + ' の共有フォルダを使えます。相手はそのフォルダへ写真を入れるだけです。', '');
+      setDriveStatus(box.label + ' の共有フォルダはこちらで用意します。相手はそのフォルダへ撮影順のまま写真を入れるだけです。', '');
       refreshDriveAutoStatus({ silent: true });
       if (selectedFiles.length) {
         renderSelectedFiles(selectedFiles, box);
@@ -2005,7 +2005,7 @@
       }
       return {
         tone: '',
-        text: label + ' の共有フォルダを使えます。相手はそのフォルダへ写真を入れるだけです。'
+          text: label + ' の共有フォルダはこちらで用意します。相手はそのフォルダへ撮影順のまま写真を入れるだけです。'
       };
     }
 
@@ -2071,7 +2071,7 @@
             rememberDriveLink(box.id, folderUrl);
             setDriveLink(folderUrl);
           }
-          setDriveStatus(box.label + ' の共有フォルダを用意しました。下のリンクを相手に送ってください。', 'ok');
+          setDriveStatus(box.label + ' の共有フォルダを用意しました。下のリンクを相手に送り、撮影順のまま写真を入れてもらってください。', 'ok');
         })
         .catch(function(error) {
           setDriveStatus('共有フォルダの準備に失敗しました。' + (error && error.message ? ' ' + error.message : ''), 'error');
