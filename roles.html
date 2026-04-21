@@ -492,7 +492,7 @@
         arrayOrEmpty(packet.target_ids).length ? '<span class="chip">' + arrayOrEmpty(packet.target_ids).length + ' ID</span>' : '<span class="chip">対象IDなし</span>',
         arrayOrEmpty(packet.priority_ids).length ? '<span class="chip yellow">優先 ' + arrayOrEmpty(packet.priority_ids).length + '</span>' : '',
         arrayOrEmpty(packet.blocked_ids).length ? '<span class="chip red">差し止め ' + arrayOrEmpty(packet.blocked_ids).length + '</span>' : '',
-        arrayOrEmpty(packet.split_required_ids).length ? '<span class="chip orange">要再束ね ' + arrayOrEmpty(packet.split_required_ids).length + '</span>' : ''
+        arrayOrEmpty(packet.split_required_ids).length ? '<span class="chip orange">写真セット組み直し必要 ' + arrayOrEmpty(packet.split_required_ids).length + '</span>' : ''
       ].filter(Boolean).join('');
 
       return '<details class="packet role-entry" data-type="role" data-search="' + escapeHtml([
@@ -533,7 +533,7 @@
         + '</div>'
         + (arrayOrEmpty(packet.priority_ids).length || arrayOrEmpty(packet.blocked_ids).length || arrayOrEmpty(packet.split_required_ids).length
           ? '<div class="panel-grid">'
-            + '<div class="panel"><div class="panel-title">優先 / 差し止め / 再束ね</div>'
+            + '<div class="panel"><div class="panel-title">優先 / 差し止め / 写真セット組み直し</div>'
             + '<div class="badge-row">'
             + arrayOrEmpty(packet.priority_ids).map(function(id){ return '<span class="chip yellow">' + escapeHtml(id) + '</span>'; }).join('')
             + arrayOrEmpty(packet.blocked_ids).map(function(id){ return '<span class="chip red">' + escapeHtml(id) + '</span>'; }).join('')

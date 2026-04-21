@@ -996,7 +996,7 @@
         item['AI次アクション'],
         item['メモ']
       ].join(' ');
-      return /要再束ね|再分解|needs_split|split_stage/.test(text);
+      return /写真セット組み直し必要|再分解|needs_split|split_stage/.test(text);
     }
 
     function extractName(item) {
@@ -1007,7 +1007,7 @@
 
     function badgeClass(value) {
       if (value === 'HQ差し止め') return 'b-red';
-      if (value === '要再束ね') return 'b-orange';
+      if (value === '写真セット組み直し必要') return 'b-orange';
       if (value === '審査待ち') return 'b-yellow';
       if (value === '販売中' || value === '公開済み' || value === '画像OK') return 'b-green';
       if (value === '画像同一性確認待ち' || value === '公開可否確認待ち' || value === 'カテゴリ審査待ち') return 'b-yellow';
@@ -1305,14 +1305,14 @@
     var FILTER_META = {
       all: { label: '全件', note: '今ある全ルーティング', cls: 'gray' },
       'hq-blocked': { label: 'HQ差し止め', note: '高位判断で停止中', cls: 'red' },
-      split: { label: '要再束ね', note: '再分解・再束ねが必要', cls: 'orange' },
+      split: { label: '写真セット組み直し必要', note: '再分解・写真セット組み直しが必要', cls: 'orange' },
       'image-wait': { label: '画像確認待ち', note: '画像ゲートが未完了', cls: 'yellow' },
       'publish-gate': { label: '公開可否確認待ち', note: '投入前の最終確認', cls: 'yellow' },
       review: { label: '審査待ち', note: 'カテゴリ審査などの待機', cls: 'blue' },
       live: { label: '公開済み', note: 'メルカリ本線で販売中', cls: 'green' }
     };
 
-    var STATUS_PRIORITY = ['HQ差し止め', '要再束ね', '審査待ち', '人確認待ち', '販売中'];
+    var STATUS_PRIORITY = ['HQ差し止め', '写真セット組み直し必要', '審査待ち', '人確認待ち', '販売中'];
 
     function buildCounts() {
       var tests = filterTests();

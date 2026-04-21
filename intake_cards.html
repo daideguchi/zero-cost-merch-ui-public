@@ -895,7 +895,7 @@
       var resolvedStatus = item.resolved && item.resolved.resolution_status || '';
       if (inquiryTargets[mid]) return { label: '問い合わせ', cls: 'b-red', priority: 0 };
       if (hqRes === 'blocked') return { label: 'HQ差し止め', cls: 'b-red', priority: 1 };
-      if (hqRes === 'needs_split' || identState === 'split_required') return { label: '要再束ね', cls: 'b-orange', priority: 2 };
+      if (hqRes === 'needs_split' || identState === 'split_required') return { label: '写真セット組み直し必要', cls: 'b-orange', priority: 2 };
       if (publishState === 'カテゴリ審査待ち') return { label: '審査待ち', cls: 'b-yellow', priority: 3 };
       if (publishState === '一時取り下げ') return { label: '一時取り下げ', cls: 'b-orange', priority: 4 };
       if (publishState === 'API公開済み') return { label: '公開済み', cls: 'b-green', priority: 6 };

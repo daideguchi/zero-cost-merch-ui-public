@@ -1,5 +1,5 @@
 window.ZERO_COST_MILESTONES = {
-  "generated_at": "2026-04-21 21:24:20 JST",
+  "generated_at": "2026-04-21 22:44:25 JST",
   "current_milestone_id": "m4_order_and_pickup_rail",
   "next_phase": "売れた後の発送と集荷レール",
   "milestones": [
@@ -15,7 +15,7 @@ window.ZERO_COST_MILESTONES = {
       "name": "商品特定と画像精査レール",
       "status": "in_progress",
       "progress": 7,
-      "summary": "58商品へ分解済み。要再束ね21件が主ボトルネック"
+      "summary": "58商品へ分解済み。写真セット組み直し必要21件が主ボトルネック"
     },
     {
       "id": "m3_listing_rail",
