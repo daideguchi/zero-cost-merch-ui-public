@@ -220,6 +220,188 @@
       gap: 8px;
       margin-top: 14px;
     }
+    .failure-panel {
+      margin-top: 14px;
+      padding: 14px;
+      border: 1px solid rgba(148,163,184,.26);
+      border-radius: var(--radius-lg);
+      background:
+        linear-gradient(180deg, rgba(248,250,252,.95), rgba(255,255,255,.98)),
+        var(--surface);
+      box-shadow: 0 1px 2px rgba(15,23,42,.04);
+    }
+    .failure-panel.attention {
+      border-color: rgba(185,28,28,.28);
+      background:
+        linear-gradient(180deg, rgba(254,242,242,.98), rgba(255,255,255,.99)),
+        var(--surface);
+      box-shadow: 0 10px 30px rgba(185,28,28,.08);
+    }
+    .failure-head {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: start;
+      justify-content: space-between;
+    }
+    .failure-title {
+      font-size: 15px;
+      font-weight: 900;
+      color: #0f172a;
+      letter-spacing: -.01em;
+    }
+    .failure-panel.attention .failure-title {
+      color: #991b1b;
+    }
+    .failure-summary {
+      margin-top: 6px;
+      font-size: 12px;
+      line-height: 1.75;
+      color: #475569;
+    }
+    .failure-count {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 54px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(148,163,184,.24);
+      background: #fff;
+      color: #334155;
+      font-size: 12px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+    .failure-panel.attention .failure-count {
+      border-color: rgba(185,28,28,.18);
+      background: rgba(185,28,28,.08);
+      color: #991b1b;
+    }
+    .failure-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .failure-empty {
+      padding: 12px 14px;
+      border-radius: var(--radius);
+      border: 1px dashed rgba(148,163,184,.35);
+      background: rgba(255,255,255,.78);
+      font-size: 12px;
+      color: #64748b;
+      line-height: 1.7;
+    }
+    .failure-card {
+      display: grid;
+      gap: 10px;
+      padding: 12px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(185,28,28,.14);
+      background: #fff;
+    }
+    .failure-card-top {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: start;
+      justify-content: space-between;
+    }
+    .failure-card-title {
+      font-size: 14px;
+      font-weight: 900;
+      line-height: 1.45;
+      color: #991b1b;
+    }
+    .failure-card-time {
+      font-size: 11px;
+      font-weight: 800;
+      color: #64748b;
+      white-space: nowrap;
+    }
+    .failure-message {
+      font-size: 13px;
+      line-height: 1.75;
+      color: #334155;
+    }
+    .failure-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .failure-pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 5px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(148,163,184,.22);
+      background: #f8fafc;
+      color: #334155;
+      font-size: 11px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .failure-section-title {
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      color: #991b1b;
+    }
+    .failure-details,
+    .failure-steps {
+      display: grid;
+      gap: 6px;
+    }
+    .failure-line,
+    .failure-step {
+      font-size: 12px;
+      line-height: 1.7;
+      color: #475569;
+    }
+    .failure-step strong {
+      color: #991b1b;
+    }
+    .failure-photo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 8px;
+    }
+    .failure-photo-card {
+      border: 1px solid rgba(148,163,184,.18);
+      border-radius: 12px;
+      overflow: hidden;
+      background: #f8fafc;
+    }
+    .failure-photo-link {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+    .failure-photo-thumb {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      background: #e2e8f0;
+    }
+    .failure-photo-body {
+      display: grid;
+      gap: 4px;
+      padding: 8px;
+    }
+    .failure-photo-name {
+      font-size: 11px;
+      font-weight: 800;
+      color: #0f172a;
+      line-height: 1.5;
+      word-break: break-all;
+    }
+    .failure-photo-note {
+      font-size: 10px;
+      line-height: 1.55;
+      color: #475569;
+    }
     .action-link {
       display: inline-flex;
       align-items: center;
@@ -783,6 +965,18 @@
           <a id="intake-link" class="action-link primary" href="./intake_cards.html">④⑤ 写真・AI識別へ →</a>
           <a id="ops-link" class="action-link" href="./ops.html">⑥ 出品準備 →</a>
         </div>
+        <div id="failure-panel" class="failure-panel">
+          <div class="failure-head">
+            <div>
+              <div class="failure-title">判定失敗</div>
+              <div id="failure-summary" class="failure-summary">いまの箱で保存済みの判定失敗はありません。</div>
+            </div>
+            <div id="failure-count" class="failure-count">0件</div>
+          </div>
+          <div id="failure-list" class="failure-list">
+            <div class="failure-empty">判定に失敗しても、これからは写真を保存してここへ出します。理由と次にやることをこの欄で確認できます。</div>
+          </div>
+        </div>
         <div class="drive-panel">
           <div class="drive-header">
             <div class="drive-title">別メンバー用 Google Drive 共有</div>
@@ -841,6 +1035,10 @@
     var boxSelect = document.getElementById('box-select');
     var boxNext = document.getElementById('box-next');
     var boxGrid = document.getElementById('box-grid');
+    var failurePanel = document.getElementById('failure-panel');
+    var failureSummaryEl = document.getElementById('failure-summary');
+    var failureCountEl = document.getElementById('failure-count');
+    var failureListEl = document.getElementById('failure-list');
     var intakeLink = document.getElementById('intake-link');
     var opsLink = document.getElementById('ops-link');
     var driveShareBtn = document.getElementById('drive-share-btn');
@@ -860,6 +1058,7 @@
     var isDriveBusy = false;
     var driveStatusPollTimer = 0;
     var driveStatusRequestId = 0;
+    var failureRequestId = 0;
 
     function esc(value){
       return String(value || '')
@@ -1496,6 +1695,173 @@
       return apiUrl('/api/zero-cost/drive-sync/status' + query);
     }
 
+    function intakeFailuresApiUrl(boxId, limit) {
+      var query = '?limit=' + encodeURIComponent(String(Math.max(1, num(limit) || 6)));
+      if (boxId) query += '&box_id=' + encodeURIComponent(boxId);
+      return apiUrl('/api/zero-cost/intake-failures' + query);
+    }
+
+    function appBaseUrl() {
+      var base = String(window.ZERO_COST_APP_BASE || window.ZERO_COST_API_BASE || '').trim().replace(/\/$/, '');
+      if (base && base !== 'null') return base;
+      return portalOrigin().replace(/\/$/, '');
+    }
+
+    function appAssetUrl(path) {
+      var value = String(path || '').trim();
+      if (!value) return '';
+      if (/^https?:\/\//i.test(value)) return value;
+      var normalized = value.replace(/^\.\//, '');
+      try {
+        return new URL(normalized, appBaseUrl() + '/').toString();
+      } catch (_) {
+        return value;
+      }
+    }
+
+    function formatBytes(value) {
+      var size = Math.max(0, num(value));
+      if (!size) return '0 B';
+      if (size < 1024) return size + ' B';
+      if (size < 1024 * 1024) return (size / 1024).toFixed(1) + ' KB';
+      return (size / (1024 * 1024)).toFixed(1) + ' MB';
+    }
+
+    function failureMetaPills(failure) {
+      var summary = failure.analysis_summary || {};
+      var pills = [
+        '保存済み ' + num(failure.photo_count) + '枚',
+        'コード読取 ' + num(summary.decoded_photo_count) + '枚',
+        '箱 ' + String(failure.box_label || failure.box_id || '')
+      ];
+      if (num(summary.explicit_delimiter_count) > 0) {
+        pills.push('明示バーコード ' + num(summary.explicit_delimiter_count) + '枚');
+      }
+      if (summary.pair_fallback_possible) {
+        pills.push('2枚1組で再送可');
+      } else if (num(summary.odd_photo_count) > 0) {
+        pills.push('枚数が奇数');
+      }
+      return pills.filter(Boolean);
+    }
+
+    function renderFailurePhotos(photos) {
+      var list = (photos || []).slice(0, 8);
+      if (!list.length) {
+        return '<div class="failure-empty">保存された写真情報はありません。</div>';
+      }
+      return '<div class="failure-photo-grid">' + list.map(function(photo) {
+        var src = appAssetUrl(photo.resident_url || '');
+        var noteParts = [
+          String(photo.role_hint || '').trim(),
+          String(photo.reason_hint || '').trim(),
+          photo.byte_size ? ('サイズ ' + formatBytes(photo.byte_size)) : ''
+        ].filter(Boolean);
+        return '<div class="failure-photo-card">'
+          + '<a class="failure-photo-link" href="' + esc(src) + '" target="_blank" rel="noreferrer noopener">'
+          + '<img class="failure-photo-thumb" src="' + esc(src) + '" alt="' + esc(photo.source_name || photo.stored_name || '失敗写真') + '">'
+          + '<div class="failure-photo-body">'
+          + '<div class="failure-photo-name">' + esc((photo.index || 0) + '. ' + (photo.source_name || photo.stored_name || '写真')) + '</div>'
+          + noteParts.map(function(part) { return '<div class="failure-photo-note">' + esc(part) + '</div>'; }).join('')
+          + '</div>'
+          + '</a>'
+          + '</div>';
+      }).join('') + '</div>';
+    }
+
+    function renderFailureCard(failure) {
+      var details = (failure.details || []).slice(0, 6);
+      var steps = (failure.next_steps || []).slice(0, 4);
+      var pills = failureMetaPills(failure);
+      return '<div class="failure-card">'
+        + '<div class="failure-card-top">'
+        + '<div class="failure-card-title">' + esc(failure.title || failure.reason_label || '判定失敗') + '</div>'
+        + '<div class="failure-card-time">' + esc(failure.created_at || '') + '</div>'
+        + '</div>'
+        + '<div class="failure-message">' + esc(failure.message || '') + '</div>'
+        + '<div class="failure-meta">' + pills.map(function(pill) {
+            return '<span class="failure-pill">' + esc(pill) + '</span>';
+          }).join('') + '</div>'
+        + (details.length ? '<div><div class="failure-section-title">読めなかった理由</div><div class="failure-details">'
+            + details.map(function(line) { return '<div class="failure-line">' + esc(line) + '</div>'; }).join('')
+            + '</div></div>' : '')
+        + (steps.length ? '<div><div class="failure-section-title">次にやること</div><div class="failure-steps">'
+            + steps.map(function(step, index) { return '<div class="failure-step"><strong>' + esc(index + 1) + '.</strong> ' + esc(step) + '</div>'; }).join('')
+            + '</div></div>' : '')
+        + '<div><div class="failure-section-title">保存した写真</div>' + renderFailurePhotos(failure.photos || []) + '</div>'
+        + '</div>';
+    }
+
+    function renderFailurePanel(payload) {
+      payload = payload || {};
+      var failures = Array.prototype.slice.call(payload.failures || []).filter(Boolean);
+      var box = currentBox();
+      var count = failures.length;
+      failureCountEl.textContent = count + '件';
+      failurePanel.classList.toggle('attention', count > 0);
+      if (!count) {
+        failureSummaryEl.textContent = (box ? box.label : 'この箱') + ' で保存済みの判定失敗はありません。失敗した時は理由と写真をここへ残します。';
+        failureListEl.innerHTML = '<div class="failure-empty">いまの箱では、確認待ちの判定失敗はありません。</div>';
+        return;
+      }
+      failureSummaryEl.textContent = (box ? box.label : 'この箱') + ' で判定失敗 ' + count + '件です。写真は保存済みです。理由を見て、この欄の案内どおり再送してください。';
+      failureListEl.innerHTML = failures.slice(0, 3).map(renderFailureCard).join('');
+    }
+
+    function focusFailurePanel() {
+      try {
+        failurePanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } catch (_) {
+        failurePanel.scrollIntoView();
+      }
+    }
+
+    function refreshFailureBatches(options) {
+      options = options || {};
+      var box = currentBox();
+      var requestId = ++failureRequestId;
+      var boxId = box && box.id ? box.id : '';
+      return fetch(intakeFailuresApiUrl(boxId, 6) + '&ts=' + encodeURIComponent(String(Date.now())), { cache: 'no-store' })
+        .then(function(response) {
+          return response.text().then(function(text) {
+            var data = {};
+            try {
+              data = text ? JSON.parse(text) : {};
+            } catch (_) {
+              data = {};
+            }
+            if (!response.ok || !data.ok) {
+              throw new Error((data && data.error) || ('HTTP ' + response.status));
+            }
+            return data;
+          });
+        })
+        .then(function(data) {
+          if (requestId !== failureRequestId) return null;
+          renderFailurePanel(data);
+          if (options.focus && num(data.failure_count) > 0) focusFailurePanel();
+          return data;
+        })
+        .catch(function(error) {
+          if (requestId !== failureRequestId) return null;
+          failurePanel.classList.add('attention');
+          failureCountEl.textContent = '確認不可';
+          failureSummaryEl.textContent = '判定失敗の一覧を読めません。' + (error && error.message ? ' ' + error.message : '');
+          failureListEl.innerHTML = '<div class="failure-empty">Acer 側の判定失敗一覧に接続できませんでした。しばらく待って再読み込みしてください。</div>';
+          return null;
+        });
+    }
+
+    function showImmediateFailedBatch(failedBatch) {
+      if (!failedBatch) return;
+      renderFailurePanel({
+        box_id: failedBatch.box_id || '',
+        failure_count: 1,
+        failures: [failedBatch]
+      });
+      focusFailurePanel();
+    }
+
     function assertUploadApiReady() {
       if (window.location.protocol === 'file:') {
         return Promise.reject(new Error('この画面を file:// で開いています。http://127.0.0.1:18777/merch/zero-cost/index.html か resident URL で開いてください。'));
@@ -1813,7 +2179,10 @@
               data = {};
             }
             if (!response.ok || !data.ok) {
-              throw new Error((data && data.error) || ('HTTP ' + response.status + ' / ' + text.slice(0, 120)));
+              var failure = new Error((data && data.error) || ('HTTP ' + response.status + ' / ' + text.slice(0, 120)));
+              failure.payload = data || {};
+              failure.httpStatus = response.status;
+              throw failure;
             }
             return data;
           });
@@ -1832,7 +2201,14 @@
           }, 700);
         })
         .catch(function(error) {
-          statusEl.textContent = '取り込みに失敗しました。' + (error && error.message ? ' ' + error.message : '');
+          var payload = error && error.payload ? error.payload : {};
+          if (payload.failed_batch) {
+            showImmediateFailedBatch(payload.failed_batch);
+            refreshFailureBatches({ focus: true });
+            statusEl.textContent = '判定に失敗した写真は保存しました。下の「判定失敗」で理由と写真を確認してください。';
+          } else {
+            statusEl.textContent = '取り込みに失敗しました。' + (error && error.message ? ' ' + error.message : '');
+          }
           statusEl.style.color = 'var(--red)';
           isUploading = false;
           fileInput.value = '';
@@ -2100,6 +2476,7 @@
           } catch (_) {}
         }
         renderBoxPanel();
+        refreshFailureBatches();
       });
       boxCreateBtn.addEventListener('click', openBoxModal);
       boxModalLane.addEventListener('change', updateBoxModalForm);
@@ -2134,6 +2511,7 @@
 
     renderBoxPanel();
     bindUploadZone();
+    refreshFailureBatches();
   })();
   </script>
 </body>
