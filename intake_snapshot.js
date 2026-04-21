@@ -289,7 +289,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "審査監視",
         "AI次アクション": "カテゴリ審査反映待ち",
         "ルーティング状態": "審査待ち",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り / publish_ok=カテゴリ審査待ち / draft_status=カテゴリ審査待ち / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量"
       }
     },
@@ -515,7 +515,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "実物のみで進める / 比較画像は後追い",
         "ルーティング状態": "HQ判断済み",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=保冷クーラーバッグ ネイビー ショルダー付 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / qwen_hq=actual-only固定優先 / 2026-04-21 current truth: actual-only固定。比較画像なしでも実物写真のみで進める。"
       }
     },
@@ -700,7 +700,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=YUGYUG サングラス ブラック/グレー ケース付き / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
       }
     },
@@ -958,7 +958,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=IAWNI ショルダーバッグ メッセンジャーバッグ / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMJHwgfzNjEkYfN8SMv"
       }
     },
@@ -1216,7 +1216,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=CEEN サルエルパンツ 七分丈 ワイドパンツ / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPQCYwtnC7WCswDeG37b9"
       }
     },
@@ -1582,7 +1582,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=GIOVANA Tシャツ ベージュ 2XL / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
       }
     },
@@ -1834,7 +1834,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=オナーファッション 綿100% トップス ミントグリーン 3XL / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMSqu7EDWJu3jDcTo5h"
       }
     },
@@ -2103,7 +2103,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=Hotaty ピアス 金属アレルギー対応 ギフトBOX付き / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMUTrpVNxK6fGZdtMqT"
       }
     },
@@ -2318,7 +2318,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=SHANGCHU シェフユニフォーム ブラック 4XL / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -2574,7 +2574,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=Dkieta 帽子 レディース ネックカバー付き 花柄日よけ帽子 / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMPEuG8NMB3ZieyYzHU"
       }
     },
@@ -2832,7 +2832,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=gany ガーゼハンカチ 30×30cm 10枚セット 綿100% / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPTBgBM5kND3h8AhVf4bf"
       }
     },
@@ -3034,7 +3034,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り / publish_ok=公開待ち / draft_status=公開待ち / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量"
       }
     },
@@ -3311,7 +3311,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=HAYAHARU キッズ靴下 LS4602LS / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMLyKhRCgPASDJFH2dc"
       }
     },
@@ -3497,7 +3497,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=Llink 靴下 5足セット ボーダー パステル / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
       }
     },
@@ -3681,7 +3681,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=ZERUI 靴下 5足セット パステル 蝶リボン / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
       }
     },
@@ -3880,7 +3880,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=FirstC ティアグッズ記念品ギフト オレンジ丸型ポーチ（用途要確認） / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 用途要確認 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -4065,7 +4065,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=SWEETBOY 子供パーカー ネイビー×イエロー 130 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
       }
     },
@@ -4318,7 +4318,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "停止",
         "AI次アクション": "空き板を維持",
         "ルーティング状態": "一時停止",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=ポロベア キャンバス トートバッグ POLO BEAR LAUREN / publish_ok=確認待ち / draft_status=一時取り下げ / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=一時取り下げ"
       }
     },
@@ -4507,7 +4507,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=首サポーター カバー付き グレー M HJ-GY-M / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -4865,7 +4865,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=LE BLANC フェムケアPRO 低刺激 デリケートゾーン 150mL / publish_ok=確認待ち / draft_status=下書き / image_state=調査画像取得済み / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -5526,7 +5526,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -5737,7 +5737,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=候補1枚確保 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -5944,7 +5944,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "管理番号再分解と再撮影",
         "ルーティング状態": "要再束ね",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / qwen_hq=needs_split / 0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式再束ねと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。"
       },
       "split_staging": {
@@ -6479,7 +6479,7 @@ window.ZERO_COST_INTAKE = {
         "product_name": "LEISURE WEAR ベージュ系レディース衣類",
         "barcode_primary": "X001AVZV1V",
         "product_code_type": "amazon_internal",
-        "official_image_state": "比較画像待ち / exact-match保留",
+        "official_image_state": "actual-only固定 / 比較画像なし",
         "note": "実物写真では、ベージュ系のレディース衣類パッケージ本体、前面の about an attitude to life / LEISURE WEAR 表記、コードラベル X001AVZV1V までは確認できる。具体的な商品型やブランドは断定せず、actual-only 前提で provisional に上げる。比較画像はまだ 100%同一確認できるものを確保できていないため、出品画像は実物のみで扱う。",
         "evidence": [
           "X001AVZV1V",
@@ -6493,10 +6493,23 @@ window.ZERO_COST_INTAKE = {
         "check_items_override": "色味ベージュ系 / 衣類種別 / サイズ表記不明 / ロゴ表記確認",
         "official_page_url": "",
         "official_image_url": "",
-        "image_source": "比較画像待ち",
+        "image_source": "actual-only",
         "exact_match_guard_state": "clear"
       },
-      "official": {},
+      "official": {
+        "management_id": "BOX-001-ITEM-0031",
+        "raw_id": "RAW-BOX-001-031",
+        "product_id": "PRD-BOX-001-031",
+        "draft_id": "DRF-BOX-001-031",
+        "research_id": "RES-BOX-001-031",
+        "official_page_url": "",
+        "official_image_url": "",
+        "image_source": "actual-only",
+        "verified_exact_match": false,
+        "official_image_state": "actual-only固定 / 比較画像なし",
+        "note": "X001AVZV1V / LEISURE WEAR / about an attitude to life は実物3枚で確認できるが、公開検索で100%同一確認済みにできる比較画像は確保できていない。出品画像は実物のみで扱う。",
+        "exact_match_guard_state": "clear"
+      },
       "commerce": {
         "management_id": "BOX-001-ITEM-0031",
         "raw_id": "RAW-BOX-001-031",
@@ -6528,7 +6541,7 @@ window.ZERO_COST_INTAKE = {
       "display_name": "LEISURE WEAR ベージュ系レディース衣類",
       "product_name": "LEISURE WEAR ベージュ系レディース衣類",
       "verified_exact_match": false,
-      "official_image_state": "比較画像待ち / exact-match保留",
+      "official_image_state": "actual-only固定 / 比較画像なし",
       "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
@@ -6561,8 +6574,8 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:55:30 JST",
-        "メモ": "name=LEISURE WEAR ベージュ系レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+        "更新時刻": "2026-04-21 17:49:53 JST",
+        "メモ": "name=LEISURE WEAR ベージュ系レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
     {
@@ -6823,7 +6836,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=ZUCCA CLUB リラックス リカバリー サンダル / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPTBkWndxGku2L9EVw4UP"
       }
     },
@@ -7024,7 +7037,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=jchinjia リュック メンズ ビジネスリュック 男女兼用 カジュアルバッグ おしゃれ トラベルバッグ / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -7369,7 +7382,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=Letshe ベビー前開きロンパース ピンク 110cm / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
       }
     },
@@ -7780,8 +7793,8 @@ window.ZERO_COST_INTAKE = {
         "product_name": "裏起毛トップス オフホワイト L",
         "barcode_primary": "X001AVKCQ5",
         "product_code_type": "amazon_internal",
-        "official_image_state": "比較画像待ち / exact-match保留",
-        "note": "実物写真では、オフホワイト系トップス本体、コードラベル X001AVKCQ5、裏起毛 / オフホワイト / L の表記まで確認できる。ブランドは OCR が弱く断定しない。比較画像はまだ 100%同一確認できるものを確保できていないため、actual-only 前提で provisional に上げる。出品画像は実物のみで扱う。 / X001AVKCQ5 / 裏起毛 / オフホワイト / L / トップス は実物で確認できるが、比較画像は未確保。",
+        "official_image_state": "actual-only固定 / 比較画像なし",
+        "note": "実物写真では、オフホワイト系トップス本体、コードラベル X001AVKCQ5、裏起毛 / オフホワイト / L の表記まで確認できる。ブランドは OCR が弱く断定しない。Web検索でも 100%同一確認に使える安全な比較画像候補が見つからないため、actual-only 前提で provisional に上げる。出品画像は実物のみで扱う。",
         "evidence": [
           "X001AVKCQ5",
           "裏起毛",
@@ -7795,7 +7808,7 @@ window.ZERO_COST_INTAKE = {
         "check_items_override": "色味オフホワイト / サイズL表記 / 裏起毛 / ロゴ位置 / 首元形状確認",
         "official_page_url": "",
         "official_image_url": "",
-        "image_source": "比較画像待ち",
+        "image_source": "actual-only",
         "exact_match_guard_state": "clear"
       },
       "official": {
@@ -7806,10 +7819,10 @@ window.ZERO_COST_INTAKE = {
         "research_id": "RES-BOX-001-038",
         "official_page_url": "",
         "official_image_url": "",
-        "image_source": "比較画像待ち",
+        "image_source": "actual-only",
         "verified_exact_match": false,
-        "official_image_state": "比較画像待ち / exact-match保留",
-        "note": "X001AVKCQ5 / 裏起毛 / オフホワイト / L / トップス は実物で確認できるが、比較画像は未確保。",
+        "official_image_state": "actual-only固定 / 比較画像なし",
+        "note": "X001AVKCQ5 / 裏起毛 / オフホワイト / L / トップス は実物で確認できる。Web検索でも 100%同一確認に使える安全な比較画像候補が見つからないため、比較画像は使わず実物のみで扱う。",
         "exact_match_guard_state": "clear"
       },
       "commerce": {
@@ -7843,7 +7856,7 @@ window.ZERO_COST_INTAKE = {
       "display_name": "裏起毛トップス オフホワイト L",
       "product_name": "裏起毛トップス オフホワイト L",
       "verified_exact_match": false,
-      "official_image_state": "比較画像待ち / exact-match保留",
+      "official_image_state": "actual-only固定 / 比較画像なし",
       "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
@@ -7876,7 +7889,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=裏起毛トップス オフホワイト L / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -8427,18 +8440,32 @@ window.ZERO_COST_INTAKE = {
         "management_id": "BOX-001-ITEM-0042",
         "resolution_status": "provisional",
         "product_name": "NEEDLY Sleeping Lip Mask 10ml",
-        "barcode_primary": "",
-        "product_code_type": "package_text",
+        "barcode_primary": "X001B1RSSJ",
+        "product_code_type": "amazon_internal",
         "official_image_state": "actual-only固定 / 比較画像なし",
-        "note": "FRONT は箱側面ラベル、BACK は表面、CODE は成分面で、3枚とも NEEDLY Sleeping lip mask 10ml の同一箱を示している。混線ではない。比較画像は未確保のため、actual-only の provisional で扱う。",
+        "note": "FRONT は箱側面ラベル、BACK は X001B1RSSJ / NEEDLY 表記、CODE は Sleeping lip mask / 10ml 表記で、3枚とも NEEDLY Sleeping lip mask 10ml の同一箱を示している。混線ではない。比較画像は未確保のため、actual-only の provisional で扱う。",
         "evidence": [
+          "X001B1RSSJ",
           "NEEDLY",
           "Sleeping Lip Mask",
           "10ml"
         ],
         "exact_match_guard_state": "clear"
       },
-      "official": {},
+      "official": {
+        "management_id": "BOX-001-ITEM-0042",
+        "raw_id": "RAW-BOX-001-042",
+        "product_id": "PRD-BOX-001-042",
+        "draft_id": "DRF-BOX-001-042",
+        "research_id": "RES-BOX-001-042",
+        "official_page_url": "",
+        "official_image_url": "",
+        "image_source": "actual-only",
+        "verified_exact_match": false,
+        "official_image_state": "actual-only固定 / 比較画像なし",
+        "note": "X001B1RSSJ / NEEDLY / Sleeping lip mask / 10ml は実物3枚で確認できる。比較画像は未確保のため、出品画像は実物のみで扱う。",
+        "exact_match_guard_state": "clear"
+      },
       "commerce": {
         "management_id": "BOX-001-ITEM-0042",
         "raw_id": "RAW-BOX-001-042",
@@ -8448,8 +8475,8 @@ window.ZERO_COST_INTAKE = {
         "product_name": "NEEDLY Sleeping Lip Mask 10ml",
         "brand": "",
         "category": "",
-        "barcode_primary": "",
-        "product_code_type": "package_text",
+        "barcode_primary": "X001B1RSSJ",
+        "product_code_type": "amazon_internal",
         "listing_title": "NEEDLY Sleeping Lip Mask 10ml",
         "listing_price": "",
         "market_floor_price": "",
@@ -8982,7 +9009,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=ロゴ刺繍ベースボールキャップ ブラック系 / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -9175,7 +9202,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=ホワイト レディーストップス M / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -9266,7 +9293,7 @@ window.ZERO_COST_INTAKE = {
         "product_name": "高視認性安全ベスト 蛍光イエロー",
         "barcode_primary": "X0019A7Y7H",
         "product_code_type": "amazon_internal",
-        "official_image_state": "比較画像待ち / exact-match保留",
+        "official_image_state": "actual-only固定 / 比較画像なし",
         "note": "コードラベルに X0019A7Y7H / 蛍光イエロー / 新品 が読める。実物は反射材付きの高視認性安全ベストで一致するため provisional に上げる。比較画像はまだ 100%同一確認できるものを確保できていないため、出品画像は実物のみで扱う。 / 蛍光イエローの高視認性安全ベストであることまでは実物とコードラベルで一致する。比較画像はまだ 100%同一確認できるものを確保できていないため、出品採用不可。",
         "evidence": [
           "X0019A7Y7H",
@@ -9281,7 +9308,7 @@ window.ZERO_COST_INTAKE = {
         "check_items_override": "反射帯位置 / サイズ表記 / ポケット有無 / 留め具仕様確認",
         "official_page_url": "",
         "official_image_url": "",
-        "image_source": "比較画像待ち",
+        "image_source": "actual-only",
         "exact_match_guard_state": "clear"
       },
       "official": {
@@ -9362,8 +9389,8 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:55:30 JST",
-        "メモ": "name=高視認性安全ベスト 蛍光イエロー / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+        "更新時刻": "2026-04-21 17:49:53 JST",
+        "メモ": "name=高視認性安全ベスト 蛍光イエロー / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
     {
@@ -9449,32 +9476,52 @@ window.ZERO_COST_INTAKE = {
       "resolved": {
         "management_id": "BOX-001-ITEM-0048",
         "resolution_status": "provisional",
-        "product_name": "高視認性安全ベスト 蛍光イエロー",
-        "barcode_primary": "X0019A7Y7H",
+        "product_name": "VIHFBB トートバッグ 40g 花柄系",
+        "barcode_primary": "X00184OJV3",
         "product_code_type": "amazon_internal",
-        "official_image_state": "actual-only固定 / 比較画像なし",
-        "note": "FRONT/BACK/CODE の3枚で蛍光イエローの高視認性安全ベスト本体と X0019A7Y7H / CNSS161 / ネオンイエロー のラベルが一致する。0047 と同系統の重複候補。比較画像は未確保のため、actual-only の provisional で扱う。",
+        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "note": "FRONT は 0047 と同系統の蛍光イエロー安全ベストだが、BACK/CODE は X00184OJV3 / [VIHFBB] トートバッグ（40グラム）と花柄系布製品で別商品。現写真では1商品に断定不能のため、VIHFBB トートバッグ側の provisional に留め、公開候補へ混ぜない。",
         "evidence": [
-          "X0019A7Y7H",
-          "高視認性安全ベスト",
-          "ネオンイエロー",
-          "CNSS161"
+          "X00184OJV3",
+          "VIHFBB",
+          "トートバッグ",
+          "40グラム",
+          "花柄系布製品"
         ],
-        "exact_match_guard_state": "clear"
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "別商品mix"
+        ]
       },
-      "official": {},
+      "official": {
+        "management_id": "BOX-001-ITEM-0048",
+        "raw_id": "RAW-BOX-001-048",
+        "product_id": "PRD-BOX-001-048",
+        "draft_id": "DRF-BOX-001-048",
+        "research_id": "RES-BOX-001-048",
+        "official_page_url": "",
+        "official_image_url": "",
+        "image_source": "actual-only",
+        "verified_exact_match": false,
+        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "note": "FRONT は 0047 と同系統の蛍光イエロー安全ベスト、BACK/CODE は X00184OJV3 / [VIHFBB] トートバッグ（40グラム）の花柄系布製品で別商品。現写真では1商品に断定不能のため比較画像は使わず、公開停止とする。",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "別商品mix"
+        ]
+      },
       "commerce": {
         "management_id": "BOX-001-ITEM-0048",
         "raw_id": "RAW-BOX-001-048",
         "product_id": "PRD-BOX-001-048",
         "draft_id": "DRF-BOX-001-048",
         "research_id": "RES-BOX-001-048",
-        "product_name": "高視認性安全ベスト 蛍光イエロー",
+        "product_name": "VIHFBB トートバッグ 40g 花柄系",
         "brand": "",
         "category": "",
-        "barcode_primary": "X0019A7Y7H",
+        "barcode_primary": "X00184OJV3",
         "product_code_type": "amazon_internal",
-        "listing_title": "高視認性安全ベスト 蛍光イエロー",
+        "listing_title": "VIHFBB トートバッグ 40g 花柄系",
         "listing_price": "",
         "market_floor_price": "",
         "market_floor_state": "未調査",
@@ -9491,11 +9538,14 @@ window.ZERO_COST_INTAKE = {
       },
       "comparison_images": [],
       "reference_images": [],
-      "display_name": "高視認性安全ベスト 蛍光イエロー",
-      "product_name": "高視認性安全ベスト 蛍光イエロー",
+      "display_name": "VIHFBB トートバッグ 40g 花柄系",
+      "product_name": "VIHFBB トートバッグ 40g 花柄系",
       "verified_exact_match": false,
-      "official_image_state": "actual-only固定 / 比較画像なし",
-      "exact_match_guard_state": "clear",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "別商品mix"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -9596,34 +9646,52 @@ window.ZERO_COST_INTAKE = {
       "resolved": {
         "management_id": "BOX-001-ITEM-0049",
         "resolution_status": "provisional",
-        "product_name": "花柄シュシュセット",
-        "barcode_primary": "",
-        "product_code_type": "actual_only",
+        "product_name": "SYM002 ライトグレー XL 長袖衣類",
+        "barcode_primary": "X00147IEGF",
+        "product_code_type": "amazon_internal",
         "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
-        "note": "FRONT/BACK の2枚で花柄シュシュ束の実物が一致。一方 CODE は X00147IEGF のグレー衣類ラベルで別商品。さらにシュシュ側ラベルも tote bag と誤記されているため採用しない。現写真では1商品に断定不能のため、シュシュ側を provisional に留める。",
+        "note": "FRONT は X00184OJV3 / [VIHFBB] トートバッグ側の花柄布製品だが、BACK/CODE は SYM002-Lightgray-XL / X00147IEGF のライトグレー長袖衣類で一致する。現写真では1商品に断定不能のため、ライトグレー長袖衣類側の provisional に留め、公開候補へ混ぜない。",
         "evidence": [
-          "花柄",
-          "シュシュ",
-          "セット"
+          "SYM002-Lightgray-XL",
+          "X00147IEGF",
+          "ライトグレー",
+          "XL",
+          "長袖衣類"
         ],
         "exact_match_guard_state": "review_required",
         "exact_match_guard_reasons": [
           "別商品mix"
         ]
       },
-      "official": {},
+      "official": {
+        "management_id": "BOX-001-ITEM-0049",
+        "raw_id": "RAW-BOX-001-049",
+        "product_id": "PRD-BOX-001-049",
+        "draft_id": "DRF-BOX-001-049",
+        "research_id": "RES-BOX-001-049",
+        "official_page_url": "",
+        "official_image_url": "",
+        "image_source": "actual-only",
+        "verified_exact_match": false,
+        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "note": "FRONT は X00184OJV3 / [VIHFBB] トートバッグ側の花柄布製品、BACK/CODE は SYM002-Lightgray-XL / X00147IEGF のライトグレー長袖衣類で別商品。現写真では1商品に断定不能のため比較画像は使わず、公開停止とする。",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "別商品mix"
+        ]
+      },
       "commerce": {
         "management_id": "BOX-001-ITEM-0049",
         "raw_id": "RAW-BOX-001-049",
         "product_id": "PRD-BOX-001-049",
         "draft_id": "DRF-BOX-001-049",
         "research_id": "RES-BOX-001-049",
-        "product_name": "花柄シュシュセット",
+        "product_name": "SYM002 ライトグレー XL 長袖衣類",
         "brand": "",
         "category": "",
-        "barcode_primary": "",
-        "product_code_type": "actual_only",
-        "listing_title": "花柄シュシュセット",
+        "barcode_primary": "X00147IEGF",
+        "product_code_type": "amazon_internal",
+        "listing_title": "SYM002 ライトグレー XL 長袖衣類",
         "listing_price": "",
         "market_floor_price": "",
         "market_floor_state": "未調査",
@@ -9640,8 +9708,8 @@ window.ZERO_COST_INTAKE = {
       },
       "comparison_images": [],
       "reference_images": [],
-      "display_name": "花柄シュシュセット",
-      "product_name": "花柄シュシュセット",
+      "display_name": "SYM002 ライトグレー XL 長袖衣類",
+      "product_name": "SYM002 ライトグレー XL 長袖衣類",
       "verified_exact_match": false,
       "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
       "exact_match_guard_state": "review_required",
@@ -9865,7 +9933,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=CRZ YOGA レギンス 股下24インチ ダークグレー系 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -10774,7 +10842,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=Poperdision ブラック 3XL レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -10988,7 +11056,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=ATIDIMU 美容液 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / exact-match保留 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -11397,7 +11465,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 16:55:30 JST",
+        "更新時刻": "2026-04-21 17:49:53 JST",
         "メモ": "name=JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSNX6qATG7NwnssYkshh"
       }
     },
@@ -11485,7 +11553,20 @@ window.ZERO_COST_INTAKE = {
         ],
         "exact_match_guard_state": "clear"
       },
-      "official": {},
+      "official": {
+        "management_id": "BOX-001-ITEM-0058",
+        "raw_id": "RAW-BOX-001-058",
+        "product_id": "PRD-BOX-001-058",
+        "draft_id": "DRF-BOX-001-058",
+        "research_id": "RES-BOX-001-058",
+        "official_page_url": "",
+        "official_image_url": "",
+        "image_source": "actual-only",
+        "verified_exact_match": false,
+        "official_image_state": "actual-only固定 / 比較画像なし",
+        "note": "FRONT/BACK の2枚で AUTOMATIC WATER DISPENSER / Upgraded Stainless Steel Basin / 304 Stainless Steel の箱表示が一致する。CODE 写真はないが、現写真だけで自動給水器の箱と判断できるため、比較画像なしの actual-only で扱う。",
+        "exact_match_guard_state": "clear"
+      },
       "commerce": {
         "management_id": "BOX-001-ITEM-0058",
         "raw_id": "RAW-BOX-001-058",
@@ -11834,7 +11915,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "審査監視",
             "AI次アクション": "カテゴリ審査反映待ち",
             "ルーティング状態": "審査待ち",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り / publish_ok=カテゴリ審査待ち / draft_status=カテゴリ審査待ち / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量"
           }
         },
@@ -12060,7 +12141,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "実物のみで進める / 比較画像は後追い",
             "ルーティング状態": "HQ判断済み",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=保冷クーラーバッグ ネイビー ショルダー付 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / qwen_hq=actual-only固定優先 / 2026-04-21 current truth: actual-only固定。比較画像なしでも実物写真のみで進める。"
           }
         },
@@ -12245,7 +12326,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=YUGYUG サングラス ブラック/グレー ケース付き / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
           }
         },
@@ -12503,7 +12584,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=IAWNI ショルダーバッグ メッセンジャーバッグ / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMJHwgfzNjEkYfN8SMv"
           }
         },
@@ -12761,7 +12842,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=CEEN サルエルパンツ 七分丈 ワイドパンツ / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPQCYwtnC7WCswDeG37b9"
           }
         },
@@ -13127,7 +13208,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=GIOVANA Tシャツ ベージュ 2XL / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
           }
         },
@@ -13379,7 +13460,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=オナーファッション 綿100% トップス ミントグリーン 3XL / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMSqu7EDWJu3jDcTo5h"
           }
         },
@@ -13648,7 +13729,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=Hotaty ピアス 金属アレルギー対応 ギフトBOX付き / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMUTrpVNxK6fGZdtMqT"
           }
         },
@@ -13863,7 +13944,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=SHANGCHU シェフユニフォーム ブラック 4XL / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -14119,7 +14200,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=Dkieta 帽子 レディース ネックカバー付き 花柄日よけ帽子 / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMPEuG8NMB3ZieyYzHU"
           }
         },
@@ -14377,7 +14458,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=gany ガーゼハンカチ 30×30cm 10枚セット 綿100% / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPTBgBM5kND3h8AhVf4bf"
           }
         },
@@ -14579,7 +14660,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り / publish_ok=公開待ち / draft_status=公開待ち / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量"
           }
         },
@@ -14856,7 +14937,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=HAYAHARU キッズ靴下 LS4602LS / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMLyKhRCgPASDJFH2dc"
           }
         },
@@ -15042,7 +15123,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=Llink 靴下 5足セット ボーダー パステル / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
           }
         },
@@ -15226,7 +15307,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=ZERUI 靴下 5足セット パステル 蝶リボン / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
           }
         },
@@ -15425,7 +15506,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=FirstC ティアグッズ記念品ギフト オレンジ丸型ポーチ（用途要確認） / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 用途要確認 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -15610,7 +15691,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=SWEETBOY 子供パーカー ネイビー×イエロー 130 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
           }
         },
@@ -15863,7 +15944,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "停止",
             "AI次アクション": "空き板を維持",
             "ルーティング状態": "一時停止",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=ポロベア キャンバス トートバッグ POLO BEAR LAUREN / publish_ok=確認待ち / draft_status=一時取り下げ / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=一時取り下げ"
           }
         },
@@ -16052,7 +16133,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=首サポーター カバー付き グレー M HJ-GY-M / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -16410,7 +16491,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=LE BLANC フェムケアPRO 低刺激 デリケートゾーン 150mL / publish_ok=確認待ち / draft_status=下書き / image_state=調査画像取得済み / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -17071,7 +17152,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -17282,7 +17363,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=候補1枚確保 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -17489,7 +17570,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "管理番号再分解と再撮影",
             "ルーティング状態": "要再束ね",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / qwen_hq=needs_split / 0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式再束ねと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。"
           },
           "split_staging": {
@@ -18024,7 +18105,7 @@ window.ZERO_COST_INTAKE = {
             "product_name": "LEISURE WEAR ベージュ系レディース衣類",
             "barcode_primary": "X001AVZV1V",
             "product_code_type": "amazon_internal",
-            "official_image_state": "比較画像待ち / exact-match保留",
+            "official_image_state": "actual-only固定 / 比較画像なし",
             "note": "実物写真では、ベージュ系のレディース衣類パッケージ本体、前面の about an attitude to life / LEISURE WEAR 表記、コードラベル X001AVZV1V までは確認できる。具体的な商品型やブランドは断定せず、actual-only 前提で provisional に上げる。比較画像はまだ 100%同一確認できるものを確保できていないため、出品画像は実物のみで扱う。",
             "evidence": [
               "X001AVZV1V",
@@ -18038,10 +18119,23 @@ window.ZERO_COST_INTAKE = {
             "check_items_override": "色味ベージュ系 / 衣類種別 / サイズ表記不明 / ロゴ表記確認",
             "official_page_url": "",
             "official_image_url": "",
-            "image_source": "比較画像待ち",
+            "image_source": "actual-only",
             "exact_match_guard_state": "clear"
           },
-          "official": {},
+          "official": {
+            "management_id": "BOX-001-ITEM-0031",
+            "raw_id": "RAW-BOX-001-031",
+            "product_id": "PRD-BOX-001-031",
+            "draft_id": "DRF-BOX-001-031",
+            "research_id": "RES-BOX-001-031",
+            "official_page_url": "",
+            "official_image_url": "",
+            "image_source": "actual-only",
+            "verified_exact_match": false,
+            "official_image_state": "actual-only固定 / 比較画像なし",
+            "note": "X001AVZV1V / LEISURE WEAR / about an attitude to life は実物3枚で確認できるが、公開検索で100%同一確認済みにできる比較画像は確保できていない。出品画像は実物のみで扱う。",
+            "exact_match_guard_state": "clear"
+          },
           "commerce": {
             "management_id": "BOX-001-ITEM-0031",
             "raw_id": "RAW-BOX-001-031",
@@ -18073,7 +18167,7 @@ window.ZERO_COST_INTAKE = {
           "display_name": "LEISURE WEAR ベージュ系レディース衣類",
           "product_name": "LEISURE WEAR ベージュ系レディース衣類",
           "verified_exact_match": false,
-          "official_image_state": "比較画像待ち / exact-match保留",
+          "official_image_state": "actual-only固定 / 比較画像なし",
           "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
@@ -18106,8 +18200,8 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:55:30 JST",
-            "メモ": "name=LEISURE WEAR ベージュ系レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+            "更新時刻": "2026-04-21 17:49:53 JST",
+            "メモ": "name=LEISURE WEAR ベージュ系レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
         {
@@ -18368,7 +18462,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=ZUCCA CLUB リラックス リカバリー サンダル / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPTBkWndxGku2L9EVw4UP"
           }
         },
@@ -18569,7 +18663,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=jchinjia リュック メンズ ビジネスリュック 男女兼用 カジュアルバッグ おしゃれ トラベルバッグ / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -18914,7 +19008,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=Letshe ベビー前開きロンパース ピンク 110cm / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
           }
         },
@@ -19325,8 +19419,8 @@ window.ZERO_COST_INTAKE = {
             "product_name": "裏起毛トップス オフホワイト L",
             "barcode_primary": "X001AVKCQ5",
             "product_code_type": "amazon_internal",
-            "official_image_state": "比較画像待ち / exact-match保留",
-            "note": "実物写真では、オフホワイト系トップス本体、コードラベル X001AVKCQ5、裏起毛 / オフホワイト / L の表記まで確認できる。ブランドは OCR が弱く断定しない。比較画像はまだ 100%同一確認できるものを確保できていないため、actual-only 前提で provisional に上げる。出品画像は実物のみで扱う。 / X001AVKCQ5 / 裏起毛 / オフホワイト / L / トップス は実物で確認できるが、比較画像は未確保。",
+            "official_image_state": "actual-only固定 / 比較画像なし",
+            "note": "実物写真では、オフホワイト系トップス本体、コードラベル X001AVKCQ5、裏起毛 / オフホワイト / L の表記まで確認できる。ブランドは OCR が弱く断定しない。Web検索でも 100%同一確認に使える安全な比較画像候補が見つからないため、actual-only 前提で provisional に上げる。出品画像は実物のみで扱う。",
             "evidence": [
               "X001AVKCQ5",
               "裏起毛",
@@ -19340,7 +19434,7 @@ window.ZERO_COST_INTAKE = {
             "check_items_override": "色味オフホワイト / サイズL表記 / 裏起毛 / ロゴ位置 / 首元形状確認",
             "official_page_url": "",
             "official_image_url": "",
-            "image_source": "比較画像待ち",
+            "image_source": "actual-only",
             "exact_match_guard_state": "clear"
           },
           "official": {
@@ -19351,10 +19445,10 @@ window.ZERO_COST_INTAKE = {
             "research_id": "RES-BOX-001-038",
             "official_page_url": "",
             "official_image_url": "",
-            "image_source": "比較画像待ち",
+            "image_source": "actual-only",
             "verified_exact_match": false,
-            "official_image_state": "比較画像待ち / exact-match保留",
-            "note": "X001AVKCQ5 / 裏起毛 / オフホワイト / L / トップス は実物で確認できるが、比較画像は未確保。",
+            "official_image_state": "actual-only固定 / 比較画像なし",
+            "note": "X001AVKCQ5 / 裏起毛 / オフホワイト / L / トップス は実物で確認できる。Web検索でも 100%同一確認に使える安全な比較画像候補が見つからないため、比較画像は使わず実物のみで扱う。",
             "exact_match_guard_state": "clear"
           },
           "commerce": {
@@ -19388,7 +19482,7 @@ window.ZERO_COST_INTAKE = {
           "display_name": "裏起毛トップス オフホワイト L",
           "product_name": "裏起毛トップス オフホワイト L",
           "verified_exact_match": false,
-          "official_image_state": "比較画像待ち / exact-match保留",
+          "official_image_state": "actual-only固定 / 比較画像なし",
           "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
@@ -19421,7 +19515,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=裏起毛トップス オフホワイト L / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -19972,18 +20066,32 @@ window.ZERO_COST_INTAKE = {
             "management_id": "BOX-001-ITEM-0042",
             "resolution_status": "provisional",
             "product_name": "NEEDLY Sleeping Lip Mask 10ml",
-            "barcode_primary": "",
-            "product_code_type": "package_text",
+            "barcode_primary": "X001B1RSSJ",
+            "product_code_type": "amazon_internal",
             "official_image_state": "actual-only固定 / 比較画像なし",
-            "note": "FRONT は箱側面ラベル、BACK は表面、CODE は成分面で、3枚とも NEEDLY Sleeping lip mask 10ml の同一箱を示している。混線ではない。比較画像は未確保のため、actual-only の provisional で扱う。",
+            "note": "FRONT は箱側面ラベル、BACK は X001B1RSSJ / NEEDLY 表記、CODE は Sleeping lip mask / 10ml 表記で、3枚とも NEEDLY Sleeping lip mask 10ml の同一箱を示している。混線ではない。比較画像は未確保のため、actual-only の provisional で扱う。",
             "evidence": [
+              "X001B1RSSJ",
               "NEEDLY",
               "Sleeping Lip Mask",
               "10ml"
             ],
             "exact_match_guard_state": "clear"
           },
-          "official": {},
+          "official": {
+            "management_id": "BOX-001-ITEM-0042",
+            "raw_id": "RAW-BOX-001-042",
+            "product_id": "PRD-BOX-001-042",
+            "draft_id": "DRF-BOX-001-042",
+            "research_id": "RES-BOX-001-042",
+            "official_page_url": "",
+            "official_image_url": "",
+            "image_source": "actual-only",
+            "verified_exact_match": false,
+            "official_image_state": "actual-only固定 / 比較画像なし",
+            "note": "X001B1RSSJ / NEEDLY / Sleeping lip mask / 10ml は実物3枚で確認できる。比較画像は未確保のため、出品画像は実物のみで扱う。",
+            "exact_match_guard_state": "clear"
+          },
           "commerce": {
             "management_id": "BOX-001-ITEM-0042",
             "raw_id": "RAW-BOX-001-042",
@@ -19993,8 +20101,8 @@ window.ZERO_COST_INTAKE = {
             "product_name": "NEEDLY Sleeping Lip Mask 10ml",
             "brand": "",
             "category": "",
-            "barcode_primary": "",
-            "product_code_type": "package_text",
+            "barcode_primary": "X001B1RSSJ",
+            "product_code_type": "amazon_internal",
             "listing_title": "NEEDLY Sleeping Lip Mask 10ml",
             "listing_price": "",
             "market_floor_price": "",
@@ -20527,7 +20635,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=ロゴ刺繍ベースボールキャップ ブラック系 / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -20720,7 +20828,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=ホワイト レディーストップス M / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -20811,7 +20919,7 @@ window.ZERO_COST_INTAKE = {
             "product_name": "高視認性安全ベスト 蛍光イエロー",
             "barcode_primary": "X0019A7Y7H",
             "product_code_type": "amazon_internal",
-            "official_image_state": "比較画像待ち / exact-match保留",
+            "official_image_state": "actual-only固定 / 比較画像なし",
             "note": "コードラベルに X0019A7Y7H / 蛍光イエロー / 新品 が読める。実物は反射材付きの高視認性安全ベストで一致するため provisional に上げる。比較画像はまだ 100%同一確認できるものを確保できていないため、出品画像は実物のみで扱う。 / 蛍光イエローの高視認性安全ベストであることまでは実物とコードラベルで一致する。比較画像はまだ 100%同一確認できるものを確保できていないため、出品採用不可。",
             "evidence": [
               "X0019A7Y7H",
@@ -20826,7 +20934,7 @@ window.ZERO_COST_INTAKE = {
             "check_items_override": "反射帯位置 / サイズ表記 / ポケット有無 / 留め具仕様確認",
             "official_page_url": "",
             "official_image_url": "",
-            "image_source": "比較画像待ち",
+            "image_source": "actual-only",
             "exact_match_guard_state": "clear"
           },
           "official": {
@@ -20907,8 +21015,8 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:55:30 JST",
-            "メモ": "name=高視認性安全ベスト 蛍光イエロー / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+            "更新時刻": "2026-04-21 17:49:53 JST",
+            "メモ": "name=高視認性安全ベスト 蛍光イエロー / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
         {
@@ -20994,32 +21102,52 @@ window.ZERO_COST_INTAKE = {
           "resolved": {
             "management_id": "BOX-001-ITEM-0048",
             "resolution_status": "provisional",
-            "product_name": "高視認性安全ベスト 蛍光イエロー",
-            "barcode_primary": "X0019A7Y7H",
+            "product_name": "VIHFBB トートバッグ 40g 花柄系",
+            "barcode_primary": "X00184OJV3",
             "product_code_type": "amazon_internal",
-            "official_image_state": "actual-only固定 / 比較画像なし",
-            "note": "FRONT/BACK/CODE の3枚で蛍光イエローの高視認性安全ベスト本体と X0019A7Y7H / CNSS161 / ネオンイエロー のラベルが一致する。0047 と同系統の重複候補。比較画像は未確保のため、actual-only の provisional で扱う。",
+            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "note": "FRONT は 0047 と同系統の蛍光イエロー安全ベストだが、BACK/CODE は X00184OJV3 / [VIHFBB] トートバッグ（40グラム）と花柄系布製品で別商品。現写真では1商品に断定不能のため、VIHFBB トートバッグ側の provisional に留め、公開候補へ混ぜない。",
             "evidence": [
-              "X0019A7Y7H",
-              "高視認性安全ベスト",
-              "ネオンイエロー",
-              "CNSS161"
+              "X00184OJV3",
+              "VIHFBB",
+              "トートバッグ",
+              "40グラム",
+              "花柄系布製品"
             ],
-            "exact_match_guard_state": "clear"
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "別商品mix"
+            ]
           },
-          "official": {},
+          "official": {
+            "management_id": "BOX-001-ITEM-0048",
+            "raw_id": "RAW-BOX-001-048",
+            "product_id": "PRD-BOX-001-048",
+            "draft_id": "DRF-BOX-001-048",
+            "research_id": "RES-BOX-001-048",
+            "official_page_url": "",
+            "official_image_url": "",
+            "image_source": "actual-only",
+            "verified_exact_match": false,
+            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "note": "FRONT は 0047 と同系統の蛍光イエロー安全ベスト、BACK/CODE は X00184OJV3 / [VIHFBB] トートバッグ（40グラム）の花柄系布製品で別商品。現写真では1商品に断定不能のため比較画像は使わず、公開停止とする。",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "別商品mix"
+            ]
+          },
           "commerce": {
             "management_id": "BOX-001-ITEM-0048",
             "raw_id": "RAW-BOX-001-048",
             "product_id": "PRD-BOX-001-048",
             "draft_id": "DRF-BOX-001-048",
             "research_id": "RES-BOX-001-048",
-            "product_name": "高視認性安全ベスト 蛍光イエロー",
+            "product_name": "VIHFBB トートバッグ 40g 花柄系",
             "brand": "",
             "category": "",
-            "barcode_primary": "X0019A7Y7H",
+            "barcode_primary": "X00184OJV3",
             "product_code_type": "amazon_internal",
-            "listing_title": "高視認性安全ベスト 蛍光イエロー",
+            "listing_title": "VIHFBB トートバッグ 40g 花柄系",
             "listing_price": "",
             "market_floor_price": "",
             "market_floor_state": "未調査",
@@ -21036,11 +21164,14 @@ window.ZERO_COST_INTAKE = {
           },
           "comparison_images": [],
           "reference_images": [],
-          "display_name": "高視認性安全ベスト 蛍光イエロー",
-          "product_name": "高視認性安全ベスト 蛍光イエロー",
+          "display_name": "VIHFBB トートバッグ 40g 花柄系",
+          "product_name": "VIHFBB トートバッグ 40g 花柄系",
           "verified_exact_match": false,
-          "official_image_state": "actual-only固定 / 比較画像なし",
-          "exact_match_guard_state": "clear",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "別商品mix"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -21141,34 +21272,52 @@ window.ZERO_COST_INTAKE = {
           "resolved": {
             "management_id": "BOX-001-ITEM-0049",
             "resolution_status": "provisional",
-            "product_name": "花柄シュシュセット",
-            "barcode_primary": "",
-            "product_code_type": "actual_only",
+            "product_name": "SYM002 ライトグレー XL 長袖衣類",
+            "barcode_primary": "X00147IEGF",
+            "product_code_type": "amazon_internal",
             "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
-            "note": "FRONT/BACK の2枚で花柄シュシュ束の実物が一致。一方 CODE は X00147IEGF のグレー衣類ラベルで別商品。さらにシュシュ側ラベルも tote bag と誤記されているため採用しない。現写真では1商品に断定不能のため、シュシュ側を provisional に留める。",
+            "note": "FRONT は X00184OJV3 / [VIHFBB] トートバッグ側の花柄布製品だが、BACK/CODE は SYM002-Lightgray-XL / X00147IEGF のライトグレー長袖衣類で一致する。現写真では1商品に断定不能のため、ライトグレー長袖衣類側の provisional に留め、公開候補へ混ぜない。",
             "evidence": [
-              "花柄",
-              "シュシュ",
-              "セット"
+              "SYM002-Lightgray-XL",
+              "X00147IEGF",
+              "ライトグレー",
+              "XL",
+              "長袖衣類"
             ],
             "exact_match_guard_state": "review_required",
             "exact_match_guard_reasons": [
               "別商品mix"
             ]
           },
-          "official": {},
+          "official": {
+            "management_id": "BOX-001-ITEM-0049",
+            "raw_id": "RAW-BOX-001-049",
+            "product_id": "PRD-BOX-001-049",
+            "draft_id": "DRF-BOX-001-049",
+            "research_id": "RES-BOX-001-049",
+            "official_page_url": "",
+            "official_image_url": "",
+            "image_source": "actual-only",
+            "verified_exact_match": false,
+            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "note": "FRONT は X00184OJV3 / [VIHFBB] トートバッグ側の花柄布製品、BACK/CODE は SYM002-Lightgray-XL / X00147IEGF のライトグレー長袖衣類で別商品。現写真では1商品に断定不能のため比較画像は使わず、公開停止とする。",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "別商品mix"
+            ]
+          },
           "commerce": {
             "management_id": "BOX-001-ITEM-0049",
             "raw_id": "RAW-BOX-001-049",
             "product_id": "PRD-BOX-001-049",
             "draft_id": "DRF-BOX-001-049",
             "research_id": "RES-BOX-001-049",
-            "product_name": "花柄シュシュセット",
+            "product_name": "SYM002 ライトグレー XL 長袖衣類",
             "brand": "",
             "category": "",
-            "barcode_primary": "",
-            "product_code_type": "actual_only",
-            "listing_title": "花柄シュシュセット",
+            "barcode_primary": "X00147IEGF",
+            "product_code_type": "amazon_internal",
+            "listing_title": "SYM002 ライトグレー XL 長袖衣類",
             "listing_price": "",
             "market_floor_price": "",
             "market_floor_state": "未調査",
@@ -21185,8 +21334,8 @@ window.ZERO_COST_INTAKE = {
           },
           "comparison_images": [],
           "reference_images": [],
-          "display_name": "花柄シュシュセット",
-          "product_name": "花柄シュシュセット",
+          "display_name": "SYM002 ライトグレー XL 長袖衣類",
+          "product_name": "SYM002 ライトグレー XL 長袖衣類",
           "verified_exact_match": false,
           "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
           "exact_match_guard_state": "review_required",
@@ -21410,7 +21559,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=CRZ YOGA レギンス 股下24インチ ダークグレー系 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -22319,7 +22468,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=Poperdision ブラック 3XL レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -22533,7 +22682,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=ATIDIMU 美容液 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / exact-match保留 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -22942,7 +23091,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 16:55:30 JST",
+            "更新時刻": "2026-04-21 17:49:53 JST",
             "メモ": "name=JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSNX6qATG7NwnssYkshh"
           }
         },
@@ -23030,7 +23179,20 @@ window.ZERO_COST_INTAKE = {
             ],
             "exact_match_guard_state": "clear"
           },
-          "official": {},
+          "official": {
+            "management_id": "BOX-001-ITEM-0058",
+            "raw_id": "RAW-BOX-001-058",
+            "product_id": "PRD-BOX-001-058",
+            "draft_id": "DRF-BOX-001-058",
+            "research_id": "RES-BOX-001-058",
+            "official_page_url": "",
+            "official_image_url": "",
+            "image_source": "actual-only",
+            "verified_exact_match": false,
+            "official_image_state": "actual-only固定 / 比較画像なし",
+            "note": "FRONT/BACK の2枚で AUTOMATIC WATER DISPENSER / Upgraded Stainless Steel Basin / 304 Stainless Steel の箱表示が一致する。CODE 写真はないが、現写真だけで自動給水器の箱と判断できるため、比較画像なしの actual-only で扱う。",
+            "exact_match_guard_state": "clear"
+          },
           "commerce": {
             "management_id": "BOX-001-ITEM-0058",
             "raw_id": "RAW-BOX-001-058",

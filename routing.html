@@ -1043,6 +1043,18 @@
       return cleanList(values).join(separator || ' / ');
     }
 
+    function boxFromManagementId(managementId) {
+      var match = String(managementId || '').trim().toUpperCase().match(/^(BOX-[A-Z0-9]+)-ITEM-/);
+      return match ? match[1] : '';
+    }
+
+    function linkWithCurrentBox(href, boxId) {
+      var selected = boxId || (window.zeroCostCurrentBoxId ? window.zeroCostCurrentBoxId() : '');
+      if (window.zeroCostLinkWithBox) return window.zeroCostLinkWithBox(href, selected);
+      if (!selected || href.indexOf('box=') !== -1) return href;
+      return href + (href.indexOf('?') === -1 ? '?' : '&') + 'box=' + encodeURIComponent(selected);
+    }
+
     function normalizeProofCheckpoints(route) {
       if (!route || !Array.isArray(route.proof_checkpoints)) return [];
       return route.proof_checkpoints.map(function(item) {
@@ -1130,9 +1142,9 @@
               }).join('') + '</div>'
             : '')
         + ((priorityAction && priorityAction.href)
-            ? '<a class="hero-action-link" href="' + escapeHtml(priorityAction.href) + '">このアクションを見る →</a>'
+            ? '<a class="hero-action-link" data-zero-cost-current-box="1" href="' + escapeHtml(linkWithCurrentBox(priorityAction.href)) + '">このアクションを見る →</a>'
             : ((priorityRoute && priorityRoute.href)
-                ? '<a class="hero-action-link" href="' + escapeHtml(priorityRoute.href) + '">この route を見る →</a>'
+                ? '<a class="hero-action-link" data-zero-cost-current-box="1" href="' + escapeHtml(linkWithCurrentBox(priorityRoute.href)) + '">この route を見る →</a>'
                 : ''));
       heroActionEl.style.display = '';
     }
@@ -1169,7 +1181,7 @@
           meta: [route.category, route.status, route.proof_level, route.screen_only_fit ? ('画面だけ ' + route.screen_only_fit) : ''].filter(Boolean).join(' / '),
           note: route.cost_summary || route[noteKey] || route.next_step || route.strength || '未設定',
           detail: joinList(route.required_accounts, ' / ') ? ('必要アカウント: ' + joinList(route.required_accounts, ' / ')) : '',
-          href: route.href || './routing.html',
+          href: linkWithCurrentBox(route.href || './routing.html'),
           linkLabel: 'この route を見る →'
         });
       }
@@ -1189,7 +1201,7 @@
           'Ship&co候補 ' + (snap.summary && snap.summary.shipco_candidate || 0) + '件',
           '人確認要 ' + (snap.summary && snap.summary.human_review_needed || 0) + '件'
         ].join(' / '),
-        href: './index.html',
+        href: linkWithCurrentBox('./index.html'),
         linkLabel: 'owner cockpit を開く →'
       });
 
@@ -1240,7 +1252,7 @@
           + '</td>'
           + '<td>'
             + '<div class="matrix-main">' + escapeHtml(route.next_step || '未設定') + '</div>'
-            + '<div class="matrix-sub"><a href="' + escapeHtml(route.href || './routing.html') + '">この route を開く →</a></div>'
+            + '<div class="matrix-sub"><a data-zero-cost-current-box="1" href="' + escapeHtml(linkWithCurrentBox(route.href || './routing.html')) + '">この route を開く →</a></div>'
           + '</td>'
           + '</tr>';
       }).join('');
@@ -1271,7 +1283,7 @@
                 return '<div class="profit-focus-item ' + tone + '">'
                   + '<div class="profit-focus-item-label">' + escapeHtml(item.label || '') + '</div>'
                   + '<div class="profit-focus-item-note">' + escapeHtml(item.note || '') + '</div>'
-                  + (item.href ? '<a class="profit-focus-link" href="' + escapeHtml(item.href) + '">開く →</a>' : '')
+          + (item.href ? '<a class="profit-focus-link" data-zero-cost-current-box="1" href="' + escapeHtml(linkWithCurrentBox(item.href)) + '">開く →</a>' : '')
                   + '</div>';
               }).join('') + '</div>'
             : '');
@@ -1362,7 +1374,7 @@
           + '</div>'
           + renderProofChecklist(route)
           + '<div class="route-option-next">次に証明する1件: ' + escapeHtml(route.next_step || '未設定') + '</div>'
-          + '<a class="route-option-link" href="' + escapeHtml(route.href || './routing.html') + '">この route を見る →</a>'
+          + '<a class="route-option-link" data-zero-cost-current-box="1" href="' + escapeHtml(linkWithCurrentBox(route.href || './routing.html')) + '">この route を見る →</a>'
           + '</div>';
       }).join('');
     }
@@ -1414,6 +1426,7 @@
 
     function renderItem(item) {
       var managementId = item['管理番号'] || '';
+      var boxId = boxFromManagementId(managementId);
       var productId = item['商品ID'] || '';
       var status = item['ルーティング状態'] || '未設定';
       var note = item['AI次アクション'] || item['人確認理由'] || item['メモ'] || '';
@@ -1454,8 +1467,8 @@
         + '</div>'
         + (note ? '<div class="route-note">' + escapeHtml(note) + '</div>' : '')
         + '<div class="route-links">'
-        + '<a class="route-link" href="./ops.html?mid=' + encodeURIComponent(managementId) + '">出品リストで開く →</a>'
-        + '<a class="route-link" href="./intake_cards.html?mid=' + encodeURIComponent(managementId) + '">写真カードを見る →</a>'
+        + '<a class="route-link" href="' + escapeHtml(linkWithCurrentBox('./ops.html?mid=' + encodeURIComponent(managementId), boxId)) + '">出品リストで開く →</a>'
+        + '<a class="route-link" href="' + escapeHtml(linkWithCurrentBox('./intake_cards.html?mid=' + encodeURIComponent(managementId), boxId)) + '">写真カードを見る →</a>'
         + '</div>'
         + '</div>'
         + '<div class="route-detail" id="detail-' + escapeHtml(managementId) + '">'
@@ -1530,8 +1543,8 @@
 
       document.getElementById('link-list').innerHTML = [
         snap.workbook_url ? '<a class="context-item" href="' + snap.workbook_url + '" target="_blank" rel="noopener noreferrer">実行台帳を開く</a>' : '',
-        './ops.html',
-        './index.html'
+	        linkWithCurrentBox('./ops.html'),
+	        linkWithCurrentBox('./index.html')
       ].map(function(line) {
         if (!line) return '';
         if (line.indexOf('./') === 0) {

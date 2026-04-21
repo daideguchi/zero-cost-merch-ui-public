@@ -790,14 +790,15 @@
           </div>
           <div class="drive-note">
             基本は <strong>今ある画像だけで判断</strong> します。追加メモは不要です。バーコード・型番・成分表示・サイズ表記が写る写真を優先してください。
-            誤紐付け防止のため、<strong>1商品 = 1子フォルダ</strong> にして、その中の画像名を <strong>FRONT / BACK / CODE</strong> か <strong>1 / 2 / 3</strong> を含む形にしてください。
-            <strong>箱直下へ画像を置いても自動取り込みしません。</strong> Acer 常駐側が約20秒ごとに Drive を見に行き、準備が揃った子フォルダだけ intake へ反映します。
+            誤紐付け防止の基準は <strong>バーコード写真が商品区切り</strong> です。並びは <strong>バーコード + 複数枚 → バーコード + 複数枚</strong> で扱います。
+            Drive へ箱直下で連続投入する場合は、バーコード写真のファイル名に <strong>CODE / BARCODE / JAN</strong> のどれかを入れてください。
+            ファイル名を変えられない時は、<strong>1商品 = 1子フォルダ</strong> にしてください。Acer 常駐側が約20秒ごとに Drive を見に行きます。
           </div>
           <div class="drive-actions">
             <button id="drive-share-btn" class="action-link" type="button">Google Drive URLを作る</button>
             <button id="drive-sync-btn" class="action-link primary" type="button">今すぐDrive確認</button>
           </div>
-          <div id="drive-status" class="drive-status">箱を選ぶと、共有URLを作って別メンバーへ渡せます。自動取り込みは 1商品1フォルダ の形だけ通します。</div>
+          <div id="drive-status" class="drive-status">箱を選ぶと、共有URLを作って別メンバーへ渡せます。バーコード区切り、または 1商品1フォルダ の形だけ通します。</div>
           <a id="drive-link" class="drive-link" href="#" target="_blank" rel="noreferrer noopener" hidden>Google Drive フォルダを開く</a>
         </div>
       </div>
@@ -853,6 +854,8 @@
     var boxModalConfirm = document.getElementById('box-modal-confirm');
     var boxModalCancel = document.getElementById('box-modal-cancel');
     var selectedFiles = [];
+    var selectedPhotoManifest = [];
+    var barcodeDetectionPending = false;
     var isUploading = false;
     var isDriveBusy = false;
     var driveStatusPollTimer = 0;
@@ -1189,8 +1192,18 @@
 
     function setActionLinkState(link, href, enabled) {
       link.href = enabled ? href : '#';
+      link.setAttribute('data-zero-cost-current-box', '1');
       link.classList.toggle('disabled', !enabled);
       link.setAttribute('aria-disabled', enabled ? 'false' : 'true');
+    }
+
+    function currentBoxLink(href) {
+      var box = currentBox();
+      var boxId = (box && box.id) || selectedBoxId || '';
+      if (window.zeroCostLinkWithBox) return window.zeroCostLinkWithBox(href, boxId);
+      if (!boxId) return href;
+      var glue = href.indexOf('?') === -1 ? '?' : '&';
+      return href + glue + 'box=' + encodeURIComponent(boxId);
     }
 
     function updateActionLinks(box) {
@@ -1217,6 +1230,9 @@
         setDriveStatus('箱の情報がありません。', 'error');
         setDriveLink('');
         return;
+      }
+      if (window.zeroCostSetBoxId) {
+        window.zeroCostSetBoxId(box.id, { updateUrl: true });
       }
 
       boxSelect.disabled = false;
@@ -1317,17 +1333,111 @@
       boxOptions.push(newBox);
       saveCustomBoxes(boxOptions.filter(function(box) { return box.isDraft; }));
       selectedBoxId = newBox.id;
-      try {
-        if (window.localStorage && selectedBoxId) window.localStorage.setItem('zeroCostSelectedBox', selectedBoxId);
-      } catch (_) {}
+      if (window.zeroCostSetBoxId) window.zeroCostSetBoxId(selectedBoxId, { updateUrl: true });
+      else {
+        try {
+          if (window.localStorage && selectedBoxId) window.localStorage.setItem('zeroCostSelectedBox', selectedBoxId);
+        } catch (_) {}
+      }
       closeBoxModal();
       renderBoxPanel();
       statusEl.textContent = label + ' を作りました。';
     }
 
-    function estimatedItemsFor(files, box) {
-      var slotsPerItem = Math.max(1, (box && box.slotsPerItem) || 3);
-      return files > 0 ? Math.ceil(files / slotsPerItem) : 0;
+    function filenameMarksBarcode(name) {
+      return /(^|[^A-Z0-9])(CODE|BARCODE|BAR|JAN|EAN|UPC|GTIN|ASIN)([^A-Z0-9]|$)/i.test(String(name || ''));
+    }
+
+    function initialPhotoManifest(files) {
+      return Array.prototype.slice.call(files || []).map(function(file, index) {
+        return {
+          index: index,
+          name: file && file.name || '',
+          is_barcode: filenameMarksBarcode(file && file.name),
+          barcode_values: [],
+          detector: filenameMarksBarcode(file && file.name) ? 'filename' : ''
+        };
+      });
+    }
+
+    function barcodeDelimiterCount(manifest) {
+      return (manifest || []).filter(function(entry) { return entry && entry.is_barcode; }).length;
+    }
+
+    function estimatedItemsFor(files) {
+      var count = selectedPhotoManifest.length ? barcodeDelimiterCount(selectedPhotoManifest) : 0;
+      if (count > 0) return count;
+      return files > 0 ? 1 : 0;
+    }
+
+    function detectBrowserBarcode(file) {
+      if (!window.BarcodeDetector || !window.createImageBitmap || !file || !file.type || file.type.indexOf('image/') !== 0) {
+        return Promise.resolve({ detected: false, values: [] });
+      }
+      var formats = [
+        'aztec', 'code_128', 'code_39', 'code_93', 'codabar',
+        'data_matrix', 'ean_13', 'ean_8', 'itf', 'pdf417',
+        'qr_code', 'upc_a', 'upc_e'
+      ];
+      var detector;
+      try {
+        detector = new window.BarcodeDetector({ formats: formats });
+      } catch (_) {
+        try { detector = new window.BarcodeDetector(); } catch (__) { return Promise.resolve({ detected: false, values: [] }); }
+      }
+      return window.createImageBitmap(file)
+        .then(function(bitmap) {
+          return detector.detect(bitmap).then(function(codes) {
+            if (bitmap && bitmap.close) bitmap.close();
+            var values = (codes || []).map(function(code) { return String(code.rawValue || '').trim(); }).filter(Boolean);
+            return { detected: values.length > 0, values: values };
+          }, function(error) {
+            if (bitmap && bitmap.close) bitmap.close();
+            throw error;
+          });
+        })
+        .catch(function() {
+          return { detected: false, values: [] };
+        });
+    }
+
+    function refreshPhotoManifest(files) {
+      var currentFiles = Array.prototype.slice.call(files || []);
+      selectedPhotoManifest = initialPhotoManifest(currentFiles);
+      if (!window.BarcodeDetector || !window.createImageBitmap) {
+        barcodeDetectionPending = false;
+        return Promise.resolve(selectedPhotoManifest);
+      }
+      barcodeDetectionPending = true;
+      setUploadButtonState();
+      return Promise.all(currentFiles.map(function(file, index) {
+        return detectBrowserBarcode(file).then(function(result) {
+          if (!result.detected) return;
+          selectedPhotoManifest[index].is_barcode = true;
+          selectedPhotoManifest[index].barcode_values = result.values || [];
+          selectedPhotoManifest[index].detector = 'browser_barcode_detector';
+        });
+      })).then(function() {
+        barcodeDetectionPending = false;
+        return selectedPhotoManifest;
+      }).catch(function() {
+        barcodeDetectionPending = false;
+        return selectedPhotoManifest;
+      });
+    }
+
+    function groupingStatusText(fileCount, itemCount) {
+      var delimiterCount = barcodeDelimiterCount(selectedPhotoManifest);
+      if (barcodeDetectionPending) {
+        return ' / バーコード区切りを確認中';
+      }
+      if (delimiterCount > 0) {
+        return ' / バーコード区切り ' + delimiterCount + '件';
+      }
+      if (fileCount > 1) {
+        return ' / バーコード区切り未検出。今回は1商品として仮取り込み';
+      }
+      return ' / 1商品';
     }
 
     function setUploadButtonState() {
@@ -1336,11 +1446,13 @@
       uploadSubmit.hidden = !hasPending;
       intakeLink.hidden = hasPending;
       opsLink.hidden = hasPending;
-      uploadSubmit.disabled = isUploading || !hasPending || !box;
+      uploadSubmit.disabled = isUploading || barcodeDetectionPending || !hasPending || !box;
       driveShareBtn.disabled = isUploading || isDriveBusy || !box;
       driveSyncBtn.disabled = isUploading || isDriveBusy || !box;
       if (!isUploading) {
-        uploadSubmit.textContent = box && hasPending ? (box.label + ' に取り込む') : '写真を取り込む';
+        uploadSubmit.textContent = barcodeDetectionPending
+          ? 'バーコード確認中...'
+          : (box && hasPending ? (box.label + ' に取り込む') : '写真を取り込む');
       }
     }
 
@@ -1632,15 +1744,29 @@
         setUploadButtonState();
         return;
       }
+      selectedPhotoManifest = initialPhotoManifest(selectedFiles);
       var items = estimatedItemsFor(selectedFiles.length, box);
       var start = box ? box.nextSequence : 1;
       var end = start + Math.max(items - 1, 0);
       statusEl.textContent = (box ? box.label : '箱未設定') + ' / ' + selectedFiles.length + '枚選択 / '
         + items + '商品ぶん / No.' + padSequence(start)
         + (items > 1 ? '〜' + padSequence(end) : '')
+        + groupingStatusText(selectedFiles.length, items)
         + ' / 「写真を取り込む」を押す';
       statusEl.style.color = 'var(--green)';
       setUploadButtonState();
+      refreshPhotoManifest(selectedFiles).then(function() {
+        if (!selectedFiles.length) return;
+        var latestItems = estimatedItemsFor(selectedFiles.length, box);
+        var latestEnd = start + Math.max(latestItems - 1, 0);
+        statusEl.textContent = (box ? box.label : '箱未設定') + ' / ' + selectedFiles.length + '枚選択 / '
+          + latestItems + '商品ぶん / No.' + padSequence(start)
+          + (latestItems > 1 ? '〜' + padSequence(latestEnd) : '')
+          + groupingStatusText(selectedFiles.length, latestItems)
+          + ' / 「写真を取り込む」を押す';
+        statusEl.style.color = barcodeDelimiterCount(selectedPhotoManifest) || selectedFiles.length === 1 ? 'var(--green)' : 'var(--orange)';
+        setUploadButtonState();
+      });
     }
 
     function uploadSelectedFiles() {
@@ -1653,6 +1779,8 @@
       form.append('box_code', box.code);
       form.append('next_sequence', String(box.nextSequence || 1));
       form.append('slots_per_item', String(box.slotsPerItem || 3));
+      form.append('photo_grouping', 'barcode_delimiter');
+      form.append('photo_manifest', JSON.stringify(selectedPhotoManifest || []));
       selectedFiles.forEach(function(file) {
         form.append('photos', file, file.name);
       });
@@ -1779,7 +1907,7 @@
         + '<div class="focus-meta">' + focus.meta.map(function(item) {
             return '<span class="meta-pill">' + esc(item) + '</span>';
           }).join('') + '</div>'
-        + '<a class="action-link primary" href="' + esc(focus.href) + '">' + esc(focus.button) + '</a>';
+        + '<a class="action-link primary" data-zero-cost-current-box="1" href="' + esc(currentBoxLink(focus.href)) + '">' + esc(focus.button) + '</a>';
     }
 
     function renderSummary() {
@@ -1859,7 +1987,7 @@
       ];
 
       document.getElementById('tool-grid').innerHTML = cards.map(function(card) {
-        return '<a class="tool-card ' + toneClass(card.tone) + '" href="' + esc(card.href) + '">'
+        return '<a class="tool-card ' + toneClass(card.tone) + '" data-zero-cost-current-box="1" href="' + esc(currentBoxLink(card.href)) + '">'
           + '<div class="tool-top">'
           + '<div class="tool-name">' + esc(card.name) + '</div>'
           + '<div class="tool-count">' + esc(card.count) + '</div>'
@@ -1886,7 +2014,7 @@
           + '<div class="alert-name">' + esc(alert.title || '要対応') + '</div>'
           + '<div class="alert-note">' + esc(alert.note || '') + '</div>'
           + '</div>'
-          + (alert.href ? '<a class="alert-link" href="' + esc(alert.href) + '">開く →</a>' : '')
+          + (alert.href ? '<a class="alert-link" data-zero-cost-current-box="1" href="' + esc(currentBoxLink(alert.href)) + '">開く →</a>' : '')
           + '</div>';
       }).join('');
     }
@@ -1955,9 +2083,12 @@
     function bindUploadZone() {
       boxSelect.addEventListener('change', function() {
         selectedBoxId = boxSelect.value || '';
-        try {
-          if (window.localStorage && selectedBoxId) window.localStorage.setItem('zeroCostSelectedBox', selectedBoxId);
-        } catch (_) {}
+        if (window.zeroCostSetBoxId) window.zeroCostSetBoxId(selectedBoxId, { updateUrl: true });
+        else {
+          try {
+            if (window.localStorage && selectedBoxId) window.localStorage.setItem('zeroCostSelectedBox', selectedBoxId);
+          } catch (_) {}
+        }
         renderBoxPanel();
       });
       boxCreateBtn.addEventListener('click', openBoxModal);

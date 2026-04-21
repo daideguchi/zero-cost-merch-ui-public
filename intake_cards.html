@@ -721,6 +721,12 @@
     if (!requestedBoxId && requestedMid && requestedMid.indexOf('-ITEM-') !== -1) {
       requestedBoxId = requestedMid.split('-ITEM-')[0];
     }
+    if (!requestedBoxId) {
+      try {
+        requestedBoxId = window.localStorage ? (window.localStorage.getItem('zeroCostSelectedBox') || '') : '';
+      } catch (_) {}
+    }
+    requestedBoxId = String(requestedBoxId || '').trim().toUpperCase();
 
     function snapshotBoxList(data) {
       var boxes = (Array.isArray(data.boxes) && data.boxes.length) ? data.boxes.slice() : [];
@@ -745,6 +751,7 @@
       try {
         if (window.localStorage) window.localStorage.setItem('zeroCostSelectedBox', requestedBoxId);
       } catch (_) {}
+      if (window.zeroCostSetBoxId) window.zeroCostSetBoxId(requestedBoxId, { updateUrl: true });
     }
     var hasSnapshotForRequest = Boolean(currentBoxSnapshot && (!requestedBoxId || requestedBoxId === String(currentBoxSnapshot.box_id || '')));
     var viewSnapshot = currentBoxSnapshot || { box_id: requestedBoxId, box_label: requestedBoxId, items: [] };
