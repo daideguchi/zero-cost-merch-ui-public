@@ -1,5 +1,5 @@
 window.ZERO_COST_INTAKE = {
-  "generated_at": "2026-04-21 23:11:56 JST",
+  "generated_at": "2026-04-22 01:09:44 JST",
   "box_id": "BOX-001",
   "box_label": "数字箱 001",
   "box_lane": "numeric",
@@ -12,13 +12,13 @@ window.ZERO_COST_INTAKE = {
   ],
   "slots_per_item": 3,
   "total_files": 173,
-  "total_items": 61,
-  "complete_items": 60,
+  "total_items": 65,
+  "complete_items": 64,
   "incomplete_items": 1,
-  "next_sequence": 62,
-  "next_management_id": "BOX-001-ITEM-0062",
+  "next_sequence": 66,
+  "next_management_id": "BOX-001-ITEM-0066",
   "identification_counts": {
-    "barcode_ready": 37,
+    "barcode_ready": 41,
     "ocr_ready": 2,
     "image_only": 0,
     "missing_slots": 0,
@@ -26,7 +26,7 @@ window.ZERO_COST_INTAKE = {
   },
   "resolution_counts": {
     "confirmed": 2,
-    "provisional": 59,
+    "provisional": 63,
     "official_image_pending": 0,
     "accepted_exception": 2
   },
@@ -289,7 +289,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "審査監視",
         "AI次アクション": "カテゴリ審査反映待ち",
         "ルーティング状態": "審査待ち",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り / publish_ok=カテゴリ審査待ち / draft_status=カテゴリ審査待ち / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=clear"
       }
     },
@@ -469,7 +469,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -516,7 +516,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "実物のみで進める / 比較画像は後追い",
         "ルーティング状態": "HQ判断済み",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=保冷クーラーバッグ ネイビー ショルダー付 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=色違い / 型番違い / サイズ違い / セット違い / 別商品mix / qwen_hq=actual-only固定優先 / 2026-04-21 current truth: actual-only固定。比較画像なしでも実物写真のみで進める。"
       }
     },
@@ -661,7 +661,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -701,7 +701,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=YUGYUG サングラス ブラック/グレー ケース付き / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
       }
     },
@@ -959,7 +959,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "precision guard 解消",
         "ルーティング状態": "停止",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=IAWNI ショルダーバッグ メッセンジャーバッグ / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=ブランド不一致 / inventory_status=販売中 / listingId=2JPSMJHwgfzNjEkYfN8SMv"
       }
     },
@@ -1217,7 +1217,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "precision guard 解消",
         "ルーティング状態": "停止",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=CEEN サルエルパンツ 七分丈 ワイドパンツ / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=柄違い / inventory_status=販売中 / listingId=2JPQCYwtnC7WCswDeG37b9"
       }
     },
@@ -1371,7 +1371,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -1549,7 +1549,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -1589,7 +1589,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=GIOVANA Tシャツ ベージュ 2XL / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
       }
     },
@@ -1850,7 +1850,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "precision guard 解消",
         "ルーティング状態": "停止",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=オナーファッション 綿100% トップス ミントグリーン 3XL / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=review_required / guard_reasons=ブランド不一致 / inventory_status=販売中 / listingId=2JPSMSqu7EDWJu3jDcTo5h"
       }
     },
@@ -2119,7 +2119,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=Hotaty ピアス 金属アレルギー対応 ギフトBOX付き / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=clear / inventory_status=販売中 / listingId=2JPSMUTrpVNxK6fGZdtMqT"
       }
     },
@@ -2273,7 +2273,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [
         {
@@ -2334,7 +2334,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "precision guard 解消",
         "ルーティング状態": "停止",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=SHANGCHU シェフユニフォーム ブラック 4XL / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=色違い"
       }
     },
@@ -2590,7 +2590,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "precision guard 解消",
         "ルーティング状態": "停止",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=Dkieta 帽子 レディース ネックカバー付き 花柄日よけ帽子 / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=柄違い / inventory_status=販売中 / listingId=2JPSMPEuG8NMB3ZieyYzHU"
       }
     },
@@ -2848,7 +2848,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "precision guard 解消",
         "ルーティング状態": "停止",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=gany ガーゼハンカチ 30×30cm 10枚セット 綿100% / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=セット違い / inventory_status=販売中 / listingId=2JPTBgBM5kND3h8AhVf4bf"
       }
     },
@@ -2992,7 +2992,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [
         {
@@ -3050,7 +3050,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り / publish_ok=公開待ち / draft_status=公開待ち / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=clear"
       }
     },
@@ -3327,7 +3327,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "precision guard 解消",
         "ルーティング状態": "停止",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=HAYAHARU キッズ靴下 LS4602LS / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=柄違い / セット違い / inventory_status=販売中 / listingId=2JPSMLyKhRCgPASDJFH2dc"
       }
     },
@@ -3473,7 +3473,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -3513,7 +3513,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=Llink 靴下 5足セット ボーダー パステル / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
       }
     },
@@ -3657,7 +3657,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -3697,7 +3697,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=ZERUI 靴下 5足セット パステル 蝶リボン / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
       }
     },
@@ -3853,7 +3853,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -3899,7 +3899,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "用途確認と商品名補正",
         "ルーティング状態": "用途確認待ち",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=FirstC ティアグッズ記念品ギフト オレンジ丸型ポーチ（用途要確認） / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / 用途要確認 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=柄違い / 型番違い / 形状違い / 用途要確認"
       }
     },
@@ -4044,7 +4044,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -4084,7 +4084,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=SWEETBOY 子供パーカー ネイビー×イエロー 130 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
       }
     },
@@ -4337,7 +4337,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "停止",
         "AI次アクション": "空き板を維持",
         "ルーティング状態": "一時停止",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=ポロベア キャンバス トートバッグ POLO BEAR LAUREN / publish_ok=確認待ち / draft_status=一時取り下げ / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=clear / inventory_status=一時取り下げ"
       }
     },
@@ -4486,7 +4486,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -4526,7 +4526,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=首サポーター カバー付き グレー M HJ-GY-M / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
       }
     },
@@ -4659,7 +4659,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -4826,7 +4826,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [
         {
@@ -4884,7 +4884,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=LE BLANC フェムケアPRO 低刺激 デリケートゾーン 150mL / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
       }
     },
@@ -5015,7 +5015,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -5085,50 +5085,35 @@ window.ZERO_COST_INTAKE = {
       "box_code": "001",
       "identification": {
         "state": "split_required",
-        "barcode_values": [
-          "X0011JB9IL"
-        ],
+        "barcode_values": [],
         "front_back_texts": [
           "a ye — Rane oe aN (PA Eee av > v\\ ky A. x & i gr oA < a. / ~~ af wef x Q Shy by == WA @ — — —— — ——— es ud ee Z",
-          "FO ae cS wa er i tas : Ne a. Ee x rat ag SO | Ex y F 4 py Ba eee Ngee on Aes | ny x s Mee f\\ i at »",
-          "X0011JB3LL",
-          "DUCO サングラスレディース..9016（ブラック・ブルー",
-          "新品",
-          "MADE IN CHINA"
+          "FO ae cS wa er i tas : Ne a. Ee x rat ag SO | Ex y F 4 py Ba eee Ngee on Aes | ny x s Mee f\\ i at »"
         ],
-        "code_texts": [
-          "DUCO",
-          "~ . _ . | SOA ! | : . i . on \\ 7 : Poa yy fs, a eee. a Vee q RARER Ty! f “Sa cae og ee YP Ax. ae I ee nae a .",
-          ". r — ‘ o us , é | “Bigs \\y \\. ye Fe, r | | ay e - : Zs x v i 7 j- A | yo *)CO|C ee | Sao e ee a 5 a i | eis 375 Se eae 7 | ? | Uf i2 5* Ske ia | ; | ee ee ,"
-        ],
+        "code_texts": [],
         "ocr_texts": [
           "a ye — Rane oe aN (PA Eee av > v\\ ky A. x & i gr oA < a. / ~~ af wef x Q Shy by == WA @ — — —— — ——— es ud ee Z",
-          "FO ae cS wa er i tas : Ne a. Ee x rat ag SO | Ex y F 4 py Ba eee Ngee on Aes | ny x s Mee f\\ i at »",
-          "X0011JB3LL",
-          "DUCO サングラスレディース..9016（ブラック・ブルー",
-          "新品",
-          "MADE IN CHINA"
+          "FO ae cS wa er i tas : Ne a. Ee x rat ag SO | Ex y F 4 py Ba eee Ngee on Aes | ny x s Mee f\\ i at »"
         ],
-        "candidate_query": "a ye — Rane oe aN (PA Eee av > v\\ ky A. x & i gr oA < a. / ~~ af wef x Q Shy by == WA @ — — —— — ——— es ud ee Z FO ae cS wa er i tas : Ne a. Ee x rat ag SO | Ex y F 4 py Ba eee Ngee on Aes | ny x s Mee f\\ i at » X0011JB3LL DUCO サングラスレディース..9016（ブラック・ブルー",
+        "candidate_query": "a ye — Rane oe aN (PA Eee av > v\\ ky A. x & i gr oA < a. / ~~ af wef x Q Shy by == WA @ — — —— — ——— es ud ee Z FO ae cS wa er i tas : Ne a. Ee x rat ag SO | Ex y F 4 py Ba eee Ngee on Aes | ny x s Mee f\\ i at »",
         "review_flag": "FRONT/BACK/CODE が別商品です",
-        "ocr_engine": "sauna_tesseract_multistage + vision",
+        "ocr_engine": "sauna_tesseract_multistage",
         "ocr_debug_paths": [
-          "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0024/IMG_4898_CODE_ocr_best.png",
           "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0024/IMG_4896_FRONT_ocr_best.png"
         ]
       },
-      "priority_score": 150,
+      "priority_score": 220,
       "next_action": "写真セットを組み直す",
-      "barcode_kind": "amazon_internal",
+      "barcode_kind": "",
       "review_flag": "FRONT/BACK/CODE が別商品です",
       "manual_note": "FRONT は黒い収納袋系商品、BACK/CODE は DUCO サングラスケース #016 ピンク箱で別商品でした。",
       "resolved": {
         "management_id": "BOX-001-ITEM-0024",
         "resolution_status": "provisional",
-        "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
+        "product_name": "写真セット組み直し候補: DUCO サングラス レディース #016（ブラック・ブルー）",
         "barcode_primary": "X0011JB9IL",
         "product_code_type": "amazon_internal",
-        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
         "note": "BACK/CODE の2枚で DUCO ロゴ入りケースとラベル X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）が一致。一方 FRONT は黒い収納袋で別商品。現写真では1商品に断定不能のため、DUCO 側を provisional に留める。",
         "evidence": [
           "X0011JB9IL",
@@ -5139,7 +5124,8 @@ window.ZERO_COST_INTAKE = {
         ],
         "exact_match_guard_state": "review_required",
         "exact_match_guard_reasons": [
-          "別商品mix"
+          "別商品mix",
+          "写真セット組み直し必要"
         ]
       },
       "official": {},
@@ -5149,12 +5135,12 @@ window.ZERO_COST_INTAKE = {
         "product_id": "PRD-BOX-001-024",
         "draft_id": "DRF-BOX-001-024",
         "research_id": "RES-BOX-001-024",
-        "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
+        "product_name": "写真セット組み直し候補: DUCO サングラス レディース #016（ブラック・ブルー）",
         "brand": "",
         "category": "",
         "barcode_primary": "X0011JB9IL",
         "product_code_type": "amazon_internal",
-        "listing_title": "DUCO サングラス レディース #016（ブラック・ブルー）",
+        "listing_title": "写真セット組み直し候補: DUCO サングラス レディース #016（ブラック・ブルー）",
         "listing_price": "",
         "market_floor_price": "",
         "market_floor_state": "未調査",
@@ -5167,17 +5153,18 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
-      "display_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
-      "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
+      "display_name": "写真セット組み直し候補: DUCO サングラス レディース #016（ブラック・ブルー）",
+      "product_name": "写真セット組み直し候補: DUCO サングラス レディース #016（ブラック・ブルー）",
       "verified_exact_match": false,
-      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 管理番号再分解待ち",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
-        "別商品mix"
+        "別商品mix",
+        "写真セット組み直し必要"
       ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
@@ -5192,7 +5179,107 @@ window.ZERO_COST_INTAKE = {
       "market_floor_price_label": "未調査",
       "listing_price": "",
       "exception": {},
-      "route_plan": {}
+      "route_plan": {},
+      "split_staging": {
+        "management_id": "BOX-001-ITEM-0024",
+        "plan_summary": "0025 FRONT と 0024 BACK/CODE は X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）で一致する。0024 FRONT の黒い収納袋系スロットと 0025 BACK/CODE の日傘側スロットは別商品として親 ID に残し、DUCO 側だけ local child へ切り出す。 / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 のローカル写真セットを作成済み / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "ui_summary": "0025 FRONT + 0024 BACK/CODE は DUCO child 候補 / 0024 FRONT は別物 / 0025 BACK/CODE は日傘側で別物 / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 のローカル写真セットを作成済み / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "operator_summary": "BOX-001-ITEM-0024 / 0025 は DUCO サングラス箱と日傘側が混在している。0025 FRONT と 0024 BACK/CODE は X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）で一致するため、DUCO 側だけ local child へ切り出す。0024 FRONT の黒い収納袋系スロットと 0025 BACK/CODE の日傘側は親 ID に残す。 / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 のローカル写真セットを作成済み / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_note": "0025 FRONT + 0024 BACK/CODE は DUCO 側として coherent。0024 FRONT の黒い収納袋系スロットと 0025 BACK/CODE の日傘側は別商品のため親 ID に残す。 / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 のローカル写真セットを作成済み / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_next_action": "SPLIT-BOX-001-0024-DUCO を local mint → local confirmed / official へ provisional actual-only 反映。親 0024 / 0025 は split_required のまま維持。 / BOX-001-ITEM-0062 は管理表 / 出品判断の止めどころを決めてから正式反映",
+        "related_management_ids": [
+          "BOX-001-ITEM-0025"
+        ],
+        "source_trace": [
+          {
+            "management_id": "BOX-001-ITEM-0024",
+            "slot": "FRONT",
+            "observed_as": "黒い収納袋系商品"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0024",
+            "slot": "BACK",
+            "observed_as": "DUCO ロゴ入りケース面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0024",
+            "slot": "CODE",
+            "observed_as": "X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）ラベル面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0025",
+            "slot": "FRONT",
+            "observed_as": "X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）ラベル面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0025",
+            "slot": "BACK",
+            "observed_as": "日傘超軽量パッケージ面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0025",
+            "slot": "CODE",
+            "observed_as": "日傘超軽量の別商品コード面"
+          }
+        ],
+        "blocked_split_children": [
+          {
+            "temporary_split_id": "SPLIT-BOX-001-0024-DUCO",
+            "target_label": "DUCO サングラス レディース #016（ブラック・ブルー）",
+            "source_slots": [
+              "BOX-001-ITEM-0025:FRONT",
+              "BOX-001-ITEM-0024:BACK",
+              "BOX-001-ITEM-0024:CODE"
+            ],
+            "status": "manifest_child_minted_local_only",
+            "blockers": [
+              "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+              "0025 FRONT と 0024 BACK/CODE は X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）で一致し、同一の DUCO サングラス箱として実画像確認済み",
+              "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+              "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+            ],
+            "truth_product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
+            "truth_barcode_primary": "X0011JB9IL",
+            "truth_product_code_type": "amazon_internal",
+            "truth_content_unknown": false,
+            "truth_official_image_state": "actual-only固定 / 比較画像なし",
+            "truth_exact_match_guard_state": "clear",
+            "truth_exact_match_guard_reasons": [],
+            "truth_evidence": [
+              "X0011JB9IL",
+              "DUCO",
+              "サングラス レディース",
+              "#016",
+              "ブラック・ブルー",
+              "0025:FRONT + 0024:BACK + 0024:CODE"
+            ],
+            "truth_brand_override": "DUCO",
+            "truth_category_override": "ファッション > レディース > 小物 > サングラス",
+            "truth_check_items_override": "フレーム色 / レンズ色 / 付属ケース / 型番#016 / 破損確認",
+            "truth_note": "SPLIT-BOX-001-0024-DUCO は、0025:FRONT と 0024:BACK/CODE の3枚で X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）の写真セットを組み直し済み。ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+            "minted_management_id": "BOX-001-ITEM-0062",
+            "minted_at": "2026-04-22 00:40:51 JST",
+            "minted_scope": "local_manifest_only",
+            "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+            "truth_promotion_scope": "local_confirmed_official_only",
+            "truth_promoted_management_id": "BOX-001-ITEM-0062",
+            "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
+            "truth_promoted_at": "2026-04-22 00:45:44 JST"
+          }
+        ],
+        "remaining_blockers": [
+          "DUCO child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
+          "0024 FRONT の黒い収納袋系スロットは相方未確定のまま",
+          "0025 BACK/CODE の日傘側スロットは相方未確定のまま",
+          "SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
+          "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。"
+        ],
+        "safe_next_step": "SPLIT-BOX-001-0024-DUCO を local mint → local confirmed / official へ provisional actual-only 反映。親 0024 / 0025 は split_required のまま維持する。 / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 のローカル写真セットを作成済み / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "stage_status": "partial_manifest_child_minted",
+        "match_role": "primary"
+      },
+      "split_plan_summary": "0025 FRONT + 0024 BACK/CODE は DUCO child 候補 / 0024 FRONT は別物 / 0025 BACK/CODE は日傘側で別物 / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 のローカル写真セットを作成済み / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 をローカル特定結果へ暫定・実物写真のみで反映済み",
+      "split_plan_role": "primary"
     },
     {
       "management_id": "BOX-001-ITEM-0025",
@@ -5238,14 +5325,9 @@ window.ZERO_COST_INTAKE = {
       "identification": {
         "state": "split_required",
         "barcode_values": [
-          "X0011JB9IL",
           "X001845QRJ"
         ],
         "front_back_texts": [
-          "X0011JB91",
-          "DUCO サングラスレディース.1016（ブラック・ブルー）",
-          "MADE IN CHNA",
-          "新品",
           "X001845QRJ",
           "日傘超軽量【広げ…い砂色、【手動期間］）"
         ],
@@ -5257,14 +5339,14 @@ window.ZERO_COST_INTAKE = {
           "| = a ¢ a"
         ],
         "ocr_texts": [
-          "X0011JB91",
-          "DUCO サングラスレディース.1016（ブラック・ブルー）",
-          "MADE IN CHNA",
-          "新品",
           "X001845QRJ",
-          "日傘超軽量【広げ…い砂色、【手動期間］）"
+          "日傘超軽量【広げ…い砂色、【手動期間］）",
+          "101450RJ",
+          "選しげ」いる他、（動開閉］）",
+          ": ra of. y ai Y, oye o le Zs ’ ; i . , vee ’ : ey ? + fe LE oo : ae , % Ba aati os , fi : Z Cs sae at “ Jf y ae Ese. . . wg L oa ne . he Khe pean . : t ye Rea cn // 47 oy ae a a” ae “ORI Be?",
+          ". ~ P ; Pa V4 ¢ t 24 oy 4 , f ‘ yy 9 y, s. a ys > f ff ae : 7 dy ae oo y, _-=s = * oS ~ v te | , ore nah af XS A ) ae eo“ f “a OY Li. y"
         ],
-        "candidate_query": "X0011JB91 DUCO サングラスレディース.1016（ブラック・ブルー） MADE IN CHNA 新品",
+        "candidate_query": "X001845QRJ 日傘超軽量【広げ…い砂色、【手動期間］）",
         "review_flag": "FRONT/BACK/CODE が別商品です",
         "ocr_engine": "sauna_tesseract_multistage + vision",
         "ocr_debug_paths": [
@@ -5279,11 +5361,11 @@ window.ZERO_COST_INTAKE = {
       "resolved": {
         "management_id": "BOX-001-ITEM-0025",
         "resolution_status": "provisional",
-        "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
+        "product_name": "写真セット組み直し候補: DUCO サングラス レディース #016（ブラック・ブルー）",
         "barcode_primary": "X0011JB9IL",
         "product_code_type": "amazon_internal",
         "verified_exact_match": false,
-        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
         "note": "FRONT ラベルで X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）を目視確認。検索では X0011JB9IL の公式商品ページは未確認だが、DUCO レディースサングラス W016 系の流通情報は確認できる。一方 BACK/CODE は X001845QRJ / 日傘超軽量 [手動開閉] の別商品。DUCO 側は actual-only の provisional とし、1商品としては断定不可。",
         "evidence": [
           "X0011JB9IL",
@@ -5294,7 +5376,8 @@ window.ZERO_COST_INTAKE = {
         ],
         "exact_match_guard_state": "review_required",
         "exact_match_guard_reasons": [
-          "別商品mix"
+          "別商品mix",
+          "写真セット組み直し必要"
         ]
       },
       "official": {},
@@ -5304,12 +5387,12 @@ window.ZERO_COST_INTAKE = {
         "product_id": "PRD-BOX-001-025",
         "draft_id": "DRF-BOX-001-025",
         "research_id": "RES-BOX-001-025",
-        "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
+        "product_name": "写真セット組み直し候補: DUCO サングラス レディース #016（ブラック・ブルー）",
         "brand": "",
         "category": "",
         "barcode_primary": "X0011JB9IL",
         "product_code_type": "amazon_internal",
-        "listing_title": "DUCO サングラス レディース #016（ブラック・ブルー）",
+        "listing_title": "写真セット組み直し候補: DUCO サングラス レディース #016（ブラック・ブルー）",
         "listing_price": "",
         "market_floor_price": "",
         "market_floor_state": "未調査",
@@ -5322,17 +5405,18 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
-      "display_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
-      "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
+      "display_name": "写真セット組み直し候補: DUCO サングラス レディース #016（ブラック・ブルー）",
+      "product_name": "写真セット組み直し候補: DUCO サングラス レディース #016（ブラック・ブルー）",
       "verified_exact_match": false,
-      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 管理番号再分解待ち",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
-        "別商品mix"
+        "別商品mix",
+        "写真セット組み直し必要"
       ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
@@ -5347,7 +5431,107 @@ window.ZERO_COST_INTAKE = {
       "market_floor_price_label": "未調査",
       "listing_price": "",
       "exception": {},
-      "route_plan": {}
+      "route_plan": {},
+      "split_staging": {
+        "management_id": "BOX-001-ITEM-0024",
+        "plan_summary": "0025 FRONT と 0024 BACK/CODE は X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）で一致する。0024 FRONT の黒い収納袋系スロットと 0025 BACK/CODE の日傘側スロットは別商品として親 ID に残し、DUCO 側だけ local child へ切り出す。 / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 のローカル写真セットを作成済み / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "ui_summary": "0025 FRONT + 0024 BACK/CODE は DUCO child 候補 / 0024 FRONT は別物 / 0025 BACK/CODE は日傘側で別物 / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 のローカル写真セットを作成済み / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "operator_summary": "BOX-001-ITEM-0024 / 0025 は DUCO サングラス箱と日傘側が混在している。0025 FRONT と 0024 BACK/CODE は X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）で一致するため、DUCO 側だけ local child へ切り出す。0024 FRONT の黒い収納袋系スロットと 0025 BACK/CODE の日傘側は親 ID に残す。 / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 のローカル写真セットを作成済み / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_note": "0025 FRONT + 0024 BACK/CODE は DUCO 側として coherent。0024 FRONT の黒い収納袋系スロットと 0025 BACK/CODE の日傘側は別商品のため親 ID に残す。 / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 のローカル写真セットを作成済み / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_next_action": "SPLIT-BOX-001-0024-DUCO を local mint → local confirmed / official へ provisional actual-only 反映。親 0024 / 0025 は split_required のまま維持。 / BOX-001-ITEM-0062 は管理表 / 出品判断の止めどころを決めてから正式反映",
+        "related_management_ids": [
+          "BOX-001-ITEM-0025"
+        ],
+        "source_trace": [
+          {
+            "management_id": "BOX-001-ITEM-0024",
+            "slot": "FRONT",
+            "observed_as": "黒い収納袋系商品"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0024",
+            "slot": "BACK",
+            "observed_as": "DUCO ロゴ入りケース面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0024",
+            "slot": "CODE",
+            "observed_as": "X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）ラベル面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0025",
+            "slot": "FRONT",
+            "observed_as": "X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）ラベル面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0025",
+            "slot": "BACK",
+            "observed_as": "日傘超軽量パッケージ面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0025",
+            "slot": "CODE",
+            "observed_as": "日傘超軽量の別商品コード面"
+          }
+        ],
+        "blocked_split_children": [
+          {
+            "temporary_split_id": "SPLIT-BOX-001-0024-DUCO",
+            "target_label": "DUCO サングラス レディース #016（ブラック・ブルー）",
+            "source_slots": [
+              "BOX-001-ITEM-0025:FRONT",
+              "BOX-001-ITEM-0024:BACK",
+              "BOX-001-ITEM-0024:CODE"
+            ],
+            "status": "manifest_child_minted_local_only",
+            "blockers": [
+              "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+              "0025 FRONT と 0024 BACK/CODE は X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）で一致し、同一の DUCO サングラス箱として実画像確認済み",
+              "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+              "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+            ],
+            "truth_product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
+            "truth_barcode_primary": "X0011JB9IL",
+            "truth_product_code_type": "amazon_internal",
+            "truth_content_unknown": false,
+            "truth_official_image_state": "actual-only固定 / 比較画像なし",
+            "truth_exact_match_guard_state": "clear",
+            "truth_exact_match_guard_reasons": [],
+            "truth_evidence": [
+              "X0011JB9IL",
+              "DUCO",
+              "サングラス レディース",
+              "#016",
+              "ブラック・ブルー",
+              "0025:FRONT + 0024:BACK + 0024:CODE"
+            ],
+            "truth_brand_override": "DUCO",
+            "truth_category_override": "ファッション > レディース > 小物 > サングラス",
+            "truth_check_items_override": "フレーム色 / レンズ色 / 付属ケース / 型番#016 / 破損確認",
+            "truth_note": "SPLIT-BOX-001-0024-DUCO は、0025:FRONT と 0024:BACK/CODE の3枚で X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）の写真セットを組み直し済み。ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+            "minted_management_id": "BOX-001-ITEM-0062",
+            "minted_at": "2026-04-22 00:40:51 JST",
+            "minted_scope": "local_manifest_only",
+            "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+            "truth_promotion_scope": "local_confirmed_official_only",
+            "truth_promoted_management_id": "BOX-001-ITEM-0062",
+            "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
+            "truth_promoted_at": "2026-04-22 00:45:44 JST"
+          }
+        ],
+        "remaining_blockers": [
+          "DUCO child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
+          "0024 FRONT の黒い収納袋系スロットは相方未確定のまま",
+          "0025 BACK/CODE の日傘側スロットは相方未確定のまま",
+          "SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
+          "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。"
+        ],
+        "safe_next_step": "SPLIT-BOX-001-0024-DUCO を local mint → local confirmed / official へ provisional actual-only 反映。親 0024 / 0025 は split_required のまま維持する。 / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 のローカル写真セットを作成済み / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "stage_status": "partial_manifest_child_minted",
+        "match_role": "related"
+      },
+      "split_plan_summary": "0025 FRONT + 0024 BACK/CODE は DUCO child 候補 / 0024 FRONT は別物 / 0025 BACK/CODE は日傘側で別物 / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 のローカル写真セットを作成済み / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 をローカル特定結果へ暫定・実物写真のみで反映済み",
+      "split_plan_role": "related"
     },
     {
       "management_id": "BOX-001-ITEM-0026",
@@ -5489,7 +5673,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [
         {
@@ -5547,7 +5731,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
       }
     },
@@ -5697,7 +5881,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [
         {
@@ -5758,7 +5942,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
         "ルーティング状態": "写真セット組み直し必要",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix"
       }
     },
@@ -5843,7 +6027,7 @@ window.ZERO_COST_INTAKE = {
       "next_action": "写真セットを組み直す",
       "barcode_kind": "amazon_internal",
       "review_flag": "FRONT/BACK/CODE が別商品です",
-      "manual_note": "FRONT は黒/緑の冬小物系、BACK は X0010CU9L7 / Zukida 車のフック（Red）ラベル、CODE は car hook mobile phone holder NO-FE035 箱でした。",
+      "manual_note": "FRONT は黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK は X0010CU9L7 / Zukida 車のフック（Red）ラベル、CODE は car hook mobile phone holder NO-FE035 箱でした。",
       "resolved": {
         "management_id": "BOX-001-ITEM-0028",
         "resolution_status": "provisional",
@@ -5851,26 +6035,29 @@ window.ZERO_COST_INTAKE = {
         "barcode_primary": "X0010CU9L7",
         "product_code_type": "amazon_internal",
         "verified_exact_match": false,
-        "official_image_state": "管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能 / 新管理番号未採番 / 内容物未確認",
-        "note": "BACK のラベルで X0010CU9L7 / Zukida 車のフック 後部座席 (Red) を確認。CODE は car hook mobile phone holder 箱で NO-FE035 表記があり、同じ車用フック系ではあるが X0010CU9L7 を直接裏付けるコード面ではない。一方 FRONT は黒緑の冬小物系で別商品。現IDは Zukida anchor を維持するが、現写真では1商品に断定不能のため provisional に留める。",
+        "official_image_state": "管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能 / 新管理番号未採番 / 正規性確認待ち / 内容物未確認",
+        "note": "BACK のラベルで X0010CU9L7 / Zukida 車のフック 後部座席 (Red) を確認。Web検索では Zukida 車用フックの関連Amazonページは見つかるが、X0010CU9L7 と Red まで一致する公式級根拠は未取得。CODE は car hook mobile phone holder 箱で NO-FE035 表記があり、同じ車用フック系ではあるが X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT の NO-FE040 とも型番が違うため混ぜない。一方 FRONT は黒/白/緑の厚手ニット靴下またはレッグウォーマー系で別商品。現IDは Zukida anchor を維持するが、現写真では1商品に断定不能のため provisional に留める。",
         "evidence": [
           "X0010CU9L7",
           "Zukida",
           "車のフック",
           "Red",
           "CODE=Car hook mobile phone holder NO-FE035",
-          "FRONT=冬小物系の別商品"
+          "FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系の別商品",
+          "NO-FE035 と NO-FE040 はNO表記が異なるため同一商品として結合不可",
+          "Web検索: X0010CU9L7 / Zukida / Red の完全一致根拠なし"
         ],
         "exact_match_guard_state": "review_required",
         "exact_match_guard_reasons": [
           "別商品mix",
           "写真セット組み直し必要",
-          "内容物未確認"
+          "内容物未確認",
+          "真贋確認"
         ],
         "qwen_hq_review_status": "resolved",
         "qwen_hq_resolution": "needs_split",
         "qwen_hq_review_at": "2026-04-13 08:25:22 JST",
-        "qwen_hq_review_note": "0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。"
+        "qwen_hq_review_note": "0028 は FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。"
       },
       "official": {
         "management_id": "BOX-001-ITEM-0028",
@@ -5882,8 +6069,8 @@ window.ZERO_COST_INTAKE = {
         "official_image_url": "",
         "image_source": "",
         "verified_exact_match": false,
-        "official_image_state": "管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能 / 新管理番号未採番 / 内容物未確認",
-        "note": "Qwen 公開前チェック担当: CRITICAL: FRONT/BACK/CODE が別商品 mix 状態（intake_manual_overrides.json で split_required 登録済み） / CRITICAL: Hello Kitty 50TH ANNIVERSARY はサンリオ著作権/商標権関連リスク。正規品出所証明がないと削除・制限対象の可能性 / ほか3件 / HQ 公開前チェック担当: 管理番号の再分解: 0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。",
+        "official_image_state": "管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能 / 新管理番号未採番 / 正規性確認待ち / 内容物未確認",
+        "note": "Qwen 公開前チェック担当: CRITICAL: FRONT/BACK/CODE が別商品 mix 状態（intake_manual_overrides.json で split_required 登録済み） / CRITICAL: Hello Kitty 50TH ANNIVERSARY はサンリオ著作権/商標権関連リスク。正規品出所証明がないと削除・制限対象の可能性 / ほか3件 / HQ 公開前チェック担当: 管理番号の再分解: 0028 は FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。",
         "qwen_last_task_name": "公開前チェック担当",
         "qwen_last_review_at": "2026-04-12 06:38:33 JST",
         "qwen_last_recommended_status": "blocked",
@@ -5892,12 +6079,13 @@ window.ZERO_COST_INTAKE = {
         "qwen_hq_review_status": "resolved",
         "qwen_hq_resolution": "needs_split",
         "qwen_hq_review_at": "2026-04-13 08:25:22 JST",
-        "qwen_hq_review_note": "0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。",
+        "qwen_hq_review_note": "0028 は FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。",
         "exact_match_guard_state": "review_required",
         "exact_match_guard_reasons": [
           "別商品mix",
           "写真セット組み直し必要",
-          "内容物未確認"
+          "内容物未確認",
+          "真贋確認"
         ]
       },
       "commerce": {
@@ -5924,23 +6112,24 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
       "display_name": "写真セット組み直し候補: Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red",
       "product_name": "写真セット組み直し候補: Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red",
       "verified_exact_match": false,
-      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 管理番号再分解待ち",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 正規性確認待ち / 管理番号再分解待ち",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
         "別商品mix",
         "写真セット組み直し必要",
-        "内容物未確認"
+        "内容物未確認",
+        "真贋確認"
       ],
       "qwen_hq_review_status": "resolved",
       "qwen_hq_resolution": "needs_split",
-      "qwen_hq_review_note": "0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。",
+      "qwen_hq_review_note": "0028 は FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。",
       "publish_status": "下書き",
       "publish_state": "下書き",
       "public_listing_url": "",
@@ -5965,21 +6154,21 @@ window.ZERO_COST_INTAKE = {
         "Ship&co条件": "停止",
         "メルカリ配送": "",
         "人確認": "要",
-        "人確認理由": "precision guard: 別商品mix / 写真セット組み直し必要 / 内容物未確認 / 停止条件あり / Qwen HQ判断: 公開前チェック担当 / needs_split",
+        "人確認理由": "precision guard: 別商品mix / 写真セット組み直し必要 / 内容物未確認 / 真贋確認 / 停止条件あり / Qwen HQ判断: 公開前チェック担当 / needs_split",
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
         "ルーティング状態": "写真セット組み直し必要",
-        "更新時刻": "2026-04-21 23:08:31 JST",
-        "メモ": "name=写真セット組み直し候補: Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 管理番号再分解待ち / HQレビュー済み / 新管理番号未採番 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=review_required / guard_reasons=別商品mix / 写真セット組み直し必要 / 内容物未確認 / qwen_hq=needs_split / 0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。"
+        "更新時刻": "2026-04-22 00:33:59 JST",
+        "メモ": "name=写真セット組み直し候補: Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 正規性確認待ち / 管理番号再分解待ち / HQレビュー済み / 新管理番号未採番 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=review_required / guard_reasons=別商品mix / 写真セット組み直し必要 / 内容物未確認 / 真贋確認 / qwen_hq=needs_split / 0028 は FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。"
       },
       "split_staging": {
         "management_id": "BOX-001-ITEM-0028",
         "stage_status": "partial_manifest_child_minted",
-        "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/緑の冬小物系として未一致保留。0028 CODE は car hook mobile phone holder NO-FE035 箱で、BACK の X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT は car hook mobile phone holder NO-FE040 だが、0029 BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側の仮置き写真セット。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として視認一致済み。0052 FRONT の青橙箱は別物として残す。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 をローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 のローカル写真セットを作成済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/白/緑の厚手ニット靴下またはレッグウォーマー系として未一致保留。0028 CODE は car hook mobile phone holder NO-FE035 箱で、BACK の X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT は car hook mobile phone holder NO-FE040 だが、NO-FE035 と NO-FE040 はNO表記が異なるため結合しない。0029 BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側の仮置き写真セット。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として視認一致済み。0052 FRONT の青橙箱は別物として残す。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 をローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 のローカル写真セットを作成済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
         "ui_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029 FRONTは car hook 側として別扱い / 0053 FRONT⇄0052 BACK/CODEは同一白箱を視認確認 / 0052 FRONT別物 / 0059白箱はローカル写真セット作成・特定結果反映済み / 0060 SPEEDWOXはローカル写真セット作成・特定結果反映済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
-        "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 FRONT は car hook NO-FE040、0029 BACK/CODE は SPEEDWOX X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は同一白箱を視認確認済み。0052 FRONT の青橙箱は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。 / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
-        "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の冬小物系。0029 FRONT は car hook 側として別扱い。0053 FRONT と 0052 BACK/CODE は同一白箱として視認確認済みで、0052 FRONT は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。 / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
-        "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0029 FRONTは car hook 側として別扱い / 0059白箱は管理表・出品判断の止めどころ確認待ち / 0060SPEEDWOXは管理表・出品判断の止めどころ確認待ち / BOX-001-ITEM-0061 は管理表 / 出品判断の止めどころを決めてから正式反映",
+        "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の黒/白/緑の厚手ニット靴下またはレッグウォーマー系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 FRONT は car hook NO-FE040。NO-FE035 と NO-FE040 はNO表記が異なるため結合しない。0029 BACK/CODE は SPEEDWOX X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は同一白箱を視認確認済み。0052 FRONT の青橙箱は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。 / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の黒/白/緑の厚手ニット靴下またはレッグウォーマー系。0028 CODE=NO-FE035 と 0029 FRONT=NO-FE040 はNO表記が異なるため結合しない。0053 FRONT と 0052 BACK/CODE は同一白箱として視認確認済みで、0052 FRONT は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。 / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0028 CODE=NO-FE035保留 / 0029 FRONT=NO-FE040保留 / 0059白箱は管理表・出品判断の止めどころ確認待ち / 0060SPEEDWOXは管理表・出品判断の止めどころ確認待ち / BOX-001-ITEM-0061 は管理表 / 出品判断の止めどころを決めてから正式反映",
         "retain_existing_id": {
           "management_id": "BOX-001-ITEM-0028",
           "product_id": "PRD-BOX-001-028",
@@ -5994,7 +6183,7 @@ window.ZERO_COST_INTAKE = {
           {
             "management_id": "BOX-001-ITEM-0028",
             "slot": "FRONT",
-            "observed_as": "黒/緑のニット・冬小物系バッグ"
+            "observed_as": "黒/白/緑の厚手ニット靴下またはレッグウォーマー系"
           },
           {
             "management_id": "BOX-001-ITEM-0028",
@@ -6055,7 +6244,7 @@ window.ZERO_COST_INTAKE = {
         "blocked_split_children": [
           {
             "temporary_split_id": "SPLIT-BOX-001-0028-WINTER",
-            "target_label": "黒/緑の冬小物系",
+            "target_label": "黒/白/緑の厚手ニット靴下またはレッグウォーマー系",
             "source_slots": [
               "BOX-001-ITEM-0028:FRONT"
             ],
@@ -6267,13 +6456,15 @@ window.ZERO_COST_INTAKE = {
         "barcode_primary": "",
         "product_code_type": "package_text",
         "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番 / 内容物未確認",
-        "note": "FRONT に Car hook mobile phone holder / NO-FE040 / Car Hook Series 合格証を確認。一方 BACK は SPEEDWOX ワイヤーストリッパー X00162U47P ラベル付きの NETWORK TOOL パッケージ、CODE も同じワイヤーストリッパー実物で別商品。現写真では1商品に断定不能で、car hook 側は FRONT しか揃わないため provisional に留める。",
+        "note": "FRONT に Car hook mobile phone holder / NO-FE040 / Car Hook Series 合格証を確認。0028 CODE の NO-FE035 とは型番が違うため、見た目が近くても同一商品として結合しない。Web検索でも NO-FE040 の完全一致ページは見つからない。一方 BACK は SPEEDWOX ワイヤーストリッパー X00162U47P ラベル付きの NETWORK TOOL パッケージ、CODE も同じワイヤーストリッパー実物で別商品。現写真では1商品に断定不能で、car hook 側は FRONT しか揃わないため provisional に留める。",
         "evidence": [
           "Car hook",
           "mobile phone holder",
           "NO-FE040",
           "Car Hook Series",
-          "BACK/CODE=SPEEDWOX X00162U47P"
+          "BACK/CODE=SPEEDWOX X00162U47P",
+          "NO-FE035 と NO-FE040 はNO表記が異なるため同一商品として結合不可",
+          "Web検索: NO-FE040 完全一致根拠なし"
         ],
         "exact_match_guard_state": "review_required",
         "exact_match_guard_reasons": [
@@ -6307,7 +6498,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -6461,7 +6652,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -6631,7 +6822,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -6671,7 +6862,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=LEISURE WEAR ベージュ系レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
       }
     },
@@ -6933,7 +7124,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "precision guard 解消",
         "ルーティング状態": "停止",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=ZUCCA CLUB リラックス リカバリー サンダル / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=色違い / 形状違い / inventory_status=販売中 / listingId=2JPTBkWndxGku2L9EVw4UP"
       }
     },
@@ -7088,7 +7279,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -7131,7 +7322,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
         "ルーティング状態": "写真セット組み直し必要",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=jchinjia リュック メンズ ビジネスリュック 男女兼用 カジュアルバッグ おしゃれ トラベルバッグ / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix"
       }
     },
@@ -7264,7 +7455,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -7436,7 +7627,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -7476,7 +7667,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=Letshe ベビー前開きロンパース ピンク 110cm / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
       }
     },
@@ -7608,7 +7799,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -7775,7 +7966,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -7943,7 +8134,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -7983,7 +8174,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=裏起毛トップス オフホワイト L / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
       }
     },
@@ -8031,35 +8222,23 @@ window.ZERO_COST_INTAKE = {
       "identification": {
         "state": "split_required",
         "barcode_values": [
-          "X001AVKCQ5",
-          "X0010634F1"
+          "X001AVKCQ5"
         ],
         "front_back_texts": [
           "X001AVKCQ5",
           "（ユニベイズ】【寝苦し..L，オフホワイト）",
-          "新品 Made in China",
-          "fivihoc@",
-          "新品",
-          "X0010634F1"
+          "新品 Made in China"
         ],
-        "code_texts": [
-          "ene ( - >>",
-          "\\ oe ‘ ~ ~ \\ S X 5 1 1 1 3 4 1740 1331 5 3 81.738129 - 4 1 1 1 4 0 435 1357 9 16 -1 5 1 1 1 4 1 435 1357 9 16 53.217667 x"
-        ],
+        "code_texts": [],
         "ocr_texts": [
           "X001AVKCQ5",
           "（ユニベイズ】【寝苦し..L，オフホワイト）",
-          "新品 Made in China",
-          "fivihoc@",
-          "新品",
-          "X0010634F1"
+          "新品 Made in China"
         ],
-        "candidate_query": "X001AVKCQ5 （ユニベイズ】【寝苦し..L，オフホワイト） 新品 Made in China fivihoc@",
+        "candidate_query": "X001AVKCQ5 （ユニベイズ】【寝苦し..L，オフホワイト） 新品 Made in China",
         "review_flag": "FRONT/BACK/CODE が別商品です",
-        "ocr_engine": "sauna_tesseract_multistage + vision",
-        "ocr_debug_paths": [
-          "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0039/IMG_4943_CODE_ocr_best.png"
-        ]
+        "ocr_engine": "vision",
+        "ocr_debug_paths": []
       },
       "priority_score": 150,
       "next_action": "写真セットを組み直す",
@@ -8069,10 +8248,10 @@ window.ZERO_COST_INTAKE = {
       "resolved": {
         "management_id": "BOX-001-ITEM-0039",
         "resolution_status": "provisional",
-        "product_name": "fivihoc レディースペンダント（ゴールド/582）",
+        "product_name": "写真セット組み直し候補: fivihoc レディースペンダント（ゴールド/582）",
         "barcode_primary": "X0010634F1",
         "product_code_type": "amazon_internal",
-        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
         "note": "BACK/CODE の2枚でハート型ペンダント箱とラベル X0010634F1 / fivihoc レディースペンダント（ゴールド/582）が一致。一方 FRONT は X001AVKCQ5 のベージュ衣類で別商品。現写真では1商品に断定不能のため provisional に留める。",
         "evidence": [
           "X0010634F1",
@@ -8083,7 +8262,8 @@ window.ZERO_COST_INTAKE = {
         ],
         "exact_match_guard_state": "review_required",
         "exact_match_guard_reasons": [
-          "別商品mix"
+          "別商品mix",
+          "写真セット組み直し必要"
         ]
       },
       "official": {},
@@ -8093,12 +8273,12 @@ window.ZERO_COST_INTAKE = {
         "product_id": "PRD-BOX-001-039",
         "draft_id": "DRF-BOX-001-039",
         "research_id": "RES-BOX-001-039",
-        "product_name": "fivihoc レディースペンダント（ゴールド/582）",
+        "product_name": "写真セット組み直し候補: fivihoc レディースペンダント（ゴールド/582）",
         "brand": "",
         "category": "",
         "barcode_primary": "X0010634F1",
         "product_code_type": "amazon_internal",
-        "listing_title": "fivihoc レディースペンダント（ゴールド/582）",
+        "listing_title": "写真セット組み直し候補: fivihoc レディースペンダント（ゴールド/582）",
         "listing_price": "",
         "market_floor_price": "",
         "market_floor_state": "未調査",
@@ -8111,17 +8291,18 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
-      "display_name": "fivihoc レディースペンダント（ゴールド/582）",
-      "product_name": "fivihoc レディースペンダント（ゴールド/582）",
+      "display_name": "写真セット組み直し候補: fivihoc レディースペンダント（ゴールド/582）",
+      "product_name": "写真セット組み直し候補: fivihoc レディースペンダント（ゴールド/582）",
       "verified_exact_match": false,
-      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 管理番号再分解待ち",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
-        "別商品mix"
+        "別商品mix",
+        "写真セット組み直し必要"
       ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
@@ -8136,7 +8317,108 @@ window.ZERO_COST_INTAKE = {
       "market_floor_price_label": "未調査",
       "listing_price": "",
       "exception": {},
-      "route_plan": {}
+      "route_plan": {},
+      "split_staging": {
+        "management_id": "BOX-001-ITEM-0039",
+        "plan_summary": "0040 FRONT と 0039 BACK/CODE は X0010634F1 / fivihoc レディースペンダント（ゴールド/582）で一致する。0039 FRONT のベージュ衣類スロットと 0040 BACK/CODE の Bluetooth マウス側スロットは別商品として親 ID に残し、ペンダント側だけ local child へ切り出す。 / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットを作成済み / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "ui_summary": "0040 FRONT + 0039 BACK/CODE は pendant child 候補 / 0039 FRONT は衣類側で別物 / 0040 BACK/CODE はマウス側で別物 / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットを作成済み / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "operator_summary": "BOX-001-ITEM-0039 / 0040 はペンダント箱とマウス側が混在している。0040 FRONT と 0039 BACK/CODE は X0010634F1 / fivihoc レディースペンダント（ゴールド/582）で一致するため、ペンダント側だけ local child へ切り出す。0039 FRONT のベージュ衣類スロットと 0040 BACK/CODE の Bluetooth マウス側は親 ID に残す。 / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットを作成済み / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_note": "0040 FRONT + 0039 BACK/CODE はペンダント側として coherent。0039 FRONT の衣類スロットと 0040 BACK/CODE の Bluetooth マウス側は別商品のため親 ID に残す。 / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットを作成済み / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_next_action": "SPLIT-BOX-001-0039-PENDANT を local mint → local confirmed / official へ provisional actual-only 反映。親 0039 / 0040 は split_required のまま維持。 / BOX-001-ITEM-0064 は管理表 / 出品判断の止めどころを決めてから正式反映",
+        "related_management_ids": [
+          "BOX-001-ITEM-0040"
+        ],
+        "source_trace": [
+          {
+            "management_id": "BOX-001-ITEM-0039",
+            "slot": "FRONT",
+            "observed_as": "X001AVKCQ5 のベージュ衣類側スロット"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0039",
+            "slot": "BACK",
+            "observed_as": "X0010634F1 / fivihoc レディースペンダント（ゴールド/582）ラベル面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0039",
+            "slot": "CODE",
+            "observed_as": "fivihoc ハート型ペンダント箱のコード面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0040",
+            "slot": "FRONT",
+            "observed_as": "X0010634F1 のレディースペンダント箱 FRONT"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0040",
+            "slot": "BACK",
+            "observed_as": "X0017GVXBV / Bluetooth 無線マウス側ラベル面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0040",
+            "slot": "CODE",
+            "observed_as": "Bluetooth 無線マウスの別商品コード面"
+          }
+        ],
+        "blocked_split_children": [
+          {
+            "temporary_split_id": "SPLIT-BOX-001-0039-PENDANT",
+            "target_label": "fivihoc レディースペンダント ゴールド系 582",
+            "source_slots": [
+              "BOX-001-ITEM-0040:FRONT",
+              "BOX-001-ITEM-0039:BACK",
+              "BOX-001-ITEM-0039:CODE"
+            ],
+            "status": "manifest_child_minted_local_only",
+            "blockers": [
+              "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+              "0040 FRONT と 0039 BACK/CODE は X0010634F1 / fivihoc レディースペンダント（ゴールド/582）で一致し、同一のペンダント箱として実画像確認済み",
+              "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+              "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+            ],
+            "truth_product_name": "fivihoc レディースペンダント ゴールド系 582",
+            "truth_barcode_primary": "X0010634F1",
+            "truth_product_code_type": "amazon_internal",
+            "truth_content_unknown": false,
+            "truth_official_image_state": "actual-only固定 / 比較画像なし",
+            "truth_exact_match_guard_state": "clear",
+            "truth_exact_match_guard_reasons": [],
+            "truth_evidence": [
+              "X0010634F1",
+              "fivihoc",
+              "レディースペンダント",
+              "ゴールド",
+              "582",
+              "0040:FRONT + 0039:BACK + 0039:CODE"
+            ],
+            "truth_brand_override": "fivihoc",
+            "truth_category_override": "ファッション > レディース > アクセサリー > ネックレス",
+            "truth_check_items_override": "石色 / チェーン状態 / 金属色 / 留め具 / 582表記",
+            "truth_note": "SPLIT-BOX-001-0039-PENDANT は、0040:FRONT と 0039:BACK/CODE の3枚で X0010634F1 / fivihoc レディースペンダント（ゴールド/582）の写真セットを組み直し済み。出品画像は実物のみで扱い、ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+            "truth_price_override": 1980,
+            "minted_management_id": "BOX-001-ITEM-0064",
+            "minted_at": "2026-04-22 01:09:44 JST",
+            "minted_scope": "local_manifest_only",
+            "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+            "truth_promotion_scope": "local_confirmed_official_only",
+            "truth_promoted_management_id": "BOX-001-ITEM-0064",
+            "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
+            "truth_promoted_at": "2026-04-22 01:15:04 JST"
+          }
+        ],
+        "remaining_blockers": [
+          "Pendant child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
+          "0039 FRONT のベージュ衣類スロットは相方未確定のまま",
+          "0040 BACK/CODE の Bluetooth マウス側スロットは相方未確定のまま",
+          "SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
+          "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。"
+        ],
+        "safe_next_step": "SPLIT-BOX-001-0039-PENDANT を local mint → local confirmed / official へ provisional actual-only 反映。親 0039 / 0040 は split_required のまま維持する。 / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットを作成済み / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "stage_status": "partial_manifest_child_minted",
+        "match_role": "primary"
+      },
+      "split_plan_summary": "0040 FRONT + 0039 BACK/CODE は pendant child 候補 / 0039 FRONT は衣類側で別物 / 0040 BACK/CODE はマウス側で別物 / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットを作成済み / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 をローカル特定結果へ暫定・実物写真のみで反映済み",
+      "split_plan_role": "primary"
     },
     {
       "management_id": "BOX-001-ITEM-0040",
@@ -8182,16 +8464,13 @@ window.ZERO_COST_INTAKE = {
       "identification": {
         "state": "split_required",
         "barcode_values": [
-          "X0010634F1",
           "X0017GVXBV"
         ],
         "front_back_texts": [
-          "X0010634F1",
-          "fiwihoc®",
-          "レディース..ダント（ゴールド/582）",
-          "新品",
           "X0017GVXBV",
-          "Blueluutマウス、無線マウス.jplup Culuguler PC:Mac用"
+          "Blueluutマウス、無線マウス.jplup Culuguler PC:Mac用",
+          "新品",
+          "MADE INICHINA"
         ],
         "code_texts": [
           "LRO AA.AN-S",
@@ -8202,14 +8481,14 @@ window.ZERO_COST_INTAKE = {
           "、 The Bluetooth connection is unstablo durine pairing. hich reauls in"
         ],
         "ocr_texts": [
-          "X0010634F1",
-          "fiwihoc®",
-          "レディース..ダント（ゴールド/582）",
-          "新品",
           "X0017GVXBV",
-          "Blueluutマウス、無線マウス.jplup Culuguler PC:Mac用"
+          "Blueluutマウス、無線マウス.jplup Culuguler PC:Mac用",
+          "新品",
+          "MADE INICHINA",
+          "LRO AA.AN-S",
+          "1.5V"
         ],
-        "candidate_query": "X0010634F1 fiwihoc® レディース..ダント（ゴールド/582） 新品",
+        "candidate_query": "X0017GVXBV Blueluutマウス、無線マウス.jplup Culuguler PC:Mac用 新品 MADE INICHINA",
         "review_flag": "FRONT/BACK/CODE が別商品です",
         "ocr_engine": "sauna_tesseract_multistage + vision",
         "ocr_debug_paths": [
@@ -8224,11 +8503,11 @@ window.ZERO_COST_INTAKE = {
       "resolved": {
         "management_id": "BOX-001-ITEM-0040",
         "resolution_status": "provisional",
-        "product_name": "Bluetooth 無線マウス PC/Mac用",
+        "product_name": "写真セット組み直し候補: Bluetooth 無線マウス PC/Mac用",
         "barcode_primary": "X0017GVXBV",
         "product_code_type": "amazon_internal",
         "verified_exact_match": false,
-        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
         "note": "BACK/CODE の2枚で X0017GVXBV / Bluetooth マウス / 無線マウス / PC/Mac用 が一致。一方 FRONT は X0010634F1 のレディースペンダント箱で別商品。現写真では1商品に断定不能のため、mouse 側を仮採用して provisional に留める。",
         "evidence": [
           "X0017GVXBV",
@@ -8238,7 +8517,8 @@ window.ZERO_COST_INTAKE = {
         ],
         "exact_match_guard_state": "review_required",
         "exact_match_guard_reasons": [
-          "別商品mix"
+          "別商品mix",
+          "写真セット組み直し必要"
         ]
       },
       "official": {},
@@ -8248,12 +8528,12 @@ window.ZERO_COST_INTAKE = {
         "product_id": "PRD-BOX-001-040",
         "draft_id": "DRF-BOX-001-040",
         "research_id": "RES-BOX-001-040",
-        "product_name": "Bluetooth 無線マウス PC/Mac用",
+        "product_name": "写真セット組み直し候補: Bluetooth 無線マウス PC/Mac用",
         "brand": "",
         "category": "",
         "barcode_primary": "X0017GVXBV",
         "product_code_type": "amazon_internal",
-        "listing_title": "Bluetooth 無線マウス PC/Mac用",
+        "listing_title": "写真セット組み直し候補: Bluetooth 無線マウス PC/Mac用",
         "listing_price": "",
         "market_floor_price": "",
         "market_floor_state": "未調査",
@@ -8266,17 +8546,18 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
-      "display_name": "Bluetooth 無線マウス PC/Mac用",
-      "product_name": "Bluetooth 無線マウス PC/Mac用",
+      "display_name": "写真セット組み直し候補: Bluetooth 無線マウス PC/Mac用",
+      "product_name": "写真セット組み直し候補: Bluetooth 無線マウス PC/Mac用",
       "verified_exact_match": false,
-      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 管理番号再分解待ち",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
-        "別商品mix"
+        "別商品mix",
+        "写真セット組み直し必要"
       ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
@@ -8291,7 +8572,108 @@ window.ZERO_COST_INTAKE = {
       "market_floor_price_label": "未調査",
       "listing_price": "",
       "exception": {},
-      "route_plan": {}
+      "route_plan": {},
+      "split_staging": {
+        "management_id": "BOX-001-ITEM-0039",
+        "plan_summary": "0040 FRONT と 0039 BACK/CODE は X0010634F1 / fivihoc レディースペンダント（ゴールド/582）で一致する。0039 FRONT のベージュ衣類スロットと 0040 BACK/CODE の Bluetooth マウス側スロットは別商品として親 ID に残し、ペンダント側だけ local child へ切り出す。 / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットを作成済み / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "ui_summary": "0040 FRONT + 0039 BACK/CODE は pendant child 候補 / 0039 FRONT は衣類側で別物 / 0040 BACK/CODE はマウス側で別物 / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットを作成済み / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "operator_summary": "BOX-001-ITEM-0039 / 0040 はペンダント箱とマウス側が混在している。0040 FRONT と 0039 BACK/CODE は X0010634F1 / fivihoc レディースペンダント（ゴールド/582）で一致するため、ペンダント側だけ local child へ切り出す。0039 FRONT のベージュ衣類スロットと 0040 BACK/CODE の Bluetooth マウス側は親 ID に残す。 / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットを作成済み / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_note": "0040 FRONT + 0039 BACK/CODE はペンダント側として coherent。0039 FRONT の衣類スロットと 0040 BACK/CODE の Bluetooth マウス側は別商品のため親 ID に残す。 / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットを作成済み / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_next_action": "SPLIT-BOX-001-0039-PENDANT を local mint → local confirmed / official へ provisional actual-only 反映。親 0039 / 0040 は split_required のまま維持。 / BOX-001-ITEM-0064 は管理表 / 出品判断の止めどころを決めてから正式反映",
+        "related_management_ids": [
+          "BOX-001-ITEM-0040"
+        ],
+        "source_trace": [
+          {
+            "management_id": "BOX-001-ITEM-0039",
+            "slot": "FRONT",
+            "observed_as": "X001AVKCQ5 のベージュ衣類側スロット"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0039",
+            "slot": "BACK",
+            "observed_as": "X0010634F1 / fivihoc レディースペンダント（ゴールド/582）ラベル面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0039",
+            "slot": "CODE",
+            "observed_as": "fivihoc ハート型ペンダント箱のコード面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0040",
+            "slot": "FRONT",
+            "observed_as": "X0010634F1 のレディースペンダント箱 FRONT"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0040",
+            "slot": "BACK",
+            "observed_as": "X0017GVXBV / Bluetooth 無線マウス側ラベル面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0040",
+            "slot": "CODE",
+            "observed_as": "Bluetooth 無線マウスの別商品コード面"
+          }
+        ],
+        "blocked_split_children": [
+          {
+            "temporary_split_id": "SPLIT-BOX-001-0039-PENDANT",
+            "target_label": "fivihoc レディースペンダント ゴールド系 582",
+            "source_slots": [
+              "BOX-001-ITEM-0040:FRONT",
+              "BOX-001-ITEM-0039:BACK",
+              "BOX-001-ITEM-0039:CODE"
+            ],
+            "status": "manifest_child_minted_local_only",
+            "blockers": [
+              "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+              "0040 FRONT と 0039 BACK/CODE は X0010634F1 / fivihoc レディースペンダント（ゴールド/582）で一致し、同一のペンダント箱として実画像確認済み",
+              "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+              "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+            ],
+            "truth_product_name": "fivihoc レディースペンダント ゴールド系 582",
+            "truth_barcode_primary": "X0010634F1",
+            "truth_product_code_type": "amazon_internal",
+            "truth_content_unknown": false,
+            "truth_official_image_state": "actual-only固定 / 比較画像なし",
+            "truth_exact_match_guard_state": "clear",
+            "truth_exact_match_guard_reasons": [],
+            "truth_evidence": [
+              "X0010634F1",
+              "fivihoc",
+              "レディースペンダント",
+              "ゴールド",
+              "582",
+              "0040:FRONT + 0039:BACK + 0039:CODE"
+            ],
+            "truth_brand_override": "fivihoc",
+            "truth_category_override": "ファッション > レディース > アクセサリー > ネックレス",
+            "truth_check_items_override": "石色 / チェーン状態 / 金属色 / 留め具 / 582表記",
+            "truth_note": "SPLIT-BOX-001-0039-PENDANT は、0040:FRONT と 0039:BACK/CODE の3枚で X0010634F1 / fivihoc レディースペンダント（ゴールド/582）の写真セットを組み直し済み。出品画像は実物のみで扱い、ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+            "truth_price_override": 1980,
+            "minted_management_id": "BOX-001-ITEM-0064",
+            "minted_at": "2026-04-22 01:09:44 JST",
+            "minted_scope": "local_manifest_only",
+            "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+            "truth_promotion_scope": "local_confirmed_official_only",
+            "truth_promoted_management_id": "BOX-001-ITEM-0064",
+            "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
+            "truth_promoted_at": "2026-04-22 01:15:04 JST"
+          }
+        ],
+        "remaining_blockers": [
+          "Pendant child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
+          "0039 FRONT のベージュ衣類スロットは相方未確定のまま",
+          "0040 BACK/CODE の Bluetooth マウス側スロットは相方未確定のまま",
+          "SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
+          "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。"
+        ],
+        "safe_next_step": "SPLIT-BOX-001-0039-PENDANT を local mint → local confirmed / official へ provisional actual-only 反映。親 0039 / 0040 は split_required のまま維持する。 / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットを作成済み / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "stage_status": "partial_manifest_child_minted",
+        "match_role": "related"
+      },
+      "split_plan_summary": "0040 FRONT + 0039 BACK/CODE は pendant child 候補 / 0039 FRONT は衣類側で別物 / 0040 BACK/CODE はマウス側で別物 / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットを作成済み / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 をローカル特定結果へ暫定・実物写真のみで反映済み",
+      "split_plan_role": "related"
     },
     {
       "management_id": "BOX-001-ITEM-0041",
@@ -8421,7 +8803,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -8491,9 +8873,7 @@ window.ZERO_COST_INTAKE = {
       "box_code": "001",
       "identification": {
         "state": "split_required",
-        "barcode_values": [
-          "X001B1RSSJ"
-        ],
+        "barcode_values": [],
         "front_back_texts": [
           "WARNINGi Not autable for children under aree as foom plecee maa bre",
           "H and causea",
@@ -8502,14 +8882,7 @@ window.ZERO_COST_INTAKE = {
           "breakages， Adut supenysion reauired ar all times",
           "SacessiNe toree to twit or pull temahts cauld readt ins"
         ],
-        "code_texts": [
-          "NEEDLY",
-          "Sleeping lip mask",
-          "Picky. Sate.",
-          "Feel the Difference.",
-          "10m1/0.33日1.02、",
-          "[QPITTA y 7 8 ih, / (fT Uf th fee y ; 3 ON Me) ie ih } a {Oo ie ; Z ; , owe = Ha f / if BEG £# Ze Ej ii 4 {© Sf STL Y aie 8 2 uN / Me dels Lo iy is i ‘ et P LEA [4 Lily SM IP B fn a iif ; hyt Sd if ; a. 4 ] 4 aN f 5 LBP ei"
-        ],
+        "code_texts": [],
         "ocr_texts": [
           "WARNINGi Not autable for children under aree as foom plecee maa bre",
           "H and causea",
@@ -8520,23 +8893,21 @@ window.ZERO_COST_INTAKE = {
         ],
         "candidate_query": "WARNINGi Not autable for children under aree as foom plecee maa bre H and causea choking hazard. Caution: Do not use. in formation for future reference.",
         "review_flag": "FRONT/BACK/CODE が別商品です",
-        "ocr_engine": "sauna_tesseract_multistage + vision",
-        "ocr_debug_paths": [
-          "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0042/IMG_4953_CODE_ocr_best.png"
-        ]
+        "ocr_engine": "vision",
+        "ocr_debug_paths": []
       },
-      "priority_score": 150,
+      "priority_score": 220,
       "next_action": "写真セットを組み直す",
-      "barcode_kind": "amazon_internal",
+      "barcode_kind": "",
       "review_flag": "FRONT/BACK/CODE が別商品です",
       "manual_note": "FRONT は青い袋入り布製品、BACK/CODE は NEEDLY Sleeping lip mask 10ml 箱で別商品でした。",
       "resolved": {
         "management_id": "BOX-001-ITEM-0042",
         "resolution_status": "provisional",
-        "product_name": "NEEDLY Sleeping Lip Mask 10ml",
+        "product_name": "写真セット組み直し候補: NEEDLY Sleeping Lip Mask 10ml",
         "barcode_primary": "X001B1RSSJ",
         "product_code_type": "amazon_internal",
-        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
         "note": "BACK/CODE の2枚で NEEDLY Sleeping Lip Mask 10ml / X001B1RSSJ が一致する。一方 FRONT は青い袋入りの布製品で別商品。現写真では1商品に断定不能のため、NEEDLY 側を provisional に留める。",
         "evidence": [
           "BACK/CODE=NEEDLY Sleeping Lip Mask 10ml",
@@ -8545,7 +8916,8 @@ window.ZERO_COST_INTAKE = {
         ],
         "exact_match_guard_state": "review_required",
         "exact_match_guard_reasons": [
-          "別商品mix"
+          "別商品mix",
+          "写真セット組み直し必要"
         ],
         "image_source": "actual-only"
       },
@@ -8559,11 +8931,12 @@ window.ZERO_COST_INTAKE = {
         "official_image_url": "",
         "image_source": "actual-only",
         "verified_exact_match": false,
-        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
         "note": "BACK/CODE の2枚で NEEDLY / Sleeping lip mask / 10ml / X001B1RSSJ が一致する。一方 FRONT は青い袋入り布製品で別商品。比較画像は使わず、NEEDLY 側を actual-only の provisional として扱う。",
         "exact_match_guard_state": "review_required",
         "exact_match_guard_reasons": [
-          "別商品mix"
+          "別商品mix",
+          "写真セット組み直し必要"
         ]
       },
       "commerce": {
@@ -8572,12 +8945,12 @@ window.ZERO_COST_INTAKE = {
         "product_id": "PRD-BOX-001-042",
         "draft_id": "DRF-BOX-001-042",
         "research_id": "RES-BOX-001-042",
-        "product_name": "NEEDLY Sleeping Lip Mask 10ml",
+        "product_name": "写真セット組み直し候補: NEEDLY Sleeping Lip Mask 10ml",
         "brand": "",
         "category": "",
         "barcode_primary": "X001B1RSSJ",
         "product_code_type": "amazon_internal",
-        "listing_title": "NEEDLY Sleeping Lip Mask 10ml",
+        "listing_title": "写真セット組み直し候補: NEEDLY Sleeping Lip Mask 10ml",
         "listing_price": "",
         "market_floor_price": "",
         "market_floor_state": "未調査",
@@ -8590,17 +8963,18 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
-      "display_name": "NEEDLY Sleeping Lip Mask 10ml",
-      "product_name": "NEEDLY Sleeping Lip Mask 10ml",
+      "display_name": "写真セット組み直し候補: NEEDLY Sleeping Lip Mask 10ml",
+      "product_name": "写真セット組み直し候補: NEEDLY Sleeping Lip Mask 10ml",
       "verified_exact_match": false,
-      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 管理番号再分解待ち",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
-        "別商品mix"
+        "別商品mix",
+        "写真セット組み直し必要"
       ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
@@ -8615,7 +8989,107 @@ window.ZERO_COST_INTAKE = {
       "market_floor_price_label": "未調査",
       "listing_price": "",
       "exception": {},
-      "route_plan": {}
+      "route_plan": {},
+      "split_staging": {
+        "management_id": "BOX-001-ITEM-0042",
+        "plan_summary": "0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致する。0042 FRONT の青い袋入り布製品スロットと 0043 BACK/CODE の DOMAT 財布側スロットは別商品として親 ID に残し、NEEDLY 側だけ local child へ切り出す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "ui_summary": "0043 FRONT + 0042 BACK/CODE は NEEDLY child 候補 / 0042 FRONT は布製品側で別物 / 0043 BACK/CODE は DOMAT 側で別物 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "operator_summary": "BOX-001-ITEM-0042 / 0043 は NEEDLY lip mask と DOMAT 財布側が混在している。0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致するため、NEEDLY 側だけ local child へ切り出す。0042 FRONT の青い袋入り布製品スロットと 0043 BACK/CODE の DOMAT 財布側は親 ID に残す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_note": "0043 FRONT + 0042 BACK/CODE は NEEDLY 側として coherent。0042 FRONT の布製品スロットと 0043 BACK/CODE の DOMAT 財布側は別商品のため親 ID に残す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_next_action": "SPLIT-BOX-001-0042-NEEDLY を local mint → local confirmed / official へ provisional actual-only 反映。親 0042 / 0043 は split_required のまま維持。 / BOX-001-ITEM-0065 は管理表 / 出品判断の止めどころを決めてから正式反映",
+        "related_management_ids": [
+          "BOX-001-ITEM-0043"
+        ],
+        "source_trace": [
+          {
+            "management_id": "BOX-001-ITEM-0042",
+            "slot": "FRONT",
+            "observed_as": "青い袋入りの布製品スロット"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0042",
+            "slot": "BACK",
+            "observed_as": "NEEDLY Sleeping Lip Mask 10ml の箱背面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0042",
+            "slot": "CODE",
+            "observed_as": "X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml コード面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0043",
+            "slot": "FRONT",
+            "observed_as": "NEEDLY Sleeping Lip Mask 10ml の箱 FRONT"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0043",
+            "slot": "BACK",
+            "observed_as": "X00174LMFZ / DOMAT 財布側ラベル面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0043",
+            "slot": "CODE",
+            "observed_as": "DOMAT 財布の別商品コード面"
+          }
+        ],
+        "blocked_split_children": [
+          {
+            "temporary_split_id": "SPLIT-BOX-001-0042-NEEDLY",
+            "target_label": "NEEDLY Sleeping Lip Mask 10ml",
+            "source_slots": [
+              "BOX-001-ITEM-0043:FRONT",
+              "BOX-001-ITEM-0042:BACK",
+              "BOX-001-ITEM-0042:CODE"
+            ],
+            "status": "manifest_child_minted_local_only",
+            "blockers": [
+              "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+              "0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致し、同一の NEEDLY 箱として実画像確認済み",
+              "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+              "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+            ],
+            "truth_product_name": "NEEDLY Sleeping Lip Mask 10ml",
+            "truth_barcode_primary": "X001B1RSSJ",
+            "truth_product_code_type": "amazon_internal",
+            "truth_content_unknown": false,
+            "truth_official_image_state": "actual-only固定 / 比較画像なし",
+            "truth_exact_match_guard_state": "clear",
+            "truth_exact_match_guard_reasons": [],
+            "truth_evidence": [
+              "X001B1RSSJ",
+              "NEEDLY",
+              "Sleeping Lip Mask",
+              "10ml",
+              "0043:FRONT + 0042:BACK + 0042:CODE"
+            ],
+            "truth_brand_override": "NEEDLY",
+            "truth_category_override": "ビューティー > スキンケア・基礎化粧品 > リップケア",
+            "truth_check_items_override": "未開封 / 使用期限 / 箱つぶれ / 10ml表記 / 衛生状態",
+            "truth_note": "SPLIT-BOX-001-0042-NEEDLY は、0043:FRONT と 0042:BACK/CODE の3枚で X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml の写真セットを組み直し済み。出品画像は実物のみで扱い、ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+            "truth_price_override": 1680,
+            "minted_management_id": "BOX-001-ITEM-0065",
+            "minted_at": "2026-04-22 01:09:44 JST",
+            "minted_scope": "local_manifest_only",
+            "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+            "truth_promotion_scope": "local_confirmed_official_only",
+            "truth_promoted_management_id": "BOX-001-ITEM-0065",
+            "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
+            "truth_promoted_at": "2026-04-22 01:15:04 JST"
+          }
+        ],
+        "remaining_blockers": [
+          "NEEDLY child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
+          "0042 FRONT の青い袋入り布製品スロットは相方未確定のまま",
+          "0043 BACK/CODE の DOMAT 財布側スロットは相方未確定のまま",
+          "SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
+          "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。"
+        ],
+        "safe_next_step": "SPLIT-BOX-001-0042-NEEDLY を local mint → local confirmed / official へ provisional actual-only 反映。親 0042 / 0043 は split_required のまま維持する。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "stage_status": "partial_manifest_child_minted",
+        "match_role": "primary"
+      },
+      "split_plan_summary": "0043 FRONT + 0042 BACK/CODE は NEEDLY child 候補 / 0042 FRONT は布製品側で別物 / 0043 BACK/CODE は DOMAT 側で別物 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
+      "split_plan_role": "primary"
     },
     {
       "management_id": "BOX-001-ITEM-0043",
@@ -8664,12 +9138,9 @@ window.ZERO_COST_INTAKE = {
           "X00174LMFZ"
         ],
         "front_back_texts": [
-          "［g当］",
-          "255z",
-          "YJAE EXP 20270909m71",
-          "NEEDLY SLEEPING LIP MASK",
-          "［販売名】スリービングリップマスク （リップトリートメント）",
-          "【全成分】水晶ポリインプテン、トリ（カブリル／カプリン酸）グリセリル、フィトステロールズポリリンノレイン酸ポリグリセ"
+          "X00174LMFZ",
+          "【DOMAT】 男性用ドマット..性と女性用の財布。（赤褐色）",
+          "新品"
         ],
         "code_texts": [
           "X00174LMFZ",
@@ -8679,14 +9150,14 @@ window.ZERO_COST_INTAKE = {
           "= ="
         ],
         "ocr_texts": [
-          "［g当］",
-          "255z",
-          "YJAE EXP 20270909m71",
-          "NEEDLY SLEEPING LIP MASK",
-          "［販売名】スリービングリップマスク （リップトリートメント）",
-          "【全成分】水晶ポリインプテン、トリ（カブリル／カプリン酸）グリセリル、フィトステロールズポリリンノレイン酸ポリグリセ"
+          "X00174LMFZ",
+          "【DOMAT】 男性用ドマット..性と女性用の財布。（赤褐色）",
+          "新品",
+          "（DOMAT】 男性用ドマット..性と女性用の財布。（赤褐色）",
+          "DOMAT",
+          "= ="
         ],
-        "candidate_query": "［g当］ 255z YJAE EXP 20270909m71 NEEDLY SLEEPING LIP MASK",
+        "candidate_query": "X00174LMFZ 【DOMAT】 男性用ドマット..性と女性用の財布。（赤褐色） 新品",
         "review_flag": "FRONT/BACK/CODE が別商品です",
         "ocr_engine": "sauna_tesseract_multistage + vision",
         "ocr_debug_paths": [
@@ -8701,10 +9172,10 @@ window.ZERO_COST_INTAKE = {
       "resolved": {
         "management_id": "BOX-001-ITEM-0043",
         "resolution_status": "provisional",
-        "product_name": "DOMAT 財布 レッドブラウン",
+        "product_name": "写真セット組み直し候補: DOMAT 財布 レッドブラウン",
         "barcode_primary": "X00174LMFZ",
         "product_code_type": "amazon_internal",
-        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
         "note": "BACK/CODE の2枚で DOMAT 箱と X00174LMFZ / 財布 / 赤褐色 が一致。一方 FRONT は NEEDLY SLEEPING LIP MASK 箱の別面で別商品。現写真では1商品に断定不能のため、DOMAT 側を provisional に留める。",
         "evidence": [
           "X00174LMFZ",
@@ -8714,7 +9185,8 @@ window.ZERO_COST_INTAKE = {
         ],
         "exact_match_guard_state": "review_required",
         "exact_match_guard_reasons": [
-          "別商品mix"
+          "別商品mix",
+          "写真セット組み直し必要"
         ]
       },
       "official": {},
@@ -8724,12 +9196,12 @@ window.ZERO_COST_INTAKE = {
         "product_id": "PRD-BOX-001-043",
         "draft_id": "DRF-BOX-001-043",
         "research_id": "RES-BOX-001-043",
-        "product_name": "DOMAT 財布 レッドブラウン",
+        "product_name": "写真セット組み直し候補: DOMAT 財布 レッドブラウン",
         "brand": "",
         "category": "",
         "barcode_primary": "X00174LMFZ",
         "product_code_type": "amazon_internal",
-        "listing_title": "DOMAT 財布 レッドブラウン",
+        "listing_title": "写真セット組み直し候補: DOMAT 財布 レッドブラウン",
         "listing_price": "",
         "market_floor_price": "",
         "market_floor_state": "未調査",
@@ -8742,17 +9214,18 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
-      "display_name": "DOMAT 財布 レッドブラウン",
-      "product_name": "DOMAT 財布 レッドブラウン",
+      "display_name": "写真セット組み直し候補: DOMAT 財布 レッドブラウン",
+      "product_name": "写真セット組み直し候補: DOMAT 財布 レッドブラウン",
       "verified_exact_match": false,
-      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 管理番号再分解待ち",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
-        "別商品mix"
+        "別商品mix",
+        "写真セット組み直し必要"
       ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
@@ -8767,7 +9240,107 @@ window.ZERO_COST_INTAKE = {
       "market_floor_price_label": "未調査",
       "listing_price": "",
       "exception": {},
-      "route_plan": {}
+      "route_plan": {},
+      "split_staging": {
+        "management_id": "BOX-001-ITEM-0042",
+        "plan_summary": "0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致する。0042 FRONT の青い袋入り布製品スロットと 0043 BACK/CODE の DOMAT 財布側スロットは別商品として親 ID に残し、NEEDLY 側だけ local child へ切り出す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "ui_summary": "0043 FRONT + 0042 BACK/CODE は NEEDLY child 候補 / 0042 FRONT は布製品側で別物 / 0043 BACK/CODE は DOMAT 側で別物 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "operator_summary": "BOX-001-ITEM-0042 / 0043 は NEEDLY lip mask と DOMAT 財布側が混在している。0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致するため、NEEDLY 側だけ local child へ切り出す。0042 FRONT の青い袋入り布製品スロットと 0043 BACK/CODE の DOMAT 財布側は親 ID に残す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_note": "0043 FRONT + 0042 BACK/CODE は NEEDLY 側として coherent。0042 FRONT の布製品スロットと 0043 BACK/CODE の DOMAT 財布側は別商品のため親 ID に残す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_next_action": "SPLIT-BOX-001-0042-NEEDLY を local mint → local confirmed / official へ provisional actual-only 反映。親 0042 / 0043 は split_required のまま維持。 / BOX-001-ITEM-0065 は管理表 / 出品判断の止めどころを決めてから正式反映",
+        "related_management_ids": [
+          "BOX-001-ITEM-0043"
+        ],
+        "source_trace": [
+          {
+            "management_id": "BOX-001-ITEM-0042",
+            "slot": "FRONT",
+            "observed_as": "青い袋入りの布製品スロット"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0042",
+            "slot": "BACK",
+            "observed_as": "NEEDLY Sleeping Lip Mask 10ml の箱背面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0042",
+            "slot": "CODE",
+            "observed_as": "X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml コード面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0043",
+            "slot": "FRONT",
+            "observed_as": "NEEDLY Sleeping Lip Mask 10ml の箱 FRONT"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0043",
+            "slot": "BACK",
+            "observed_as": "X00174LMFZ / DOMAT 財布側ラベル面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0043",
+            "slot": "CODE",
+            "observed_as": "DOMAT 財布の別商品コード面"
+          }
+        ],
+        "blocked_split_children": [
+          {
+            "temporary_split_id": "SPLIT-BOX-001-0042-NEEDLY",
+            "target_label": "NEEDLY Sleeping Lip Mask 10ml",
+            "source_slots": [
+              "BOX-001-ITEM-0043:FRONT",
+              "BOX-001-ITEM-0042:BACK",
+              "BOX-001-ITEM-0042:CODE"
+            ],
+            "status": "manifest_child_minted_local_only",
+            "blockers": [
+              "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+              "0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致し、同一の NEEDLY 箱として実画像確認済み",
+              "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+              "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+            ],
+            "truth_product_name": "NEEDLY Sleeping Lip Mask 10ml",
+            "truth_barcode_primary": "X001B1RSSJ",
+            "truth_product_code_type": "amazon_internal",
+            "truth_content_unknown": false,
+            "truth_official_image_state": "actual-only固定 / 比較画像なし",
+            "truth_exact_match_guard_state": "clear",
+            "truth_exact_match_guard_reasons": [],
+            "truth_evidence": [
+              "X001B1RSSJ",
+              "NEEDLY",
+              "Sleeping Lip Mask",
+              "10ml",
+              "0043:FRONT + 0042:BACK + 0042:CODE"
+            ],
+            "truth_brand_override": "NEEDLY",
+            "truth_category_override": "ビューティー > スキンケア・基礎化粧品 > リップケア",
+            "truth_check_items_override": "未開封 / 使用期限 / 箱つぶれ / 10ml表記 / 衛生状態",
+            "truth_note": "SPLIT-BOX-001-0042-NEEDLY は、0043:FRONT と 0042:BACK/CODE の3枚で X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml の写真セットを組み直し済み。出品画像は実物のみで扱い、ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+            "truth_price_override": 1680,
+            "minted_management_id": "BOX-001-ITEM-0065",
+            "minted_at": "2026-04-22 01:09:44 JST",
+            "minted_scope": "local_manifest_only",
+            "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+            "truth_promotion_scope": "local_confirmed_official_only",
+            "truth_promoted_management_id": "BOX-001-ITEM-0065",
+            "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
+            "truth_promoted_at": "2026-04-22 01:15:04 JST"
+          }
+        ],
+        "remaining_blockers": [
+          "NEEDLY child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
+          "0042 FRONT の青い袋入り布製品スロットは相方未確定のまま",
+          "0043 BACK/CODE の DOMAT 財布側スロットは相方未確定のまま",
+          "SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
+          "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。"
+        ],
+        "safe_next_step": "SPLIT-BOX-001-0042-NEEDLY を local mint → local confirmed / official へ provisional actual-only 反映。親 0042 / 0043 は split_required のまま維持する。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "stage_status": "partial_manifest_child_minted",
+        "match_role": "related"
+      },
+      "split_plan_summary": "0043 FRONT + 0042 BACK/CODE は NEEDLY child 候補 / 0042 FRONT は布製品側で別物 / 0043 BACK/CODE は DOMAT 側で別物 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
+      "split_plan_role": "related"
     },
     {
       "management_id": "BOX-001-ITEM-0044",
@@ -8895,7 +9468,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -9066,7 +9639,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -9109,7 +9682,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
         "ルーティング状態": "写真セット組み直し必要",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=ロゴ刺繍ベースボールキャップ ブラック系 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix"
       }
     },
@@ -9262,7 +9835,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -9305,7 +9878,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
         "ルーティング状態": "写真セット組み直し必要",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=ホワイト レディーストップス M / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix"
       }
     },
@@ -9452,7 +10025,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -9492,7 +10065,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=高視認性安全ベスト 蛍光イエロー / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
       }
     },
@@ -9539,50 +10112,39 @@ window.ZERO_COST_INTAKE = {
       "box_code": "001",
       "identification": {
         "state": "split_required",
-        "barcode_values": [
-          "X00184OJV3"
-        ],
+        "barcode_values": [],
         "front_back_texts": [
           "/ Fin, Meet tl / fae TO ie Vee i id FB / a",
           "ee A ing {= NG ds any is, es ; /} & bY “Sd ia ff > ae Sy | e. ve i \\\\ 4 RNA des y “s y) W",
           "eh! < : y. oe a _ oe iy Be 7 SN y y y ey | a € i ae ; is i jer ae i : | | pete aN",
-          "y se i a! ? mG 4 i t% r,, 1 BR Ly Fy 4 ey, * “\\ pe y By bZE",
-          "X001840JV3",
-          "［VIHFBB］ トートバッグ（40.，グラム）"
+          "y se i a! ? mG 4 i t% r,, 1 BR Ly Fy 4 ey, * “\\ pe y By bZE"
         ],
-        "code_texts": [
-          "ae in Cae iO _— (oa ve Ae K WY t Ch. 40 / <> ine >) Ass \\ ; 4 1 1 1 4 0 341 1022 799 105 -1 5 1 1 1 4 1 341 1067 70 60 10.418491 ot 5 1 1 1 4 2 458 1070 37 29 58.819942 we 5 1 1 1 4 3 529 1069 3 3 27.794586 8 5 1 1 1 4 4 598 1063 71 64 8.569422 te 5 1 1 1 4 5 782 1022 215 84 33.340683 Vane 5 1 1 1 4 6 1025 1039 115 54 24.062023 oa 4 1 1 1 5 0 347 1157 1419 122 -1 5 1 1 1 5 1 347 1161 198 105 39.325195 ee 5 1 1 1 5 2 668 1172 155 107 35.049049 A 5 1 1 1 5 3 950 1162 180 65 5.160999 oad",
-          "a ee ee ge ey Ee i f . ee Ky @ , 7 Be “ol fa ‘yo ve 2] A 2 > En nd cadiialal eee ee . \\ Met aa , ° i - : ee OE Al Je ee, bw fogs Pain ON FE Oe ON",
-          "a7 |"
-        ],
+        "code_texts": [],
         "ocr_texts": [
           "/ Fin, Meet tl / fae TO ie Vee i id FB / a",
           "ee A ing {= NG ds any is, es ; /} & bY “Sd ia ff > ae Sy | e. ve i \\\\ 4 RNA des y “s y) W",
           "eh! < : y. oe a _ oe iy Be 7 SN y y y ey | a € i ae ; is i jer ae i : | | pete aN",
-          "y se i a! ? mG 4 i t% r,, 1 BR Ly Fy 4 ey, * “\\ pe y By bZE",
-          "X001840JV3",
-          "［VIHFBB］ トートバッグ（40.，グラム）"
+          "y se i a! ? mG 4 i t% r,, 1 BR Ly Fy 4 ey, * “\\ pe y By bZE"
         ],
         "candidate_query": "/ Fin, Meet tl / fae TO ie Vee i id FB / a ee A ing {= NG ds any is, es ; /} & bY “Sd ia ff > ae Sy | e. ve i \\\\ 4 RNA des y “s y) W eh! < : y. oe a _ oe iy Be 7 SN y y y ey | a € i ae ; is i jer ae i : | | pete aN y se i a! ? mG 4 i t% r,, 1 BR Ly Fy 4 ey, * “\\ pe y By bZE",
         "review_flag": "FRONT/BACK/CODE が別商品です",
-        "ocr_engine": "sauna_tesseract_multistage + vision",
+        "ocr_engine": "sauna_tesseract_multistage",
         "ocr_debug_paths": [
-          "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0048/IMG_4973_CODE_ocr_best.png",
           "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0048/IMG_4971_FRONT_ocr_best.png"
         ]
       },
-      "priority_score": 110,
+      "priority_score": 220,
       "next_action": "写真セットを組み直す",
-      "barcode_kind": "amazon_internal",
+      "barcode_kind": "",
       "review_flag": "FRONT/BACK/CODE が別商品です",
       "manual_note": "FRONT は蛍光イエローの安全ベスト系、BACK/CODE は花柄シュシュ束のラベルでした。",
       "resolved": {
         "management_id": "BOX-001-ITEM-0048",
         "resolution_status": "provisional",
-        "product_name": "VIHFBB トートバッグ 40g 花柄系",
+        "product_name": "写真セット組み直し候補: VIHFBB トートバッグ 40g 花柄系",
         "barcode_primary": "X00184OJV3",
         "product_code_type": "amazon_internal",
-        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
         "note": "FRONT は 0047 と同系統の蛍光イエロー安全ベストだが、BACK/CODE は X00184OJV3 / [VIHFBB] トートバッグ（40グラム）と花柄系布製品で別商品。現写真では1商品に断定不能のため、VIHFBB トートバッグ側の provisional に留め、公開候補へ混ぜない。",
         "evidence": [
           "X00184OJV3",
@@ -9593,7 +10155,8 @@ window.ZERO_COST_INTAKE = {
         ],
         "exact_match_guard_state": "review_required",
         "exact_match_guard_reasons": [
-          "別商品mix"
+          "別商品mix",
+          "写真セット組み直し必要"
         ],
         "image_source": "actual-only"
       },
@@ -9607,11 +10170,12 @@ window.ZERO_COST_INTAKE = {
         "official_image_url": "",
         "image_source": "actual-only",
         "verified_exact_match": false,
-        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
         "note": "FRONT は 0047 と同系統の蛍光イエロー安全ベスト、BACK/CODE は X00184OJV3 / [VIHFBB] トートバッグ（40グラム）の花柄系布製品で別商品。現写真では1商品に断定不能のため比較画像は使わず、公開停止とする。",
         "exact_match_guard_state": "review_required",
         "exact_match_guard_reasons": [
-          "別商品mix"
+          "別商品mix",
+          "写真セット組み直し必要"
         ]
       },
       "commerce": {
@@ -9620,12 +10184,12 @@ window.ZERO_COST_INTAKE = {
         "product_id": "PRD-BOX-001-048",
         "draft_id": "DRF-BOX-001-048",
         "research_id": "RES-BOX-001-048",
-        "product_name": "VIHFBB トートバッグ 40g 花柄系",
+        "product_name": "写真セット組み直し候補: VIHFBB トートバッグ 40g 花柄系",
         "brand": "",
         "category": "",
         "barcode_primary": "X00184OJV3",
         "product_code_type": "amazon_internal",
-        "listing_title": "VIHFBB トートバッグ 40g 花柄系",
+        "listing_title": "写真セット組み直し候補: VIHFBB トートバッグ 40g 花柄系",
         "listing_price": "",
         "market_floor_price": "",
         "market_floor_state": "未調査",
@@ -9638,17 +10202,18 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
-      "display_name": "VIHFBB トートバッグ 40g 花柄系",
-      "product_name": "VIHFBB トートバッグ 40g 花柄系",
+      "display_name": "写真セット組み直し候補: VIHFBB トートバッグ 40g 花柄系",
+      "product_name": "写真セット組み直し候補: VIHFBB トートバッグ 40g 花柄系",
       "verified_exact_match": false,
-      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 管理番号再分解待ち",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
-        "別商品mix"
+        "別商品mix",
+        "写真セット組み直し必要"
       ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
@@ -9663,7 +10228,106 @@ window.ZERO_COST_INTAKE = {
       "market_floor_price_label": "未調査",
       "listing_price": "",
       "exception": {},
-      "route_plan": {}
+      "route_plan": {},
+      "split_staging": {
+        "management_id": "BOX-001-ITEM-0048",
+        "plan_summary": "0049 FRONT と 0048 BACK/CODE は X00184OJV3 / [VIHFBB] トートバッグで一致する。0048 FRONT の蛍光イエロー安全ベストと 0049 BACK/CODE のライトグレー衣類は別商品として親 ID に残し、VIHFBB 側だけ local child へ切り出す。公開名は actual-only の generic wording に留める。 / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 のローカル写真セットを作成済み / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "ui_summary": "0049 FRONT + 0048 BACK/CODE は VIHFBB child 候補 / 0048 FRONT は安全ベスト側 / 0049 BACK/CODE は衣類側で別物 / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 のローカル写真セットを作成済み / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "operator_summary": "BOX-001-ITEM-0048 / 0049 は VIHFBB トートバッグと衣類側が混在している。0049 FRONT と 0048 BACK/CODE は X00184OJV3 / [VIHFBB] トートバッグで一致するため、VIHFBB 側だけ local child へ切り出す。0048 FRONT の安全ベストと 0049 BACK/CODE のライトグレー衣類は親 ID に残す。 / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 のローカル写真セットを作成済み / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_note": "0049 FRONT + 0048 BACK/CODE は VIHFBB 側として coherent。0048 FRONT の安全ベストと 0049 BACK/CODE の衣類側は別商品のため親 ID に残す。 / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 のローカル写真セットを作成済み / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_next_action": "SPLIT-BOX-001-0048-VIHFBB を local mint → local confirmed / official へ provisional actual-only 反映。親 0048 / 0049 は split_required のまま維持。 / BOX-001-ITEM-0063 は管理表 / 出品判断の止めどころを決めてから正式反映",
+        "related_management_ids": [
+          "BOX-001-ITEM-0049"
+        ],
+        "source_trace": [
+          {
+            "management_id": "BOX-001-ITEM-0048",
+            "slot": "FRONT",
+            "observed_as": "蛍光イエローの安全ベスト系"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0048",
+            "slot": "BACK",
+            "observed_as": "X00184OJV3 / [VIHFBB] トートバッグ ラベル面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0048",
+            "slot": "CODE",
+            "observed_as": "[VIHFBB] トートバッグの別コード / ラベル面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0049",
+            "slot": "FRONT",
+            "observed_as": "X00184OJV3 / [VIHFBB] トートバッグ側の花柄布製品"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0049",
+            "slot": "BACK",
+            "observed_as": "SYM002-Lightgray-XL のライトグレー衣類ラベル面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0049",
+            "slot": "CODE",
+            "observed_as": "X00147IEGF のライトグレー長袖衣類コード面"
+          }
+        ],
+        "blocked_split_children": [
+          {
+            "temporary_split_id": "SPLIT-BOX-001-0048-VIHFBB",
+            "target_label": "VIHFBB 花柄トートバッグ",
+            "source_slots": [
+              "BOX-001-ITEM-0049:FRONT",
+              "BOX-001-ITEM-0048:BACK",
+              "BOX-001-ITEM-0048:CODE"
+            ],
+            "status": "manifest_child_minted_local_only",
+            "blockers": [
+              "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+              "0049 FRONT と 0048 BACK/CODE は X00184OJV3 / [VIHFBB] トートバッグで一致し、同一の花柄トートバッグとして実画像確認済み",
+              "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+              "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+            ],
+            "truth_product_name": "VIHFBB 花柄トートバッグ",
+            "truth_barcode_primary": "X00184OJV3",
+            "truth_product_code_type": "amazon_internal",
+            "truth_content_unknown": false,
+            "truth_official_image_state": "actual-only固定 / 比較画像なし",
+            "truth_exact_match_guard_state": "clear",
+            "truth_exact_match_guard_reasons": [],
+            "truth_evidence": [
+              "X00184OJV3",
+              "VIHFBB",
+              "トートバッグ",
+              "花柄",
+              "0049:FRONT + 0048:BACK + 0048:CODE"
+            ],
+            "truth_brand_override": "VIHFBB",
+            "truth_category_override": "ファッション > レディース > バッグ > トートバッグ",
+            "truth_check_items_override": "花柄 / 持ち手 / サイズ / 開口部 / 汚れ確認",
+            "truth_note": "SPLIT-BOX-001-0048-VIHFBB は、0049:FRONT と 0048:BACK/CODE の3枚で X00184OJV3 / [VIHFBB] トートバッグの写真セットを組み直し済み。実画像では花柄トートバッグとして扱えるが、公開名は actual-only の generic wording に留める。ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+            "minted_management_id": "BOX-001-ITEM-0063",
+            "minted_at": "2026-04-22 00:40:51 JST",
+            "minted_scope": "local_manifest_only",
+            "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+            "truth_promotion_scope": "local_confirmed_official_only",
+            "truth_promoted_management_id": "BOX-001-ITEM-0063",
+            "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
+            "truth_promoted_at": "2026-04-22 00:45:44 JST"
+          }
+        ],
+        "remaining_blockers": [
+          "VIHFBB child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
+          "0048 FRONT の安全ベストスロットは相方未確定のまま",
+          "0049 BACK/CODE のライトグレー衣類スロットは相方未確定のまま",
+          "SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
+          "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。"
+        ],
+        "safe_next_step": "SPLIT-BOX-001-0048-VIHFBB を local mint → local confirmed / official へ provisional actual-only 反映。親 0048 / 0049 は split_required のまま維持する。 / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 のローカル写真セットを作成済み / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "stage_status": "partial_manifest_child_minted",
+        "match_role": "primary"
+      },
+      "split_plan_summary": "0049 FRONT + 0048 BACK/CODE は VIHFBB child 候補 / 0048 FRONT は安全ベスト側 / 0049 BACK/CODE は衣類側で別物 / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 のローカル写真セットを作成済み / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 をローカル特定結果へ暫定・実物写真のみで反映済み",
+      "split_plan_role": "primary"
     },
     {
       "management_id": "BOX-001-ITEM-0049",
@@ -9708,16 +10372,12 @@ window.ZERO_COST_INTAKE = {
       "box_code": "001",
       "identification": {
         "state": "split_required",
-        "barcode_values": [
-          "X00184OJV3"
-        ],
+        "barcode_values": [],
         "front_back_texts": [
-          "X001840JV3",
-          "IXIFBB］トートバック（40.，グラム）",
-          "新品",
           "SYM002-1ightgray-XL",
           "［サンマド…おしゃれ",
-          "X00147IEGF"
+          "X00147IEGF",
+          "New"
         ],
         "code_texts": [
           "SYM802-Lighteray-XL",
@@ -9728,32 +10388,32 @@ window.ZERO_COST_INTAKE = {
           "LANT"
         ],
         "ocr_texts": [
-          "X001840JV3",
-          "IXIFBB］トートバック（40.，グラム）",
-          "新品",
           "SYM002-1ightgray-XL",
           "［サンマド…おしゃれ",
-          "X00147IEGF"
+          "X00147IEGF",
+          "New",
+          "SYM802-Lighteray-XL",
+          "［サン"
         ],
-        "candidate_query": "X001840JV3 IXIFBB］トートバック（40.，グラム） 新品 SYM002-1ightgray-XL",
+        "candidate_query": "SYM002-1ightgray-XL ［サンマド…おしゃれ X00147IEGF New",
         "review_flag": "FRONT/BACK/CODE が別商品です",
         "ocr_engine": "sauna_tesseract_multistage + vision",
         "ocr_debug_paths": [
           "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0049/IMG_4976_CODE_ocr_best.png"
         ]
       },
-      "priority_score": 110,
+      "priority_score": 220,
       "next_action": "写真セットを組み直す",
-      "barcode_kind": "amazon_internal",
+      "barcode_kind": "",
       "review_flag": "FRONT/BACK/CODE が別商品です",
       "manual_note": "FRONT は花柄シュシュ束、BACK/CODE はグレー衣類パッケージのラベルでした。",
       "resolved": {
         "management_id": "BOX-001-ITEM-0049",
         "resolution_status": "provisional",
-        "product_name": "SYM002 ライトグレー XL 長袖衣類",
+        "product_name": "写真セット組み直し候補: SYM002 ライトグレー XL 長袖衣類",
         "barcode_primary": "X00147IEGF",
         "product_code_type": "amazon_internal",
-        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
         "note": "FRONT は X00184OJV3 / [VIHFBB] トートバッグ側の花柄布製品だが、BACK/CODE は SYM002-Lightgray-XL / X00147IEGF のライトグレー長袖衣類で一致する。現写真では1商品に断定不能のため、ライトグレー長袖衣類側の provisional に留め、公開候補へ混ぜない。",
         "evidence": [
           "SYM002-Lightgray-XL",
@@ -9764,7 +10424,8 @@ window.ZERO_COST_INTAKE = {
         ],
         "exact_match_guard_state": "review_required",
         "exact_match_guard_reasons": [
-          "別商品mix"
+          "別商品mix",
+          "写真セット組み直し必要"
         ],
         "image_source": "actual-only"
       },
@@ -9778,11 +10439,12 @@ window.ZERO_COST_INTAKE = {
         "official_image_url": "",
         "image_source": "actual-only",
         "verified_exact_match": false,
-        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
         "note": "FRONT は X00184OJV3 / [VIHFBB] トートバッグ側の花柄布製品、BACK/CODE は SYM002-Lightgray-XL / X00147IEGF のライトグレー長袖衣類で別商品。現写真では1商品に断定不能のため比較画像は使わず、公開停止とする。",
         "exact_match_guard_state": "review_required",
         "exact_match_guard_reasons": [
-          "別商品mix"
+          "別商品mix",
+          "写真セット組み直し必要"
         ]
       },
       "commerce": {
@@ -9791,12 +10453,12 @@ window.ZERO_COST_INTAKE = {
         "product_id": "PRD-BOX-001-049",
         "draft_id": "DRF-BOX-001-049",
         "research_id": "RES-BOX-001-049",
-        "product_name": "SYM002 ライトグレー XL 長袖衣類",
+        "product_name": "写真セット組み直し候補: SYM002 ライトグレー XL 長袖衣類",
         "brand": "",
         "category": "",
         "barcode_primary": "X00147IEGF",
         "product_code_type": "amazon_internal",
-        "listing_title": "SYM002 ライトグレー XL 長袖衣類",
+        "listing_title": "写真セット組み直し候補: SYM002 ライトグレー XL 長袖衣類",
         "listing_price": "",
         "market_floor_price": "",
         "market_floor_state": "未調査",
@@ -9809,17 +10471,18 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
-      "display_name": "SYM002 ライトグレー XL 長袖衣類",
-      "product_name": "SYM002 ライトグレー XL 長袖衣類",
+      "display_name": "写真セット組み直し候補: SYM002 ライトグレー XL 長袖衣類",
+      "product_name": "写真セット組み直し候補: SYM002 ライトグレー XL 長袖衣類",
       "verified_exact_match": false,
-      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 管理番号再分解待ち",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
-        "別商品mix"
+        "別商品mix",
+        "写真セット組み直し必要"
       ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
@@ -9834,7 +10497,106 @@ window.ZERO_COST_INTAKE = {
       "market_floor_price_label": "未調査",
       "listing_price": "",
       "exception": {},
-      "route_plan": {}
+      "route_plan": {},
+      "split_staging": {
+        "management_id": "BOX-001-ITEM-0048",
+        "plan_summary": "0049 FRONT と 0048 BACK/CODE は X00184OJV3 / [VIHFBB] トートバッグで一致する。0048 FRONT の蛍光イエロー安全ベストと 0049 BACK/CODE のライトグレー衣類は別商品として親 ID に残し、VIHFBB 側だけ local child へ切り出す。公開名は actual-only の generic wording に留める。 / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 のローカル写真セットを作成済み / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "ui_summary": "0049 FRONT + 0048 BACK/CODE は VIHFBB child 候補 / 0048 FRONT は安全ベスト側 / 0049 BACK/CODE は衣類側で別物 / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 のローカル写真セットを作成済み / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "operator_summary": "BOX-001-ITEM-0048 / 0049 は VIHFBB トートバッグと衣類側が混在している。0049 FRONT と 0048 BACK/CODE は X00184OJV3 / [VIHFBB] トートバッグで一致するため、VIHFBB 側だけ local child へ切り出す。0048 FRONT の安全ベストと 0049 BACK/CODE のライトグレー衣類は親 ID に残す。 / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 のローカル写真セットを作成済み / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_note": "0049 FRONT + 0048 BACK/CODE は VIHFBB 側として coherent。0048 FRONT の安全ベストと 0049 BACK/CODE の衣類側は別商品のため親 ID に残す。 / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 のローカル写真セットを作成済み / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_next_action": "SPLIT-BOX-001-0048-VIHFBB を local mint → local confirmed / official へ provisional actual-only 反映。親 0048 / 0049 は split_required のまま維持。 / BOX-001-ITEM-0063 は管理表 / 出品判断の止めどころを決めてから正式反映",
+        "related_management_ids": [
+          "BOX-001-ITEM-0049"
+        ],
+        "source_trace": [
+          {
+            "management_id": "BOX-001-ITEM-0048",
+            "slot": "FRONT",
+            "observed_as": "蛍光イエローの安全ベスト系"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0048",
+            "slot": "BACK",
+            "observed_as": "X00184OJV3 / [VIHFBB] トートバッグ ラベル面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0048",
+            "slot": "CODE",
+            "observed_as": "[VIHFBB] トートバッグの別コード / ラベル面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0049",
+            "slot": "FRONT",
+            "observed_as": "X00184OJV3 / [VIHFBB] トートバッグ側の花柄布製品"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0049",
+            "slot": "BACK",
+            "observed_as": "SYM002-Lightgray-XL のライトグレー衣類ラベル面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0049",
+            "slot": "CODE",
+            "observed_as": "X00147IEGF のライトグレー長袖衣類コード面"
+          }
+        ],
+        "blocked_split_children": [
+          {
+            "temporary_split_id": "SPLIT-BOX-001-0048-VIHFBB",
+            "target_label": "VIHFBB 花柄トートバッグ",
+            "source_slots": [
+              "BOX-001-ITEM-0049:FRONT",
+              "BOX-001-ITEM-0048:BACK",
+              "BOX-001-ITEM-0048:CODE"
+            ],
+            "status": "manifest_child_minted_local_only",
+            "blockers": [
+              "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+              "0049 FRONT と 0048 BACK/CODE は X00184OJV3 / [VIHFBB] トートバッグで一致し、同一の花柄トートバッグとして実画像確認済み",
+              "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+              "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+            ],
+            "truth_product_name": "VIHFBB 花柄トートバッグ",
+            "truth_barcode_primary": "X00184OJV3",
+            "truth_product_code_type": "amazon_internal",
+            "truth_content_unknown": false,
+            "truth_official_image_state": "actual-only固定 / 比較画像なし",
+            "truth_exact_match_guard_state": "clear",
+            "truth_exact_match_guard_reasons": [],
+            "truth_evidence": [
+              "X00184OJV3",
+              "VIHFBB",
+              "トートバッグ",
+              "花柄",
+              "0049:FRONT + 0048:BACK + 0048:CODE"
+            ],
+            "truth_brand_override": "VIHFBB",
+            "truth_category_override": "ファッション > レディース > バッグ > トートバッグ",
+            "truth_check_items_override": "花柄 / 持ち手 / サイズ / 開口部 / 汚れ確認",
+            "truth_note": "SPLIT-BOX-001-0048-VIHFBB は、0049:FRONT と 0048:BACK/CODE の3枚で X00184OJV3 / [VIHFBB] トートバッグの写真セットを組み直し済み。実画像では花柄トートバッグとして扱えるが、公開名は actual-only の generic wording に留める。ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+            "minted_management_id": "BOX-001-ITEM-0063",
+            "minted_at": "2026-04-22 00:40:51 JST",
+            "minted_scope": "local_manifest_only",
+            "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+            "truth_promotion_scope": "local_confirmed_official_only",
+            "truth_promoted_management_id": "BOX-001-ITEM-0063",
+            "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
+            "truth_promoted_at": "2026-04-22 00:45:44 JST"
+          }
+        ],
+        "remaining_blockers": [
+          "VIHFBB child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
+          "0048 FRONT の安全ベストスロットは相方未確定のまま",
+          "0049 BACK/CODE のライトグレー衣類スロットは相方未確定のまま",
+          "SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
+          "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。"
+        ],
+        "safe_next_step": "SPLIT-BOX-001-0048-VIHFBB を local mint → local confirmed / official へ provisional actual-only 反映。親 0048 / 0049 は split_required のまま維持する。 / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 のローカル写真セットを作成済み / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "stage_status": "partial_manifest_child_minted",
+        "match_role": "related"
+      },
+      "split_plan_summary": "0049 FRONT + 0048 BACK/CODE は VIHFBB child 候補 / 0048 FRONT は安全ベスト側 / 0049 BACK/CODE は衣類側で別物 / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 のローカル写真セットを作成済み / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 をローカル特定結果へ暫定・実物写真のみで反映済み",
+      "split_plan_role": "related"
     },
     {
       "management_id": "BOX-001-ITEM-0050",
@@ -9980,7 +10742,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [
         {
@@ -10038,7 +10800,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=CRZ YOGA レギンス 股下24インチ ダークグレー系 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / actual-only固定 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
       }
     },
@@ -10169,7 +10931,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -10309,7 +11071,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -10340,11 +11102,11 @@ window.ZERO_COST_INTAKE = {
       "split_staging": {
         "management_id": "BOX-001-ITEM-0028",
         "stage_status": "partial_manifest_child_minted",
-        "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/緑の冬小物系として未一致保留。0028 CODE は car hook mobile phone holder NO-FE035 箱で、BACK の X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT は car hook mobile phone holder NO-FE040 だが、0029 BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側の仮置き写真セット。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として視認一致済み。0052 FRONT の青橙箱は別物として残す。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 をローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 のローカル写真セットを作成済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/白/緑の厚手ニット靴下またはレッグウォーマー系として未一致保留。0028 CODE は car hook mobile phone holder NO-FE035 箱で、BACK の X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT は car hook mobile phone holder NO-FE040 だが、NO-FE035 と NO-FE040 はNO表記が異なるため結合しない。0029 BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側の仮置き写真セット。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として視認一致済み。0052 FRONT の青橙箱は別物として残す。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 をローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 のローカル写真セットを作成済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
         "ui_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029 FRONTは car hook 側として別扱い / 0053 FRONT⇄0052 BACK/CODEは同一白箱を視認確認 / 0052 FRONT別物 / 0059白箱はローカル写真セット作成・特定結果反映済み / 0060 SPEEDWOXはローカル写真セット作成・特定結果反映済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
-        "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 FRONT は car hook NO-FE040、0029 BACK/CODE は SPEEDWOX X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は同一白箱を視認確認済み。0052 FRONT の青橙箱は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。 / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
-        "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の冬小物系。0029 FRONT は car hook 側として別扱い。0053 FRONT と 0052 BACK/CODE は同一白箱として視認確認済みで、0052 FRONT は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。 / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
-        "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0029 FRONTは car hook 側として別扱い / 0059白箱は管理表・出品判断の止めどころ確認待ち / 0060SPEEDWOXは管理表・出品判断の止めどころ確認待ち / BOX-001-ITEM-0061 は管理表 / 出品判断の止めどころを決めてから正式反映",
+        "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の黒/白/緑の厚手ニット靴下またはレッグウォーマー系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 FRONT は car hook NO-FE040。NO-FE035 と NO-FE040 はNO表記が異なるため結合しない。0029 BACK/CODE は SPEEDWOX X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は同一白箱を視認確認済み。0052 FRONT の青橙箱は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。 / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の黒/白/緑の厚手ニット靴下またはレッグウォーマー系。0028 CODE=NO-FE035 と 0029 FRONT=NO-FE040 はNO表記が異なるため結合しない。0053 FRONT と 0052 BACK/CODE は同一白箱として視認確認済みで、0052 FRONT は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。 / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0028 CODE=NO-FE035保留 / 0029 FRONT=NO-FE040保留 / 0059白箱は管理表・出品判断の止めどころ確認待ち / 0060SPEEDWOXは管理表・出品判断の止めどころ確認待ち / BOX-001-ITEM-0061 は管理表 / 出品判断の止めどころを決めてから正式反映",
         "retain_existing_id": {
           "management_id": "BOX-001-ITEM-0028",
           "product_id": "PRD-BOX-001-028",
@@ -10359,7 +11121,7 @@ window.ZERO_COST_INTAKE = {
           {
             "management_id": "BOX-001-ITEM-0028",
             "slot": "FRONT",
-            "observed_as": "黒/緑のニット・冬小物系バッグ"
+            "observed_as": "黒/白/緑の厚手ニット靴下またはレッグウォーマー系"
           },
           {
             "management_id": "BOX-001-ITEM-0028",
@@ -10420,7 +11182,7 @@ window.ZERO_COST_INTAKE = {
         "blocked_split_children": [
           {
             "temporary_split_id": "SPLIT-BOX-001-0028-WINTER",
-            "target_label": "黒/緑の冬小物系",
+            "target_label": "黒/白/緑の厚手ニット靴下またはレッグウォーマー系",
             "source_slots": [
               "BOX-001-ITEM-0028:FRONT"
             ],
@@ -10595,43 +11357,18 @@ window.ZERO_COST_INTAKE = {
       "box_code": "001",
       "identification": {
         "state": "split_required",
-        "barcode_values": [
-          "X0018IYEUP"
-        ],
-        "front_back_texts": [
-          "\"ITOAVOL DANGER",
-          "OUT OF REACHO",
-          "REACH：",
-          "OTUSE）",
-          "OTUSEANARESP",
-          "THIS BY"
-        ],
-        "code_texts": [
-          "HELLO KITIY",
-          "50TH ANNIVERSAR*",
-          "= Ch¥a 7 ; fo. “2 : a wn ® hla & ~ asa { : — ” __ aan mal 4 BS gt ~ ‘ i a oA sh , & = © wl 2 NS H f Ps g se i",
-          ". a bs: tS y , me <\". - 5 ™ a \\ ; ee ‘ ne LFA oF > 4 ae S | owe ae r e& ~ t ‘ g VE a . é SS ~~ : ¥ : » = ' = y i a a 2 [ 2 . 3 ee r > a me 7 a moe SOF) ANNivep. <4 So” a",
-          "ar - _— - a wey _s: .——-, on fe a ’ a ‘ ; het % . . ‘ ae) . . ? ne a] e 7 Mao - Bam . ~ rt rr 2",
-          "ag"
-        ],
-        "ocr_texts": [
-          "\"ITOAVOL DANGER",
-          "OUT OF REACHO",
-          "REACH：",
-          "OTUSE）",
-          "OTUSEANARESP",
-          "THIS BY"
-        ],
-        "candidate_query": "\"ITOAVOL DANGER OUT OF REACHO REACH： OTUSE）",
+        "barcode_values": [],
+        "front_back_texts": [],
+        "code_texts": [],
+        "ocr_texts": [],
+        "candidate_query": "",
         "review_flag": "FRONT/BACK/CODE が別商品です",
-        "ocr_engine": "sauna_tesseract_multistage + vision",
-        "ocr_debug_paths": [
-          "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0053/IMG_4988_CODE_ocr_best.png"
-        ]
+        "ocr_engine": "",
+        "ocr_debug_paths": []
       },
-      "priority_score": 110,
+      "priority_score": 320,
       "next_action": "写真セットを組み直す",
-      "barcode_kind": "amazon_internal",
+      "barcode_kind": "",
       "review_flag": "FRONT/BACK/CODE が別商品です",
       "manual_note": "FRONT は白箱 X00197BVHJ、BACK/CODE は Hello Kitty 50TH ANNIVERSARY 系でした。白箱側は 0052 BACK/CODE と同一箱を live 視認確認済みですが、shared sheet / manifest の正式な写真セット組み直しまでは候補 child として扱います。",
       "resolved": {
@@ -10652,7 +11389,8 @@ window.ZERO_COST_INTAKE = {
         "exact_match_guard_reasons": [
           "別商品mix",
           "写真セット組み直し必要",
-          "内容物未確認"
+          "内容物未確認",
+          "真贋確認"
         ]
       },
       "official": {},
@@ -10680,19 +11418,20 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
       "display_name": "写真セット組み直し必要（白箱 X00197BVHJ / Hello Kitty 50TH ANNIVERSARY 系 混在）",
       "product_name": "写真セット組み直し必要（白箱 X00197BVHJ / Hello Kitty 50TH ANNIVERSARY 系 混在）",
       "verified_exact_match": false,
-      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 管理番号再分解待ち",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 正規性確認待ち / 管理番号再分解待ち",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
         "別商品mix",
         "写真セット組み直し必要",
-        "内容物未確認"
+        "内容物未確認",
+        "真贋確認"
       ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
@@ -10711,11 +11450,11 @@ window.ZERO_COST_INTAKE = {
       "split_staging": {
         "management_id": "BOX-001-ITEM-0028",
         "stage_status": "partial_manifest_child_minted",
-        "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/緑の冬小物系として未一致保留。0028 CODE は car hook mobile phone holder NO-FE035 箱で、BACK の X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT は car hook mobile phone holder NO-FE040 だが、0029 BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側の仮置き写真セット。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として視認一致済み。0052 FRONT の青橙箱は別物として残す。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 をローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 のローカル写真セットを作成済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/白/緑の厚手ニット靴下またはレッグウォーマー系として未一致保留。0028 CODE は car hook mobile phone holder NO-FE035 箱で、BACK の X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT は car hook mobile phone holder NO-FE040 だが、NO-FE035 と NO-FE040 はNO表記が異なるため結合しない。0029 BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側の仮置き写真セット。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として視認一致済み。0052 FRONT の青橙箱は別物として残す。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 をローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 のローカル写真セットを作成済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
         "ui_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029 FRONTは car hook 側として別扱い / 0053 FRONT⇄0052 BACK/CODEは同一白箱を視認確認 / 0052 FRONT別物 / 0059白箱はローカル写真セット作成・特定結果反映済み / 0060 SPEEDWOXはローカル写真セット作成・特定結果反映済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
-        "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 FRONT は car hook NO-FE040、0029 BACK/CODE は SPEEDWOX X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は同一白箱を視認確認済み。0052 FRONT の青橙箱は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。 / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
-        "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の冬小物系。0029 FRONT は car hook 側として別扱い。0053 FRONT と 0052 BACK/CODE は同一白箱として視認確認済みで、0052 FRONT は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。 / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
-        "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0029 FRONTは car hook 側として別扱い / 0059白箱は管理表・出品判断の止めどころ確認待ち / 0060SPEEDWOXは管理表・出品判断の止めどころ確認待ち / BOX-001-ITEM-0061 は管理表 / 出品判断の止めどころを決めてから正式反映",
+        "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の黒/白/緑の厚手ニット靴下またはレッグウォーマー系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 FRONT は car hook NO-FE040。NO-FE035 と NO-FE040 はNO表記が異なるため結合しない。0029 BACK/CODE は SPEEDWOX X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は同一白箱を視認確認済み。0052 FRONT の青橙箱は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。 / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の黒/白/緑の厚手ニット靴下またはレッグウォーマー系。0028 CODE=NO-FE035 と 0029 FRONT=NO-FE040 はNO表記が異なるため結合しない。0053 FRONT と 0052 BACK/CODE は同一白箱として視認確認済みで、0052 FRONT は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。 / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0028 CODE=NO-FE035保留 / 0029 FRONT=NO-FE040保留 / 0059白箱は管理表・出品判断の止めどころ確認待ち / 0060SPEEDWOXは管理表・出品判断の止めどころ確認待ち / BOX-001-ITEM-0061 は管理表 / 出品判断の止めどころを決めてから正式反映",
         "retain_existing_id": {
           "management_id": "BOX-001-ITEM-0028",
           "product_id": "PRD-BOX-001-028",
@@ -10730,7 +11469,7 @@ window.ZERO_COST_INTAKE = {
           {
             "management_id": "BOX-001-ITEM-0028",
             "slot": "FRONT",
-            "observed_as": "黒/緑のニット・冬小物系バッグ"
+            "observed_as": "黒/白/緑の厚手ニット靴下またはレッグウォーマー系"
           },
           {
             "management_id": "BOX-001-ITEM-0028",
@@ -10791,7 +11530,7 @@ window.ZERO_COST_INTAKE = {
         "blocked_split_children": [
           {
             "temporary_split_id": "SPLIT-BOX-001-0028-WINTER",
-            "target_label": "黒/緑の冬小物系",
+            "target_label": "黒/白/緑の厚手ニット靴下またはレッグウォーマー系",
             "source_slots": [
               "BOX-001-ITEM-0028:FRONT"
             ],
@@ -10967,16 +11706,15 @@ window.ZERO_COST_INTAKE = {
       "identification": {
         "state": "バーコード候補あり",
         "barcode_values": [
-          "X0018GJO2Z",
-          "X0018IYEUP"
+          "X0018GJO2Z"
         ],
         "front_back_texts": [
-          "WARIMN",
-          "KEEPIT O",
-          "DON",
-          "USEIN ERBS",
-          "SITHISBA",
-          "IERSARY"
+          "®",
+          "X0018GJO2Z",
+          "［Poperdision］",
+          "New",
+          "Black-3XL",
+          "3X"
         ],
         "code_texts": [
           "X0018GJO2Z",
@@ -10987,14 +11725,14 @@ window.ZERO_COST_INTAKE = {
           ") . ® ted a © | ee te an"
         ],
         "ocr_texts": [
-          "WARIMN",
-          "KEEPIT O",
-          "DON",
-          "USEIN ERBS",
-          "SITHISBA",
-          "IERSARY"
+          "®",
+          "X0018GJO2Z",
+          "［Poperdision］",
+          "New",
+          "Black-3XL",
+          "3X"
         ],
-        "candidate_query": "WARIMN KEEPIT O DON USEIN ERBS",
+        "candidate_query": "® X0018GJO2Z ［Poperdision］ New",
         "review_flag": "",
         "ocr_engine": "sauna_tesseract_multistage + vision",
         "ocr_debug_paths": [
@@ -11030,7 +11768,8 @@ window.ZERO_COST_INTAKE = {
         "exact_match_guard_state": "review_required",
         "exact_match_guard_reasons": [
           "別商品mix",
-          "写真セット組み直し必要"
+          "写真セット組み直し必要",
+          "真贋確認"
         ]
       },
       "official": {},
@@ -11058,18 +11797,19 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
       "display_name": "写真セット組み直し候補: Poperdision ブラック 3XL レディース衣類",
       "product_name": "写真セット組み直し候補: Poperdision ブラック 3XL レディース衣類",
       "verified_exact_match": false,
-      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 管理番号再分解待ち",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 正規性確認待ち / 管理番号再分解待ち",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
         "別商品mix",
-        "写真セット組み直し必要"
+        "写真セット組み直し必要",
+        "真贋確認"
       ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
@@ -11098,12 +11838,12 @@ window.ZERO_COST_INTAKE = {
         "Ship&co条件": "停止",
         "メルカリ配送": "",
         "人確認": "要",
-        "人確認理由": "precision guard: 別商品mix / 停止条件あり",
+        "人確認理由": "precision guard: 別商品mix / 写真セット組み直し必要 / 真贋確認 / 停止条件あり",
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
         "ルーティング状態": "写真セット組み直し必要",
-        "更新時刻": "2026-04-21 23:08:31 JST",
-        "メモ": "name=Poperdision ブラック 3XL レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix"
+        "更新時刻": "2026-04-22 00:33:59 JST",
+        "メモ": "name=写真セット組み直し候補: Poperdision ブラック 3XL レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / 正規性確認待ち / 管理番号再分解待ち / 新管理番号未採番 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix / 写真セット組み直し必要 / 真贋確認"
       }
     },
     {
@@ -11255,7 +11995,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [
         {
@@ -11316,7 +12056,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
         "ルーティング状態": "写真セット組み直し必要",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=ATIDIMU 美容液 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix"
       }
     },
@@ -11447,7 +12187,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -11725,7 +12465,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "比較画像照合",
         "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
         "ルーティング状態": "写真セット組み直し必要",
-        "更新時刻": "2026-04-21 23:08:31 JST",
+        "更新時刻": "2026-04-22 00:33:59 JST",
         "メモ": "name=JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=別商品mix / inventory_status=販売中 / listingId=2JPSNX6qATG7NwnssYkshh"
       }
     },
@@ -11852,7 +12592,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -12069,7 +12809,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -12273,7 +13013,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -12382,9 +13122,9 @@ window.ZERO_COST_INTAKE = {
         ],
         "candidate_query": "WARIMN KEEPIT O DON USEIN ERBS",
         "review_flag": "",
-        "ocr_engine": "vision + sauna_tesseract_multistage",
+        "ocr_engine": "sauna_tesseract_multistage + vision",
         "ocr_debug_paths": [
-          "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0053/IMG_4988_CODE_ocr_best.png"
+          "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0061/IMG_4988_CODE_ocr_best.png"
         ]
       },
       "priority_score": 110,
@@ -12404,10 +13144,10 @@ window.ZERO_COST_INTAKE = {
           "BOX-001-ITEM-0053:CODE"
         ],
         "verified_exact_match": false,
-        "official_image_state": "actual-only固定 / 比較画像なし",
+        "official_image_state": "actual-only固定 / 比較画像なし / 正規性確認待ち",
         "note": "SPLIT-BOX-001-0053-HELLOKITTY は、0054:FRONT と 0053:BACK/CODE の3枚で X0018IYEUP / Acomiconi ハローキティ リュックアクセサリー 50TH ANNIVERSARY ブラックの写真セットを組み直し予定。実画像では同一商品として扱えるが、公式完全一致ページは見つかっていないため、ローカル特定結果では暫定・実物写真のみ・正規性確認待ちで止める。公開判断は別フェーズ。",
         "image_source": "actual-only",
-        "exact_match_guard_state": "clear",
+        "exact_match_guard_state": "review_required",
         "official_page_url": "",
         "official_image_url": "",
         "official_image_local": "",
@@ -12429,7 +13169,10 @@ window.ZERO_COST_INTAKE = {
         "brand_override": "Acomiconi",
         "category_override": "ゲーム・おもちゃ・グッズ > キャラクターグッズ > キーホルダー・マスコット",
         "price_override": 1480,
-        "check_items_override": "サンリオ正規表記 / タグ / チェーン / 破損 / サイズ確認"
+        "check_items_override": "サンリオ正規表記 / タグ / チェーン / 破損 / サイズ確認",
+        "exact_match_guard_reasons": [
+          "真贋確認"
+        ]
       },
       "official": {
         "management_id": "BOX-001-ITEM-0061",
@@ -12444,16 +13187,19 @@ window.ZERO_COST_INTAKE = {
           "BOX-001-ITEM-0053:CODE"
         ],
         "verified_exact_match": false,
-        "official_image_state": "actual-only固定 / 比較画像なし",
+        "official_image_state": "actual-only固定 / 比較画像なし / 正規性確認待ち",
         "note": "SPLIT-BOX-001-0053-HELLOKITTY は、0054:FRONT と 0053:BACK/CODE の3枚で X0018IYEUP / Acomiconi ハローキティ リュックアクセサリー 50TH ANNIVERSARY ブラックの写真セットを組み直し予定。実画像では同一商品として扱えるが、公式完全一致ページは見つかっていないため、ローカル特定結果では暫定・実物写真のみ・正規性確認待ちで止める。公開判断は別フェーズ。",
         "image_source": "actual-only",
-        "exact_match_guard_state": "clear",
+        "exact_match_guard_state": "review_required",
         "official_page_url": "",
         "official_image_url": "",
         "official_image_local": "",
         "supplemental_url": "",
         "supplemental_image_urls": [],
-        "supplemental_image_locals": []
+        "supplemental_image_locals": [],
+        "exact_match_guard_reasons": [
+          "真贋確認"
+        ]
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0061",
@@ -12479,7 +13225,212 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-21 23:11:56 JST"
+        "updated_at": "2026-04-22 01:09:44 JST"
+      },
+      "comparison_images": [],
+      "reference_images": [],
+      "verified_exact_match": false,
+      "official_image_state": "actual-only固定 / 比較画像なし / 正規性確認待ち",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "真贋確認"
+      ],
+      "qwen_hq_review_status": "",
+      "qwen_hq_resolution": "",
+      "qwen_hq_review_note": "",
+      "publish_status": "下書き準備中",
+      "publish_state": "下書き準備中",
+      "public_listing_url": "",
+      "listing_id": "",
+      "comparison_image_ref": "",
+      "reference_image_ref": "",
+      "minimum_price": "",
+      "market_floor_price_label": "未調査",
+      "listing_price": "1480",
+      "exception": {},
+      "route_plan": {}
+    },
+    {
+      "management_id": "BOX-001-ITEM-0062",
+      "box_id": "BOX-001",
+      "sequence": 62,
+      "status": "complete",
+      "missing_slots": [],
+      "slot_count": 3,
+      "slots": [
+        {
+          "slot": "FRONT",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4899.HEIC",
+          "source_name": "IMG_4899.HEIC",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0062/01_FRONT_IMG_4899.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0062/01_FRONT_IMG_4899.jpg",
+          "resident_url": "./assets/intake/BOX-001-ITEM-0062/01_FRONT_IMG_4899.jpg",
+          "rebundled_from": "BOX-001-ITEM-0025:FRONT"
+        },
+        {
+          "slot": "BACK",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4897.HEIC",
+          "source_name": "IMG_4897.HEIC",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0062/02_BACK_IMG_4897.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0062/02_BACK_IMG_4897.jpg",
+          "resident_url": "./assets/intake/BOX-001-ITEM-0062/02_BACK_IMG_4897.jpg",
+          "rebundled_from": "BOX-001-ITEM-0024:BACK"
+        },
+        {
+          "slot": "CODE",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4898.HEIC",
+          "source_name": "IMG_4898.HEIC",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0062/03_CODE_IMG_4898.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0062/03_CODE_IMG_4898.jpg",
+          "resident_url": "./assets/intake/BOX-001-ITEM-0062/03_CODE_IMG_4898.jpg",
+          "rebundled_from": "BOX-001-ITEM-0024:CODE"
+        }
+      ],
+      "shared_sheet_title_value": "BOX-001-ITEM-0062",
+      "shared_sheet_note": "SPLIT-BOX-001-0024-DUCO からローカル写真セットを作成",
+      "photo_grouping": "split_child_mint",
+      "grouping_warning": "",
+      "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
+      "display_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
+      "split_child_label": "DUCO サングラス レディース #016（ブラック・ブルー）",
+      "split_temporary_id": "SPLIT-BOX-001-0024-DUCO",
+      "split_source_slots": [
+        "BOX-001-ITEM-0025:FRONT",
+        "BOX-001-ITEM-0024:BACK",
+        "BOX-001-ITEM-0024:CODE"
+      ],
+      "split_status": "manifest_child_minted_local_only",
+      "box_label": "数字箱 001",
+      "box_lane": "numeric",
+      "box_code": "001",
+      "identification": {
+        "state": "バーコード候補あり",
+        "barcode_values": [
+          "X0011JB9IL"
+        ],
+        "front_back_texts": [
+          "X0011JB91",
+          "DUCO サングラスレディース.1016（ブラック・ブルー）",
+          "MADE IN CHNA",
+          "新品",
+          "X0011JB3LL",
+          "DUCO サングラスレディース..9016（ブラック・ブルー"
+        ],
+        "code_texts": [
+          "DUCO",
+          "~ . _ . | SOA ! | : . i . on \\ 7 : Poa yy fs, a eee. a Vee q RARER Ty! f “Sa cae og ee YP Ax. ae I ee nae a .",
+          ". r — ‘ o us , é | “Bigs \\y \\. ye Fe, r | | ay e - : Zs x v i 7 j- A | yo *)CO|C ee | Sao e ee a 5 a i | eis 375 Se eae 7 | ? | Uf i2 5* Ske ia | ; | ee ee ,"
+        ],
+        "ocr_texts": [
+          "X0011JB91",
+          "DUCO サングラスレディース.1016（ブラック・ブルー）",
+          "MADE IN CHNA",
+          "新品",
+          "X0011JB3LL",
+          "DUCO サングラスレディース..9016（ブラック・ブルー"
+        ],
+        "candidate_query": "X0011JB91 DUCO サングラスレディース.1016（ブラック・ブルー） MADE IN CHNA 新品",
+        "review_flag": "",
+        "ocr_engine": "sauna_tesseract_multistage + vision",
+        "ocr_debug_paths": [
+          "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0062/IMG_4898_CODE_ocr_best.png"
+        ]
+      },
+      "priority_score": 150,
+      "next_action": "Amazon内部コードとOCRで商品特定",
+      "barcode_kind": "amazon_internal",
+      "review_flag": "",
+      "resolved": {
+        "management_id": "BOX-001-ITEM-0062",
+        "raw_id": "RAW-BOX-001-062",
+        "product_id": "PRD-BOX-001-062",
+        "draft_id": "DRF-BOX-001-062",
+        "research_id": "RES-BOX-001-062",
+        "split_temporary_id": "SPLIT-BOX-001-0024-DUCO",
+        "split_source_slots": [
+          "BOX-001-ITEM-0025:FRONT",
+          "BOX-001-ITEM-0024:BACK",
+          "BOX-001-ITEM-0024:CODE"
+        ],
+        "verified_exact_match": false,
+        "official_image_state": "actual-only固定 / 比較画像なし",
+        "note": "SPLIT-BOX-001-0024-DUCO は、0025:FRONT と 0024:BACK/CODE の3枚で X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）の写真セットを組み直し済み。ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+        "image_source": "actual-only",
+        "exact_match_guard_state": "clear",
+        "official_page_url": "",
+        "official_image_url": "",
+        "official_image_local": "",
+        "supplemental_url": "",
+        "supplemental_image_urls": [],
+        "supplemental_image_locals": [],
+        "resolution_status": "provisional",
+        "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
+        "barcode_primary": "X0011JB9IL",
+        "product_code_type": "amazon_internal",
+        "evidence": [
+          "X0011JB9IL",
+          "DUCO",
+          "サングラス レディース",
+          "#016",
+          "ブラック・ブルー",
+          "0025:FRONT + 0024:BACK + 0024:CODE"
+        ],
+        "brand_override": "DUCO",
+        "category_override": "ファッション > レディース > 小物 > サングラス",
+        "check_items_override": "フレーム色 / レンズ色 / 付属ケース / 型番#016 / 破損確認"
+      },
+      "official": {
+        "management_id": "BOX-001-ITEM-0062",
+        "raw_id": "RAW-BOX-001-062",
+        "product_id": "PRD-BOX-001-062",
+        "draft_id": "DRF-BOX-001-062",
+        "research_id": "RES-BOX-001-062",
+        "split_temporary_id": "SPLIT-BOX-001-0024-DUCO",
+        "split_source_slots": [
+          "BOX-001-ITEM-0025:FRONT",
+          "BOX-001-ITEM-0024:BACK",
+          "BOX-001-ITEM-0024:CODE"
+        ],
+        "verified_exact_match": false,
+        "official_image_state": "actual-only固定 / 比較画像なし",
+        "note": "SPLIT-BOX-001-0024-DUCO は、0025:FRONT と 0024:BACK/CODE の3枚で X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）の写真セットを組み直し済み。ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+        "image_source": "actual-only",
+        "exact_match_guard_state": "clear",
+        "official_page_url": "",
+        "official_image_url": "",
+        "official_image_local": "",
+        "supplemental_url": "",
+        "supplemental_image_urls": [],
+        "supplemental_image_locals": []
+      },
+      "commerce": {
+        "management_id": "BOX-001-ITEM-0062",
+        "raw_id": "RAW-BOX-001-062",
+        "product_id": "PRD-BOX-001-062",
+        "draft_id": "DRF-BOX-001-062",
+        "research_id": "RES-BOX-001-062",
+        "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
+        "brand": "DUCO",
+        "category": "ファッション > レディース > 小物 > サングラス",
+        "barcode_primary": "X0011JB9IL",
+        "product_code_type": "amazon_internal",
+        "listing_title": "DUCO サングラス レディース #016（ブラック・ブルー）",
+        "listing_price": "",
+        "market_floor_price": "",
+        "market_floor_state": "未調査",
+        "market_source_label": "",
+        "market_source_url": "",
+        "market_checked_at": "",
+        "market_note": "",
+        "publish_state": "下書き準備中",
+        "publish_detail": "",
+        "listing_id": "",
+        "public_listing_url": "",
+        "csv_status": "",
+        "updated_at": "2026-04-22 01:09:44 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -12497,14 +13448,620 @@ window.ZERO_COST_INTAKE = {
       "reference_image_ref": "",
       "minimum_price": "",
       "market_floor_price_label": "未調査",
-      "listing_price": "1480",
+      "listing_price": "",
+      "exception": {},
+      "route_plan": {}
+    },
+    {
+      "management_id": "BOX-001-ITEM-0063",
+      "box_id": "BOX-001",
+      "sequence": 63,
+      "status": "complete",
+      "missing_slots": [],
+      "slot_count": 3,
+      "slots": [
+        {
+          "slot": "FRONT",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4974.HEIC",
+          "source_name": "IMG_4974.HEIC",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0063/01_FRONT_IMG_4974.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0063/01_FRONT_IMG_4974.jpg",
+          "resident_url": "./assets/intake/BOX-001-ITEM-0063/01_FRONT_IMG_4974.jpg",
+          "rebundled_from": "BOX-001-ITEM-0049:FRONT"
+        },
+        {
+          "slot": "BACK",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4972.HEIC",
+          "source_name": "IMG_4972.HEIC",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0063/02_BACK_IMG_4972.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0063/02_BACK_IMG_4972.jpg",
+          "resident_url": "./assets/intake/BOX-001-ITEM-0063/02_BACK_IMG_4972.jpg",
+          "rebundled_from": "BOX-001-ITEM-0048:BACK"
+        },
+        {
+          "slot": "CODE",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4973.HEIC",
+          "source_name": "IMG_4973.HEIC",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0063/03_CODE_IMG_4973.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0063/03_CODE_IMG_4973.jpg",
+          "resident_url": "./assets/intake/BOX-001-ITEM-0063/03_CODE_IMG_4973.jpg",
+          "rebundled_from": "BOX-001-ITEM-0048:CODE"
+        }
+      ],
+      "shared_sheet_title_value": "BOX-001-ITEM-0063",
+      "shared_sheet_note": "SPLIT-BOX-001-0048-VIHFBB からローカル写真セットを作成",
+      "photo_grouping": "split_child_mint",
+      "grouping_warning": "",
+      "product_name": "VIHFBB 花柄トートバッグ",
+      "display_name": "VIHFBB 花柄トートバッグ",
+      "split_child_label": "VIHFBB 花柄トートバッグ",
+      "split_temporary_id": "SPLIT-BOX-001-0048-VIHFBB",
+      "split_source_slots": [
+        "BOX-001-ITEM-0049:FRONT",
+        "BOX-001-ITEM-0048:BACK",
+        "BOX-001-ITEM-0048:CODE"
+      ],
+      "split_status": "manifest_child_minted_local_only",
+      "box_label": "数字箱 001",
+      "box_lane": "numeric",
+      "box_code": "001",
+      "identification": {
+        "state": "バーコード候補あり",
+        "barcode_values": [
+          "X00184OJV3"
+        ],
+        "front_back_texts": [
+          "X001840JV3",
+          "IXIFBB］トートバック（40.，グラム）",
+          "新品",
+          "［VIHFBB］ トートバッグ（40.，グラム）"
+        ],
+        "code_texts": [
+          "ae in Cae iO _— (oa ve Ae K WY t Ch. 40 / <> ine >) Ass \\ ; 4 1 1 1 4 0 341 1022 799 105 -1 5 1 1 1 4 1 341 1067 70 60 10.418491 ot 5 1 1 1 4 2 458 1070 37 29 58.819942 we 5 1 1 1 4 3 529 1069 3 3 27.794586 8 5 1 1 1 4 4 598 1063 71 64 8.569422 te 5 1 1 1 4 5 782 1022 215 84 33.340683 Vane 5 1 1 1 4 6 1025 1039 115 54 24.062023 oa 4 1 1 1 5 0 347 1157 1419 122 -1 5 1 1 1 5 1 347 1161 198 105 39.325195 ee 5 1 1 1 5 2 668 1172 155 107 35.049049 A 5 1 1 1 5 3 950 1162 180 65 5.160999 oad",
+          "a ee ee ge ey Ee i f . ee Ky @ , 7 Be “ol fa ‘yo ve 2] A 2 > En nd cadiialal eee ee . \\ Met aa , ° i - : ee OE Al Je ee, bw fogs Pain ON FE Oe ON",
+          "a7 |"
+        ],
+        "ocr_texts": [
+          "X001840JV3",
+          "IXIFBB］トートバック（40.，グラム）",
+          "新品",
+          "［VIHFBB］ トートバッグ（40.，グラム）",
+          "ae in Cae iO _— (oa ve Ae K WY t Ch. 40 / <> ine >) Ass \\ ; 4 1 1 1 4 0 341 1022 799 105 -1 5 1 1 1 4 1 341 1067 70 60 10.418491 ot 5 1 1 1 4 2 458 1070 37 29 58.819942 we 5 1 1 1 4 3 529 1069 3 3 27.794586 8 5 1 1 1 4 4 598 1063 71 64 8.569422 te 5 1 1 1 4 5 782 1022 215 84 33.340683 Vane 5 1 1 1 4 6 1025 1039 115 54 24.062023 oa 4 1 1 1 5 0 347 1157 1419 122 -1 5 1 1 1 5 1 347 1161 198 105 39.325195 ee 5 1 1 1 5 2 668 1172 155 107 35.049049 A 5 1 1 1 5 3 950 1162 180 65 5.160999 oad",
+          "a ee ee ge ey Ee i f . ee Ky @ , 7 Be “ol fa ‘yo ve 2] A 2 > En nd cadiialal eee ee . \\ Met aa , ° i - : ee OE Al Je ee, bw fogs Pain ON FE Oe ON"
+        ],
+        "candidate_query": "X001840JV3 IXIFBB］トートバック（40.，グラム） 新品 ［VIHFBB］ トートバッグ（40.，グラム）",
+        "review_flag": "",
+        "ocr_engine": "sauna_tesseract_multistage + vision",
+        "ocr_debug_paths": [
+          "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0063/IMG_4973_CODE_ocr_best.png"
+        ]
+      },
+      "priority_score": 110,
+      "next_action": "本体表示とコードラベルを突合",
+      "barcode_kind": "amazon_internal",
+      "review_flag": "本体表示とコードラベルの不一致疑い",
+      "resolved": {
+        "management_id": "BOX-001-ITEM-0063",
+        "raw_id": "RAW-BOX-001-063",
+        "product_id": "PRD-BOX-001-063",
+        "draft_id": "DRF-BOX-001-063",
+        "research_id": "RES-BOX-001-063",
+        "split_temporary_id": "SPLIT-BOX-001-0048-VIHFBB",
+        "split_source_slots": [
+          "BOX-001-ITEM-0049:FRONT",
+          "BOX-001-ITEM-0048:BACK",
+          "BOX-001-ITEM-0048:CODE"
+        ],
+        "verified_exact_match": false,
+        "official_image_state": "actual-only固定 / 比較画像なし",
+        "note": "SPLIT-BOX-001-0048-VIHFBB は、0049:FRONT と 0048:BACK/CODE の3枚で X00184OJV3 / [VIHFBB] トートバッグの写真セットを組み直し済み。実画像では花柄トートバッグとして扱えるが、公開名は actual-only の generic wording に留める。ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+        "image_source": "actual-only",
+        "exact_match_guard_state": "clear",
+        "official_page_url": "",
+        "official_image_url": "",
+        "official_image_local": "",
+        "supplemental_url": "",
+        "supplemental_image_urls": [],
+        "supplemental_image_locals": [],
+        "resolution_status": "provisional",
+        "product_name": "VIHFBB 花柄トートバッグ",
+        "barcode_primary": "X00184OJV3",
+        "product_code_type": "amazon_internal",
+        "evidence": [
+          "X00184OJV3",
+          "VIHFBB",
+          "トートバッグ",
+          "花柄",
+          "0049:FRONT + 0048:BACK + 0048:CODE"
+        ],
+        "brand_override": "VIHFBB",
+        "category_override": "ファッション > レディース > バッグ > トートバッグ",
+        "check_items_override": "花柄 / 持ち手 / サイズ / 開口部 / 汚れ確認"
+      },
+      "official": {
+        "management_id": "BOX-001-ITEM-0063",
+        "raw_id": "RAW-BOX-001-063",
+        "product_id": "PRD-BOX-001-063",
+        "draft_id": "DRF-BOX-001-063",
+        "research_id": "RES-BOX-001-063",
+        "split_temporary_id": "SPLIT-BOX-001-0048-VIHFBB",
+        "split_source_slots": [
+          "BOX-001-ITEM-0049:FRONT",
+          "BOX-001-ITEM-0048:BACK",
+          "BOX-001-ITEM-0048:CODE"
+        ],
+        "verified_exact_match": false,
+        "official_image_state": "actual-only固定 / 比較画像なし",
+        "note": "SPLIT-BOX-001-0048-VIHFBB は、0049:FRONT と 0048:BACK/CODE の3枚で X00184OJV3 / [VIHFBB] トートバッグの写真セットを組み直し済み。実画像では花柄トートバッグとして扱えるが、公開名は actual-only の generic wording に留める。ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+        "image_source": "actual-only",
+        "exact_match_guard_state": "clear",
+        "official_page_url": "",
+        "official_image_url": "",
+        "official_image_local": "",
+        "supplemental_url": "",
+        "supplemental_image_urls": [],
+        "supplemental_image_locals": []
+      },
+      "commerce": {
+        "management_id": "BOX-001-ITEM-0063",
+        "raw_id": "RAW-BOX-001-063",
+        "product_id": "PRD-BOX-001-063",
+        "draft_id": "DRF-BOX-001-063",
+        "research_id": "RES-BOX-001-063",
+        "product_name": "VIHFBB 花柄トートバッグ",
+        "brand": "VIHFBB",
+        "category": "ファッション > レディース > バッグ > トートバッグ",
+        "barcode_primary": "X00184OJV3",
+        "product_code_type": "amazon_internal",
+        "listing_title": "VIHFBB 花柄トートバッグ",
+        "listing_price": "",
+        "market_floor_price": "",
+        "market_floor_state": "未調査",
+        "market_source_label": "",
+        "market_source_url": "",
+        "market_checked_at": "",
+        "market_note": "",
+        "publish_state": "下書き準備中",
+        "publish_detail": "",
+        "listing_id": "",
+        "public_listing_url": "",
+        "csv_status": "",
+        "updated_at": "2026-04-22 01:09:44 JST"
+      },
+      "comparison_images": [],
+      "reference_images": [],
+      "verified_exact_match": false,
+      "official_image_state": "actual-only固定 / 比較画像なし",
+      "exact_match_guard_state": "clear",
+      "qwen_hq_review_status": "",
+      "qwen_hq_resolution": "",
+      "qwen_hq_review_note": "",
+      "publish_status": "下書き準備中",
+      "publish_state": "下書き準備中",
+      "public_listing_url": "",
+      "listing_id": "",
+      "comparison_image_ref": "",
+      "reference_image_ref": "",
+      "minimum_price": "",
+      "market_floor_price_label": "未調査",
+      "listing_price": "",
+      "exception": {},
+      "route_plan": {}
+    },
+    {
+      "management_id": "BOX-001-ITEM-0064",
+      "box_id": "BOX-001",
+      "sequence": 64,
+      "status": "complete",
+      "missing_slots": [],
+      "slot_count": 3,
+      "slots": [
+        {
+          "slot": "FRONT",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4944.HEIC",
+          "source_name": "IMG_4944.HEIC",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0064/01_FRONT_IMG_4944.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0064/01_FRONT_IMG_4944.jpg",
+          "resident_url": "./assets/intake/BOX-001-ITEM-0064/01_FRONT_IMG_4944.jpg",
+          "rebundled_from": "BOX-001-ITEM-0040:FRONT"
+        },
+        {
+          "slot": "BACK",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4942.HEIC",
+          "source_name": "IMG_4942.HEIC",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0064/02_BACK_IMG_4942.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0064/02_BACK_IMG_4942.jpg",
+          "resident_url": "./assets/intake/BOX-001-ITEM-0064/02_BACK_IMG_4942.jpg",
+          "rebundled_from": "BOX-001-ITEM-0039:BACK"
+        },
+        {
+          "slot": "CODE",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4943.HEIC",
+          "source_name": "IMG_4943.HEIC",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0064/03_CODE_IMG_4943.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0064/03_CODE_IMG_4943.jpg",
+          "resident_url": "./assets/intake/BOX-001-ITEM-0064/03_CODE_IMG_4943.jpg",
+          "rebundled_from": "BOX-001-ITEM-0039:CODE"
+        }
+      ],
+      "shared_sheet_title_value": "BOX-001-ITEM-0064",
+      "shared_sheet_note": "SPLIT-BOX-001-0039-PENDANT からローカル写真セットを作成",
+      "photo_grouping": "split_child_mint",
+      "grouping_warning": "",
+      "product_name": "fivihoc レディースペンダント ゴールド系 582",
+      "display_name": "fivihoc レディースペンダント ゴールド系 582",
+      "split_child_label": "fivihoc レディースペンダント ゴールド系 582",
+      "split_temporary_id": "SPLIT-BOX-001-0039-PENDANT",
+      "split_source_slots": [
+        "BOX-001-ITEM-0040:FRONT",
+        "BOX-001-ITEM-0039:BACK",
+        "BOX-001-ITEM-0039:CODE"
+      ],
+      "split_status": "manifest_child_minted_local_only",
+      "box_label": "数字箱 001",
+      "box_lane": "numeric",
+      "box_code": "001",
+      "identification": {
+        "state": "バーコード候補あり",
+        "barcode_values": [
+          "X0010634F1"
+        ],
+        "front_back_texts": [
+          "X0010634F1",
+          "fiwihoc®",
+          "レディース..ダント（ゴールド/582）",
+          "新品",
+          "fivihoc@",
+          "レディース．ダント（ゴールド1682）"
+        ],
+        "code_texts": [
+          "ene ( - >>",
+          "\\ oe ‘ ~ ~ \\ S X 5 1 1 1 3 4 1740 1331 5 3 81.738129 - 4 1 1 1 4 0 435 1357 9 16 -1 5 1 1 1 4 1 435 1357 9 16 53.217667 x"
+        ],
+        "ocr_texts": [
+          "X0010634F1",
+          "fiwihoc®",
+          "レディース..ダント（ゴールド/582）",
+          "新品",
+          "fivihoc@",
+          "レディース．ダント（ゴールド1682）"
+        ],
+        "candidate_query": "X0010634F1 fiwihoc® レディース..ダント（ゴールド/582） 新品",
+        "review_flag": "",
+        "ocr_engine": "sauna_tesseract_multistage + vision",
+        "ocr_debug_paths": [
+          "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0064/IMG_4943_CODE_ocr_best.png"
+        ]
+      },
+      "priority_score": 150,
+      "next_action": "Amazon内部コードとOCRで商品特定",
+      "barcode_kind": "amazon_internal",
+      "review_flag": "",
+      "resolved": {
+        "management_id": "BOX-001-ITEM-0064",
+        "raw_id": "RAW-BOX-001-064",
+        "product_id": "PRD-BOX-001-064",
+        "draft_id": "DRF-BOX-001-064",
+        "research_id": "RES-BOX-001-064",
+        "split_temporary_id": "SPLIT-BOX-001-0039-PENDANT",
+        "split_source_slots": [
+          "BOX-001-ITEM-0040:FRONT",
+          "BOX-001-ITEM-0039:BACK",
+          "BOX-001-ITEM-0039:CODE"
+        ],
+        "verified_exact_match": false,
+        "official_image_state": "actual-only固定 / 比較画像なし",
+        "note": "SPLIT-BOX-001-0039-PENDANT は、0040:FRONT と 0039:BACK/CODE の3枚で X0010634F1 / fivihoc レディースペンダント（ゴールド/582）の写真セットを組み直し済み。出品画像は実物のみで扱い、ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+        "image_source": "actual-only",
+        "exact_match_guard_state": "clear",
+        "official_page_url": "",
+        "official_image_url": "",
+        "official_image_local": "",
+        "supplemental_url": "",
+        "supplemental_image_urls": [],
+        "supplemental_image_locals": [],
+        "resolution_status": "provisional",
+        "product_name": "fivihoc レディースペンダント ゴールド系 582",
+        "barcode_primary": "X0010634F1",
+        "product_code_type": "amazon_internal",
+        "evidence": [
+          "X0010634F1",
+          "fivihoc",
+          "レディースペンダント",
+          "ゴールド",
+          "582",
+          "0040:FRONT + 0039:BACK + 0039:CODE"
+        ],
+        "brand_override": "fivihoc",
+        "category_override": "ファッション > レディース > アクセサリー > ネックレス",
+        "price_override": 1980,
+        "check_items_override": "石色 / チェーン状態 / 金属色 / 留め具 / 582表記"
+      },
+      "official": {
+        "management_id": "BOX-001-ITEM-0064",
+        "raw_id": "RAW-BOX-001-064",
+        "product_id": "PRD-BOX-001-064",
+        "draft_id": "DRF-BOX-001-064",
+        "research_id": "RES-BOX-001-064",
+        "split_temporary_id": "SPLIT-BOX-001-0039-PENDANT",
+        "split_source_slots": [
+          "BOX-001-ITEM-0040:FRONT",
+          "BOX-001-ITEM-0039:BACK",
+          "BOX-001-ITEM-0039:CODE"
+        ],
+        "verified_exact_match": false,
+        "official_image_state": "actual-only固定 / 比較画像なし",
+        "note": "SPLIT-BOX-001-0039-PENDANT は、0040:FRONT と 0039:BACK/CODE の3枚で X0010634F1 / fivihoc レディースペンダント（ゴールド/582）の写真セットを組み直し済み。出品画像は実物のみで扱い、ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+        "image_source": "actual-only",
+        "exact_match_guard_state": "clear",
+        "official_page_url": "",
+        "official_image_url": "",
+        "official_image_local": "",
+        "supplemental_url": "",
+        "supplemental_image_urls": [],
+        "supplemental_image_locals": []
+      },
+      "commerce": {
+        "management_id": "BOX-001-ITEM-0064",
+        "raw_id": "RAW-BOX-001-064",
+        "product_id": "PRD-BOX-001-064",
+        "draft_id": "DRF-BOX-001-064",
+        "research_id": "RES-BOX-001-064",
+        "product_name": "fivihoc レディースペンダント ゴールド系 582",
+        "brand": "fivihoc",
+        "category": "ファッション > レディース > アクセサリー > ネックレス",
+        "barcode_primary": "X0010634F1",
+        "product_code_type": "amazon_internal",
+        "listing_title": "fivihoc レディースペンダント ゴールド系 582",
+        "listing_price": "1980",
+        "market_floor_price": "",
+        "market_floor_state": "未調査",
+        "market_source_label": "",
+        "market_source_url": "",
+        "market_checked_at": "",
+        "market_note": "",
+        "publish_state": "下書き準備中",
+        "publish_detail": "",
+        "listing_id": "",
+        "public_listing_url": "",
+        "csv_status": "",
+        "updated_at": "2026-04-22 01:09:44 JST"
+      },
+      "comparison_images": [],
+      "reference_images": [],
+      "verified_exact_match": false,
+      "official_image_state": "actual-only固定 / 比較画像なし",
+      "exact_match_guard_state": "clear",
+      "qwen_hq_review_status": "",
+      "qwen_hq_resolution": "",
+      "qwen_hq_review_note": "",
+      "publish_status": "下書き準備中",
+      "publish_state": "下書き準備中",
+      "public_listing_url": "",
+      "listing_id": "",
+      "comparison_image_ref": "",
+      "reference_image_ref": "",
+      "minimum_price": "",
+      "market_floor_price_label": "未調査",
+      "listing_price": "1980",
+      "exception": {},
+      "route_plan": {}
+    },
+    {
+      "management_id": "BOX-001-ITEM-0065",
+      "box_id": "BOX-001",
+      "sequence": 65,
+      "status": "complete",
+      "missing_slots": [],
+      "slot_count": 3,
+      "slots": [
+        {
+          "slot": "FRONT",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4954.HEIC",
+          "source_name": "IMG_4954.HEIC",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0065/01_FRONT_IMG_4954.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0065/01_FRONT_IMG_4954.jpg",
+          "resident_url": "./assets/intake/BOX-001-ITEM-0065/01_FRONT_IMG_4954.jpg",
+          "rebundled_from": "BOX-001-ITEM-0043:FRONT"
+        },
+        {
+          "slot": "BACK",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4951.HEIC",
+          "source_name": "IMG_4951.HEIC",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0065/02_BACK_IMG_4951.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0065/02_BACK_IMG_4951.jpg",
+          "resident_url": "./assets/intake/BOX-001-ITEM-0065/02_BACK_IMG_4951.jpg",
+          "rebundled_from": "BOX-001-ITEM-0042:BACK"
+        },
+        {
+          "slot": "CODE",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4953.HEIC",
+          "source_name": "IMG_4953.HEIC",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0065/03_CODE_IMG_4953.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0065/03_CODE_IMG_4953.jpg",
+          "resident_url": "./assets/intake/BOX-001-ITEM-0065/03_CODE_IMG_4953.jpg",
+          "rebundled_from": "BOX-001-ITEM-0042:CODE"
+        }
+      ],
+      "shared_sheet_title_value": "BOX-001-ITEM-0065",
+      "shared_sheet_note": "SPLIT-BOX-001-0042-NEEDLY からローカル写真セットを作成",
+      "photo_grouping": "split_child_mint",
+      "grouping_warning": "",
+      "product_name": "NEEDLY Sleeping Lip Mask 10ml",
+      "display_name": "NEEDLY Sleeping Lip Mask 10ml",
+      "split_child_label": "NEEDLY Sleeping Lip Mask 10ml",
+      "split_temporary_id": "SPLIT-BOX-001-0042-NEEDLY",
+      "split_source_slots": [
+        "BOX-001-ITEM-0043:FRONT",
+        "BOX-001-ITEM-0042:BACK",
+        "BOX-001-ITEM-0042:CODE"
+      ],
+      "split_status": "manifest_child_minted_local_only",
+      "box_label": "数字箱 001",
+      "box_lane": "numeric",
+      "box_code": "001",
+      "identification": {
+        "state": "バーコード候補あり",
+        "barcode_values": [
+          "X001B1RSSJ"
+        ],
+        "front_back_texts": [
+          "［g当］",
+          "255z",
+          "YJAE EXP 20270909m71",
+          "NEEDLY SLEEPING LIP MASK",
+          "［販売名】スリービングリップマスク （リップトリートメント）",
+          "【全成分】水晶ポリインプテン、トリ（カブリル／カプリン酸）グリセリル、フィトステロールズポリリンノレイン酸ポリグリセ"
+        ],
+        "code_texts": [
+          "NEEDLY",
+          "Sleeping lip mask",
+          "Picky. Sate.",
+          "Feel the Difference.",
+          "10m1/0.33日1.02、",
+          "[QPITTA y 7 8 ih, / (fT Uf th fee y ; 3 ON Me) ie ih } a {Oo ie ; Z ; , owe = Ha f / if BEG £# Ze Ej ii 4 {© Sf STL Y aie 8 2 uN / Me dels Lo iy is i ‘ et P LEA [4 Lily SM IP B fn a iif ; hyt Sd if ; a. 4 ] 4 aN f 5 LBP ei"
+        ],
+        "ocr_texts": [
+          "［g当］",
+          "255z",
+          "YJAE EXP 20270909m71",
+          "NEEDLY SLEEPING LIP MASK",
+          "［販売名】スリービングリップマスク （リップトリートメント）",
+          "【全成分】水晶ポリインプテン、トリ（カブリル／カプリン酸）グリセリル、フィトステロールズポリリンノレイン酸ポリグリセ"
+        ],
+        "candidate_query": "［g当］ 255z YJAE EXP 20270909m71 NEEDLY SLEEPING LIP MASK",
+        "review_flag": "",
+        "ocr_engine": "sauna_tesseract_multistage + vision",
+        "ocr_debug_paths": [
+          "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0065/IMG_4953_CODE_ocr_best.png"
+        ]
+      },
+      "priority_score": 150,
+      "next_action": "Amazon内部コードとOCRで商品特定",
+      "barcode_kind": "amazon_internal",
+      "review_flag": "",
+      "resolved": {
+        "management_id": "BOX-001-ITEM-0065",
+        "raw_id": "RAW-BOX-001-065",
+        "product_id": "PRD-BOX-001-065",
+        "draft_id": "DRF-BOX-001-065",
+        "research_id": "RES-BOX-001-065",
+        "split_temporary_id": "SPLIT-BOX-001-0042-NEEDLY",
+        "split_source_slots": [
+          "BOX-001-ITEM-0043:FRONT",
+          "BOX-001-ITEM-0042:BACK",
+          "BOX-001-ITEM-0042:CODE"
+        ],
+        "verified_exact_match": false,
+        "official_image_state": "actual-only固定 / 比較画像なし",
+        "note": "SPLIT-BOX-001-0042-NEEDLY は、0043:FRONT と 0042:BACK/CODE の3枚で X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml の写真セットを組み直し済み。出品画像は実物のみで扱い、ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+        "image_source": "actual-only",
+        "exact_match_guard_state": "clear",
+        "official_page_url": "",
+        "official_image_url": "",
+        "official_image_local": "",
+        "supplemental_url": "",
+        "supplemental_image_urls": [],
+        "supplemental_image_locals": [],
+        "resolution_status": "provisional",
+        "product_name": "NEEDLY Sleeping Lip Mask 10ml",
+        "barcode_primary": "X001B1RSSJ",
+        "product_code_type": "amazon_internal",
+        "evidence": [
+          "X001B1RSSJ",
+          "NEEDLY",
+          "Sleeping Lip Mask",
+          "10ml",
+          "0043:FRONT + 0042:BACK + 0042:CODE"
+        ],
+        "brand_override": "NEEDLY",
+        "category_override": "ビューティー > スキンケア・基礎化粧品 > リップケア",
+        "price_override": 1680,
+        "check_items_override": "未開封 / 使用期限 / 箱つぶれ / 10ml表記 / 衛生状態"
+      },
+      "official": {
+        "management_id": "BOX-001-ITEM-0065",
+        "raw_id": "RAW-BOX-001-065",
+        "product_id": "PRD-BOX-001-065",
+        "draft_id": "DRF-BOX-001-065",
+        "research_id": "RES-BOX-001-065",
+        "split_temporary_id": "SPLIT-BOX-001-0042-NEEDLY",
+        "split_source_slots": [
+          "BOX-001-ITEM-0043:FRONT",
+          "BOX-001-ITEM-0042:BACK",
+          "BOX-001-ITEM-0042:CODE"
+        ],
+        "verified_exact_match": false,
+        "official_image_state": "actual-only固定 / 比較画像なし",
+        "note": "SPLIT-BOX-001-0042-NEEDLY は、0043:FRONT と 0042:BACK/CODE の3枚で X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml の写真セットを組み直し済み。出品画像は実物のみで扱い、ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+        "image_source": "actual-only",
+        "exact_match_guard_state": "clear",
+        "official_page_url": "",
+        "official_image_url": "",
+        "official_image_local": "",
+        "supplemental_url": "",
+        "supplemental_image_urls": [],
+        "supplemental_image_locals": []
+      },
+      "commerce": {
+        "management_id": "BOX-001-ITEM-0065",
+        "raw_id": "RAW-BOX-001-065",
+        "product_id": "PRD-BOX-001-065",
+        "draft_id": "DRF-BOX-001-065",
+        "research_id": "RES-BOX-001-065",
+        "product_name": "NEEDLY Sleeping Lip Mask 10ml",
+        "brand": "NEEDLY",
+        "category": "ビューティー > スキンケア・基礎化粧品 > リップケア",
+        "barcode_primary": "X001B1RSSJ",
+        "product_code_type": "amazon_internal",
+        "listing_title": "NEEDLY Sleeping Lip Mask 10ml",
+        "listing_price": "1680",
+        "market_floor_price": "",
+        "market_floor_state": "未調査",
+        "market_source_label": "",
+        "market_source_url": "",
+        "market_checked_at": "",
+        "market_note": "",
+        "publish_state": "下書き準備中",
+        "publish_detail": "",
+        "listing_id": "",
+        "public_listing_url": "",
+        "csv_status": "",
+        "updated_at": "2026-04-22 01:09:44 JST"
+      },
+      "comparison_images": [],
+      "reference_images": [],
+      "verified_exact_match": false,
+      "official_image_state": "actual-only固定 / 比較画像なし",
+      "exact_match_guard_state": "clear",
+      "qwen_hq_review_status": "",
+      "qwen_hq_resolution": "",
+      "qwen_hq_review_note": "",
+      "publish_status": "下書き準備中",
+      "publish_state": "下書き準備中",
+      "public_listing_url": "",
+      "listing_id": "",
+      "comparison_image_ref": "",
+      "reference_image_ref": "",
+      "minimum_price": "",
+      "market_floor_price_label": "未調査",
+      "listing_price": "1680",
       "exception": {},
       "route_plan": {}
     }
   ],
   "boxes": [
     {
-      "generated_at": "2026-04-21 23:11:56 JST",
+      "generated_at": "2026-04-22 01:09:44 JST",
       "box_id": "BOX-001",
       "box_label": "数字箱 001",
       "box_lane": "numeric",
@@ -12517,13 +14074,13 @@ window.ZERO_COST_INTAKE = {
       ],
       "slots_per_item": 3,
       "total_files": 173,
-      "total_items": 61,
-      "complete_items": 60,
+      "total_items": 65,
+      "complete_items": 64,
       "incomplete_items": 1,
-      "next_sequence": 62,
-      "next_management_id": "BOX-001-ITEM-0062",
+      "next_sequence": 66,
+      "next_management_id": "BOX-001-ITEM-0066",
       "identification_counts": {
-        "barcode_ready": 37,
+        "barcode_ready": 41,
         "ocr_ready": 2,
         "image_only": 0,
         "missing_slots": 0,
@@ -12531,7 +14088,7 @@ window.ZERO_COST_INTAKE = {
       },
       "resolution_counts": {
         "confirmed": 2,
-        "provisional": 59,
+        "provisional": 63,
         "official_image_pending": 0,
         "accepted_exception": 2
       },
@@ -12794,7 +14351,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "審査監視",
             "AI次アクション": "カテゴリ審査反映待ち",
             "ルーティング状態": "審査待ち",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り / publish_ok=カテゴリ審査待ち / draft_status=カテゴリ審査待ち / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=clear"
           }
         },
@@ -12974,7 +14531,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -13021,7 +14578,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "実物のみで進める / 比較画像は後追い",
             "ルーティング状態": "HQ判断済み",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=保冷クーラーバッグ ネイビー ショルダー付 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=色違い / 型番違い / サイズ違い / セット違い / 別商品mix / qwen_hq=actual-only固定優先 / 2026-04-21 current truth: actual-only固定。比較画像なしでも実物写真のみで進める。"
           }
         },
@@ -13166,7 +14723,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -13206,7 +14763,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=YUGYUG サングラス ブラック/グレー ケース付き / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
           }
         },
@@ -13464,7 +15021,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "precision guard 解消",
             "ルーティング状態": "停止",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=IAWNI ショルダーバッグ メッセンジャーバッグ / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=ブランド不一致 / inventory_status=販売中 / listingId=2JPSMJHwgfzNjEkYfN8SMv"
           }
         },
@@ -13722,7 +15279,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "precision guard 解消",
             "ルーティング状態": "停止",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=CEEN サルエルパンツ 七分丈 ワイドパンツ / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=柄違い / inventory_status=販売中 / listingId=2JPQCYwtnC7WCswDeG37b9"
           }
         },
@@ -13876,7 +15433,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -14054,7 +15611,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -14094,7 +15651,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=GIOVANA Tシャツ ベージュ 2XL / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
           }
         },
@@ -14355,7 +15912,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "precision guard 解消",
             "ルーティング状態": "停止",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=オナーファッション 綿100% トップス ミントグリーン 3XL / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=review_required / guard_reasons=ブランド不一致 / inventory_status=販売中 / listingId=2JPSMSqu7EDWJu3jDcTo5h"
           }
         },
@@ -14624,7 +16181,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=Hotaty ピアス 金属アレルギー対応 ギフトBOX付き / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=clear / inventory_status=販売中 / listingId=2JPSMUTrpVNxK6fGZdtMqT"
           }
         },
@@ -14778,7 +16335,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [
             {
@@ -14839,7 +16396,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "precision guard 解消",
             "ルーティング状態": "停止",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=SHANGCHU シェフユニフォーム ブラック 4XL / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=色違い"
           }
         },
@@ -15095,7 +16652,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "precision guard 解消",
             "ルーティング状態": "停止",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=Dkieta 帽子 レディース ネックカバー付き 花柄日よけ帽子 / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=柄違い / inventory_status=販売中 / listingId=2JPSMPEuG8NMB3ZieyYzHU"
           }
         },
@@ -15353,7 +16910,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "precision guard 解消",
             "ルーティング状態": "停止",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=gany ガーゼハンカチ 30×30cm 10枚セット 綿100% / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=セット違い / inventory_status=販売中 / listingId=2JPTBgBM5kND3h8AhVf4bf"
           }
         },
@@ -15497,7 +17054,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [
             {
@@ -15555,7 +17112,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り / publish_ok=公開待ち / draft_status=公開待ち / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=clear"
           }
         },
@@ -15832,7 +17389,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "precision guard 解消",
             "ルーティング状態": "停止",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=HAYAHARU キッズ靴下 LS4602LS / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=柄違い / セット違い / inventory_status=販売中 / listingId=2JPSMLyKhRCgPASDJFH2dc"
           }
         },
@@ -15978,7 +17535,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -16018,7 +17575,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=Llink 靴下 5足セット ボーダー パステル / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
           }
         },
@@ -16162,7 +17719,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -16202,7 +17759,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=ZERUI 靴下 5足セット パステル 蝶リボン / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
           }
         },
@@ -16358,7 +17915,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -16404,7 +17961,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "用途確認と商品名補正",
             "ルーティング状態": "用途確認待ち",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=FirstC ティアグッズ記念品ギフト オレンジ丸型ポーチ（用途要確認） / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / 用途要確認 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=柄違い / 型番違い / 形状違い / 用途要確認"
           }
         },
@@ -16549,7 +18106,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -16589,7 +18146,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=SWEETBOY 子供パーカー ネイビー×イエロー 130 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
           }
         },
@@ -16842,7 +18399,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "停止",
             "AI次アクション": "空き板を維持",
             "ルーティング状態": "一時停止",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=ポロベア キャンバス トートバッグ POLO BEAR LAUREN / publish_ok=確認待ち / draft_status=一時取り下げ / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=clear / inventory_status=一時取り下げ"
           }
         },
@@ -16991,7 +18548,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -17031,7 +18588,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=首サポーター カバー付き グレー M HJ-GY-M / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
           }
         },
@@ -17164,7 +18721,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -17331,7 +18888,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [
             {
@@ -17389,7 +18946,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=LE BLANC フェムケアPRO 低刺激 デリケートゾーン 150mL / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
           }
         },
@@ -17520,7 +19077,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -17590,50 +19147,35 @@ window.ZERO_COST_INTAKE = {
           "box_code": "001",
           "identification": {
             "state": "split_required",
-            "barcode_values": [
-              "X0011JB9IL"
-            ],
+            "barcode_values": [],
             "front_back_texts": [
               "a ye — Rane oe aN (PA Eee av > v\\ ky A. x & i gr oA < a. / ~~ af wef x Q Shy by == WA @ — — —— — ——— es ud ee Z",
-              "FO ae cS wa er i tas : Ne a. Ee x rat ag SO | Ex y F 4 py Ba eee Ngee on Aes | ny x s Mee f\\ i at »",
-              "X0011JB3LL",
-              "DUCO サングラスレディース..9016（ブラック・ブルー",
-              "新品",
-              "MADE IN CHINA"
+              "FO ae cS wa er i tas : Ne a. Ee x rat ag SO | Ex y F 4 py Ba eee Ngee on Aes | ny x s Mee f\\ i at »"
             ],
-            "code_texts": [
-              "DUCO",
-              "~ . _ . | SOA ! | : . i . on \\ 7 : Poa yy fs, a eee. a Vee q RARER Ty! f “Sa cae og ee YP Ax. ae I ee nae a .",
-              ". r — ‘ o us , é | “Bigs \\y \\. ye Fe, r | | ay e - : Zs x v i 7 j- A | yo *)CO|C ee | Sao e ee a 5 a i | eis 375 Se eae 7 | ? | Uf i2 5* Ske ia | ; | ee ee ,"
-            ],
+            "code_texts": [],
             "ocr_texts": [
               "a ye — Rane oe aN (PA Eee av > v\\ ky A. x & i gr oA < a. / ~~ af wef x Q Shy by == WA @ — — —— — ——— es ud ee Z",
-              "FO ae cS wa er i tas : Ne a. Ee x rat ag SO | Ex y F 4 py Ba eee Ngee on Aes | ny x s Mee f\\ i at »",
-              "X0011JB3LL",
-              "DUCO サングラスレディース..9016（ブラック・ブルー",
-              "新品",
-              "MADE IN CHINA"
+              "FO ae cS wa er i tas : Ne a. Ee x rat ag SO | Ex y F 4 py Ba eee Ngee on Aes | ny x s Mee f\\ i at »"
             ],
-            "candidate_query": "a ye — Rane oe aN (PA Eee av > v\\ ky A. x & i gr oA < a. / ~~ af wef x Q Shy by == WA @ — — —— — ——— es ud ee Z FO ae cS wa er i tas : Ne a. Ee x rat ag SO | Ex y F 4 py Ba eee Ngee on Aes | ny x s Mee f\\ i at » X0011JB3LL DUCO サングラスレディース..9016（ブラック・ブルー",
+            "candidate_query": "a ye — Rane oe aN (PA Eee av > v\\ ky A. x & i gr oA < a. / ~~ af wef x Q Shy by == WA @ — — —— — ——— es ud ee Z FO ae cS wa er i tas : Ne a. Ee x rat ag SO | Ex y F 4 py Ba eee Ngee on Aes | ny x s Mee f\\ i at »",
             "review_flag": "FRONT/BACK/CODE が別商品です",
-            "ocr_engine": "sauna_tesseract_multistage + vision",
+            "ocr_engine": "sauna_tesseract_multistage",
             "ocr_debug_paths": [
-              "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0024/IMG_4898_CODE_ocr_best.png",
               "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0024/IMG_4896_FRONT_ocr_best.png"
             ]
           },
-          "priority_score": 150,
+          "priority_score": 220,
           "next_action": "写真セットを組み直す",
-          "barcode_kind": "amazon_internal",
+          "barcode_kind": "",
           "review_flag": "FRONT/BACK/CODE が別商品です",
           "manual_note": "FRONT は黒い収納袋系商品、BACK/CODE は DUCO サングラスケース #016 ピンク箱で別商品でした。",
           "resolved": {
             "management_id": "BOX-001-ITEM-0024",
             "resolution_status": "provisional",
-            "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
+            "product_name": "写真セット組み直し候補: DUCO サングラス レディース #016（ブラック・ブルー）",
             "barcode_primary": "X0011JB9IL",
             "product_code_type": "amazon_internal",
-            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
             "note": "BACK/CODE の2枚で DUCO ロゴ入りケースとラベル X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）が一致。一方 FRONT は黒い収納袋で別商品。現写真では1商品に断定不能のため、DUCO 側を provisional に留める。",
             "evidence": [
               "X0011JB9IL",
@@ -17644,7 +19186,8 @@ window.ZERO_COST_INTAKE = {
             ],
             "exact_match_guard_state": "review_required",
             "exact_match_guard_reasons": [
-              "別商品mix"
+              "別商品mix",
+              "写真セット組み直し必要"
             ]
           },
           "official": {},
@@ -17654,12 +19197,12 @@ window.ZERO_COST_INTAKE = {
             "product_id": "PRD-BOX-001-024",
             "draft_id": "DRF-BOX-001-024",
             "research_id": "RES-BOX-001-024",
-            "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
+            "product_name": "写真セット組み直し候補: DUCO サングラス レディース #016（ブラック・ブルー）",
             "brand": "",
             "category": "",
             "barcode_primary": "X0011JB9IL",
             "product_code_type": "amazon_internal",
-            "listing_title": "DUCO サングラス レディース #016（ブラック・ブルー）",
+            "listing_title": "写真セット組み直し候補: DUCO サングラス レディース #016（ブラック・ブルー）",
             "listing_price": "",
             "market_floor_price": "",
             "market_floor_state": "未調査",
@@ -17672,17 +19215,18 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
-          "display_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
-          "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
+          "display_name": "写真セット組み直し候補: DUCO サングラス レディース #016（ブラック・ブルー）",
+          "product_name": "写真セット組み直し候補: DUCO サングラス レディース #016（ブラック・ブルー）",
           "verified_exact_match": false,
-          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 管理番号再分解待ち",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
-            "別商品mix"
+            "別商品mix",
+            "写真セット組み直し必要"
           ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
@@ -17697,7 +19241,107 @@ window.ZERO_COST_INTAKE = {
           "market_floor_price_label": "未調査",
           "listing_price": "",
           "exception": {},
-          "route_plan": {}
+          "route_plan": {},
+          "split_staging": {
+            "management_id": "BOX-001-ITEM-0024",
+            "plan_summary": "0025 FRONT と 0024 BACK/CODE は X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）で一致する。0024 FRONT の黒い収納袋系スロットと 0025 BACK/CODE の日傘側スロットは別商品として親 ID に残し、DUCO 側だけ local child へ切り出す。 / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 のローカル写真セットを作成済み / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "ui_summary": "0025 FRONT + 0024 BACK/CODE は DUCO child 候補 / 0024 FRONT は別物 / 0025 BACK/CODE は日傘側で別物 / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 のローカル写真セットを作成済み / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "operator_summary": "BOX-001-ITEM-0024 / 0025 は DUCO サングラス箱と日傘側が混在している。0025 FRONT と 0024 BACK/CODE は X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）で一致するため、DUCO 側だけ local child へ切り出す。0024 FRONT の黒い収納袋系スロットと 0025 BACK/CODE の日傘側は親 ID に残す。 / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 のローカル写真セットを作成済み / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_note": "0025 FRONT + 0024 BACK/CODE は DUCO 側として coherent。0024 FRONT の黒い収納袋系スロットと 0025 BACK/CODE の日傘側は別商品のため親 ID に残す。 / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 のローカル写真セットを作成済み / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_next_action": "SPLIT-BOX-001-0024-DUCO を local mint → local confirmed / official へ provisional actual-only 反映。親 0024 / 0025 は split_required のまま維持。 / BOX-001-ITEM-0062 は管理表 / 出品判断の止めどころを決めてから正式反映",
+            "related_management_ids": [
+              "BOX-001-ITEM-0025"
+            ],
+            "source_trace": [
+              {
+                "management_id": "BOX-001-ITEM-0024",
+                "slot": "FRONT",
+                "observed_as": "黒い収納袋系商品"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0024",
+                "slot": "BACK",
+                "observed_as": "DUCO ロゴ入りケース面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0024",
+                "slot": "CODE",
+                "observed_as": "X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）ラベル面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0025",
+                "slot": "FRONT",
+                "observed_as": "X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）ラベル面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0025",
+                "slot": "BACK",
+                "observed_as": "日傘超軽量パッケージ面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0025",
+                "slot": "CODE",
+                "observed_as": "日傘超軽量の別商品コード面"
+              }
+            ],
+            "blocked_split_children": [
+              {
+                "temporary_split_id": "SPLIT-BOX-001-0024-DUCO",
+                "target_label": "DUCO サングラス レディース #016（ブラック・ブルー）",
+                "source_slots": [
+                  "BOX-001-ITEM-0025:FRONT",
+                  "BOX-001-ITEM-0024:BACK",
+                  "BOX-001-ITEM-0024:CODE"
+                ],
+                "status": "manifest_child_minted_local_only",
+                "blockers": [
+                  "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+                  "0025 FRONT と 0024 BACK/CODE は X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）で一致し、同一の DUCO サングラス箱として実画像確認済み",
+                  "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+                  "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+                ],
+                "truth_product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
+                "truth_barcode_primary": "X0011JB9IL",
+                "truth_product_code_type": "amazon_internal",
+                "truth_content_unknown": false,
+                "truth_official_image_state": "actual-only固定 / 比較画像なし",
+                "truth_exact_match_guard_state": "clear",
+                "truth_exact_match_guard_reasons": [],
+                "truth_evidence": [
+                  "X0011JB9IL",
+                  "DUCO",
+                  "サングラス レディース",
+                  "#016",
+                  "ブラック・ブルー",
+                  "0025:FRONT + 0024:BACK + 0024:CODE"
+                ],
+                "truth_brand_override": "DUCO",
+                "truth_category_override": "ファッション > レディース > 小物 > サングラス",
+                "truth_check_items_override": "フレーム色 / レンズ色 / 付属ケース / 型番#016 / 破損確認",
+                "truth_note": "SPLIT-BOX-001-0024-DUCO は、0025:FRONT と 0024:BACK/CODE の3枚で X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）の写真セットを組み直し済み。ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+                "minted_management_id": "BOX-001-ITEM-0062",
+                "minted_at": "2026-04-22 00:40:51 JST",
+                "minted_scope": "local_manifest_only",
+                "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+                "truth_promotion_scope": "local_confirmed_official_only",
+                "truth_promoted_management_id": "BOX-001-ITEM-0062",
+                "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
+                "truth_promoted_at": "2026-04-22 00:45:44 JST"
+              }
+            ],
+            "remaining_blockers": [
+              "DUCO child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
+              "0024 FRONT の黒い収納袋系スロットは相方未確定のまま",
+              "0025 BACK/CODE の日傘側スロットは相方未確定のまま",
+              "SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
+              "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。"
+            ],
+            "safe_next_step": "SPLIT-BOX-001-0024-DUCO を local mint → local confirmed / official へ provisional actual-only 反映。親 0024 / 0025 は split_required のまま維持する。 / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 のローカル写真セットを作成済み / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "stage_status": "partial_manifest_child_minted",
+            "match_role": "primary"
+          },
+          "split_plan_summary": "0025 FRONT + 0024 BACK/CODE は DUCO child 候補 / 0024 FRONT は別物 / 0025 BACK/CODE は日傘側で別物 / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 のローカル写真セットを作成済み / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 をローカル特定結果へ暫定・実物写真のみで反映済み",
+          "split_plan_role": "primary"
         },
         {
           "management_id": "BOX-001-ITEM-0025",
@@ -17743,14 +19387,9 @@ window.ZERO_COST_INTAKE = {
           "identification": {
             "state": "split_required",
             "barcode_values": [
-              "X0011JB9IL",
               "X001845QRJ"
             ],
             "front_back_texts": [
-              "X0011JB91",
-              "DUCO サングラスレディース.1016（ブラック・ブルー）",
-              "MADE IN CHNA",
-              "新品",
               "X001845QRJ",
               "日傘超軽量【広げ…い砂色、【手動期間］）"
             ],
@@ -17762,14 +19401,14 @@ window.ZERO_COST_INTAKE = {
               "| = a ¢ a"
             ],
             "ocr_texts": [
-              "X0011JB91",
-              "DUCO サングラスレディース.1016（ブラック・ブルー）",
-              "MADE IN CHNA",
-              "新品",
               "X001845QRJ",
-              "日傘超軽量【広げ…い砂色、【手動期間］）"
+              "日傘超軽量【広げ…い砂色、【手動期間］）",
+              "101450RJ",
+              "選しげ」いる他、（動開閉］）",
+              ": ra of. y ai Y, oye o le Zs ’ ; i . , vee ’ : ey ? + fe LE oo : ae , % Ba aati os , fi : Z Cs sae at “ Jf y ae Ese. . . wg L oa ne . he Khe pean . : t ye Rea cn // 47 oy ae a a” ae “ORI Be?",
+              ". ~ P ; Pa V4 ¢ t 24 oy 4 , f ‘ yy 9 y, s. a ys > f ff ae : 7 dy ae oo y, _-=s = * oS ~ v te | , ore nah af XS A ) ae eo“ f “a OY Li. y"
             ],
-            "candidate_query": "X0011JB91 DUCO サングラスレディース.1016（ブラック・ブルー） MADE IN CHNA 新品",
+            "candidate_query": "X001845QRJ 日傘超軽量【広げ…い砂色、【手動期間］）",
             "review_flag": "FRONT/BACK/CODE が別商品です",
             "ocr_engine": "sauna_tesseract_multistage + vision",
             "ocr_debug_paths": [
@@ -17784,11 +19423,11 @@ window.ZERO_COST_INTAKE = {
           "resolved": {
             "management_id": "BOX-001-ITEM-0025",
             "resolution_status": "provisional",
-            "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
+            "product_name": "写真セット組み直し候補: DUCO サングラス レディース #016（ブラック・ブルー）",
             "barcode_primary": "X0011JB9IL",
             "product_code_type": "amazon_internal",
             "verified_exact_match": false,
-            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
             "note": "FRONT ラベルで X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）を目視確認。検索では X0011JB9IL の公式商品ページは未確認だが、DUCO レディースサングラス W016 系の流通情報は確認できる。一方 BACK/CODE は X001845QRJ / 日傘超軽量 [手動開閉] の別商品。DUCO 側は actual-only の provisional とし、1商品としては断定不可。",
             "evidence": [
               "X0011JB9IL",
@@ -17799,7 +19438,8 @@ window.ZERO_COST_INTAKE = {
             ],
             "exact_match_guard_state": "review_required",
             "exact_match_guard_reasons": [
-              "別商品mix"
+              "別商品mix",
+              "写真セット組み直し必要"
             ]
           },
           "official": {},
@@ -17809,12 +19449,12 @@ window.ZERO_COST_INTAKE = {
             "product_id": "PRD-BOX-001-025",
             "draft_id": "DRF-BOX-001-025",
             "research_id": "RES-BOX-001-025",
-            "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
+            "product_name": "写真セット組み直し候補: DUCO サングラス レディース #016（ブラック・ブルー）",
             "brand": "",
             "category": "",
             "barcode_primary": "X0011JB9IL",
             "product_code_type": "amazon_internal",
-            "listing_title": "DUCO サングラス レディース #016（ブラック・ブルー）",
+            "listing_title": "写真セット組み直し候補: DUCO サングラス レディース #016（ブラック・ブルー）",
             "listing_price": "",
             "market_floor_price": "",
             "market_floor_state": "未調査",
@@ -17827,17 +19467,18 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
-          "display_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
-          "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
+          "display_name": "写真セット組み直し候補: DUCO サングラス レディース #016（ブラック・ブルー）",
+          "product_name": "写真セット組み直し候補: DUCO サングラス レディース #016（ブラック・ブルー）",
           "verified_exact_match": false,
-          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 管理番号再分解待ち",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
-            "別商品mix"
+            "別商品mix",
+            "写真セット組み直し必要"
           ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
@@ -17852,7 +19493,107 @@ window.ZERO_COST_INTAKE = {
           "market_floor_price_label": "未調査",
           "listing_price": "",
           "exception": {},
-          "route_plan": {}
+          "route_plan": {},
+          "split_staging": {
+            "management_id": "BOX-001-ITEM-0024",
+            "plan_summary": "0025 FRONT と 0024 BACK/CODE は X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）で一致する。0024 FRONT の黒い収納袋系スロットと 0025 BACK/CODE の日傘側スロットは別商品として親 ID に残し、DUCO 側だけ local child へ切り出す。 / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 のローカル写真セットを作成済み / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "ui_summary": "0025 FRONT + 0024 BACK/CODE は DUCO child 候補 / 0024 FRONT は別物 / 0025 BACK/CODE は日傘側で別物 / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 のローカル写真セットを作成済み / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "operator_summary": "BOX-001-ITEM-0024 / 0025 は DUCO サングラス箱と日傘側が混在している。0025 FRONT と 0024 BACK/CODE は X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）で一致するため、DUCO 側だけ local child へ切り出す。0024 FRONT の黒い収納袋系スロットと 0025 BACK/CODE の日傘側は親 ID に残す。 / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 のローカル写真セットを作成済み / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_note": "0025 FRONT + 0024 BACK/CODE は DUCO 側として coherent。0024 FRONT の黒い収納袋系スロットと 0025 BACK/CODE の日傘側は別商品のため親 ID に残す。 / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 のローカル写真セットを作成済み / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_next_action": "SPLIT-BOX-001-0024-DUCO を local mint → local confirmed / official へ provisional actual-only 反映。親 0024 / 0025 は split_required のまま維持。 / BOX-001-ITEM-0062 は管理表 / 出品判断の止めどころを決めてから正式反映",
+            "related_management_ids": [
+              "BOX-001-ITEM-0025"
+            ],
+            "source_trace": [
+              {
+                "management_id": "BOX-001-ITEM-0024",
+                "slot": "FRONT",
+                "observed_as": "黒い収納袋系商品"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0024",
+                "slot": "BACK",
+                "observed_as": "DUCO ロゴ入りケース面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0024",
+                "slot": "CODE",
+                "observed_as": "X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）ラベル面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0025",
+                "slot": "FRONT",
+                "observed_as": "X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）ラベル面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0025",
+                "slot": "BACK",
+                "observed_as": "日傘超軽量パッケージ面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0025",
+                "slot": "CODE",
+                "observed_as": "日傘超軽量の別商品コード面"
+              }
+            ],
+            "blocked_split_children": [
+              {
+                "temporary_split_id": "SPLIT-BOX-001-0024-DUCO",
+                "target_label": "DUCO サングラス レディース #016（ブラック・ブルー）",
+                "source_slots": [
+                  "BOX-001-ITEM-0025:FRONT",
+                  "BOX-001-ITEM-0024:BACK",
+                  "BOX-001-ITEM-0024:CODE"
+                ],
+                "status": "manifest_child_minted_local_only",
+                "blockers": [
+                  "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+                  "0025 FRONT と 0024 BACK/CODE は X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）で一致し、同一の DUCO サングラス箱として実画像確認済み",
+                  "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+                  "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+                ],
+                "truth_product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
+                "truth_barcode_primary": "X0011JB9IL",
+                "truth_product_code_type": "amazon_internal",
+                "truth_content_unknown": false,
+                "truth_official_image_state": "actual-only固定 / 比較画像なし",
+                "truth_exact_match_guard_state": "clear",
+                "truth_exact_match_guard_reasons": [],
+                "truth_evidence": [
+                  "X0011JB9IL",
+                  "DUCO",
+                  "サングラス レディース",
+                  "#016",
+                  "ブラック・ブルー",
+                  "0025:FRONT + 0024:BACK + 0024:CODE"
+                ],
+                "truth_brand_override": "DUCO",
+                "truth_category_override": "ファッション > レディース > 小物 > サングラス",
+                "truth_check_items_override": "フレーム色 / レンズ色 / 付属ケース / 型番#016 / 破損確認",
+                "truth_note": "SPLIT-BOX-001-0024-DUCO は、0025:FRONT と 0024:BACK/CODE の3枚で X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）の写真セットを組み直し済み。ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+                "minted_management_id": "BOX-001-ITEM-0062",
+                "minted_at": "2026-04-22 00:40:51 JST",
+                "minted_scope": "local_manifest_only",
+                "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+                "truth_promotion_scope": "local_confirmed_official_only",
+                "truth_promoted_management_id": "BOX-001-ITEM-0062",
+                "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
+                "truth_promoted_at": "2026-04-22 00:45:44 JST"
+              }
+            ],
+            "remaining_blockers": [
+              "DUCO child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
+              "0024 FRONT の黒い収納袋系スロットは相方未確定のまま",
+              "0025 BACK/CODE の日傘側スロットは相方未確定のまま",
+              "SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
+              "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。"
+            ],
+            "safe_next_step": "SPLIT-BOX-001-0024-DUCO を local mint → local confirmed / official へ provisional actual-only 反映。親 0024 / 0025 は split_required のまま維持する。 / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 のローカル写真セットを作成済み / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "stage_status": "partial_manifest_child_minted",
+            "match_role": "related"
+          },
+          "split_plan_summary": "0025 FRONT + 0024 BACK/CODE は DUCO child 候補 / 0024 FRONT は別物 / 0025 BACK/CODE は日傘側で別物 / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 のローカル写真セットを作成済み / SPLIT-BOX-001-0024-DUCO=BOX-001-ITEM-0062 をローカル特定結果へ暫定・実物写真のみで反映済み",
+          "split_plan_role": "related"
         },
         {
           "management_id": "BOX-001-ITEM-0026",
@@ -17994,7 +19735,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [
             {
@@ -18052,7 +19793,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
           }
         },
@@ -18202,7 +19943,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [
             {
@@ -18263,7 +20004,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
             "ルーティング状態": "写真セット組み直し必要",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix"
           }
         },
@@ -18348,7 +20089,7 @@ window.ZERO_COST_INTAKE = {
           "next_action": "写真セットを組み直す",
           "barcode_kind": "amazon_internal",
           "review_flag": "FRONT/BACK/CODE が別商品です",
-          "manual_note": "FRONT は黒/緑の冬小物系、BACK は X0010CU9L7 / Zukida 車のフック（Red）ラベル、CODE は car hook mobile phone holder NO-FE035 箱でした。",
+          "manual_note": "FRONT は黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK は X0010CU9L7 / Zukida 車のフック（Red）ラベル、CODE は car hook mobile phone holder NO-FE035 箱でした。",
           "resolved": {
             "management_id": "BOX-001-ITEM-0028",
             "resolution_status": "provisional",
@@ -18356,26 +20097,29 @@ window.ZERO_COST_INTAKE = {
             "barcode_primary": "X0010CU9L7",
             "product_code_type": "amazon_internal",
             "verified_exact_match": false,
-            "official_image_state": "管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能 / 新管理番号未採番 / 内容物未確認",
-            "note": "BACK のラベルで X0010CU9L7 / Zukida 車のフック 後部座席 (Red) を確認。CODE は car hook mobile phone holder 箱で NO-FE035 表記があり、同じ車用フック系ではあるが X0010CU9L7 を直接裏付けるコード面ではない。一方 FRONT は黒緑の冬小物系で別商品。現IDは Zukida anchor を維持するが、現写真では1商品に断定不能のため provisional に留める。",
+            "official_image_state": "管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能 / 新管理番号未採番 / 正規性確認待ち / 内容物未確認",
+            "note": "BACK のラベルで X0010CU9L7 / Zukida 車のフック 後部座席 (Red) を確認。Web検索では Zukida 車用フックの関連Amazonページは見つかるが、X0010CU9L7 と Red まで一致する公式級根拠は未取得。CODE は car hook mobile phone holder 箱で NO-FE035 表記があり、同じ車用フック系ではあるが X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT の NO-FE040 とも型番が違うため混ぜない。一方 FRONT は黒/白/緑の厚手ニット靴下またはレッグウォーマー系で別商品。現IDは Zukida anchor を維持するが、現写真では1商品に断定不能のため provisional に留める。",
             "evidence": [
               "X0010CU9L7",
               "Zukida",
               "車のフック",
               "Red",
               "CODE=Car hook mobile phone holder NO-FE035",
-              "FRONT=冬小物系の別商品"
+              "FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系の別商品",
+              "NO-FE035 と NO-FE040 はNO表記が異なるため同一商品として結合不可",
+              "Web検索: X0010CU9L7 / Zukida / Red の完全一致根拠なし"
             ],
             "exact_match_guard_state": "review_required",
             "exact_match_guard_reasons": [
               "別商品mix",
               "写真セット組み直し必要",
-              "内容物未確認"
+              "内容物未確認",
+              "真贋確認"
             ],
             "qwen_hq_review_status": "resolved",
             "qwen_hq_resolution": "needs_split",
             "qwen_hq_review_at": "2026-04-13 08:25:22 JST",
-            "qwen_hq_review_note": "0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。"
+            "qwen_hq_review_note": "0028 は FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。"
           },
           "official": {
             "management_id": "BOX-001-ITEM-0028",
@@ -18387,8 +20131,8 @@ window.ZERO_COST_INTAKE = {
             "official_image_url": "",
             "image_source": "",
             "verified_exact_match": false,
-            "official_image_state": "管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能 / 新管理番号未採番 / 内容物未確認",
-            "note": "Qwen 公開前チェック担当: CRITICAL: FRONT/BACK/CODE が別商品 mix 状態（intake_manual_overrides.json で split_required 登録済み） / CRITICAL: Hello Kitty 50TH ANNIVERSARY はサンリオ著作権/商標権関連リスク。正規品出所証明がないと削除・制限対象の可能性 / ほか3件 / HQ 公開前チェック担当: 管理番号の再分解: 0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。",
+            "official_image_state": "管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能 / 新管理番号未採番 / 正規性確認待ち / 内容物未確認",
+            "note": "Qwen 公開前チェック担当: CRITICAL: FRONT/BACK/CODE が別商品 mix 状態（intake_manual_overrides.json で split_required 登録済み） / CRITICAL: Hello Kitty 50TH ANNIVERSARY はサンリオ著作権/商標権関連リスク。正規品出所証明がないと削除・制限対象の可能性 / ほか3件 / HQ 公開前チェック担当: 管理番号の再分解: 0028 は FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。",
             "qwen_last_task_name": "公開前チェック担当",
             "qwen_last_review_at": "2026-04-12 06:38:33 JST",
             "qwen_last_recommended_status": "blocked",
@@ -18397,12 +20141,13 @@ window.ZERO_COST_INTAKE = {
             "qwen_hq_review_status": "resolved",
             "qwen_hq_resolution": "needs_split",
             "qwen_hq_review_at": "2026-04-13 08:25:22 JST",
-            "qwen_hq_review_note": "0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。",
+            "qwen_hq_review_note": "0028 は FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。",
             "exact_match_guard_state": "review_required",
             "exact_match_guard_reasons": [
               "別商品mix",
               "写真セット組み直し必要",
-              "内容物未確認"
+              "内容物未確認",
+              "真贋確認"
             ]
           },
           "commerce": {
@@ -18429,23 +20174,24 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
           "display_name": "写真セット組み直し候補: Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red",
           "product_name": "写真セット組み直し候補: Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red",
           "verified_exact_match": false,
-          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 管理番号再分解待ち",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 正規性確認待ち / 管理番号再分解待ち",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
             "別商品mix",
             "写真セット組み直し必要",
-            "内容物未確認"
+            "内容物未確認",
+            "真贋確認"
           ],
           "qwen_hq_review_status": "resolved",
           "qwen_hq_resolution": "needs_split",
-          "qwen_hq_review_note": "0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。",
+          "qwen_hq_review_note": "0028 は FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。",
           "publish_status": "下書き",
           "publish_state": "下書き",
           "public_listing_url": "",
@@ -18470,21 +20216,21 @@ window.ZERO_COST_INTAKE = {
             "Ship&co条件": "停止",
             "メルカリ配送": "",
             "人確認": "要",
-            "人確認理由": "precision guard: 別商品mix / 写真セット組み直し必要 / 内容物未確認 / 停止条件あり / Qwen HQ判断: 公開前チェック担当 / needs_split",
+            "人確認理由": "precision guard: 別商品mix / 写真セット組み直し必要 / 内容物未確認 / 真贋確認 / 停止条件あり / Qwen HQ判断: 公開前チェック担当 / needs_split",
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
             "ルーティング状態": "写真セット組み直し必要",
-            "更新時刻": "2026-04-21 23:08:31 JST",
-            "メモ": "name=写真セット組み直し候補: Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 管理番号再分解待ち / HQレビュー済み / 新管理番号未採番 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=review_required / guard_reasons=別商品mix / 写真セット組み直し必要 / 内容物未確認 / qwen_hq=needs_split / 0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。"
+            "更新時刻": "2026-04-22 00:33:59 JST",
+            "メモ": "name=写真セット組み直し候補: Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 正規性確認待ち / 管理番号再分解待ち / HQレビュー済み / 新管理番号未採番 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=review_required / guard_reasons=別商品mix / 写真セット組み直し必要 / 内容物未確認 / 真贋確認 / qwen_hq=needs_split / 0028 は FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。"
           },
           "split_staging": {
             "management_id": "BOX-001-ITEM-0028",
             "stage_status": "partial_manifest_child_minted",
-            "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/緑の冬小物系として未一致保留。0028 CODE は car hook mobile phone holder NO-FE035 箱で、BACK の X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT は car hook mobile phone holder NO-FE040 だが、0029 BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側の仮置き写真セット。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として視認一致済み。0052 FRONT の青橙箱は別物として残す。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 をローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 のローカル写真セットを作成済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/白/緑の厚手ニット靴下またはレッグウォーマー系として未一致保留。0028 CODE は car hook mobile phone holder NO-FE035 箱で、BACK の X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT は car hook mobile phone holder NO-FE040 だが、NO-FE035 と NO-FE040 はNO表記が異なるため結合しない。0029 BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側の仮置き写真セット。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として視認一致済み。0052 FRONT の青橙箱は別物として残す。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 をローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 のローカル写真セットを作成済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
             "ui_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029 FRONTは car hook 側として別扱い / 0053 FRONT⇄0052 BACK/CODEは同一白箱を視認確認 / 0052 FRONT別物 / 0059白箱はローカル写真セット作成・特定結果反映済み / 0060 SPEEDWOXはローカル写真セット作成・特定結果反映済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
-            "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 FRONT は car hook NO-FE040、0029 BACK/CODE は SPEEDWOX X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は同一白箱を視認確認済み。0052 FRONT の青橙箱は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。 / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
-            "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の冬小物系。0029 FRONT は car hook 側として別扱い。0053 FRONT と 0052 BACK/CODE は同一白箱として視認確認済みで、0052 FRONT は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。 / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
-            "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0029 FRONTは car hook 側として別扱い / 0059白箱は管理表・出品判断の止めどころ確認待ち / 0060SPEEDWOXは管理表・出品判断の止めどころ確認待ち / BOX-001-ITEM-0061 は管理表 / 出品判断の止めどころを決めてから正式反映",
+            "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の黒/白/緑の厚手ニット靴下またはレッグウォーマー系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 FRONT は car hook NO-FE040。NO-FE035 と NO-FE040 はNO表記が異なるため結合しない。0029 BACK/CODE は SPEEDWOX X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は同一白箱を視認確認済み。0052 FRONT の青橙箱は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。 / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の黒/白/緑の厚手ニット靴下またはレッグウォーマー系。0028 CODE=NO-FE035 と 0029 FRONT=NO-FE040 はNO表記が異なるため結合しない。0053 FRONT と 0052 BACK/CODE は同一白箱として視認確認済みで、0052 FRONT は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。 / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0028 CODE=NO-FE035保留 / 0029 FRONT=NO-FE040保留 / 0059白箱は管理表・出品判断の止めどころ確認待ち / 0060SPEEDWOXは管理表・出品判断の止めどころ確認待ち / BOX-001-ITEM-0061 は管理表 / 出品判断の止めどころを決めてから正式反映",
             "retain_existing_id": {
               "management_id": "BOX-001-ITEM-0028",
               "product_id": "PRD-BOX-001-028",
@@ -18499,7 +20245,7 @@ window.ZERO_COST_INTAKE = {
               {
                 "management_id": "BOX-001-ITEM-0028",
                 "slot": "FRONT",
-                "observed_as": "黒/緑のニット・冬小物系バッグ"
+                "observed_as": "黒/白/緑の厚手ニット靴下またはレッグウォーマー系"
               },
               {
                 "management_id": "BOX-001-ITEM-0028",
@@ -18560,7 +20306,7 @@ window.ZERO_COST_INTAKE = {
             "blocked_split_children": [
               {
                 "temporary_split_id": "SPLIT-BOX-001-0028-WINTER",
-                "target_label": "黒/緑の冬小物系",
+                "target_label": "黒/白/緑の厚手ニット靴下またはレッグウォーマー系",
                 "source_slots": [
                   "BOX-001-ITEM-0028:FRONT"
                 ],
@@ -18772,13 +20518,15 @@ window.ZERO_COST_INTAKE = {
             "barcode_primary": "",
             "product_code_type": "package_text",
             "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番 / 内容物未確認",
-            "note": "FRONT に Car hook mobile phone holder / NO-FE040 / Car Hook Series 合格証を確認。一方 BACK は SPEEDWOX ワイヤーストリッパー X00162U47P ラベル付きの NETWORK TOOL パッケージ、CODE も同じワイヤーストリッパー実物で別商品。現写真では1商品に断定不能で、car hook 側は FRONT しか揃わないため provisional に留める。",
+            "note": "FRONT に Car hook mobile phone holder / NO-FE040 / Car Hook Series 合格証を確認。0028 CODE の NO-FE035 とは型番が違うため、見た目が近くても同一商品として結合しない。Web検索でも NO-FE040 の完全一致ページは見つからない。一方 BACK は SPEEDWOX ワイヤーストリッパー X00162U47P ラベル付きの NETWORK TOOL パッケージ、CODE も同じワイヤーストリッパー実物で別商品。現写真では1商品に断定不能で、car hook 側は FRONT しか揃わないため provisional に留める。",
             "evidence": [
               "Car hook",
               "mobile phone holder",
               "NO-FE040",
               "Car Hook Series",
-              "BACK/CODE=SPEEDWOX X00162U47P"
+              "BACK/CODE=SPEEDWOX X00162U47P",
+              "NO-FE035 と NO-FE040 はNO表記が異なるため同一商品として結合不可",
+              "Web検索: NO-FE040 完全一致根拠なし"
             ],
             "exact_match_guard_state": "review_required",
             "exact_match_guard_reasons": [
@@ -18812,7 +20560,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -18966,7 +20714,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -19136,7 +20884,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -19176,7 +20924,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=LEISURE WEAR ベージュ系レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
           }
         },
@@ -19438,7 +21186,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "precision guard 解消",
             "ルーティング状態": "停止",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=ZUCCA CLUB リラックス リカバリー サンダル / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=色違い / 形状違い / inventory_status=販売中 / listingId=2JPTBkWndxGku2L9EVw4UP"
           }
         },
@@ -19593,7 +21341,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -19636,7 +21384,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
             "ルーティング状態": "写真セット組み直し必要",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=jchinjia リュック メンズ ビジネスリュック 男女兼用 カジュアルバッグ おしゃれ トラベルバッグ / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix"
           }
         },
@@ -19769,7 +21517,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -19941,7 +21689,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -19981,7 +21729,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=Letshe ベビー前開きロンパース ピンク 110cm / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
           }
         },
@@ -20113,7 +21861,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -20280,7 +22028,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -20448,7 +22196,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -20488,7 +22236,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=裏起毛トップス オフホワイト L / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
           }
         },
@@ -20536,35 +22284,23 @@ window.ZERO_COST_INTAKE = {
           "identification": {
             "state": "split_required",
             "barcode_values": [
-              "X001AVKCQ5",
-              "X0010634F1"
+              "X001AVKCQ5"
             ],
             "front_back_texts": [
               "X001AVKCQ5",
               "（ユニベイズ】【寝苦し..L，オフホワイト）",
-              "新品 Made in China",
-              "fivihoc@",
-              "新品",
-              "X0010634F1"
+              "新品 Made in China"
             ],
-            "code_texts": [
-              "ene ( - >>",
-              "\\ oe ‘ ~ ~ \\ S X 5 1 1 1 3 4 1740 1331 5 3 81.738129 - 4 1 1 1 4 0 435 1357 9 16 -1 5 1 1 1 4 1 435 1357 9 16 53.217667 x"
-            ],
+            "code_texts": [],
             "ocr_texts": [
               "X001AVKCQ5",
               "（ユニベイズ】【寝苦し..L，オフホワイト）",
-              "新品 Made in China",
-              "fivihoc@",
-              "新品",
-              "X0010634F1"
+              "新品 Made in China"
             ],
-            "candidate_query": "X001AVKCQ5 （ユニベイズ】【寝苦し..L，オフホワイト） 新品 Made in China fivihoc@",
+            "candidate_query": "X001AVKCQ5 （ユニベイズ】【寝苦し..L，オフホワイト） 新品 Made in China",
             "review_flag": "FRONT/BACK/CODE が別商品です",
-            "ocr_engine": "sauna_tesseract_multistage + vision",
-            "ocr_debug_paths": [
-              "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0039/IMG_4943_CODE_ocr_best.png"
-            ]
+            "ocr_engine": "vision",
+            "ocr_debug_paths": []
           },
           "priority_score": 150,
           "next_action": "写真セットを組み直す",
@@ -20574,10 +22310,10 @@ window.ZERO_COST_INTAKE = {
           "resolved": {
             "management_id": "BOX-001-ITEM-0039",
             "resolution_status": "provisional",
-            "product_name": "fivihoc レディースペンダント（ゴールド/582）",
+            "product_name": "写真セット組み直し候補: fivihoc レディースペンダント（ゴールド/582）",
             "barcode_primary": "X0010634F1",
             "product_code_type": "amazon_internal",
-            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
             "note": "BACK/CODE の2枚でハート型ペンダント箱とラベル X0010634F1 / fivihoc レディースペンダント（ゴールド/582）が一致。一方 FRONT は X001AVKCQ5 のベージュ衣類で別商品。現写真では1商品に断定不能のため provisional に留める。",
             "evidence": [
               "X0010634F1",
@@ -20588,7 +22324,8 @@ window.ZERO_COST_INTAKE = {
             ],
             "exact_match_guard_state": "review_required",
             "exact_match_guard_reasons": [
-              "別商品mix"
+              "別商品mix",
+              "写真セット組み直し必要"
             ]
           },
           "official": {},
@@ -20598,12 +22335,12 @@ window.ZERO_COST_INTAKE = {
             "product_id": "PRD-BOX-001-039",
             "draft_id": "DRF-BOX-001-039",
             "research_id": "RES-BOX-001-039",
-            "product_name": "fivihoc レディースペンダント（ゴールド/582）",
+            "product_name": "写真セット組み直し候補: fivihoc レディースペンダント（ゴールド/582）",
             "brand": "",
             "category": "",
             "barcode_primary": "X0010634F1",
             "product_code_type": "amazon_internal",
-            "listing_title": "fivihoc レディースペンダント（ゴールド/582）",
+            "listing_title": "写真セット組み直し候補: fivihoc レディースペンダント（ゴールド/582）",
             "listing_price": "",
             "market_floor_price": "",
             "market_floor_state": "未調査",
@@ -20616,17 +22353,18 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
-          "display_name": "fivihoc レディースペンダント（ゴールド/582）",
-          "product_name": "fivihoc レディースペンダント（ゴールド/582）",
+          "display_name": "写真セット組み直し候補: fivihoc レディースペンダント（ゴールド/582）",
+          "product_name": "写真セット組み直し候補: fivihoc レディースペンダント（ゴールド/582）",
           "verified_exact_match": false,
-          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 管理番号再分解待ち",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
-            "別商品mix"
+            "別商品mix",
+            "写真セット組み直し必要"
           ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
@@ -20641,7 +22379,108 @@ window.ZERO_COST_INTAKE = {
           "market_floor_price_label": "未調査",
           "listing_price": "",
           "exception": {},
-          "route_plan": {}
+          "route_plan": {},
+          "split_staging": {
+            "management_id": "BOX-001-ITEM-0039",
+            "plan_summary": "0040 FRONT と 0039 BACK/CODE は X0010634F1 / fivihoc レディースペンダント（ゴールド/582）で一致する。0039 FRONT のベージュ衣類スロットと 0040 BACK/CODE の Bluetooth マウス側スロットは別商品として親 ID に残し、ペンダント側だけ local child へ切り出す。 / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットを作成済み / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "ui_summary": "0040 FRONT + 0039 BACK/CODE は pendant child 候補 / 0039 FRONT は衣類側で別物 / 0040 BACK/CODE はマウス側で別物 / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットを作成済み / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "operator_summary": "BOX-001-ITEM-0039 / 0040 はペンダント箱とマウス側が混在している。0040 FRONT と 0039 BACK/CODE は X0010634F1 / fivihoc レディースペンダント（ゴールド/582）で一致するため、ペンダント側だけ local child へ切り出す。0039 FRONT のベージュ衣類スロットと 0040 BACK/CODE の Bluetooth マウス側は親 ID に残す。 / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットを作成済み / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_note": "0040 FRONT + 0039 BACK/CODE はペンダント側として coherent。0039 FRONT の衣類スロットと 0040 BACK/CODE の Bluetooth マウス側は別商品のため親 ID に残す。 / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットを作成済み / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_next_action": "SPLIT-BOX-001-0039-PENDANT を local mint → local confirmed / official へ provisional actual-only 反映。親 0039 / 0040 は split_required のまま維持。 / BOX-001-ITEM-0064 は管理表 / 出品判断の止めどころを決めてから正式反映",
+            "related_management_ids": [
+              "BOX-001-ITEM-0040"
+            ],
+            "source_trace": [
+              {
+                "management_id": "BOX-001-ITEM-0039",
+                "slot": "FRONT",
+                "observed_as": "X001AVKCQ5 のベージュ衣類側スロット"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0039",
+                "slot": "BACK",
+                "observed_as": "X0010634F1 / fivihoc レディースペンダント（ゴールド/582）ラベル面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0039",
+                "slot": "CODE",
+                "observed_as": "fivihoc ハート型ペンダント箱のコード面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0040",
+                "slot": "FRONT",
+                "observed_as": "X0010634F1 のレディースペンダント箱 FRONT"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0040",
+                "slot": "BACK",
+                "observed_as": "X0017GVXBV / Bluetooth 無線マウス側ラベル面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0040",
+                "slot": "CODE",
+                "observed_as": "Bluetooth 無線マウスの別商品コード面"
+              }
+            ],
+            "blocked_split_children": [
+              {
+                "temporary_split_id": "SPLIT-BOX-001-0039-PENDANT",
+                "target_label": "fivihoc レディースペンダント ゴールド系 582",
+                "source_slots": [
+                  "BOX-001-ITEM-0040:FRONT",
+                  "BOX-001-ITEM-0039:BACK",
+                  "BOX-001-ITEM-0039:CODE"
+                ],
+                "status": "manifest_child_minted_local_only",
+                "blockers": [
+                  "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+                  "0040 FRONT と 0039 BACK/CODE は X0010634F1 / fivihoc レディースペンダント（ゴールド/582）で一致し、同一のペンダント箱として実画像確認済み",
+                  "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+                  "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+                ],
+                "truth_product_name": "fivihoc レディースペンダント ゴールド系 582",
+                "truth_barcode_primary": "X0010634F1",
+                "truth_product_code_type": "amazon_internal",
+                "truth_content_unknown": false,
+                "truth_official_image_state": "actual-only固定 / 比較画像なし",
+                "truth_exact_match_guard_state": "clear",
+                "truth_exact_match_guard_reasons": [],
+                "truth_evidence": [
+                  "X0010634F1",
+                  "fivihoc",
+                  "レディースペンダント",
+                  "ゴールド",
+                  "582",
+                  "0040:FRONT + 0039:BACK + 0039:CODE"
+                ],
+                "truth_brand_override": "fivihoc",
+                "truth_category_override": "ファッション > レディース > アクセサリー > ネックレス",
+                "truth_check_items_override": "石色 / チェーン状態 / 金属色 / 留め具 / 582表記",
+                "truth_note": "SPLIT-BOX-001-0039-PENDANT は、0040:FRONT と 0039:BACK/CODE の3枚で X0010634F1 / fivihoc レディースペンダント（ゴールド/582）の写真セットを組み直し済み。出品画像は実物のみで扱い、ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+                "truth_price_override": 1980,
+                "minted_management_id": "BOX-001-ITEM-0064",
+                "minted_at": "2026-04-22 01:09:44 JST",
+                "minted_scope": "local_manifest_only",
+                "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+                "truth_promotion_scope": "local_confirmed_official_only",
+                "truth_promoted_management_id": "BOX-001-ITEM-0064",
+                "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
+                "truth_promoted_at": "2026-04-22 01:15:04 JST"
+              }
+            ],
+            "remaining_blockers": [
+              "Pendant child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
+              "0039 FRONT のベージュ衣類スロットは相方未確定のまま",
+              "0040 BACK/CODE の Bluetooth マウス側スロットは相方未確定のまま",
+              "SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
+              "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。"
+            ],
+            "safe_next_step": "SPLIT-BOX-001-0039-PENDANT を local mint → local confirmed / official へ provisional actual-only 反映。親 0039 / 0040 は split_required のまま維持する。 / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットを作成済み / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "stage_status": "partial_manifest_child_minted",
+            "match_role": "primary"
+          },
+          "split_plan_summary": "0040 FRONT + 0039 BACK/CODE は pendant child 候補 / 0039 FRONT は衣類側で別物 / 0040 BACK/CODE はマウス側で別物 / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットを作成済み / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 をローカル特定結果へ暫定・実物写真のみで反映済み",
+          "split_plan_role": "primary"
         },
         {
           "management_id": "BOX-001-ITEM-0040",
@@ -20687,16 +22526,13 @@ window.ZERO_COST_INTAKE = {
           "identification": {
             "state": "split_required",
             "barcode_values": [
-              "X0010634F1",
               "X0017GVXBV"
             ],
             "front_back_texts": [
-              "X0010634F1",
-              "fiwihoc®",
-              "レディース..ダント（ゴールド/582）",
-              "新品",
               "X0017GVXBV",
-              "Blueluutマウス、無線マウス.jplup Culuguler PC:Mac用"
+              "Blueluutマウス、無線マウス.jplup Culuguler PC:Mac用",
+              "新品",
+              "MADE INICHINA"
             ],
             "code_texts": [
               "LRO AA.AN-S",
@@ -20707,14 +22543,14 @@ window.ZERO_COST_INTAKE = {
               "、 The Bluetooth connection is unstablo durine pairing. hich reauls in"
             ],
             "ocr_texts": [
-              "X0010634F1",
-              "fiwihoc®",
-              "レディース..ダント（ゴールド/582）",
-              "新品",
               "X0017GVXBV",
-              "Blueluutマウス、無線マウス.jplup Culuguler PC:Mac用"
+              "Blueluutマウス、無線マウス.jplup Culuguler PC:Mac用",
+              "新品",
+              "MADE INICHINA",
+              "LRO AA.AN-S",
+              "1.5V"
             ],
-            "candidate_query": "X0010634F1 fiwihoc® レディース..ダント（ゴールド/582） 新品",
+            "candidate_query": "X0017GVXBV Blueluutマウス、無線マウス.jplup Culuguler PC:Mac用 新品 MADE INICHINA",
             "review_flag": "FRONT/BACK/CODE が別商品です",
             "ocr_engine": "sauna_tesseract_multistage + vision",
             "ocr_debug_paths": [
@@ -20729,11 +22565,11 @@ window.ZERO_COST_INTAKE = {
           "resolved": {
             "management_id": "BOX-001-ITEM-0040",
             "resolution_status": "provisional",
-            "product_name": "Bluetooth 無線マウス PC/Mac用",
+            "product_name": "写真セット組み直し候補: Bluetooth 無線マウス PC/Mac用",
             "barcode_primary": "X0017GVXBV",
             "product_code_type": "amazon_internal",
             "verified_exact_match": false,
-            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
             "note": "BACK/CODE の2枚で X0017GVXBV / Bluetooth マウス / 無線マウス / PC/Mac用 が一致。一方 FRONT は X0010634F1 のレディースペンダント箱で別商品。現写真では1商品に断定不能のため、mouse 側を仮採用して provisional に留める。",
             "evidence": [
               "X0017GVXBV",
@@ -20743,7 +22579,8 @@ window.ZERO_COST_INTAKE = {
             ],
             "exact_match_guard_state": "review_required",
             "exact_match_guard_reasons": [
-              "別商品mix"
+              "別商品mix",
+              "写真セット組み直し必要"
             ]
           },
           "official": {},
@@ -20753,12 +22590,12 @@ window.ZERO_COST_INTAKE = {
             "product_id": "PRD-BOX-001-040",
             "draft_id": "DRF-BOX-001-040",
             "research_id": "RES-BOX-001-040",
-            "product_name": "Bluetooth 無線マウス PC/Mac用",
+            "product_name": "写真セット組み直し候補: Bluetooth 無線マウス PC/Mac用",
             "brand": "",
             "category": "",
             "barcode_primary": "X0017GVXBV",
             "product_code_type": "amazon_internal",
-            "listing_title": "Bluetooth 無線マウス PC/Mac用",
+            "listing_title": "写真セット組み直し候補: Bluetooth 無線マウス PC/Mac用",
             "listing_price": "",
             "market_floor_price": "",
             "market_floor_state": "未調査",
@@ -20771,17 +22608,18 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
-          "display_name": "Bluetooth 無線マウス PC/Mac用",
-          "product_name": "Bluetooth 無線マウス PC/Mac用",
+          "display_name": "写真セット組み直し候補: Bluetooth 無線マウス PC/Mac用",
+          "product_name": "写真セット組み直し候補: Bluetooth 無線マウス PC/Mac用",
           "verified_exact_match": false,
-          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 管理番号再分解待ち",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
-            "別商品mix"
+            "別商品mix",
+            "写真セット組み直し必要"
           ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
@@ -20796,7 +22634,108 @@ window.ZERO_COST_INTAKE = {
           "market_floor_price_label": "未調査",
           "listing_price": "",
           "exception": {},
-          "route_plan": {}
+          "route_plan": {},
+          "split_staging": {
+            "management_id": "BOX-001-ITEM-0039",
+            "plan_summary": "0040 FRONT と 0039 BACK/CODE は X0010634F1 / fivihoc レディースペンダント（ゴールド/582）で一致する。0039 FRONT のベージュ衣類スロットと 0040 BACK/CODE の Bluetooth マウス側スロットは別商品として親 ID に残し、ペンダント側だけ local child へ切り出す。 / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットを作成済み / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "ui_summary": "0040 FRONT + 0039 BACK/CODE は pendant child 候補 / 0039 FRONT は衣類側で別物 / 0040 BACK/CODE はマウス側で別物 / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットを作成済み / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "operator_summary": "BOX-001-ITEM-0039 / 0040 はペンダント箱とマウス側が混在している。0040 FRONT と 0039 BACK/CODE は X0010634F1 / fivihoc レディースペンダント（ゴールド/582）で一致するため、ペンダント側だけ local child へ切り出す。0039 FRONT のベージュ衣類スロットと 0040 BACK/CODE の Bluetooth マウス側は親 ID に残す。 / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットを作成済み / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_note": "0040 FRONT + 0039 BACK/CODE はペンダント側として coherent。0039 FRONT の衣類スロットと 0040 BACK/CODE の Bluetooth マウス側は別商品のため親 ID に残す。 / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットを作成済み / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_next_action": "SPLIT-BOX-001-0039-PENDANT を local mint → local confirmed / official へ provisional actual-only 反映。親 0039 / 0040 は split_required のまま維持。 / BOX-001-ITEM-0064 は管理表 / 出品判断の止めどころを決めてから正式反映",
+            "related_management_ids": [
+              "BOX-001-ITEM-0040"
+            ],
+            "source_trace": [
+              {
+                "management_id": "BOX-001-ITEM-0039",
+                "slot": "FRONT",
+                "observed_as": "X001AVKCQ5 のベージュ衣類側スロット"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0039",
+                "slot": "BACK",
+                "observed_as": "X0010634F1 / fivihoc レディースペンダント（ゴールド/582）ラベル面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0039",
+                "slot": "CODE",
+                "observed_as": "fivihoc ハート型ペンダント箱のコード面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0040",
+                "slot": "FRONT",
+                "observed_as": "X0010634F1 のレディースペンダント箱 FRONT"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0040",
+                "slot": "BACK",
+                "observed_as": "X0017GVXBV / Bluetooth 無線マウス側ラベル面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0040",
+                "slot": "CODE",
+                "observed_as": "Bluetooth 無線マウスの別商品コード面"
+              }
+            ],
+            "blocked_split_children": [
+              {
+                "temporary_split_id": "SPLIT-BOX-001-0039-PENDANT",
+                "target_label": "fivihoc レディースペンダント ゴールド系 582",
+                "source_slots": [
+                  "BOX-001-ITEM-0040:FRONT",
+                  "BOX-001-ITEM-0039:BACK",
+                  "BOX-001-ITEM-0039:CODE"
+                ],
+                "status": "manifest_child_minted_local_only",
+                "blockers": [
+                  "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+                  "0040 FRONT と 0039 BACK/CODE は X0010634F1 / fivihoc レディースペンダント（ゴールド/582）で一致し、同一のペンダント箱として実画像確認済み",
+                  "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+                  "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+                ],
+                "truth_product_name": "fivihoc レディースペンダント ゴールド系 582",
+                "truth_barcode_primary": "X0010634F1",
+                "truth_product_code_type": "amazon_internal",
+                "truth_content_unknown": false,
+                "truth_official_image_state": "actual-only固定 / 比較画像なし",
+                "truth_exact_match_guard_state": "clear",
+                "truth_exact_match_guard_reasons": [],
+                "truth_evidence": [
+                  "X0010634F1",
+                  "fivihoc",
+                  "レディースペンダント",
+                  "ゴールド",
+                  "582",
+                  "0040:FRONT + 0039:BACK + 0039:CODE"
+                ],
+                "truth_brand_override": "fivihoc",
+                "truth_category_override": "ファッション > レディース > アクセサリー > ネックレス",
+                "truth_check_items_override": "石色 / チェーン状態 / 金属色 / 留め具 / 582表記",
+                "truth_note": "SPLIT-BOX-001-0039-PENDANT は、0040:FRONT と 0039:BACK/CODE の3枚で X0010634F1 / fivihoc レディースペンダント（ゴールド/582）の写真セットを組み直し済み。出品画像は実物のみで扱い、ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+                "truth_price_override": 1980,
+                "minted_management_id": "BOX-001-ITEM-0064",
+                "minted_at": "2026-04-22 01:09:44 JST",
+                "minted_scope": "local_manifest_only",
+                "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+                "truth_promotion_scope": "local_confirmed_official_only",
+                "truth_promoted_management_id": "BOX-001-ITEM-0064",
+                "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
+                "truth_promoted_at": "2026-04-22 01:15:04 JST"
+              }
+            ],
+            "remaining_blockers": [
+              "Pendant child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
+              "0039 FRONT のベージュ衣類スロットは相方未確定のまま",
+              "0040 BACK/CODE の Bluetooth マウス側スロットは相方未確定のまま",
+              "SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
+              "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。"
+            ],
+            "safe_next_step": "SPLIT-BOX-001-0039-PENDANT を local mint → local confirmed / official へ provisional actual-only 反映。親 0039 / 0040 は split_required のまま維持する。 / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットを作成済み / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "stage_status": "partial_manifest_child_minted",
+            "match_role": "related"
+          },
+          "split_plan_summary": "0040 FRONT + 0039 BACK/CODE は pendant child 候補 / 0039 FRONT は衣類側で別物 / 0040 BACK/CODE はマウス側で別物 / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットを作成済み / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 をローカル特定結果へ暫定・実物写真のみで反映済み",
+          "split_plan_role": "related"
         },
         {
           "management_id": "BOX-001-ITEM-0041",
@@ -20926,7 +22865,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -20996,9 +22935,7 @@ window.ZERO_COST_INTAKE = {
           "box_code": "001",
           "identification": {
             "state": "split_required",
-            "barcode_values": [
-              "X001B1RSSJ"
-            ],
+            "barcode_values": [],
             "front_back_texts": [
               "WARNINGi Not autable for children under aree as foom plecee maa bre",
               "H and causea",
@@ -21007,14 +22944,7 @@ window.ZERO_COST_INTAKE = {
               "breakages， Adut supenysion reauired ar all times",
               "SacessiNe toree to twit or pull temahts cauld readt ins"
             ],
-            "code_texts": [
-              "NEEDLY",
-              "Sleeping lip mask",
-              "Picky. Sate.",
-              "Feel the Difference.",
-              "10m1/0.33日1.02、",
-              "[QPITTA y 7 8 ih, / (fT Uf th fee y ; 3 ON Me) ie ih } a {Oo ie ; Z ; , owe = Ha f / if BEG £# Ze Ej ii 4 {© Sf STL Y aie 8 2 uN / Me dels Lo iy is i ‘ et P LEA [4 Lily SM IP B fn a iif ; hyt Sd if ; a. 4 ] 4 aN f 5 LBP ei"
-            ],
+            "code_texts": [],
             "ocr_texts": [
               "WARNINGi Not autable for children under aree as foom plecee maa bre",
               "H and causea",
@@ -21025,23 +22955,21 @@ window.ZERO_COST_INTAKE = {
             ],
             "candidate_query": "WARNINGi Not autable for children under aree as foom plecee maa bre H and causea choking hazard. Caution: Do not use. in formation for future reference.",
             "review_flag": "FRONT/BACK/CODE が別商品です",
-            "ocr_engine": "sauna_tesseract_multistage + vision",
-            "ocr_debug_paths": [
-              "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0042/IMG_4953_CODE_ocr_best.png"
-            ]
+            "ocr_engine": "vision",
+            "ocr_debug_paths": []
           },
-          "priority_score": 150,
+          "priority_score": 220,
           "next_action": "写真セットを組み直す",
-          "barcode_kind": "amazon_internal",
+          "barcode_kind": "",
           "review_flag": "FRONT/BACK/CODE が別商品です",
           "manual_note": "FRONT は青い袋入り布製品、BACK/CODE は NEEDLY Sleeping lip mask 10ml 箱で別商品でした。",
           "resolved": {
             "management_id": "BOX-001-ITEM-0042",
             "resolution_status": "provisional",
-            "product_name": "NEEDLY Sleeping Lip Mask 10ml",
+            "product_name": "写真セット組み直し候補: NEEDLY Sleeping Lip Mask 10ml",
             "barcode_primary": "X001B1RSSJ",
             "product_code_type": "amazon_internal",
-            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
             "note": "BACK/CODE の2枚で NEEDLY Sleeping Lip Mask 10ml / X001B1RSSJ が一致する。一方 FRONT は青い袋入りの布製品で別商品。現写真では1商品に断定不能のため、NEEDLY 側を provisional に留める。",
             "evidence": [
               "BACK/CODE=NEEDLY Sleeping Lip Mask 10ml",
@@ -21050,7 +22978,8 @@ window.ZERO_COST_INTAKE = {
             ],
             "exact_match_guard_state": "review_required",
             "exact_match_guard_reasons": [
-              "別商品mix"
+              "別商品mix",
+              "写真セット組み直し必要"
             ],
             "image_source": "actual-only"
           },
@@ -21064,11 +22993,12 @@ window.ZERO_COST_INTAKE = {
             "official_image_url": "",
             "image_source": "actual-only",
             "verified_exact_match": false,
-            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
             "note": "BACK/CODE の2枚で NEEDLY / Sleeping lip mask / 10ml / X001B1RSSJ が一致する。一方 FRONT は青い袋入り布製品で別商品。比較画像は使わず、NEEDLY 側を actual-only の provisional として扱う。",
             "exact_match_guard_state": "review_required",
             "exact_match_guard_reasons": [
-              "別商品mix"
+              "別商品mix",
+              "写真セット組み直し必要"
             ]
           },
           "commerce": {
@@ -21077,12 +23007,12 @@ window.ZERO_COST_INTAKE = {
             "product_id": "PRD-BOX-001-042",
             "draft_id": "DRF-BOX-001-042",
             "research_id": "RES-BOX-001-042",
-            "product_name": "NEEDLY Sleeping Lip Mask 10ml",
+            "product_name": "写真セット組み直し候補: NEEDLY Sleeping Lip Mask 10ml",
             "brand": "",
             "category": "",
             "barcode_primary": "X001B1RSSJ",
             "product_code_type": "amazon_internal",
-            "listing_title": "NEEDLY Sleeping Lip Mask 10ml",
+            "listing_title": "写真セット組み直し候補: NEEDLY Sleeping Lip Mask 10ml",
             "listing_price": "",
             "market_floor_price": "",
             "market_floor_state": "未調査",
@@ -21095,17 +23025,18 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
-          "display_name": "NEEDLY Sleeping Lip Mask 10ml",
-          "product_name": "NEEDLY Sleeping Lip Mask 10ml",
+          "display_name": "写真セット組み直し候補: NEEDLY Sleeping Lip Mask 10ml",
+          "product_name": "写真セット組み直し候補: NEEDLY Sleeping Lip Mask 10ml",
           "verified_exact_match": false,
-          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 管理番号再分解待ち",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
-            "別商品mix"
+            "別商品mix",
+            "写真セット組み直し必要"
           ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
@@ -21120,7 +23051,107 @@ window.ZERO_COST_INTAKE = {
           "market_floor_price_label": "未調査",
           "listing_price": "",
           "exception": {},
-          "route_plan": {}
+          "route_plan": {},
+          "split_staging": {
+            "management_id": "BOX-001-ITEM-0042",
+            "plan_summary": "0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致する。0042 FRONT の青い袋入り布製品スロットと 0043 BACK/CODE の DOMAT 財布側スロットは別商品として親 ID に残し、NEEDLY 側だけ local child へ切り出す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "ui_summary": "0043 FRONT + 0042 BACK/CODE は NEEDLY child 候補 / 0042 FRONT は布製品側で別物 / 0043 BACK/CODE は DOMAT 側で別物 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "operator_summary": "BOX-001-ITEM-0042 / 0043 は NEEDLY lip mask と DOMAT 財布側が混在している。0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致するため、NEEDLY 側だけ local child へ切り出す。0042 FRONT の青い袋入り布製品スロットと 0043 BACK/CODE の DOMAT 財布側は親 ID に残す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_note": "0043 FRONT + 0042 BACK/CODE は NEEDLY 側として coherent。0042 FRONT の布製品スロットと 0043 BACK/CODE の DOMAT 財布側は別商品のため親 ID に残す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_next_action": "SPLIT-BOX-001-0042-NEEDLY を local mint → local confirmed / official へ provisional actual-only 反映。親 0042 / 0043 は split_required のまま維持。 / BOX-001-ITEM-0065 は管理表 / 出品判断の止めどころを決めてから正式反映",
+            "related_management_ids": [
+              "BOX-001-ITEM-0043"
+            ],
+            "source_trace": [
+              {
+                "management_id": "BOX-001-ITEM-0042",
+                "slot": "FRONT",
+                "observed_as": "青い袋入りの布製品スロット"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0042",
+                "slot": "BACK",
+                "observed_as": "NEEDLY Sleeping Lip Mask 10ml の箱背面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0042",
+                "slot": "CODE",
+                "observed_as": "X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml コード面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0043",
+                "slot": "FRONT",
+                "observed_as": "NEEDLY Sleeping Lip Mask 10ml の箱 FRONT"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0043",
+                "slot": "BACK",
+                "observed_as": "X00174LMFZ / DOMAT 財布側ラベル面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0043",
+                "slot": "CODE",
+                "observed_as": "DOMAT 財布の別商品コード面"
+              }
+            ],
+            "blocked_split_children": [
+              {
+                "temporary_split_id": "SPLIT-BOX-001-0042-NEEDLY",
+                "target_label": "NEEDLY Sleeping Lip Mask 10ml",
+                "source_slots": [
+                  "BOX-001-ITEM-0043:FRONT",
+                  "BOX-001-ITEM-0042:BACK",
+                  "BOX-001-ITEM-0042:CODE"
+                ],
+                "status": "manifest_child_minted_local_only",
+                "blockers": [
+                  "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+                  "0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致し、同一の NEEDLY 箱として実画像確認済み",
+                  "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+                  "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+                ],
+                "truth_product_name": "NEEDLY Sleeping Lip Mask 10ml",
+                "truth_barcode_primary": "X001B1RSSJ",
+                "truth_product_code_type": "amazon_internal",
+                "truth_content_unknown": false,
+                "truth_official_image_state": "actual-only固定 / 比較画像なし",
+                "truth_exact_match_guard_state": "clear",
+                "truth_exact_match_guard_reasons": [],
+                "truth_evidence": [
+                  "X001B1RSSJ",
+                  "NEEDLY",
+                  "Sleeping Lip Mask",
+                  "10ml",
+                  "0043:FRONT + 0042:BACK + 0042:CODE"
+                ],
+                "truth_brand_override": "NEEDLY",
+                "truth_category_override": "ビューティー > スキンケア・基礎化粧品 > リップケア",
+                "truth_check_items_override": "未開封 / 使用期限 / 箱つぶれ / 10ml表記 / 衛生状態",
+                "truth_note": "SPLIT-BOX-001-0042-NEEDLY は、0043:FRONT と 0042:BACK/CODE の3枚で X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml の写真セットを組み直し済み。出品画像は実物のみで扱い、ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+                "truth_price_override": 1680,
+                "minted_management_id": "BOX-001-ITEM-0065",
+                "minted_at": "2026-04-22 01:09:44 JST",
+                "minted_scope": "local_manifest_only",
+                "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+                "truth_promotion_scope": "local_confirmed_official_only",
+                "truth_promoted_management_id": "BOX-001-ITEM-0065",
+                "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
+                "truth_promoted_at": "2026-04-22 01:15:04 JST"
+              }
+            ],
+            "remaining_blockers": [
+              "NEEDLY child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
+              "0042 FRONT の青い袋入り布製品スロットは相方未確定のまま",
+              "0043 BACK/CODE の DOMAT 財布側スロットは相方未確定のまま",
+              "SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
+              "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。"
+            ],
+            "safe_next_step": "SPLIT-BOX-001-0042-NEEDLY を local mint → local confirmed / official へ provisional actual-only 反映。親 0042 / 0043 は split_required のまま維持する。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "stage_status": "partial_manifest_child_minted",
+            "match_role": "primary"
+          },
+          "split_plan_summary": "0043 FRONT + 0042 BACK/CODE は NEEDLY child 候補 / 0042 FRONT は布製品側で別物 / 0043 BACK/CODE は DOMAT 側で別物 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
+          "split_plan_role": "primary"
         },
         {
           "management_id": "BOX-001-ITEM-0043",
@@ -21169,12 +23200,9 @@ window.ZERO_COST_INTAKE = {
               "X00174LMFZ"
             ],
             "front_back_texts": [
-              "［g当］",
-              "255z",
-              "YJAE EXP 20270909m71",
-              "NEEDLY SLEEPING LIP MASK",
-              "［販売名】スリービングリップマスク （リップトリートメント）",
-              "【全成分】水晶ポリインプテン、トリ（カブリル／カプリン酸）グリセリル、フィトステロールズポリリンノレイン酸ポリグリセ"
+              "X00174LMFZ",
+              "【DOMAT】 男性用ドマット..性と女性用の財布。（赤褐色）",
+              "新品"
             ],
             "code_texts": [
               "X00174LMFZ",
@@ -21184,14 +23212,14 @@ window.ZERO_COST_INTAKE = {
               "= ="
             ],
             "ocr_texts": [
-              "［g当］",
-              "255z",
-              "YJAE EXP 20270909m71",
-              "NEEDLY SLEEPING LIP MASK",
-              "［販売名】スリービングリップマスク （リップトリートメント）",
-              "【全成分】水晶ポリインプテン、トリ（カブリル／カプリン酸）グリセリル、フィトステロールズポリリンノレイン酸ポリグリセ"
+              "X00174LMFZ",
+              "【DOMAT】 男性用ドマット..性と女性用の財布。（赤褐色）",
+              "新品",
+              "（DOMAT】 男性用ドマット..性と女性用の財布。（赤褐色）",
+              "DOMAT",
+              "= ="
             ],
-            "candidate_query": "［g当］ 255z YJAE EXP 20270909m71 NEEDLY SLEEPING LIP MASK",
+            "candidate_query": "X00174LMFZ 【DOMAT】 男性用ドマット..性と女性用の財布。（赤褐色） 新品",
             "review_flag": "FRONT/BACK/CODE が別商品です",
             "ocr_engine": "sauna_tesseract_multistage + vision",
             "ocr_debug_paths": [
@@ -21206,10 +23234,10 @@ window.ZERO_COST_INTAKE = {
           "resolved": {
             "management_id": "BOX-001-ITEM-0043",
             "resolution_status": "provisional",
-            "product_name": "DOMAT 財布 レッドブラウン",
+            "product_name": "写真セット組み直し候補: DOMAT 財布 レッドブラウン",
             "barcode_primary": "X00174LMFZ",
             "product_code_type": "amazon_internal",
-            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
             "note": "BACK/CODE の2枚で DOMAT 箱と X00174LMFZ / 財布 / 赤褐色 が一致。一方 FRONT は NEEDLY SLEEPING LIP MASK 箱の別面で別商品。現写真では1商品に断定不能のため、DOMAT 側を provisional に留める。",
             "evidence": [
               "X00174LMFZ",
@@ -21219,7 +23247,8 @@ window.ZERO_COST_INTAKE = {
             ],
             "exact_match_guard_state": "review_required",
             "exact_match_guard_reasons": [
-              "別商品mix"
+              "別商品mix",
+              "写真セット組み直し必要"
             ]
           },
           "official": {},
@@ -21229,12 +23258,12 @@ window.ZERO_COST_INTAKE = {
             "product_id": "PRD-BOX-001-043",
             "draft_id": "DRF-BOX-001-043",
             "research_id": "RES-BOX-001-043",
-            "product_name": "DOMAT 財布 レッドブラウン",
+            "product_name": "写真セット組み直し候補: DOMAT 財布 レッドブラウン",
             "brand": "",
             "category": "",
             "barcode_primary": "X00174LMFZ",
             "product_code_type": "amazon_internal",
-            "listing_title": "DOMAT 財布 レッドブラウン",
+            "listing_title": "写真セット組み直し候補: DOMAT 財布 レッドブラウン",
             "listing_price": "",
             "market_floor_price": "",
             "market_floor_state": "未調査",
@@ -21247,17 +23276,18 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
-          "display_name": "DOMAT 財布 レッドブラウン",
-          "product_name": "DOMAT 財布 レッドブラウン",
+          "display_name": "写真セット組み直し候補: DOMAT 財布 レッドブラウン",
+          "product_name": "写真セット組み直し候補: DOMAT 財布 レッドブラウン",
           "verified_exact_match": false,
-          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 管理番号再分解待ち",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
-            "別商品mix"
+            "別商品mix",
+            "写真セット組み直し必要"
           ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
@@ -21272,7 +23302,107 @@ window.ZERO_COST_INTAKE = {
           "market_floor_price_label": "未調査",
           "listing_price": "",
           "exception": {},
-          "route_plan": {}
+          "route_plan": {},
+          "split_staging": {
+            "management_id": "BOX-001-ITEM-0042",
+            "plan_summary": "0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致する。0042 FRONT の青い袋入り布製品スロットと 0043 BACK/CODE の DOMAT 財布側スロットは別商品として親 ID に残し、NEEDLY 側だけ local child へ切り出す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "ui_summary": "0043 FRONT + 0042 BACK/CODE は NEEDLY child 候補 / 0042 FRONT は布製品側で別物 / 0043 BACK/CODE は DOMAT 側で別物 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "operator_summary": "BOX-001-ITEM-0042 / 0043 は NEEDLY lip mask と DOMAT 財布側が混在している。0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致するため、NEEDLY 側だけ local child へ切り出す。0042 FRONT の青い袋入り布製品スロットと 0043 BACK/CODE の DOMAT 財布側は親 ID に残す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_note": "0043 FRONT + 0042 BACK/CODE は NEEDLY 側として coherent。0042 FRONT の布製品スロットと 0043 BACK/CODE の DOMAT 財布側は別商品のため親 ID に残す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_next_action": "SPLIT-BOX-001-0042-NEEDLY を local mint → local confirmed / official へ provisional actual-only 反映。親 0042 / 0043 は split_required のまま維持。 / BOX-001-ITEM-0065 は管理表 / 出品判断の止めどころを決めてから正式反映",
+            "related_management_ids": [
+              "BOX-001-ITEM-0043"
+            ],
+            "source_trace": [
+              {
+                "management_id": "BOX-001-ITEM-0042",
+                "slot": "FRONT",
+                "observed_as": "青い袋入りの布製品スロット"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0042",
+                "slot": "BACK",
+                "observed_as": "NEEDLY Sleeping Lip Mask 10ml の箱背面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0042",
+                "slot": "CODE",
+                "observed_as": "X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml コード面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0043",
+                "slot": "FRONT",
+                "observed_as": "NEEDLY Sleeping Lip Mask 10ml の箱 FRONT"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0043",
+                "slot": "BACK",
+                "observed_as": "X00174LMFZ / DOMAT 財布側ラベル面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0043",
+                "slot": "CODE",
+                "observed_as": "DOMAT 財布の別商品コード面"
+              }
+            ],
+            "blocked_split_children": [
+              {
+                "temporary_split_id": "SPLIT-BOX-001-0042-NEEDLY",
+                "target_label": "NEEDLY Sleeping Lip Mask 10ml",
+                "source_slots": [
+                  "BOX-001-ITEM-0043:FRONT",
+                  "BOX-001-ITEM-0042:BACK",
+                  "BOX-001-ITEM-0042:CODE"
+                ],
+                "status": "manifest_child_minted_local_only",
+                "blockers": [
+                  "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+                  "0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致し、同一の NEEDLY 箱として実画像確認済み",
+                  "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+                  "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+                ],
+                "truth_product_name": "NEEDLY Sleeping Lip Mask 10ml",
+                "truth_barcode_primary": "X001B1RSSJ",
+                "truth_product_code_type": "amazon_internal",
+                "truth_content_unknown": false,
+                "truth_official_image_state": "actual-only固定 / 比較画像なし",
+                "truth_exact_match_guard_state": "clear",
+                "truth_exact_match_guard_reasons": [],
+                "truth_evidence": [
+                  "X001B1RSSJ",
+                  "NEEDLY",
+                  "Sleeping Lip Mask",
+                  "10ml",
+                  "0043:FRONT + 0042:BACK + 0042:CODE"
+                ],
+                "truth_brand_override": "NEEDLY",
+                "truth_category_override": "ビューティー > スキンケア・基礎化粧品 > リップケア",
+                "truth_check_items_override": "未開封 / 使用期限 / 箱つぶれ / 10ml表記 / 衛生状態",
+                "truth_note": "SPLIT-BOX-001-0042-NEEDLY は、0043:FRONT と 0042:BACK/CODE の3枚で X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml の写真セットを組み直し済み。出品画像は実物のみで扱い、ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+                "truth_price_override": 1680,
+                "minted_management_id": "BOX-001-ITEM-0065",
+                "minted_at": "2026-04-22 01:09:44 JST",
+                "minted_scope": "local_manifest_only",
+                "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+                "truth_promotion_scope": "local_confirmed_official_only",
+                "truth_promoted_management_id": "BOX-001-ITEM-0065",
+                "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
+                "truth_promoted_at": "2026-04-22 01:15:04 JST"
+              }
+            ],
+            "remaining_blockers": [
+              "NEEDLY child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
+              "0042 FRONT の青い袋入り布製品スロットは相方未確定のまま",
+              "0043 BACK/CODE の DOMAT 財布側スロットは相方未確定のまま",
+              "SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
+              "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。"
+            ],
+            "safe_next_step": "SPLIT-BOX-001-0042-NEEDLY を local mint → local confirmed / official へ provisional actual-only 反映。親 0042 / 0043 は split_required のまま維持する。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "stage_status": "partial_manifest_child_minted",
+            "match_role": "related"
+          },
+          "split_plan_summary": "0043 FRONT + 0042 BACK/CODE は NEEDLY child 候補 / 0042 FRONT は布製品側で別物 / 0043 BACK/CODE は DOMAT 側で別物 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
+          "split_plan_role": "related"
         },
         {
           "management_id": "BOX-001-ITEM-0044",
@@ -21400,7 +23530,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -21571,7 +23701,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -21614,7 +23744,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
             "ルーティング状態": "写真セット組み直し必要",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=ロゴ刺繍ベースボールキャップ ブラック系 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix"
           }
         },
@@ -21767,7 +23897,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -21810,7 +23940,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
             "ルーティング状態": "写真セット組み直し必要",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=ホワイト レディーストップス M / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix"
           }
         },
@@ -21957,7 +24087,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -21997,7 +24127,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=高視認性安全ベスト 蛍光イエロー / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
           }
         },
@@ -22044,50 +24174,39 @@ window.ZERO_COST_INTAKE = {
           "box_code": "001",
           "identification": {
             "state": "split_required",
-            "barcode_values": [
-              "X00184OJV3"
-            ],
+            "barcode_values": [],
             "front_back_texts": [
               "/ Fin, Meet tl / fae TO ie Vee i id FB / a",
               "ee A ing {= NG ds any is, es ; /} & bY “Sd ia ff > ae Sy | e. ve i \\\\ 4 RNA des y “s y) W",
               "eh! < : y. oe a _ oe iy Be 7 SN y y y ey | a € i ae ; is i jer ae i : | | pete aN",
-              "y se i a! ? mG 4 i t% r,, 1 BR Ly Fy 4 ey, * “\\ pe y By bZE",
-              "X001840JV3",
-              "［VIHFBB］ トートバッグ（40.，グラム）"
+              "y se i a! ? mG 4 i t% r,, 1 BR Ly Fy 4 ey, * “\\ pe y By bZE"
             ],
-            "code_texts": [
-              "ae in Cae iO _— (oa ve Ae K WY t Ch. 40 / <> ine >) Ass \\ ; 4 1 1 1 4 0 341 1022 799 105 -1 5 1 1 1 4 1 341 1067 70 60 10.418491 ot 5 1 1 1 4 2 458 1070 37 29 58.819942 we 5 1 1 1 4 3 529 1069 3 3 27.794586 8 5 1 1 1 4 4 598 1063 71 64 8.569422 te 5 1 1 1 4 5 782 1022 215 84 33.340683 Vane 5 1 1 1 4 6 1025 1039 115 54 24.062023 oa 4 1 1 1 5 0 347 1157 1419 122 -1 5 1 1 1 5 1 347 1161 198 105 39.325195 ee 5 1 1 1 5 2 668 1172 155 107 35.049049 A 5 1 1 1 5 3 950 1162 180 65 5.160999 oad",
-              "a ee ee ge ey Ee i f . ee Ky @ , 7 Be “ol fa ‘yo ve 2] A 2 > En nd cadiialal eee ee . \\ Met aa , ° i - : ee OE Al Je ee, bw fogs Pain ON FE Oe ON",
-              "a7 |"
-            ],
+            "code_texts": [],
             "ocr_texts": [
               "/ Fin, Meet tl / fae TO ie Vee i id FB / a",
               "ee A ing {= NG ds any is, es ; /} & bY “Sd ia ff > ae Sy | e. ve i \\\\ 4 RNA des y “s y) W",
               "eh! < : y. oe a _ oe iy Be 7 SN y y y ey | a € i ae ; is i jer ae i : | | pete aN",
-              "y se i a! ? mG 4 i t% r,, 1 BR Ly Fy 4 ey, * “\\ pe y By bZE",
-              "X001840JV3",
-              "［VIHFBB］ トートバッグ（40.，グラム）"
+              "y se i a! ? mG 4 i t% r,, 1 BR Ly Fy 4 ey, * “\\ pe y By bZE"
             ],
             "candidate_query": "/ Fin, Meet tl / fae TO ie Vee i id FB / a ee A ing {= NG ds any is, es ; /} & bY “Sd ia ff > ae Sy | e. ve i \\\\ 4 RNA des y “s y) W eh! < : y. oe a _ oe iy Be 7 SN y y y ey | a € i ae ; is i jer ae i : | | pete aN y se i a! ? mG 4 i t% r,, 1 BR Ly Fy 4 ey, * “\\ pe y By bZE",
             "review_flag": "FRONT/BACK/CODE が別商品です",
-            "ocr_engine": "sauna_tesseract_multistage + vision",
+            "ocr_engine": "sauna_tesseract_multistage",
             "ocr_debug_paths": [
-              "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0048/IMG_4973_CODE_ocr_best.png",
               "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0048/IMG_4971_FRONT_ocr_best.png"
             ]
           },
-          "priority_score": 110,
+          "priority_score": 220,
           "next_action": "写真セットを組み直す",
-          "barcode_kind": "amazon_internal",
+          "barcode_kind": "",
           "review_flag": "FRONT/BACK/CODE が別商品です",
           "manual_note": "FRONT は蛍光イエローの安全ベスト系、BACK/CODE は花柄シュシュ束のラベルでした。",
           "resolved": {
             "management_id": "BOX-001-ITEM-0048",
             "resolution_status": "provisional",
-            "product_name": "VIHFBB トートバッグ 40g 花柄系",
+            "product_name": "写真セット組み直し候補: VIHFBB トートバッグ 40g 花柄系",
             "barcode_primary": "X00184OJV3",
             "product_code_type": "amazon_internal",
-            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
             "note": "FRONT は 0047 と同系統の蛍光イエロー安全ベストだが、BACK/CODE は X00184OJV3 / [VIHFBB] トートバッグ（40グラム）と花柄系布製品で別商品。現写真では1商品に断定不能のため、VIHFBB トートバッグ側の provisional に留め、公開候補へ混ぜない。",
             "evidence": [
               "X00184OJV3",
@@ -22098,7 +24217,8 @@ window.ZERO_COST_INTAKE = {
             ],
             "exact_match_guard_state": "review_required",
             "exact_match_guard_reasons": [
-              "別商品mix"
+              "別商品mix",
+              "写真セット組み直し必要"
             ],
             "image_source": "actual-only"
           },
@@ -22112,11 +24232,12 @@ window.ZERO_COST_INTAKE = {
             "official_image_url": "",
             "image_source": "actual-only",
             "verified_exact_match": false,
-            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
             "note": "FRONT は 0047 と同系統の蛍光イエロー安全ベスト、BACK/CODE は X00184OJV3 / [VIHFBB] トートバッグ（40グラム）の花柄系布製品で別商品。現写真では1商品に断定不能のため比較画像は使わず、公開停止とする。",
             "exact_match_guard_state": "review_required",
             "exact_match_guard_reasons": [
-              "別商品mix"
+              "別商品mix",
+              "写真セット組み直し必要"
             ]
           },
           "commerce": {
@@ -22125,12 +24246,12 @@ window.ZERO_COST_INTAKE = {
             "product_id": "PRD-BOX-001-048",
             "draft_id": "DRF-BOX-001-048",
             "research_id": "RES-BOX-001-048",
-            "product_name": "VIHFBB トートバッグ 40g 花柄系",
+            "product_name": "写真セット組み直し候補: VIHFBB トートバッグ 40g 花柄系",
             "brand": "",
             "category": "",
             "barcode_primary": "X00184OJV3",
             "product_code_type": "amazon_internal",
-            "listing_title": "VIHFBB トートバッグ 40g 花柄系",
+            "listing_title": "写真セット組み直し候補: VIHFBB トートバッグ 40g 花柄系",
             "listing_price": "",
             "market_floor_price": "",
             "market_floor_state": "未調査",
@@ -22143,17 +24264,18 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
-          "display_name": "VIHFBB トートバッグ 40g 花柄系",
-          "product_name": "VIHFBB トートバッグ 40g 花柄系",
+          "display_name": "写真セット組み直し候補: VIHFBB トートバッグ 40g 花柄系",
+          "product_name": "写真セット組み直し候補: VIHFBB トートバッグ 40g 花柄系",
           "verified_exact_match": false,
-          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 管理番号再分解待ち",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
-            "別商品mix"
+            "別商品mix",
+            "写真セット組み直し必要"
           ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
@@ -22168,7 +24290,106 @@ window.ZERO_COST_INTAKE = {
           "market_floor_price_label": "未調査",
           "listing_price": "",
           "exception": {},
-          "route_plan": {}
+          "route_plan": {},
+          "split_staging": {
+            "management_id": "BOX-001-ITEM-0048",
+            "plan_summary": "0049 FRONT と 0048 BACK/CODE は X00184OJV3 / [VIHFBB] トートバッグで一致する。0048 FRONT の蛍光イエロー安全ベストと 0049 BACK/CODE のライトグレー衣類は別商品として親 ID に残し、VIHFBB 側だけ local child へ切り出す。公開名は actual-only の generic wording に留める。 / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 のローカル写真セットを作成済み / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "ui_summary": "0049 FRONT + 0048 BACK/CODE は VIHFBB child 候補 / 0048 FRONT は安全ベスト側 / 0049 BACK/CODE は衣類側で別物 / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 のローカル写真セットを作成済み / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "operator_summary": "BOX-001-ITEM-0048 / 0049 は VIHFBB トートバッグと衣類側が混在している。0049 FRONT と 0048 BACK/CODE は X00184OJV3 / [VIHFBB] トートバッグで一致するため、VIHFBB 側だけ local child へ切り出す。0048 FRONT の安全ベストと 0049 BACK/CODE のライトグレー衣類は親 ID に残す。 / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 のローカル写真セットを作成済み / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_note": "0049 FRONT + 0048 BACK/CODE は VIHFBB 側として coherent。0048 FRONT の安全ベストと 0049 BACK/CODE の衣類側は別商品のため親 ID に残す。 / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 のローカル写真セットを作成済み / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_next_action": "SPLIT-BOX-001-0048-VIHFBB を local mint → local confirmed / official へ provisional actual-only 反映。親 0048 / 0049 は split_required のまま維持。 / BOX-001-ITEM-0063 は管理表 / 出品判断の止めどころを決めてから正式反映",
+            "related_management_ids": [
+              "BOX-001-ITEM-0049"
+            ],
+            "source_trace": [
+              {
+                "management_id": "BOX-001-ITEM-0048",
+                "slot": "FRONT",
+                "observed_as": "蛍光イエローの安全ベスト系"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0048",
+                "slot": "BACK",
+                "observed_as": "X00184OJV3 / [VIHFBB] トートバッグ ラベル面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0048",
+                "slot": "CODE",
+                "observed_as": "[VIHFBB] トートバッグの別コード / ラベル面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0049",
+                "slot": "FRONT",
+                "observed_as": "X00184OJV3 / [VIHFBB] トートバッグ側の花柄布製品"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0049",
+                "slot": "BACK",
+                "observed_as": "SYM002-Lightgray-XL のライトグレー衣類ラベル面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0049",
+                "slot": "CODE",
+                "observed_as": "X00147IEGF のライトグレー長袖衣類コード面"
+              }
+            ],
+            "blocked_split_children": [
+              {
+                "temporary_split_id": "SPLIT-BOX-001-0048-VIHFBB",
+                "target_label": "VIHFBB 花柄トートバッグ",
+                "source_slots": [
+                  "BOX-001-ITEM-0049:FRONT",
+                  "BOX-001-ITEM-0048:BACK",
+                  "BOX-001-ITEM-0048:CODE"
+                ],
+                "status": "manifest_child_minted_local_only",
+                "blockers": [
+                  "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+                  "0049 FRONT と 0048 BACK/CODE は X00184OJV3 / [VIHFBB] トートバッグで一致し、同一の花柄トートバッグとして実画像確認済み",
+                  "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+                  "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+                ],
+                "truth_product_name": "VIHFBB 花柄トートバッグ",
+                "truth_barcode_primary": "X00184OJV3",
+                "truth_product_code_type": "amazon_internal",
+                "truth_content_unknown": false,
+                "truth_official_image_state": "actual-only固定 / 比較画像なし",
+                "truth_exact_match_guard_state": "clear",
+                "truth_exact_match_guard_reasons": [],
+                "truth_evidence": [
+                  "X00184OJV3",
+                  "VIHFBB",
+                  "トートバッグ",
+                  "花柄",
+                  "0049:FRONT + 0048:BACK + 0048:CODE"
+                ],
+                "truth_brand_override": "VIHFBB",
+                "truth_category_override": "ファッション > レディース > バッグ > トートバッグ",
+                "truth_check_items_override": "花柄 / 持ち手 / サイズ / 開口部 / 汚れ確認",
+                "truth_note": "SPLIT-BOX-001-0048-VIHFBB は、0049:FRONT と 0048:BACK/CODE の3枚で X00184OJV3 / [VIHFBB] トートバッグの写真セットを組み直し済み。実画像では花柄トートバッグとして扱えるが、公開名は actual-only の generic wording に留める。ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+                "minted_management_id": "BOX-001-ITEM-0063",
+                "minted_at": "2026-04-22 00:40:51 JST",
+                "minted_scope": "local_manifest_only",
+                "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+                "truth_promotion_scope": "local_confirmed_official_only",
+                "truth_promoted_management_id": "BOX-001-ITEM-0063",
+                "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
+                "truth_promoted_at": "2026-04-22 00:45:44 JST"
+              }
+            ],
+            "remaining_blockers": [
+              "VIHFBB child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
+              "0048 FRONT の安全ベストスロットは相方未確定のまま",
+              "0049 BACK/CODE のライトグレー衣類スロットは相方未確定のまま",
+              "SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
+              "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。"
+            ],
+            "safe_next_step": "SPLIT-BOX-001-0048-VIHFBB を local mint → local confirmed / official へ provisional actual-only 反映。親 0048 / 0049 は split_required のまま維持する。 / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 のローカル写真セットを作成済み / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "stage_status": "partial_manifest_child_minted",
+            "match_role": "primary"
+          },
+          "split_plan_summary": "0049 FRONT + 0048 BACK/CODE は VIHFBB child 候補 / 0048 FRONT は安全ベスト側 / 0049 BACK/CODE は衣類側で別物 / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 のローカル写真セットを作成済み / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 をローカル特定結果へ暫定・実物写真のみで反映済み",
+          "split_plan_role": "primary"
         },
         {
           "management_id": "BOX-001-ITEM-0049",
@@ -22213,16 +24434,12 @@ window.ZERO_COST_INTAKE = {
           "box_code": "001",
           "identification": {
             "state": "split_required",
-            "barcode_values": [
-              "X00184OJV3"
-            ],
+            "barcode_values": [],
             "front_back_texts": [
-              "X001840JV3",
-              "IXIFBB］トートバック（40.，グラム）",
-              "新品",
               "SYM002-1ightgray-XL",
               "［サンマド…おしゃれ",
-              "X00147IEGF"
+              "X00147IEGF",
+              "New"
             ],
             "code_texts": [
               "SYM802-Lighteray-XL",
@@ -22233,32 +24450,32 @@ window.ZERO_COST_INTAKE = {
               "LANT"
             ],
             "ocr_texts": [
-              "X001840JV3",
-              "IXIFBB］トートバック（40.，グラム）",
-              "新品",
               "SYM002-1ightgray-XL",
               "［サンマド…おしゃれ",
-              "X00147IEGF"
+              "X00147IEGF",
+              "New",
+              "SYM802-Lighteray-XL",
+              "［サン"
             ],
-            "candidate_query": "X001840JV3 IXIFBB］トートバック（40.，グラム） 新品 SYM002-1ightgray-XL",
+            "candidate_query": "SYM002-1ightgray-XL ［サンマド…おしゃれ X00147IEGF New",
             "review_flag": "FRONT/BACK/CODE が別商品です",
             "ocr_engine": "sauna_tesseract_multistage + vision",
             "ocr_debug_paths": [
               "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0049/IMG_4976_CODE_ocr_best.png"
             ]
           },
-          "priority_score": 110,
+          "priority_score": 220,
           "next_action": "写真セットを組み直す",
-          "barcode_kind": "amazon_internal",
+          "barcode_kind": "",
           "review_flag": "FRONT/BACK/CODE が別商品です",
           "manual_note": "FRONT は花柄シュシュ束、BACK/CODE はグレー衣類パッケージのラベルでした。",
           "resolved": {
             "management_id": "BOX-001-ITEM-0049",
             "resolution_status": "provisional",
-            "product_name": "SYM002 ライトグレー XL 長袖衣類",
+            "product_name": "写真セット組み直し候補: SYM002 ライトグレー XL 長袖衣類",
             "barcode_primary": "X00147IEGF",
             "product_code_type": "amazon_internal",
-            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
             "note": "FRONT は X00184OJV3 / [VIHFBB] トートバッグ側の花柄布製品だが、BACK/CODE は SYM002-Lightgray-XL / X00147IEGF のライトグレー長袖衣類で一致する。現写真では1商品に断定不能のため、ライトグレー長袖衣類側の provisional に留め、公開候補へ混ぜない。",
             "evidence": [
               "SYM002-Lightgray-XL",
@@ -22269,7 +24486,8 @@ window.ZERO_COST_INTAKE = {
             ],
             "exact_match_guard_state": "review_required",
             "exact_match_guard_reasons": [
-              "別商品mix"
+              "別商品mix",
+              "写真セット組み直し必要"
             ],
             "image_source": "actual-only"
           },
@@ -22283,11 +24501,12 @@ window.ZERO_COST_INTAKE = {
             "official_image_url": "",
             "image_source": "actual-only",
             "verified_exact_match": false,
-            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
             "note": "FRONT は X00184OJV3 / [VIHFBB] トートバッグ側の花柄布製品、BACK/CODE は SYM002-Lightgray-XL / X00147IEGF のライトグレー長袖衣類で別商品。現写真では1商品に断定不能のため比較画像は使わず、公開停止とする。",
             "exact_match_guard_state": "review_required",
             "exact_match_guard_reasons": [
-              "別商品mix"
+              "別商品mix",
+              "写真セット組み直し必要"
             ]
           },
           "commerce": {
@@ -22296,12 +24515,12 @@ window.ZERO_COST_INTAKE = {
             "product_id": "PRD-BOX-001-049",
             "draft_id": "DRF-BOX-001-049",
             "research_id": "RES-BOX-001-049",
-            "product_name": "SYM002 ライトグレー XL 長袖衣類",
+            "product_name": "写真セット組み直し候補: SYM002 ライトグレー XL 長袖衣類",
             "brand": "",
             "category": "",
             "barcode_primary": "X00147IEGF",
             "product_code_type": "amazon_internal",
-            "listing_title": "SYM002 ライトグレー XL 長袖衣類",
+            "listing_title": "写真セット組み直し候補: SYM002 ライトグレー XL 長袖衣類",
             "listing_price": "",
             "market_floor_price": "",
             "market_floor_state": "未調査",
@@ -22314,17 +24533,18 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
-          "display_name": "SYM002 ライトグレー XL 長袖衣類",
-          "product_name": "SYM002 ライトグレー XL 長袖衣類",
+          "display_name": "写真セット組み直し候補: SYM002 ライトグレー XL 長袖衣類",
+          "product_name": "写真セット組み直し候補: SYM002 ライトグレー XL 長袖衣類",
           "verified_exact_match": false,
-          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 管理番号再分解待ち",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
-            "別商品mix"
+            "別商品mix",
+            "写真セット組み直し必要"
           ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
@@ -22339,7 +24559,106 @@ window.ZERO_COST_INTAKE = {
           "market_floor_price_label": "未調査",
           "listing_price": "",
           "exception": {},
-          "route_plan": {}
+          "route_plan": {},
+          "split_staging": {
+            "management_id": "BOX-001-ITEM-0048",
+            "plan_summary": "0049 FRONT と 0048 BACK/CODE は X00184OJV3 / [VIHFBB] トートバッグで一致する。0048 FRONT の蛍光イエロー安全ベストと 0049 BACK/CODE のライトグレー衣類は別商品として親 ID に残し、VIHFBB 側だけ local child へ切り出す。公開名は actual-only の generic wording に留める。 / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 のローカル写真セットを作成済み / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "ui_summary": "0049 FRONT + 0048 BACK/CODE は VIHFBB child 候補 / 0048 FRONT は安全ベスト側 / 0049 BACK/CODE は衣類側で別物 / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 のローカル写真セットを作成済み / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "operator_summary": "BOX-001-ITEM-0048 / 0049 は VIHFBB トートバッグと衣類側が混在している。0049 FRONT と 0048 BACK/CODE は X00184OJV3 / [VIHFBB] トートバッグで一致するため、VIHFBB 側だけ local child へ切り出す。0048 FRONT の安全ベストと 0049 BACK/CODE のライトグレー衣類は親 ID に残す。 / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 のローカル写真セットを作成済み / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_note": "0049 FRONT + 0048 BACK/CODE は VIHFBB 側として coherent。0048 FRONT の安全ベストと 0049 BACK/CODE の衣類側は別商品のため親 ID に残す。 / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 のローカル写真セットを作成済み / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_next_action": "SPLIT-BOX-001-0048-VIHFBB を local mint → local confirmed / official へ provisional actual-only 反映。親 0048 / 0049 は split_required のまま維持。 / BOX-001-ITEM-0063 は管理表 / 出品判断の止めどころを決めてから正式反映",
+            "related_management_ids": [
+              "BOX-001-ITEM-0049"
+            ],
+            "source_trace": [
+              {
+                "management_id": "BOX-001-ITEM-0048",
+                "slot": "FRONT",
+                "observed_as": "蛍光イエローの安全ベスト系"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0048",
+                "slot": "BACK",
+                "observed_as": "X00184OJV3 / [VIHFBB] トートバッグ ラベル面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0048",
+                "slot": "CODE",
+                "observed_as": "[VIHFBB] トートバッグの別コード / ラベル面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0049",
+                "slot": "FRONT",
+                "observed_as": "X00184OJV3 / [VIHFBB] トートバッグ側の花柄布製品"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0049",
+                "slot": "BACK",
+                "observed_as": "SYM002-Lightgray-XL のライトグレー衣類ラベル面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0049",
+                "slot": "CODE",
+                "observed_as": "X00147IEGF のライトグレー長袖衣類コード面"
+              }
+            ],
+            "blocked_split_children": [
+              {
+                "temporary_split_id": "SPLIT-BOX-001-0048-VIHFBB",
+                "target_label": "VIHFBB 花柄トートバッグ",
+                "source_slots": [
+                  "BOX-001-ITEM-0049:FRONT",
+                  "BOX-001-ITEM-0048:BACK",
+                  "BOX-001-ITEM-0048:CODE"
+                ],
+                "status": "manifest_child_minted_local_only",
+                "blockers": [
+                  "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+                  "0049 FRONT と 0048 BACK/CODE は X00184OJV3 / [VIHFBB] トートバッグで一致し、同一の花柄トートバッグとして実画像確認済み",
+                  "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+                  "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+                ],
+                "truth_product_name": "VIHFBB 花柄トートバッグ",
+                "truth_barcode_primary": "X00184OJV3",
+                "truth_product_code_type": "amazon_internal",
+                "truth_content_unknown": false,
+                "truth_official_image_state": "actual-only固定 / 比較画像なし",
+                "truth_exact_match_guard_state": "clear",
+                "truth_exact_match_guard_reasons": [],
+                "truth_evidence": [
+                  "X00184OJV3",
+                  "VIHFBB",
+                  "トートバッグ",
+                  "花柄",
+                  "0049:FRONT + 0048:BACK + 0048:CODE"
+                ],
+                "truth_brand_override": "VIHFBB",
+                "truth_category_override": "ファッション > レディース > バッグ > トートバッグ",
+                "truth_check_items_override": "花柄 / 持ち手 / サイズ / 開口部 / 汚れ確認",
+                "truth_note": "SPLIT-BOX-001-0048-VIHFBB は、0049:FRONT と 0048:BACK/CODE の3枚で X00184OJV3 / [VIHFBB] トートバッグの写真セットを組み直し済み。実画像では花柄トートバッグとして扱えるが、公開名は actual-only の generic wording に留める。ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+                "minted_management_id": "BOX-001-ITEM-0063",
+                "minted_at": "2026-04-22 00:40:51 JST",
+                "minted_scope": "local_manifest_only",
+                "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+                "truth_promotion_scope": "local_confirmed_official_only",
+                "truth_promoted_management_id": "BOX-001-ITEM-0063",
+                "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
+                "truth_promoted_at": "2026-04-22 00:45:44 JST"
+              }
+            ],
+            "remaining_blockers": [
+              "VIHFBB child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
+              "0048 FRONT の安全ベストスロットは相方未確定のまま",
+              "0049 BACK/CODE のライトグレー衣類スロットは相方未確定のまま",
+              "SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
+              "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。"
+            ],
+            "safe_next_step": "SPLIT-BOX-001-0048-VIHFBB を local mint → local confirmed / official へ provisional actual-only 反映。親 0048 / 0049 は split_required のまま維持する。 / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 のローカル写真セットを作成済み / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "stage_status": "partial_manifest_child_minted",
+            "match_role": "related"
+          },
+          "split_plan_summary": "0049 FRONT + 0048 BACK/CODE は VIHFBB child 候補 / 0048 FRONT は安全ベスト側 / 0049 BACK/CODE は衣類側で別物 / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 のローカル写真セットを作成済み / SPLIT-BOX-001-0048-VIHFBB=BOX-001-ITEM-0063 をローカル特定結果へ暫定・実物写真のみで反映済み",
+          "split_plan_role": "related"
         },
         {
           "management_id": "BOX-001-ITEM-0050",
@@ -22485,7 +24804,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [
             {
@@ -22543,7 +24862,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=CRZ YOGA レギンス 股下24インチ ダークグレー系 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / actual-only固定 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
           }
         },
@@ -22674,7 +24993,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -22814,7 +25133,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -22845,11 +25164,11 @@ window.ZERO_COST_INTAKE = {
           "split_staging": {
             "management_id": "BOX-001-ITEM-0028",
             "stage_status": "partial_manifest_child_minted",
-            "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/緑の冬小物系として未一致保留。0028 CODE は car hook mobile phone holder NO-FE035 箱で、BACK の X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT は car hook mobile phone holder NO-FE040 だが、0029 BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側の仮置き写真セット。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として視認一致済み。0052 FRONT の青橙箱は別物として残す。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 をローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 のローカル写真セットを作成済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/白/緑の厚手ニット靴下またはレッグウォーマー系として未一致保留。0028 CODE は car hook mobile phone holder NO-FE035 箱で、BACK の X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT は car hook mobile phone holder NO-FE040 だが、NO-FE035 と NO-FE040 はNO表記が異なるため結合しない。0029 BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側の仮置き写真セット。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として視認一致済み。0052 FRONT の青橙箱は別物として残す。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 をローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 のローカル写真セットを作成済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
             "ui_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029 FRONTは car hook 側として別扱い / 0053 FRONT⇄0052 BACK/CODEは同一白箱を視認確認 / 0052 FRONT別物 / 0059白箱はローカル写真セット作成・特定結果反映済み / 0060 SPEEDWOXはローカル写真セット作成・特定結果反映済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
-            "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 FRONT は car hook NO-FE040、0029 BACK/CODE は SPEEDWOX X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は同一白箱を視認確認済み。0052 FRONT の青橙箱は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。 / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
-            "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の冬小物系。0029 FRONT は car hook 側として別扱い。0053 FRONT と 0052 BACK/CODE は同一白箱として視認確認済みで、0052 FRONT は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。 / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
-            "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0029 FRONTは car hook 側として別扱い / 0059白箱は管理表・出品判断の止めどころ確認待ち / 0060SPEEDWOXは管理表・出品判断の止めどころ確認待ち / BOX-001-ITEM-0061 は管理表 / 出品判断の止めどころを決めてから正式反映",
+            "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の黒/白/緑の厚手ニット靴下またはレッグウォーマー系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 FRONT は car hook NO-FE040。NO-FE035 と NO-FE040 はNO表記が異なるため結合しない。0029 BACK/CODE は SPEEDWOX X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は同一白箱を視認確認済み。0052 FRONT の青橙箱は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。 / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の黒/白/緑の厚手ニット靴下またはレッグウォーマー系。0028 CODE=NO-FE035 と 0029 FRONT=NO-FE040 はNO表記が異なるため結合しない。0053 FRONT と 0052 BACK/CODE は同一白箱として視認確認済みで、0052 FRONT は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。 / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0028 CODE=NO-FE035保留 / 0029 FRONT=NO-FE040保留 / 0059白箱は管理表・出品判断の止めどころ確認待ち / 0060SPEEDWOXは管理表・出品判断の止めどころ確認待ち / BOX-001-ITEM-0061 は管理表 / 出品判断の止めどころを決めてから正式反映",
             "retain_existing_id": {
               "management_id": "BOX-001-ITEM-0028",
               "product_id": "PRD-BOX-001-028",
@@ -22864,7 +25183,7 @@ window.ZERO_COST_INTAKE = {
               {
                 "management_id": "BOX-001-ITEM-0028",
                 "slot": "FRONT",
-                "observed_as": "黒/緑のニット・冬小物系バッグ"
+                "observed_as": "黒/白/緑の厚手ニット靴下またはレッグウォーマー系"
               },
               {
                 "management_id": "BOX-001-ITEM-0028",
@@ -22925,7 +25244,7 @@ window.ZERO_COST_INTAKE = {
             "blocked_split_children": [
               {
                 "temporary_split_id": "SPLIT-BOX-001-0028-WINTER",
-                "target_label": "黒/緑の冬小物系",
+                "target_label": "黒/白/緑の厚手ニット靴下またはレッグウォーマー系",
                 "source_slots": [
                   "BOX-001-ITEM-0028:FRONT"
                 ],
@@ -23100,43 +25419,18 @@ window.ZERO_COST_INTAKE = {
           "box_code": "001",
           "identification": {
             "state": "split_required",
-            "barcode_values": [
-              "X0018IYEUP"
-            ],
-            "front_back_texts": [
-              "\"ITOAVOL DANGER",
-              "OUT OF REACHO",
-              "REACH：",
-              "OTUSE）",
-              "OTUSEANARESP",
-              "THIS BY"
-            ],
-            "code_texts": [
-              "HELLO KITIY",
-              "50TH ANNIVERSAR*",
-              "= Ch¥a 7 ; fo. “2 : a wn ® hla & ~ asa { : — ” __ aan mal 4 BS gt ~ ‘ i a oA sh , & = © wl 2 NS H f Ps g se i",
-              ". a bs: tS y , me <\". - 5 ™ a \\ ; ee ‘ ne LFA oF > 4 ae S | owe ae r e& ~ t ‘ g VE a . é SS ~~ : ¥ : » = ' = y i a a 2 [ 2 . 3 ee r > a me 7 a moe SOF) ANNivep. <4 So” a",
-              "ar - _— - a wey _s: .——-, on fe a ’ a ‘ ; het % . . ‘ ae) . . ? ne a] e 7 Mao - Bam . ~ rt rr 2",
-              "ag"
-            ],
-            "ocr_texts": [
-              "\"ITOAVOL DANGER",
-              "OUT OF REACHO",
-              "REACH：",
-              "OTUSE）",
-              "OTUSEANARESP",
-              "THIS BY"
-            ],
-            "candidate_query": "\"ITOAVOL DANGER OUT OF REACHO REACH： OTUSE）",
+            "barcode_values": [],
+            "front_back_texts": [],
+            "code_texts": [],
+            "ocr_texts": [],
+            "candidate_query": "",
             "review_flag": "FRONT/BACK/CODE が別商品です",
-            "ocr_engine": "sauna_tesseract_multistage + vision",
-            "ocr_debug_paths": [
-              "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0053/IMG_4988_CODE_ocr_best.png"
-            ]
+            "ocr_engine": "",
+            "ocr_debug_paths": []
           },
-          "priority_score": 110,
+          "priority_score": 320,
           "next_action": "写真セットを組み直す",
-          "barcode_kind": "amazon_internal",
+          "barcode_kind": "",
           "review_flag": "FRONT/BACK/CODE が別商品です",
           "manual_note": "FRONT は白箱 X00197BVHJ、BACK/CODE は Hello Kitty 50TH ANNIVERSARY 系でした。白箱側は 0052 BACK/CODE と同一箱を live 視認確認済みですが、shared sheet / manifest の正式な写真セット組み直しまでは候補 child として扱います。",
           "resolved": {
@@ -23157,7 +25451,8 @@ window.ZERO_COST_INTAKE = {
             "exact_match_guard_reasons": [
               "別商品mix",
               "写真セット組み直し必要",
-              "内容物未確認"
+              "内容物未確認",
+              "真贋確認"
             ]
           },
           "official": {},
@@ -23185,19 +25480,20 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
           "display_name": "写真セット組み直し必要（白箱 X00197BVHJ / Hello Kitty 50TH ANNIVERSARY 系 混在）",
           "product_name": "写真セット組み直し必要（白箱 X00197BVHJ / Hello Kitty 50TH ANNIVERSARY 系 混在）",
           "verified_exact_match": false,
-          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 管理番号再分解待ち",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 正規性確認待ち / 管理番号再分解待ち",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
             "別商品mix",
             "写真セット組み直し必要",
-            "内容物未確認"
+            "内容物未確認",
+            "真贋確認"
           ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
@@ -23216,11 +25512,11 @@ window.ZERO_COST_INTAKE = {
           "split_staging": {
             "management_id": "BOX-001-ITEM-0028",
             "stage_status": "partial_manifest_child_minted",
-            "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/緑の冬小物系として未一致保留。0028 CODE は car hook mobile phone holder NO-FE035 箱で、BACK の X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT は car hook mobile phone holder NO-FE040 だが、0029 BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側の仮置き写真セット。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として視認一致済み。0052 FRONT の青橙箱は別物として残す。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 をローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 のローカル写真セットを作成済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/白/緑の厚手ニット靴下またはレッグウォーマー系として未一致保留。0028 CODE は car hook mobile phone holder NO-FE035 箱で、BACK の X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT は car hook mobile phone holder NO-FE040 だが、NO-FE035 と NO-FE040 はNO表記が異なるため結合しない。0029 BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側の仮置き写真セット。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として視認一致済み。0052 FRONT の青橙箱は別物として残す。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 をローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 のローカル写真セットを作成済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
             "ui_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029 FRONTは car hook 側として別扱い / 0053 FRONT⇄0052 BACK/CODEは同一白箱を視認確認 / 0052 FRONT別物 / 0059白箱はローカル写真セット作成・特定結果反映済み / 0060 SPEEDWOXはローカル写真セット作成・特定結果反映済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
-            "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 FRONT は car hook NO-FE040、0029 BACK/CODE は SPEEDWOX X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は同一白箱を視認確認済み。0052 FRONT の青橙箱は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。 / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
-            "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の冬小物系。0029 FRONT は car hook 側として別扱い。0053 FRONT と 0052 BACK/CODE は同一白箱として視認確認済みで、0052 FRONT は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。 / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
-            "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0029 FRONTは car hook 側として別扱い / 0059白箱は管理表・出品判断の止めどころ確認待ち / 0060SPEEDWOXは管理表・出品判断の止めどころ確認待ち / BOX-001-ITEM-0061 は管理表 / 出品判断の止めどころを決めてから正式反映",
+            "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の黒/白/緑の厚手ニット靴下またはレッグウォーマー系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 FRONT は car hook NO-FE040。NO-FE035 と NO-FE040 はNO表記が異なるため結合しない。0029 BACK/CODE は SPEEDWOX X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は同一白箱を視認確認済み。0052 FRONT の青橙箱は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。 / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の黒/白/緑の厚手ニット靴下またはレッグウォーマー系。0028 CODE=NO-FE035 と 0029 FRONT=NO-FE040 はNO表記が異なるため結合しない。0053 FRONT と 0052 BACK/CODE は同一白箱として視認確認済みで、0052 FRONT は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。 / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-HELLOKITTY=BOX-001-ITEM-0061 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0028 CODE=NO-FE035保留 / 0029 FRONT=NO-FE040保留 / 0059白箱は管理表・出品判断の止めどころ確認待ち / 0060SPEEDWOXは管理表・出品判断の止めどころ確認待ち / BOX-001-ITEM-0061 は管理表 / 出品判断の止めどころを決めてから正式反映",
             "retain_existing_id": {
               "management_id": "BOX-001-ITEM-0028",
               "product_id": "PRD-BOX-001-028",
@@ -23235,7 +25531,7 @@ window.ZERO_COST_INTAKE = {
               {
                 "management_id": "BOX-001-ITEM-0028",
                 "slot": "FRONT",
-                "observed_as": "黒/緑のニット・冬小物系バッグ"
+                "observed_as": "黒/白/緑の厚手ニット靴下またはレッグウォーマー系"
               },
               {
                 "management_id": "BOX-001-ITEM-0028",
@@ -23296,7 +25592,7 @@ window.ZERO_COST_INTAKE = {
             "blocked_split_children": [
               {
                 "temporary_split_id": "SPLIT-BOX-001-0028-WINTER",
-                "target_label": "黒/緑の冬小物系",
+                "target_label": "黒/白/緑の厚手ニット靴下またはレッグウォーマー系",
                 "source_slots": [
                   "BOX-001-ITEM-0028:FRONT"
                 ],
@@ -23472,16 +25768,15 @@ window.ZERO_COST_INTAKE = {
           "identification": {
             "state": "バーコード候補あり",
             "barcode_values": [
-              "X0018GJO2Z",
-              "X0018IYEUP"
+              "X0018GJO2Z"
             ],
             "front_back_texts": [
-              "WARIMN",
-              "KEEPIT O",
-              "DON",
-              "USEIN ERBS",
-              "SITHISBA",
-              "IERSARY"
+              "®",
+              "X0018GJO2Z",
+              "［Poperdision］",
+              "New",
+              "Black-3XL",
+              "3X"
             ],
             "code_texts": [
               "X0018GJO2Z",
@@ -23492,14 +25787,14 @@ window.ZERO_COST_INTAKE = {
               ") . ® ted a © | ee te an"
             ],
             "ocr_texts": [
-              "WARIMN",
-              "KEEPIT O",
-              "DON",
-              "USEIN ERBS",
-              "SITHISBA",
-              "IERSARY"
+              "®",
+              "X0018GJO2Z",
+              "［Poperdision］",
+              "New",
+              "Black-3XL",
+              "3X"
             ],
-            "candidate_query": "WARIMN KEEPIT O DON USEIN ERBS",
+            "candidate_query": "® X0018GJO2Z ［Poperdision］ New",
             "review_flag": "",
             "ocr_engine": "sauna_tesseract_multistage + vision",
             "ocr_debug_paths": [
@@ -23535,7 +25830,8 @@ window.ZERO_COST_INTAKE = {
             "exact_match_guard_state": "review_required",
             "exact_match_guard_reasons": [
               "別商品mix",
-              "写真セット組み直し必要"
+              "写真セット組み直し必要",
+              "真贋確認"
             ]
           },
           "official": {},
@@ -23563,18 +25859,19 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
           "display_name": "写真セット組み直し候補: Poperdision ブラック 3XL レディース衣類",
           "product_name": "写真セット組み直し候補: Poperdision ブラック 3XL レディース衣類",
           "verified_exact_match": false,
-          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 管理番号再分解待ち",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 正規性確認待ち / 管理番号再分解待ち",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
             "別商品mix",
-            "写真セット組み直し必要"
+            "写真セット組み直し必要",
+            "真贋確認"
           ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
@@ -23603,12 +25900,12 @@ window.ZERO_COST_INTAKE = {
             "Ship&co条件": "停止",
             "メルカリ配送": "",
             "人確認": "要",
-            "人確認理由": "precision guard: 別商品mix / 停止条件あり",
+            "人確認理由": "precision guard: 別商品mix / 写真セット組み直し必要 / 真贋確認 / 停止条件あり",
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
             "ルーティング状態": "写真セット組み直し必要",
-            "更新時刻": "2026-04-21 23:08:31 JST",
-            "メモ": "name=Poperdision ブラック 3XL レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix"
+            "更新時刻": "2026-04-22 00:33:59 JST",
+            "メモ": "name=写真セット組み直し候補: Poperdision ブラック 3XL レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / 正規性確認待ち / 管理番号再分解待ち / 新管理番号未採番 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix / 写真セット組み直し必要 / 真贋確認"
           }
         },
         {
@@ -23760,7 +26057,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [
             {
@@ -23821,7 +26118,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
             "ルーティング状態": "写真セット組み直し必要",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=ATIDIMU 美容液 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix"
           }
         },
@@ -23952,7 +26249,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -24230,7 +26527,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "比較画像照合",
             "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
             "ルーティング状態": "写真セット組み直し必要",
-            "更新時刻": "2026-04-21 23:08:31 JST",
+            "更新時刻": "2026-04-22 00:33:59 JST",
             "メモ": "name=JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=別商品mix / inventory_status=販売中 / listingId=2JPSNX6qATG7NwnssYkshh"
           }
         },
@@ -24357,7 +26654,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -24574,7 +26871,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -24778,7 +27075,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -24887,9 +27184,9 @@ window.ZERO_COST_INTAKE = {
             ],
             "candidate_query": "WARIMN KEEPIT O DON USEIN ERBS",
             "review_flag": "",
-            "ocr_engine": "vision + sauna_tesseract_multistage",
+            "ocr_engine": "sauna_tesseract_multistage + vision",
             "ocr_debug_paths": [
-              "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0053/IMG_4988_CODE_ocr_best.png"
+              "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0061/IMG_4988_CODE_ocr_best.png"
             ]
           },
           "priority_score": 110,
@@ -24909,10 +27206,10 @@ window.ZERO_COST_INTAKE = {
               "BOX-001-ITEM-0053:CODE"
             ],
             "verified_exact_match": false,
-            "official_image_state": "actual-only固定 / 比較画像なし",
+            "official_image_state": "actual-only固定 / 比較画像なし / 正規性確認待ち",
             "note": "SPLIT-BOX-001-0053-HELLOKITTY は、0054:FRONT と 0053:BACK/CODE の3枚で X0018IYEUP / Acomiconi ハローキティ リュックアクセサリー 50TH ANNIVERSARY ブラックの写真セットを組み直し予定。実画像では同一商品として扱えるが、公式完全一致ページは見つかっていないため、ローカル特定結果では暫定・実物写真のみ・正規性確認待ちで止める。公開判断は別フェーズ。",
             "image_source": "actual-only",
-            "exact_match_guard_state": "clear",
+            "exact_match_guard_state": "review_required",
             "official_page_url": "",
             "official_image_url": "",
             "official_image_local": "",
@@ -24934,7 +27231,10 @@ window.ZERO_COST_INTAKE = {
             "brand_override": "Acomiconi",
             "category_override": "ゲーム・おもちゃ・グッズ > キャラクターグッズ > キーホルダー・マスコット",
             "price_override": 1480,
-            "check_items_override": "サンリオ正規表記 / タグ / チェーン / 破損 / サイズ確認"
+            "check_items_override": "サンリオ正規表記 / タグ / チェーン / 破損 / サイズ確認",
+            "exact_match_guard_reasons": [
+              "真贋確認"
+            ]
           },
           "official": {
             "management_id": "BOX-001-ITEM-0061",
@@ -24949,16 +27249,19 @@ window.ZERO_COST_INTAKE = {
               "BOX-001-ITEM-0053:CODE"
             ],
             "verified_exact_match": false,
-            "official_image_state": "actual-only固定 / 比較画像なし",
+            "official_image_state": "actual-only固定 / 比較画像なし / 正規性確認待ち",
             "note": "SPLIT-BOX-001-0053-HELLOKITTY は、0054:FRONT と 0053:BACK/CODE の3枚で X0018IYEUP / Acomiconi ハローキティ リュックアクセサリー 50TH ANNIVERSARY ブラックの写真セットを組み直し予定。実画像では同一商品として扱えるが、公式完全一致ページは見つかっていないため、ローカル特定結果では暫定・実物写真のみ・正規性確認待ちで止める。公開判断は別フェーズ。",
             "image_source": "actual-only",
-            "exact_match_guard_state": "clear",
+            "exact_match_guard_state": "review_required",
             "official_page_url": "",
             "official_image_url": "",
             "official_image_local": "",
             "supplemental_url": "",
             "supplemental_image_urls": [],
-            "supplemental_image_locals": []
+            "supplemental_image_locals": [],
+            "exact_match_guard_reasons": [
+              "真贋確認"
+            ]
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0061",
@@ -24984,7 +27287,212 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-21 23:11:56 JST"
+            "updated_at": "2026-04-22 01:09:44 JST"
+          },
+          "comparison_images": [],
+          "reference_images": [],
+          "verified_exact_match": false,
+          "official_image_state": "actual-only固定 / 比較画像なし / 正規性確認待ち",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "真贋確認"
+          ],
+          "qwen_hq_review_status": "",
+          "qwen_hq_resolution": "",
+          "qwen_hq_review_note": "",
+          "publish_status": "下書き準備中",
+          "publish_state": "下書き準備中",
+          "public_listing_url": "",
+          "listing_id": "",
+          "comparison_image_ref": "",
+          "reference_image_ref": "",
+          "minimum_price": "",
+          "market_floor_price_label": "未調査",
+          "listing_price": "1480",
+          "exception": {},
+          "route_plan": {}
+        },
+        {
+          "management_id": "BOX-001-ITEM-0062",
+          "box_id": "BOX-001",
+          "sequence": 62,
+          "status": "complete",
+          "missing_slots": [],
+          "slot_count": 3,
+          "slots": [
+            {
+              "slot": "FRONT",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4899.HEIC",
+              "source_name": "IMG_4899.HEIC",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0062/01_FRONT_IMG_4899.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0062/01_FRONT_IMG_4899.jpg",
+              "resident_url": "./assets/intake/BOX-001-ITEM-0062/01_FRONT_IMG_4899.jpg",
+              "rebundled_from": "BOX-001-ITEM-0025:FRONT"
+            },
+            {
+              "slot": "BACK",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4897.HEIC",
+              "source_name": "IMG_4897.HEIC",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0062/02_BACK_IMG_4897.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0062/02_BACK_IMG_4897.jpg",
+              "resident_url": "./assets/intake/BOX-001-ITEM-0062/02_BACK_IMG_4897.jpg",
+              "rebundled_from": "BOX-001-ITEM-0024:BACK"
+            },
+            {
+              "slot": "CODE",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4898.HEIC",
+              "source_name": "IMG_4898.HEIC",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0062/03_CODE_IMG_4898.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0062/03_CODE_IMG_4898.jpg",
+              "resident_url": "./assets/intake/BOX-001-ITEM-0062/03_CODE_IMG_4898.jpg",
+              "rebundled_from": "BOX-001-ITEM-0024:CODE"
+            }
+          ],
+          "shared_sheet_title_value": "BOX-001-ITEM-0062",
+          "shared_sheet_note": "SPLIT-BOX-001-0024-DUCO からローカル写真セットを作成",
+          "photo_grouping": "split_child_mint",
+          "grouping_warning": "",
+          "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
+          "display_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
+          "split_child_label": "DUCO サングラス レディース #016（ブラック・ブルー）",
+          "split_temporary_id": "SPLIT-BOX-001-0024-DUCO",
+          "split_source_slots": [
+            "BOX-001-ITEM-0025:FRONT",
+            "BOX-001-ITEM-0024:BACK",
+            "BOX-001-ITEM-0024:CODE"
+          ],
+          "split_status": "manifest_child_minted_local_only",
+          "box_label": "数字箱 001",
+          "box_lane": "numeric",
+          "box_code": "001",
+          "identification": {
+            "state": "バーコード候補あり",
+            "barcode_values": [
+              "X0011JB9IL"
+            ],
+            "front_back_texts": [
+              "X0011JB91",
+              "DUCO サングラスレディース.1016（ブラック・ブルー）",
+              "MADE IN CHNA",
+              "新品",
+              "X0011JB3LL",
+              "DUCO サングラスレディース..9016（ブラック・ブルー"
+            ],
+            "code_texts": [
+              "DUCO",
+              "~ . _ . | SOA ! | : . i . on \\ 7 : Poa yy fs, a eee. a Vee q RARER Ty! f “Sa cae og ee YP Ax. ae I ee nae a .",
+              ". r — ‘ o us , é | “Bigs \\y \\. ye Fe, r | | ay e - : Zs x v i 7 j- A | yo *)CO|C ee | Sao e ee a 5 a i | eis 375 Se eae 7 | ? | Uf i2 5* Ske ia | ; | ee ee ,"
+            ],
+            "ocr_texts": [
+              "X0011JB91",
+              "DUCO サングラスレディース.1016（ブラック・ブルー）",
+              "MADE IN CHNA",
+              "新品",
+              "X0011JB3LL",
+              "DUCO サングラスレディース..9016（ブラック・ブルー"
+            ],
+            "candidate_query": "X0011JB91 DUCO サングラスレディース.1016（ブラック・ブルー） MADE IN CHNA 新品",
+            "review_flag": "",
+            "ocr_engine": "sauna_tesseract_multistage + vision",
+            "ocr_debug_paths": [
+              "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0062/IMG_4898_CODE_ocr_best.png"
+            ]
+          },
+          "priority_score": 150,
+          "next_action": "Amazon内部コードとOCRで商品特定",
+          "barcode_kind": "amazon_internal",
+          "review_flag": "",
+          "resolved": {
+            "management_id": "BOX-001-ITEM-0062",
+            "raw_id": "RAW-BOX-001-062",
+            "product_id": "PRD-BOX-001-062",
+            "draft_id": "DRF-BOX-001-062",
+            "research_id": "RES-BOX-001-062",
+            "split_temporary_id": "SPLIT-BOX-001-0024-DUCO",
+            "split_source_slots": [
+              "BOX-001-ITEM-0025:FRONT",
+              "BOX-001-ITEM-0024:BACK",
+              "BOX-001-ITEM-0024:CODE"
+            ],
+            "verified_exact_match": false,
+            "official_image_state": "actual-only固定 / 比較画像なし",
+            "note": "SPLIT-BOX-001-0024-DUCO は、0025:FRONT と 0024:BACK/CODE の3枚で X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）の写真セットを組み直し済み。ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+            "image_source": "actual-only",
+            "exact_match_guard_state": "clear",
+            "official_page_url": "",
+            "official_image_url": "",
+            "official_image_local": "",
+            "supplemental_url": "",
+            "supplemental_image_urls": [],
+            "supplemental_image_locals": [],
+            "resolution_status": "provisional",
+            "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
+            "barcode_primary": "X0011JB9IL",
+            "product_code_type": "amazon_internal",
+            "evidence": [
+              "X0011JB9IL",
+              "DUCO",
+              "サングラス レディース",
+              "#016",
+              "ブラック・ブルー",
+              "0025:FRONT + 0024:BACK + 0024:CODE"
+            ],
+            "brand_override": "DUCO",
+            "category_override": "ファッション > レディース > 小物 > サングラス",
+            "check_items_override": "フレーム色 / レンズ色 / 付属ケース / 型番#016 / 破損確認"
+          },
+          "official": {
+            "management_id": "BOX-001-ITEM-0062",
+            "raw_id": "RAW-BOX-001-062",
+            "product_id": "PRD-BOX-001-062",
+            "draft_id": "DRF-BOX-001-062",
+            "research_id": "RES-BOX-001-062",
+            "split_temporary_id": "SPLIT-BOX-001-0024-DUCO",
+            "split_source_slots": [
+              "BOX-001-ITEM-0025:FRONT",
+              "BOX-001-ITEM-0024:BACK",
+              "BOX-001-ITEM-0024:CODE"
+            ],
+            "verified_exact_match": false,
+            "official_image_state": "actual-only固定 / 比較画像なし",
+            "note": "SPLIT-BOX-001-0024-DUCO は、0025:FRONT と 0024:BACK/CODE の3枚で X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）の写真セットを組み直し済み。ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+            "image_source": "actual-only",
+            "exact_match_guard_state": "clear",
+            "official_page_url": "",
+            "official_image_url": "",
+            "official_image_local": "",
+            "supplemental_url": "",
+            "supplemental_image_urls": [],
+            "supplemental_image_locals": []
+          },
+          "commerce": {
+            "management_id": "BOX-001-ITEM-0062",
+            "raw_id": "RAW-BOX-001-062",
+            "product_id": "PRD-BOX-001-062",
+            "draft_id": "DRF-BOX-001-062",
+            "research_id": "RES-BOX-001-062",
+            "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
+            "brand": "DUCO",
+            "category": "ファッション > レディース > 小物 > サングラス",
+            "barcode_primary": "X0011JB9IL",
+            "product_code_type": "amazon_internal",
+            "listing_title": "DUCO サングラス レディース #016（ブラック・ブルー）",
+            "listing_price": "",
+            "market_floor_price": "",
+            "market_floor_state": "未調査",
+            "market_source_label": "",
+            "market_source_url": "",
+            "market_checked_at": "",
+            "market_note": "",
+            "publish_state": "下書き準備中",
+            "publish_detail": "",
+            "listing_id": "",
+            "public_listing_url": "",
+            "csv_status": "",
+            "updated_at": "2026-04-22 01:09:44 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -25002,7 +27510,613 @@ window.ZERO_COST_INTAKE = {
           "reference_image_ref": "",
           "minimum_price": "",
           "market_floor_price_label": "未調査",
-          "listing_price": "1480",
+          "listing_price": "",
+          "exception": {},
+          "route_plan": {}
+        },
+        {
+          "management_id": "BOX-001-ITEM-0063",
+          "box_id": "BOX-001",
+          "sequence": 63,
+          "status": "complete",
+          "missing_slots": [],
+          "slot_count": 3,
+          "slots": [
+            {
+              "slot": "FRONT",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4974.HEIC",
+              "source_name": "IMG_4974.HEIC",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0063/01_FRONT_IMG_4974.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0063/01_FRONT_IMG_4974.jpg",
+              "resident_url": "./assets/intake/BOX-001-ITEM-0063/01_FRONT_IMG_4974.jpg",
+              "rebundled_from": "BOX-001-ITEM-0049:FRONT"
+            },
+            {
+              "slot": "BACK",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4972.HEIC",
+              "source_name": "IMG_4972.HEIC",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0063/02_BACK_IMG_4972.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0063/02_BACK_IMG_4972.jpg",
+              "resident_url": "./assets/intake/BOX-001-ITEM-0063/02_BACK_IMG_4972.jpg",
+              "rebundled_from": "BOX-001-ITEM-0048:BACK"
+            },
+            {
+              "slot": "CODE",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4973.HEIC",
+              "source_name": "IMG_4973.HEIC",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0063/03_CODE_IMG_4973.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0063/03_CODE_IMG_4973.jpg",
+              "resident_url": "./assets/intake/BOX-001-ITEM-0063/03_CODE_IMG_4973.jpg",
+              "rebundled_from": "BOX-001-ITEM-0048:CODE"
+            }
+          ],
+          "shared_sheet_title_value": "BOX-001-ITEM-0063",
+          "shared_sheet_note": "SPLIT-BOX-001-0048-VIHFBB からローカル写真セットを作成",
+          "photo_grouping": "split_child_mint",
+          "grouping_warning": "",
+          "product_name": "VIHFBB 花柄トートバッグ",
+          "display_name": "VIHFBB 花柄トートバッグ",
+          "split_child_label": "VIHFBB 花柄トートバッグ",
+          "split_temporary_id": "SPLIT-BOX-001-0048-VIHFBB",
+          "split_source_slots": [
+            "BOX-001-ITEM-0049:FRONT",
+            "BOX-001-ITEM-0048:BACK",
+            "BOX-001-ITEM-0048:CODE"
+          ],
+          "split_status": "manifest_child_minted_local_only",
+          "box_label": "数字箱 001",
+          "box_lane": "numeric",
+          "box_code": "001",
+          "identification": {
+            "state": "バーコード候補あり",
+            "barcode_values": [
+              "X00184OJV3"
+            ],
+            "front_back_texts": [
+              "X001840JV3",
+              "IXIFBB］トートバック（40.，グラム）",
+              "新品",
+              "［VIHFBB］ トートバッグ（40.，グラム）"
+            ],
+            "code_texts": [
+              "ae in Cae iO _— (oa ve Ae K WY t Ch. 40 / <> ine >) Ass \\ ; 4 1 1 1 4 0 341 1022 799 105 -1 5 1 1 1 4 1 341 1067 70 60 10.418491 ot 5 1 1 1 4 2 458 1070 37 29 58.819942 we 5 1 1 1 4 3 529 1069 3 3 27.794586 8 5 1 1 1 4 4 598 1063 71 64 8.569422 te 5 1 1 1 4 5 782 1022 215 84 33.340683 Vane 5 1 1 1 4 6 1025 1039 115 54 24.062023 oa 4 1 1 1 5 0 347 1157 1419 122 -1 5 1 1 1 5 1 347 1161 198 105 39.325195 ee 5 1 1 1 5 2 668 1172 155 107 35.049049 A 5 1 1 1 5 3 950 1162 180 65 5.160999 oad",
+              "a ee ee ge ey Ee i f . ee Ky @ , 7 Be “ol fa ‘yo ve 2] A 2 > En nd cadiialal eee ee . \\ Met aa , ° i - : ee OE Al Je ee, bw fogs Pain ON FE Oe ON",
+              "a7 |"
+            ],
+            "ocr_texts": [
+              "X001840JV3",
+              "IXIFBB］トートバック（40.，グラム）",
+              "新品",
+              "［VIHFBB］ トートバッグ（40.，グラム）",
+              "ae in Cae iO _— (oa ve Ae K WY t Ch. 40 / <> ine >) Ass \\ ; 4 1 1 1 4 0 341 1022 799 105 -1 5 1 1 1 4 1 341 1067 70 60 10.418491 ot 5 1 1 1 4 2 458 1070 37 29 58.819942 we 5 1 1 1 4 3 529 1069 3 3 27.794586 8 5 1 1 1 4 4 598 1063 71 64 8.569422 te 5 1 1 1 4 5 782 1022 215 84 33.340683 Vane 5 1 1 1 4 6 1025 1039 115 54 24.062023 oa 4 1 1 1 5 0 347 1157 1419 122 -1 5 1 1 1 5 1 347 1161 198 105 39.325195 ee 5 1 1 1 5 2 668 1172 155 107 35.049049 A 5 1 1 1 5 3 950 1162 180 65 5.160999 oad",
+              "a ee ee ge ey Ee i f . ee Ky @ , 7 Be “ol fa ‘yo ve 2] A 2 > En nd cadiialal eee ee . \\ Met aa , ° i - : ee OE Al Je ee, bw fogs Pain ON FE Oe ON"
+            ],
+            "candidate_query": "X001840JV3 IXIFBB］トートバック（40.，グラム） 新品 ［VIHFBB］ トートバッグ（40.，グラム）",
+            "review_flag": "",
+            "ocr_engine": "sauna_tesseract_multistage + vision",
+            "ocr_debug_paths": [
+              "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0063/IMG_4973_CODE_ocr_best.png"
+            ]
+          },
+          "priority_score": 110,
+          "next_action": "本体表示とコードラベルを突合",
+          "barcode_kind": "amazon_internal",
+          "review_flag": "本体表示とコードラベルの不一致疑い",
+          "resolved": {
+            "management_id": "BOX-001-ITEM-0063",
+            "raw_id": "RAW-BOX-001-063",
+            "product_id": "PRD-BOX-001-063",
+            "draft_id": "DRF-BOX-001-063",
+            "research_id": "RES-BOX-001-063",
+            "split_temporary_id": "SPLIT-BOX-001-0048-VIHFBB",
+            "split_source_slots": [
+              "BOX-001-ITEM-0049:FRONT",
+              "BOX-001-ITEM-0048:BACK",
+              "BOX-001-ITEM-0048:CODE"
+            ],
+            "verified_exact_match": false,
+            "official_image_state": "actual-only固定 / 比較画像なし",
+            "note": "SPLIT-BOX-001-0048-VIHFBB は、0049:FRONT と 0048:BACK/CODE の3枚で X00184OJV3 / [VIHFBB] トートバッグの写真セットを組み直し済み。実画像では花柄トートバッグとして扱えるが、公開名は actual-only の generic wording に留める。ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+            "image_source": "actual-only",
+            "exact_match_guard_state": "clear",
+            "official_page_url": "",
+            "official_image_url": "",
+            "official_image_local": "",
+            "supplemental_url": "",
+            "supplemental_image_urls": [],
+            "supplemental_image_locals": [],
+            "resolution_status": "provisional",
+            "product_name": "VIHFBB 花柄トートバッグ",
+            "barcode_primary": "X00184OJV3",
+            "product_code_type": "amazon_internal",
+            "evidence": [
+              "X00184OJV3",
+              "VIHFBB",
+              "トートバッグ",
+              "花柄",
+              "0049:FRONT + 0048:BACK + 0048:CODE"
+            ],
+            "brand_override": "VIHFBB",
+            "category_override": "ファッション > レディース > バッグ > トートバッグ",
+            "check_items_override": "花柄 / 持ち手 / サイズ / 開口部 / 汚れ確認"
+          },
+          "official": {
+            "management_id": "BOX-001-ITEM-0063",
+            "raw_id": "RAW-BOX-001-063",
+            "product_id": "PRD-BOX-001-063",
+            "draft_id": "DRF-BOX-001-063",
+            "research_id": "RES-BOX-001-063",
+            "split_temporary_id": "SPLIT-BOX-001-0048-VIHFBB",
+            "split_source_slots": [
+              "BOX-001-ITEM-0049:FRONT",
+              "BOX-001-ITEM-0048:BACK",
+              "BOX-001-ITEM-0048:CODE"
+            ],
+            "verified_exact_match": false,
+            "official_image_state": "actual-only固定 / 比較画像なし",
+            "note": "SPLIT-BOX-001-0048-VIHFBB は、0049:FRONT と 0048:BACK/CODE の3枚で X00184OJV3 / [VIHFBB] トートバッグの写真セットを組み直し済み。実画像では花柄トートバッグとして扱えるが、公開名は actual-only の generic wording に留める。ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+            "image_source": "actual-only",
+            "exact_match_guard_state": "clear",
+            "official_page_url": "",
+            "official_image_url": "",
+            "official_image_local": "",
+            "supplemental_url": "",
+            "supplemental_image_urls": [],
+            "supplemental_image_locals": []
+          },
+          "commerce": {
+            "management_id": "BOX-001-ITEM-0063",
+            "raw_id": "RAW-BOX-001-063",
+            "product_id": "PRD-BOX-001-063",
+            "draft_id": "DRF-BOX-001-063",
+            "research_id": "RES-BOX-001-063",
+            "product_name": "VIHFBB 花柄トートバッグ",
+            "brand": "VIHFBB",
+            "category": "ファッション > レディース > バッグ > トートバッグ",
+            "barcode_primary": "X00184OJV3",
+            "product_code_type": "amazon_internal",
+            "listing_title": "VIHFBB 花柄トートバッグ",
+            "listing_price": "",
+            "market_floor_price": "",
+            "market_floor_state": "未調査",
+            "market_source_label": "",
+            "market_source_url": "",
+            "market_checked_at": "",
+            "market_note": "",
+            "publish_state": "下書き準備中",
+            "publish_detail": "",
+            "listing_id": "",
+            "public_listing_url": "",
+            "csv_status": "",
+            "updated_at": "2026-04-22 01:09:44 JST"
+          },
+          "comparison_images": [],
+          "reference_images": [],
+          "verified_exact_match": false,
+          "official_image_state": "actual-only固定 / 比較画像なし",
+          "exact_match_guard_state": "clear",
+          "qwen_hq_review_status": "",
+          "qwen_hq_resolution": "",
+          "qwen_hq_review_note": "",
+          "publish_status": "下書き準備中",
+          "publish_state": "下書き準備中",
+          "public_listing_url": "",
+          "listing_id": "",
+          "comparison_image_ref": "",
+          "reference_image_ref": "",
+          "minimum_price": "",
+          "market_floor_price_label": "未調査",
+          "listing_price": "",
+          "exception": {},
+          "route_plan": {}
+        },
+        {
+          "management_id": "BOX-001-ITEM-0064",
+          "box_id": "BOX-001",
+          "sequence": 64,
+          "status": "complete",
+          "missing_slots": [],
+          "slot_count": 3,
+          "slots": [
+            {
+              "slot": "FRONT",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4944.HEIC",
+              "source_name": "IMG_4944.HEIC",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0064/01_FRONT_IMG_4944.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0064/01_FRONT_IMG_4944.jpg",
+              "resident_url": "./assets/intake/BOX-001-ITEM-0064/01_FRONT_IMG_4944.jpg",
+              "rebundled_from": "BOX-001-ITEM-0040:FRONT"
+            },
+            {
+              "slot": "BACK",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4942.HEIC",
+              "source_name": "IMG_4942.HEIC",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0064/02_BACK_IMG_4942.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0064/02_BACK_IMG_4942.jpg",
+              "resident_url": "./assets/intake/BOX-001-ITEM-0064/02_BACK_IMG_4942.jpg",
+              "rebundled_from": "BOX-001-ITEM-0039:BACK"
+            },
+            {
+              "slot": "CODE",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4943.HEIC",
+              "source_name": "IMG_4943.HEIC",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0064/03_CODE_IMG_4943.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0064/03_CODE_IMG_4943.jpg",
+              "resident_url": "./assets/intake/BOX-001-ITEM-0064/03_CODE_IMG_4943.jpg",
+              "rebundled_from": "BOX-001-ITEM-0039:CODE"
+            }
+          ],
+          "shared_sheet_title_value": "BOX-001-ITEM-0064",
+          "shared_sheet_note": "SPLIT-BOX-001-0039-PENDANT からローカル写真セットを作成",
+          "photo_grouping": "split_child_mint",
+          "grouping_warning": "",
+          "product_name": "fivihoc レディースペンダント ゴールド系 582",
+          "display_name": "fivihoc レディースペンダント ゴールド系 582",
+          "split_child_label": "fivihoc レディースペンダント ゴールド系 582",
+          "split_temporary_id": "SPLIT-BOX-001-0039-PENDANT",
+          "split_source_slots": [
+            "BOX-001-ITEM-0040:FRONT",
+            "BOX-001-ITEM-0039:BACK",
+            "BOX-001-ITEM-0039:CODE"
+          ],
+          "split_status": "manifest_child_minted_local_only",
+          "box_label": "数字箱 001",
+          "box_lane": "numeric",
+          "box_code": "001",
+          "identification": {
+            "state": "バーコード候補あり",
+            "barcode_values": [
+              "X0010634F1"
+            ],
+            "front_back_texts": [
+              "X0010634F1",
+              "fiwihoc®",
+              "レディース..ダント（ゴールド/582）",
+              "新品",
+              "fivihoc@",
+              "レディース．ダント（ゴールド1682）"
+            ],
+            "code_texts": [
+              "ene ( - >>",
+              "\\ oe ‘ ~ ~ \\ S X 5 1 1 1 3 4 1740 1331 5 3 81.738129 - 4 1 1 1 4 0 435 1357 9 16 -1 5 1 1 1 4 1 435 1357 9 16 53.217667 x"
+            ],
+            "ocr_texts": [
+              "X0010634F1",
+              "fiwihoc®",
+              "レディース..ダント（ゴールド/582）",
+              "新品",
+              "fivihoc@",
+              "レディース．ダント（ゴールド1682）"
+            ],
+            "candidate_query": "X0010634F1 fiwihoc® レディース..ダント（ゴールド/582） 新品",
+            "review_flag": "",
+            "ocr_engine": "sauna_tesseract_multistage + vision",
+            "ocr_debug_paths": [
+              "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0064/IMG_4943_CODE_ocr_best.png"
+            ]
+          },
+          "priority_score": 150,
+          "next_action": "Amazon内部コードとOCRで商品特定",
+          "barcode_kind": "amazon_internal",
+          "review_flag": "",
+          "resolved": {
+            "management_id": "BOX-001-ITEM-0064",
+            "raw_id": "RAW-BOX-001-064",
+            "product_id": "PRD-BOX-001-064",
+            "draft_id": "DRF-BOX-001-064",
+            "research_id": "RES-BOX-001-064",
+            "split_temporary_id": "SPLIT-BOX-001-0039-PENDANT",
+            "split_source_slots": [
+              "BOX-001-ITEM-0040:FRONT",
+              "BOX-001-ITEM-0039:BACK",
+              "BOX-001-ITEM-0039:CODE"
+            ],
+            "verified_exact_match": false,
+            "official_image_state": "actual-only固定 / 比較画像なし",
+            "note": "SPLIT-BOX-001-0039-PENDANT は、0040:FRONT と 0039:BACK/CODE の3枚で X0010634F1 / fivihoc レディースペンダント（ゴールド/582）の写真セットを組み直し済み。出品画像は実物のみで扱い、ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+            "image_source": "actual-only",
+            "exact_match_guard_state": "clear",
+            "official_page_url": "",
+            "official_image_url": "",
+            "official_image_local": "",
+            "supplemental_url": "",
+            "supplemental_image_urls": [],
+            "supplemental_image_locals": [],
+            "resolution_status": "provisional",
+            "product_name": "fivihoc レディースペンダント ゴールド系 582",
+            "barcode_primary": "X0010634F1",
+            "product_code_type": "amazon_internal",
+            "evidence": [
+              "X0010634F1",
+              "fivihoc",
+              "レディースペンダント",
+              "ゴールド",
+              "582",
+              "0040:FRONT + 0039:BACK + 0039:CODE"
+            ],
+            "brand_override": "fivihoc",
+            "category_override": "ファッション > レディース > アクセサリー > ネックレス",
+            "price_override": 1980,
+            "check_items_override": "石色 / チェーン状態 / 金属色 / 留め具 / 582表記"
+          },
+          "official": {
+            "management_id": "BOX-001-ITEM-0064",
+            "raw_id": "RAW-BOX-001-064",
+            "product_id": "PRD-BOX-001-064",
+            "draft_id": "DRF-BOX-001-064",
+            "research_id": "RES-BOX-001-064",
+            "split_temporary_id": "SPLIT-BOX-001-0039-PENDANT",
+            "split_source_slots": [
+              "BOX-001-ITEM-0040:FRONT",
+              "BOX-001-ITEM-0039:BACK",
+              "BOX-001-ITEM-0039:CODE"
+            ],
+            "verified_exact_match": false,
+            "official_image_state": "actual-only固定 / 比較画像なし",
+            "note": "SPLIT-BOX-001-0039-PENDANT は、0040:FRONT と 0039:BACK/CODE の3枚で X0010634F1 / fivihoc レディースペンダント（ゴールド/582）の写真セットを組み直し済み。出品画像は実物のみで扱い、ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+            "image_source": "actual-only",
+            "exact_match_guard_state": "clear",
+            "official_page_url": "",
+            "official_image_url": "",
+            "official_image_local": "",
+            "supplemental_url": "",
+            "supplemental_image_urls": [],
+            "supplemental_image_locals": []
+          },
+          "commerce": {
+            "management_id": "BOX-001-ITEM-0064",
+            "raw_id": "RAW-BOX-001-064",
+            "product_id": "PRD-BOX-001-064",
+            "draft_id": "DRF-BOX-001-064",
+            "research_id": "RES-BOX-001-064",
+            "product_name": "fivihoc レディースペンダント ゴールド系 582",
+            "brand": "fivihoc",
+            "category": "ファッション > レディース > アクセサリー > ネックレス",
+            "barcode_primary": "X0010634F1",
+            "product_code_type": "amazon_internal",
+            "listing_title": "fivihoc レディースペンダント ゴールド系 582",
+            "listing_price": "1980",
+            "market_floor_price": "",
+            "market_floor_state": "未調査",
+            "market_source_label": "",
+            "market_source_url": "",
+            "market_checked_at": "",
+            "market_note": "",
+            "publish_state": "下書き準備中",
+            "publish_detail": "",
+            "listing_id": "",
+            "public_listing_url": "",
+            "csv_status": "",
+            "updated_at": "2026-04-22 01:09:44 JST"
+          },
+          "comparison_images": [],
+          "reference_images": [],
+          "verified_exact_match": false,
+          "official_image_state": "actual-only固定 / 比較画像なし",
+          "exact_match_guard_state": "clear",
+          "qwen_hq_review_status": "",
+          "qwen_hq_resolution": "",
+          "qwen_hq_review_note": "",
+          "publish_status": "下書き準備中",
+          "publish_state": "下書き準備中",
+          "public_listing_url": "",
+          "listing_id": "",
+          "comparison_image_ref": "",
+          "reference_image_ref": "",
+          "minimum_price": "",
+          "market_floor_price_label": "未調査",
+          "listing_price": "1980",
+          "exception": {},
+          "route_plan": {}
+        },
+        {
+          "management_id": "BOX-001-ITEM-0065",
+          "box_id": "BOX-001",
+          "sequence": 65,
+          "status": "complete",
+          "missing_slots": [],
+          "slot_count": 3,
+          "slots": [
+            {
+              "slot": "FRONT",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4954.HEIC",
+              "source_name": "IMG_4954.HEIC",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0065/01_FRONT_IMG_4954.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0065/01_FRONT_IMG_4954.jpg",
+              "resident_url": "./assets/intake/BOX-001-ITEM-0065/01_FRONT_IMG_4954.jpg",
+              "rebundled_from": "BOX-001-ITEM-0043:FRONT"
+            },
+            {
+              "slot": "BACK",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4951.HEIC",
+              "source_name": "IMG_4951.HEIC",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0065/02_BACK_IMG_4951.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0065/02_BACK_IMG_4951.jpg",
+              "resident_url": "./assets/intake/BOX-001-ITEM-0065/02_BACK_IMG_4951.jpg",
+              "rebundled_from": "BOX-001-ITEM-0042:BACK"
+            },
+            {
+              "slot": "CODE",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4953.HEIC",
+              "source_name": "IMG_4953.HEIC",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0065/03_CODE_IMG_4953.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0065/03_CODE_IMG_4953.jpg",
+              "resident_url": "./assets/intake/BOX-001-ITEM-0065/03_CODE_IMG_4953.jpg",
+              "rebundled_from": "BOX-001-ITEM-0042:CODE"
+            }
+          ],
+          "shared_sheet_title_value": "BOX-001-ITEM-0065",
+          "shared_sheet_note": "SPLIT-BOX-001-0042-NEEDLY からローカル写真セットを作成",
+          "photo_grouping": "split_child_mint",
+          "grouping_warning": "",
+          "product_name": "NEEDLY Sleeping Lip Mask 10ml",
+          "display_name": "NEEDLY Sleeping Lip Mask 10ml",
+          "split_child_label": "NEEDLY Sleeping Lip Mask 10ml",
+          "split_temporary_id": "SPLIT-BOX-001-0042-NEEDLY",
+          "split_source_slots": [
+            "BOX-001-ITEM-0043:FRONT",
+            "BOX-001-ITEM-0042:BACK",
+            "BOX-001-ITEM-0042:CODE"
+          ],
+          "split_status": "manifest_child_minted_local_only",
+          "box_label": "数字箱 001",
+          "box_lane": "numeric",
+          "box_code": "001",
+          "identification": {
+            "state": "バーコード候補あり",
+            "barcode_values": [
+              "X001B1RSSJ"
+            ],
+            "front_back_texts": [
+              "［g当］",
+              "255z",
+              "YJAE EXP 20270909m71",
+              "NEEDLY SLEEPING LIP MASK",
+              "［販売名】スリービングリップマスク （リップトリートメント）",
+              "【全成分】水晶ポリインプテン、トリ（カブリル／カプリン酸）グリセリル、フィトステロールズポリリンノレイン酸ポリグリセ"
+            ],
+            "code_texts": [
+              "NEEDLY",
+              "Sleeping lip mask",
+              "Picky. Sate.",
+              "Feel the Difference.",
+              "10m1/0.33日1.02、",
+              "[QPITTA y 7 8 ih, / (fT Uf th fee y ; 3 ON Me) ie ih } a {Oo ie ; Z ; , owe = Ha f / if BEG £# Ze Ej ii 4 {© Sf STL Y aie 8 2 uN / Me dels Lo iy is i ‘ et P LEA [4 Lily SM IP B fn a iif ; hyt Sd if ; a. 4 ] 4 aN f 5 LBP ei"
+            ],
+            "ocr_texts": [
+              "［g当］",
+              "255z",
+              "YJAE EXP 20270909m71",
+              "NEEDLY SLEEPING LIP MASK",
+              "［販売名】スリービングリップマスク （リップトリートメント）",
+              "【全成分】水晶ポリインプテン、トリ（カブリル／カプリン酸）グリセリル、フィトステロールズポリリンノレイン酸ポリグリセ"
+            ],
+            "candidate_query": "［g当］ 255z YJAE EXP 20270909m71 NEEDLY SLEEPING LIP MASK",
+            "review_flag": "",
+            "ocr_engine": "sauna_tesseract_multistage + vision",
+            "ocr_debug_paths": [
+              "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0065/IMG_4953_CODE_ocr_best.png"
+            ]
+          },
+          "priority_score": 150,
+          "next_action": "Amazon内部コードとOCRで商品特定",
+          "barcode_kind": "amazon_internal",
+          "review_flag": "",
+          "resolved": {
+            "management_id": "BOX-001-ITEM-0065",
+            "raw_id": "RAW-BOX-001-065",
+            "product_id": "PRD-BOX-001-065",
+            "draft_id": "DRF-BOX-001-065",
+            "research_id": "RES-BOX-001-065",
+            "split_temporary_id": "SPLIT-BOX-001-0042-NEEDLY",
+            "split_source_slots": [
+              "BOX-001-ITEM-0043:FRONT",
+              "BOX-001-ITEM-0042:BACK",
+              "BOX-001-ITEM-0042:CODE"
+            ],
+            "verified_exact_match": false,
+            "official_image_state": "actual-only固定 / 比較画像なし",
+            "note": "SPLIT-BOX-001-0042-NEEDLY は、0043:FRONT と 0042:BACK/CODE の3枚で X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml の写真セットを組み直し済み。出品画像は実物のみで扱い、ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+            "image_source": "actual-only",
+            "exact_match_guard_state": "clear",
+            "official_page_url": "",
+            "official_image_url": "",
+            "official_image_local": "",
+            "supplemental_url": "",
+            "supplemental_image_urls": [],
+            "supplemental_image_locals": [],
+            "resolution_status": "provisional",
+            "product_name": "NEEDLY Sleeping Lip Mask 10ml",
+            "barcode_primary": "X001B1RSSJ",
+            "product_code_type": "amazon_internal",
+            "evidence": [
+              "X001B1RSSJ",
+              "NEEDLY",
+              "Sleeping Lip Mask",
+              "10ml",
+              "0043:FRONT + 0042:BACK + 0042:CODE"
+            ],
+            "brand_override": "NEEDLY",
+            "category_override": "ビューティー > スキンケア・基礎化粧品 > リップケア",
+            "price_override": 1680,
+            "check_items_override": "未開封 / 使用期限 / 箱つぶれ / 10ml表記 / 衛生状態"
+          },
+          "official": {
+            "management_id": "BOX-001-ITEM-0065",
+            "raw_id": "RAW-BOX-001-065",
+            "product_id": "PRD-BOX-001-065",
+            "draft_id": "DRF-BOX-001-065",
+            "research_id": "RES-BOX-001-065",
+            "split_temporary_id": "SPLIT-BOX-001-0042-NEEDLY",
+            "split_source_slots": [
+              "BOX-001-ITEM-0043:FRONT",
+              "BOX-001-ITEM-0042:BACK",
+              "BOX-001-ITEM-0042:CODE"
+            ],
+            "verified_exact_match": false,
+            "official_image_state": "actual-only固定 / 比較画像なし",
+            "note": "SPLIT-BOX-001-0042-NEEDLY は、0043:FRONT と 0042:BACK/CODE の3枚で X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml の写真セットを組み直し済み。出品画像は実物のみで扱い、ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+            "image_source": "actual-only",
+            "exact_match_guard_state": "clear",
+            "official_page_url": "",
+            "official_image_url": "",
+            "official_image_local": "",
+            "supplemental_url": "",
+            "supplemental_image_urls": [],
+            "supplemental_image_locals": []
+          },
+          "commerce": {
+            "management_id": "BOX-001-ITEM-0065",
+            "raw_id": "RAW-BOX-001-065",
+            "product_id": "PRD-BOX-001-065",
+            "draft_id": "DRF-BOX-001-065",
+            "research_id": "RES-BOX-001-065",
+            "product_name": "NEEDLY Sleeping Lip Mask 10ml",
+            "brand": "NEEDLY",
+            "category": "ビューティー > スキンケア・基礎化粧品 > リップケア",
+            "barcode_primary": "X001B1RSSJ",
+            "product_code_type": "amazon_internal",
+            "listing_title": "NEEDLY Sleeping Lip Mask 10ml",
+            "listing_price": "1680",
+            "market_floor_price": "",
+            "market_floor_state": "未調査",
+            "market_source_label": "",
+            "market_source_url": "",
+            "market_checked_at": "",
+            "market_note": "",
+            "publish_state": "下書き準備中",
+            "publish_detail": "",
+            "listing_id": "",
+            "public_listing_url": "",
+            "csv_status": "",
+            "updated_at": "2026-04-22 01:09:44 JST"
+          },
+          "comparison_images": [],
+          "reference_images": [],
+          "verified_exact_match": false,
+          "official_image_state": "actual-only固定 / 比較画像なし",
+          "exact_match_guard_state": "clear",
+          "qwen_hq_review_status": "",
+          "qwen_hq_resolution": "",
+          "qwen_hq_review_note": "",
+          "publish_status": "下書き準備中",
+          "publish_state": "下書き準備中",
+          "public_listing_url": "",
+          "listing_id": "",
+          "comparison_image_ref": "",
+          "reference_image_ref": "",
+          "minimum_price": "",
+          "market_floor_price_label": "未調査",
+          "listing_price": "1680",
           "exception": {},
           "route_plan": {}
         }

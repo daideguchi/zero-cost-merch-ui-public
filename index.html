@@ -135,12 +135,6 @@
       font-weight: 900;
       line-height: 1.4;
     }
-    .box-modal-note {
-      margin-top: 8px;
-      font-size: 12px;
-      color: var(--text-2);
-      line-height: 1.7;
-    }
     .box-modal-input {
       width: 100%;
       margin-top: 12px;
@@ -201,12 +195,6 @@
       margin-top: 10px;
       font-size: 16px;
       font-weight: 800;
-    }
-    .upload-sub {
-      margin-top: 6px;
-      font-size: 12px;
-      color: var(--text-3);
-      line-height: 1.6;
     }
     .upload-status {
       margin-top: 10px;
@@ -540,423 +528,13 @@
       word-break: break-all;
     }
     .drive-link:hover { text-decoration: underline; }
-    .focus-card {
-      display: grid;
-      gap: 12px;
-      align-content: start;
-    }
-    .focus-eyebrow {
-      font-size: 12px;
-      font-weight: 800;
-      color: var(--accent);
-      letter-spacing: .04em;
-      text-transform: uppercase;
-    }
-    .focus-title {
-      font-size: 24px;
-      font-weight: 900;
-      line-height: 1.2;
-      letter-spacing: -.02em;
-    }
-    .focus-note {
-      font-size: 14px;
-      color: var(--text-2);
-      line-height: 1.7;
-    }
-    .focus-context {
-      padding: 12px 14px;
-      border-radius: var(--radius);
-      border: 1px solid var(--border);
-      background: var(--surface-2);
-      font-size: 13px;
-      color: var(--text-2);
-      line-height: 1.7;
-    }
-    .focus-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-    .meta-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 6px 10px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      background: var(--surface-2);
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--text-2);
-    }
-    .summary-strip {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 8px;
-      margin-bottom: 16px;
-    }
-    .summary-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 14px;
-      box-shadow: 0 1px 2px rgba(15,23,42,.04);
-    }
-    .summary-label {
-      font-size: 11px;
-      font-weight: 700;
-      color: var(--text-3);
-    }
-    .summary-value {
-      margin-top: 8px;
-      font-size: 28px;
-      line-height: 1;
-      font-weight: 900;
-    }
-    .summary-card.green .summary-value { color: var(--green); }
-    .summary-card.blue .summary-value { color: var(--blue); }
-    .summary-card.yellow .summary-value { color: var(--yellow); }
-    .summary-card.orange .summary-value { color: var(--orange); }
-    .summary-card.red .summary-value { color: var(--red); }
-    .summary-card.gray .summary-value { color: var(--text); }
-    .section {
-      margin-bottom: 16px;
-    }
-    .section-headline {
-      margin-bottom: 10px;
-      font-size: 14px;
-      font-weight: 800;
-      color: var(--text);
-    }
-    .tool-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 10px;
-    }
-    .tool-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 16px;
-      display: grid;
-      gap: 12px;
-      transition: border-color .18s, transform .18s;
-      box-shadow: 0 1px 2px rgba(15,23,42,.04);
-    }
-    .tool-card:hover {
-      border-color: var(--accent);
-      transform: translateY(-1px);
-    }
-    .tool-top {
-      display: flex;
-      align-items: start;
-      justify-content: space-between;
-      gap: 10px;
-    }
-    .tool-name {
-      font-size: 15px;
-      font-weight: 800;
-      line-height: 1.4;
-    }
-    .tool-count {
-      font-size: 28px;
-      line-height: 1;
-      font-weight: 900;
-      color: var(--text);
-    }
-    .tool-card.blue .tool-count { color: var(--blue); }
-    .tool-card.green .tool-count { color: var(--green); }
-    .tool-card.orange .tool-count { color: var(--orange); }
-    .tool-card.red .tool-count { color: var(--red); }
-    .tool-note {
-      font-size: 12px;
-      color: var(--text-2);
-      line-height: 1.7;
-    }
-    .tool-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 12px;
-      font-weight: 800;
-      color: var(--accent);
-      text-decoration: none;
-    }
-    .tool-link:hover { text-decoration: underline; }
-    .alert-list {
-      display: grid;
-      gap: 8px;
-    }
-    .alert-card {
-      display: grid;
-      grid-template-columns: auto minmax(0, 1fr) auto;
-      gap: 12px;
-      align-items: start;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 14px;
-      box-shadow: 0 1px 2px rgba(15,23,42,.04);
-    }
-    .alert-dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      margin-top: 6px;
-      background: var(--text-3);
-    }
-    .alert-card.red .alert-dot { background: var(--red); }
-    .alert-card.orange .alert-dot { background: var(--orange); }
-    .alert-card.yellow .alert-dot { background: var(--yellow); }
-    .alert-card.blue .alert-dot { background: var(--blue); }
-    .alert-card.gray .alert-dot { background: var(--text-3); }
-    .alert-id {
-      font-size: 11px;
-      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-      font-weight: 700;
-      color: var(--accent);
-    }
-    .alert-name {
-      margin-top: 3px;
-      font-size: 14px;
-      font-weight: 800;
-      line-height: 1.45;
-    }
-    .alert-note {
-      margin-top: 5px;
-      font-size: 12px;
-      color: var(--text-2);
-      line-height: 1.7;
-    }
-    .alert-link {
-      display: inline-flex;
-      align-items: center;
-      white-space: nowrap;
-      font-size: 12px;
-      font-weight: 800;
-      color: var(--accent);
-      text-decoration: none;
-    }
-    .alert-link:hover { text-decoration: underline; }
-    .empty-copy {
-      padding: 14px;
-      border-radius: var(--radius);
-      border: 1px solid var(--border);
-      background: var(--surface);
-      font-size: 12px;
-      color: var(--text-3);
-    }
-    .channel-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 10px;
-    }
-    .channel-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 16px;
-      display: grid;
-      gap: 10px;
-      box-shadow: 0 1px 2px rgba(15,23,42,.04);
-    }
-    .channel-card.green  { border-color: rgba(21,128,61,.3); }
-    .channel-card.blue   { border-color: rgba(29,78,216,.3); }
-    .channel-card.orange { border-color: rgba(180,83,9,.3); }
-    .channel-card.yellow { border-color: rgba(146,64,14,.3); }
-    .channel-card.red    { border-color: rgba(185,28,28,.3); }
-    .channel-head {
-      display: flex;
-      align-items: start;
-      justify-content: space-between;
-      gap: 8px;
-    }
-    .channel-name {
-      font-size: 15px;
-      font-weight: 800;
-      line-height: 1.4;
-    }
-    .channel-stats {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(72px, 1fr));
-      gap: 6px;
-    }
-    .channel-stat {
-      padding: 8px 6px;
-      border-radius: 10px;
-      background: var(--surface-2);
-      text-align: center;
-    }
-    .channel-stat-label {
-      font-size: 9px;
-      font-weight: 700;
-      color: var(--text-3);
-    }
-    .channel-stat-value {
-      margin-top: 4px;
-      font-size: 15px;
-      font-weight: 900;
-      color: var(--text);
-    }
-    .channel-note,
-    .channel-plan,
-    .channel-next {
-      font-size: 12px;
-      color: var(--text-2);
-      line-height: 1.7;
-    }
-    .channel-plan {
-      font-weight: 800;
-      color: var(--text);
-    }
-    details.context {
-      margin-bottom: 16px;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      background: var(--surface);
-      overflow: hidden;
-      box-shadow: 0 1px 2px rgba(15,23,42,.04);
-    }
-    details.context > summary {
-      list-style: none;
-      cursor: pointer;
-      padding: 16px 18px;
-      font-size: 13px;
-      font-weight: 800;
-      color: var(--text);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    details.context > summary::-webkit-details-marker { display: none; }
-    .context-arrow {
-      color: var(--accent);
-      transition: transform .16s ease;
-    }
-    details.context[open] .context-arrow { transform: rotate(90deg); }
-    .detail-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 12px;
-      padding: 0 18px 18px;
-    }
-    .detail-card {
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      background: var(--surface-2);
-      padding: 14px;
-    }
-    .detail-title {
-      font-size: 12px;
-      font-weight: 800;
-      color: var(--text-2);
-      margin-bottom: 10px;
-    }
-    .milestone-list,
-    .action-list {
-      display: grid;
-      gap: 8px;
-    }
-    .milestone-item,
-    .action-item {
-      padding: 10px 12px;
-      border-radius: 10px;
-      border: 1px solid var(--border);
-      background: var(--surface);
-      font-size: 12px;
-      color: var(--text-2);
-      line-height: 1.6;
-    }
-    .milestone-name {
-      font-weight: 800;
-      color: var(--text);
-    }
-    .milestone-progress {
-      margin-top: 5px;
-      font-size: 11px;
-      color: var(--text-3);
-    }
-    .hq-footer {
-      margin: 0 24px 24px;
-      font-size: 11px;
-      color: var(--text-3);
-      text-align: center;
-    }
-    .hq-footer code {
-      cursor: pointer;
-      color: var(--accent);
-    }
-    /* ── 8-step pipeline strip ── */
-    .flow-strip {
-      display: flex;
-      align-items: center;
-      gap: 0;
-      margin-bottom: 14px;
-      padding: 11px 16px;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      box-shadow: 0 1px 2px rgba(15,23,42,.04);
-      overflow-x: auto;
-      scrollbar-width: none;
-    }
-    .flow-strip::-webkit-scrollbar { display: none; }
-    .pipe-step {
-      display: inline-flex;
-      align-items: center;
-      padding: 4px 10px;
-      border-radius: 999px;
-      font-size: 11px;
-      font-weight: 800;
-      color: var(--text-3);
-      white-space: nowrap;
-      flex-shrink: 0;
-      border: 1px solid transparent;
-      letter-spacing: .01em;
-    }
-    .pipe-step.done { color: var(--green); }
-    .pipe-step.current {
-      background: rgba(37,99,235,.09);
-      color: var(--accent);
-      border-color: rgba(37,99,235,.22);
-    }
-    .pipe-step.alert {
-      background: rgba(185,28,28,.07);
-      color: var(--red);
-      border-color: rgba(185,28,28,.22);
-    }
-    .pipe-arr {
-      flex-shrink: 0;
-      color: var(--border);
-      font-size: 11px;
-      padding: 0 1px;
-      user-select: none;
-    }
     @media (max-width: 920px) {
-      .hero,
-      .detail-grid {
-        grid-template-columns: 1fr;
-      }
+      .hero { grid-template-columns: 1fr; }
     }
     @media (max-width: 640px) {
-      .upload-title,
-      .focus-title {
-        font-size: 22px;
-      }
-      .summary-strip,
-      .tool-grid,
-      .channel-grid,
+      .upload-title { font-size: 22px; }
       .box-grid {
         grid-template-columns: 1fr;
-      }
-      .alert-card {
-        grid-template-columns: auto minmax(0, 1fr);
-      }
-      .alert-link {
-        grid-column: 2;
-      }
-      .channel-stats {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
   </style>
@@ -1010,14 +588,14 @@
             <div class="drive-badge">1日1回確認</div>
           </div>
           <div class="drive-note">
-            1. <strong>相手に送るリンクをコピー</strong> を押します。 2. そのまま相手に送ります。 3. 相手は開いた共有フォルダへ <strong>撮影順のまま</strong> 写真を入れるだけです。
+            1. 箱を選ぶと共有リンクは <strong>こちらで自動用意</strong> します。 2. <strong>相手に送るリンクをコピー</strong> を押してそのまま相手に送ります。 3. 相手は開いた共有フォルダへ <strong>撮影順のまま</strong> 写真を入れるだけです。
             フォルダ追加は不要です。Acer 側で <strong>時系列順 + バーコード写真を区切り</strong> にまとめます。通常確認は <strong>1日1回</strong>、急ぐ時だけ「今すぐ共有フォルダ確認」を使います。
           </div>
           <div class="drive-actions">
             <button id="drive-share-btn" class="action-link" type="button">相手に送るリンクをコピー</button>
             <button id="drive-sync-btn" class="action-link primary" type="button">今すぐ共有フォルダ確認</button>
           </div>
-          <div id="drive-status" class="drive-status">箱を選ぶと、相手に送る共有リンクをこちらで用意できます。相手は開いた共有フォルダへ写真を入れるだけです。</div>
+          <div id="drive-status" class="drive-status">箱を選ぶと、相手に送る共有リンクをこちらで自動用意します。相手は開いた共有フォルダへ写真を入れるだけです。</div>
           <a id="drive-link" class="drive-link" href="#" target="_blank" rel="noreferrer noopener" hidden>共有フォルダを開く</a>
         </div>
       </div>
@@ -1045,7 +623,6 @@
       + encodeURIComponent(new URLSearchParams(window.location.search).get('fresh') || String(Date.now()))
       + '"><\\/script>');
   </script>
-  <script src="./milestone_snapshot.js"></script>
   <script src="./api_config.js"></script>
   <script src="./common.js"></script>
   <script>
@@ -1081,6 +658,7 @@
     var barcodeDetectionPending = false;
     var isUploading = false;
     var isDriveBusy = false;
+    var isRegisteringBox = false;
     var driveStatusPollTimer = 0;
     var driveStatusRequestId = 0;
     var failureRequestId = 0;
@@ -1100,11 +678,6 @@
 
     function padSequence(value){
       return String(Math.max(0, num(value))).padStart(4, '0');
-    }
-
-    function basename(path){
-      var parts = String(path || '').split('/').filter(Boolean);
-      return parts.length ? parts[parts.length - 1] : '';
     }
 
     function parseBoxNumber(boxId) {
@@ -1235,30 +808,49 @@
       } catch (_) {}
     }
 
-    function toneClass(value){
-      return ['green', 'blue', 'yellow', 'orange', 'red', 'gray', 'purple'].indexOf(value) >= 0 ? value : 'gray';
+    function upsertBoxOption(box) {
+      var replaced = false;
+      boxOptions = boxOptions.map(function(existing) {
+        if (existing.id !== box.id) return existing;
+        replaced = true;
+        return box;
+      });
+      if (!replaced) boxOptions.push(box);
+      saveCustomBoxes(boxOptions.filter(function(entry) { return entry.isDraft; }));
     }
 
-    function chipClass(tone){
-      return {
-        green: 'b-green',
-        blue: 'b-blue',
-        yellow: 'b-yellow',
-        orange: 'b-orange',
-        purple: 'b-purple',
-        red: 'b-red'
-      }[toneClass(tone)] || 'b-gray';
-    }
-
-    function firstNonEmpty() {
-      for (var i = 0; i < arguments.length; i += 1) {
-        if (arguments[i]) return arguments[i];
+    function replaceBoxOptionsFromSnapshot(snapshot, preferredBoxId) {
+      if (!snapshot || typeof snapshot !== 'object') return;
+      I = snapshot;
+      window.ZERO_COST_INTAKE = I;
+      boxOptions = buildBoxOptions();
+      saveCustomBoxes(boxOptions.filter(function(box) { return box.isDraft; }));
+      if (preferredBoxId && boxOptions.some(function(box) { return box.id === preferredBoxId; })) {
+        selectedBoxId = preferredBoxId;
+        return;
       }
-      return '';
+      if (!boxOptions.some(function(box) { return box.id === selectedBoxId; })) {
+        selectedBoxId = (boxOptions[0] && boxOptions[0].id) || '';
+      }
     }
 
-    function slotOrderText(order){
-      return (order || []).length ? order.join(' → ') : 'FRONT → BACK → CODE';
+    function rememberSelectedBox(boxId) {
+      selectedBoxId = boxId || '';
+      if (window.zeroCostSetBoxId) {
+        window.zeroCostSetBoxId(selectedBoxId, { updateUrl: true });
+        return;
+      }
+      try {
+        if (window.localStorage && selectedBoxId) window.localStorage.setItem('zeroCostSelectedBox', selectedBoxId);
+      } catch (_) {}
+    }
+
+    function setBoxModalBusyState(busy) {
+      boxCreateBtn.disabled = busy;
+      boxModalLane.disabled = busy;
+      boxModalInput.disabled = busy;
+      boxModalConfirm.disabled = busy;
+      boxModalCancel.disabled = busy;
     }
 
     function maxSequence(items) {
@@ -1266,49 +858,6 @@
         var current = num(item && item.sequence);
         return current > maxValue ? current : maxValue;
       }, 0);
-    }
-
-    function flowSummaryText() {
-      return '流れ: ロットを選ぶ → 箱を選ぶ → 写真を取り込む → AIがOCRで特定 → AIが画像を集める → 出品 → 売れたら集荷';
-    }
-
-    function renderPipeline() {
-      var strip = document.getElementById('flow-strip');
-      if (!strip) return;
-      var metrics = S.metrics || {};
-      var shipping = S.shipping_guard || {};
-      var routing = S.routing || {};
-      var totalItems = num(metrics.total_items) || (I.items || []).length;
-      var researchPending = num(metrics.research_pending);
-      var draftPending = num(metrics.draft_pending);
-      var mercariLive = num(routing.mercari_live);
-      var shippingErrors = num(shipping.errors);
-      var hasItems = totalItems > 0;
-      function cls(done, current, isAlert) {
-        if (isAlert) return 'alert';
-        if (done) return 'done';
-        if (current) return 'current';
-        return '';
-      }
-      var steps = [
-        { n: '①', label: 'ロット選択',  c: cls(hasItems, !hasItems, false) },
-        { n: '②', label: '箱を選ぶ',    c: cls(hasItems, !hasItems, false) },
-        { n: '③', label: '写真を入れる', c: cls(hasItems, !hasItems, false) },
-        { n: '④', label: 'AI識別',       c: cls(!researchPending && hasItems, researchPending > 0, false) },
-        { n: '⑤', label: '公式画像取得', c: cls(!researchPending && hasItems, researchPending > 0, false) },
-        { n: '⑥', label: '出品',         c: cls(!draftPending && mercariLive > 0, draftPending > 0, false) },
-        { n: '⑦', label: '売れる',       c: cls(mercariLive > 0, false, false) },
-        { n: '⑧', label: '発送',         c: cls(false, false, shippingErrors > 0) }
-      ];
-      strip.innerHTML = steps.map(function(step, i) {
-        return (i > 0 ? '<span class="pipe-arr">›</span>' : '')
-          + '<span class="pipe-step ' + step.c + '">' + esc(step.n) + ' ' + esc(step.label) + '</span>';
-      }).join('');
-    }
-
-    // kept for compatibility; pipeline is now shown in the top strip
-    function renderFlow(box) {
-      renderPipeline();
     }
 
     function boxOptionFromSnapshot(raw, fallbackSlotOrder, fallbackSlotsPerItem) {
@@ -1459,15 +1008,6 @@
       link.setAttribute('aria-disabled', enabled ? 'false' : 'true');
     }
 
-    function currentBoxLink(href) {
-      var box = currentBox();
-      var boxId = (box && box.id) || selectedBoxId || '';
-      if (window.zeroCostLinkWithBox) return window.zeroCostLinkWithBox(href, boxId);
-      if (!boxId) return href;
-      var glue = href.indexOf('?') === -1 ? '?' : '&';
-      return href + glue + 'box=' + encodeURIComponent(boxId);
-    }
-
     function updateActionLinks(box) {
       var query = box && box.id ? ('?box=' + encodeURIComponent(box.id)) : '';
       var enabled = Boolean(box && box.hasSnapshot);
@@ -1481,6 +1021,8 @@
       if (!box) {
         boxSelect.innerHTML = '<option value="">箱情報がありません</option>';
         boxSelect.disabled = true;
+        boxCreateBtn.disabled = isRegisteringBox;
+        setBoxModalBusyState(isRegisteringBox);
         boxNext.textContent = '箱が未設定です';
         boxGrid.innerHTML = '';
         uploadMain.textContent = '写真を選ぶ';
@@ -1493,12 +1035,10 @@
         setDriveLink('');
         return;
       }
-      selectedBoxId = box.id;
-      if (window.zeroCostSetBoxId) {
-        window.zeroCostSetBoxId(box.id, { updateUrl: true });
-      }
-
-      boxSelect.disabled = false;
+      rememberSelectedBox(box.id);
+      boxSelect.disabled = isRegisteringBox;
+      boxCreateBtn.disabled = isRegisteringBox;
+      setBoxModalBusyState(isRegisteringBox);
       boxSelect.innerHTML = boxOptions.map(function(option) {
         return '<option value="' + esc(option.id) + '"' + (option.id === box.id ? ' selected' : '') + '>'
           + esc(option.laneLabel + ' / ' + option.label)
@@ -1515,11 +1055,16 @@
       statusEl.textContent = box.laneLabel + ' / ' + box.label + ' / 次 No.' + padSequence(box.nextSequence);
       statusEl.style.color = 'var(--text-2)';
       updateActionLinks(box);
-      driveShareBtn.disabled = isUploading || isDriveBusy;
-      driveSyncBtn.disabled = isUploading || isDriveBusy;
+      driveShareBtn.disabled = isUploading || isDriveBusy || isRegisteringBox;
+      driveSyncBtn.disabled = isUploading || isDriveBusy || isRegisteringBox;
       setDriveLink(storedDriveLink(box.id));
       setDriveStatus(box.label + ' の共有リンクはこちらで用意します。ボタンを押すと相手に送るリンクをコピーできます。', '');
-      refreshDriveAutoStatus({ silent: true });
+      refreshDriveAutoStatus({ silent: true }).then(function(status) {
+        if (currentBox() && currentBox().id === box.id) {
+          ensureDriveShareLink(box, { silent: true, copy: false, force: !status });
+        }
+        return status;
+      });
       if (selectedFiles.length) {
         renderSelectedFiles(selectedFiles, box);
       } else {
@@ -1548,14 +1093,17 @@
     }
 
     function openBoxModal() {
+      if (isRegisteringBox) return;
       boxModal.hidden = false;
       boxModalLane.value = normalizeBoxLane((currentBox() && currentBox().lane) || I.box_lane);
       boxModalInput.value = '';
       updateBoxModalForm();
+      setBoxModalBusyState(false);
       boxModalInput.focus();
     }
 
     function closeBoxModal() {
+      if (isRegisteringBox) return;
       boxModal.hidden = true;
     }
 
@@ -1593,18 +1141,45 @@
         hasSnapshot: false,
         isDraft: true
       };
-      boxOptions.push(newBox);
-      saveCustomBoxes(boxOptions.filter(function(box) { return box.isDraft; }));
-      selectedBoxId = newBox.id;
-      if (window.zeroCostSetBoxId) window.zeroCostSetBoxId(selectedBoxId, { updateUrl: true });
-      else {
-        try {
-          if (window.localStorage && selectedBoxId) window.localStorage.setItem('zeroCostSelectedBox', selectedBoxId);
-        } catch (_) {}
-      }
-      closeBoxModal();
-      renderBoxPanel();
-      statusEl.textContent = label + ' を作りました。';
+      isRegisteringBox = true;
+      setBoxModalBusyState(true);
+      setUploadButtonState();
+      statusEl.textContent = label + ' を backend に登録しています。';
+      statusEl.style.color = 'var(--text-2)';
+      postJson(registerBoxApiUrl(), boxPayload(newBox))
+        .then(function() {
+          return fetchIntakeSnapshot().catch(function() { return null; });
+        })
+        .then(function(snapshot) {
+          if (snapshot) {
+            replaceBoxOptionsFromSnapshot(snapshot, newBox.id);
+          } else {
+            upsertBoxOption(Object.assign({}, newBox, { hasSnapshot: true, isDraft: false }));
+            selectedBoxId = newBox.id;
+          }
+          rememberSelectedBox(newBox.id);
+          boxModal.hidden = true;
+          renderBoxPanel();
+          refreshFailureBatches();
+          statusEl.textContent = label + ' を作りました。';
+          statusEl.style.color = 'var(--text-2)';
+        })
+        .catch(function(error) {
+          upsertBoxOption(newBox);
+          rememberSelectedBox(newBox.id);
+          boxModal.hidden = true;
+          renderBoxPanel();
+          refreshFailureBatches();
+          statusEl.textContent = label + ' はこの端末だけの仮箱です。backend にはまだ保存できていません。'
+            + (error && error.message ? ' ' + error.message : '');
+          statusEl.style.color = 'var(--orange)';
+        })
+        .finally(function() {
+          isRegisteringBox = false;
+          setBoxModalBusyState(false);
+          boxSelect.disabled = !currentBox();
+          setUploadButtonState();
+        });
     }
 
     function filenameMarksBarcode(name) {
@@ -1716,9 +1291,9 @@
       uploadSubmit.hidden = !hasPending;
       intakeLink.hidden = hasPending;
       opsLink.hidden = hasPending;
-      uploadSubmit.disabled = isUploading || barcodeDetectionPending || !hasPending || !box;
-      driveShareBtn.disabled = isUploading || isDriveBusy || !box;
-      driveSyncBtn.disabled = isUploading || isDriveBusy || !box;
+      uploadSubmit.disabled = isUploading || isRegisteringBox || barcodeDetectionPending || !hasPending || !box;
+      driveShareBtn.disabled = isUploading || isDriveBusy || isRegisteringBox || !box;
+      driveSyncBtn.disabled = isUploading || isDriveBusy || isRegisteringBox || !box;
       if (!isUploading) {
         uploadSubmit.textContent = barcodeDetectionPending
           ? 'バーコード確認中...'
@@ -1745,6 +1320,10 @@
       return apiUrl('/api/zero-cost/intake-upload');
     }
 
+    function registerBoxApiUrl() {
+      return apiUrl('/api/zero-cost/register-box');
+    }
+
     function driveShareApiUrl() {
       return apiUrl('/api/zero-cost/drive-share');
     }
@@ -1762,6 +1341,24 @@
       var query = '?limit=' + encodeURIComponent(String(Math.max(1, num(limit) || 6)));
       if (boxId) query += '&box_id=' + encodeURIComponent(boxId);
       return apiUrl('/api/zero-cost/intake-failures' + query);
+    }
+
+    function fetchIntakeSnapshot() {
+      return fetch(apiUrl('/api/zero-cost/snapshot/intake') + '?ts=' + encodeURIComponent(String(Date.now())), { cache: 'no-store' })
+        .then(function(response) {
+          return response.text().then(function(text) {
+            var data = {};
+            try {
+              data = text ? JSON.parse(text) : {};
+            } catch (_) {
+              data = {};
+            }
+            if (!response.ok || !data.ok) {
+              throw new Error((data && data.error) || ('HTTP ' + response.status));
+            }
+            return data.snapshot || {};
+          });
+        });
     }
 
     function appBaseUrl() {
@@ -2100,39 +1697,69 @@
         });
     }
 
-    function requestDriveShare() {
-      var box = currentBox();
-      if (!box || isDriveBusy || isUploading) return;
-      var existingUrl = currentDriveLinkUrl(box.id);
+    function ensureDriveShareLink(box, options) {
+      options = options || {};
+      box = box || currentBox();
+      if (!box || !box.id) return Promise.resolve('');
+      var boxId = box.id;
+      var boxLabel = box.label || boxId;
+      var existingUrl = currentDriveLinkUrl(boxId);
       if (existingUrl) {
-        copyText(existingUrl)
+        if (!options.copy) return Promise.resolve(existingUrl);
+        return copyText(existingUrl)
           .then(function() {
-            setDriveStatus(box.label + ' の共有リンクをコピーしました。相手へそのまま送ってください。', 'ok');
+            if (!options.silent && currentBox() && currentBox().id === boxId) {
+              setDriveStatus(boxLabel + ' の共有リンクをコピーしました。相手へそのまま送ってください。', 'ok');
+            }
+            return existingUrl;
           })
           .catch(function() {
-            setDriveStatus(box.label + ' の共有リンクは準備済みです。下のリンクを相手に送ってください。', 'ok');
+            if (!options.silent && currentBox() && currentBox().id === boxId) {
+              setDriveStatus(boxLabel + ' の共有リンクは準備済みです。下のリンクを相手に送ってください。', 'ok');
+            }
+            return existingUrl;
           });
-        return;
       }
+      if (isDriveBusy && !options.force) return Promise.resolve('');
       isDriveBusy = true;
       setUploadButtonState();
-      driveShareBtn.textContent = 'リンク準備中...';
-      setDriveStatus(box.label + ' の共有リンクを用意しています。', '');
-      postJson(driveShareApiUrl(), boxPayload(box))
+      driveShareBtn.textContent = options.copy ? 'リンク準備中...' : 'リンク自動準備中...';
+      if (!options.silent && currentBox() && currentBox().id === boxId) {
+        setDriveStatus(boxLabel + ' の共有リンクを用意しています。', '');
+      }
+      return postJson(driveShareApiUrl(), boxPayload(box))
         .then(function(data) {
-          var folderUrl = String(data.folder_url || '');
-          if (folderUrl) {
-            rememberDriveLink(box.id, folderUrl);
+          var folderUrl = String(data.folder_url || '').trim();
+          if (!folderUrl) return '';
+          rememberDriveLink(boxId, folderUrl);
+          if (currentBox() && currentBox().id === boxId) {
             setDriveLink(folderUrl);
           }
-          return copyText(folderUrl).then(function() {
-            setDriveStatus(box.label + ' の共有リンクをコピーしました。相手へ送って、撮影順のまま写真を入れてもらってください。', 'ok');
-          }).catch(function() {
-            setDriveStatus(box.label + ' の共有リンクを用意しました。下のリンクを相手に送ってください。', 'ok');
-          });
+          if (!options.copy) {
+            if (!options.silent && currentBox() && currentBox().id === boxId) {
+              setDriveStatus(boxLabel + ' の共有リンクを用意しました。', 'ok');
+            }
+            return folderUrl;
+          }
+          return copyText(folderUrl)
+            .then(function() {
+              if (!options.silent && currentBox() && currentBox().id === boxId) {
+                setDriveStatus(boxLabel + ' の共有リンクをコピーしました。相手へ送って、撮影順のまま写真を入れてもらってください。', 'ok');
+              }
+              return folderUrl;
+            })
+            .catch(function() {
+              if (!options.silent && currentBox() && currentBox().id === boxId) {
+                setDriveStatus(boxLabel + ' の共有リンクを用意しました。下のリンクを相手に送ってください。', 'ok');
+              }
+              return folderUrl;
+            });
         })
         .catch(function(error) {
-          setDriveStatus('共有リンクの準備に失敗しました。' + (error && error.message ? ' ' + error.message : ''), 'error');
+          if (!options.silent && currentBox() && currentBox().id === boxId) {
+            setDriveStatus('共有リンクの準備に失敗しました。' + (error && error.message ? ' ' + error.message : ''), 'error');
+          }
+          return '';
         })
         .finally(function() {
           isDriveBusy = false;
@@ -2140,6 +1767,12 @@
           setUploadButtonState();
           scheduleDriveStatusPoll(86400000);
         });
+    }
+
+    function requestDriveShare() {
+      var box = currentBox();
+      if (!box || isDriveBusy || isUploading) return;
+      ensureDriveShareLink(box, { silent: false, copy: true, force: true });
     }
 
     function syncDrivePhotos() {
@@ -2307,274 +1940,9 @@
         });
     }
 
-    function buildFocusModel() {
-      var owner = S.owner_view || {};
-      var ddToday = owner.dd_today || [];
-      var alerts = owner.alerts || [];
-      var nextActions = S.next_actions || [];
-      var firstTask = ddToday[0] || null;
-      var firstAlert = alerts[0] || null;
-
-      if (firstTask) {
-        return {
-          eyebrow: 'いま進める場所',
-          title: firstTask.label || '次の作業があります',
-          note: firstTask.note || 'ここから進めます。',
-          href: firstTask.href || './ops.html',
-          button: 'この画面を開く →',
-          meta: [
-            owner.headline || '',
-            firstTask.tone ? '優先度: ' + firstTask.tone : ''
-          ].filter(Boolean),
-          tone: toneClass(firstTask.tone)
-        };
-      }
-
-      if (firstAlert) {
-        return {
-          eyebrow: '先に止まりを外す',
-          title: firstAlert.title || firstAlert.key || '止まっているものがあります',
-          note: firstAlert.note || '要対応の項目を先に確認します。',
-          href: firstAlert.href || './ops.html',
-          button: '詳細を見る →',
-          meta: [
-            owner.headline || '',
-            firstAlert.key || ''
-          ].filter(Boolean),
-          tone: toneClass(firstAlert.severity)
-        };
-      }
-
-      if (nextActions.length) {
-        return {
-          eyebrow: '次に進めること',
-          title: String(nextActions[0]),
-          note: owner.headline || '流れに沿って、取り込みの次の工程へ進みます。',
-          href: './ops.html',
-          button: '商品を見る →',
-          meta: [
-            '公開済み ' + num((S.routing || {}).mercari_live) + '件',
-            '集荷エラー ' + num((S.shipping_guard || {}).errors) + '件'
-          ],
-          tone: 'blue'
-        };
-      }
-
-      return {
-        eyebrow: 'いま大きい止まりはありません',
-        title: 'ロットと箱を決めて、取り込みから始めます',
-        note: '新しい写真が来たら取り込み、そのあとAI特定・画像セット・出品・集荷へ進みます。',
-        href: './intake_cards.html',
-        button: '取り込み結果を見る →',
-        meta: [
-          '未特定 ' + num((S.metrics || {}).research_pending) + '件',
-          '下書き待ち ' + num((S.metrics || {}).draft_pending) + '件'
-        ],
-        tone: 'green'
-      };
-    }
-
-    function renderFocus() {
-      var focus = buildFocusModel();
-      document.getElementById('focus-card').innerHTML = ''
-        + '<div class="focus-eyebrow">' + esc(focus.eyebrow) + '</div>'
-        + '<div class="focus-title">' + esc(focus.title) + '</div>'
-        + '<div class="focus-note">' + esc(focus.note) + '</div>'
-        + '<div class="focus-context">' + esc(flowSummaryText() + (((S.owner_view || {}).headline) ? ' / ' + (S.owner_view || {}).headline : '')) + '</div>'
-        + '<div class="focus-meta">' + focus.meta.map(function(item) {
-            return '<span class="meta-pill">' + esc(item) + '</span>';
-          }).join('') + '</div>'
-        + '<a class="action-link primary" data-zero-cost-current-box="1" href="' + esc(currentBoxLink(focus.href)) + '">' + esc(focus.button) + '</a>';
-    }
-
-    function renderSummary() {
-      var cards = [
-        { label: '未特定', value: num((S.metrics || {}).research_pending), tone: 'yellow' },
-        { label: '写真セット組み直し必要', value: num((S.metrics || {}).split_required), tone: 'orange' },
-        { label: '下書き待ち', value: num((S.metrics || {}).draft_pending), tone: 'blue' },
-        { label: '公開済み', value: num((S.routing || {}).mercari_live), tone: 'green' },
-          { label: '集荷エラー', value: num((S.shipping_guard || {}).errors), tone: num((S.shipping_guard || {}).errors) > 0 ? 'red' : 'gray' }
-      ];
-
-      document.getElementById('summary-strip').innerHTML = cards.map(function(card) {
-        return '<div class="summary-card ' + toneClass(card.tone) + '">'
-          + '<div class="summary-label">' + esc(card.label) + '</div>'
-          + '<div class="summary-value">' + esc(card.value) + '</div>'
-          + '</div>';
-      }).join('');
-    }
-
-    function renderTools() {
-      var routes = ((S.strategy || {}).route_options) || [];
-      var shipping = S.shipping_guard || {};
-      var listingCount = (S.channels || []).reduce(function(total, channel) {
-        return total + num(channel && channel.published_count) + num(channel && channel.draft_count);
-      }, 0);
-      var cards = [
-        {
-          name: '①②③ 取り込み',
-          count: (currentBox() && currentBox().totalItems) || boxOptions.length,
-          tone: 'blue',
-          note: 'ロット選択 → 箱を選ぶ → 写真を取り込む。この画面がスタート地点です。',
-          href: './index.html',
-          link: 'ホームへ戻る →'
-        },
-        {
-          name: '④⑤ AI識別・画像取得',
-          count: num((S.metrics || {}).research_pending),
-          tone: 'orange',
-          note: 'AIがOCRで商品を特定し、公式・Amazon・webから画像を集めます。',
-          href: './intake_cards.html',
-          link: 'AI識別カードを開く →'
-        },
-        {
-          name: '⑥ 出品する',
-          count: num((S.metrics || {}).draft_pending),
-          tone: 'blue',
-          note: '商品名・価格・写真を整えて実際に出品します。',
-          href: './ops.html',
-          link: '出品準備を開く →'
-        },
-        {
-          name: '出品状況',
-          count: listingCount,
-          tone: 'green',
-          note: 'いまの公開・下書きと、次に出せる repo計画を分けて見ます。',
-          href: './channel_listings.html',
-          link: '出品状況を開く →'
-        },
-        {
-          name: '⑧ 集荷',
-          count: num(shipping.errors) + num(shipping.warnings),
-          tone: num(shipping.errors) > 0 ? 'red' : 'green',
-          note: num(shipping.errors) > 0
-            ? '売れた後に詰まる点があります。先に集荷画面で確認します。'
-            : '売れたらここで、ラベル・宛先・集荷をまとめて進めます。',
-          href: './shipping.html',
-          link: '集荷画面を開く →'
-        },
-        {
-          name: '販路',
-          count: routes.length,
-          tone: 'green',
-          note: firstNonEmpty((S.strategy || {}).immediate_easy_lane, routes[0] && routes[0].lane, '今の販売ルートを確認します。'),
-          href: './routing.html',
-          link: '販路を見る →'
-        }
-      ];
-
-      document.getElementById('tool-grid').innerHTML = cards.map(function(card) {
-        return '<a class="tool-card ' + toneClass(card.tone) + '" data-zero-cost-current-box="1" href="' + esc(currentBoxLink(card.href)) + '">'
-          + '<div class="tool-top">'
-          + '<div class="tool-name">' + esc(card.name) + '</div>'
-          + '<div class="tool-count">' + esc(card.count) + '</div>'
-          + '</div>'
-          + '<div class="tool-note">' + esc(card.note) + '</div>'
-          + '<span class="tool-link">' + esc(card.link) + '</span>'
-          + '</a>';
-      }).join('');
-    }
-
-    function renderAlerts() {
-      var alerts = (((S.owner_view || {}).alerts) || []).slice(0, 6);
-      var el = document.getElementById('alert-list');
-      if (!alerts.length) {
-        el.innerHTML = '<div class="empty-copy">いま大きい止まりはありません。</div>';
-        return;
-      }
-      el.innerHTML = alerts.map(function(alert) {
-        var tone = toneClass(alert.severity);
-        return '<div class="alert-card ' + tone + '">'
-          + '<span class="alert-dot"></span>'
-          + '<div>'
-          + '<div class="alert-id">' + esc(alert.key || '') + '</div>'
-          + '<div class="alert-name">' + esc(alert.title || '要対応') + '</div>'
-          + '<div class="alert-note">' + esc(alert.note || '') + '</div>'
-          + '</div>'
-          + (alert.href ? '<a class="alert-link" data-zero-cost-current-box="1" href="' + esc(currentBoxLink(alert.href)) + '">開く →</a>' : '')
-          + '</div>';
-      }).join('');
-    }
-
-    function renderChannels() {
-      var channels = S.channels || [];
-      var el = document.getElementById('channel-grid');
-      if (!channels.length) {
-        el.innerHTML = '<div class="empty-copy">販路の情報はまだありません。</div>';
-        return;
-      }
-      el.innerHTML = channels.map(function(channel) {
-        var tone = toneClass(channel.tone);
-        var stats = [
-          { label: '公開', value: num(channel.published_count) },
-          { label: '下書き', value: num(channel.draft_count) }
-        ];
-        if (num(channel.planned_count) > 0) stats.push({ label: '計画', value: num(channel.planned_count) });
-        if (num(channel.blocked_count) > 0) stats.push({ label: '停止', value: num(channel.blocked_count) });
-        stats.push({ label: '受注', value: num(channel.order_count_total) });
-        var planHtml = channel.plan_note
-          ? '<div class="channel-plan">' + esc(channel.plan_note) + '</div>'
-          : '';
-        return '<div class="channel-card ' + tone + '">'
-          + '<div class="channel-head">'
-          + '<div class="channel-name">' + esc(channel.name || '') + '</div>'
-          + '<span class="badge ' + chipClass(tone) + '">' + esc(channel.badge || '') + '</span>'
-          + '</div>'
-          + '<div class="channel-stats">' + stats.map(function(stat) {
-              return '<div class="channel-stat"><div class="channel-stat-label">' + esc(stat.label) + '</div><div class="channel-stat-value">' + esc(stat.value) + '</div></div>';
-            }).join('') + '</div>'
-          + '<div class="channel-note">' + esc(channel.owner_note || '') + '</div>'
-          + planHtml
-          + '<div class="channel-next">次: ' + esc(channel.next_step || '未設定') + '</div>'
-          + '</div>';
-      }).join('');
-    }
-
-    function renderMilestones() {
-      var milestones = M.milestones || [];
-      var el = document.getElementById('milestone-list');
-      if (!milestones.length) {
-        el.innerHTML = '<div class="empty-copy">段階メモはまだありません。</div>';
-        return;
-      }
-      el.innerHTML = milestones.map(function(item) {
-        return '<div class="milestone-item">'
-          + '<div class="milestone-name">' + esc(item.name || '') + '</div>'
-          + '<div class="milestone-progress">' + esc(String(Number(item.progress || 0)) + '/10') + ' ・ ' + esc(item.summary || item.status || '') + '</div>'
-          + '</div>';
-      }).join('');
-    }
-
-    function renderActions() {
-      var actions = S.next_actions || [];
-      var el = document.getElementById('actions-list');
-      if (!actions.length) {
-        el.innerHTML = '<div class="empty-copy">次に進める項目はまだありません。</div>';
-        return;
-      }
-      el.innerHTML = actions.map(function(item, index) {
-        return '<div class="action-item">' + esc((index + 1) + '. ' + item) + '</div>';
-      }).join('');
-    }
-
-    function renderFreshness() {
-      var label = S.generated_at || M.generated_at || '';
-      if (!label) return;
-      var pill = document.getElementById('freshness-pill');
-      pill.textContent = '更新 ' + label;
-      pill.style.display = '';
-      document.getElementById('footer-freshness').textContent = 'スナップショット: ' + label;
-    }
-
     function bindUploadZone() {
       boxSelect.addEventListener('change', function() {
-        selectedBoxId = boxSelect.value || '';
-        if (window.zeroCostSetBoxId) window.zeroCostSetBoxId(selectedBoxId, { updateUrl: true });
-        else {
-          try {
-            if (window.localStorage && selectedBoxId) window.localStorage.setItem('zeroCostSelectedBox', selectedBoxId);
-          } catch (_) {}
-        }
+        rememberSelectedBox(boxSelect.value || '');
         renderBoxPanel();
         refreshFailureBatches();
       });
