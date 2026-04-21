@@ -4641,8 +4641,11 @@ window.ZERO_COST_INTAKE = {
       "display_name": "1.1CT レモンクォーツ シルバーリング サイズ10",
       "product_name": "1.1CT レモンクォーツ シルバーリング サイズ10",
       "verified_exact_match": false,
-      "official_image_state": "実物のみ",
-      "exact_match_guard_state": "clear",
+      "official_image_state": "実物のみ / 現写真では1商品に断定不能",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "別商品mix"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -5141,8 +5144,11 @@ window.ZERO_COST_INTAKE = {
       "display_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
       "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
       "verified_exact_match": false,
-      "official_image_state": "実物のみ",
-      "exact_match_guard_state": "clear",
+      "official_image_state": "実物のみ / 現写真では1商品に断定不能",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "別商品mix"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -5290,8 +5296,11 @@ window.ZERO_COST_INTAKE = {
       "display_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
       "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
       "verified_exact_match": false,
-      "official_image_state": "実物のみ",
-      "exact_match_guard_state": "clear",
+      "official_image_state": "実物のみ / 現写真では1商品に断定不能",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "別商品mix"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -5651,7 +5660,7 @@ window.ZERO_COST_INTAKE = {
         "market_checked_at": "",
         "market_note": "",
         "publish_state": "下書き",
-        "publish_detail": "本体は MMC 化粧水。コード側に Amazon 内部コードが混在するため GTIN 優先で暫定特定。 / 0026と同一商品。GTIN優先の暫定特定に画像候補を付与。",
+        "publish_detail": "FRONT で MMC 化粧水 240ml と GTIN 4595987734025 を確認。一方 BACK/CODE は [wolass] メンズセーター X0018UBQX1 の別商品。現写真では同一管理番号の1商品に断定不能のため、MMC 側候補の provisional に留める。",
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
@@ -7140,8 +7149,11 @@ window.ZERO_COST_INTAKE = {
       "display_name": "RemeeHi 女教師コスプレ衣装 ホワイトレース系",
       "product_name": "RemeeHi 女教師コスプレ衣装 ホワイトレース系",
       "verified_exact_match": false,
-      "official_image_state": "実物のみ",
-      "exact_match_guard_state": "clear",
+      "official_image_state": "実物のみ / 現写真では1商品に断定不能",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "別商品mix"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -7478,8 +7490,11 @@ window.ZERO_COST_INTAKE = {
       "display_name": "SOUKE SPORTS Cycling shorts ブラック S",
       "product_name": "SOUKE SPORTS Cycling shorts ブラック S",
       "verified_exact_match": false,
-      "official_image_state": "実物のみ",
-      "exact_match_guard_state": "clear",
+      "official_image_state": "実物のみ / 現写真では1商品に断定不能",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "別商品mix"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -9095,7 +9110,7 @@ window.ZERO_COST_INTAKE = {
         "market_checked_at": "",
         "market_note": "",
         "publish_state": "下書き",
-        "publish_detail": "実物写真では、ホワイトのレディース衣類本体、コードラベル X001B8TZTR、および M / ホワイト の表記までは確認できる。以前の BlueR-L2 などの OCR 混入は採用せず、色違い事故を避けるため actual-only 前提で provisional に上げる。比較画像はまだ 100%同一確認できるものを確保できていないため、出品画像は実物のみで扱う。",
+        "publish_detail": "BACK/CODE の2枚でホワイト衣類本体と X001B8TZTR / M / ホワイト が一致。一方 FRONT は X0015NW4BJ / Y5AQTX2313-BlueR-L2 の別ラベルだけが残った袋面で別商品混線。現写真では1商品に断定不能のため、ホワイト衣類側を provisional に留める。",
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
@@ -9607,8 +9622,11 @@ window.ZERO_COST_INTAKE = {
       "display_name": "花柄シュシュセット",
       "product_name": "花柄シュシュセット",
       "verified_exact_match": false,
-      "official_image_state": "実物のみ",
-      "exact_match_guard_state": "clear",
+      "official_image_state": "実物のみ / 現写真では1商品に断定不能",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "別商品mix"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -9915,13 +9933,17 @@ window.ZERO_COST_INTAKE = {
       "resolved": {
         "management_id": "BOX-001-ITEM-0051",
         "resolution_status": "provisional",
-        "product_name": "Heated Socks",
-        "barcode_primary": "",
-        "product_code_type": "package_text",
-        "official_image_state": "実物のみ / 現写真では1商品に断定不能",
-        "note": "CODEにHeated Socks箱。FRONT/BACKは黒い衣類パッケージ（別商品混線）。CODE側が本命。2026-04-15商品特定分析によりprovisional登録。",
+        "product_name": "Heated Socks 男女兼用 グレー",
+        "barcode_primary": "X000Z2MCNB",
+        "product_code_type": "amazon_internal",
+        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "note": "BACK/CODE の2枚で Heated Socks 箱と X000Z2MCNB / 電熱ソックス / 男女兼用（Grey）が一致。一方 FRONT は黒い衣類パッケージで別商品。現写真では1商品に断定不能のため、Heated Socks 側を provisional に留める。",
         "evidence": [
-          "Heated Socks"
+          "X000Z2MCNB",
+          "Heated Socks",
+          "電熱ソックス",
+          "男女兼用",
+          "Grey"
         ],
         "exact_match_guard_state": "review_required",
         "exact_match_guard_reasons": [
@@ -9935,12 +9957,12 @@ window.ZERO_COST_INTAKE = {
         "product_id": "PRD-BOX-001-051",
         "draft_id": "DRF-BOX-001-051",
         "research_id": "RES-BOX-001-051",
-        "product_name": "Heated Socks",
+        "product_name": "Heated Socks 男女兼用 グレー",
         "brand": "",
         "category": "",
-        "barcode_primary": "",
-        "product_code_type": "package_text",
-        "listing_title": "Heated Socks",
+        "barcode_primary": "X000Z2MCNB",
+        "product_code_type": "amazon_internal",
+        "listing_title": "Heated Socks 男女兼用 グレー",
         "listing_price": "",
         "market_floor_price": "",
         "market_floor_state": "未調査",
@@ -9957,10 +9979,10 @@ window.ZERO_COST_INTAKE = {
       },
       "comparison_images": [],
       "reference_images": [],
-      "display_name": "Heated Socks",
-      "product_name": "Heated Socks",
+      "display_name": "Heated Socks 男女兼用 グレー",
+      "product_name": "Heated Socks 男女兼用 グレー",
       "verified_exact_match": false,
-      "official_image_state": "実物のみ / 現写真では1商品に断定不能",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
         "別商品mix"
@@ -10061,16 +10083,23 @@ window.ZERO_COST_INTAKE = {
       "resolved": {
         "management_id": "BOX-001-ITEM-0052",
         "resolution_status": "provisional",
-        "product_name": "白箱 X00197BVHJ",
+        "product_name": "FirstC 記念品ギフト箱（内容物不明）",
         "barcode_primary": "X00197BVHJ",
         "product_code_type": "amazon_internal",
-        "official_image_state": "実物のみ",
-        "note": "BACK/CODEに白箱ラベル X00197BVHJ。barcodeはあるが商品名未確認。0053 FRONTと同一箱をlive視認確認済み。2026-04-15商品特定分析によりprovisional登録。",
+        "official_image_state": "actual-only固定 / 内容物未確認",
+        "note": "FRONT/BACK/CODE の3枚で白いギフト箱が一致し、ラベルで X00197BVHJ / FirstC / 記念品ギフト / MADE in China を確認できる。箱の中身や用途詳細は現写真だけでは断定できないため、actual-only かつ内容物不明として provisional に留める。",
         "evidence": [
           "X00197BVHJ",
-          "白箱"
+          "FirstC",
+          "記念品ギフト",
+          "白いギフト箱",
+          "内容物不明"
         ],
-        "exact_match_guard_state": "clear"
+        "exact_match_guard_state": "clear",
+        "brand_override": "FirstC",
+        "category_override": "その他 > 記念品・ギフト箱",
+        "price_override": 980,
+        "check_items_override": "内容物確認 / 箱状態 / サイズ感 / ギフト箱として出すか判断"
       },
       "official": {},
       "commerce": {
@@ -10079,13 +10108,13 @@ window.ZERO_COST_INTAKE = {
         "product_id": "PRD-BOX-001-052",
         "draft_id": "DRF-BOX-001-052",
         "research_id": "RES-BOX-001-052",
-        "product_name": "白箱 X00197BVHJ",
-        "brand": "",
-        "category": "",
+        "product_name": "FirstC 記念品ギフト箱（内容物不明）",
+        "brand": "FirstC",
+        "category": "その他 > 記念品・ギフト箱",
         "barcode_primary": "X00197BVHJ",
         "product_code_type": "amazon_internal",
-        "listing_title": "白箱 X00197BVHJ",
-        "listing_price": "",
+        "listing_title": "FirstC 記念品ギフト箱（内容物不明）",
+        "listing_price": "980",
         "market_floor_price": "",
         "market_floor_state": "未調査",
         "market_source_label": "",
@@ -10101,10 +10130,10 @@ window.ZERO_COST_INTAKE = {
       },
       "comparison_images": [],
       "reference_images": [],
-      "display_name": "白箱 X00197BVHJ",
-      "product_name": "白箱 X00197BVHJ",
+      "display_name": "FirstC 記念品ギフト箱（内容物不明）",
+      "product_name": "FirstC 記念品ギフト箱（内容物不明）",
       "verified_exact_match": false,
-      "official_image_state": "実物のみ",
+      "official_image_state": "actual-only固定 / 内容物未確認",
       "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
@@ -10117,7 +10146,7 @@ window.ZERO_COST_INTAKE = {
       "reference_image_ref": "",
       "minimum_price": "",
       "market_floor_price_label": "未調査",
-      "listing_price": "",
+      "listing_price": "980",
       "exception": {},
       "route_plan": {},
       "split_staging": {
@@ -10341,17 +10370,22 @@ window.ZERO_COST_INTAKE = {
       "resolved": {
         "management_id": "BOX-001-ITEM-0053",
         "resolution_status": "provisional",
-        "product_name": "Hello Kitty 50TH ANNIVERSARY ぬいぐるみ",
-        "barcode_primary": "",
-        "product_code_type": "package_text",
-        "official_image_state": "実物のみ",
-        "note": "BACK/CODEにHello Kitty 50TH ANNIVERSARY系。FRONTは白箱X00197BVHJ（0052と同一箱）。BACK/CODE側が本命。2026-04-15商品特定分析によりprovisional登録。",
+        "product_name": "Hello Kitty 50TH ANNIVERSARY マスコットキーホルダー ブラック系",
+        "barcode_primary": "X0018IYEUP",
+        "product_code_type": "amazon_internal",
+        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "note": "BACK/CODE の2枚で Hello Kitty 50TH ANNIVERSARY の黒系マスコット本体と X0018IYEUP ラベルが一致。一方 FRONT は X00197BVHJ の白いギフト箱で別商品。現写真では1商品に断定不能のため、Hello Kitty 側を provisional に留める。",
         "evidence": [
+          "X0018IYEUP",
           "Hello Kitty",
           "50TH ANNIVERSARY",
-          "ぬいぐるみ"
+          "ブラック系マスコット",
+          "ボールチェーン"
         ],
-        "exact_match_guard_state": "clear"
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "別商品mix"
+        ]
       },
       "official": {},
       "commerce": {
@@ -10360,12 +10394,12 @@ window.ZERO_COST_INTAKE = {
         "product_id": "PRD-BOX-001-053",
         "draft_id": "DRF-BOX-001-053",
         "research_id": "RES-BOX-001-053",
-        "product_name": "Hello Kitty 50TH ANNIVERSARY ぬいぐるみ",
+        "product_name": "Hello Kitty 50TH ANNIVERSARY マスコットキーホルダー ブラック系",
         "brand": "",
         "category": "",
-        "barcode_primary": "",
-        "product_code_type": "package_text",
-        "listing_title": "Hello Kitty 50TH ANNIVERSARY ぬいぐるみ",
+        "barcode_primary": "X0018IYEUP",
+        "product_code_type": "amazon_internal",
+        "listing_title": "Hello Kitty 50TH ANNIVERSARY マスコットキーホルダー ブラック系",
         "listing_price": "",
         "market_floor_price": "",
         "market_floor_state": "未調査",
@@ -10382,11 +10416,14 @@ window.ZERO_COST_INTAKE = {
       },
       "comparison_images": [],
       "reference_images": [],
-      "display_name": "Hello Kitty 50TH ANNIVERSARY ぬいぐるみ",
-      "product_name": "Hello Kitty 50TH ANNIVERSARY ぬいぐるみ",
+      "display_name": "Hello Kitty 50TH ANNIVERSARY マスコットキーホルダー ブラック系",
+      "product_name": "Hello Kitty 50TH ANNIVERSARY マスコットキーホルダー ブラック系",
       "verified_exact_match": false,
-      "official_image_state": "実物のみ",
-      "exact_match_guard_state": "clear",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "別商品mix"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -10624,8 +10661,8 @@ window.ZERO_COST_INTAKE = {
         "product_name": "Poperdision ブラック 3XL レディース衣類",
         "barcode_primary": "X0018GJO2Z",
         "product_code_type": "amazon_internal",
-        "official_image_state": "比較画像待ち / exact-match保留",
-        "note": "実物写真では、黒い衣類本体、コードラベル X0018GJO2Z、[Poperdision] / Black-3XL / 3XL の表記まで確認できる。具体的な商品型は断定せず、actual-only 前提で provisional に上げる。比較画像はまだ 100%同一確認できるものを確保できていないため、出品画像は実物のみで扱う。",
+        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "note": "BACK/CODE の2枚で黒い衣類本体と X0018GJO2Z / [Poperdision] / Black-3XL / 3XL が一致。一方 FRONT は Hello Kitty 50TH ANNIVERSARY の別商品。現写真では1商品に断定不能のため、衣類側を provisional に留める。",
         "evidence": [
           "X0018GJO2Z",
           "Poperdision",
@@ -10639,8 +10676,11 @@ window.ZERO_COST_INTAKE = {
         "check_items_override": "色味ブラック / 3XL表記 / 衣類種別 / シルエット確認",
         "official_page_url": "",
         "official_image_url": "",
-        "image_source": "比較画像待ち",
-        "exact_match_guard_state": "clear"
+        "image_source": "actual-only",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "別商品mix"
+        ]
       },
       "official": {},
       "commerce": {
@@ -10674,8 +10714,11 @@ window.ZERO_COST_INTAKE = {
       "display_name": "Poperdision ブラック 3XL レディース衣類",
       "product_name": "Poperdision ブラック 3XL レディース衣類",
       "verified_exact_match": false,
-      "official_image_state": "比較画像待ち / exact-match保留",
-      "exact_match_guard_state": "clear",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "別商品mix"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -10799,8 +10842,8 @@ window.ZERO_COST_INTAKE = {
         "product_name": "ATIDIMU 美容液",
         "barcode_primary": "X001BGAPFR",
         "product_code_type": "amazon_internal",
-        "official_image_state": "比較画像候補あり / exact-match保留",
-        "note": "実物箱に X001BGAPFR、ATIDIMU（アティディム）美容液、7種植物エキス配合の表記がある。公式候補ページ『ATIDIMU（アティディム）美容液』は取得できたが、容量や外箱細部まで 100% 同一とはまだ断定しない。比較画像は参考候補として保持し、出品画像は実物のみで扱う。 / X001BGAPFR / ATIDIMU / 美容液 / 7種植物エキス配合 は実物で確認できる。 / X001BGAPFR / ATIDIMU / 美容液 / 7種植物エキス配合 は実物で確認できる。公式候補ページはあるが、容量や外箱細部まで 100% 同一とはまだ断定しないため、出品採用不可。",
+        "official_image_state": "比較画像候補あり / exact-match保留 / 現写真では1商品に断定不能",
+        "note": "BACK/CODE の2枚で X001BGAPFR / ATIDIMU（アティディム）美容液 / 7種植物エキス配合 が一致。一方 FRONT は別商品の黒い衣類パッケージ。公式候補ページは保持するが、現写真では1商品に断定不能のため、ATIDIMU 側を provisional に留める。",
         "evidence": [
           "X001BGAPFR",
           "ATIDIMU",
@@ -10814,7 +10857,10 @@ window.ZERO_COST_INTAKE = {
         "official_page_url": "https://atidimu.com/products/%E3%82%A2%E3%83%86%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A0-%E7%BE%8E%E5%AE%B9%E6%B6%B2-atidimu-serum",
         "official_image_url": "http://atidimu.com/cdn/shop/files/3-1.jpg?v=1759996277",
         "image_source": "ATIDIMU公式",
-        "exact_match_guard_state": "clear"
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "別商品mix"
+        ]
       },
       "official": {
         "management_id": "BOX-001-ITEM-0055",
@@ -10826,9 +10872,12 @@ window.ZERO_COST_INTAKE = {
         "official_image_url": "http://atidimu.com/cdn/shop/files/3-1.jpg?v=1759996277",
         "image_source": "ATIDIMU公式",
         "verified_exact_match": false,
-        "official_image_state": "比較画像候補あり / exact-match保留",
-        "note": "X001BGAPFR / ATIDIMU / 美容液 / 7種植物エキス配合 は実物で確認できる。公式候補ページはあるが、容量や外箱細部まで 100% 同一とはまだ断定しないため、出品採用不可。",
-        "exact_match_guard_state": "clear"
+        "official_image_state": "比較画像候補あり / exact-match保留 / 現写真では1商品に断定不能",
+        "note": "BACK/CODE では X001BGAPFR / ATIDIMU / 美容液 / 7種植物エキス配合 が一致するが、FRONT は別商品の黒い衣類パッケージ。比較画像候補は保持するが、現写真では1商品に断定不能のため出品採用不可。",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "別商品mix"
+        ]
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0055",
@@ -10861,7 +10910,7 @@ window.ZERO_COST_INTAKE = {
           "label": "比較-1",
           "url": "./assets/official_images/BOX-001-ITEM-0055_official_1.jpg",
           "page_url": "https://atidimu.com/products/%E3%82%A2%E3%83%86%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A0-%E7%BE%8E%E5%AE%B9%E6%B6%B2-atidimu-serum",
-          "state": "比較画像候補あり / exact-match保留",
+          "state": "比較画像候補あり / exact-match保留 / 現写真では1商品に断定不能",
           "source": "ATIDIMU公式",
           "verified_exact_match": false
         }
@@ -10871,7 +10920,7 @@ window.ZERO_COST_INTAKE = {
           "label": "比較-1",
           "url": "./assets/official_images/BOX-001-ITEM-0055_official_1.jpg",
           "page_url": "https://atidimu.com/products/%E3%82%A2%E3%83%86%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A0-%E7%BE%8E%E5%AE%B9%E6%B6%B2-atidimu-serum",
-          "state": "比較画像候補あり / exact-match保留",
+          "state": "比較画像候補あり / exact-match保留 / 現写真では1商品に断定不能",
           "source": "ATIDIMU公式",
           "verified_exact_match": false
         }
@@ -10879,8 +10928,11 @@ window.ZERO_COST_INTAKE = {
       "display_name": "ATIDIMU 美容液",
       "product_name": "ATIDIMU 美容液",
       "verified_exact_match": false,
-      "official_image_state": "比較画像候補あり / exact-match保留",
-      "exact_match_guard_state": "clear",
+      "official_image_state": "比較画像候補あり / exact-match保留 / 現写真では1商品に断定不能",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "別商品mix"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -11001,17 +11053,22 @@ window.ZERO_COST_INTAKE = {
       "resolved": {
         "management_id": "BOX-001-ITEM-0056",
         "resolution_status": "provisional",
-        "product_name": "JODSONE UV LEDネイルランプ",
-        "barcode_primary": "",
-        "product_code_type": "package_text",
-        "official_image_state": "実物のみ",
-        "note": "CODEにJODSONE UV LEDネイルランプ箱。FRONTはATIDIMU FACE SERUM箱、BACKは出品画面スクショ（混線）。CODE側が本命。0057と同じJODSONEブランド。2026-04-15商品特定分析によりprovisional登録。",
+        "product_name": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
+        "barcode_primary": "X001AP6CKV",
+        "product_code_type": "amazon_internal",
+        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "note": "CODE では JODSONE 箱ラベル X001AP6CKV / クイックUV LED自動センサーネイルドライヤー ピンク が読める。一方 FRONT は ATIDIMU FACE SERUM 箱、BACK は出品入力画面スクショで、現写真では1商品に断定不能。JODSONE 側を provisional に留める。",
         "evidence": [
+          "X001AP6CKV",
           "JODSONE",
-          "UV LED",
-          "ネイルランプ"
+          "クイックUV LED",
+          "ネイルドライヤー",
+          "ピンク"
         ],
-        "exact_match_guard_state": "clear"
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "別商品mix"
+        ]
       },
       "official": {},
       "commerce": {
@@ -11020,12 +11077,12 @@ window.ZERO_COST_INTAKE = {
         "product_id": "PRD-BOX-001-056",
         "draft_id": "DRF-BOX-001-056",
         "research_id": "RES-BOX-001-056",
-        "product_name": "JODSONE UV LEDネイルランプ",
+        "product_name": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
         "brand": "",
         "category": "",
-        "barcode_primary": "",
-        "product_code_type": "package_text",
-        "listing_title": "JODSONE UV LEDネイルランプ",
+        "barcode_primary": "X001AP6CKV",
+        "product_code_type": "amazon_internal",
+        "listing_title": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
         "listing_price": "",
         "market_floor_price": "",
         "market_floor_state": "未調査",
@@ -11042,11 +11099,14 @@ window.ZERO_COST_INTAKE = {
       },
       "comparison_images": [],
       "reference_images": [],
-      "display_name": "JODSONE UV LEDネイルランプ",
-      "product_name": "JODSONE UV LEDネイルランプ",
+      "display_name": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
+      "product_name": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
       "verified_exact_match": false,
-      "official_image_state": "実物のみ",
-      "exact_match_guard_state": "clear",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "別商品mix"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -11145,8 +11205,8 @@ window.ZERO_COST_INTAKE = {
         "barcode_primary": "JODSONE nail lamp box text",
         "product_code_type": "package_text",
         "verified_exact_match": false,
-        "official_image_state": "比較画像候補あり / exact-match保留",
-        "note": "本体箱の FRONT/BACK に JODSONE / Professional Gel Polish LED Nail Dryer Lamp / LED UV / Intelligent sensing / Non-harmful が読める。CODE ラベルは別商品の貼り違いの可能性があり、比較画像は照合用に保持。 / 2026-04-07 再照合では外箱と JODSONE X5 Max 系画像は強く一致したが、本体現物が見えていないため exact-match保留。 / JODSONE公式ページから比較画像を保持。外箱一致は強いが、本体現物未確認のため exact-match保留。",
+        "official_image_state": "比較画像候補あり / exact-match保留 / 現写真では1商品に断定不能",
+        "note": "FRONT/BACK の2枚で JODSONE / Professional Gel Polish LED Nail Dryer Lamp / LED UV / Intelligent sensing / Non-harmful が一致。一方 CODE は B09NG1PLHK の給水器ラベルで別商品。現写真では1商品に断定不能のため、JODSONE 箱側を provisional に留め、比較画像は照合用に保持する。",
         "evidence": [
           "JODSONE",
           "Professional Gel Polish LED Nail Dryer Lamp",
@@ -11161,8 +11221,11 @@ window.ZERO_COST_INTAKE = {
         "official_page_url": "https://www.jodsonebeauty.com/product/jodsone-120w-u-v-led-nail-lamp-for-two-hand-led-light-for-gel-with-54-pcs-light-bead-quick-curing-gel-polish-nail-dryer-suitable-salon-and-home-use-blackblack/",
         "image_source": "web candidate",
         "official_image_url": "https://cdn.jodsonebeauty.com/cdn/10954/2025/1108/90301857d3d2d1b0c04a2b85dcefd247-1.webp",
-        "exact_match_guard_state": "clear",
-        "official_image_local": "state/intake/official_images/BOX-001-ITEM-0057_jodsone_nail_lamp.webp"
+        "exact_match_guard_state": "review_required",
+        "official_image_local": "state/intake/official_images/BOX-001-ITEM-0057_jodsone_nail_lamp.webp",
+        "exact_match_guard_reasons": [
+          "別商品mix"
+        ]
       },
       "official": {
         "management_id": "BOX-001-ITEM-0057",
@@ -11170,9 +11233,12 @@ window.ZERO_COST_INTAKE = {
         "official_image_url": "https://cdn.jodsonebeauty.com/cdn/10954/2025/1108/90301857d3d2d1b0c04a2b85dcefd247-1.webp",
         "official_image_local": "state/intake/official_images/BOX-001-ITEM-0057_jodsone_nail_lamp.webp",
         "verified_exact_match": false,
-        "official_image_state": "比較画像候補あり / exact-match保留",
-        "note": "JODSONE公式ページから比較画像を保持。外箱一致は強いが、本体現物未確認のため exact-match保留。",
-        "exact_match_guard_state": "clear"
+        "official_image_state": "比較画像候補あり / exact-match保留 / 現写真では1商品に断定不能",
+        "note": "FRONT/BACK は JODSONE のネイルランプ箱で揃うが、CODE は B09NG1PLHK の給水器ラベルで別商品。比較画像候補は保持するが、現写真では1商品に断定不能のため出品採用不可。",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "別商品mix"
+        ]
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0057",
@@ -11205,7 +11271,7 @@ window.ZERO_COST_INTAKE = {
           "label": "比較-1",
           "url": "./assets/official_images/BOX-001-ITEM-0057_official_1.webp",
           "page_url": "https://www.jodsonebeauty.com/product/jodsone-120w-u-v-led-nail-lamp-for-two-hand-led-light-for-gel-with-54-pcs-light-bead-quick-curing-gel-polish-nail-dryer-suitable-salon-and-home-use-blackblack/",
-          "state": "比較画像候補あり / exact-match保留",
+          "state": "比較画像候補あり / exact-match保留 / 現写真では1商品に断定不能",
           "source": "web candidate",
           "verified_exact_match": false
         },
@@ -11239,7 +11305,7 @@ window.ZERO_COST_INTAKE = {
           "label": "比較-1",
           "url": "./assets/official_images/BOX-001-ITEM-0057_official_1.webp",
           "page_url": "https://www.jodsonebeauty.com/product/jodsone-120w-u-v-led-nail-lamp-for-two-hand-led-light-for-gel-with-54-pcs-light-bead-quick-curing-gel-polish-nail-dryer-suitable-salon-and-home-use-blackblack/",
-          "state": "比較画像候補あり / exact-match保留",
+          "state": "比較画像候補あり / exact-match保留 / 現写真では1商品に断定不能",
           "source": "web candidate",
           "verified_exact_match": false
         },
@@ -11271,8 +11337,11 @@ window.ZERO_COST_INTAKE = {
       "display_name": "JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp",
       "product_name": "JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp",
       "verified_exact_match": false,
-      "official_image_state": "比較画像候補あり / exact-match保留",
-      "exact_match_guard_state": "clear",
+      "official_image_state": "比較画像候補あり / exact-match保留 / 現写真では1商品に断定不能",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "別商品mix"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -11383,8 +11452,8 @@ window.ZERO_COST_INTAKE = {
         "product_name": "AUTOMATIC WATER DISPENSER Upgraded Stainless Steel Basin",
         "barcode_primary": "",
         "product_code_type": "package_text",
-        "official_image_state": "実物のみ",
-        "note": "FRONT/BACKの2枚で AUTOMATIC WATER DISPENSER / Upgraded Stainless Steel Basin / 304 Stainless Steel の箱表示が一致。CODE写真は欠けているが、商品種別は自動給水器で十分に読めるため provisional 登録する。",
+        "official_image_state": "actual-only固定 / 比較画像なし",
+        "note": "FRONT/BACK の2枚で AUTOMATIC WATER DISPENSER / Upgraded Stainless Steel Basin / 304 Stainless Steel の箱表示が一致する。CODE 写真は欠けているが、現写真だけで自動給水器の箱と判断できるため actual-only の provisional で扱う。",
         "evidence": [
           "AUTOMATIC WATER DISPENSER",
           "Upgraded Stainless Steel Basin",
@@ -11424,7 +11493,7 @@ window.ZERO_COST_INTAKE = {
       "display_name": "AUTOMATIC WATER DISPENSER Upgraded Stainless Steel Basin",
       "product_name": "AUTOMATIC WATER DISPENSER Upgraded Stainless Steel Basin",
       "verified_exact_match": false,
-      "official_image_state": "実物のみ",
+      "official_image_state": "actual-only固定 / 比較画像なし",
       "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
@@ -16093,8 +16162,11 @@ window.ZERO_COST_INTAKE = {
           "display_name": "1.1CT レモンクォーツ シルバーリング サイズ10",
           "product_name": "1.1CT レモンクォーツ シルバーリング サイズ10",
           "verified_exact_match": false,
-          "official_image_state": "実物のみ",
-          "exact_match_guard_state": "clear",
+          "official_image_state": "実物のみ / 現写真では1商品に断定不能",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "別商品mix"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -16593,8 +16665,11 @@ window.ZERO_COST_INTAKE = {
           "display_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
           "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
           "verified_exact_match": false,
-          "official_image_state": "実物のみ",
-          "exact_match_guard_state": "clear",
+          "official_image_state": "実物のみ / 現写真では1商品に断定不能",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "別商品mix"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -16742,8 +16817,11 @@ window.ZERO_COST_INTAKE = {
           "display_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
           "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
           "verified_exact_match": false,
-          "official_image_state": "実物のみ",
-          "exact_match_guard_state": "clear",
+          "official_image_state": "実物のみ / 現写真では1商品に断定不能",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "別商品mix"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -17103,7 +17181,7 @@ window.ZERO_COST_INTAKE = {
             "market_checked_at": "",
             "market_note": "",
             "publish_state": "下書き",
-            "publish_detail": "本体は MMC 化粧水。コード側に Amazon 内部コードが混在するため GTIN 優先で暫定特定。 / 0026と同一商品。GTIN優先の暫定特定に画像候補を付与。",
+            "publish_detail": "FRONT で MMC 化粧水 240ml と GTIN 4595987734025 を確認。一方 BACK/CODE は [wolass] メンズセーター X0018UBQX1 の別商品。現写真では同一管理番号の1商品に断定不能のため、MMC 側候補の provisional に留める。",
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
@@ -18592,8 +18670,11 @@ window.ZERO_COST_INTAKE = {
           "display_name": "RemeeHi 女教師コスプレ衣装 ホワイトレース系",
           "product_name": "RemeeHi 女教師コスプレ衣装 ホワイトレース系",
           "verified_exact_match": false,
-          "official_image_state": "実物のみ",
-          "exact_match_guard_state": "clear",
+          "official_image_state": "実物のみ / 現写真では1商品に断定不能",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "別商品mix"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -18930,8 +19011,11 @@ window.ZERO_COST_INTAKE = {
           "display_name": "SOUKE SPORTS Cycling shorts ブラック S",
           "product_name": "SOUKE SPORTS Cycling shorts ブラック S",
           "verified_exact_match": false,
-          "official_image_state": "実物のみ",
-          "exact_match_guard_state": "clear",
+          "official_image_state": "実物のみ / 現写真では1商品に断定不能",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "別商品mix"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -20547,7 +20631,7 @@ window.ZERO_COST_INTAKE = {
             "market_checked_at": "",
             "market_note": "",
             "publish_state": "下書き",
-            "publish_detail": "実物写真では、ホワイトのレディース衣類本体、コードラベル X001B8TZTR、および M / ホワイト の表記までは確認できる。以前の BlueR-L2 などの OCR 混入は採用せず、色違い事故を避けるため actual-only 前提で provisional に上げる。比較画像はまだ 100%同一確認できるものを確保できていないため、出品画像は実物のみで扱う。",
+            "publish_detail": "BACK/CODE の2枚でホワイト衣類本体と X001B8TZTR / M / ホワイト が一致。一方 FRONT は X0015NW4BJ / Y5AQTX2313-BlueR-L2 の別ラベルだけが残った袋面で別商品混線。現写真では1商品に断定不能のため、ホワイト衣類側を provisional に留める。",
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
@@ -21059,8 +21143,11 @@ window.ZERO_COST_INTAKE = {
           "display_name": "花柄シュシュセット",
           "product_name": "花柄シュシュセット",
           "verified_exact_match": false,
-          "official_image_state": "実物のみ",
-          "exact_match_guard_state": "clear",
+          "official_image_state": "実物のみ / 現写真では1商品に断定不能",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "別商品mix"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -21367,13 +21454,17 @@ window.ZERO_COST_INTAKE = {
           "resolved": {
             "management_id": "BOX-001-ITEM-0051",
             "resolution_status": "provisional",
-            "product_name": "Heated Socks",
-            "barcode_primary": "",
-            "product_code_type": "package_text",
-            "official_image_state": "実物のみ / 現写真では1商品に断定不能",
-            "note": "CODEにHeated Socks箱。FRONT/BACKは黒い衣類パッケージ（別商品混線）。CODE側が本命。2026-04-15商品特定分析によりprovisional登録。",
+            "product_name": "Heated Socks 男女兼用 グレー",
+            "barcode_primary": "X000Z2MCNB",
+            "product_code_type": "amazon_internal",
+            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "note": "BACK/CODE の2枚で Heated Socks 箱と X000Z2MCNB / 電熱ソックス / 男女兼用（Grey）が一致。一方 FRONT は黒い衣類パッケージで別商品。現写真では1商品に断定不能のため、Heated Socks 側を provisional に留める。",
             "evidence": [
-              "Heated Socks"
+              "X000Z2MCNB",
+              "Heated Socks",
+              "電熱ソックス",
+              "男女兼用",
+              "Grey"
             ],
             "exact_match_guard_state": "review_required",
             "exact_match_guard_reasons": [
@@ -21387,12 +21478,12 @@ window.ZERO_COST_INTAKE = {
             "product_id": "PRD-BOX-001-051",
             "draft_id": "DRF-BOX-001-051",
             "research_id": "RES-BOX-001-051",
-            "product_name": "Heated Socks",
+            "product_name": "Heated Socks 男女兼用 グレー",
             "brand": "",
             "category": "",
-            "barcode_primary": "",
-            "product_code_type": "package_text",
-            "listing_title": "Heated Socks",
+            "barcode_primary": "X000Z2MCNB",
+            "product_code_type": "amazon_internal",
+            "listing_title": "Heated Socks 男女兼用 グレー",
             "listing_price": "",
             "market_floor_price": "",
             "market_floor_state": "未調査",
@@ -21409,10 +21500,10 @@ window.ZERO_COST_INTAKE = {
           },
           "comparison_images": [],
           "reference_images": [],
-          "display_name": "Heated Socks",
-          "product_name": "Heated Socks",
+          "display_name": "Heated Socks 男女兼用 グレー",
+          "product_name": "Heated Socks 男女兼用 グレー",
           "verified_exact_match": false,
-          "official_image_state": "実物のみ / 現写真では1商品に断定不能",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
             "別商品mix"
@@ -21513,16 +21604,23 @@ window.ZERO_COST_INTAKE = {
           "resolved": {
             "management_id": "BOX-001-ITEM-0052",
             "resolution_status": "provisional",
-            "product_name": "白箱 X00197BVHJ",
+            "product_name": "FirstC 記念品ギフト箱（内容物不明）",
             "barcode_primary": "X00197BVHJ",
             "product_code_type": "amazon_internal",
-            "official_image_state": "実物のみ",
-            "note": "BACK/CODEに白箱ラベル X00197BVHJ。barcodeはあるが商品名未確認。0053 FRONTと同一箱をlive視認確認済み。2026-04-15商品特定分析によりprovisional登録。",
+            "official_image_state": "actual-only固定 / 内容物未確認",
+            "note": "FRONT/BACK/CODE の3枚で白いギフト箱が一致し、ラベルで X00197BVHJ / FirstC / 記念品ギフト / MADE in China を確認できる。箱の中身や用途詳細は現写真だけでは断定できないため、actual-only かつ内容物不明として provisional に留める。",
             "evidence": [
               "X00197BVHJ",
-              "白箱"
+              "FirstC",
+              "記念品ギフト",
+              "白いギフト箱",
+              "内容物不明"
             ],
-            "exact_match_guard_state": "clear"
+            "exact_match_guard_state": "clear",
+            "brand_override": "FirstC",
+            "category_override": "その他 > 記念品・ギフト箱",
+            "price_override": 980,
+            "check_items_override": "内容物確認 / 箱状態 / サイズ感 / ギフト箱として出すか判断"
           },
           "official": {},
           "commerce": {
@@ -21531,13 +21629,13 @@ window.ZERO_COST_INTAKE = {
             "product_id": "PRD-BOX-001-052",
             "draft_id": "DRF-BOX-001-052",
             "research_id": "RES-BOX-001-052",
-            "product_name": "白箱 X00197BVHJ",
-            "brand": "",
-            "category": "",
+            "product_name": "FirstC 記念品ギフト箱（内容物不明）",
+            "brand": "FirstC",
+            "category": "その他 > 記念品・ギフト箱",
             "barcode_primary": "X00197BVHJ",
             "product_code_type": "amazon_internal",
-            "listing_title": "白箱 X00197BVHJ",
-            "listing_price": "",
+            "listing_title": "FirstC 記念品ギフト箱（内容物不明）",
+            "listing_price": "980",
             "market_floor_price": "",
             "market_floor_state": "未調査",
             "market_source_label": "",
@@ -21553,10 +21651,10 @@ window.ZERO_COST_INTAKE = {
           },
           "comparison_images": [],
           "reference_images": [],
-          "display_name": "白箱 X00197BVHJ",
-          "product_name": "白箱 X00197BVHJ",
+          "display_name": "FirstC 記念品ギフト箱（内容物不明）",
+          "product_name": "FirstC 記念品ギフト箱（内容物不明）",
           "verified_exact_match": false,
-          "official_image_state": "実物のみ",
+          "official_image_state": "actual-only固定 / 内容物未確認",
           "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
@@ -21569,7 +21667,7 @@ window.ZERO_COST_INTAKE = {
           "reference_image_ref": "",
           "minimum_price": "",
           "market_floor_price_label": "未調査",
-          "listing_price": "",
+          "listing_price": "980",
           "exception": {},
           "route_plan": {},
           "split_staging": {
@@ -21793,17 +21891,22 @@ window.ZERO_COST_INTAKE = {
           "resolved": {
             "management_id": "BOX-001-ITEM-0053",
             "resolution_status": "provisional",
-            "product_name": "Hello Kitty 50TH ANNIVERSARY ぬいぐるみ",
-            "barcode_primary": "",
-            "product_code_type": "package_text",
-            "official_image_state": "実物のみ",
-            "note": "BACK/CODEにHello Kitty 50TH ANNIVERSARY系。FRONTは白箱X00197BVHJ（0052と同一箱）。BACK/CODE側が本命。2026-04-15商品特定分析によりprovisional登録。",
+            "product_name": "Hello Kitty 50TH ANNIVERSARY マスコットキーホルダー ブラック系",
+            "barcode_primary": "X0018IYEUP",
+            "product_code_type": "amazon_internal",
+            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "note": "BACK/CODE の2枚で Hello Kitty 50TH ANNIVERSARY の黒系マスコット本体と X0018IYEUP ラベルが一致。一方 FRONT は X00197BVHJ の白いギフト箱で別商品。現写真では1商品に断定不能のため、Hello Kitty 側を provisional に留める。",
             "evidence": [
+              "X0018IYEUP",
               "Hello Kitty",
               "50TH ANNIVERSARY",
-              "ぬいぐるみ"
+              "ブラック系マスコット",
+              "ボールチェーン"
             ],
-            "exact_match_guard_state": "clear"
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "別商品mix"
+            ]
           },
           "official": {},
           "commerce": {
@@ -21812,12 +21915,12 @@ window.ZERO_COST_INTAKE = {
             "product_id": "PRD-BOX-001-053",
             "draft_id": "DRF-BOX-001-053",
             "research_id": "RES-BOX-001-053",
-            "product_name": "Hello Kitty 50TH ANNIVERSARY ぬいぐるみ",
+            "product_name": "Hello Kitty 50TH ANNIVERSARY マスコットキーホルダー ブラック系",
             "brand": "",
             "category": "",
-            "barcode_primary": "",
-            "product_code_type": "package_text",
-            "listing_title": "Hello Kitty 50TH ANNIVERSARY ぬいぐるみ",
+            "barcode_primary": "X0018IYEUP",
+            "product_code_type": "amazon_internal",
+            "listing_title": "Hello Kitty 50TH ANNIVERSARY マスコットキーホルダー ブラック系",
             "listing_price": "",
             "market_floor_price": "",
             "market_floor_state": "未調査",
@@ -21834,11 +21937,14 @@ window.ZERO_COST_INTAKE = {
           },
           "comparison_images": [],
           "reference_images": [],
-          "display_name": "Hello Kitty 50TH ANNIVERSARY ぬいぐるみ",
-          "product_name": "Hello Kitty 50TH ANNIVERSARY ぬいぐるみ",
+          "display_name": "Hello Kitty 50TH ANNIVERSARY マスコットキーホルダー ブラック系",
+          "product_name": "Hello Kitty 50TH ANNIVERSARY マスコットキーホルダー ブラック系",
           "verified_exact_match": false,
-          "official_image_state": "実物のみ",
-          "exact_match_guard_state": "clear",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "別商品mix"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -22076,8 +22182,8 @@ window.ZERO_COST_INTAKE = {
             "product_name": "Poperdision ブラック 3XL レディース衣類",
             "barcode_primary": "X0018GJO2Z",
             "product_code_type": "amazon_internal",
-            "official_image_state": "比較画像待ち / exact-match保留",
-            "note": "実物写真では、黒い衣類本体、コードラベル X0018GJO2Z、[Poperdision] / Black-3XL / 3XL の表記まで確認できる。具体的な商品型は断定せず、actual-only 前提で provisional に上げる。比較画像はまだ 100%同一確認できるものを確保できていないため、出品画像は実物のみで扱う。",
+            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "note": "BACK/CODE の2枚で黒い衣類本体と X0018GJO2Z / [Poperdision] / Black-3XL / 3XL が一致。一方 FRONT は Hello Kitty 50TH ANNIVERSARY の別商品。現写真では1商品に断定不能のため、衣類側を provisional に留める。",
             "evidence": [
               "X0018GJO2Z",
               "Poperdision",
@@ -22091,8 +22197,11 @@ window.ZERO_COST_INTAKE = {
             "check_items_override": "色味ブラック / 3XL表記 / 衣類種別 / シルエット確認",
             "official_page_url": "",
             "official_image_url": "",
-            "image_source": "比較画像待ち",
-            "exact_match_guard_state": "clear"
+            "image_source": "actual-only",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "別商品mix"
+            ]
           },
           "official": {},
           "commerce": {
@@ -22126,8 +22235,11 @@ window.ZERO_COST_INTAKE = {
           "display_name": "Poperdision ブラック 3XL レディース衣類",
           "product_name": "Poperdision ブラック 3XL レディース衣類",
           "verified_exact_match": false,
-          "official_image_state": "比較画像待ち / exact-match保留",
-          "exact_match_guard_state": "clear",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "別商品mix"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -22251,8 +22363,8 @@ window.ZERO_COST_INTAKE = {
             "product_name": "ATIDIMU 美容液",
             "barcode_primary": "X001BGAPFR",
             "product_code_type": "amazon_internal",
-            "official_image_state": "比較画像候補あり / exact-match保留",
-            "note": "実物箱に X001BGAPFR、ATIDIMU（アティディム）美容液、7種植物エキス配合の表記がある。公式候補ページ『ATIDIMU（アティディム）美容液』は取得できたが、容量や外箱細部まで 100% 同一とはまだ断定しない。比較画像は参考候補として保持し、出品画像は実物のみで扱う。 / X001BGAPFR / ATIDIMU / 美容液 / 7種植物エキス配合 は実物で確認できる。 / X001BGAPFR / ATIDIMU / 美容液 / 7種植物エキス配合 は実物で確認できる。公式候補ページはあるが、容量や外箱細部まで 100% 同一とはまだ断定しないため、出品採用不可。",
+            "official_image_state": "比較画像候補あり / exact-match保留 / 現写真では1商品に断定不能",
+            "note": "BACK/CODE の2枚で X001BGAPFR / ATIDIMU（アティディム）美容液 / 7種植物エキス配合 が一致。一方 FRONT は別商品の黒い衣類パッケージ。公式候補ページは保持するが、現写真では1商品に断定不能のため、ATIDIMU 側を provisional に留める。",
             "evidence": [
               "X001BGAPFR",
               "ATIDIMU",
@@ -22266,7 +22378,10 @@ window.ZERO_COST_INTAKE = {
             "official_page_url": "https://atidimu.com/products/%E3%82%A2%E3%83%86%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A0-%E7%BE%8E%E5%AE%B9%E6%B6%B2-atidimu-serum",
             "official_image_url": "http://atidimu.com/cdn/shop/files/3-1.jpg?v=1759996277",
             "image_source": "ATIDIMU公式",
-            "exact_match_guard_state": "clear"
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "別商品mix"
+            ]
           },
           "official": {
             "management_id": "BOX-001-ITEM-0055",
@@ -22278,9 +22393,12 @@ window.ZERO_COST_INTAKE = {
             "official_image_url": "http://atidimu.com/cdn/shop/files/3-1.jpg?v=1759996277",
             "image_source": "ATIDIMU公式",
             "verified_exact_match": false,
-            "official_image_state": "比較画像候補あり / exact-match保留",
-            "note": "X001BGAPFR / ATIDIMU / 美容液 / 7種植物エキス配合 は実物で確認できる。公式候補ページはあるが、容量や外箱細部まで 100% 同一とはまだ断定しないため、出品採用不可。",
-            "exact_match_guard_state": "clear"
+            "official_image_state": "比較画像候補あり / exact-match保留 / 現写真では1商品に断定不能",
+            "note": "BACK/CODE では X001BGAPFR / ATIDIMU / 美容液 / 7種植物エキス配合 が一致するが、FRONT は別商品の黒い衣類パッケージ。比較画像候補は保持するが、現写真では1商品に断定不能のため出品採用不可。",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "別商品mix"
+            ]
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0055",
@@ -22313,7 +22431,7 @@ window.ZERO_COST_INTAKE = {
               "label": "比較-1",
               "url": "./assets/official_images/BOX-001-ITEM-0055_official_1.jpg",
               "page_url": "https://atidimu.com/products/%E3%82%A2%E3%83%86%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A0-%E7%BE%8E%E5%AE%B9%E6%B6%B2-atidimu-serum",
-              "state": "比較画像候補あり / exact-match保留",
+              "state": "比較画像候補あり / exact-match保留 / 現写真では1商品に断定不能",
               "source": "ATIDIMU公式",
               "verified_exact_match": false
             }
@@ -22323,7 +22441,7 @@ window.ZERO_COST_INTAKE = {
               "label": "比較-1",
               "url": "./assets/official_images/BOX-001-ITEM-0055_official_1.jpg",
               "page_url": "https://atidimu.com/products/%E3%82%A2%E3%83%86%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A0-%E7%BE%8E%E5%AE%B9%E6%B6%B2-atidimu-serum",
-              "state": "比較画像候補あり / exact-match保留",
+              "state": "比較画像候補あり / exact-match保留 / 現写真では1商品に断定不能",
               "source": "ATIDIMU公式",
               "verified_exact_match": false
             }
@@ -22331,8 +22449,11 @@ window.ZERO_COST_INTAKE = {
           "display_name": "ATIDIMU 美容液",
           "product_name": "ATIDIMU 美容液",
           "verified_exact_match": false,
-          "official_image_state": "比較画像候補あり / exact-match保留",
-          "exact_match_guard_state": "clear",
+          "official_image_state": "比較画像候補あり / exact-match保留 / 現写真では1商品に断定不能",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "別商品mix"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -22453,17 +22574,22 @@ window.ZERO_COST_INTAKE = {
           "resolved": {
             "management_id": "BOX-001-ITEM-0056",
             "resolution_status": "provisional",
-            "product_name": "JODSONE UV LEDネイルランプ",
-            "barcode_primary": "",
-            "product_code_type": "package_text",
-            "official_image_state": "実物のみ",
-            "note": "CODEにJODSONE UV LEDネイルランプ箱。FRONTはATIDIMU FACE SERUM箱、BACKは出品画面スクショ（混線）。CODE側が本命。0057と同じJODSONEブランド。2026-04-15商品特定分析によりprovisional登録。",
+            "product_name": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
+            "barcode_primary": "X001AP6CKV",
+            "product_code_type": "amazon_internal",
+            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "note": "CODE では JODSONE 箱ラベル X001AP6CKV / クイックUV LED自動センサーネイルドライヤー ピンク が読める。一方 FRONT は ATIDIMU FACE SERUM 箱、BACK は出品入力画面スクショで、現写真では1商品に断定不能。JODSONE 側を provisional に留める。",
             "evidence": [
+              "X001AP6CKV",
               "JODSONE",
-              "UV LED",
-              "ネイルランプ"
+              "クイックUV LED",
+              "ネイルドライヤー",
+              "ピンク"
             ],
-            "exact_match_guard_state": "clear"
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "別商品mix"
+            ]
           },
           "official": {},
           "commerce": {
@@ -22472,12 +22598,12 @@ window.ZERO_COST_INTAKE = {
             "product_id": "PRD-BOX-001-056",
             "draft_id": "DRF-BOX-001-056",
             "research_id": "RES-BOX-001-056",
-            "product_name": "JODSONE UV LEDネイルランプ",
+            "product_name": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
             "brand": "",
             "category": "",
-            "barcode_primary": "",
-            "product_code_type": "package_text",
-            "listing_title": "JODSONE UV LEDネイルランプ",
+            "barcode_primary": "X001AP6CKV",
+            "product_code_type": "amazon_internal",
+            "listing_title": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
             "listing_price": "",
             "market_floor_price": "",
             "market_floor_state": "未調査",
@@ -22494,11 +22620,14 @@ window.ZERO_COST_INTAKE = {
           },
           "comparison_images": [],
           "reference_images": [],
-          "display_name": "JODSONE UV LEDネイルランプ",
-          "product_name": "JODSONE UV LEDネイルランプ",
+          "display_name": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
+          "product_name": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
           "verified_exact_match": false,
-          "official_image_state": "実物のみ",
-          "exact_match_guard_state": "clear",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "別商品mix"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -22597,8 +22726,8 @@ window.ZERO_COST_INTAKE = {
             "barcode_primary": "JODSONE nail lamp box text",
             "product_code_type": "package_text",
             "verified_exact_match": false,
-            "official_image_state": "比較画像候補あり / exact-match保留",
-            "note": "本体箱の FRONT/BACK に JODSONE / Professional Gel Polish LED Nail Dryer Lamp / LED UV / Intelligent sensing / Non-harmful が読める。CODE ラベルは別商品の貼り違いの可能性があり、比較画像は照合用に保持。 / 2026-04-07 再照合では外箱と JODSONE X5 Max 系画像は強く一致したが、本体現物が見えていないため exact-match保留。 / JODSONE公式ページから比較画像を保持。外箱一致は強いが、本体現物未確認のため exact-match保留。",
+            "official_image_state": "比較画像候補あり / exact-match保留 / 現写真では1商品に断定不能",
+            "note": "FRONT/BACK の2枚で JODSONE / Professional Gel Polish LED Nail Dryer Lamp / LED UV / Intelligent sensing / Non-harmful が一致。一方 CODE は B09NG1PLHK の給水器ラベルで別商品。現写真では1商品に断定不能のため、JODSONE 箱側を provisional に留め、比較画像は照合用に保持する。",
             "evidence": [
               "JODSONE",
               "Professional Gel Polish LED Nail Dryer Lamp",
@@ -22613,8 +22742,11 @@ window.ZERO_COST_INTAKE = {
             "official_page_url": "https://www.jodsonebeauty.com/product/jodsone-120w-u-v-led-nail-lamp-for-two-hand-led-light-for-gel-with-54-pcs-light-bead-quick-curing-gel-polish-nail-dryer-suitable-salon-and-home-use-blackblack/",
             "image_source": "web candidate",
             "official_image_url": "https://cdn.jodsonebeauty.com/cdn/10954/2025/1108/90301857d3d2d1b0c04a2b85dcefd247-1.webp",
-            "exact_match_guard_state": "clear",
-            "official_image_local": "state/intake/official_images/BOX-001-ITEM-0057_jodsone_nail_lamp.webp"
+            "exact_match_guard_state": "review_required",
+            "official_image_local": "state/intake/official_images/BOX-001-ITEM-0057_jodsone_nail_lamp.webp",
+            "exact_match_guard_reasons": [
+              "別商品mix"
+            ]
           },
           "official": {
             "management_id": "BOX-001-ITEM-0057",
@@ -22622,9 +22754,12 @@ window.ZERO_COST_INTAKE = {
             "official_image_url": "https://cdn.jodsonebeauty.com/cdn/10954/2025/1108/90301857d3d2d1b0c04a2b85dcefd247-1.webp",
             "official_image_local": "state/intake/official_images/BOX-001-ITEM-0057_jodsone_nail_lamp.webp",
             "verified_exact_match": false,
-            "official_image_state": "比較画像候補あり / exact-match保留",
-            "note": "JODSONE公式ページから比較画像を保持。外箱一致は強いが、本体現物未確認のため exact-match保留。",
-            "exact_match_guard_state": "clear"
+            "official_image_state": "比較画像候補あり / exact-match保留 / 現写真では1商品に断定不能",
+            "note": "FRONT/BACK は JODSONE のネイルランプ箱で揃うが、CODE は B09NG1PLHK の給水器ラベルで別商品。比較画像候補は保持するが、現写真では1商品に断定不能のため出品採用不可。",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "別商品mix"
+            ]
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0057",
@@ -22657,7 +22792,7 @@ window.ZERO_COST_INTAKE = {
               "label": "比較-1",
               "url": "./assets/official_images/BOX-001-ITEM-0057_official_1.webp",
               "page_url": "https://www.jodsonebeauty.com/product/jodsone-120w-u-v-led-nail-lamp-for-two-hand-led-light-for-gel-with-54-pcs-light-bead-quick-curing-gel-polish-nail-dryer-suitable-salon-and-home-use-blackblack/",
-              "state": "比較画像候補あり / exact-match保留",
+              "state": "比較画像候補あり / exact-match保留 / 現写真では1商品に断定不能",
               "source": "web candidate",
               "verified_exact_match": false
             },
@@ -22691,7 +22826,7 @@ window.ZERO_COST_INTAKE = {
               "label": "比較-1",
               "url": "./assets/official_images/BOX-001-ITEM-0057_official_1.webp",
               "page_url": "https://www.jodsonebeauty.com/product/jodsone-120w-u-v-led-nail-lamp-for-two-hand-led-light-for-gel-with-54-pcs-light-bead-quick-curing-gel-polish-nail-dryer-suitable-salon-and-home-use-blackblack/",
-              "state": "比較画像候補あり / exact-match保留",
+              "state": "比較画像候補あり / exact-match保留 / 現写真では1商品に断定不能",
               "source": "web candidate",
               "verified_exact_match": false
             },
@@ -22723,8 +22858,11 @@ window.ZERO_COST_INTAKE = {
           "display_name": "JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp",
           "product_name": "JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp",
           "verified_exact_match": false,
-          "official_image_state": "比較画像候補あり / exact-match保留",
-          "exact_match_guard_state": "clear",
+          "official_image_state": "比較画像候補あり / exact-match保留 / 現写真では1商品に断定不能",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "別商品mix"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -22835,8 +22973,8 @@ window.ZERO_COST_INTAKE = {
             "product_name": "AUTOMATIC WATER DISPENSER Upgraded Stainless Steel Basin",
             "barcode_primary": "",
             "product_code_type": "package_text",
-            "official_image_state": "実物のみ",
-            "note": "FRONT/BACKの2枚で AUTOMATIC WATER DISPENSER / Upgraded Stainless Steel Basin / 304 Stainless Steel の箱表示が一致。CODE写真は欠けているが、商品種別は自動給水器で十分に読めるため provisional 登録する。",
+            "official_image_state": "actual-only固定 / 比較画像なし",
+            "note": "FRONT/BACK の2枚で AUTOMATIC WATER DISPENSER / Upgraded Stainless Steel Basin / 304 Stainless Steel の箱表示が一致する。CODE 写真は欠けているが、現写真だけで自動給水器の箱と判断できるため actual-only の provisional で扱う。",
             "evidence": [
               "AUTOMATIC WATER DISPENSER",
               "Upgraded Stainless Steel Basin",
@@ -22876,7 +23014,7 @@ window.ZERO_COST_INTAKE = {
           "display_name": "AUTOMATIC WATER DISPENSER Upgraded Stainless Steel Basin",
           "product_name": "AUTOMATIC WATER DISPENSER Upgraded Stainless Steel Basin",
           "verified_exact_match": false,
-          "official_image_state": "実物のみ",
+          "official_image_state": "actual-only固定 / 比較画像なし",
           "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",

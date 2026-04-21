@@ -786,17 +786,18 @@
         <div class="drive-panel">
           <div class="drive-header">
             <div class="drive-title">別メンバー用 Google Drive 共有</div>
-            <div class="drive-badge">相手はアプリ不要</div>
+            <div class="drive-badge">自動取り込みあり</div>
           </div>
           <div class="drive-note">
             基本は <strong>今ある画像だけで判断</strong> します。追加メモは不要です。バーコード・型番・成分表示・サイズ表記が写る写真を優先してください。
-            Drive取り込みは <strong>アップロード時刻順 → ファイル名順</strong> で束ねるので、1商品ごとにまとまった順で入れてください。
+            誤紐付け防止のため、<strong>1商品 = 1子フォルダ</strong> にして、その中の画像名を <strong>FRONT / BACK / CODE</strong> か <strong>1 / 2 / 3</strong> を含む形にしてください。
+            <strong>箱直下へ画像を置いても自動取り込みしません。</strong> resident 側が約20秒ごとに Drive を見に行き、準備が揃った子フォルダだけ intake へ反映します。
           </div>
           <div class="drive-actions">
             <button id="drive-share-btn" class="action-link" type="button">Google Drive URLを作る</button>
-            <button id="drive-sync-btn" class="action-link primary" type="button">Drive写真を取り込む</button>
+            <button id="drive-sync-btn" class="action-link primary" type="button">今すぐDrive確認</button>
           </div>
-          <div id="drive-status" class="drive-status">箱を選ぶと、共有URLを作って別メンバーへ渡せます。</div>
+          <div id="drive-status" class="drive-status">箱を選ぶと、共有URLを作って別メンバーへ渡せます。自動取り込みは 1商品1フォルダ の形だけ通します。</div>
           <a id="drive-link" class="drive-link" href="#" target="_blank" rel="noreferrer noopener" hidden>Google Drive フォルダを開く</a>
         </div>
       </div>
@@ -854,6 +855,8 @@
     var selectedFiles = [];
     var isUploading = false;
     var isDriveBusy = false;
+    var driveStatusPollTimer = 0;
+    var driveStatusRequestId = 0;
 
     function esc(value){
       return String(value || '')
@@ -1198,6 +1201,7 @@
     }
 
     function renderBoxPanel() {
+      clearDriveStatusPoll();
       var box = currentBox();
       if (!box) {
         boxSelect.innerHTML = '<option value="">箱情報がありません</option>';
@@ -1235,7 +1239,8 @@
       driveShareBtn.disabled = isUploading || isDriveBusy;
       driveSyncBtn.disabled = isUploading || isDriveBusy;
       setDriveLink(storedDriveLink(box.id));
-      setDriveStatus(box.label + ' の共有URLを作るか、Driveに入った写真を取り込めます。', '');
+      setDriveStatus(box.label + ' は Drive 自動取り込み対象です。1商品1フォルダ + FRONT/BACK/CODE で入れてください。', '');
+      refreshDriveAutoStatus({ silent: true });
       if (selectedFiles.length) {
         renderSelectedFiles(selectedFiles, box);
       } else {
@@ -1366,6 +1371,11 @@
       return apiUrl('/api/zero-cost/drive-sync');
     }
 
+    function driveSyncStatusApiUrl(boxId) {
+      var query = boxId ? ('?box_id=' + encodeURIComponent(boxId)) : '';
+      return apiUrl('/api/zero-cost/drive-sync/status' + query);
+    }
+
     function assertUploadApiReady() {
       if (window.location.protocol === 'file:') {
         return Promise.reject(new Error('この画面を file:// で開いています。http://127.0.0.1:18777/merch/zero-cost/index.html か resident URL で開いてください。'));
@@ -1417,6 +1427,123 @@
       };
     }
 
+    function clearDriveStatusPoll() {
+      if (!driveStatusPollTimer) return;
+      window.clearTimeout(driveStatusPollTimer);
+      driveStatusPollTimer = 0;
+    }
+
+    function scheduleDriveStatusPoll(delayMs) {
+      clearDriveStatusPoll();
+      var waitMs = Math.max(4000, num(delayMs, 15000));
+      driveStatusPollTimer = window.setTimeout(function() {
+        refreshDriveAutoStatus({ silent: true });
+      }, waitMs);
+    }
+
+    function summarizeBlockedGroups(groups) {
+      return (groups || []).slice(0, 2).map(function(group) {
+        if (!group) return '';
+        var name = String(group.group_name || group.group_id || '').trim();
+        var reason = String(group.reason || '').trim();
+        if (name && reason) return name + ' (' + reason + ')';
+        return name || reason;
+      }).filter(Boolean).join(' / ');
+    }
+
+    function buildDriveAutoStatusMessage(box, status) {
+      var label = String((status && status.box_label) || (box && box.label) || 'この箱');
+      var fileCount = num(status && status.file_count);
+      var itemCount = num(status && status.item_count);
+      var blockedGroups = num(status && status.blocked_group_count);
+      var looseImages = num(status && status.loose_image_count);
+      var lastCycleAt = String((status && status.last_cycle_at) || '').trim();
+      var detail = summarizeBlockedGroups(status && status.blocked_groups);
+      var error = String((status && status.error) || '').trim();
+      if (error) {
+        return {
+          tone: 'error',
+          text: label + ' の自動取り込み確認でエラーが出ています。' + error
+        };
+      }
+      if (blockedGroups || looseImages) {
+        return {
+          tone: 'error',
+          text: label + ' の Drive に要修正があります。'
+            + (blockedGroups ? ' 子フォルダ修正 ' + blockedGroups + '件。' : '')
+            + (looseImages ? ' 箱直下画像 ' + looseImages + '枚。' : '')
+            + (detail ? ' 例: ' + detail + '。' : '')
+            + ' 1商品1フォルダ + FRONT/BACK/CODE に直してください。'
+        };
+      }
+      if (fileCount || itemCount) {
+        return {
+          tone: 'ok',
+          text: label + ' は直近の自動取り込みで '
+            + fileCount + '枚 / ' + itemCount + '商品ぶんを反映しました。'
+            + (lastCycleAt ? ' 最終確認 ' + lastCycleAt + '。' : '')
+        };
+      }
+      if (lastCycleAt) {
+        return {
+          tone: '',
+          text: label + ' の自動確認は動作中です。まだ取り込み対象はありません。最終確認 ' + lastCycleAt + '。'
+        };
+      }
+      return {
+        tone: '',
+        text: label + ' は Drive 自動取り込み対象です。1商品1フォルダ + FRONT/BACK/CODE で入れてください。'
+      };
+    }
+
+    function refreshDriveAutoStatus(options) {
+      options = options || {};
+      var box = currentBox();
+      if (!box || !box.id) return Promise.resolve(null);
+      if ((isDriveBusy || isUploading) && !options.force) {
+        scheduleDriveStatusPoll(12000);
+        return Promise.resolve(null);
+      }
+      var requestId = ++driveStatusRequestId;
+      return fetch(driveSyncStatusApiUrl(box.id) + '&ts=' + encodeURIComponent(String(Date.now())), { cache: 'no-store' })
+        .then(function(response) {
+          return response.text().then(function(text) {
+            var data = {};
+            try {
+              data = text ? JSON.parse(text) : {};
+            } catch (_) {
+              data = {};
+            }
+            if (!response.ok || !data.ok) {
+              throw new Error((data && data.error) || ('HTTP ' + response.status));
+            }
+            return data;
+          });
+        })
+        .then(function(data) {
+          if (requestId !== driveStatusRequestId) return null;
+          var status = data.box || {};
+          var folderUrl = String(status.folder_url || '');
+          if (folderUrl) {
+            rememberDriveLink(box.id, folderUrl);
+            setDriveLink(folderUrl);
+          }
+          if (!options.preserveMessage) {
+            var message = buildDriveAutoStatusMessage(box, status);
+            setDriveStatus(message.text, message.tone);
+          }
+          scheduleDriveStatusPoll((num(data.interval_sec) || 20) * 1000);
+          return status;
+        })
+        .catch(function(error) {
+          if (!options.silent) {
+            setDriveStatus('Drive 自動確認の状態を読めません。' + (error && error.message ? ' ' + error.message : ''), 'error');
+          }
+          scheduleDriveStatusPoll(15000);
+          return null;
+        });
+    }
+
     function requestDriveShare() {
       var box = currentBox();
       if (!box || isDriveBusy || isUploading) return;
@@ -1431,7 +1558,7 @@
             rememberDriveLink(box.id, folderUrl);
             setDriveLink(folderUrl);
           }
-          setDriveStatus(box.label + ' の共有URLを作りました。相手はこのURLに写真を入れてください。', 'ok');
+          setDriveStatus(box.label + ' の共有URLを作りました。相手には「1商品1フォルダ + FRONT/BACK/CODE」で入れるよう伝えてください。', 'ok');
         })
         .catch(function(error) {
           setDriveStatus('Google Drive URL 作成に失敗しました。' + (error && error.message ? ' ' + error.message : ''), 'error');
@@ -1440,6 +1567,7 @@
           isDriveBusy = false;
           driveShareBtn.textContent = 'Google Drive URLを作る';
           setUploadButtonState();
+          scheduleDriveStatusPoll(3000);
         });
     }
 
@@ -1458,7 +1586,19 @@
             setDriveLink(folderUrl);
           }
           if (!num(data.file_count) || !num(data.item_count)) {
-            setDriveStatus(box.label + ' にはまだ新着画像がありません。相手が写真を入れたあとで、もう一度取り込んでください。', '');
+            var blockedGroups = num(data.blocked_group_count);
+            var looseImages = num(data.loose_image_count);
+            if (blockedGroups || looseImages) {
+              setDriveStatus(
+                box.label + ' に自動取り込みできないものがあります。'
+                + (blockedGroups ? ' 子フォルダ要修正 ' + blockedGroups + '件。' : '')
+                + (looseImages ? ' 箱直下画像 ' + looseImages + '枚。' : '')
+                + ' 1商品1フォルダ + FRONT/BACK/CODE に直してください。',
+                'error'
+              );
+              return;
+            }
+            setDriveStatus(box.label + ' にまだ新着画像はありません。自動監視は約20秒ごとに走ります。必要ならこのボタンで即時確認できます。', '');
             return;
           }
           setDriveStatus((data.box_label || box.label) + ' に '
@@ -1477,8 +1617,9 @@
         })
         .finally(function() {
           isDriveBusy = false;
-          driveSyncBtn.textContent = 'Drive写真を取り込む';
+          driveSyncBtn.textContent = '今すぐDrive確認';
           setUploadButtonState();
+          scheduleDriveStatusPoll(5000);
         });
     }
 
