@@ -1,5 +1,5 @@
 window.ZERO_COST_TASK_CARD_QUEUE = {
-  "generated_at": "2026-04-21 18:59:28 JST",
+  "generated_at": "2026-04-21 21:24:16 JST",
   "business_name": "0円仕入れ物販事業",
   "counts": {
     "open_jobs": 23,
@@ -562,6 +562,94 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
     {
       "job_id": "最低価格収集担当-002",
       "task_name": "最低価格収集担当",
+      "management_id": "BOX-001-ITEM-0002",
+      "status": "open",
+      "recommended_ai_tier": "低コストAI可",
+      "goal": "最低価格と根拠URLと調査時刻を集める",
+      "input_fields": [
+        "management_id",
+        "product_name",
+        "exact_match_status",
+        "current_min_price"
+      ],
+      "write_targets": [
+        "zero_cost_merch_branch/state/intake/BOX-001_market_price_snapshot.json",
+        "zero_cost_merch_branch/state/current_state.json"
+      ],
+      "must_not_do": [
+        "最低価格という語を説明欄へ書かない",
+        "相場の断定を顧客返答に使わない",
+        "100%同一確認済み を勝手に付けない",
+        "問い合わせへ直接返答しない",
+        "出品や API 公開を実行しない"
+      ],
+      "stop_conditions": [
+        "候補が複数に割れて exact 商品か分からない",
+        "送料込み / 送料別で比較が崩れる"
+      ],
+      "expected_outputs": [
+        "market_floor_price",
+        "market_source_url",
+        "market_checked_at"
+      ],
+      "batch_size": 4,
+      "routing_context": {
+        "mercari_lane": "出品準備中",
+        "mercari_gate": "停止",
+        "image_gate": "画像同一性確認待ち",
+        "base_condition": "停止",
+        "shipco_condition": "停止",
+        "review_reason": "公開可否未確定 / 画像同一性未確認 / Qwen HQ判断: 比較画像照合担当 / blocked",
+        "low_cost_job": "比較画像照合"
+      }
+    },
+    {
+      "job_id": "最低価格収集担当-003",
+      "task_name": "最低価格収集担当",
+      "management_id": "BOX-001-ITEM-0003",
+      "status": "open",
+      "recommended_ai_tier": "低コストAI可",
+      "goal": "最低価格と根拠URLと調査時刻を集める",
+      "input_fields": [
+        "management_id",
+        "product_name",
+        "exact_match_status",
+        "current_min_price"
+      ],
+      "write_targets": [
+        "zero_cost_merch_branch/state/intake/BOX-001_market_price_snapshot.json",
+        "zero_cost_merch_branch/state/current_state.json"
+      ],
+      "must_not_do": [
+        "最低価格という語を説明欄へ書かない",
+        "相場の断定を顧客返答に使わない",
+        "100%同一確認済み を勝手に付けない",
+        "問い合わせへ直接返答しない",
+        "出品や API 公開を実行しない"
+      ],
+      "stop_conditions": [
+        "候補が複数に割れて exact 商品か分からない",
+        "送料込み / 送料別で比較が崩れる"
+      ],
+      "expected_outputs": [
+        "market_floor_price",
+        "market_source_url",
+        "market_checked_at"
+      ],
+      "batch_size": 4,
+      "routing_context": {
+        "mercari_lane": "出品準備中",
+        "mercari_gate": "公開可否確認待ち",
+        "image_gate": "実物のみで可",
+        "base_condition": "同期準備可",
+        "shipco_condition": "送り状共通化候補",
+        "review_reason": "公開可否未確定",
+        "low_cost_job": "公開前チェック"
+      }
+    },
+    {
+      "job_id": "最低価格収集担当-004",
+      "task_name": "最低価格収集担当",
       "management_id": "BOX-001-ITEM-0004",
       "status": "open",
       "recommended_ai_tier": "低コストAI可",
@@ -604,7 +692,7 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
       }
     },
     {
-      "job_id": "最低価格収集担当-003",
+      "job_id": "最低価格収集担当-005",
       "task_name": "最低価格収集担当",
       "management_id": "BOX-001-ITEM-0005",
       "status": "open",
@@ -648,97 +736,9 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
       }
     },
     {
-      "job_id": "最低価格収集担当-004",
-      "task_name": "最低価格収集担当",
-      "management_id": "BOX-001-ITEM-0013",
-      "status": "open",
-      "recommended_ai_tier": "低コストAI可",
-      "goal": "最低価格と根拠URLと調査時刻を集める",
-      "input_fields": [
-        "management_id",
-        "product_name",
-        "exact_match_status",
-        "current_min_price"
-      ],
-      "write_targets": [
-        "zero_cost_merch_branch/state/intake/BOX-001_market_price_snapshot.json",
-        "zero_cost_merch_branch/state/current_state.json"
-      ],
-      "must_not_do": [
-        "最低価格という語を説明欄へ書かない",
-        "相場の断定を顧客返答に使わない",
-        "100%同一確認済み を勝手に付けない",
-        "問い合わせへ直接返答しない",
-        "出品や API 公開を実行しない"
-      ],
-      "stop_conditions": [
-        "候補が複数に割れて exact 商品か分からない",
-        "送料込み / 送料別で比較が崩れる"
-      ],
-      "expected_outputs": [
-        "market_floor_price",
-        "market_source_url",
-        "market_checked_at"
-      ],
-      "batch_size": 4,
-      "routing_context": {
-        "mercari_lane": "出品準備中",
-        "mercari_gate": "公開可否確認待ち",
-        "image_gate": "画像OK",
-        "base_condition": "同期準備可",
-        "shipco_condition": "送り状共通化候補",
-        "review_reason": "公開可否未確定",
-        "low_cost_job": "公開前チェック"
-      }
-    },
-    {
-      "job_id": "最低価格収集担当-005",
-      "task_name": "最低価格収集担当",
-      "management_id": "BOX-001-ITEM-0027",
-      "status": "open",
-      "recommended_ai_tier": "低コストAI可",
-      "goal": "最低価格と根拠URLと調査時刻を集める",
-      "input_fields": [
-        "management_id",
-        "product_name",
-        "exact_match_status",
-        "current_min_price"
-      ],
-      "write_targets": [
-        "zero_cost_merch_branch/state/intake/BOX-001_market_price_snapshot.json",
-        "zero_cost_merch_branch/state/current_state.json"
-      ],
-      "must_not_do": [
-        "最低価格という語を説明欄へ書かない",
-        "相場の断定を顧客返答に使わない",
-        "100%同一確認済み を勝手に付けない",
-        "問い合わせへ直接返答しない",
-        "出品や API 公開を実行しない"
-      ],
-      "stop_conditions": [
-        "候補が複数に割れて exact 商品か分からない",
-        "送料込み / 送料別で比較が崩れる"
-      ],
-      "expected_outputs": [
-        "market_floor_price",
-        "market_source_url",
-        "market_checked_at"
-      ],
-      "batch_size": 4,
-      "routing_context": {
-        "mercari_lane": "出品準備中",
-        "mercari_gate": "公開可否確認待ち",
-        "image_gate": "実物のみで可",
-        "base_condition": "同期準備可",
-        "shipco_condition": "送り状共通化候補",
-        "review_reason": "公開可否未確定",
-        "low_cost_job": "公開前チェック"
-      }
-    },
-    {
       "job_id": "最低価格収集担当-006",
       "task_name": "最低価格収集担当",
-      "management_id": "BOX-001-ITEM-0008",
+      "management_id": "BOX-001-ITEM-0006",
       "status": "open",
       "recommended_ai_tier": "低コストAI可",
       "goal": "最低価格と根拠URLと調査時刻を集める",
@@ -770,13 +770,13 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
       ],
       "batch_size": 4,
       "routing_context": {
-        "mercari_lane": "公開済み",
-        "mercari_gate": "公開済み",
-        "image_gate": "実物のみで可",
-        "base_condition": "同期準備可",
-        "shipco_condition": "送り状共通化候補",
-        "review_reason": "例外時のみ",
-        "low_cost_job": "受注監視"
+        "mercari_lane": "",
+        "mercari_gate": "",
+        "image_gate": "",
+        "base_condition": "",
+        "shipco_condition": "",
+        "review_reason": "",
+        "low_cost_job": ""
       }
     },
     {

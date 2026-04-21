@@ -1,5 +1,5 @@
 window.ZERO_COST_INTAKE = {
-  "generated_at": "2026-04-04 17:34:58 JST",
+  "generated_at": "2026-04-21 20:32:46 JST",
   "box_id": "BOX-001",
   "box_label": "数字箱 001",
   "box_lane": "numeric",
@@ -12,13 +12,13 @@ window.ZERO_COST_INTAKE = {
   ],
   "slots_per_item": 3,
   "total_files": 173,
-  "total_items": 58,
-  "complete_items": 57,
+  "total_items": 59,
+  "complete_items": 58,
   "incomplete_items": 1,
-  "next_sequence": 59,
-  "next_management_id": "BOX-001-ITEM-0059",
+  "next_sequence": 60,
+  "next_management_id": "BOX-001-ITEM-0060",
   "identification_counts": {
-    "barcode_ready": 34,
+    "barcode_ready": 35,
     "ocr_ready": 2,
     "image_only": 0,
     "missing_slots": 0,
@@ -26,7 +26,7 @@ window.ZERO_COST_INTAKE = {
   },
   "resolution_counts": {
     "confirmed": 2,
-    "provisional": 56,
+    "provisional": 57,
     "official_image_pending": 0,
     "accepted_exception": 2
   },
@@ -121,7 +121,7 @@ window.ZERO_COST_INTAKE = {
         ]
       },
       "priority_score": 100,
-      "next_action": "カテゴリ審査反映待ち",
+      "next_action": "GTINで商品特定",
       "barcode_kind": "gtin",
       "review_flag": "",
       "resolved": {
@@ -289,7 +289,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "審査監視",
         "AI次アクション": "カテゴリ審査反映待ち",
         "ルーティング状態": "審査待ち",
-        "更新時刻": "2026-04-21 18:13:38 JST",
+        "更新時刻": "2026-04-21 21:07:22 JST",
         "メモ": "name=WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り / publish_ok=カテゴリ審査待ち / draft_status=カテゴリ審査待ち / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量"
       }
     },
@@ -367,8 +367,8 @@ window.ZERO_COST_INTAKE = {
         ]
       },
       "priority_score": 220,
-      "next_action": "actual-onlyで商品マスタへ流す",
-      "barcode_kind": "amazon_internal",
+      "next_action": "OCR検索で商品特定",
+      "barcode_kind": "",
       "review_flag": "",
       "resolved": {
         "management_id": "BOX-001-ITEM-0002",
@@ -469,7 +469,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -504,20 +504,20 @@ window.ZERO_COST_INTAKE = {
         "管理番号": "BOX-001-ITEM-0002",
         "主販路": "メルカリShops",
         "メルカリ本線": "出品準備中",
-        "メルカリ投入条件": "公開可否確認待ち",
-        "画像ゲート": "実物のみで可",
-        "外部EC": "BASE準備可",
-        "BASE同期条件": "同期準備可",
-        "共通配送": "Ship&co候補",
-        "Ship&co条件": "送り状共通化候補",
+        "メルカリ投入条件": "停止",
+        "画像ゲート": "画像同一性確認待ち",
+        "外部EC": "停止",
+        "BASE同期条件": "停止",
+        "共通配送": "停止",
+        "Ship&co条件": "停止",
         "メルカリ配送": "メルカリBiz配送 + 送り状印刷 + ヤマト集荷",
         "人確認": "要",
-        "人確認理由": "公開可否未確定 / Qwen HQ判断: 比較画像照合担当 / actual-only固定優先",
-        "低コストAI作業": "公開前チェック",
-        "AI次アクション": "実物のみで進める / 比較画像は後追い",
-        "ルーティング状態": "HQ判断済み",
-        "更新時刻": "2026-04-21 18:13:38 JST",
-        "メモ": "name=保冷クーラーバッグ ネイビー ショルダー付 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / qwen_hq=actual-only固定優先 / 2026-04-21 current truth: actual-only固定。比較画像なしでも実物写真のみで進める。"
+        "人確認理由": "公開可否未確定 / 画像同一性未確認 / Qwen HQ判断: 比較画像照合担当 / blocked",
+        "低コストAI作業": "比較画像照合",
+        "AI次アクション": "比較画像を再調査",
+        "ルーティング状態": "HQ差し止め",
+        "更新時刻": "2026-04-21 21:07:22 JST",
+        "メモ": "name=保冷クーラーバッグ ネイビー ショルダー付 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / qwen_hq=blocked / 比較画像未取得のため同一性判定不可。公式/メーカー画像を得るまでblocked維持。actual-only固定のまま再調査待ち。"
       }
     },
     {
@@ -594,10 +594,10 @@ window.ZERO_COST_INTAKE = {
           "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0003/IMG_4831_BACK_ocr_best.png"
         ]
       },
-      "priority_score": 140,
-      "next_action": "比較画像候補を照合",
+      "priority_score": 110,
+      "next_action": "本体表示とコードラベルを突合",
       "barcode_kind": "amazon_internal",
-      "review_flag": "",
+      "review_flag": "本体表示とコードラベルの不一致疑い",
       "resolved": {
         "management_id": "BOX-001-ITEM-0003",
         "resolution_status": "provisional",
@@ -661,7 +661,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -701,7 +701,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 18:13:38 JST",
+        "更新時刻": "2026-04-21 21:07:22 JST",
         "メモ": "name=YUGYUG サングラス ブラック/グレー ケース付き / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
       }
     },
@@ -781,10 +781,10 @@ window.ZERO_COST_INTAKE = {
           "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0004/IMG_4835_CODE_ocr_best.png"
         ]
       },
-      "priority_score": 140,
-      "next_action": "比較画像候補を照合",
+      "priority_score": 110,
+      "next_action": "本体表示とコードラベルを突合",
       "barcode_kind": "amazon_internal",
-      "review_flag": "",
+      "review_flag": "本体表示とコードラベルの不一致疑い",
       "resolved": {
         "management_id": "BOX-001-ITEM-0004",
         "resolution_status": "provisional",
@@ -959,7 +959,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 18:13:38 JST",
+        "更新時刻": "2026-04-21 21:07:22 JST",
         "メモ": "name=IAWNI ショルダーバッグ メッセンジャーバッグ / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMJHwgfzNjEkYfN8SMv"
       }
     },
@@ -1217,7 +1217,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 18:13:38 JST",
+        "更新時刻": "2026-04-21 21:07:22 JST",
         "メモ": "name=CEEN サルエルパンツ 七分丈 ワイドパンツ / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPQCYwtnC7WCswDeG37b9"
       }
     },
@@ -1299,10 +1299,10 @@ window.ZERO_COST_INTAKE = {
           "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0006/IMG_4840_BACK_ocr_best.png"
         ]
       },
-      "priority_score": 40,
-      "next_action": "例外保留",
+      "priority_score": 150,
+      "next_action": "Amazon内部コードとOCRで商品特定",
       "barcode_kind": "amazon_internal",
-      "review_flag": "同一箱は確認できるが内容特定不可",
+      "review_flag": "",
       "resolved": {
         "management_id": "BOX-001-ITEM-0006",
         "resolution_status": "provisional",
@@ -1371,7 +1371,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -1482,17 +1482,17 @@ window.ZERO_COST_INTAKE = {
           "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0007/IMG_4844_CODE_ocr_best.png"
         ]
       },
-      "priority_score": 140,
-      "next_action": "比較画像候補を探す",
+      "priority_score": 110,
+      "next_action": "本体表示とコードラベルを突合",
       "barcode_kind": "amazon_internal",
-      "review_flag": "",
+      "review_flag": "本体表示とコードラベルの不一致疑い",
       "resolved": {
         "management_id": "BOX-001-ITEM-0007",
         "resolution_status": "provisional",
         "product_name": "GIOVANA Tシャツ ベージュ 2XL",
         "barcode_primary": "X00143KK11",
         "product_code_type": "amazon_internal",
-        "official_image_state": "比較画像候補あり / 現写真では1商品に断定不能",
+        "official_image_state": "actual-only固定 / 比較画像なし",
         "note": "コードラベルに X00143KK11 / GIOVANA / tshirt / 302 / 2XL が読める。実物はベージュ系トップスで、BACK 側は同じ袋の注意書きなので混線ではないと判断し provisional に上げる。qwen 候補URL収集担当で GIOVANA / X00143KK11 / beige 2XL を確認したが、100%同一確認に使える安全な比較画像候補は取れなかった。出品画像は実物のみで扱う。",
         "evidence": [
           "X00143KK11",
@@ -1549,18 +1549,15 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
       "display_name": "GIOVANA Tシャツ ベージュ 2XL",
       "product_name": "GIOVANA Tシャツ ベージュ 2XL",
       "verified_exact_match": false,
-      "official_image_state": "比較画像候補あり / 現写真では1商品に断定不能",
-      "exact_match_guard_state": "review_required",
-      "exact_match_guard_reasons": [
-        "別商品mix"
-      ],
+      "official_image_state": "actual-only固定 / 比較画像なし",
+      "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -1592,7 +1589,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 18:13:38 JST",
+        "更新時刻": "2026-04-21 21:07:22 JST",
         "メモ": "name=GIOVANA Tシャツ ベージュ 2XL / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
       }
     },
@@ -1673,10 +1670,10 @@ window.ZERO_COST_INTAKE = {
           "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0008/IMG_4847_CODE_ocr_best.png"
         ]
       },
-      "priority_score": 40,
-      "next_action": "写真を要再束ね",
+      "priority_score": 150,
+      "next_action": "Amazon内部コードとOCRで商品特定",
       "barcode_kind": "amazon_internal",
-      "review_flag": "FRONT/BACK/CODE が別商品です",
+      "review_flag": "",
       "resolved": {
         "management_id": "BOX-001-ITEM-0008",
         "resolution_status": "provisional",
@@ -1684,7 +1681,7 @@ window.ZERO_COST_INTAKE = {
         "barcode_primary": "X000XF7CAD",
         "product_code_type": "amazon_internal",
         "official_image_state": "比較画像候補あり / exact-match不可",
-        "note": "コードラベルに X000XF7CAD / オナーファッション 綿100% トップス ミントグリーン 3XL / New / Made In China が読める。 / 実物はオナーファッション表記のミントトップスだが、候補ページは Printstar 無地Tシャツ。ブランド違いのため出品採用不可、比較用のみ。",
+        "note": "コードラベルに X000XF7CAD / オナーファッション 綿100% トップス ミントグリーン 3XL / New / Made In China が読める。 / 実物はオナーファッション表記のミントトップスだが、候補ページは Printstar 無地Tシャツ。ブランド不一致のため出品採用不可、比較用のみ。",
         "evidence": [
           "X000XF7CAD",
           "オナーファッション",
@@ -1703,7 +1700,7 @@ window.ZERO_COST_INTAKE = {
         "exact_match_guard_state": "review_required",
         "official_image_local": "state/intake/official_images/BOX-001-ITEM-0008_mint_top_candidate.jpg",
         "exact_match_guard_reasons": [
-          "別商品mix"
+          "ブランド不一致"
         ]
       },
       "official": {
@@ -1714,10 +1711,10 @@ window.ZERO_COST_INTAKE = {
         "official_image_local": "state/intake/official_images/BOX-001-ITEM-0008_mint_top_candidate.jpg",
         "verified_exact_match": false,
         "official_image_state": "比較画像候補あり / exact-match不可",
-        "note": "実物はオナーファッション表記のミントトップスだが、候補ページは Printstar 無地Tシャツ。ブランド違いのため出品採用不可、比較用のみ。",
+        "note": "実物はオナーファッション表記のミントトップスだが、候補ページは Printstar 無地Tシャツ。ブランド不一致のため出品採用不可、比較用のみ。",
         "exact_match_guard_state": "review_required",
         "exact_match_guard_reasons": [
-          "別商品mix"
+          "ブランド不一致"
         ]
       },
       "commerce": {
@@ -1818,7 +1815,10 @@ window.ZERO_COST_INTAKE = {
       "product_name": "オナーファッション 綿100% トップス ミントグリーン 3XL",
       "verified_exact_match": false,
       "official_image_state": "比較画像候補あり / exact-match不可",
-      "exact_match_guard_state": "clear",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "ブランド不一致"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -1850,8 +1850,8 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 18:13:38 JST",
-        "メモ": "name=オナーファッション 綿100% トップス ミントグリーン 3XL / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMSqu7EDWJu3jDcTo5h"
+        "更新時刻": "2026-04-21 21:07:22 JST",
+        "メモ": "name=オナーファッション 綿100% トップス ミントグリーン 3XL / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMSqu7EDWJu3jDcTo5h"
       }
     },
     {
@@ -1933,8 +1933,8 @@ window.ZERO_COST_INTAKE = {
           "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0009/IMG_4849_BACK_ocr_best.png"
         ]
       },
-      "priority_score": 140,
-      "next_action": "比較画像候補を探す",
+      "priority_score": 150,
+      "next_action": "Amazon内部コードとOCRで商品特定",
       "barcode_kind": "amazon_internal",
       "review_flag": "",
       "resolved": {
@@ -2119,7 +2119,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 18:13:38 JST",
+        "更新時刻": "2026-04-21 21:07:22 JST",
         "メモ": "name=Hotaty ピアス 金属アレルギー対応 ギフトBOX付き / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMUTrpVNxK6fGZdtMqT"
       }
     },
@@ -2273,7 +2273,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [
         {
@@ -2334,7 +2334,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 18:13:38 JST",
+        "更新時刻": "2026-04-21 21:07:22 JST",
         "メモ": "name=SHANGCHU シェフユニフォーム ブラック 4XL / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -2590,7 +2590,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 18:13:38 JST",
+        "更新時刻": "2026-04-21 21:07:22 JST",
         "メモ": "name=Dkieta 帽子 レディース ネックカバー付き 花柄日よけ帽子 / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMPEuG8NMB3ZieyYzHU"
       }
     },
@@ -2848,7 +2848,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 18:13:38 JST",
+        "更新時刻": "2026-04-21 21:07:22 JST",
         "メモ": "name=gany ガーゼハンカチ 30×30cm 10枚セット 綿100% / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPTBgBM5kND3h8AhVf4bf"
       }
     },
@@ -2930,7 +2930,7 @@ window.ZERO_COST_INTAKE = {
         ]
       },
       "priority_score": 100,
-      "next_action": "カテゴリ審査反映待ち",
+      "next_action": "GTINで商品特定",
       "barcode_kind": "gtin",
       "review_flag": "",
       "resolved": {
@@ -2992,7 +2992,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [
         {
@@ -3050,7 +3050,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 18:13:38 JST",
+        "更新時刻": "2026-04-21 21:07:22 JST",
         "メモ": "name=WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り / publish_ok=公開待ち / draft_status=公開待ち / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量"
       }
     },
@@ -3327,7 +3327,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 18:13:38 JST",
+        "更新時刻": "2026-04-21 21:07:22 JST",
         "メモ": "name=HAYAHARU キッズ靴下 LS4602LS / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMLyKhRCgPASDJFH2dc"
       }
     },
@@ -3407,9 +3407,9 @@ window.ZERO_COST_INTAKE = {
         ]
       },
       "priority_score": 110,
-      "next_action": "actual-onlyで商品マスタへ流す",
+      "next_action": "本体表示とコードラベルを突合",
       "barcode_kind": "amazon_internal",
-      "review_flag": "",
+      "review_flag": "本体表示とコードラベルの不一致疑い",
       "resolved": {
         "management_id": "BOX-001-ITEM-0015",
         "resolution_status": "provisional",
@@ -3473,7 +3473,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -3513,7 +3513,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 18:13:38 JST",
+        "更新時刻": "2026-04-21 21:07:22 JST",
         "メモ": "name=Llink 靴下 5足セット ボーダー パステル / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
       }
     },
@@ -3591,9 +3591,9 @@ window.ZERO_COST_INTAKE = {
         ]
       },
       "priority_score": 110,
-      "next_action": "actual-onlyで商品マスタへ流す",
+      "next_action": "本体表示とコードラベルを突合",
       "barcode_kind": "amazon_internal",
-      "review_flag": "",
+      "review_flag": "本体表示とコードラベルの不一致疑い",
       "resolved": {
         "management_id": "BOX-001-ITEM-0016",
         "resolution_status": "provisional",
@@ -3657,7 +3657,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -3697,7 +3697,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 18:13:38 JST",
+        "更新時刻": "2026-04-21 21:07:22 JST",
         "メモ": "name=ZERUI 靴下 5足セット パステル 蝶リボン / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
       }
     },
@@ -3775,10 +3775,10 @@ window.ZERO_COST_INTAKE = {
           "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0017/IMG_4874_CODE_ocr_best.png"
         ]
       },
-      "priority_score": 145,
-      "next_action": "比較画像候補を探す",
+      "priority_score": 110,
+      "next_action": "本体表示とコードラベルを突合",
       "barcode_kind": "amazon_internal",
-      "review_flag": "",
+      "review_flag": "本体表示とコードラベルの不一致疑い",
       "resolved": {
         "management_id": "BOX-001-ITEM-0017",
         "resolution_status": "provisional",
@@ -3853,7 +3853,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -3899,8 +3899,8 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 18:13:38 JST",
-        "メモ": "name=FirstC ティアグッズ記念品ギフト オレンジ丸型ポーチ（用途要確認） / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 用途要確認 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+        "更新時刻": "2026-04-21 21:07:22 JST",
+        "メモ": "name=FirstC ティアグッズ記念品ギフト オレンジ丸型ポーチ（用途要確認） / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / 用途要確認 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
     {
@@ -3979,9 +3979,9 @@ window.ZERO_COST_INTAKE = {
         ]
       },
       "priority_score": 110,
-      "next_action": "actual-onlyで商品マスタへ流す",
+      "next_action": "本体表示とコードラベルを突合",
       "barcode_kind": "amazon_internal",
-      "review_flag": "",
+      "review_flag": "本体表示とコードラベルの不一致疑い",
       "resolved": {
         "management_id": "BOX-001-ITEM-0018",
         "resolution_status": "provisional",
@@ -4044,7 +4044,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -4084,7 +4084,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 18:13:38 JST",
+        "更新時刻": "2026-04-21 21:07:22 JST",
         "メモ": "name=SWEETBOY 子供パーカー ネイビー×イエロー 130 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
       }
     },
@@ -4337,7 +4337,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "停止",
         "AI次アクション": "空き板を維持",
         "ルーティング状態": "一時停止",
-        "更新時刻": "2026-04-21 18:13:38 JST",
+        "更新時刻": "2026-04-21 21:07:22 JST",
         "メモ": "name=ポロベア キャンバス トートバッグ POLO BEAR LAUREN / publish_ok=確認待ち / draft_status=一時取り下げ / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=一時取り下げ"
       }
     },
@@ -4419,8 +4419,8 @@ window.ZERO_COST_INTAKE = {
           "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0020/IMG_4884_CODE_ocr_best.png"
         ]
       },
-      "priority_score": 145,
-      "next_action": "比較画像候補を探す",
+      "priority_score": 150,
+      "next_action": "Amazon内部コードとOCRで商品特定",
       "barcode_kind": "amazon_internal",
       "review_flag": "",
       "resolved": {
@@ -4486,7 +4486,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -4526,7 +4526,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 18:13:38 JST",
+        "更新時刻": "2026-04-21 21:07:22 JST",
         "メモ": "name=首サポーター カバー付き グレー M HJ-GY-M / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -4659,7 +4659,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -4826,7 +4826,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [
         {
@@ -4884,8 +4884,8 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 18:13:38 JST",
-        "メモ": "name=LE BLANC フェムケアPRO 低刺激 デリケートゾーン 150mL / publish_ok=確認待ち / draft_status=下書き / image_state=調査画像取得済み / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+        "更新時刻": "2026-04-21 21:07:22 JST",
+        "メモ": "name=LE BLANC フェムケアPRO 低刺激 デリケートゾーン 150mL / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
     {
@@ -4970,18 +4970,20 @@ window.ZERO_COST_INTAKE = {
       "next_action": "写真を要再束ね",
       "barcode_kind": "amazon_internal",
       "review_flag": "FRONT/BACK/CODE が別商品です",
-      "manual_note": "FRONT は FEMCARE PRO 150ml のボトル、BACK/CODE は Trekking Pole-Blue の収納袋でした。",
+      "manual_note": "FRONT は LE BLANC フェムケアPRO 150ml のボトル、BACK/CODE は Trekking Pole-Blue X0013QXDQX の収納袋でした。",
       "resolved": {
         "management_id": "BOX-001-ITEM-0023",
         "resolution_status": "provisional",
-        "product_name": "FEMCARE PRO 150ml",
+        "product_name": "LE BLANC フェムケアPRO 150ml",
         "barcode_primary": "",
         "product_code_type": "package_text",
-        "official_image_state": "現写真では1商品に断定不能",
-        "note": "FRONTにFEMCARE PRO 150mlボトル。BACK/CODEはTrekking Pole-Blue収納袋（別商品混線）。FRONT側が本命。2026-04-15商品特定分析によりprovisional登録。",
+        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "note": "FRONT ボトルの実物ラベルで 商品名 フェムケア PRO / 容量 150ml / FEMCAREPRO 表記を確認。検索では LE BLANC フェムケアPRO 低刺激 デリケートゾーンソープ 150ml の流通情報を確認できる。一方 BACK/CODE は Trekking Pole-Blue / X0013QXDQX / N-82 BLUE の別商品。FRONT側を actual-only の provisional とし、1商品としては断定不可。",
         "evidence": [
-          "FEMCARE PRO",
-          "150ml"
+          "FRONT=フェムケア PRO",
+          "容量150ml",
+          "FEMCAREPRO",
+          "BACK/CODE=Trekking Pole-Blue X0013QXDQX"
         ],
         "exact_match_guard_state": "review_required",
         "exact_match_guard_reasons": [
@@ -4995,12 +4997,12 @@ window.ZERO_COST_INTAKE = {
         "product_id": "PRD-BOX-001-023",
         "draft_id": "DRF-BOX-001-023",
         "research_id": "RES-BOX-001-023",
-        "product_name": "FEMCARE PRO 150ml",
+        "product_name": "LE BLANC フェムケアPRO 150ml",
         "brand": "",
         "category": "",
         "barcode_primary": "",
         "product_code_type": "package_text",
-        "listing_title": "FEMCARE PRO 150ml",
+        "listing_title": "LE BLANC フェムケアPRO 150ml",
         "listing_price": "",
         "market_floor_price": "",
         "market_floor_state": "未調査",
@@ -5013,14 +5015,14 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
-      "display_name": "FEMCARE PRO 150ml",
-      "product_name": "FEMCARE PRO 150ml",
+      "display_name": "LE BLANC フェムケアPRO 150ml",
+      "product_name": "LE BLANC フェムケアPRO 150ml",
       "verified_exact_match": false,
-      "official_image_state": "現写真では1商品に断定不能",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
         "別商品mix"
@@ -5165,7 +5167,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -5281,8 +5283,8 @@ window.ZERO_COST_INTAKE = {
         "barcode_primary": "X0011JB9IL",
         "product_code_type": "amazon_internal",
         "verified_exact_match": false,
-        "official_image_state": "現写真では1商品に断定不能",
-        "note": "FRONT OCR と Vision で X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）を確認。一方 BACK は X001845QRJ / 日傘超軽量、CODE も日傘側ノイズで別商品。現写真では1商品に断定不能のため、DUCO 側を provisional に留める。",
+        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "note": "FRONT ラベルで X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）を目視確認。検索では X0011JB9IL の公式商品ページは未確認だが、DUCO レディースサングラス W016 系の流通情報は確認できる。一方 BACK/CODE は X001845QRJ / 日傘超軽量 [手動開閉] の別商品。DUCO 側は actual-only の provisional とし、1商品としては断定不可。",
         "evidence": [
           "X0011JB9IL",
           "DUCO",
@@ -5320,14 +5322,14 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
       "display_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
       "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
       "verified_exact_match": false,
-      "official_image_state": "現写真では1商品に断定不能",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
         "別商品mix"
@@ -5487,7 +5489,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [
         {
@@ -5545,8 +5547,8 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 18:13:38 JST",
-        "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+        "更新時刻": "2026-04-21 21:07:22 JST",
+        "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
     {
@@ -5695,7 +5697,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [
         {
@@ -5756,8 +5758,8 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 18:13:38 JST",
-        "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=候補1枚確保 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+        "更新時刻": "2026-04-21 21:07:22 JST",
+        "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
     {
@@ -5841,7 +5843,7 @@ window.ZERO_COST_INTAKE = {
       "next_action": "写真を要再束ね",
       "barcode_kind": "amazon_internal",
       "review_flag": "FRONT/BACK/CODE が別商品です",
-      "manual_note": "FRONT は黒/緑の冬小物系、BACK/CODE は Zukida 車のフック（Red）の箱でした。",
+      "manual_note": "FRONT は黒/緑の冬小物系、BACK は X0010CU9L7 / Zukida 車のフック（Red）ラベル、CODE は car hook mobile phone holder NO-FE035 箱でした。",
       "resolved": {
         "management_id": "BOX-001-ITEM-0028",
         "resolution_status": "provisional",
@@ -5850,12 +5852,13 @@ window.ZERO_COST_INTAKE = {
         "product_code_type": "amazon_internal",
         "verified_exact_match": false,
         "official_image_state": "管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能",
-        "note": "BACK のラベルで X0010CU9L7 / Zukida 車のフック 後部座席 (Red) を確認し、CODE 面も car hook mobile phone holder 箱で同系統。一方 FRONT は黒緑の冬小物系で別商品。現IDは Zukida anchor を維持するが、現写真では1商品に断定不能のため provisional に降格する。",
+        "note": "BACK のラベルで X0010CU9L7 / Zukida 車のフック 後部座席 (Red) を確認。CODE は car hook mobile phone holder 箱で NO-FE035 表記があり、同じ車用フック系ではあるが X0010CU9L7 を直接裏付けるコード面ではない。一方 FRONT は黒緑の冬小物系で別商品。現IDは Zukida anchor を維持するが、現写真では1商品に断定不能のため provisional に留める。",
         "evidence": [
           "X0010CU9L7",
           "Zukida",
           "車のフック",
           "Red",
+          "CODE=Car hook mobile phone holder NO-FE035",
           "FRONT=冬小物系の別商品"
         ],
         "exact_match_guard_state": "review_required",
@@ -5919,7 +5922,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -5963,22 +5966,22 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "管理番号再分解と再撮影",
         "ルーティング状態": "要再束ね",
-        "更新時刻": "2026-04-21 18:13:38 JST",
-        "メモ": "name=Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / qwen_hq=needs_split / 0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式再束ねと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。"
+        "更新時刻": "2026-04-21 21:07:22 JST",
+        "メモ": "name=要再束ね候補: Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / qwen_hq=needs_split / 0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式再束ねと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。"
       },
       "split_staging": {
         "management_id": "BOX-001-ITEM-0028",
-        "stage_status": "staged_rebundle_plan",
-        "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/緑の冬小物系として未一致保留。0029 FRONT/BACK は car hook / mobile-holder 系だが CODE が network tool で、0028 の Zukida 側とはまだ結び付けない。0053 BACK/CODE は Hello Kitty 側の staged child。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として live 視認一致まで確認したが、shared sheet / manifest の再束ね前なので新管理番号はまだ切らず、0052 FRONT の青橙箱は別物として残す。",
-        "ui_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物",
-        "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0029 は car hook系だが network tool CODE のため Zukida 側へ未連結。0053 BACK/CODE は Hello Kitty 側。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認したが、新管理番号はまだ切らず staged のまま維持。0052 FRONT の青橙箱は別物。",
-        "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の冬小物系。0029 は別split維持。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認済みで、0052 FRONT は別物。",
-        "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0029は別split維持 / 0053-0052白箱は視認一致済みのため shared sheet・manifest で正式再束ね",
+        "stage_status": "partial_manifest_child_minted",
+        "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/緑の冬小物系として未一致保留。0028 CODE は car hook mobile phone holder NO-FE035 箱で、BACK の X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT は car hook mobile phone holder NO-FE040 だが、0029 BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側の staged child。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として live 視認一致まで確認したが、shared sheet / manifest の再束ね前なので新管理番号はまだ切らず、0052 FRONT の青橙箱は別物として残す。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
+        "ui_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
+        "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 は FRONT=car hook NO-FE040、BACK/CODE=SPEEDWOX X00162U47P の別split。0053 BACK/CODE は Hello Kitty 側。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認したが、新管理番号はまだ切らず staged のまま維持。0052 FRONT の青橙箱は別物。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
+        "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の冬小物系。0029 は別split維持。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認済みで、0052 FRONT は別物。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
+        "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0029は別split維持 / 0053-0052白箱は視認一致済みのため shared sheet・manifest で正式再束ね / 0059 は workbook / routing の stopline を決めてから正式反映",
         "retain_existing_id": {
           "management_id": "BOX-001-ITEM-0028",
           "product_id": "PRD-BOX-001-028",
           "draft_id": "DRF-BOX-001-028",
-          "reason": "X0010CU9L7 / Zukida / Red の CODE 読み取りと既存 product_name・draft・routing が一致しているため、現時点ではこの ID を Zukida 側の anchor として保持するのが最も保守的"
+          "reason": "0028 BACK の X0010CU9L7 / Zukida / Red ラベルと既存 product_name・draft・routing が一致しているため、現時点ではこの ID を Zukida 側の anchor として保持するのが最も保守的。0028 CODE は car hook mobile phone holder NO-FE035 箱で、X0010CU9L7 の直接コード面ではない。"
         },
         "related_management_ids": [
           "BOX-001-ITEM-0053",
@@ -5993,27 +5996,27 @@ window.ZERO_COST_INTAKE = {
           {
             "management_id": "BOX-001-ITEM-0028",
             "slot": "BACK",
-            "observed_as": "Zukida 車のフック（Red）パッケージ面"
+            "observed_as": "X0010CU9L7 / Zukida 車のフック（Red）ラベル面"
           },
           {
             "management_id": "BOX-001-ITEM-0028",
             "slot": "CODE",
-            "observed_as": "Zukida 車のフック（Red）コード面 / X0010CU9L7"
+            "observed_as": "car hook mobile phone holder NO-FE035 箱面"
           },
           {
             "management_id": "BOX-001-ITEM-0029",
             "slot": "FRONT",
-            "observed_as": "car hook / mobile-holder 系パッケージ"
+            "observed_as": "car hook mobile phone holder NO-FE040 パッケージ"
           },
           {
             "management_id": "BOX-001-ITEM-0029",
             "slot": "BACK",
-            "observed_as": "car hook / mobile-holder 系パッケージ対向面"
+            "observed_as": "SPEEDWOX / network tool X00162U47P ラベル面"
           },
           {
             "management_id": "BOX-001-ITEM-0029",
             "slot": "CODE",
-            "observed_as": "network tool 系コード面"
+            "observed_as": "SPEEDWOX / network tool ワイヤーストリッパー実物面"
           },
           {
             "management_id": "BOX-001-ITEM-0053",
@@ -6080,25 +6083,32 @@ window.ZERO_COST_INTAKE = {
               "BOX-001-ITEM-0052:BACK",
               "BOX-001-ITEM-0052:CODE"
             ],
-            "status": "slot_match_visually_confirmed_not_minted",
+            "status": "manifest_child_minted_local_only",
             "blockers": [
-              "0053 FRONT と 0052 BACK/CODE は同一白箱として live 視認一致したが、shared sheet / manifest 側の正式再束ねがまだ未実施",
-              "0052 FRONT は青橙の別箱で、白箱側として扱えるのは 0052 BACK/CODE のみ",
-              "shared sheet / manifest で正式再束ねを行う前に管理番号の持ち替えルール確認が必要"
-            ]
+              "confirmed / official は provisional actual-only で反映済み。shared sheet / workbook / routing 反映は別フェーズ。",
+              "0052 FRONT は青橙の別箱で、白箱側として扱えるのは 0052 BACK/CODE のみ"
+            ],
+            "minted_management_id": "BOX-001-ITEM-0059",
+            "minted_at": "2026-04-21 20:32:46 JST",
+            "minted_scope": "local_manifest_only",
+            "minted_note": "photo manifest child は mint 済み。workbook / confirmed / official への反映は別フェーズで行う。",
+            "truth_promotion_scope": "local_confirmed_official_only",
+            "truth_promoted_management_id": "BOX-001-ITEM-0059",
+            "truth_promotion_note": "confirmed / official へ provisional actual-only / 内容物未確認で反映済み。 workbook / routing は別フェーズで行う。",
+            "truth_promoted_at": "2026-04-21 21:20:12 JST"
           }
         ],
         "remaining_blockers": [
           "shared sheet と photo manifest を壊さずに新管理番号を発番する canonical script が未整備",
           "0028 FRONT の相方スロットと正式名が未確定",
-          "0029 FRONT/BACK は car hook / mobile-holder 系だが CODE が network tool で、0028 Zukida 側へ安全に寄せる根拠がまだない",
+          "0029 FRONT は car hook mobile phone holder NO-FE040 だが、BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0028 Zukida 側へ安全に寄せる根拠はまだない",
           "Hello Kitty 側はサンリオ正規品の出所確認が未完了",
-          "白箱 X00197BVHJ 側は 0053 FRONT と 0052 BACK/CODE の live 視認一致までは確認済みだが、shared sheet / manifest での正式再束ねが未完了"
+          "白箱 X00197BVHJ 側の local child BOX-001-ITEM-0059 は confirmed / official まで反映済み。 shared sheet / workbook / routing は別フェーズ。"
         ],
-        "safe_next_step": "local state では 0028=Zukida anchor を維持し、0028 FRONT は未一致保留、0029 は別splitのまま維持する。0053 BACK/CODE は Hello Kitty 側候補、0053 FRONT と 0052 BACK/CODE は同一白箱として shared sheet / manifest 側で正式再束ねしてから新 management_id を切る",
+        "safe_next_step": "local state では 0028=Zukida anchor を維持し、0028 FRONT は未一致保留、0029 は別splitのまま維持する。0053 BACK/CODE は Hello Kitty 側候補、0053 FRONT と 0052 BACK/CODE は同一白箱として shared sheet / manifest 側で正式再束ねしてから新 management_id を切る / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
         "match_role": "primary"
       },
-      "split_plan_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物",
+      "split_plan_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
       "split_plan_role": "primary"
     },
     {
@@ -6183,7 +6193,7 @@ window.ZERO_COST_INTAKE = {
       "next_action": "写真を要再束ね",
       "barcode_kind": "amazon_internal",
       "review_flag": "FRONT/BACK/CODE が別商品です",
-      "manual_note": "FRONT/BACK は car hook mobile phone holder、CODE は network tool 系でした。",
+      "manual_note": "FRONT は car hook mobile phone holder NO-FE040、BACK/CODE は SPEEDWOX ワイヤーストリッパー X00162U47P の network tool 系でした。",
       "resolved": {
         "management_id": "BOX-001-ITEM-0029",
         "resolution_status": "provisional",
@@ -6191,11 +6201,12 @@ window.ZERO_COST_INTAKE = {
         "barcode_primary": "",
         "product_code_type": "package_text",
         "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能",
-        "note": "FRONT に Car hook mobile phone holder / NO-FE040 を確認。一方 BACK/CODE は SPEEDWOX ワイヤーストリッパー X00162U47P の別商品。現写真では car hook 側は FRONT しか揃わず、同一管理番号の1商品に断定不能のため provisional に留める。",
+        "note": "FRONT に Car hook mobile phone holder / NO-FE040 / Car Hook Series 合格証を確認。一方 BACK は SPEEDWOX ワイヤーストリッパー X00162U47P ラベル付きの NETWORK TOOL パッケージ、CODE も同じワイヤーストリッパー実物で別商品。現写真では1商品に断定不能で、car hook 側は FRONT しか揃わないため provisional に留める。",
         "evidence": [
           "Car hook",
           "mobile phone holder",
           "NO-FE040",
+          "Car Hook Series",
           "BACK/CODE=SPEEDWOX X00162U47P"
         ],
         "exact_match_guard_state": "review_required",
@@ -6229,7 +6240,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -6386,7 +6397,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -6491,7 +6502,7 @@ window.ZERO_COST_INTAKE = {
         ]
       },
       "priority_score": 150,
-      "next_action": "比較画像候補を追加",
+      "next_action": "Amazon内部コードとOCRで商品特定",
       "barcode_kind": "amazon_internal",
       "review_flag": "",
       "resolved": {
@@ -6555,7 +6566,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -6595,7 +6606,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 18:13:38 JST",
+        "更新時刻": "2026-04-21 21:07:22 JST",
         "メモ": "name=LEISURE WEAR ベージュ系レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -6857,7 +6868,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 18:13:38 JST",
+        "更新時刻": "2026-04-21 21:07:22 JST",
         "メモ": "name=ZUCCA CLUB リラックス リカバリー サンダル / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPTBkWndxGku2L9EVw4UP"
       }
     },
@@ -7012,7 +7023,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -7055,8 +7066,8 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 18:13:38 JST",
-        "メモ": "name=jchinjia リュック メンズ ビジネスリュック 男女兼用 カジュアルバッグ おしゃれ トラベルバッグ / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+        "更新時刻": "2026-04-21 21:07:22 JST",
+        "メモ": "name=jchinjia リュック メンズ ビジネスリュック 男女兼用 カジュアルバッグ おしゃれ トラベルバッグ / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
     {
@@ -7188,7 +7199,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -7293,10 +7304,10 @@ window.ZERO_COST_INTAKE = {
           "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0035/IMG_4929_FRONT_ocr_best.png"
         ]
       },
-      "priority_score": 145,
-      "next_action": "比較画像候補を探す",
+      "priority_score": 110,
+      "next_action": "本体表示とコードラベルを突合",
       "barcode_kind": "amazon_internal",
-      "review_flag": "",
+      "review_flag": "本体表示とコードラベルの不一致疑い",
       "resolved": {
         "management_id": "BOX-001-ITEM-0035",
         "resolution_status": "provisional",
@@ -7360,7 +7371,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -7400,7 +7411,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 18:13:38 JST",
+        "更新時刻": "2026-04-21 21:07:22 JST",
         "メモ": "name=Letshe ベビー前開きロンパース ピンク 110cm / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
       }
     },
@@ -7532,7 +7543,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -7634,9 +7645,9 @@ window.ZERO_COST_INTAKE = {
         ]
       },
       "priority_score": 110,
-      "next_action": "比較画像候補を探す",
+      "next_action": "本体表示とコードラベルを突合",
       "barcode_kind": "amazon_internal",
-      "review_flag": "",
+      "review_flag": "本体表示とコードラベルの不一致疑い",
       "resolved": {
         "management_id": "BOX-001-ITEM-0037",
         "resolution_status": "provisional",
@@ -7699,7 +7710,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -7801,10 +7812,10 @@ window.ZERO_COST_INTAKE = {
           "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0038/IMG_4938_FRONT_ocr_best.png"
         ]
       },
-      "priority_score": 145,
-      "next_action": "比較画像候補を探す",
+      "priority_score": 110,
+      "next_action": "本体表示とコードラベルを突合",
       "barcode_kind": "amazon_internal",
-      "review_flag": "",
+      "review_flag": "本体表示とコードラベルの不一致疑い",
       "resolved": {
         "management_id": "BOX-001-ITEM-0038",
         "resolution_status": "provisional",
@@ -7867,7 +7878,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -7907,7 +7918,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 18:13:38 JST",
+        "更新時刻": "2026-04-21 21:07:22 JST",
         "メモ": "name=裏起毛トップス オフホワイト L / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -8035,7 +8046,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -8190,7 +8201,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -8345,7 +8356,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -8453,7 +8464,7 @@ window.ZERO_COST_INTAKE = {
       "next_action": "写真を要再束ね",
       "barcode_kind": "amazon_internal",
       "review_flag": "FRONT/BACK/CODE が別商品です",
-      "manual_note": "FRONT/BACK は青系のぬいぐるみ・布製品、CODE は NEEDLY Sleeping lip mask 10ml 箱で別商品でした。",
+      "manual_note": "FRONT は青い袋入り布製品、BACK/CODE は NEEDLY Sleeping lip mask 10ml 箱で別商品でした。",
       "resolved": {
         "management_id": "BOX-001-ITEM-0042",
         "resolution_status": "provisional",
@@ -8514,7 +8525,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -8666,7 +8677,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -8819,7 +8830,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -8919,22 +8930,22 @@ window.ZERO_COST_INTAKE = {
         ]
       },
       "priority_score": 260,
-      "next_action": "actual-onlyで商品マスタへ流す",
-      "barcode_kind": "amazon_internal",
+      "next_action": "OCR検索で商品特定",
+      "barcode_kind": "",
       "review_flag": "",
       "resolved": {
         "management_id": "BOX-001-ITEM-0045",
         "resolution_status": "provisional",
         "product_name": "ロゴ刺繍ベースボールキャップ ブラック系",
-        "barcode_primary": "X0015NW4BJ",
-        "product_code_type": "amazon_internal",
-        "official_image_state": "現写真では1商品に断定不能",
-        "note": "FRONT では黒系ベースボールキャップ本体と白い Youth 風ロゴ刺繍を確認できる。一方 BACK のラベル X0015NW4BJ / Y5AQTX2313-BlueR-L2 は KumiModa の Tシャツ文言で、CODE も無地袋面しかなく、現写真ではそのラベルが帽子を指すと断定できない。現写真では1商品に断定不能のため generic cap として provisional に留め、公開停止とする。",
+        "barcode_primary": "",
+        "product_code_type": "none",
+        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "note": "FRONT では黒系ベースボールキャップ本体と白い Youth 風ロゴ刺繍を確認できる。一方 BACK のラベル X0015NW4BJ / Y5AQTX2313-BlueR-L2 は KumiModa のTシャツ文言で、CODE も無地袋面のみ。BACK/CODE は帽子とは別商品側の証拠であり、現写真では1商品に断定不能。X0015NW4BJ を帽子側コードとして使う根拠はないため除外し、帽子は actual-only の generic cap として provisional に留める。",
         "evidence": [
-          "X0015NW4BJ",
-          "Y5AQTX2313-BlueR-L2",
-          "ネイビー系キャップ",
-          "白ロゴ刺繍"
+          "FRONT=黒系ベースボールキャップ",
+          "白い Youth 風ロゴ刺繍",
+          "BACK=X0015NW4BJ / KumiModa Tシャツ側ラベル",
+          "CODE=無地袋面"
         ],
         "brand_override": "不明",
         "category_override": "ファッション > メンズ > 帽子 > キャップ",
@@ -8942,7 +8953,7 @@ window.ZERO_COST_INTAKE = {
         "check_items_override": "色味ネイビー系 / 白ロゴ刺繍 / つば形状 / サイズ表記不明",
         "official_page_url": "",
         "official_image_url": "",
-        "image_source": "比較画像待ち",
+        "image_source": "actual-only",
         "exact_match_guard_state": "review_required",
         "exact_match_guard_reasons": [
           "別商品mix"
@@ -8958,8 +8969,8 @@ window.ZERO_COST_INTAKE = {
         "official_image_url": null,
         "image_source": "actual-only",
         "verified_exact_match": false,
-        "official_image_state": "現写真では1商品に断定不能",
-        "note": "FRONT では黒系キャップ本体を確認できるが、BACK ラベル X0015NW4BJ は KumiModa Tシャツ文言で帽子との一致が弱い。現写真では1商品に断定不能のため比較画像は使わず、公開停止とする。",
+        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "note": "FRONT では黒系キャップ本体を実物で確認できるが、BACK ラベル X0015NW4BJ は KumiModa Tシャツ文言で帽子とは別商品側の証拠。現写真では1商品に断定不能。X0015NW4BJ は帽子側コードとして使わず、比較画像も使わない。actual-only の generic cap として provisional 停止にする。",
         "exact_match_guard_state": "review_required",
         "official_image_local": null,
         "exact_match_guard_reasons": [
@@ -8976,7 +8987,7 @@ window.ZERO_COST_INTAKE = {
         "brand": "不明",
         "category": "ファッション > メンズ > 帽子 > キャップ",
         "barcode_primary": "X0015NW4BJ",
-        "product_code_type": "amazon_internal",
+        "product_code_type": "none",
         "listing_title": "ロゴ刺繍ベースボールキャップ ブラック系",
         "listing_price": "1380",
         "market_floor_price": "",
@@ -8990,14 +9001,14 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
       "display_name": "ロゴ刺繍ベースボールキャップ ブラック系",
       "product_name": "ロゴ刺繍ベースボールキャップ ブラック系",
       "verified_exact_match": false,
-      "official_image_state": "現写真では1商品に断定不能",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
         "別商品mix"
@@ -9033,8 +9044,8 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 18:13:38 JST",
-        "メモ": "name=ロゴ刺繍ベースボールキャップ ブラック系 / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+        "更新時刻": "2026-04-21 21:07:22 JST",
+        "メモ": "name=ロゴ刺繍ベースボールキャップ ブラック系 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
     {
@@ -9114,8 +9125,8 @@ window.ZERO_COST_INTAKE = {
           "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0046/IMG_4966_CODE_ocr_best.png"
         ]
       },
-      "priority_score": 90,
-      "next_action": "比較画像候補を探す",
+      "priority_score": 150,
+      "next_action": "Amazon内部コードとOCRで商品特定",
       "barcode_kind": "amazon_internal",
       "review_flag": "",
       "resolved": {
@@ -9186,7 +9197,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -9229,7 +9240,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 18:13:38 JST",
+        "更新時刻": "2026-04-21 21:07:22 JST",
         "メモ": "name=ホワイト レディーストップス M / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -9376,7 +9387,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -9416,8 +9427,8 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 18:13:38 JST",
-        "メモ": "name=高視認性安全ベスト 蛍光イエロー / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+        "更新時刻": "2026-04-21 21:07:22 JST",
+        "メモ": "name=高視認性安全ベスト 蛍光イエロー / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
     {
@@ -9562,7 +9573,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -9733,7 +9744,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -9839,7 +9850,7 @@ window.ZERO_COST_INTAKE = {
         ]
       },
       "priority_score": 150,
-      "next_action": "比較画像候補を照合",
+      "next_action": "Amazon内部コードとOCRで商品特定",
       "barcode_kind": "amazon_internal",
       "review_flag": "",
       "resolved": {
@@ -9904,7 +9915,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [
         {
@@ -9962,7 +9973,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 18:13:38 JST",
+        "更新時刻": "2026-04-21 21:07:22 JST",
         "メモ": "name=CRZ YOGA レギンス 股下24インチ ダークグレー系 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / actual-only固定 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -10093,7 +10104,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -10163,39 +10174,24 @@ window.ZERO_COST_INTAKE = {
       "box_code": "001",
       "identification": {
         "state": "split_required",
-        "barcode_values": [
-          "X00197BVHJ"
-        ],
+        "barcode_values": [],
         "front_back_texts": [
           "MADE IN CHINA",
-          "OK@CEFC RoHs CEと3",
-          "X00197BVHI",
-          "新品・【FisIC1.風モチーフ記念品ギフ",
-          "MADE in China"
+          "OK@CEFC RoHs CEと3"
         ],
-        "code_texts": [
-          "“A - So SPAS Sr \\ he eae g",
-          "wo) SRS 2S SRA Ss REE e ra SNe ‘ ‘ : “SS x an . : ~ Nos os : a — .",
-          "o"
-        ],
+        "code_texts": [],
         "ocr_texts": [
           "MADE IN CHINA",
-          "OK@CEFC RoHs CEと3",
-          "X00197BVHI",
-          "新品・【FisIC1.風モチーフ記念品ギフ",
-          "MADE in China",
-          "“A - So SPAS Sr \\ he eae g"
+          "OK@CEFC RoHs CEと3"
         ],
-        "candidate_query": "MADE IN CHINA OK@CEFC RoHs CEと3 X00197BVHI 新品・【FisIC1.風モチーフ記念品ギフ",
+        "candidate_query": "MADE IN CHINA OK@CEFC RoHs CEと3",
         "review_flag": "FRONT/BACK/CODE が別商品です",
-        "ocr_engine": "sauna_tesseract_multistage + vision",
-        "ocr_debug_paths": [
-          "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0052/IMG_4985_CODE_ocr_best.png"
-        ]
+        "ocr_engine": "vision",
+        "ocr_debug_paths": []
       },
-      "priority_score": 110,
+      "priority_score": 220,
       "next_action": "写真を要再束ね",
-      "barcode_kind": "amazon_internal",
+      "barcode_kind": "",
       "review_flag": "FRONT/BACK/CODE が別商品です",
       "manual_note": "FRONT は青橙の汎用化粧箱、BACK/CODE は白箱ラベル X00197BVHJ で別商品の可能性が高い組み合わせでした。",
       "resolved": {
@@ -10248,7 +10244,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -10278,17 +10274,17 @@ window.ZERO_COST_INTAKE = {
       "route_plan": {},
       "split_staging": {
         "management_id": "BOX-001-ITEM-0028",
-        "stage_status": "staged_rebundle_plan",
-        "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/緑の冬小物系として未一致保留。0029 FRONT/BACK は car hook / mobile-holder 系だが CODE が network tool で、0028 の Zukida 側とはまだ結び付けない。0053 BACK/CODE は Hello Kitty 側の staged child。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として live 視認一致まで確認したが、shared sheet / manifest の再束ね前なので新管理番号はまだ切らず、0052 FRONT の青橙箱は別物として残す。",
-        "ui_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物",
-        "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0029 は car hook系だが network tool CODE のため Zukida 側へ未連結。0053 BACK/CODE は Hello Kitty 側。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認したが、新管理番号はまだ切らず staged のまま維持。0052 FRONT の青橙箱は別物。",
-        "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の冬小物系。0029 は別split維持。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認済みで、0052 FRONT は別物。",
-        "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0029は別split維持 / 0053-0052白箱は視認一致済みのため shared sheet・manifest で正式再束ね",
+        "stage_status": "partial_manifest_child_minted",
+        "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/緑の冬小物系として未一致保留。0028 CODE は car hook mobile phone holder NO-FE035 箱で、BACK の X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT は car hook mobile phone holder NO-FE040 だが、0029 BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側の staged child。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として live 視認一致まで確認したが、shared sheet / manifest の再束ね前なので新管理番号はまだ切らず、0052 FRONT の青橙箱は別物として残す。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
+        "ui_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
+        "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 は FRONT=car hook NO-FE040、BACK/CODE=SPEEDWOX X00162U47P の別split。0053 BACK/CODE は Hello Kitty 側。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認したが、新管理番号はまだ切らず staged のまま維持。0052 FRONT の青橙箱は別物。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
+        "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の冬小物系。0029 は別split維持。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認済みで、0052 FRONT は別物。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
+        "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0029は別split維持 / 0053-0052白箱は視認一致済みのため shared sheet・manifest で正式再束ね / 0059 は workbook / routing の stopline を決めてから正式反映",
         "retain_existing_id": {
           "management_id": "BOX-001-ITEM-0028",
           "product_id": "PRD-BOX-001-028",
           "draft_id": "DRF-BOX-001-028",
-          "reason": "X0010CU9L7 / Zukida / Red の CODE 読み取りと既存 product_name・draft・routing が一致しているため、現時点ではこの ID を Zukida 側の anchor として保持するのが最も保守的"
+          "reason": "0028 BACK の X0010CU9L7 / Zukida / Red ラベルと既存 product_name・draft・routing が一致しているため、現時点ではこの ID を Zukida 側の anchor として保持するのが最も保守的。0028 CODE は car hook mobile phone holder NO-FE035 箱で、X0010CU9L7 の直接コード面ではない。"
         },
         "related_management_ids": [
           "BOX-001-ITEM-0053",
@@ -10303,27 +10299,27 @@ window.ZERO_COST_INTAKE = {
           {
             "management_id": "BOX-001-ITEM-0028",
             "slot": "BACK",
-            "observed_as": "Zukida 車のフック（Red）パッケージ面"
+            "observed_as": "X0010CU9L7 / Zukida 車のフック（Red）ラベル面"
           },
           {
             "management_id": "BOX-001-ITEM-0028",
             "slot": "CODE",
-            "observed_as": "Zukida 車のフック（Red）コード面 / X0010CU9L7"
+            "observed_as": "car hook mobile phone holder NO-FE035 箱面"
           },
           {
             "management_id": "BOX-001-ITEM-0029",
             "slot": "FRONT",
-            "observed_as": "car hook / mobile-holder 系パッケージ"
+            "observed_as": "car hook mobile phone holder NO-FE040 パッケージ"
           },
           {
             "management_id": "BOX-001-ITEM-0029",
             "slot": "BACK",
-            "observed_as": "car hook / mobile-holder 系パッケージ対向面"
+            "observed_as": "SPEEDWOX / network tool X00162U47P ラベル面"
           },
           {
             "management_id": "BOX-001-ITEM-0029",
             "slot": "CODE",
-            "observed_as": "network tool 系コード面"
+            "observed_as": "SPEEDWOX / network tool ワイヤーストリッパー実物面"
           },
           {
             "management_id": "BOX-001-ITEM-0053",
@@ -10390,25 +10386,32 @@ window.ZERO_COST_INTAKE = {
               "BOX-001-ITEM-0052:BACK",
               "BOX-001-ITEM-0052:CODE"
             ],
-            "status": "slot_match_visually_confirmed_not_minted",
+            "status": "manifest_child_minted_local_only",
             "blockers": [
-              "0053 FRONT と 0052 BACK/CODE は同一白箱として live 視認一致したが、shared sheet / manifest 側の正式再束ねがまだ未実施",
-              "0052 FRONT は青橙の別箱で、白箱側として扱えるのは 0052 BACK/CODE のみ",
-              "shared sheet / manifest で正式再束ねを行う前に管理番号の持ち替えルール確認が必要"
-            ]
+              "confirmed / official は provisional actual-only で反映済み。shared sheet / workbook / routing 反映は別フェーズ。",
+              "0052 FRONT は青橙の別箱で、白箱側として扱えるのは 0052 BACK/CODE のみ"
+            ],
+            "minted_management_id": "BOX-001-ITEM-0059",
+            "minted_at": "2026-04-21 20:32:46 JST",
+            "minted_scope": "local_manifest_only",
+            "minted_note": "photo manifest child は mint 済み。workbook / confirmed / official への反映は別フェーズで行う。",
+            "truth_promotion_scope": "local_confirmed_official_only",
+            "truth_promoted_management_id": "BOX-001-ITEM-0059",
+            "truth_promotion_note": "confirmed / official へ provisional actual-only / 内容物未確認で反映済み。 workbook / routing は別フェーズで行う。",
+            "truth_promoted_at": "2026-04-21 21:20:12 JST"
           }
         ],
         "remaining_blockers": [
           "shared sheet と photo manifest を壊さずに新管理番号を発番する canonical script が未整備",
           "0028 FRONT の相方スロットと正式名が未確定",
-          "0029 FRONT/BACK は car hook / mobile-holder 系だが CODE が network tool で、0028 Zukida 側へ安全に寄せる根拠がまだない",
+          "0029 FRONT は car hook mobile phone holder NO-FE040 だが、BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0028 Zukida 側へ安全に寄せる根拠はまだない",
           "Hello Kitty 側はサンリオ正規品の出所確認が未完了",
-          "白箱 X00197BVHJ 側は 0053 FRONT と 0052 BACK/CODE の live 視認一致までは確認済みだが、shared sheet / manifest での正式再束ねが未完了"
+          "白箱 X00197BVHJ 側の local child BOX-001-ITEM-0059 は confirmed / official まで反映済み。 shared sheet / workbook / routing は別フェーズ。"
         ],
-        "safe_next_step": "local state では 0028=Zukida anchor を維持し、0028 FRONT は未一致保留、0029 は別splitのまま維持する。0053 BACK/CODE は Hello Kitty 側候補、0053 FRONT と 0052 BACK/CODE は同一白箱として shared sheet / manifest 側で正式再束ねしてから新 management_id を切る",
+        "safe_next_step": "local state では 0028=Zukida anchor を維持し、0028 FRONT は未一致保留、0029 は別splitのまま維持する。0053 BACK/CODE は Hello Kitty 側候補、0053 FRONT と 0052 BACK/CODE は同一白箱として shared sheet / manifest 側で正式再束ねしてから新 management_id を切る / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
         "match_role": "related"
       },
-      "split_plan_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物",
+      "split_plan_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
       "split_plan_role": "related"
     },
     {
@@ -10455,16 +10458,15 @@ window.ZERO_COST_INTAKE = {
       "identification": {
         "state": "split_required",
         "barcode_values": [
-          "X00197BVHJ",
           "X0018IYEUP"
         ],
         "front_back_texts": [
-          "X00197BVHJ",
-          "新品・【FisICI 風県モチーツ記念品ギフ",
-          "ト",
-          "MADE in China",
           "\"ITOAVOL DANGER",
-          "OUT OF REACHO"
+          "OUT OF REACHO",
+          "REACH：",
+          "OTUSE）",
+          "OTUSEANARESP",
+          "THIS BY"
         ],
         "code_texts": [
           "HELLO KITIY",
@@ -10475,14 +10477,14 @@ window.ZERO_COST_INTAKE = {
           "ag"
         ],
         "ocr_texts": [
-          "X00197BVHJ",
-          "新品・【FisICI 風県モチーツ記念品ギフ",
-          "ト",
-          "MADE in China",
           "\"ITOAVOL DANGER",
-          "OUT OF REACHO"
+          "OUT OF REACHO",
+          "REACH：",
+          "OTUSE）",
+          "OTUSEANARESP",
+          "THIS BY"
         ],
-        "candidate_query": "X00197BVHJ 新品・【FisICI 風県モチーツ記念品ギフ ト MADE in China",
+        "candidate_query": "\"ITOAVOL DANGER OUT OF REACHO REACH： OTUSE）",
         "review_flag": "FRONT/BACK/CODE が別商品です",
         "ocr_engine": "sauna_tesseract_multistage + vision",
         "ocr_debug_paths": [
@@ -10539,7 +10541,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -10568,17 +10570,17 @@ window.ZERO_COST_INTAKE = {
       "route_plan": {},
       "split_staging": {
         "management_id": "BOX-001-ITEM-0028",
-        "stage_status": "staged_rebundle_plan",
-        "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/緑の冬小物系として未一致保留。0029 FRONT/BACK は car hook / mobile-holder 系だが CODE が network tool で、0028 の Zukida 側とはまだ結び付けない。0053 BACK/CODE は Hello Kitty 側の staged child。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として live 視認一致まで確認したが、shared sheet / manifest の再束ね前なので新管理番号はまだ切らず、0052 FRONT の青橙箱は別物として残す。",
-        "ui_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物",
-        "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0029 は car hook系だが network tool CODE のため Zukida 側へ未連結。0053 BACK/CODE は Hello Kitty 側。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認したが、新管理番号はまだ切らず staged のまま維持。0052 FRONT の青橙箱は別物。",
-        "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の冬小物系。0029 は別split維持。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認済みで、0052 FRONT は別物。",
-        "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0029は別split維持 / 0053-0052白箱は視認一致済みのため shared sheet・manifest で正式再束ね",
+        "stage_status": "partial_manifest_child_minted",
+        "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/緑の冬小物系として未一致保留。0028 CODE は car hook mobile phone holder NO-FE035 箱で、BACK の X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT は car hook mobile phone holder NO-FE040 だが、0029 BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側の staged child。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として live 視認一致まで確認したが、shared sheet / manifest の再束ね前なので新管理番号はまだ切らず、0052 FRONT の青橙箱は別物として残す。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
+        "ui_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
+        "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 は FRONT=car hook NO-FE040、BACK/CODE=SPEEDWOX X00162U47P の別split。0053 BACK/CODE は Hello Kitty 側。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認したが、新管理番号はまだ切らず staged のまま維持。0052 FRONT の青橙箱は別物。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
+        "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の冬小物系。0029 は別split維持。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認済みで、0052 FRONT は別物。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
+        "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0029は別split維持 / 0053-0052白箱は視認一致済みのため shared sheet・manifest で正式再束ね / 0059 は workbook / routing の stopline を決めてから正式反映",
         "retain_existing_id": {
           "management_id": "BOX-001-ITEM-0028",
           "product_id": "PRD-BOX-001-028",
           "draft_id": "DRF-BOX-001-028",
-          "reason": "X0010CU9L7 / Zukida / Red の CODE 読み取りと既存 product_name・draft・routing が一致しているため、現時点ではこの ID を Zukida 側の anchor として保持するのが最も保守的"
+          "reason": "0028 BACK の X0010CU9L7 / Zukida / Red ラベルと既存 product_name・draft・routing が一致しているため、現時点ではこの ID を Zukida 側の anchor として保持するのが最も保守的。0028 CODE は car hook mobile phone holder NO-FE035 箱で、X0010CU9L7 の直接コード面ではない。"
         },
         "related_management_ids": [
           "BOX-001-ITEM-0053",
@@ -10593,27 +10595,27 @@ window.ZERO_COST_INTAKE = {
           {
             "management_id": "BOX-001-ITEM-0028",
             "slot": "BACK",
-            "observed_as": "Zukida 車のフック（Red）パッケージ面"
+            "observed_as": "X0010CU9L7 / Zukida 車のフック（Red）ラベル面"
           },
           {
             "management_id": "BOX-001-ITEM-0028",
             "slot": "CODE",
-            "observed_as": "Zukida 車のフック（Red）コード面 / X0010CU9L7"
+            "observed_as": "car hook mobile phone holder NO-FE035 箱面"
           },
           {
             "management_id": "BOX-001-ITEM-0029",
             "slot": "FRONT",
-            "observed_as": "car hook / mobile-holder 系パッケージ"
+            "observed_as": "car hook mobile phone holder NO-FE040 パッケージ"
           },
           {
             "management_id": "BOX-001-ITEM-0029",
             "slot": "BACK",
-            "observed_as": "car hook / mobile-holder 系パッケージ対向面"
+            "observed_as": "SPEEDWOX / network tool X00162U47P ラベル面"
           },
           {
             "management_id": "BOX-001-ITEM-0029",
             "slot": "CODE",
-            "observed_as": "network tool 系コード面"
+            "observed_as": "SPEEDWOX / network tool ワイヤーストリッパー実物面"
           },
           {
             "management_id": "BOX-001-ITEM-0053",
@@ -10680,25 +10682,32 @@ window.ZERO_COST_INTAKE = {
               "BOX-001-ITEM-0052:BACK",
               "BOX-001-ITEM-0052:CODE"
             ],
-            "status": "slot_match_visually_confirmed_not_minted",
+            "status": "manifest_child_minted_local_only",
             "blockers": [
-              "0053 FRONT と 0052 BACK/CODE は同一白箱として live 視認一致したが、shared sheet / manifest 側の正式再束ねがまだ未実施",
-              "0052 FRONT は青橙の別箱で、白箱側として扱えるのは 0052 BACK/CODE のみ",
-              "shared sheet / manifest で正式再束ねを行う前に管理番号の持ち替えルール確認が必要"
-            ]
+              "confirmed / official は provisional actual-only で反映済み。shared sheet / workbook / routing 反映は別フェーズ。",
+              "0052 FRONT は青橙の別箱で、白箱側として扱えるのは 0052 BACK/CODE のみ"
+            ],
+            "minted_management_id": "BOX-001-ITEM-0059",
+            "minted_at": "2026-04-21 20:32:46 JST",
+            "minted_scope": "local_manifest_only",
+            "minted_note": "photo manifest child は mint 済み。workbook / confirmed / official への反映は別フェーズで行う。",
+            "truth_promotion_scope": "local_confirmed_official_only",
+            "truth_promoted_management_id": "BOX-001-ITEM-0059",
+            "truth_promotion_note": "confirmed / official へ provisional actual-only / 内容物未確認で反映済み。 workbook / routing は別フェーズで行う。",
+            "truth_promoted_at": "2026-04-21 21:20:12 JST"
           }
         ],
         "remaining_blockers": [
           "shared sheet と photo manifest を壊さずに新管理番号を発番する canonical script が未整備",
           "0028 FRONT の相方スロットと正式名が未確定",
-          "0029 FRONT/BACK は car hook / mobile-holder 系だが CODE が network tool で、0028 Zukida 側へ安全に寄せる根拠がまだない",
+          "0029 FRONT は car hook mobile phone holder NO-FE040 だが、BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0028 Zukida 側へ安全に寄せる根拠はまだない",
           "Hello Kitty 側はサンリオ正規品の出所確認が未完了",
-          "白箱 X00197BVHJ 側は 0053 FRONT と 0052 BACK/CODE の live 視認一致までは確認済みだが、shared sheet / manifest での正式再束ねが未完了"
+          "白箱 X00197BVHJ 側の local child BOX-001-ITEM-0059 は confirmed / official まで反映済み。 shared sheet / workbook / routing は別フェーズ。"
         ],
-        "safe_next_step": "local state では 0028=Zukida anchor を維持し、0028 FRONT は未一致保留、0029 は別splitのまま維持する。0053 BACK/CODE は Hello Kitty 側候補、0053 FRONT と 0052 BACK/CODE は同一白箱として shared sheet / manifest 側で正式再束ねしてから新 management_id を切る",
+        "safe_next_step": "local state では 0028=Zukida anchor を維持し、0028 FRONT は未一致保留、0029 は別splitのまま維持する。0053 BACK/CODE は Hello Kitty 側候補、0053 FRONT と 0052 BACK/CODE は同一白箱として shared sheet / manifest 側で正式再束ねしてから新 management_id を切る / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
         "match_role": "related"
       },
-      "split_plan_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物",
+      "split_plan_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
       "split_plan_role": "related"
     },
     {
@@ -10780,7 +10789,7 @@ window.ZERO_COST_INTAKE = {
         ]
       },
       "priority_score": 150,
-      "next_action": "比較画像候補を追加",
+      "next_action": "Amazon内部コードとOCRで商品特定",
       "barcode_kind": "amazon_internal",
       "review_flag": "",
       "resolved": {
@@ -10835,7 +10844,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -10878,7 +10887,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 18:13:38 JST",
+        "更新時刻": "2026-04-21 21:07:22 JST",
         "メモ": "name=Poperdision ブラック 3XL レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -10961,7 +10970,7 @@ window.ZERO_COST_INTAKE = {
         ]
       },
       "priority_score": 150,
-      "next_action": "比較画像候補を照合",
+      "next_action": "Amazon内部コードとOCRで商品特定",
       "barcode_kind": "amazon_internal",
       "review_flag": "",
       "resolved": {
@@ -11031,7 +11040,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [
         {
@@ -11092,7 +11101,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 18:13:38 JST",
+        "更新時刻": "2026-04-21 21:07:22 JST",
         "メモ": "name=ATIDIMU 美容液 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -11223,7 +11232,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -11501,7 +11510,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "比較画像照合",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 18:13:38 JST",
+        "更新時刻": "2026-04-21 21:07:22 JST",
         "メモ": "name=JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSNX6qATG7NwnssYkshh"
       }
     },
@@ -11628,7 +11637,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-04 17:34:58 JST"
+        "updated_at": "2026-04-21 20:32:46 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -11658,11 +11667,222 @@ window.ZERO_COST_INTAKE = {
         "reason": "CODE写真不足は今回の運用では例外許容とする"
       },
       "route_plan": {}
+    },
+    {
+      "management_id": "BOX-001-ITEM-0059",
+      "box_id": "BOX-001",
+      "sequence": 59,
+      "status": "complete",
+      "missing_slots": [],
+      "slot_count": 3,
+      "slots": [
+        {
+          "slot": "FRONT",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4986.HEIC",
+          "source_name": "IMG_4986.HEIC",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0059/01_FRONT_IMG_4986.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0059/01_FRONT_IMG_4986.jpg",
+          "resident_url": "./assets/intake/BOX-001-ITEM-0059/01_FRONT_IMG_4986.jpg",
+          "rebundled_from": "BOX-001-ITEM-0053:FRONT"
+        },
+        {
+          "slot": "BACK",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4984.HEIC",
+          "source_name": "IMG_4984.HEIC",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0059/02_BACK_IMG_4984.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0059/02_BACK_IMG_4984.jpg",
+          "resident_url": "./assets/intake/BOX-001-ITEM-0059/02_BACK_IMG_4984.jpg",
+          "rebundled_from": "BOX-001-ITEM-0052:BACK"
+        },
+        {
+          "slot": "CODE",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4985.HEIC",
+          "source_name": "IMG_4985.HEIC",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0059/03_CODE_IMG_4985.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0059/03_CODE_IMG_4985.jpg",
+          "resident_url": "./assets/intake/BOX-001-ITEM-0059/03_CODE_IMG_4985.jpg",
+          "rebundled_from": "BOX-001-ITEM-0052:CODE"
+        }
+      ],
+      "shared_sheet_title_value": "BOX-001-ITEM-0059",
+      "shared_sheet_note": "SPLIT-BOX-001-0053-WHITEBOX から local manifest child を再束ね",
+      "photo_grouping": "split_child_mint",
+      "grouping_warning": "",
+      "product_name": "白箱 X00197BVHJ 記念品・ギフト箱（内容物不明）",
+      "display_name": "白箱 X00197BVHJ 記念品・ギフト箱（内容物不明）",
+      "split_child_label": "白箱 X00197BVHJ 系",
+      "split_temporary_id": "SPLIT-BOX-001-0053-WHITEBOX",
+      "split_source_slots": [
+        "BOX-001-ITEM-0053:FRONT",
+        "BOX-001-ITEM-0052:BACK",
+        "BOX-001-ITEM-0052:CODE"
+      ],
+      "split_status": "manifest_child_minted_local_only",
+      "box_label": "数字箱 001",
+      "box_lane": "numeric",
+      "box_code": "001",
+      "identification": {
+        "state": "バーコード候補あり",
+        "barcode_values": [
+          "X00197BVHJ"
+        ],
+        "front_back_texts": [
+          "X00197BVHJ",
+          "新品・【FisICI 風県モチーツ記念品ギフ",
+          "ト",
+          "MADE in China",
+          "X00197BVHI",
+          "新品・【FisIC1.風モチーフ記念品ギフ"
+        ],
+        "code_texts": [
+          "“A - So SPAS Sr \\ he eae g",
+          "wo) SRS 2S SRA Ss REE e ra SNe ‘ ‘ : “SS x an . : ~ Nos os : a — .",
+          "o"
+        ],
+        "ocr_texts": [
+          "X00197BVHJ",
+          "新品・【FisICI 風県モチーツ記念品ギフ",
+          "ト",
+          "MADE in China",
+          "X00197BVHI",
+          "新品・【FisIC1.風モチーフ記念品ギフ"
+        ],
+        "candidate_query": "X00197BVHJ 新品・【FisICI 風県モチーツ記念品ギフ ト MADE in China",
+        "review_flag": "",
+        "ocr_engine": "sauna_tesseract_multistage + vision",
+        "ocr_debug_paths": [
+          "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0059/IMG_4985_CODE_ocr_best.png"
+        ]
+      },
+      "priority_score": 110,
+      "next_action": "本体表示とコードラベルを突合",
+      "barcode_kind": "amazon_internal",
+      "review_flag": "本体表示とコードラベルの不一致疑い",
+      "resolved": {
+        "management_id": "BOX-001-ITEM-0059",
+        "raw_id": "RAW-BOX-001-059",
+        "product_id": "PRD-BOX-001-059",
+        "draft_id": "DRF-BOX-001-059",
+        "research_id": "RES-BOX-001-059",
+        "split_temporary_id": "SPLIT-BOX-001-0053-WHITEBOX",
+        "split_source_slots": [
+          "BOX-001-ITEM-0053:FRONT",
+          "BOX-001-ITEM-0052:BACK",
+          "BOX-001-ITEM-0052:CODE"
+        ],
+        "verified_exact_match": false,
+        "official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+        "note": "SPLIT-BOX-001-0053-WHITEBOX を local truth へ昇格。0053:FRONT + 0052:BACK + 0052:CODE の3枚で白箱 X00197BVHJ を再束ね済み。 OCR では X00197BVHJ / 新品・【FisICI 風県モチーツ記念品ギフ / ト / MADE in China / X00197BVHI / 新品・【FisIC1.風モチーフ記念品ギフ まで読めるが、中身は見えず、比較画像も安全に確保できないため provisional / actual-only / 内容物未確認で止める。 workbook / routing は未反映。",
+        "image_source": "actual-only",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "内容物未確認"
+        ],
+        "official_page_url": "",
+        "official_image_url": "",
+        "official_image_local": "",
+        "supplemental_url": "",
+        "supplemental_image_urls": [],
+        "supplemental_image_locals": [],
+        "resolution_status": "provisional",
+        "product_name": "白箱 X00197BVHJ 記念品・ギフト箱（内容物不明）",
+        "barcode_primary": "X00197BVHJ",
+        "product_code_type": "amazon_internal",
+        "evidence": [
+          "X00197BVHJ",
+          "白箱",
+          "0053:FRONT + 0052:BACK + 0052:CODE",
+          "記念品・ギフト箱",
+          "内容物未確認"
+        ],
+        "brand_override": "FirstC",
+        "category_override": "その他 > 記念品・ギフト箱",
+        "price_override": 980,
+        "check_items_override": "内容物確認 / 箱状態 / サイズ感 / ギフト箱として出すか判断"
+      },
+      "official": {
+        "management_id": "BOX-001-ITEM-0059",
+        "raw_id": "RAW-BOX-001-059",
+        "product_id": "PRD-BOX-001-059",
+        "draft_id": "DRF-BOX-001-059",
+        "research_id": "RES-BOX-001-059",
+        "split_temporary_id": "SPLIT-BOX-001-0053-WHITEBOX",
+        "split_source_slots": [
+          "BOX-001-ITEM-0053:FRONT",
+          "BOX-001-ITEM-0052:BACK",
+          "BOX-001-ITEM-0052:CODE"
+        ],
+        "verified_exact_match": false,
+        "official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+        "note": "SPLIT-BOX-001-0053-WHITEBOX を local truth へ昇格。0053:FRONT + 0052:BACK + 0052:CODE の3枚で白箱 X00197BVHJ を再束ね済み。 OCR では X00197BVHJ / 新品・【FisICI 風県モチーツ記念品ギフ / ト / MADE in China / X00197BVHI / 新品・【FisIC1.風モチーフ記念品ギフ まで読めるが、中身は見えず、比較画像も安全に確保できないため provisional / actual-only / 内容物未確認で止める。 workbook / routing は未反映。",
+        "image_source": "actual-only",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "内容物未確認"
+        ],
+        "official_page_url": "",
+        "official_image_url": "",
+        "official_image_local": "",
+        "supplemental_url": "",
+        "supplemental_image_urls": [],
+        "supplemental_image_locals": []
+      },
+      "commerce": {
+        "management_id": "BOX-001-ITEM-0059",
+        "raw_id": "RAW-BOX-001-059",
+        "product_id": "PRD-BOX-001-059",
+        "draft_id": "DRF-BOX-001-059",
+        "research_id": "RES-BOX-001-059",
+        "product_name": "白箱 X00197BVHJ 記念品・ギフト箱（内容物不明）",
+        "brand": "FirstC",
+        "category": "その他 > 記念品・ギフト箱",
+        "barcode_primary": "X00197BVHJ",
+        "product_code_type": "amazon_internal",
+        "listing_title": "白箱 X00197BVHJ 記念品・ギフト箱（内容物不明）",
+        "listing_price": "980",
+        "market_floor_price": "",
+        "market_floor_state": "未調査",
+        "market_source_label": "",
+        "market_source_url": "",
+        "market_checked_at": "",
+        "market_note": "",
+        "publish_state": "下書き準備中",
+        "publish_detail": "",
+        "listing_id": "",
+        "public_listing_url": "",
+        "csv_status": "",
+        "updated_at": "2026-04-21 20:32:46 JST"
+      },
+      "comparison_images": [],
+      "reference_images": [],
+      "verified_exact_match": false,
+      "official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "内容物未確認"
+      ],
+      "qwen_hq_review_status": "",
+      "qwen_hq_resolution": "",
+      "qwen_hq_review_note": "",
+      "publish_status": "下書き準備中",
+      "publish_state": "下書き準備中",
+      "public_listing_url": "",
+      "listing_id": "",
+      "comparison_image_ref": "",
+      "reference_image_ref": "",
+      "minimum_price": "",
+      "market_floor_price_label": "未調査",
+      "listing_price": "980",
+      "exception": {},
+      "route_plan": {}
     }
   ],
   "boxes": [
     {
-      "generated_at": "2026-04-04 17:34:58 JST",
+      "generated_at": "2026-04-21 20:32:46 JST",
       "box_id": "BOX-001",
       "box_label": "数字箱 001",
       "box_lane": "numeric",
@@ -11675,13 +11895,13 @@ window.ZERO_COST_INTAKE = {
       ],
       "slots_per_item": 3,
       "total_files": 173,
-      "total_items": 58,
-      "complete_items": 57,
+      "total_items": 59,
+      "complete_items": 58,
       "incomplete_items": 1,
-      "next_sequence": 59,
-      "next_management_id": "BOX-001-ITEM-0059",
+      "next_sequence": 60,
+      "next_management_id": "BOX-001-ITEM-0060",
       "identification_counts": {
-        "barcode_ready": 34,
+        "barcode_ready": 35,
         "ocr_ready": 2,
         "image_only": 0,
         "missing_slots": 0,
@@ -11689,7 +11909,7 @@ window.ZERO_COST_INTAKE = {
       },
       "resolution_counts": {
         "confirmed": 2,
-        "provisional": 56,
+        "provisional": 57,
         "official_image_pending": 0,
         "accepted_exception": 2
       },
@@ -11784,7 +12004,7 @@ window.ZERO_COST_INTAKE = {
             ]
           },
           "priority_score": 100,
-          "next_action": "カテゴリ審査反映待ち",
+          "next_action": "GTINで商品特定",
           "barcode_kind": "gtin",
           "review_flag": "",
           "resolved": {
@@ -11952,7 +12172,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "審査監視",
             "AI次アクション": "カテゴリ審査反映待ち",
             "ルーティング状態": "審査待ち",
-            "更新時刻": "2026-04-21 18:13:38 JST",
+            "更新時刻": "2026-04-21 21:07:22 JST",
             "メモ": "name=WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り / publish_ok=カテゴリ審査待ち / draft_status=カテゴリ審査待ち / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量"
           }
         },
@@ -12030,8 +12250,8 @@ window.ZERO_COST_INTAKE = {
             ]
           },
           "priority_score": 220,
-          "next_action": "actual-onlyで商品マスタへ流す",
-          "barcode_kind": "amazon_internal",
+          "next_action": "OCR検索で商品特定",
+          "barcode_kind": "",
           "review_flag": "",
           "resolved": {
             "management_id": "BOX-001-ITEM-0002",
@@ -12132,7 +12352,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -12167,20 +12387,20 @@ window.ZERO_COST_INTAKE = {
             "管理番号": "BOX-001-ITEM-0002",
             "主販路": "メルカリShops",
             "メルカリ本線": "出品準備中",
-            "メルカリ投入条件": "公開可否確認待ち",
-            "画像ゲート": "実物のみで可",
-            "外部EC": "BASE準備可",
-            "BASE同期条件": "同期準備可",
-            "共通配送": "Ship&co候補",
-            "Ship&co条件": "送り状共通化候補",
+            "メルカリ投入条件": "停止",
+            "画像ゲート": "画像同一性確認待ち",
+            "外部EC": "停止",
+            "BASE同期条件": "停止",
+            "共通配送": "停止",
+            "Ship&co条件": "停止",
             "メルカリ配送": "メルカリBiz配送 + 送り状印刷 + ヤマト集荷",
             "人確認": "要",
-            "人確認理由": "公開可否未確定 / Qwen HQ判断: 比較画像照合担当 / actual-only固定優先",
-            "低コストAI作業": "公開前チェック",
-            "AI次アクション": "実物のみで進める / 比較画像は後追い",
-            "ルーティング状態": "HQ判断済み",
-            "更新時刻": "2026-04-21 18:13:38 JST",
-            "メモ": "name=保冷クーラーバッグ ネイビー ショルダー付 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / qwen_hq=actual-only固定優先 / 2026-04-21 current truth: actual-only固定。比較画像なしでも実物写真のみで進める。"
+            "人確認理由": "公開可否未確定 / 画像同一性未確認 / Qwen HQ判断: 比較画像照合担当 / blocked",
+            "低コストAI作業": "比較画像照合",
+            "AI次アクション": "比較画像を再調査",
+            "ルーティング状態": "HQ差し止め",
+            "更新時刻": "2026-04-21 21:07:22 JST",
+            "メモ": "name=保冷クーラーバッグ ネイビー ショルダー付 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / qwen_hq=blocked / 比較画像未取得のため同一性判定不可。公式/メーカー画像を得るまでblocked維持。actual-only固定のまま再調査待ち。"
           }
         },
         {
@@ -12257,10 +12477,10 @@ window.ZERO_COST_INTAKE = {
               "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0003/IMG_4831_BACK_ocr_best.png"
             ]
           },
-          "priority_score": 140,
-          "next_action": "比較画像候補を照合",
+          "priority_score": 110,
+          "next_action": "本体表示とコードラベルを突合",
           "barcode_kind": "amazon_internal",
-          "review_flag": "",
+          "review_flag": "本体表示とコードラベルの不一致疑い",
           "resolved": {
             "management_id": "BOX-001-ITEM-0003",
             "resolution_status": "provisional",
@@ -12324,7 +12544,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -12364,7 +12584,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 18:13:38 JST",
+            "更新時刻": "2026-04-21 21:07:22 JST",
             "メモ": "name=YUGYUG サングラス ブラック/グレー ケース付き / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
           }
         },
@@ -12444,10 +12664,10 @@ window.ZERO_COST_INTAKE = {
               "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0004/IMG_4835_CODE_ocr_best.png"
             ]
           },
-          "priority_score": 140,
-          "next_action": "比較画像候補を照合",
+          "priority_score": 110,
+          "next_action": "本体表示とコードラベルを突合",
           "barcode_kind": "amazon_internal",
-          "review_flag": "",
+          "review_flag": "本体表示とコードラベルの不一致疑い",
           "resolved": {
             "management_id": "BOX-001-ITEM-0004",
             "resolution_status": "provisional",
@@ -12622,7 +12842,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 18:13:38 JST",
+            "更新時刻": "2026-04-21 21:07:22 JST",
             "メモ": "name=IAWNI ショルダーバッグ メッセンジャーバッグ / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMJHwgfzNjEkYfN8SMv"
           }
         },
@@ -12880,7 +13100,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 18:13:38 JST",
+            "更新時刻": "2026-04-21 21:07:22 JST",
             "メモ": "name=CEEN サルエルパンツ 七分丈 ワイドパンツ / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPQCYwtnC7WCswDeG37b9"
           }
         },
@@ -12962,10 +13182,10 @@ window.ZERO_COST_INTAKE = {
               "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0006/IMG_4840_BACK_ocr_best.png"
             ]
           },
-          "priority_score": 40,
-          "next_action": "例外保留",
+          "priority_score": 150,
+          "next_action": "Amazon内部コードとOCRで商品特定",
           "barcode_kind": "amazon_internal",
-          "review_flag": "同一箱は確認できるが内容特定不可",
+          "review_flag": "",
           "resolved": {
             "management_id": "BOX-001-ITEM-0006",
             "resolution_status": "provisional",
@@ -13034,7 +13254,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -13145,17 +13365,17 @@ window.ZERO_COST_INTAKE = {
               "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0007/IMG_4844_CODE_ocr_best.png"
             ]
           },
-          "priority_score": 140,
-          "next_action": "比較画像候補を探す",
+          "priority_score": 110,
+          "next_action": "本体表示とコードラベルを突合",
           "barcode_kind": "amazon_internal",
-          "review_flag": "",
+          "review_flag": "本体表示とコードラベルの不一致疑い",
           "resolved": {
             "management_id": "BOX-001-ITEM-0007",
             "resolution_status": "provisional",
             "product_name": "GIOVANA Tシャツ ベージュ 2XL",
             "barcode_primary": "X00143KK11",
             "product_code_type": "amazon_internal",
-            "official_image_state": "比較画像候補あり / 現写真では1商品に断定不能",
+            "official_image_state": "actual-only固定 / 比較画像なし",
             "note": "コードラベルに X00143KK11 / GIOVANA / tshirt / 302 / 2XL が読める。実物はベージュ系トップスで、BACK 側は同じ袋の注意書きなので混線ではないと判断し provisional に上げる。qwen 候補URL収集担当で GIOVANA / X00143KK11 / beige 2XL を確認したが、100%同一確認に使える安全な比較画像候補は取れなかった。出品画像は実物のみで扱う。",
             "evidence": [
               "X00143KK11",
@@ -13212,18 +13432,15 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
           "display_name": "GIOVANA Tシャツ ベージュ 2XL",
           "product_name": "GIOVANA Tシャツ ベージュ 2XL",
           "verified_exact_match": false,
-          "official_image_state": "比較画像候補あり / 現写真では1商品に断定不能",
-          "exact_match_guard_state": "review_required",
-          "exact_match_guard_reasons": [
-            "別商品mix"
-          ],
+          "official_image_state": "actual-only固定 / 比較画像なし",
+          "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -13255,7 +13472,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 18:13:38 JST",
+            "更新時刻": "2026-04-21 21:07:22 JST",
             "メモ": "name=GIOVANA Tシャツ ベージュ 2XL / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
           }
         },
@@ -13336,10 +13553,10 @@ window.ZERO_COST_INTAKE = {
               "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0008/IMG_4847_CODE_ocr_best.png"
             ]
           },
-          "priority_score": 40,
-          "next_action": "写真を要再束ね",
+          "priority_score": 150,
+          "next_action": "Amazon内部コードとOCRで商品特定",
           "barcode_kind": "amazon_internal",
-          "review_flag": "FRONT/BACK/CODE が別商品です",
+          "review_flag": "",
           "resolved": {
             "management_id": "BOX-001-ITEM-0008",
             "resolution_status": "provisional",
@@ -13347,7 +13564,7 @@ window.ZERO_COST_INTAKE = {
             "barcode_primary": "X000XF7CAD",
             "product_code_type": "amazon_internal",
             "official_image_state": "比較画像候補あり / exact-match不可",
-            "note": "コードラベルに X000XF7CAD / オナーファッション 綿100% トップス ミントグリーン 3XL / New / Made In China が読める。 / 実物はオナーファッション表記のミントトップスだが、候補ページは Printstar 無地Tシャツ。ブランド違いのため出品採用不可、比較用のみ。",
+            "note": "コードラベルに X000XF7CAD / オナーファッション 綿100% トップス ミントグリーン 3XL / New / Made In China が読める。 / 実物はオナーファッション表記のミントトップスだが、候補ページは Printstar 無地Tシャツ。ブランド不一致のため出品採用不可、比較用のみ。",
             "evidence": [
               "X000XF7CAD",
               "オナーファッション",
@@ -13366,7 +13583,7 @@ window.ZERO_COST_INTAKE = {
             "exact_match_guard_state": "review_required",
             "official_image_local": "state/intake/official_images/BOX-001-ITEM-0008_mint_top_candidate.jpg",
             "exact_match_guard_reasons": [
-              "別商品mix"
+              "ブランド不一致"
             ]
           },
           "official": {
@@ -13377,10 +13594,10 @@ window.ZERO_COST_INTAKE = {
             "official_image_local": "state/intake/official_images/BOX-001-ITEM-0008_mint_top_candidate.jpg",
             "verified_exact_match": false,
             "official_image_state": "比較画像候補あり / exact-match不可",
-            "note": "実物はオナーファッション表記のミントトップスだが、候補ページは Printstar 無地Tシャツ。ブランド違いのため出品採用不可、比較用のみ。",
+            "note": "実物はオナーファッション表記のミントトップスだが、候補ページは Printstar 無地Tシャツ。ブランド不一致のため出品採用不可、比較用のみ。",
             "exact_match_guard_state": "review_required",
             "exact_match_guard_reasons": [
-              "別商品mix"
+              "ブランド不一致"
             ]
           },
           "commerce": {
@@ -13481,7 +13698,10 @@ window.ZERO_COST_INTAKE = {
           "product_name": "オナーファッション 綿100% トップス ミントグリーン 3XL",
           "verified_exact_match": false,
           "official_image_state": "比較画像候補あり / exact-match不可",
-          "exact_match_guard_state": "clear",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "ブランド不一致"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -13513,8 +13733,8 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 18:13:38 JST",
-            "メモ": "name=オナーファッション 綿100% トップス ミントグリーン 3XL / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMSqu7EDWJu3jDcTo5h"
+            "更新時刻": "2026-04-21 21:07:22 JST",
+            "メモ": "name=オナーファッション 綿100% トップス ミントグリーン 3XL / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMSqu7EDWJu3jDcTo5h"
           }
         },
         {
@@ -13596,8 +13816,8 @@ window.ZERO_COST_INTAKE = {
               "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0009/IMG_4849_BACK_ocr_best.png"
             ]
           },
-          "priority_score": 140,
-          "next_action": "比較画像候補を探す",
+          "priority_score": 150,
+          "next_action": "Amazon内部コードとOCRで商品特定",
           "barcode_kind": "amazon_internal",
           "review_flag": "",
           "resolved": {
@@ -13782,7 +14002,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 18:13:38 JST",
+            "更新時刻": "2026-04-21 21:07:22 JST",
             "メモ": "name=Hotaty ピアス 金属アレルギー対応 ギフトBOX付き / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMUTrpVNxK6fGZdtMqT"
           }
         },
@@ -13936,7 +14156,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [
             {
@@ -13997,7 +14217,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 18:13:38 JST",
+            "更新時刻": "2026-04-21 21:07:22 JST",
             "メモ": "name=SHANGCHU シェフユニフォーム ブラック 4XL / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -14253,7 +14473,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 18:13:38 JST",
+            "更新時刻": "2026-04-21 21:07:22 JST",
             "メモ": "name=Dkieta 帽子 レディース ネックカバー付き 花柄日よけ帽子 / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMPEuG8NMB3ZieyYzHU"
           }
         },
@@ -14511,7 +14731,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 18:13:38 JST",
+            "更新時刻": "2026-04-21 21:07:22 JST",
             "メモ": "name=gany ガーゼハンカチ 30×30cm 10枚セット 綿100% / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPTBgBM5kND3h8AhVf4bf"
           }
         },
@@ -14593,7 +14813,7 @@ window.ZERO_COST_INTAKE = {
             ]
           },
           "priority_score": 100,
-          "next_action": "カテゴリ審査反映待ち",
+          "next_action": "GTINで商品特定",
           "barcode_kind": "gtin",
           "review_flag": "",
           "resolved": {
@@ -14655,7 +14875,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [
             {
@@ -14713,7 +14933,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 18:13:38 JST",
+            "更新時刻": "2026-04-21 21:07:22 JST",
             "メモ": "name=WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り / publish_ok=公開待ち / draft_status=公開待ち / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量"
           }
         },
@@ -14990,7 +15210,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 18:13:38 JST",
+            "更新時刻": "2026-04-21 21:07:22 JST",
             "メモ": "name=HAYAHARU キッズ靴下 LS4602LS / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMLyKhRCgPASDJFH2dc"
           }
         },
@@ -15070,9 +15290,9 @@ window.ZERO_COST_INTAKE = {
             ]
           },
           "priority_score": 110,
-          "next_action": "actual-onlyで商品マスタへ流す",
+          "next_action": "本体表示とコードラベルを突合",
           "barcode_kind": "amazon_internal",
-          "review_flag": "",
+          "review_flag": "本体表示とコードラベルの不一致疑い",
           "resolved": {
             "management_id": "BOX-001-ITEM-0015",
             "resolution_status": "provisional",
@@ -15136,7 +15356,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -15176,7 +15396,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 18:13:38 JST",
+            "更新時刻": "2026-04-21 21:07:22 JST",
             "メモ": "name=Llink 靴下 5足セット ボーダー パステル / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
           }
         },
@@ -15254,9 +15474,9 @@ window.ZERO_COST_INTAKE = {
             ]
           },
           "priority_score": 110,
-          "next_action": "actual-onlyで商品マスタへ流す",
+          "next_action": "本体表示とコードラベルを突合",
           "barcode_kind": "amazon_internal",
-          "review_flag": "",
+          "review_flag": "本体表示とコードラベルの不一致疑い",
           "resolved": {
             "management_id": "BOX-001-ITEM-0016",
             "resolution_status": "provisional",
@@ -15320,7 +15540,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -15360,7 +15580,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 18:13:38 JST",
+            "更新時刻": "2026-04-21 21:07:22 JST",
             "メモ": "name=ZERUI 靴下 5足セット パステル 蝶リボン / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
           }
         },
@@ -15438,10 +15658,10 @@ window.ZERO_COST_INTAKE = {
               "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0017/IMG_4874_CODE_ocr_best.png"
             ]
           },
-          "priority_score": 145,
-          "next_action": "比較画像候補を探す",
+          "priority_score": 110,
+          "next_action": "本体表示とコードラベルを突合",
           "barcode_kind": "amazon_internal",
-          "review_flag": "",
+          "review_flag": "本体表示とコードラベルの不一致疑い",
           "resolved": {
             "management_id": "BOX-001-ITEM-0017",
             "resolution_status": "provisional",
@@ -15516,7 +15736,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -15562,8 +15782,8 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 18:13:38 JST",
-            "メモ": "name=FirstC ティアグッズ記念品ギフト オレンジ丸型ポーチ（用途要確認） / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 用途要確認 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+            "更新時刻": "2026-04-21 21:07:22 JST",
+            "メモ": "name=FirstC ティアグッズ記念品ギフト オレンジ丸型ポーチ（用途要確認） / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / 用途要確認 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
         {
@@ -15642,9 +15862,9 @@ window.ZERO_COST_INTAKE = {
             ]
           },
           "priority_score": 110,
-          "next_action": "actual-onlyで商品マスタへ流す",
+          "next_action": "本体表示とコードラベルを突合",
           "barcode_kind": "amazon_internal",
-          "review_flag": "",
+          "review_flag": "本体表示とコードラベルの不一致疑い",
           "resolved": {
             "management_id": "BOX-001-ITEM-0018",
             "resolution_status": "provisional",
@@ -15707,7 +15927,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -15747,7 +15967,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 18:13:38 JST",
+            "更新時刻": "2026-04-21 21:07:22 JST",
             "メモ": "name=SWEETBOY 子供パーカー ネイビー×イエロー 130 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
           }
         },
@@ -16000,7 +16220,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "停止",
             "AI次アクション": "空き板を維持",
             "ルーティング状態": "一時停止",
-            "更新時刻": "2026-04-21 18:13:38 JST",
+            "更新時刻": "2026-04-21 21:07:22 JST",
             "メモ": "name=ポロベア キャンバス トートバッグ POLO BEAR LAUREN / publish_ok=確認待ち / draft_status=一時取り下げ / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=一時取り下げ"
           }
         },
@@ -16082,8 +16302,8 @@ window.ZERO_COST_INTAKE = {
               "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0020/IMG_4884_CODE_ocr_best.png"
             ]
           },
-          "priority_score": 145,
-          "next_action": "比較画像候補を探す",
+          "priority_score": 150,
+          "next_action": "Amazon内部コードとOCRで商品特定",
           "barcode_kind": "amazon_internal",
           "review_flag": "",
           "resolved": {
@@ -16149,7 +16369,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -16189,7 +16409,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 18:13:38 JST",
+            "更新時刻": "2026-04-21 21:07:22 JST",
             "メモ": "name=首サポーター カバー付き グレー M HJ-GY-M / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -16322,7 +16542,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -16489,7 +16709,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [
             {
@@ -16547,8 +16767,8 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 18:13:38 JST",
-            "メモ": "name=LE BLANC フェムケアPRO 低刺激 デリケートゾーン 150mL / publish_ok=確認待ち / draft_status=下書き / image_state=調査画像取得済み / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+            "更新時刻": "2026-04-21 21:07:22 JST",
+            "メモ": "name=LE BLANC フェムケアPRO 低刺激 デリケートゾーン 150mL / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
         {
@@ -16633,18 +16853,20 @@ window.ZERO_COST_INTAKE = {
           "next_action": "写真を要再束ね",
           "barcode_kind": "amazon_internal",
           "review_flag": "FRONT/BACK/CODE が別商品です",
-          "manual_note": "FRONT は FEMCARE PRO 150ml のボトル、BACK/CODE は Trekking Pole-Blue の収納袋でした。",
+          "manual_note": "FRONT は LE BLANC フェムケアPRO 150ml のボトル、BACK/CODE は Trekking Pole-Blue X0013QXDQX の収納袋でした。",
           "resolved": {
             "management_id": "BOX-001-ITEM-0023",
             "resolution_status": "provisional",
-            "product_name": "FEMCARE PRO 150ml",
+            "product_name": "LE BLANC フェムケアPRO 150ml",
             "barcode_primary": "",
             "product_code_type": "package_text",
-            "official_image_state": "現写真では1商品に断定不能",
-            "note": "FRONTにFEMCARE PRO 150mlボトル。BACK/CODEはTrekking Pole-Blue収納袋（別商品混線）。FRONT側が本命。2026-04-15商品特定分析によりprovisional登録。",
+            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "note": "FRONT ボトルの実物ラベルで 商品名 フェムケア PRO / 容量 150ml / FEMCAREPRO 表記を確認。検索では LE BLANC フェムケアPRO 低刺激 デリケートゾーンソープ 150ml の流通情報を確認できる。一方 BACK/CODE は Trekking Pole-Blue / X0013QXDQX / N-82 BLUE の別商品。FRONT側を actual-only の provisional とし、1商品としては断定不可。",
             "evidence": [
-              "FEMCARE PRO",
-              "150ml"
+              "FRONT=フェムケア PRO",
+              "容量150ml",
+              "FEMCAREPRO",
+              "BACK/CODE=Trekking Pole-Blue X0013QXDQX"
             ],
             "exact_match_guard_state": "review_required",
             "exact_match_guard_reasons": [
@@ -16658,12 +16880,12 @@ window.ZERO_COST_INTAKE = {
             "product_id": "PRD-BOX-001-023",
             "draft_id": "DRF-BOX-001-023",
             "research_id": "RES-BOX-001-023",
-            "product_name": "FEMCARE PRO 150ml",
+            "product_name": "LE BLANC フェムケアPRO 150ml",
             "brand": "",
             "category": "",
             "barcode_primary": "",
             "product_code_type": "package_text",
-            "listing_title": "FEMCARE PRO 150ml",
+            "listing_title": "LE BLANC フェムケアPRO 150ml",
             "listing_price": "",
             "market_floor_price": "",
             "market_floor_state": "未調査",
@@ -16676,14 +16898,14 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
-          "display_name": "FEMCARE PRO 150ml",
-          "product_name": "FEMCARE PRO 150ml",
+          "display_name": "LE BLANC フェムケアPRO 150ml",
+          "product_name": "LE BLANC フェムケアPRO 150ml",
           "verified_exact_match": false,
-          "official_image_state": "現写真では1商品に断定不能",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
             "別商品mix"
@@ -16828,7 +17050,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -16944,8 +17166,8 @@ window.ZERO_COST_INTAKE = {
             "barcode_primary": "X0011JB9IL",
             "product_code_type": "amazon_internal",
             "verified_exact_match": false,
-            "official_image_state": "現写真では1商品に断定不能",
-            "note": "FRONT OCR と Vision で X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）を確認。一方 BACK は X001845QRJ / 日傘超軽量、CODE も日傘側ノイズで別商品。現写真では1商品に断定不能のため、DUCO 側を provisional に留める。",
+            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "note": "FRONT ラベルで X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）を目視確認。検索では X0011JB9IL の公式商品ページは未確認だが、DUCO レディースサングラス W016 系の流通情報は確認できる。一方 BACK/CODE は X001845QRJ / 日傘超軽量 [手動開閉] の別商品。DUCO 側は actual-only の provisional とし、1商品としては断定不可。",
             "evidence": [
               "X0011JB9IL",
               "DUCO",
@@ -16983,14 +17205,14 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
           "display_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
           "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
           "verified_exact_match": false,
-          "official_image_state": "現写真では1商品に断定不能",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
             "別商品mix"
@@ -17150,7 +17372,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [
             {
@@ -17208,8 +17430,8 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 18:13:38 JST",
-            "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+            "更新時刻": "2026-04-21 21:07:22 JST",
+            "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
         {
@@ -17358,7 +17580,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [
             {
@@ -17419,8 +17641,8 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 18:13:38 JST",
-            "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=候補1枚確保 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+            "更新時刻": "2026-04-21 21:07:22 JST",
+            "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
         {
@@ -17504,7 +17726,7 @@ window.ZERO_COST_INTAKE = {
           "next_action": "写真を要再束ね",
           "barcode_kind": "amazon_internal",
           "review_flag": "FRONT/BACK/CODE が別商品です",
-          "manual_note": "FRONT は黒/緑の冬小物系、BACK/CODE は Zukida 車のフック（Red）の箱でした。",
+          "manual_note": "FRONT は黒/緑の冬小物系、BACK は X0010CU9L7 / Zukida 車のフック（Red）ラベル、CODE は car hook mobile phone holder NO-FE035 箱でした。",
           "resolved": {
             "management_id": "BOX-001-ITEM-0028",
             "resolution_status": "provisional",
@@ -17513,12 +17735,13 @@ window.ZERO_COST_INTAKE = {
             "product_code_type": "amazon_internal",
             "verified_exact_match": false,
             "official_image_state": "管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能",
-            "note": "BACK のラベルで X0010CU9L7 / Zukida 車のフック 後部座席 (Red) を確認し、CODE 面も car hook mobile phone holder 箱で同系統。一方 FRONT は黒緑の冬小物系で別商品。現IDは Zukida anchor を維持するが、現写真では1商品に断定不能のため provisional に降格する。",
+            "note": "BACK のラベルで X0010CU9L7 / Zukida 車のフック 後部座席 (Red) を確認。CODE は car hook mobile phone holder 箱で NO-FE035 表記があり、同じ車用フック系ではあるが X0010CU9L7 を直接裏付けるコード面ではない。一方 FRONT は黒緑の冬小物系で別商品。現IDは Zukida anchor を維持するが、現写真では1商品に断定不能のため provisional に留める。",
             "evidence": [
               "X0010CU9L7",
               "Zukida",
               "車のフック",
               "Red",
+              "CODE=Car hook mobile phone holder NO-FE035",
               "FRONT=冬小物系の別商品"
             ],
             "exact_match_guard_state": "review_required",
@@ -17582,7 +17805,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -17626,22 +17849,22 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "管理番号再分解と再撮影",
             "ルーティング状態": "要再束ね",
-            "更新時刻": "2026-04-21 18:13:38 JST",
-            "メモ": "name=Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / qwen_hq=needs_split / 0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式再束ねと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。"
+            "更新時刻": "2026-04-21 21:07:22 JST",
+            "メモ": "name=要再束ね候補: Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / qwen_hq=needs_split / 0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式再束ねと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。"
           },
           "split_staging": {
             "management_id": "BOX-001-ITEM-0028",
-            "stage_status": "staged_rebundle_plan",
-            "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/緑の冬小物系として未一致保留。0029 FRONT/BACK は car hook / mobile-holder 系だが CODE が network tool で、0028 の Zukida 側とはまだ結び付けない。0053 BACK/CODE は Hello Kitty 側の staged child。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として live 視認一致まで確認したが、shared sheet / manifest の再束ね前なので新管理番号はまだ切らず、0052 FRONT の青橙箱は別物として残す。",
-            "ui_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物",
-            "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0029 は car hook系だが network tool CODE のため Zukida 側へ未連結。0053 BACK/CODE は Hello Kitty 側。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認したが、新管理番号はまだ切らず staged のまま維持。0052 FRONT の青橙箱は別物。",
-            "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の冬小物系。0029 は別split維持。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認済みで、0052 FRONT は別物。",
-            "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0029は別split維持 / 0053-0052白箱は視認一致済みのため shared sheet・manifest で正式再束ね",
+            "stage_status": "partial_manifest_child_minted",
+            "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/緑の冬小物系として未一致保留。0028 CODE は car hook mobile phone holder NO-FE035 箱で、BACK の X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT は car hook mobile phone holder NO-FE040 だが、0029 BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側の staged child。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として live 視認一致まで確認したが、shared sheet / manifest の再束ね前なので新管理番号はまだ切らず、0052 FRONT の青橙箱は別物として残す。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
+            "ui_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
+            "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 は FRONT=car hook NO-FE040、BACK/CODE=SPEEDWOX X00162U47P の別split。0053 BACK/CODE は Hello Kitty 側。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認したが、新管理番号はまだ切らず staged のまま維持。0052 FRONT の青橙箱は別物。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
+            "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の冬小物系。0029 は別split維持。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認済みで、0052 FRONT は別物。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
+            "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0029は別split維持 / 0053-0052白箱は視認一致済みのため shared sheet・manifest で正式再束ね / 0059 は workbook / routing の stopline を決めてから正式反映",
             "retain_existing_id": {
               "management_id": "BOX-001-ITEM-0028",
               "product_id": "PRD-BOX-001-028",
               "draft_id": "DRF-BOX-001-028",
-              "reason": "X0010CU9L7 / Zukida / Red の CODE 読み取りと既存 product_name・draft・routing が一致しているため、現時点ではこの ID を Zukida 側の anchor として保持するのが最も保守的"
+              "reason": "0028 BACK の X0010CU9L7 / Zukida / Red ラベルと既存 product_name・draft・routing が一致しているため、現時点ではこの ID を Zukida 側の anchor として保持するのが最も保守的。0028 CODE は car hook mobile phone holder NO-FE035 箱で、X0010CU9L7 の直接コード面ではない。"
             },
             "related_management_ids": [
               "BOX-001-ITEM-0053",
@@ -17656,27 +17879,27 @@ window.ZERO_COST_INTAKE = {
               {
                 "management_id": "BOX-001-ITEM-0028",
                 "slot": "BACK",
-                "observed_as": "Zukida 車のフック（Red）パッケージ面"
+                "observed_as": "X0010CU9L7 / Zukida 車のフック（Red）ラベル面"
               },
               {
                 "management_id": "BOX-001-ITEM-0028",
                 "slot": "CODE",
-                "observed_as": "Zukida 車のフック（Red）コード面 / X0010CU9L7"
+                "observed_as": "car hook mobile phone holder NO-FE035 箱面"
               },
               {
                 "management_id": "BOX-001-ITEM-0029",
                 "slot": "FRONT",
-                "observed_as": "car hook / mobile-holder 系パッケージ"
+                "observed_as": "car hook mobile phone holder NO-FE040 パッケージ"
               },
               {
                 "management_id": "BOX-001-ITEM-0029",
                 "slot": "BACK",
-                "observed_as": "car hook / mobile-holder 系パッケージ対向面"
+                "observed_as": "SPEEDWOX / network tool X00162U47P ラベル面"
               },
               {
                 "management_id": "BOX-001-ITEM-0029",
                 "slot": "CODE",
-                "observed_as": "network tool 系コード面"
+                "observed_as": "SPEEDWOX / network tool ワイヤーストリッパー実物面"
               },
               {
                 "management_id": "BOX-001-ITEM-0053",
@@ -17743,25 +17966,32 @@ window.ZERO_COST_INTAKE = {
                   "BOX-001-ITEM-0052:BACK",
                   "BOX-001-ITEM-0052:CODE"
                 ],
-                "status": "slot_match_visually_confirmed_not_minted",
+                "status": "manifest_child_minted_local_only",
                 "blockers": [
-                  "0053 FRONT と 0052 BACK/CODE は同一白箱として live 視認一致したが、shared sheet / manifest 側の正式再束ねがまだ未実施",
-                  "0052 FRONT は青橙の別箱で、白箱側として扱えるのは 0052 BACK/CODE のみ",
-                  "shared sheet / manifest で正式再束ねを行う前に管理番号の持ち替えルール確認が必要"
-                ]
+                  "confirmed / official は provisional actual-only で反映済み。shared sheet / workbook / routing 反映は別フェーズ。",
+                  "0052 FRONT は青橙の別箱で、白箱側として扱えるのは 0052 BACK/CODE のみ"
+                ],
+                "minted_management_id": "BOX-001-ITEM-0059",
+                "minted_at": "2026-04-21 20:32:46 JST",
+                "minted_scope": "local_manifest_only",
+                "minted_note": "photo manifest child は mint 済み。workbook / confirmed / official への反映は別フェーズで行う。",
+                "truth_promotion_scope": "local_confirmed_official_only",
+                "truth_promoted_management_id": "BOX-001-ITEM-0059",
+                "truth_promotion_note": "confirmed / official へ provisional actual-only / 内容物未確認で反映済み。 workbook / routing は別フェーズで行う。",
+                "truth_promoted_at": "2026-04-21 21:20:12 JST"
               }
             ],
             "remaining_blockers": [
               "shared sheet と photo manifest を壊さずに新管理番号を発番する canonical script が未整備",
               "0028 FRONT の相方スロットと正式名が未確定",
-              "0029 FRONT/BACK は car hook / mobile-holder 系だが CODE が network tool で、0028 Zukida 側へ安全に寄せる根拠がまだない",
+              "0029 FRONT は car hook mobile phone holder NO-FE040 だが、BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0028 Zukida 側へ安全に寄せる根拠はまだない",
               "Hello Kitty 側はサンリオ正規品の出所確認が未完了",
-              "白箱 X00197BVHJ 側は 0053 FRONT と 0052 BACK/CODE の live 視認一致までは確認済みだが、shared sheet / manifest での正式再束ねが未完了"
+              "白箱 X00197BVHJ 側の local child BOX-001-ITEM-0059 は confirmed / official まで反映済み。 shared sheet / workbook / routing は別フェーズ。"
             ],
-            "safe_next_step": "local state では 0028=Zukida anchor を維持し、0028 FRONT は未一致保留、0029 は別splitのまま維持する。0053 BACK/CODE は Hello Kitty 側候補、0053 FRONT と 0052 BACK/CODE は同一白箱として shared sheet / manifest 側で正式再束ねしてから新 management_id を切る",
+            "safe_next_step": "local state では 0028=Zukida anchor を維持し、0028 FRONT は未一致保留、0029 は別splitのまま維持する。0053 BACK/CODE は Hello Kitty 側候補、0053 FRONT と 0052 BACK/CODE は同一白箱として shared sheet / manifest 側で正式再束ねしてから新 management_id を切る / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
             "match_role": "primary"
           },
-          "split_plan_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物",
+          "split_plan_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
           "split_plan_role": "primary"
         },
         {
@@ -17846,7 +18076,7 @@ window.ZERO_COST_INTAKE = {
           "next_action": "写真を要再束ね",
           "barcode_kind": "amazon_internal",
           "review_flag": "FRONT/BACK/CODE が別商品です",
-          "manual_note": "FRONT/BACK は car hook mobile phone holder、CODE は network tool 系でした。",
+          "manual_note": "FRONT は car hook mobile phone holder NO-FE040、BACK/CODE は SPEEDWOX ワイヤーストリッパー X00162U47P の network tool 系でした。",
           "resolved": {
             "management_id": "BOX-001-ITEM-0029",
             "resolution_status": "provisional",
@@ -17854,11 +18084,12 @@ window.ZERO_COST_INTAKE = {
             "barcode_primary": "",
             "product_code_type": "package_text",
             "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能",
-            "note": "FRONT に Car hook mobile phone holder / NO-FE040 を確認。一方 BACK/CODE は SPEEDWOX ワイヤーストリッパー X00162U47P の別商品。現写真では car hook 側は FRONT しか揃わず、同一管理番号の1商品に断定不能のため provisional に留める。",
+            "note": "FRONT に Car hook mobile phone holder / NO-FE040 / Car Hook Series 合格証を確認。一方 BACK は SPEEDWOX ワイヤーストリッパー X00162U47P ラベル付きの NETWORK TOOL パッケージ、CODE も同じワイヤーストリッパー実物で別商品。現写真では1商品に断定不能で、car hook 側は FRONT しか揃わないため provisional に留める。",
             "evidence": [
               "Car hook",
               "mobile phone holder",
               "NO-FE040",
+              "Car Hook Series",
               "BACK/CODE=SPEEDWOX X00162U47P"
             ],
             "exact_match_guard_state": "review_required",
@@ -17892,7 +18123,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -18049,7 +18280,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -18154,7 +18385,7 @@ window.ZERO_COST_INTAKE = {
             ]
           },
           "priority_score": 150,
-          "next_action": "比較画像候補を追加",
+          "next_action": "Amazon内部コードとOCRで商品特定",
           "barcode_kind": "amazon_internal",
           "review_flag": "",
           "resolved": {
@@ -18218,7 +18449,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -18258,7 +18489,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 18:13:38 JST",
+            "更新時刻": "2026-04-21 21:07:22 JST",
             "メモ": "name=LEISURE WEAR ベージュ系レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -18520,7 +18751,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 18:13:38 JST",
+            "更新時刻": "2026-04-21 21:07:22 JST",
             "メモ": "name=ZUCCA CLUB リラックス リカバリー サンダル / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPTBkWndxGku2L9EVw4UP"
           }
         },
@@ -18675,7 +18906,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -18718,8 +18949,8 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 18:13:38 JST",
-            "メモ": "name=jchinjia リュック メンズ ビジネスリュック 男女兼用 カジュアルバッグ おしゃれ トラベルバッグ / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+            "更新時刻": "2026-04-21 21:07:22 JST",
+            "メモ": "name=jchinjia リュック メンズ ビジネスリュック 男女兼用 カジュアルバッグ おしゃれ トラベルバッグ / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
         {
@@ -18851,7 +19082,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -18956,10 +19187,10 @@ window.ZERO_COST_INTAKE = {
               "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0035/IMG_4929_FRONT_ocr_best.png"
             ]
           },
-          "priority_score": 145,
-          "next_action": "比較画像候補を探す",
+          "priority_score": 110,
+          "next_action": "本体表示とコードラベルを突合",
           "barcode_kind": "amazon_internal",
-          "review_flag": "",
+          "review_flag": "本体表示とコードラベルの不一致疑い",
           "resolved": {
             "management_id": "BOX-001-ITEM-0035",
             "resolution_status": "provisional",
@@ -19023,7 +19254,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -19063,7 +19294,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 18:13:38 JST",
+            "更新時刻": "2026-04-21 21:07:22 JST",
             "メモ": "name=Letshe ベビー前開きロンパース ピンク 110cm / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
           }
         },
@@ -19195,7 +19426,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -19297,9 +19528,9 @@ window.ZERO_COST_INTAKE = {
             ]
           },
           "priority_score": 110,
-          "next_action": "比較画像候補を探す",
+          "next_action": "本体表示とコードラベルを突合",
           "barcode_kind": "amazon_internal",
-          "review_flag": "",
+          "review_flag": "本体表示とコードラベルの不一致疑い",
           "resolved": {
             "management_id": "BOX-001-ITEM-0037",
             "resolution_status": "provisional",
@@ -19362,7 +19593,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -19464,10 +19695,10 @@ window.ZERO_COST_INTAKE = {
               "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0038/IMG_4938_FRONT_ocr_best.png"
             ]
           },
-          "priority_score": 145,
-          "next_action": "比較画像候補を探す",
+          "priority_score": 110,
+          "next_action": "本体表示とコードラベルを突合",
           "barcode_kind": "amazon_internal",
-          "review_flag": "",
+          "review_flag": "本体表示とコードラベルの不一致疑い",
           "resolved": {
             "management_id": "BOX-001-ITEM-0038",
             "resolution_status": "provisional",
@@ -19530,7 +19761,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -19570,7 +19801,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 18:13:38 JST",
+            "更新時刻": "2026-04-21 21:07:22 JST",
             "メモ": "name=裏起毛トップス オフホワイト L / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -19698,7 +19929,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -19853,7 +20084,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -20008,7 +20239,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -20116,7 +20347,7 @@ window.ZERO_COST_INTAKE = {
           "next_action": "写真を要再束ね",
           "barcode_kind": "amazon_internal",
           "review_flag": "FRONT/BACK/CODE が別商品です",
-          "manual_note": "FRONT/BACK は青系のぬいぐるみ・布製品、CODE は NEEDLY Sleeping lip mask 10ml 箱で別商品でした。",
+          "manual_note": "FRONT は青い袋入り布製品、BACK/CODE は NEEDLY Sleeping lip mask 10ml 箱で別商品でした。",
           "resolved": {
             "management_id": "BOX-001-ITEM-0042",
             "resolution_status": "provisional",
@@ -20177,7 +20408,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -20329,7 +20560,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -20482,7 +20713,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -20582,22 +20813,22 @@ window.ZERO_COST_INTAKE = {
             ]
           },
           "priority_score": 260,
-          "next_action": "actual-onlyで商品マスタへ流す",
-          "barcode_kind": "amazon_internal",
+          "next_action": "OCR検索で商品特定",
+          "barcode_kind": "",
           "review_flag": "",
           "resolved": {
             "management_id": "BOX-001-ITEM-0045",
             "resolution_status": "provisional",
             "product_name": "ロゴ刺繍ベースボールキャップ ブラック系",
-            "barcode_primary": "X0015NW4BJ",
-            "product_code_type": "amazon_internal",
-            "official_image_state": "現写真では1商品に断定不能",
-            "note": "FRONT では黒系ベースボールキャップ本体と白い Youth 風ロゴ刺繍を確認できる。一方 BACK のラベル X0015NW4BJ / Y5AQTX2313-BlueR-L2 は KumiModa の Tシャツ文言で、CODE も無地袋面しかなく、現写真ではそのラベルが帽子を指すと断定できない。現写真では1商品に断定不能のため generic cap として provisional に留め、公開停止とする。",
+            "barcode_primary": "",
+            "product_code_type": "none",
+            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "note": "FRONT では黒系ベースボールキャップ本体と白い Youth 風ロゴ刺繍を確認できる。一方 BACK のラベル X0015NW4BJ / Y5AQTX2313-BlueR-L2 は KumiModa のTシャツ文言で、CODE も無地袋面のみ。BACK/CODE は帽子とは別商品側の証拠であり、現写真では1商品に断定不能。X0015NW4BJ を帽子側コードとして使う根拠はないため除外し、帽子は actual-only の generic cap として provisional に留める。",
             "evidence": [
-              "X0015NW4BJ",
-              "Y5AQTX2313-BlueR-L2",
-              "ネイビー系キャップ",
-              "白ロゴ刺繍"
+              "FRONT=黒系ベースボールキャップ",
+              "白い Youth 風ロゴ刺繍",
+              "BACK=X0015NW4BJ / KumiModa Tシャツ側ラベル",
+              "CODE=無地袋面"
             ],
             "brand_override": "不明",
             "category_override": "ファッション > メンズ > 帽子 > キャップ",
@@ -20605,7 +20836,7 @@ window.ZERO_COST_INTAKE = {
             "check_items_override": "色味ネイビー系 / 白ロゴ刺繍 / つば形状 / サイズ表記不明",
             "official_page_url": "",
             "official_image_url": "",
-            "image_source": "比較画像待ち",
+            "image_source": "actual-only",
             "exact_match_guard_state": "review_required",
             "exact_match_guard_reasons": [
               "別商品mix"
@@ -20621,8 +20852,8 @@ window.ZERO_COST_INTAKE = {
             "official_image_url": null,
             "image_source": "actual-only",
             "verified_exact_match": false,
-            "official_image_state": "現写真では1商品に断定不能",
-            "note": "FRONT では黒系キャップ本体を確認できるが、BACK ラベル X0015NW4BJ は KumiModa Tシャツ文言で帽子との一致が弱い。現写真では1商品に断定不能のため比較画像は使わず、公開停止とする。",
+            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "note": "FRONT では黒系キャップ本体を実物で確認できるが、BACK ラベル X0015NW4BJ は KumiModa Tシャツ文言で帽子とは別商品側の証拠。現写真では1商品に断定不能。X0015NW4BJ は帽子側コードとして使わず、比較画像も使わない。actual-only の generic cap として provisional 停止にする。",
             "exact_match_guard_state": "review_required",
             "official_image_local": null,
             "exact_match_guard_reasons": [
@@ -20639,7 +20870,7 @@ window.ZERO_COST_INTAKE = {
             "brand": "不明",
             "category": "ファッション > メンズ > 帽子 > キャップ",
             "barcode_primary": "X0015NW4BJ",
-            "product_code_type": "amazon_internal",
+            "product_code_type": "none",
             "listing_title": "ロゴ刺繍ベースボールキャップ ブラック系",
             "listing_price": "1380",
             "market_floor_price": "",
@@ -20653,14 +20884,14 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
           "display_name": "ロゴ刺繍ベースボールキャップ ブラック系",
           "product_name": "ロゴ刺繍ベースボールキャップ ブラック系",
           "verified_exact_match": false,
-          "official_image_state": "現写真では1商品に断定不能",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
             "別商品mix"
@@ -20696,8 +20927,8 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 18:13:38 JST",
-            "メモ": "name=ロゴ刺繍ベースボールキャップ ブラック系 / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+            "更新時刻": "2026-04-21 21:07:22 JST",
+            "メモ": "name=ロゴ刺繍ベースボールキャップ ブラック系 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
         {
@@ -20777,8 +21008,8 @@ window.ZERO_COST_INTAKE = {
               "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0046/IMG_4966_CODE_ocr_best.png"
             ]
           },
-          "priority_score": 90,
-          "next_action": "比較画像候補を探す",
+          "priority_score": 150,
+          "next_action": "Amazon内部コードとOCRで商品特定",
           "barcode_kind": "amazon_internal",
           "review_flag": "",
           "resolved": {
@@ -20849,7 +21080,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -20892,7 +21123,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 18:13:38 JST",
+            "更新時刻": "2026-04-21 21:07:22 JST",
             "メモ": "name=ホワイト レディーストップス M / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -21039,7 +21270,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -21079,8 +21310,8 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 18:13:38 JST",
-            "メモ": "name=高視認性安全ベスト 蛍光イエロー / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+            "更新時刻": "2026-04-21 21:07:22 JST",
+            "メモ": "name=高視認性安全ベスト 蛍光イエロー / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
         {
@@ -21225,7 +21456,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -21396,7 +21627,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -21502,7 +21733,7 @@ window.ZERO_COST_INTAKE = {
             ]
           },
           "priority_score": 150,
-          "next_action": "比較画像候補を照合",
+          "next_action": "Amazon内部コードとOCRで商品特定",
           "barcode_kind": "amazon_internal",
           "review_flag": "",
           "resolved": {
@@ -21567,7 +21798,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [
             {
@@ -21625,7 +21856,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 18:13:38 JST",
+            "更新時刻": "2026-04-21 21:07:22 JST",
             "メモ": "name=CRZ YOGA レギンス 股下24インチ ダークグレー系 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / actual-only固定 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -21756,7 +21987,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -21826,39 +22057,24 @@ window.ZERO_COST_INTAKE = {
           "box_code": "001",
           "identification": {
             "state": "split_required",
-            "barcode_values": [
-              "X00197BVHJ"
-            ],
+            "barcode_values": [],
             "front_back_texts": [
               "MADE IN CHINA",
-              "OK@CEFC RoHs CEと3",
-              "X00197BVHI",
-              "新品・【FisIC1.風モチーフ記念品ギフ",
-              "MADE in China"
+              "OK@CEFC RoHs CEと3"
             ],
-            "code_texts": [
-              "“A - So SPAS Sr \\ he eae g",
-              "wo) SRS 2S SRA Ss REE e ra SNe ‘ ‘ : “SS x an . : ~ Nos os : a — .",
-              "o"
-            ],
+            "code_texts": [],
             "ocr_texts": [
               "MADE IN CHINA",
-              "OK@CEFC RoHs CEと3",
-              "X00197BVHI",
-              "新品・【FisIC1.風モチーフ記念品ギフ",
-              "MADE in China",
-              "“A - So SPAS Sr \\ he eae g"
+              "OK@CEFC RoHs CEと3"
             ],
-            "candidate_query": "MADE IN CHINA OK@CEFC RoHs CEと3 X00197BVHI 新品・【FisIC1.風モチーフ記念品ギフ",
+            "candidate_query": "MADE IN CHINA OK@CEFC RoHs CEと3",
             "review_flag": "FRONT/BACK/CODE が別商品です",
-            "ocr_engine": "sauna_tesseract_multistage + vision",
-            "ocr_debug_paths": [
-              "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0052/IMG_4985_CODE_ocr_best.png"
-            ]
+            "ocr_engine": "vision",
+            "ocr_debug_paths": []
           },
-          "priority_score": 110,
+          "priority_score": 220,
           "next_action": "写真を要再束ね",
-          "barcode_kind": "amazon_internal",
+          "barcode_kind": "",
           "review_flag": "FRONT/BACK/CODE が別商品です",
           "manual_note": "FRONT は青橙の汎用化粧箱、BACK/CODE は白箱ラベル X00197BVHJ で別商品の可能性が高い組み合わせでした。",
           "resolved": {
@@ -21911,7 +22127,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -21941,17 +22157,17 @@ window.ZERO_COST_INTAKE = {
           "route_plan": {},
           "split_staging": {
             "management_id": "BOX-001-ITEM-0028",
-            "stage_status": "staged_rebundle_plan",
-            "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/緑の冬小物系として未一致保留。0029 FRONT/BACK は car hook / mobile-holder 系だが CODE が network tool で、0028 の Zukida 側とはまだ結び付けない。0053 BACK/CODE は Hello Kitty 側の staged child。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として live 視認一致まで確認したが、shared sheet / manifest の再束ね前なので新管理番号はまだ切らず、0052 FRONT の青橙箱は別物として残す。",
-            "ui_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物",
-            "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0029 は car hook系だが network tool CODE のため Zukida 側へ未連結。0053 BACK/CODE は Hello Kitty 側。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認したが、新管理番号はまだ切らず staged のまま維持。0052 FRONT の青橙箱は別物。",
-            "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の冬小物系。0029 は別split維持。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認済みで、0052 FRONT は別物。",
-            "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0029は別split維持 / 0053-0052白箱は視認一致済みのため shared sheet・manifest で正式再束ね",
+            "stage_status": "partial_manifest_child_minted",
+            "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/緑の冬小物系として未一致保留。0028 CODE は car hook mobile phone holder NO-FE035 箱で、BACK の X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT は car hook mobile phone holder NO-FE040 だが、0029 BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側の staged child。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として live 視認一致まで確認したが、shared sheet / manifest の再束ね前なので新管理番号はまだ切らず、0052 FRONT の青橙箱は別物として残す。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
+            "ui_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
+            "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 は FRONT=car hook NO-FE040、BACK/CODE=SPEEDWOX X00162U47P の別split。0053 BACK/CODE は Hello Kitty 側。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認したが、新管理番号はまだ切らず staged のまま維持。0052 FRONT の青橙箱は別物。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
+            "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の冬小物系。0029 は別split維持。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認済みで、0052 FRONT は別物。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
+            "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0029は別split維持 / 0053-0052白箱は視認一致済みのため shared sheet・manifest で正式再束ね / 0059 は workbook / routing の stopline を決めてから正式反映",
             "retain_existing_id": {
               "management_id": "BOX-001-ITEM-0028",
               "product_id": "PRD-BOX-001-028",
               "draft_id": "DRF-BOX-001-028",
-              "reason": "X0010CU9L7 / Zukida / Red の CODE 読み取りと既存 product_name・draft・routing が一致しているため、現時点ではこの ID を Zukida 側の anchor として保持するのが最も保守的"
+              "reason": "0028 BACK の X0010CU9L7 / Zukida / Red ラベルと既存 product_name・draft・routing が一致しているため、現時点ではこの ID を Zukida 側の anchor として保持するのが最も保守的。0028 CODE は car hook mobile phone holder NO-FE035 箱で、X0010CU9L7 の直接コード面ではない。"
             },
             "related_management_ids": [
               "BOX-001-ITEM-0053",
@@ -21966,27 +22182,27 @@ window.ZERO_COST_INTAKE = {
               {
                 "management_id": "BOX-001-ITEM-0028",
                 "slot": "BACK",
-                "observed_as": "Zukida 車のフック（Red）パッケージ面"
+                "observed_as": "X0010CU9L7 / Zukida 車のフック（Red）ラベル面"
               },
               {
                 "management_id": "BOX-001-ITEM-0028",
                 "slot": "CODE",
-                "observed_as": "Zukida 車のフック（Red）コード面 / X0010CU9L7"
+                "observed_as": "car hook mobile phone holder NO-FE035 箱面"
               },
               {
                 "management_id": "BOX-001-ITEM-0029",
                 "slot": "FRONT",
-                "observed_as": "car hook / mobile-holder 系パッケージ"
+                "observed_as": "car hook mobile phone holder NO-FE040 パッケージ"
               },
               {
                 "management_id": "BOX-001-ITEM-0029",
                 "slot": "BACK",
-                "observed_as": "car hook / mobile-holder 系パッケージ対向面"
+                "observed_as": "SPEEDWOX / network tool X00162U47P ラベル面"
               },
               {
                 "management_id": "BOX-001-ITEM-0029",
                 "slot": "CODE",
-                "observed_as": "network tool 系コード面"
+                "observed_as": "SPEEDWOX / network tool ワイヤーストリッパー実物面"
               },
               {
                 "management_id": "BOX-001-ITEM-0053",
@@ -22053,25 +22269,32 @@ window.ZERO_COST_INTAKE = {
                   "BOX-001-ITEM-0052:BACK",
                   "BOX-001-ITEM-0052:CODE"
                 ],
-                "status": "slot_match_visually_confirmed_not_minted",
+                "status": "manifest_child_minted_local_only",
                 "blockers": [
-                  "0053 FRONT と 0052 BACK/CODE は同一白箱として live 視認一致したが、shared sheet / manifest 側の正式再束ねがまだ未実施",
-                  "0052 FRONT は青橙の別箱で、白箱側として扱えるのは 0052 BACK/CODE のみ",
-                  "shared sheet / manifest で正式再束ねを行う前に管理番号の持ち替えルール確認が必要"
-                ]
+                  "confirmed / official は provisional actual-only で反映済み。shared sheet / workbook / routing 反映は別フェーズ。",
+                  "0052 FRONT は青橙の別箱で、白箱側として扱えるのは 0052 BACK/CODE のみ"
+                ],
+                "minted_management_id": "BOX-001-ITEM-0059",
+                "minted_at": "2026-04-21 20:32:46 JST",
+                "minted_scope": "local_manifest_only",
+                "minted_note": "photo manifest child は mint 済み。workbook / confirmed / official への反映は別フェーズで行う。",
+                "truth_promotion_scope": "local_confirmed_official_only",
+                "truth_promoted_management_id": "BOX-001-ITEM-0059",
+                "truth_promotion_note": "confirmed / official へ provisional actual-only / 内容物未確認で反映済み。 workbook / routing は別フェーズで行う。",
+                "truth_promoted_at": "2026-04-21 21:20:12 JST"
               }
             ],
             "remaining_blockers": [
               "shared sheet と photo manifest を壊さずに新管理番号を発番する canonical script が未整備",
               "0028 FRONT の相方スロットと正式名が未確定",
-              "0029 FRONT/BACK は car hook / mobile-holder 系だが CODE が network tool で、0028 Zukida 側へ安全に寄せる根拠がまだない",
+              "0029 FRONT は car hook mobile phone holder NO-FE040 だが、BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0028 Zukida 側へ安全に寄せる根拠はまだない",
               "Hello Kitty 側はサンリオ正規品の出所確認が未完了",
-              "白箱 X00197BVHJ 側は 0053 FRONT と 0052 BACK/CODE の live 視認一致までは確認済みだが、shared sheet / manifest での正式再束ねが未完了"
+              "白箱 X00197BVHJ 側の local child BOX-001-ITEM-0059 は confirmed / official まで反映済み。 shared sheet / workbook / routing は別フェーズ。"
             ],
-            "safe_next_step": "local state では 0028=Zukida anchor を維持し、0028 FRONT は未一致保留、0029 は別splitのまま維持する。0053 BACK/CODE は Hello Kitty 側候補、0053 FRONT と 0052 BACK/CODE は同一白箱として shared sheet / manifest 側で正式再束ねしてから新 management_id を切る",
+            "safe_next_step": "local state では 0028=Zukida anchor を維持し、0028 FRONT は未一致保留、0029 は別splitのまま維持する。0053 BACK/CODE は Hello Kitty 側候補、0053 FRONT と 0052 BACK/CODE は同一白箱として shared sheet / manifest 側で正式再束ねしてから新 management_id を切る / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
             "match_role": "related"
           },
-          "split_plan_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物",
+          "split_plan_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
           "split_plan_role": "related"
         },
         {
@@ -22118,16 +22341,15 @@ window.ZERO_COST_INTAKE = {
           "identification": {
             "state": "split_required",
             "barcode_values": [
-              "X00197BVHJ",
               "X0018IYEUP"
             ],
             "front_back_texts": [
-              "X00197BVHJ",
-              "新品・【FisICI 風県モチーツ記念品ギフ",
-              "ト",
-              "MADE in China",
               "\"ITOAVOL DANGER",
-              "OUT OF REACHO"
+              "OUT OF REACHO",
+              "REACH：",
+              "OTUSE）",
+              "OTUSEANARESP",
+              "THIS BY"
             ],
             "code_texts": [
               "HELLO KITIY",
@@ -22138,14 +22360,14 @@ window.ZERO_COST_INTAKE = {
               "ag"
             ],
             "ocr_texts": [
-              "X00197BVHJ",
-              "新品・【FisICI 風県モチーツ記念品ギフ",
-              "ト",
-              "MADE in China",
               "\"ITOAVOL DANGER",
-              "OUT OF REACHO"
+              "OUT OF REACHO",
+              "REACH：",
+              "OTUSE）",
+              "OTUSEANARESP",
+              "THIS BY"
             ],
-            "candidate_query": "X00197BVHJ 新品・【FisICI 風県モチーツ記念品ギフ ト MADE in China",
+            "candidate_query": "\"ITOAVOL DANGER OUT OF REACHO REACH： OTUSE）",
             "review_flag": "FRONT/BACK/CODE が別商品です",
             "ocr_engine": "sauna_tesseract_multistage + vision",
             "ocr_debug_paths": [
@@ -22202,7 +22424,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -22231,17 +22453,17 @@ window.ZERO_COST_INTAKE = {
           "route_plan": {},
           "split_staging": {
             "management_id": "BOX-001-ITEM-0028",
-            "stage_status": "staged_rebundle_plan",
-            "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/緑の冬小物系として未一致保留。0029 FRONT/BACK は car hook / mobile-holder 系だが CODE が network tool で、0028 の Zukida 側とはまだ結び付けない。0053 BACK/CODE は Hello Kitty 側の staged child。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として live 視認一致まで確認したが、shared sheet / manifest の再束ね前なので新管理番号はまだ切らず、0052 FRONT の青橙箱は別物として残す。",
-            "ui_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物",
-            "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0029 は car hook系だが network tool CODE のため Zukida 側へ未連結。0053 BACK/CODE は Hello Kitty 側。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認したが、新管理番号はまだ切らず staged のまま維持。0052 FRONT の青橙箱は別物。",
-            "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の冬小物系。0029 は別split維持。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認済みで、0052 FRONT は別物。",
-            "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0029は別split維持 / 0053-0052白箱は視認一致済みのため shared sheet・manifest で正式再束ね",
+            "stage_status": "partial_manifest_child_minted",
+            "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/緑の冬小物系として未一致保留。0028 CODE は car hook mobile phone holder NO-FE035 箱で、BACK の X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT は car hook mobile phone holder NO-FE040 だが、0029 BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側の staged child。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として live 視認一致まで確認したが、shared sheet / manifest の再束ね前なので新管理番号はまだ切らず、0052 FRONT の青橙箱は別物として残す。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
+            "ui_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
+            "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 は FRONT=car hook NO-FE040、BACK/CODE=SPEEDWOX X00162U47P の別split。0053 BACK/CODE は Hello Kitty 側。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認したが、新管理番号はまだ切らず staged のまま維持。0052 FRONT の青橙箱は別物。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
+            "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の冬小物系。0029 は別split維持。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認済みで、0052 FRONT は別物。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
+            "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0029は別split維持 / 0053-0052白箱は視認一致済みのため shared sheet・manifest で正式再束ね / 0059 は workbook / routing の stopline を決めてから正式反映",
             "retain_existing_id": {
               "management_id": "BOX-001-ITEM-0028",
               "product_id": "PRD-BOX-001-028",
               "draft_id": "DRF-BOX-001-028",
-              "reason": "X0010CU9L7 / Zukida / Red の CODE 読み取りと既存 product_name・draft・routing が一致しているため、現時点ではこの ID を Zukida 側の anchor として保持するのが最も保守的"
+              "reason": "0028 BACK の X0010CU9L7 / Zukida / Red ラベルと既存 product_name・draft・routing が一致しているため、現時点ではこの ID を Zukida 側の anchor として保持するのが最も保守的。0028 CODE は car hook mobile phone holder NO-FE035 箱で、X0010CU9L7 の直接コード面ではない。"
             },
             "related_management_ids": [
               "BOX-001-ITEM-0053",
@@ -22256,27 +22478,27 @@ window.ZERO_COST_INTAKE = {
               {
                 "management_id": "BOX-001-ITEM-0028",
                 "slot": "BACK",
-                "observed_as": "Zukida 車のフック（Red）パッケージ面"
+                "observed_as": "X0010CU9L7 / Zukida 車のフック（Red）ラベル面"
               },
               {
                 "management_id": "BOX-001-ITEM-0028",
                 "slot": "CODE",
-                "observed_as": "Zukida 車のフック（Red）コード面 / X0010CU9L7"
+                "observed_as": "car hook mobile phone holder NO-FE035 箱面"
               },
               {
                 "management_id": "BOX-001-ITEM-0029",
                 "slot": "FRONT",
-                "observed_as": "car hook / mobile-holder 系パッケージ"
+                "observed_as": "car hook mobile phone holder NO-FE040 パッケージ"
               },
               {
                 "management_id": "BOX-001-ITEM-0029",
                 "slot": "BACK",
-                "observed_as": "car hook / mobile-holder 系パッケージ対向面"
+                "observed_as": "SPEEDWOX / network tool X00162U47P ラベル面"
               },
               {
                 "management_id": "BOX-001-ITEM-0029",
                 "slot": "CODE",
-                "observed_as": "network tool 系コード面"
+                "observed_as": "SPEEDWOX / network tool ワイヤーストリッパー実物面"
               },
               {
                 "management_id": "BOX-001-ITEM-0053",
@@ -22343,25 +22565,32 @@ window.ZERO_COST_INTAKE = {
                   "BOX-001-ITEM-0052:BACK",
                   "BOX-001-ITEM-0052:CODE"
                 ],
-                "status": "slot_match_visually_confirmed_not_minted",
+                "status": "manifest_child_minted_local_only",
                 "blockers": [
-                  "0053 FRONT と 0052 BACK/CODE は同一白箱として live 視認一致したが、shared sheet / manifest 側の正式再束ねがまだ未実施",
-                  "0052 FRONT は青橙の別箱で、白箱側として扱えるのは 0052 BACK/CODE のみ",
-                  "shared sheet / manifest で正式再束ねを行う前に管理番号の持ち替えルール確認が必要"
-                ]
+                  "confirmed / official は provisional actual-only で反映済み。shared sheet / workbook / routing 反映は別フェーズ。",
+                  "0052 FRONT は青橙の別箱で、白箱側として扱えるのは 0052 BACK/CODE のみ"
+                ],
+                "minted_management_id": "BOX-001-ITEM-0059",
+                "minted_at": "2026-04-21 20:32:46 JST",
+                "minted_scope": "local_manifest_only",
+                "minted_note": "photo manifest child は mint 済み。workbook / confirmed / official への反映は別フェーズで行う。",
+                "truth_promotion_scope": "local_confirmed_official_only",
+                "truth_promoted_management_id": "BOX-001-ITEM-0059",
+                "truth_promotion_note": "confirmed / official へ provisional actual-only / 内容物未確認で反映済み。 workbook / routing は別フェーズで行う。",
+                "truth_promoted_at": "2026-04-21 21:20:12 JST"
               }
             ],
             "remaining_blockers": [
               "shared sheet と photo manifest を壊さずに新管理番号を発番する canonical script が未整備",
               "0028 FRONT の相方スロットと正式名が未確定",
-              "0029 FRONT/BACK は car hook / mobile-holder 系だが CODE が network tool で、0028 Zukida 側へ安全に寄せる根拠がまだない",
+              "0029 FRONT は car hook mobile phone holder NO-FE040 だが、BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0028 Zukida 側へ安全に寄せる根拠はまだない",
               "Hello Kitty 側はサンリオ正規品の出所確認が未完了",
-              "白箱 X00197BVHJ 側は 0053 FRONT と 0052 BACK/CODE の live 視認一致までは確認済みだが、shared sheet / manifest での正式再束ねが未完了"
+              "白箱 X00197BVHJ 側の local child BOX-001-ITEM-0059 は confirmed / official まで反映済み。 shared sheet / workbook / routing は別フェーズ。"
             ],
-            "safe_next_step": "local state では 0028=Zukida anchor を維持し、0028 FRONT は未一致保留、0029 は別splitのまま維持する。0053 BACK/CODE は Hello Kitty 側候補、0053 FRONT と 0052 BACK/CODE は同一白箱として shared sheet / manifest 側で正式再束ねしてから新 management_id を切る",
+            "safe_next_step": "local state では 0028=Zukida anchor を維持し、0028 FRONT は未一致保留、0029 は別splitのまま維持する。0053 BACK/CODE は Hello Kitty 側候補、0053 FRONT と 0052 BACK/CODE は同一白箱として shared sheet / manifest 側で正式再束ねしてから新 management_id を切る / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
             "match_role": "related"
           },
-          "split_plan_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物",
+          "split_plan_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
           "split_plan_role": "related"
         },
         {
@@ -22443,7 +22672,7 @@ window.ZERO_COST_INTAKE = {
             ]
           },
           "priority_score": 150,
-          "next_action": "比較画像候補を追加",
+          "next_action": "Amazon内部コードとOCRで商品特定",
           "barcode_kind": "amazon_internal",
           "review_flag": "",
           "resolved": {
@@ -22498,7 +22727,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -22541,7 +22770,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 18:13:38 JST",
+            "更新時刻": "2026-04-21 21:07:22 JST",
             "メモ": "name=Poperdision ブラック 3XL レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -22624,7 +22853,7 @@ window.ZERO_COST_INTAKE = {
             ]
           },
           "priority_score": 150,
-          "next_action": "比較画像候補を照合",
+          "next_action": "Amazon内部コードとOCRで商品特定",
           "barcode_kind": "amazon_internal",
           "review_flag": "",
           "resolved": {
@@ -22694,7 +22923,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [
             {
@@ -22755,7 +22984,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 18:13:38 JST",
+            "更新時刻": "2026-04-21 21:07:22 JST",
             "メモ": "name=ATIDIMU 美容液 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -22886,7 +23115,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -23164,7 +23393,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "比較画像照合",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 18:13:38 JST",
+            "更新時刻": "2026-04-21 21:07:22 JST",
             "メモ": "name=JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSNX6qATG7NwnssYkshh"
           }
         },
@@ -23291,7 +23520,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-04 17:34:58 JST"
+            "updated_at": "2026-04-21 20:32:46 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -23320,6 +23549,217 @@ window.ZERO_COST_INTAKE = {
             "blocking": false,
             "reason": "CODE写真不足は今回の運用では例外許容とする"
           },
+          "route_plan": {}
+        },
+        {
+          "management_id": "BOX-001-ITEM-0059",
+          "box_id": "BOX-001",
+          "sequence": 59,
+          "status": "complete",
+          "missing_slots": [],
+          "slot_count": 3,
+          "slots": [
+            {
+              "slot": "FRONT",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4986.HEIC",
+              "source_name": "IMG_4986.HEIC",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0059/01_FRONT_IMG_4986.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0059/01_FRONT_IMG_4986.jpg",
+              "resident_url": "./assets/intake/BOX-001-ITEM-0059/01_FRONT_IMG_4986.jpg",
+              "rebundled_from": "BOX-001-ITEM-0053:FRONT"
+            },
+            {
+              "slot": "BACK",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4984.HEIC",
+              "source_name": "IMG_4984.HEIC",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0059/02_BACK_IMG_4984.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0059/02_BACK_IMG_4984.jpg",
+              "resident_url": "./assets/intake/BOX-001-ITEM-0059/02_BACK_IMG_4984.jpg",
+              "rebundled_from": "BOX-001-ITEM-0052:BACK"
+            },
+            {
+              "slot": "CODE",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4985.HEIC",
+              "source_name": "IMG_4985.HEIC",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0059/03_CODE_IMG_4985.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0059/03_CODE_IMG_4985.jpg",
+              "resident_url": "./assets/intake/BOX-001-ITEM-0059/03_CODE_IMG_4985.jpg",
+              "rebundled_from": "BOX-001-ITEM-0052:CODE"
+            }
+          ],
+          "shared_sheet_title_value": "BOX-001-ITEM-0059",
+          "shared_sheet_note": "SPLIT-BOX-001-0053-WHITEBOX から local manifest child を再束ね",
+          "photo_grouping": "split_child_mint",
+          "grouping_warning": "",
+          "product_name": "白箱 X00197BVHJ 記念品・ギフト箱（内容物不明）",
+          "display_name": "白箱 X00197BVHJ 記念品・ギフト箱（内容物不明）",
+          "split_child_label": "白箱 X00197BVHJ 系",
+          "split_temporary_id": "SPLIT-BOX-001-0053-WHITEBOX",
+          "split_source_slots": [
+            "BOX-001-ITEM-0053:FRONT",
+            "BOX-001-ITEM-0052:BACK",
+            "BOX-001-ITEM-0052:CODE"
+          ],
+          "split_status": "manifest_child_minted_local_only",
+          "box_label": "数字箱 001",
+          "box_lane": "numeric",
+          "box_code": "001",
+          "identification": {
+            "state": "バーコード候補あり",
+            "barcode_values": [
+              "X00197BVHJ"
+            ],
+            "front_back_texts": [
+              "X00197BVHJ",
+              "新品・【FisICI 風県モチーツ記念品ギフ",
+              "ト",
+              "MADE in China",
+              "X00197BVHI",
+              "新品・【FisIC1.風モチーフ記念品ギフ"
+            ],
+            "code_texts": [
+              "“A - So SPAS Sr \\ he eae g",
+              "wo) SRS 2S SRA Ss REE e ra SNe ‘ ‘ : “SS x an . : ~ Nos os : a — .",
+              "o"
+            ],
+            "ocr_texts": [
+              "X00197BVHJ",
+              "新品・【FisICI 風県モチーツ記念品ギフ",
+              "ト",
+              "MADE in China",
+              "X00197BVHI",
+              "新品・【FisIC1.風モチーフ記念品ギフ"
+            ],
+            "candidate_query": "X00197BVHJ 新品・【FisICI 風県モチーツ記念品ギフ ト MADE in China",
+            "review_flag": "",
+            "ocr_engine": "sauna_tesseract_multistage + vision",
+            "ocr_debug_paths": [
+              "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0059/IMG_4985_CODE_ocr_best.png"
+            ]
+          },
+          "priority_score": 110,
+          "next_action": "本体表示とコードラベルを突合",
+          "barcode_kind": "amazon_internal",
+          "review_flag": "本体表示とコードラベルの不一致疑い",
+          "resolved": {
+            "management_id": "BOX-001-ITEM-0059",
+            "raw_id": "RAW-BOX-001-059",
+            "product_id": "PRD-BOX-001-059",
+            "draft_id": "DRF-BOX-001-059",
+            "research_id": "RES-BOX-001-059",
+            "split_temporary_id": "SPLIT-BOX-001-0053-WHITEBOX",
+            "split_source_slots": [
+              "BOX-001-ITEM-0053:FRONT",
+              "BOX-001-ITEM-0052:BACK",
+              "BOX-001-ITEM-0052:CODE"
+            ],
+            "verified_exact_match": false,
+            "official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+            "note": "SPLIT-BOX-001-0053-WHITEBOX を local truth へ昇格。0053:FRONT + 0052:BACK + 0052:CODE の3枚で白箱 X00197BVHJ を再束ね済み。 OCR では X00197BVHJ / 新品・【FisICI 風県モチーツ記念品ギフ / ト / MADE in China / X00197BVHI / 新品・【FisIC1.風モチーフ記念品ギフ まで読めるが、中身は見えず、比較画像も安全に確保できないため provisional / actual-only / 内容物未確認で止める。 workbook / routing は未反映。",
+            "image_source": "actual-only",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "内容物未確認"
+            ],
+            "official_page_url": "",
+            "official_image_url": "",
+            "official_image_local": "",
+            "supplemental_url": "",
+            "supplemental_image_urls": [],
+            "supplemental_image_locals": [],
+            "resolution_status": "provisional",
+            "product_name": "白箱 X00197BVHJ 記念品・ギフト箱（内容物不明）",
+            "barcode_primary": "X00197BVHJ",
+            "product_code_type": "amazon_internal",
+            "evidence": [
+              "X00197BVHJ",
+              "白箱",
+              "0053:FRONT + 0052:BACK + 0052:CODE",
+              "記念品・ギフト箱",
+              "内容物未確認"
+            ],
+            "brand_override": "FirstC",
+            "category_override": "その他 > 記念品・ギフト箱",
+            "price_override": 980,
+            "check_items_override": "内容物確認 / 箱状態 / サイズ感 / ギフト箱として出すか判断"
+          },
+          "official": {
+            "management_id": "BOX-001-ITEM-0059",
+            "raw_id": "RAW-BOX-001-059",
+            "product_id": "PRD-BOX-001-059",
+            "draft_id": "DRF-BOX-001-059",
+            "research_id": "RES-BOX-001-059",
+            "split_temporary_id": "SPLIT-BOX-001-0053-WHITEBOX",
+            "split_source_slots": [
+              "BOX-001-ITEM-0053:FRONT",
+              "BOX-001-ITEM-0052:BACK",
+              "BOX-001-ITEM-0052:CODE"
+            ],
+            "verified_exact_match": false,
+            "official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+            "note": "SPLIT-BOX-001-0053-WHITEBOX を local truth へ昇格。0053:FRONT + 0052:BACK + 0052:CODE の3枚で白箱 X00197BVHJ を再束ね済み。 OCR では X00197BVHJ / 新品・【FisICI 風県モチーツ記念品ギフ / ト / MADE in China / X00197BVHI / 新品・【FisIC1.風モチーフ記念品ギフ まで読めるが、中身は見えず、比較画像も安全に確保できないため provisional / actual-only / 内容物未確認で止める。 workbook / routing は未反映。",
+            "image_source": "actual-only",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "内容物未確認"
+            ],
+            "official_page_url": "",
+            "official_image_url": "",
+            "official_image_local": "",
+            "supplemental_url": "",
+            "supplemental_image_urls": [],
+            "supplemental_image_locals": []
+          },
+          "commerce": {
+            "management_id": "BOX-001-ITEM-0059",
+            "raw_id": "RAW-BOX-001-059",
+            "product_id": "PRD-BOX-001-059",
+            "draft_id": "DRF-BOX-001-059",
+            "research_id": "RES-BOX-001-059",
+            "product_name": "白箱 X00197BVHJ 記念品・ギフト箱（内容物不明）",
+            "brand": "FirstC",
+            "category": "その他 > 記念品・ギフト箱",
+            "barcode_primary": "X00197BVHJ",
+            "product_code_type": "amazon_internal",
+            "listing_title": "白箱 X00197BVHJ 記念品・ギフト箱（内容物不明）",
+            "listing_price": "980",
+            "market_floor_price": "",
+            "market_floor_state": "未調査",
+            "market_source_label": "",
+            "market_source_url": "",
+            "market_checked_at": "",
+            "market_note": "",
+            "publish_state": "下書き準備中",
+            "publish_detail": "",
+            "listing_id": "",
+            "public_listing_url": "",
+            "csv_status": "",
+            "updated_at": "2026-04-21 20:32:46 JST"
+          },
+          "comparison_images": [],
+          "reference_images": [],
+          "verified_exact_match": false,
+          "official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "内容物未確認"
+          ],
+          "qwen_hq_review_status": "",
+          "qwen_hq_resolution": "",
+          "qwen_hq_review_note": "",
+          "publish_status": "下書き準備中",
+          "publish_state": "下書き準備中",
+          "public_listing_url": "",
+          "listing_id": "",
+          "comparison_image_ref": "",
+          "reference_image_ref": "",
+          "minimum_price": "",
+          "market_floor_price_label": "未調査",
+          "listing_price": "980",
+          "exception": {},
           "route_plan": {}
         }
       ]

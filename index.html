@@ -980,19 +980,16 @@
         <div class="drive-panel">
           <div class="drive-header">
             <div class="drive-title">別メンバー用 Google Drive 共有</div>
-            <div class="drive-badge">自動取り込みあり</div>
+            <div class="drive-badge">1日1回確認</div>
           </div>
           <div class="drive-note">
-            基本は <strong>今ある画像だけで判断</strong> します。追加メモは不要です。バーコード・型番・成分表示・サイズ表記が写る写真を優先してください。
-            誤紐付け防止の基準は <strong>バーコード写真が商品区切り</strong> です。並びは <strong>バーコード + 複数枚 → バーコード + 複数枚</strong> で扱います。
-            Drive へ箱直下で連続投入する場合は、バーコード写真のファイル名に <strong>CODE / BARCODE / JAN</strong> のどれかを入れてください。
-            ファイル名を変えられない時は、<strong>1商品 = 1子フォルダ</strong> にしてください。Acer 常駐側が約20秒ごとに Drive を見に行きます。
+            必要な時だけ Google Drive URL を作って共有できます。通常確認は <strong>1日1回</strong> です。急ぐ時だけ「今すぐDrive確認」を使ってください。
           </div>
           <div class="drive-actions">
             <button id="drive-share-btn" class="action-link" type="button">Google Drive URLを作る</button>
             <button id="drive-sync-btn" class="action-link primary" type="button">今すぐDrive確認</button>
           </div>
-          <div id="drive-status" class="drive-status">箱を選ぶと、共有URLを作って別メンバーへ渡せます。バーコード区切り、または 1商品1フォルダ の形だけ通します。</div>
+          <div id="drive-status" class="drive-status">箱を選ぶと、共有URLを作れます。通常確認は1日1回です。</div>
           <a id="drive-link" class="drive-link" href="#" target="_blank" rel="noreferrer noopener" hidden>Google Drive フォルダを開く</a>
         </div>
       </div>
@@ -1455,7 +1452,7 @@
       driveShareBtn.disabled = isUploading || isDriveBusy;
       driveSyncBtn.disabled = isUploading || isDriveBusy;
       setDriveLink(storedDriveLink(box.id));
-      setDriveStatus(box.label + ' は Drive 自動取り込み対象です。バーコード区切り、または 1商品1フォルダ で入れてください。', '');
+      setDriveStatus(box.label + ' の Drive 共有を使えます。通常確認は1日1回です。', '');
       refreshDriveAutoStatus({ silent: true });
       if (selectedFiles.length) {
         renderSelectedFiles(selectedFiles, box);
@@ -1921,7 +1918,7 @@
 
     function scheduleDriveStatusPoll(delayMs) {
       clearDriveStatusPoll();
-      var waitMs = Math.max(4000, num(delayMs, 15000));
+      var waitMs = Math.max(86400000, num(delayMs, 86400000));
       driveStatusPollTimer = window.setTimeout(function() {
         refreshDriveAutoStatus({ silent: true });
       }, waitMs);
@@ -1955,11 +1952,10 @@
       if (blockedGroups || looseImages) {
         return {
           tone: 'error',
-          text: label + ' の Drive に要修正があります。'
-            + (blockedGroups ? ' 子フォルダ修正 ' + blockedGroups + '件。' : '')
-            + (looseImages ? ' 箱直下画像 ' + looseImages + '枚。' : '')
+          text: label + ' に自動取り込みできない画像があります。'
+            + (blockedGroups ? ' 未処理グループ ' + blockedGroups + '件。' : '')
+            + (looseImages ? ' 未処理画像 ' + looseImages + '枚。' : '')
             + (detail ? ' 例: ' + detail + '。' : '')
-            + ' バーコード写真に CODE/BARCODE/JAN を付けるか、1商品1フォルダに直してください。'
         };
       }
       if (fileCount || itemCount) {
@@ -1973,12 +1969,12 @@
       if (lastCycleAt) {
         return {
           tone: '',
-          text: label + ' の自動確認は動作中です。まだ取り込み対象はありません。最終確認 ' + lastCycleAt + '。'
+          text: label + ' の自動確認は1日1回で動作中です。まだ取り込み対象はありません。最終確認 ' + lastCycleAt + '。'
         };
       }
       return {
         tone: '',
-        text: label + ' は Drive 自動取り込み対象です。バーコード区切り、または 1商品1フォルダ で入れてください。'
+        text: label + ' の Drive 共有を使えます。通常確認は1日1回です。'
       };
     }
 
@@ -2044,7 +2040,7 @@
             rememberDriveLink(box.id, folderUrl);
             setDriveLink(folderUrl);
           }
-          setDriveStatus(box.label + ' の共有URLを作りました。相手には「バーコード区切り、または 1商品1フォルダ」で入れるよう伝えてください。', 'ok');
+          setDriveStatus(box.label + ' の共有URLを作りました。', 'ok');
         })
         .catch(function(error) {
           setDriveStatus('Google Drive URL 作成に失敗しました。' + (error && error.message ? ' ' + error.message : ''), 'error');
@@ -2076,15 +2072,14 @@
             var looseImages = num(data.loose_image_count);
             if (blockedGroups || looseImages) {
               setDriveStatus(
-                box.label + ' に自動取り込みできないものがあります。'
-                + (blockedGroups ? ' 子フォルダ要修正 ' + blockedGroups + '件。' : '')
-                + (looseImages ? ' 箱直下画像 ' + looseImages + '枚。' : '')
-                + ' バーコード写真に CODE/BARCODE/JAN を付けるか、1商品1フォルダに直してください。',
+                box.label + ' に自動取り込みできない画像があります。'
+                + (blockedGroups ? ' 未処理グループ ' + blockedGroups + '件。' : '')
+                + (looseImages ? ' 未処理画像 ' + looseImages + '枚。' : ''),
                 'error'
               );
               return;
             }
-            setDriveStatus(box.label + ' にまだ新着画像はありません。自動監視は約20秒ごとに走ります。必要ならこのボタンで即時確認できます。', '');
+            setDriveStatus(box.label + ' にまだ新着画像はありません。通常確認は1日1回です。必要な時だけこのボタンで確認できます。', '');
             return;
           }
           setDriveStatus((data.box_label || box.label) + ' に '

@@ -1,5 +1,5 @@
 window.ZERO_COST_ROLE_PACKETS = {
-  "generated_at": "2026-04-21 18:59:28 JST",
+  "generated_at": "2026-04-21 21:24:16 JST",
   "business_name": "0円仕入れ物販事業",
   "meta": {
     "resident_url": "./roles.html",
@@ -16,7 +16,7 @@ window.ZERO_COST_ROLE_PACKETS = {
   },
   "counts": {
     "confirmed": 2,
-    "provisional": 56,
+    "provisional": 57,
     "official_image_pending": 0,
     "draft_ready": 19,
     "published": 9,
@@ -25,10 +25,10 @@ window.ZERO_COST_ROLE_PACKETS = {
     "ocr_ready": 0,
     "split_required": 21,
     "exception": 2,
-    "exact_pending": 56,
+    "exact_pending": 57,
     "official_pending": 10,
     "market_priced": 5,
-    "market_pending": 53,
+    "market_pending": 54,
     "pickup_pending": 0,
     "category_review_waiting": 1,
     "routing_total": 36,
@@ -119,15 +119,15 @@ window.ZERO_COST_ROLE_PACKETS = {
       ],
       "split_required_ids": [
         "BOX-001-ITEM-0028",
-        "BOX-001-ITEM-0029",
-        "BOX-001-ITEM-0039",
-        "BOX-001-ITEM-0036",
         "BOX-001-ITEM-0044",
-        "BOX-001-ITEM-0023",
-        "BOX-001-ITEM-0025",
-        "BOX-001-ITEM-0030"
+        "BOX-001-ITEM-0042",
+        "BOX-001-ITEM-0049",
+        "BOX-001-ITEM-0041",
+        "BOX-001-ITEM-0053",
+        "BOX-001-ITEM-0051",
+        "BOX-001-ITEM-0024"
       ],
-      "launch_prompt": "あなたは 0円仕入れ物販事業の 0円出品部長 です。\nゴール: ショップ運営を優先し、問い合わせ・公開済み監査・審査待ち・下書き待ちを各担当へ振って resident と Git の整合まで持つ\n必ず見るもの:\n- README.md\n- docs/12_ルーティン運用マニュアル.md\n- docs/14_AI担当役職と起動プロンプト集.md\n- docs/16_UI起動パケット仕様.md\n制約:\n- 100%同一確認済みでない比較画像を出品画像へ上げない\n- README・resident・Z-98・Git を最後に必ずそろえる\n必要なら次の担当へ振ってください:\n- 商品特定担当\n- 比較画像精査担当\n- 相場調査担当\n- 出品下書き担当\n- API公開担当\n- 問い合わせ対応担当\n- 集荷運用担当\n次の条件では上位AIへ引き継いでください:\n- 顧客対応が絡む時\n- 商品同一性の断定に迷う時\n- カテゴリ審査や API 異常が絡む時\nいま優先して見るID:\n- BOX-001-ITEM-0001\n- BOX-001-ITEM-0013\n- BOX-001-ITEM-0026\n- BOX-001-ITEM-0027\n- BOX-001-ITEM-0032\n- BOX-001-ITEM-0034\n- BOX-001-ITEM-0003\n- BOX-001-ITEM-0004\nHQ差し止め中のID:\n- BOX-001-ITEM-0002\n要再束ねのID:\n- BOX-001-ITEM-0028\n- BOX-001-ITEM-0029\n- BOX-001-ITEM-0039\n- BOX-001-ITEM-0036\n- BOX-001-ITEM-0044\n- BOX-001-ITEM-0023\n- BOX-001-ITEM-0025\n- BOX-001-ITEM-0030\n今回の対象ID:\n- BOX-001-ITEM-0004\n- BOX-001-ITEM-0005\n- BOX-001-ITEM-0008\n- BOX-001-ITEM-0009\n- BOX-001-ITEM-0011\n- BOX-001-ITEM-0012\n期待する出力:\n- 今の件数\n- 次に進める商品ID\n- どの担当へ何を振るか\n- 更新した正本\n最後に resident・README・Z-98・Git をそろえてください。"
+      "launch_prompt": "あなたは 0円仕入れ物販事業の 0円出品部長 です。\nゴール: ショップ運営を優先し、問い合わせ・公開済み監査・審査待ち・下書き待ちを各担当へ振って resident と Git の整合まで持つ\n必ず見るもの:\n- README.md\n- docs/12_ルーティン運用マニュアル.md\n- docs/14_AI担当役職と起動プロンプト集.md\n- docs/16_UI起動パケット仕様.md\n制約:\n- 100%同一確認済みでない比較画像を出品画像へ上げない\n- README・resident・Z-98・Git を最後に必ずそろえる\n必要なら次の担当へ振ってください:\n- 商品特定担当\n- 比較画像精査担当\n- 相場調査担当\n- 出品下書き担当\n- API公開担当\n- 問い合わせ対応担当\n- 集荷運用担当\n次の条件では上位AIへ引き継いでください:\n- 顧客対応が絡む時\n- 商品同一性の断定に迷う時\n- カテゴリ審査や API 異常が絡む時\nいま優先して見るID:\n- BOX-001-ITEM-0001\n- BOX-001-ITEM-0013\n- BOX-001-ITEM-0026\n- BOX-001-ITEM-0027\n- BOX-001-ITEM-0032\n- BOX-001-ITEM-0034\n- BOX-001-ITEM-0003\n- BOX-001-ITEM-0004\nHQ差し止め中のID:\n- BOX-001-ITEM-0002\n要再束ねのID:\n- BOX-001-ITEM-0028\n- BOX-001-ITEM-0044\n- BOX-001-ITEM-0042\n- BOX-001-ITEM-0049\n- BOX-001-ITEM-0041\n- BOX-001-ITEM-0053\n- BOX-001-ITEM-0051\n- BOX-001-ITEM-0024\n今回の対象ID:\n- BOX-001-ITEM-0004\n- BOX-001-ITEM-0005\n- BOX-001-ITEM-0008\n- BOX-001-ITEM-0009\n- BOX-001-ITEM-0011\n- BOX-001-ITEM-0012\n期待する出力:\n- 今の件数\n- 次に進める商品ID\n- どの担当へ何を振るか\n- 更新した正本\n最後に resident・README・Z-98・Git をそろえてください。"
     },
     {
       "role_name": "商品特定担当",
@@ -217,14 +217,14 @@ window.ZERO_COST_ROLE_PACKETS = {
       "current_counts": {
         "priced": 5,
         "market_pending": 8,
-        "provisional": 56
+        "provisional": 57
       },
       "target_ids": [
         "BOX-001-ITEM-0001",
+        "BOX-001-ITEM-0002",
+        "BOX-001-ITEM-0003",
         "BOX-001-ITEM-0004",
-        "BOX-001-ITEM-0005",
-        "BOX-001-ITEM-0013",
-        "BOX-001-ITEM-0027"
+        "BOX-001-ITEM-0005"
       ],
       "must_read": [
         "README.md",
@@ -252,7 +252,7 @@ window.ZERO_COST_ROLE_PACKETS = {
       "handoff_when": [
         "最低価格候補が複数に割れて特定不能な時"
       ],
-      "launch_prompt": "あなたは 0円仕入れ物販事業の 相場調査担当 です。\nゴール: 最低価格と参照元を resident / 商品マスタに反映する\n必ず見るもの:\n- README.md\n- state/intake/BOX-001_market_price_snapshot.json\n- resident 商品カードDB\n制約:\n- 最低価格は根拠URLと時刻を残す\n- 最低価格という語は説明欄へ書かない\n次の条件では上位AIへ引き継いでください:\n- 最低価格候補が複数に割れて特定不能な時\n今回の対象ID:\n- BOX-001-ITEM-0001\n- BOX-001-ITEM-0004\n- BOX-001-ITEM-0005\n- BOX-001-ITEM-0013\n- BOX-001-ITEM-0027\n期待する出力:\n- market_floor_price\n- market_source_url\n- market_checked_at\n最後に resident・README・Z-98・Git をそろえてください。"
+      "launch_prompt": "あなたは 0円仕入れ物販事業の 相場調査担当 です。\nゴール: 最低価格と参照元を resident / 商品マスタに反映する\n必ず見るもの:\n- README.md\n- state/intake/BOX-001_market_price_snapshot.json\n- resident 商品カードDB\n制約:\n- 最低価格は根拠URLと時刻を残す\n- 最低価格という語は説明欄へ書かない\n次の条件では上位AIへ引き継いでください:\n- 最低価格候補が複数に割れて特定不能な時\n今回の対象ID:\n- BOX-001-ITEM-0001\n- BOX-001-ITEM-0002\n- BOX-001-ITEM-0003\n- BOX-001-ITEM-0004\n- BOX-001-ITEM-0005\n期待する出力:\n- market_floor_price\n- market_source_url\n- market_checked_at\n最後に resident・README・Z-98・Git をそろえてください。"
     },
     {
       "role_name": "出品下書き担当",
@@ -260,14 +260,14 @@ window.ZERO_COST_ROLE_PACKETS = {
       "current_counts": {
         "draft_ready": 19,
         "confirmed": 2,
-        "provisional": 56
+        "provisional": 57
       },
       "target_ids": [
         "BOX-001-ITEM-0001",
         "BOX-001-ITEM-0013",
-        "BOX-001-ITEM-0004",
-        "BOX-001-ITEM-0005",
-        "BOX-001-ITEM-0026"
+        "BOX-001-ITEM-0002",
+        "BOX-001-ITEM-0003",
+        "BOX-001-ITEM-0004"
       ],
       "must_read": [
         "README.md",
@@ -297,7 +297,7 @@ window.ZERO_COST_ROLE_PACKETS = {
         "実物画像と比較画像の扱いに迷う時",
         "説明欄の表現が誤認を生みそうな時"
       ],
-      "launch_prompt": "あなたは 0円仕入れ物販事業の 出品下書き担当 です。\nゴール: 商品マスタと比較画像判定を踏まえて出品下書きを整える\n必ず見るもの:\n- README.md\n- docs/08_1商品を出品まで進める最短ルート.md\n- resident 商品カードDB\n制約:\n- 説明欄は 管理番号:+最低価格 の形式を守る\n- 出品画像の基本は実物画像とする\n次の条件では上位AIへ引き継いでください:\n- 実物画像と比較画像の扱いに迷う時\n- 説明欄の表現が誤認を生みそうな時\n今回の対象ID:\n- BOX-001-ITEM-0001\n- BOX-001-ITEM-0013\n- BOX-001-ITEM-0004\n- BOX-001-ITEM-0005\n- BOX-001-ITEM-0026\n期待する出力:\n- listing_title\n- description\n- image_order\n- publish_ready_state\n最後に resident・README・Z-98・Git をそろえてください。"
+      "launch_prompt": "あなたは 0円仕入れ物販事業の 出品下書き担当 です。\nゴール: 商品マスタと比較画像判定を踏まえて出品下書きを整える\n必ず見るもの:\n- README.md\n- docs/08_1商品を出品まで進める最短ルート.md\n- resident 商品カードDB\n制約:\n- 説明欄は 管理番号:+最低価格 の形式を守る\n- 出品画像の基本は実物画像とする\n次の条件では上位AIへ引き継いでください:\n- 実物画像と比較画像の扱いに迷う時\n- 説明欄の表現が誤認を生みそうな時\n今回の対象ID:\n- BOX-001-ITEM-0001\n- BOX-001-ITEM-0013\n- BOX-001-ITEM-0002\n- BOX-001-ITEM-0003\n- BOX-001-ITEM-0004\n期待する出力:\n- listing_title\n- description\n- image_order\n- publish_ready_state\n最後に resident・README・Z-98・Git をそろえてください。"
     },
     {
       "role_name": "API公開担当",
@@ -310,9 +310,9 @@ window.ZERO_COST_ROLE_PACKETS = {
       "target_ids": [
         "BOX-001-ITEM-0037",
         "BOX-001-ITEM-0001",
-        "BOX-001-ITEM-0026",
-        "BOX-001-ITEM-0019",
-        "BOX-001-ITEM-0022"
+        "BOX-001-ITEM-0003",
+        "BOX-001-ITEM-0007",
+        "BOX-001-ITEM-0009"
       ],
       "must_read": [
         "docs/09_公開から集荷までの自動化設計.md",
@@ -341,7 +341,7 @@ window.ZERO_COST_ROLE_PACKETS = {
         "API がエラーを返す時",
         "カテゴリ審査待ちと API 不良の切り分けが必要な時"
       ],
-      "launch_prompt": "あなたは 0円仕入れ物販事業の API公開担当 です。\nゴール: seller session GraphQL API で公開し、listing_id と公開URLを残す\n必ず見るもの:\n- docs/09_公開から集荷までの自動化設計.md\n- state/mercari_api_status.json\n- README.md\n制約:\n- actual-only 画像ポリシーを守る\n- カテゴリ審査待ちと API 不良を混同しない\n次の条件では上位AIへ引き継いでください:\n- API がエラーを返す時\n- カテゴリ審査待ちと API 不良の切り分けが必要な時\n今回の対象ID:\n- BOX-001-ITEM-0037\n- BOX-001-ITEM-0001\n- BOX-001-ITEM-0026\n- BOX-001-ITEM-0019\n- BOX-001-ITEM-0022\n期待する出力:\n- listing_id\n- public_url\n- image_check_result\n最後に resident・README・Z-98・Git をそろえてください。"
+      "launch_prompt": "あなたは 0円仕入れ物販事業の API公開担当 です。\nゴール: seller session GraphQL API で公開し、listing_id と公開URLを残す\n必ず見るもの:\n- docs/09_公開から集荷までの自動化設計.md\n- state/mercari_api_status.json\n- README.md\n制約:\n- actual-only 画像ポリシーを守る\n- カテゴリ審査待ちと API 不良を混同しない\n次の条件では上位AIへ引き継いでください:\n- API がエラーを返す時\n- カテゴリ審査待ちと API 不良の切り分けが必要な時\n今回の対象ID:\n- BOX-001-ITEM-0037\n- BOX-001-ITEM-0001\n- BOX-001-ITEM-0003\n- BOX-001-ITEM-0007\n- BOX-001-ITEM-0009\n期待する出力:\n- listing_id\n- public_url\n- image_check_result\n最後に resident・README・Z-98・Git をそろえてください。"
     },
     {
       "role_name": "問い合わせ対応担当",
@@ -392,9 +392,9 @@ window.ZERO_COST_ROLE_PACKETS = {
       "target_ids": [
         "BOX-001-ITEM-0001",
         "BOX-001-ITEM-0013",
-        "BOX-001-ITEM-0004",
-        "BOX-001-ITEM-0005",
-        "BOX-001-ITEM-0026"
+        "BOX-001-ITEM-0002",
+        "BOX-001-ITEM-0003",
+        "BOX-001-ITEM-0004"
       ],
       "must_read": [
         "docs/04_受注_発送_集荷自動化.md",
@@ -422,7 +422,7 @@ window.ZERO_COST_ROLE_PACKETS = {
       "handoff_when": [
         "配送ラベルや送り状運用が変わる時"
       ],
-      "launch_prompt": "あなたは 0円仕入れ物販事業の 集荷運用担当 です。\nゴール: メルカリBiz配送 + 送り状印刷 + ヤマト集荷の本線を維持する\n必ず見るもの:\n- docs/04_受注_発送_集荷自動化.md\n- docs/06_集荷ルール_現場版.md\n- README.md\n制約:\n- 手書きしない\n- 印刷ラベルは予備線として保持する\n次の条件では上位AIへ引き継いでください:\n- 配送ラベルや送り状運用が変わる時\n今回の対象ID:\n- BOX-001-ITEM-0001\n- BOX-001-ITEM-0013\n- BOX-001-ITEM-0004\n- BOX-001-ITEM-0005\n- BOX-001-ITEM-0026\n期待する出力:\n- pickup_mode\n- shipment_tracking_plan\n- resident_status_update\n最後に resident・README・Z-98・Git をそろえてください。"
+      "launch_prompt": "あなたは 0円仕入れ物販事業の 集荷運用担当 です。\nゴール: メルカリBiz配送 + 送り状印刷 + ヤマト集荷の本線を維持する\n必ず見るもの:\n- docs/04_受注_発送_集荷自動化.md\n- docs/06_集荷ルール_現場版.md\n- README.md\n制約:\n- 手書きしない\n- 印刷ラベルは予備線として保持する\n次の条件では上位AIへ引き継いでください:\n- 配送ラベルや送り状運用が変わる時\n今回の対象ID:\n- BOX-001-ITEM-0001\n- BOX-001-ITEM-0013\n- BOX-001-ITEM-0002\n- BOX-001-ITEM-0003\n- BOX-001-ITEM-0004\n期待する出力:\n- pickup_mode\n- shipment_tracking_plan\n- resident_status_update\n最後に resident・README・Z-98・Git をそろえてください。"
     }
   ],
   "task_cards": [
@@ -482,7 +482,7 @@ window.ZERO_COST_ROLE_PACKETS = {
       "role_name": "低コストAI",
       "goal": "比較画像候補を集めて、同一性判断の材料だけを残す",
       "current_counts": {
-        "exact_pending": 56,
+        "exact_pending": 57,
         "official_image_pending": 0
       },
       "target_ids": [
@@ -755,17 +755,17 @@ window.ZERO_COST_ROLE_PACKETS = {
       "role_name": "低コストAI",
       "goal": "最低価格と根拠URLと調査時刻を集める",
       "current_counts": {
-        "market_pending": 53,
-        "provisional": 56,
+        "market_pending": 54,
+        "provisional": 57,
         "published": 9
       },
       "target_ids": [
         "BOX-001-ITEM-0001",
+        "BOX-001-ITEM-0002",
+        "BOX-001-ITEM-0003",
         "BOX-001-ITEM-0004",
         "BOX-001-ITEM-0005",
-        "BOX-001-ITEM-0013",
-        "BOX-001-ITEM-0027",
-        "BOX-001-ITEM-0008"
+        "BOX-001-ITEM-0006"
       ],
       "input_fields": [
         "management_id",
@@ -803,7 +803,7 @@ window.ZERO_COST_ROLE_PACKETS = {
       },
       "recommended_ai_tier": "低コストAI可",
       "batch_size": 4,
-      "launch_prompt": "あなたは 0円仕入れ物販事業の 最低価格収集担当 です。\nあなたのAI層は 低コストAI です。\nゴール: 最低価格と根拠URLと調査時刻を集める\n今回の batch_size: 4\n今回の対象ID:\n- BOX-001-ITEM-0001\n- BOX-001-ITEM-0004\n- BOX-001-ITEM-0005\n- BOX-001-ITEM-0013\n- BOX-001-ITEM-0027\n- BOX-001-ITEM-0008\n入力として見るもの:\n- management_id\n- product_name\n- exact_match_status\n- current_min_price\n書き戻してよい場所:\n- zero_cost_merch_branch/state/intake/BOX-001_market_price_snapshot.json\n- zero_cost_merch_branch/state/current_state.json\nやってはいけないこと:\n- 最低価格という語を説明欄へ書かない\n- 相場の断定を顧客返答に使わない\n- 100%同一確認済み を勝手に付けない\n- 問い合わせへ直接返答しない\n- 出品や API 公開を実行しない\n次に当てはまったら止めて上位AIへ渡してください:\n- 候補が複数に割れて exact 商品か分からない\n- 送料込み / 送料別で比較が崩れる\n期待する出力:\n- market_floor_price\n- market_source_url\n- market_checked_at\n最後に README・resident・Z-98・Git のうち、自分に許可された更新だけをそろえてください。"
+      "launch_prompt": "あなたは 0円仕入れ物販事業の 最低価格収集担当 です。\nあなたのAI層は 低コストAI です。\nゴール: 最低価格と根拠URLと調査時刻を集める\n今回の batch_size: 4\n今回の対象ID:\n- BOX-001-ITEM-0001\n- BOX-001-ITEM-0002\n- BOX-001-ITEM-0003\n- BOX-001-ITEM-0004\n- BOX-001-ITEM-0005\n- BOX-001-ITEM-0006\n入力として見るもの:\n- management_id\n- product_name\n- exact_match_status\n- current_min_price\n書き戻してよい場所:\n- zero_cost_merch_branch/state/intake/BOX-001_market_price_snapshot.json\n- zero_cost_merch_branch/state/current_state.json\nやってはいけないこと:\n- 最低価格という語を説明欄へ書かない\n- 相場の断定を顧客返答に使わない\n- 100%同一確認済み を勝手に付けない\n- 問い合わせへ直接返答しない\n- 出品や API 公開を実行しない\n次に当てはまったら止めて上位AIへ渡してください:\n- 候補が複数に割れて exact 商品か分からない\n- 送料込み / 送料別で比較が崩れる\n期待する出力:\n- market_floor_price\n- market_source_url\n- market_checked_at\n最後に README・resident・Z-98・Git のうち、自分に許可された更新だけをそろえてください。"
     },
     {
       "task_name": "resident整合担当",
@@ -1424,6 +1424,94 @@ window.ZERO_COST_ROLE_PACKETS = {
     {
       "job_id": "最低価格収集担当-002",
       "task_name": "最低価格収集担当",
+      "management_id": "BOX-001-ITEM-0002",
+      "status": "open",
+      "recommended_ai_tier": "低コストAI可",
+      "goal": "最低価格と根拠URLと調査時刻を集める",
+      "input_fields": [
+        "management_id",
+        "product_name",
+        "exact_match_status",
+        "current_min_price"
+      ],
+      "write_targets": [
+        "zero_cost_merch_branch/state/intake/BOX-001_market_price_snapshot.json",
+        "zero_cost_merch_branch/state/current_state.json"
+      ],
+      "must_not_do": [
+        "最低価格という語を説明欄へ書かない",
+        "相場の断定を顧客返答に使わない",
+        "100%同一確認済み を勝手に付けない",
+        "問い合わせへ直接返答しない",
+        "出品や API 公開を実行しない"
+      ],
+      "stop_conditions": [
+        "候補が複数に割れて exact 商品か分からない",
+        "送料込み / 送料別で比較が崩れる"
+      ],
+      "expected_outputs": [
+        "market_floor_price",
+        "market_source_url",
+        "market_checked_at"
+      ],
+      "batch_size": 4,
+      "routing_context": {
+        "mercari_lane": "出品準備中",
+        "mercari_gate": "停止",
+        "image_gate": "画像同一性確認待ち",
+        "base_condition": "停止",
+        "shipco_condition": "停止",
+        "review_reason": "公開可否未確定 / 画像同一性未確認 / Qwen HQ判断: 比較画像照合担当 / blocked",
+        "low_cost_job": "比較画像照合"
+      }
+    },
+    {
+      "job_id": "最低価格収集担当-003",
+      "task_name": "最低価格収集担当",
+      "management_id": "BOX-001-ITEM-0003",
+      "status": "open",
+      "recommended_ai_tier": "低コストAI可",
+      "goal": "最低価格と根拠URLと調査時刻を集める",
+      "input_fields": [
+        "management_id",
+        "product_name",
+        "exact_match_status",
+        "current_min_price"
+      ],
+      "write_targets": [
+        "zero_cost_merch_branch/state/intake/BOX-001_market_price_snapshot.json",
+        "zero_cost_merch_branch/state/current_state.json"
+      ],
+      "must_not_do": [
+        "最低価格という語を説明欄へ書かない",
+        "相場の断定を顧客返答に使わない",
+        "100%同一確認済み を勝手に付けない",
+        "問い合わせへ直接返答しない",
+        "出品や API 公開を実行しない"
+      ],
+      "stop_conditions": [
+        "候補が複数に割れて exact 商品か分からない",
+        "送料込み / 送料別で比較が崩れる"
+      ],
+      "expected_outputs": [
+        "market_floor_price",
+        "market_source_url",
+        "market_checked_at"
+      ],
+      "batch_size": 4,
+      "routing_context": {
+        "mercari_lane": "出品準備中",
+        "mercari_gate": "公開可否確認待ち",
+        "image_gate": "実物のみで可",
+        "base_condition": "同期準備可",
+        "shipco_condition": "送り状共通化候補",
+        "review_reason": "公開可否未確定",
+        "low_cost_job": "公開前チェック"
+      }
+    },
+    {
+      "job_id": "最低価格収集担当-004",
+      "task_name": "最低価格収集担当",
       "management_id": "BOX-001-ITEM-0004",
       "status": "open",
       "recommended_ai_tier": "低コストAI可",
@@ -1466,7 +1554,7 @@ window.ZERO_COST_ROLE_PACKETS = {
       }
     },
     {
-      "job_id": "最低価格収集担当-003",
+      "job_id": "最低価格収集担当-005",
       "task_name": "最低価格収集担当",
       "management_id": "BOX-001-ITEM-0005",
       "status": "open",
@@ -1510,97 +1598,9 @@ window.ZERO_COST_ROLE_PACKETS = {
       }
     },
     {
-      "job_id": "最低価格収集担当-004",
-      "task_name": "最低価格収集担当",
-      "management_id": "BOX-001-ITEM-0013",
-      "status": "open",
-      "recommended_ai_tier": "低コストAI可",
-      "goal": "最低価格と根拠URLと調査時刻を集める",
-      "input_fields": [
-        "management_id",
-        "product_name",
-        "exact_match_status",
-        "current_min_price"
-      ],
-      "write_targets": [
-        "zero_cost_merch_branch/state/intake/BOX-001_market_price_snapshot.json",
-        "zero_cost_merch_branch/state/current_state.json"
-      ],
-      "must_not_do": [
-        "最低価格という語を説明欄へ書かない",
-        "相場の断定を顧客返答に使わない",
-        "100%同一確認済み を勝手に付けない",
-        "問い合わせへ直接返答しない",
-        "出品や API 公開を実行しない"
-      ],
-      "stop_conditions": [
-        "候補が複数に割れて exact 商品か分からない",
-        "送料込み / 送料別で比較が崩れる"
-      ],
-      "expected_outputs": [
-        "market_floor_price",
-        "market_source_url",
-        "market_checked_at"
-      ],
-      "batch_size": 4,
-      "routing_context": {
-        "mercari_lane": "出品準備中",
-        "mercari_gate": "公開可否確認待ち",
-        "image_gate": "画像OK",
-        "base_condition": "同期準備可",
-        "shipco_condition": "送り状共通化候補",
-        "review_reason": "公開可否未確定",
-        "low_cost_job": "公開前チェック"
-      }
-    },
-    {
-      "job_id": "最低価格収集担当-005",
-      "task_name": "最低価格収集担当",
-      "management_id": "BOX-001-ITEM-0027",
-      "status": "open",
-      "recommended_ai_tier": "低コストAI可",
-      "goal": "最低価格と根拠URLと調査時刻を集める",
-      "input_fields": [
-        "management_id",
-        "product_name",
-        "exact_match_status",
-        "current_min_price"
-      ],
-      "write_targets": [
-        "zero_cost_merch_branch/state/intake/BOX-001_market_price_snapshot.json",
-        "zero_cost_merch_branch/state/current_state.json"
-      ],
-      "must_not_do": [
-        "最低価格という語を説明欄へ書かない",
-        "相場の断定を顧客返答に使わない",
-        "100%同一確認済み を勝手に付けない",
-        "問い合わせへ直接返答しない",
-        "出品や API 公開を実行しない"
-      ],
-      "stop_conditions": [
-        "候補が複数に割れて exact 商品か分からない",
-        "送料込み / 送料別で比較が崩れる"
-      ],
-      "expected_outputs": [
-        "market_floor_price",
-        "market_source_url",
-        "market_checked_at"
-      ],
-      "batch_size": 4,
-      "routing_context": {
-        "mercari_lane": "出品準備中",
-        "mercari_gate": "公開可否確認待ち",
-        "image_gate": "実物のみで可",
-        "base_condition": "同期準備可",
-        "shipco_condition": "送り状共通化候補",
-        "review_reason": "公開可否未確定",
-        "low_cost_job": "公開前チェック"
-      }
-    },
-    {
       "job_id": "最低価格収集担当-006",
       "task_name": "最低価格収集担当",
-      "management_id": "BOX-001-ITEM-0008",
+      "management_id": "BOX-001-ITEM-0006",
       "status": "open",
       "recommended_ai_tier": "低コストAI可",
       "goal": "最低価格と根拠URLと調査時刻を集める",
@@ -1632,13 +1632,13 @@ window.ZERO_COST_ROLE_PACKETS = {
       ],
       "batch_size": 4,
       "routing_context": {
-        "mercari_lane": "公開済み",
-        "mercari_gate": "公開済み",
-        "image_gate": "実物のみで可",
-        "base_condition": "同期準備可",
-        "shipco_condition": "送り状共通化候補",
-        "review_reason": "例外時のみ",
-        "low_cost_job": "受注監視"
+        "mercari_lane": "",
+        "mercari_gate": "",
+        "image_gate": "",
+        "base_condition": "",
+        "shipco_condition": "",
+        "review_reason": "",
+        "low_cost_job": ""
       }
     },
     {

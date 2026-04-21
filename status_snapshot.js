@@ -1,10 +1,10 @@
 window.ZERO_COST_STATUS = {
-  "generated_at": "2026-04-21 18:59:47 JST",
+  "generated_at": "2026-04-21 21:25:39 JST",
   "workbook_url": "https://docs.google.com/spreadsheets/d/1VjdUJavoijOkdjKtkdKy_zUcdkQqZwG0oRty57H5_lk/edit",
   "metrics": {
     "box_count": "1",
     "box_note": "受入対象の箱数です。先頭: BOX-001",
-    "research_pending": "57",
+    "research_pending": "58",
     "research_note": "JAN / 型番 / 比較画像の確認待ち件数です。barcode_ready=0 / ocr_ready=0 / blocking_missing=0 / exception=2",
     "draft_pending": "19",
     "draft_note": "公開前に AI が整える下書き件数です。",
@@ -693,7 +693,7 @@ window.ZERO_COST_STATUS = {
     "反映待ち: カテゴリ審査反映待ち: applicationId=2zpKKFVRC4aUXzG6o",
     "要確認: 例外許容 BOX-001-ITEM-0058(CODE写真不足は今回の運用では例外許容とする), BOX-001-ITEM-0006(FRONT/BACK/CODE は同一の長方形ギフト箱だが、箱の中身と正式商品名を実物写真から特定できないため、誤出品防止で例外保留とする)",
     "今すぐ進める: 要再束ね BOX-001-ITEM-0025, BOX-001-ITEM-0029, BOX-001-ITEM-0040, BOX-001-ITEM-0034, BOX-001-ITEM-0023 ほか16件",
-    "今すぐ進める: 再分解計画 BOX-001-ITEM-0028 BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0029 は car hook系だが network tool CODE のため Zukida 側へ未連結。0053 BACK/CODE は Hello Kitty 側。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認したが、新管理番号はまだ切らず staged のまま維持。0052 FRONT の青橙箱は別物。",
+    "今すぐ進める: 再分解計画 BOX-001-ITEM-0028 BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 は FRONT=car hook NO-FE040、BACK/CODE=SPEEDWOX X00162U47P の別split。0053 BACK/CODE は Hello Kitty 側。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認したが、新管理番号はまだ切らず staged のまま維持。0052 FRONT の青橙箱は別物。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み",
     "今すぐ進める: 商品特定待ち BOX-001-ITEM-0001, BOX-001-ITEM-0013, BOX-001-ITEM-0026",
     "今すぐ進める: 出品下書き待ち WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り, WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り, MMC FACE LOTION 240ml",
     "反映待ち: カテゴリ審査待ち WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り",
