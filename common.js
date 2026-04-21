@@ -5,10 +5,11 @@
     return value;
   }
   function publicPath() {
-    var prefix = String(window.ZERO_COST_PUBLIC_PATH_PREFIX || '').trim();
+    var prefix = String(window.ZERO_COST_PUBLIC_PATH_PREFIX || '').trim().replace(/\/$/, '');
     var path = String(window.location.pathname || '/');
-    if (prefix && path.indexOf(prefix) === 0) path = path.slice(prefix.length);
-    if (!path) path = '/';
+    if (prefix && path.indexOf(prefix + '/') === 0) path = path.slice(prefix.length);
+    if (prefix && path === prefix) path = '/';
+    if (!path || path === '/') return '/index.html';
     if (path.charAt(0) !== '/') path = '/' + path;
     return path;
   }
@@ -24,12 +25,13 @@
     } catch (_) {}
   }
   var PAGE_LINKS = [
-    {page:'index',    label:'ホーム',          href:'./index.html'},
-    {page:'intake',   label:'④⑤ 写真·AI識別',  href:'./intake_cards.html'},
-    {page:'ops',      label:'⑥ 出品準備',      href:'./ops.html'},
-    {page:'channel_listings', label:'出品状況', href:'./channel_listings.html'},
-    {page:'shipping', label:'⑧ 集荷',          href:'./shipping.html'},
-    {page:'routing',  label:'販路',             href:'./routing.html'}
+    {page:'index',    label:'ホーム',          href:'index.html'},
+    {page:'intake',   label:'④⑤ 写真・AI識別', href:'intake_cards.html'},
+    {page:'ops',      label:'⑥ 出品準備',      href:'ops.html'},
+    {page:'channel_listings', label:'出品状況', href:'channel_listings.html'},
+    {page:'shipping', label:'⑧ 集荷',          href:'shipping.html'},
+    {page:'routing',  label:'販路',             href:'routing.html'},
+    {page:'roles',    label:'役割',             href:'roles.html'}
   ];
   function boxFromMid(mid) {
     var match = String(mid || '').trim().toUpperCase().match(/^(BOX-[A-Z0-9]+)-ITEM-/);
@@ -59,7 +61,12 @@
     try {
       var target = new URL(href, window.location.href);
       target.searchParams.set('box', boxId);
-      return target.pathname + target.search + target.hash;
+      var path = String(window.location.pathname || '/');
+      var baseDir = path.slice(0, path.lastIndexOf('/') + 1) || '/';
+      if (target.origin === window.location.origin && target.pathname.indexOf(baseDir) === 0) {
+        return './' + target.pathname.slice(baseDir.length) + target.search + target.hash;
+      }
+      return target.href;
     } catch (_) {
       return href;
     }
@@ -68,10 +75,11 @@
   var header = document.querySelector('.hq-header');
   if (!header) return;
   var boxId = currentBoxId();
-  var nav = document.createElement('nav');
+  var nav = header.querySelector('.hq-nav') || document.createElement('nav');
   nav.className = 'hq-nav';
+  nav.setAttribute('aria-label', '0円仕入れ物販 ナビゲーション');
   nav.innerHTML = PAGE_LINKS.map(function(l){
     return '<a href="'+appendBoxQuery(l.href, boxId)+'"'+(l.page===current?' class="active"':'')+'>'+l.label+'</a>';
   }).join('');
-  header.appendChild(nav);
+  if (!nav.parentNode) header.appendChild(nav);
 })();

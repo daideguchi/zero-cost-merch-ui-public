@@ -289,7 +289,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "審査監視",
         "AI次アクション": "カテゴリ審査反映待ち",
         "ルーティング状態": "審査待ち",
-        "更新時刻": "2026-04-21 16:45:13 JST",
+        "更新時刻": "2026-04-21 16:55:30 JST",
         "メモ": "name=WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り / publish_ok=カテゴリ審査待ち / draft_status=カテゴリ審査待ち / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量"
       }
     },
@@ -515,7 +515,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "実物のみで進める / 比較画像は後追い",
         "ルーティング状態": "HQ判断済み",
-        "更新時刻": "2026-04-21 16:45:13 JST",
+        "更新時刻": "2026-04-21 16:55:30 JST",
         "メモ": "name=保冷クーラーバッグ ネイビー ショルダー付 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / qwen_hq=actual-only固定優先 / 2026-04-21 current truth: actual-only固定。比較画像なしでも実物写真のみで進める。"
       }
     },
@@ -700,7 +700,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:45:13 JST",
+        "更新時刻": "2026-04-21 16:55:30 JST",
         "メモ": "name=YUGYUG サングラス ブラック/グレー ケース付き / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
       }
     },
@@ -958,7 +958,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 16:45:13 JST",
+        "更新時刻": "2026-04-21 16:55:30 JST",
         "メモ": "name=IAWNI ショルダーバッグ メッセンジャーバッグ / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMJHwgfzNjEkYfN8SMv"
       }
     },
@@ -1216,7 +1216,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 16:45:13 JST",
+        "更新時刻": "2026-04-21 16:55:30 JST",
         "メモ": "name=CEEN サルエルパンツ 七分丈 ワイドパンツ / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPQCYwtnC7WCswDeG37b9"
       }
     },
@@ -1324,7 +1324,10 @@ window.ZERO_COST_INTAKE = {
         "official_page_url": "",
         "official_image_url": "",
         "image_source": "actual-only",
-        "exact_match_guard_state": "clear"
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "内容物未確認"
+        ]
       },
       "official": {
         "management_id": "BOX-001-ITEM-0006",
@@ -1579,7 +1582,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:45:13 JST",
+        "更新時刻": "2026-04-21 16:55:30 JST",
         "メモ": "name=GIOVANA Tシャツ ベージュ 2XL / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
       }
     },
@@ -1831,7 +1834,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 16:45:13 JST",
+        "更新時刻": "2026-04-21 16:55:30 JST",
         "メモ": "name=オナーファッション 綿100% トップス ミントグリーン 3XL / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMSqu7EDWJu3jDcTo5h"
       }
     },
@@ -2100,7 +2103,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 16:45:13 JST",
+        "更新時刻": "2026-04-21 16:55:30 JST",
         "メモ": "name=Hotaty ピアス 金属アレルギー対応 ギフトBOX付き / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMUTrpVNxK6fGZdtMqT"
       }
     },
@@ -2315,7 +2318,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:45:13 JST",
+        "更新時刻": "2026-04-21 16:55:30 JST",
         "メモ": "name=SHANGCHU シェフユニフォーム ブラック 4XL / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -2571,7 +2574,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 16:45:13 JST",
+        "更新時刻": "2026-04-21 16:55:30 JST",
         "メモ": "name=Dkieta 帽子 レディース ネックカバー付き 花柄日よけ帽子 / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMPEuG8NMB3ZieyYzHU"
       }
     },
@@ -2829,7 +2832,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 16:45:13 JST",
+        "更新時刻": "2026-04-21 16:55:30 JST",
         "メモ": "name=gany ガーゼハンカチ 30×30cm 10枚セット 綿100% / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPTBgBM5kND3h8AhVf4bf"
       }
     },
@@ -3031,7 +3034,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:45:13 JST",
+        "更新時刻": "2026-04-21 16:55:30 JST",
         "メモ": "name=WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り / publish_ok=公開待ち / draft_status=公開待ち / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量"
       }
     },
@@ -3308,7 +3311,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 16:45:13 JST",
+        "更新時刻": "2026-04-21 16:55:30 JST",
         "メモ": "name=HAYAHARU キッズ靴下 LS4602LS / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMLyKhRCgPASDJFH2dc"
       }
     },
@@ -3494,7 +3497,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:45:13 JST",
+        "更新時刻": "2026-04-21 16:55:30 JST",
         "メモ": "name=Llink 靴下 5足セット ボーダー パステル / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
       }
     },
@@ -3678,7 +3681,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:45:13 JST",
+        "更新時刻": "2026-04-21 16:55:30 JST",
         "メモ": "name=ZERUI 靴下 5足セット パステル 蝶リボン / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
       }
     },
@@ -3877,7 +3880,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:45:13 JST",
+        "更新時刻": "2026-04-21 16:55:30 JST",
         "メモ": "name=FirstC ティアグッズ記念品ギフト オレンジ丸型ポーチ（用途要確認） / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 用途要確認 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -4062,7 +4065,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:45:13 JST",
+        "更新時刻": "2026-04-21 16:55:30 JST",
         "メモ": "name=SWEETBOY 子供パーカー ネイビー×イエロー 130 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
       }
     },
@@ -4315,7 +4318,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "停止",
         "AI次アクション": "空き板を維持",
         "ルーティング状態": "一時停止",
-        "更新時刻": "2026-04-21 16:45:13 JST",
+        "更新時刻": "2026-04-21 16:55:30 JST",
         "メモ": "name=ポロベア キャンバス トートバッグ POLO BEAR LAUREN / publish_ok=確認待ち / draft_status=一時取り下げ / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=一時取り下げ"
       }
     },
@@ -4504,7 +4507,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:45:13 JST",
+        "更新時刻": "2026-04-21 16:55:30 JST",
         "メモ": "name=首サポーター カバー付き グレー M HJ-GY-M / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -4598,8 +4601,8 @@ window.ZERO_COST_INTAKE = {
         "product_name": "1.1CT レモンクォーツ シルバーリング サイズ10",
         "barcode_primary": "X00020VHV9",
         "product_code_type": "amazon_internal",
-        "official_image_state": "実物のみ",
-        "note": "BACK/CODEの2枚で赤いギフト箱とラベル X00020VHV9 / 1.1CT レモンクォーツ / シルバーリング / サイズ10 が一致。FRONTの黒パッケージ商品は別物で混線しているため、リング側を本命として provisional 登録する。",
+        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "note": "BACK/CODE の2枚で赤いギフト箱とラベル X00020VHV9 / 1.1CT レモンクォーツ / シルバーリング / サイズ10 が一致。一方 FRONT は黒パッケージ商品で別商品。現写真では1商品に断定不能のため、リング側を provisional に留める。",
         "evidence": [
           "X00020VHV9",
           "1.1CT",
@@ -4607,7 +4610,10 @@ window.ZERO_COST_INTAKE = {
           "シルバーリング",
           "サイズ10"
         ],
-        "exact_match_guard_state": "clear"
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "別商品mix"
+        ]
       },
       "official": {},
       "commerce": {
@@ -4641,7 +4647,7 @@ window.ZERO_COST_INTAKE = {
       "display_name": "1.1CT レモンクォーツ シルバーリング サイズ10",
       "product_name": "1.1CT レモンクォーツ シルバーリング サイズ10",
       "verified_exact_match": false,
-      "official_image_state": "実物のみ / 現写真では1商品に断定不能",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
         "別商品mix"
@@ -4859,7 +4865,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:45:13 JST",
+        "更新時刻": "2026-04-21 16:55:30 JST",
         "メモ": "name=LE BLANC フェムケアPRO 低刺激 デリケートゾーン 150mL / publish_ok=確認待ち / draft_status=下書き / image_state=調査画像取得済み / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -5101,8 +5107,8 @@ window.ZERO_COST_INTAKE = {
         "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
         "barcode_primary": "X0011JB9IL",
         "product_code_type": "amazon_internal",
-        "official_image_state": "実物のみ",
-        "note": "BACK/CODEの2枚で DUCO ロゴ入りケースとラベル X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）が一致。FRONTの黒い収納袋は別商品で混線しているため、DUCO側を本命として provisional 登録する。",
+        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "note": "BACK/CODE の2枚で DUCO ロゴ入りケースとラベル X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）が一致。一方 FRONT は黒い収納袋で別商品。現写真では1商品に断定不能のため、DUCO 側を provisional に留める。",
         "evidence": [
           "X0011JB9IL",
           "DUCO",
@@ -5110,7 +5116,10 @@ window.ZERO_COST_INTAKE = {
           "#016",
           "ブラック・ブルー"
         ],
-        "exact_match_guard_state": "clear"
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "別商品mix"
+        ]
       },
       "official": {},
       "commerce": {
@@ -5144,7 +5153,7 @@ window.ZERO_COST_INTAKE = {
       "display_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
       "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
       "verified_exact_match": false,
-      "official_image_state": "実物のみ / 現写真では1商品に断定不能",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
         "別商品mix"
@@ -5253,8 +5262,8 @@ window.ZERO_COST_INTAKE = {
         "barcode_primary": "X0011JB9IL",
         "product_code_type": "amazon_internal",
         "verified_exact_match": false,
-        "official_image_state": "実物のみ",
-        "note": "FRONT OCR と Vision で X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）を確認。一方 BACK は X001845QRJ / 日傘超軽量、CODE も日傘側ノイズで混線しているため、confirmed から降格し、FRONT 側本命の provisional とする。",
+        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "note": "FRONT OCR と Vision で X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）を確認。一方 BACK は X001845QRJ / 日傘超軽量、CODE も日傘側ノイズで別商品。現写真では1商品に断定不能のため、DUCO 側を provisional に留める。",
         "evidence": [
           "X0011JB9IL",
           "DUCO",
@@ -5262,7 +5271,10 @@ window.ZERO_COST_INTAKE = {
           "#016",
           "ブラック・ブルー"
         ],
-        "exact_match_guard_state": "clear"
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "別商品mix"
+        ]
       },
       "official": {},
       "commerce": {
@@ -5296,7 +5308,7 @@ window.ZERO_COST_INTAKE = {
       "display_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
       "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
       "verified_exact_match": false,
-      "official_image_state": "実物のみ / 現写真では1商品に断定不能",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
         "別商品mix"
@@ -5514,7 +5526,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:45:13 JST",
+        "更新時刻": "2026-04-21 16:55:30 JST",
         "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -5725,8 +5737,8 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:45:13 JST",
-        "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=候補1枚確保 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+        "更新時刻": "2026-04-21 16:55:30 JST",
+        "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=候補1枚確保 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
     {
@@ -5932,7 +5944,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "管理番号再分解と再撮影",
         "ルーティング状態": "要再束ね",
-        "更新時刻": "2026-04-21 16:45:13 JST",
+        "更新時刻": "2026-04-21 16:55:30 JST",
         "メモ": "name=Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / qwen_hq=needs_split / 0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式再束ねと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。"
       },
       "split_staging": {
@@ -6549,7 +6561,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:45:13 JST",
+        "更新時刻": "2026-04-21 16:55:30 JST",
         "メモ": "name=LEISURE WEAR ベージュ系レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -6811,7 +6823,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 16:45:13 JST",
+        "更新時刻": "2026-04-21 16:55:30 JST",
         "メモ": "name=ZUCCA CLUB リラックス リカバリー サンダル / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPTBkWndxGku2L9EVw4UP"
       }
     },
@@ -7012,7 +7024,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:45:13 JST",
+        "更新時刻": "2026-04-21 16:55:30 JST",
         "メモ": "name=jchinjia リュック メンズ ビジネスリュック 男女兼用 カジュアルバッグ おしゃれ トラベルバッグ / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -7106,8 +7118,8 @@ window.ZERO_COST_INTAKE = {
         "product_name": "RemeeHi 女教師コスプレ衣装 ホワイトレース系",
         "barcode_primary": "X001A00A95",
         "product_code_type": "amazon_internal",
-        "official_image_state": "実物のみ",
-        "note": "BACK/CODEの2枚で白レース衣装とラベル X001A00A95 / [RemeeHi] 女教師... ロウィン クリスマス 人気衣装 が一致。FRONTの黒リュックは別商品で混線しているため、RemeeHi衣装側を本命として provisional 登録する。",
+        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "note": "BACK/CODE の2枚で白レース衣装とラベル X001A00A95 / [RemeeHi] 女教師... ロウィン クリスマス 人気衣装 が一致。一方 FRONT は黒リュックで別商品。現写真では1商品に断定不能のため、RemeeHi 衣装側を provisional に留める。",
         "evidence": [
           "X001A00A95",
           "RemeeHi",
@@ -7115,7 +7127,10 @@ window.ZERO_COST_INTAKE = {
           "クリスマス",
           "ホワイトレース衣装"
         ],
-        "exact_match_guard_state": "clear"
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "別商品mix"
+        ]
       },
       "official": {},
       "commerce": {
@@ -7149,7 +7164,7 @@ window.ZERO_COST_INTAKE = {
       "display_name": "RemeeHi 女教師コスプレ衣装 ホワイトレース系",
       "product_name": "RemeeHi 女教師コスプレ衣装 ホワイトレース系",
       "verified_exact_match": false,
-      "official_image_state": "実物のみ / 現写真では1商品に断定不能",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
         "別商品mix"
@@ -7354,7 +7369,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:45:13 JST",
+        "更新時刻": "2026-04-21 16:55:30 JST",
         "メモ": "name=Letshe ベビー前開きロンパース ピンク 110cm / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
       }
     },
@@ -7447,8 +7462,8 @@ window.ZERO_COST_INTAKE = {
         "product_name": "SOUKE SPORTS Cycling shorts ブラック S",
         "barcode_primary": "X000W8HKOT",
         "product_code_type": "amazon_internal",
-        "official_image_state": "実物のみ",
-        "note": "BACK/CODEの2枚で SOUKE SPORTS のパッケージと Cycling shorts / Black / Equipment Size S が一致。FRONTのピンク系キッズ衣類は別商品で混線しているため、サイクリングショーツ側を本命として provisional 登録する。",
+        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "note": "BACK/CODE の2枚で SOUKE SPORTS パッケージと Cycling shorts / Black / Equipment Size S が一致。一方 FRONT はピンク系キッズ衣類で別商品。現写真では1商品に断定不能のため、サイクリングショーツ側を provisional に留める。",
         "evidence": [
           "X000W8HKOT",
           "SOUKE SPORTS",
@@ -7456,7 +7471,10 @@ window.ZERO_COST_INTAKE = {
           "Black",
           "Size S"
         ],
-        "exact_match_guard_state": "clear"
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "別商品mix"
+        ]
       },
       "official": {},
       "commerce": {
@@ -7490,7 +7508,7 @@ window.ZERO_COST_INTAKE = {
       "display_name": "SOUKE SPORTS Cycling shorts ブラック S",
       "product_name": "SOUKE SPORTS Cycling shorts ブラック S",
       "verified_exact_match": false,
-      "official_image_state": "実物のみ / 現写真では1商品に断定不能",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
         "別商品mix"
@@ -7858,7 +7876,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:45:13 JST",
+        "更新時刻": "2026-04-21 16:55:30 JST",
         "メモ": "name=裏起毛トップス オフホワイト L / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -8964,7 +8982,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:45:13 JST",
+        "更新時刻": "2026-04-21 16:55:30 JST",
         "メモ": "name=ロゴ刺繍ベースボールキャップ ブラック系 / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -9157,8 +9175,8 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:45:13 JST",
-        "メモ": "name=ホワイト レディーストップス M / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+        "更新時刻": "2026-04-21 16:55:30 JST",
+        "メモ": "name=ホワイト レディーストップス M / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
     {
@@ -9344,7 +9362,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:45:13 JST",
+        "更新時刻": "2026-04-21 16:55:30 JST",
         "メモ": "name=高視認性安全ベスト 蛍光イエロー / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -9581,14 +9599,17 @@ window.ZERO_COST_INTAKE = {
         "product_name": "花柄シュシュセット",
         "barcode_primary": "",
         "product_code_type": "actual_only",
-        "official_image_state": "実物のみ",
-        "note": "FRONT/BACKの2枚で花柄シュシュ束の実物が一致。CODEはグレー衣類の別ラベルで混線しており、シュシュ側ラベルも tote bag と誤記されているため採用しない。実物ベースでシュシュセットとして provisional 登録する。",
+        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "note": "FRONT/BACK の2枚で花柄シュシュ束の実物が一致。一方 CODE は X00147IEGF のグレー衣類ラベルで別商品。さらにシュシュ側ラベルも tote bag と誤記されているため採用しない。現写真では1商品に断定不能のため、シュシュ側を provisional に留める。",
         "evidence": [
           "花柄",
           "シュシュ",
           "セット"
         ],
-        "exact_match_guard_state": "clear"
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "別商品mix"
+        ]
       },
       "official": {},
       "commerce": {
@@ -9622,7 +9643,7 @@ window.ZERO_COST_INTAKE = {
       "display_name": "花柄シュシュセット",
       "product_name": "花柄シュシュセット",
       "verified_exact_match": false,
-      "official_image_state": "実物のみ / 現写真では1商品に断定不能",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
         "別商品mix"
@@ -9844,7 +9865,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:45:13 JST",
+        "更新時刻": "2026-04-21 16:55:30 JST",
         "メモ": "name=CRZ YOGA レギンス 股下24インチ ダークグレー系 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
@@ -10095,11 +10116,14 @@ window.ZERO_COST_INTAKE = {
           "白いギフト箱",
           "内容物不明"
         ],
-        "exact_match_guard_state": "clear",
+        "exact_match_guard_state": "review_required",
         "brand_override": "FirstC",
         "category_override": "その他 > 記念品・ギフト箱",
         "price_override": 980,
-        "check_items_override": "内容物確認 / 箱状態 / サイズ感 / ギフト箱として出すか判断"
+        "check_items_override": "内容物確認 / 箱状態 / サイズ感 / ギフト箱として出すか判断",
+        "exact_match_guard_reasons": [
+          "内容物未確認"
+        ]
       },
       "official": {},
       "commerce": {
@@ -10750,8 +10774,8 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:45:13 JST",
-        "メモ": "name=Poperdision ブラック 3XL レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+        "更新時刻": "2026-04-21 16:55:30 JST",
+        "メモ": "name=Poperdision ブラック 3XL レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
     {
@@ -10964,8 +10988,8 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-21 16:45:13 JST",
-        "メモ": "name=ATIDIMU 美容液 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+        "更新時刻": "2026-04-21 16:55:30 JST",
+        "メモ": "name=ATIDIMU 美容液 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / exact-match保留 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
       }
     },
     {
@@ -11373,8 +11397,8 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-21 16:45:13 JST",
-        "メモ": "name=JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSNX6qATG7NwnssYkshh"
+        "更新時刻": "2026-04-21 16:55:30 JST",
+        "メモ": "name=JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSNX6qATG7NwnssYkshh"
       }
     },
     {
@@ -11810,7 +11834,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "審査監視",
             "AI次アクション": "カテゴリ審査反映待ち",
             "ルーティング状態": "審査待ち",
-            "更新時刻": "2026-04-21 16:45:13 JST",
+            "更新時刻": "2026-04-21 16:55:30 JST",
             "メモ": "name=WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り / publish_ok=カテゴリ審査待ち / draft_status=カテゴリ審査待ち / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量"
           }
         },
@@ -12036,7 +12060,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "実物のみで進める / 比較画像は後追い",
             "ルーティング状態": "HQ判断済み",
-            "更新時刻": "2026-04-21 16:45:13 JST",
+            "更新時刻": "2026-04-21 16:55:30 JST",
             "メモ": "name=保冷クーラーバッグ ネイビー ショルダー付 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / qwen_hq=actual-only固定優先 / 2026-04-21 current truth: actual-only固定。比較画像なしでも実物写真のみで進める。"
           }
         },
@@ -12221,7 +12245,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:45:13 JST",
+            "更新時刻": "2026-04-21 16:55:30 JST",
             "メモ": "name=YUGYUG サングラス ブラック/グレー ケース付き / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
           }
         },
@@ -12479,7 +12503,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 16:45:13 JST",
+            "更新時刻": "2026-04-21 16:55:30 JST",
             "メモ": "name=IAWNI ショルダーバッグ メッセンジャーバッグ / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMJHwgfzNjEkYfN8SMv"
           }
         },
@@ -12737,7 +12761,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 16:45:13 JST",
+            "更新時刻": "2026-04-21 16:55:30 JST",
             "メモ": "name=CEEN サルエルパンツ 七分丈 ワイドパンツ / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPQCYwtnC7WCswDeG37b9"
           }
         },
@@ -12845,7 +12869,10 @@ window.ZERO_COST_INTAKE = {
             "official_page_url": "",
             "official_image_url": "",
             "image_source": "actual-only",
-            "exact_match_guard_state": "clear"
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "内容物未確認"
+            ]
           },
           "official": {
             "management_id": "BOX-001-ITEM-0006",
@@ -13100,7 +13127,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:45:13 JST",
+            "更新時刻": "2026-04-21 16:55:30 JST",
             "メモ": "name=GIOVANA Tシャツ ベージュ 2XL / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
           }
         },
@@ -13352,7 +13379,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 16:45:13 JST",
+            "更新時刻": "2026-04-21 16:55:30 JST",
             "メモ": "name=オナーファッション 綿100% トップス ミントグリーン 3XL / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMSqu7EDWJu3jDcTo5h"
           }
         },
@@ -13621,7 +13648,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 16:45:13 JST",
+            "更新時刻": "2026-04-21 16:55:30 JST",
             "メモ": "name=Hotaty ピアス 金属アレルギー対応 ギフトBOX付き / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMUTrpVNxK6fGZdtMqT"
           }
         },
@@ -13836,7 +13863,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:45:13 JST",
+            "更新時刻": "2026-04-21 16:55:30 JST",
             "メモ": "name=SHANGCHU シェフユニフォーム ブラック 4XL / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -14092,7 +14119,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 16:45:13 JST",
+            "更新時刻": "2026-04-21 16:55:30 JST",
             "メモ": "name=Dkieta 帽子 レディース ネックカバー付き 花柄日よけ帽子 / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMPEuG8NMB3ZieyYzHU"
           }
         },
@@ -14350,7 +14377,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 16:45:13 JST",
+            "更新時刻": "2026-04-21 16:55:30 JST",
             "メモ": "name=gany ガーゼハンカチ 30×30cm 10枚セット 綿100% / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPTBgBM5kND3h8AhVf4bf"
           }
         },
@@ -14552,7 +14579,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:45:13 JST",
+            "更新時刻": "2026-04-21 16:55:30 JST",
             "メモ": "name=WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り / publish_ok=公開待ち / draft_status=公開待ち / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量"
           }
         },
@@ -14829,7 +14856,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 16:45:13 JST",
+            "更新時刻": "2026-04-21 16:55:30 JST",
             "メモ": "name=HAYAHARU キッズ靴下 LS4602LS / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSMLyKhRCgPASDJFH2dc"
           }
         },
@@ -15015,7 +15042,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:45:13 JST",
+            "更新時刻": "2026-04-21 16:55:30 JST",
             "メモ": "name=Llink 靴下 5足セット ボーダー パステル / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
           }
         },
@@ -15199,7 +15226,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:45:13 JST",
+            "更新時刻": "2026-04-21 16:55:30 JST",
             "メモ": "name=ZERUI 靴下 5足セット パステル 蝶リボン / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
           }
         },
@@ -15398,7 +15425,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:45:13 JST",
+            "更新時刻": "2026-04-21 16:55:30 JST",
             "メモ": "name=FirstC ティアグッズ記念品ギフト オレンジ丸型ポーチ（用途要確認） / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 用途要確認 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -15583,7 +15610,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:45:13 JST",
+            "更新時刻": "2026-04-21 16:55:30 JST",
             "メモ": "name=SWEETBOY 子供パーカー ネイビー×イエロー 130 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
           }
         },
@@ -15836,7 +15863,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "停止",
             "AI次アクション": "空き板を維持",
             "ルーティング状態": "一時停止",
-            "更新時刻": "2026-04-21 16:45:13 JST",
+            "更新時刻": "2026-04-21 16:55:30 JST",
             "メモ": "name=ポロベア キャンバス トートバッグ POLO BEAR LAUREN / publish_ok=確認待ち / draft_status=一時取り下げ / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=一時取り下げ"
           }
         },
@@ -16025,7 +16052,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:45:13 JST",
+            "更新時刻": "2026-04-21 16:55:30 JST",
             "メモ": "name=首サポーター カバー付き グレー M HJ-GY-M / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -16119,8 +16146,8 @@ window.ZERO_COST_INTAKE = {
             "product_name": "1.1CT レモンクォーツ シルバーリング サイズ10",
             "barcode_primary": "X00020VHV9",
             "product_code_type": "amazon_internal",
-            "official_image_state": "実物のみ",
-            "note": "BACK/CODEの2枚で赤いギフト箱とラベル X00020VHV9 / 1.1CT レモンクォーツ / シルバーリング / サイズ10 が一致。FRONTの黒パッケージ商品は別物で混線しているため、リング側を本命として provisional 登録する。",
+            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "note": "BACK/CODE の2枚で赤いギフト箱とラベル X00020VHV9 / 1.1CT レモンクォーツ / シルバーリング / サイズ10 が一致。一方 FRONT は黒パッケージ商品で別商品。現写真では1商品に断定不能のため、リング側を provisional に留める。",
             "evidence": [
               "X00020VHV9",
               "1.1CT",
@@ -16128,7 +16155,10 @@ window.ZERO_COST_INTAKE = {
               "シルバーリング",
               "サイズ10"
             ],
-            "exact_match_guard_state": "clear"
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "別商品mix"
+            ]
           },
           "official": {},
           "commerce": {
@@ -16162,7 +16192,7 @@ window.ZERO_COST_INTAKE = {
           "display_name": "1.1CT レモンクォーツ シルバーリング サイズ10",
           "product_name": "1.1CT レモンクォーツ シルバーリング サイズ10",
           "verified_exact_match": false,
-          "official_image_state": "実物のみ / 現写真では1商品に断定不能",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
             "別商品mix"
@@ -16380,7 +16410,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:45:13 JST",
+            "更新時刻": "2026-04-21 16:55:30 JST",
             "メモ": "name=LE BLANC フェムケアPRO 低刺激 デリケートゾーン 150mL / publish_ok=確認待ち / draft_status=下書き / image_state=調査画像取得済み / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -16622,8 +16652,8 @@ window.ZERO_COST_INTAKE = {
             "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
             "barcode_primary": "X0011JB9IL",
             "product_code_type": "amazon_internal",
-            "official_image_state": "実物のみ",
-            "note": "BACK/CODEの2枚で DUCO ロゴ入りケースとラベル X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）が一致。FRONTの黒い収納袋は別商品で混線しているため、DUCO側を本命として provisional 登録する。",
+            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "note": "BACK/CODE の2枚で DUCO ロゴ入りケースとラベル X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）が一致。一方 FRONT は黒い収納袋で別商品。現写真では1商品に断定不能のため、DUCO 側を provisional に留める。",
             "evidence": [
               "X0011JB9IL",
               "DUCO",
@@ -16631,7 +16661,10 @@ window.ZERO_COST_INTAKE = {
               "#016",
               "ブラック・ブルー"
             ],
-            "exact_match_guard_state": "clear"
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "別商品mix"
+            ]
           },
           "official": {},
           "commerce": {
@@ -16665,7 +16698,7 @@ window.ZERO_COST_INTAKE = {
           "display_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
           "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
           "verified_exact_match": false,
-          "official_image_state": "実物のみ / 現写真では1商品に断定不能",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
             "別商品mix"
@@ -16774,8 +16807,8 @@ window.ZERO_COST_INTAKE = {
             "barcode_primary": "X0011JB9IL",
             "product_code_type": "amazon_internal",
             "verified_exact_match": false,
-            "official_image_state": "実物のみ",
-            "note": "FRONT OCR と Vision で X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）を確認。一方 BACK は X001845QRJ / 日傘超軽量、CODE も日傘側ノイズで混線しているため、confirmed から降格し、FRONT 側本命の provisional とする。",
+            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "note": "FRONT OCR と Vision で X0011JB9IL / DUCO サングラス レディース #016（ブラック・ブルー）を確認。一方 BACK は X001845QRJ / 日傘超軽量、CODE も日傘側ノイズで別商品。現写真では1商品に断定不能のため、DUCO 側を provisional に留める。",
             "evidence": [
               "X0011JB9IL",
               "DUCO",
@@ -16783,7 +16816,10 @@ window.ZERO_COST_INTAKE = {
               "#016",
               "ブラック・ブルー"
             ],
-            "exact_match_guard_state": "clear"
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "別商品mix"
+            ]
           },
           "official": {},
           "commerce": {
@@ -16817,7 +16853,7 @@ window.ZERO_COST_INTAKE = {
           "display_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
           "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
           "verified_exact_match": false,
-          "official_image_state": "実物のみ / 現写真では1商品に断定不能",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
             "別商品mix"
@@ -17035,7 +17071,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:45:13 JST",
+            "更新時刻": "2026-04-21 16:55:30 JST",
             "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -17246,8 +17282,8 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:45:13 JST",
-            "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=候補1枚確保 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+            "更新時刻": "2026-04-21 16:55:30 JST",
+            "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=候補1枚確保 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
         {
@@ -17453,7 +17489,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "管理番号再分解と再撮影",
             "ルーティング状態": "要再束ね",
-            "更新時刻": "2026-04-21 16:45:13 JST",
+            "更新時刻": "2026-04-21 16:55:30 JST",
             "メモ": "name=Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / qwen_hq=needs_split / 0028 は FRONT=黒/緑の冬小物系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式再束ねと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。"
           },
           "split_staging": {
@@ -18070,7 +18106,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:45:13 JST",
+            "更新時刻": "2026-04-21 16:55:30 JST",
             "メモ": "name=LEISURE WEAR ベージュ系レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -18332,7 +18368,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 16:45:13 JST",
+            "更新時刻": "2026-04-21 16:55:30 JST",
             "メモ": "name=ZUCCA CLUB リラックス リカバリー サンダル / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPTBkWndxGku2L9EVw4UP"
           }
         },
@@ -18533,7 +18569,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:45:13 JST",
+            "更新時刻": "2026-04-21 16:55:30 JST",
             "メモ": "name=jchinjia リュック メンズ ビジネスリュック 男女兼用 カジュアルバッグ おしゃれ トラベルバッグ / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -18627,8 +18663,8 @@ window.ZERO_COST_INTAKE = {
             "product_name": "RemeeHi 女教師コスプレ衣装 ホワイトレース系",
             "barcode_primary": "X001A00A95",
             "product_code_type": "amazon_internal",
-            "official_image_state": "実物のみ",
-            "note": "BACK/CODEの2枚で白レース衣装とラベル X001A00A95 / [RemeeHi] 女教師... ロウィン クリスマス 人気衣装 が一致。FRONTの黒リュックは別商品で混線しているため、RemeeHi衣装側を本命として provisional 登録する。",
+            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "note": "BACK/CODE の2枚で白レース衣装とラベル X001A00A95 / [RemeeHi] 女教師... ロウィン クリスマス 人気衣装 が一致。一方 FRONT は黒リュックで別商品。現写真では1商品に断定不能のため、RemeeHi 衣装側を provisional に留める。",
             "evidence": [
               "X001A00A95",
               "RemeeHi",
@@ -18636,7 +18672,10 @@ window.ZERO_COST_INTAKE = {
               "クリスマス",
               "ホワイトレース衣装"
             ],
-            "exact_match_guard_state": "clear"
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "別商品mix"
+            ]
           },
           "official": {},
           "commerce": {
@@ -18670,7 +18709,7 @@ window.ZERO_COST_INTAKE = {
           "display_name": "RemeeHi 女教師コスプレ衣装 ホワイトレース系",
           "product_name": "RemeeHi 女教師コスプレ衣装 ホワイトレース系",
           "verified_exact_match": false,
-          "official_image_state": "実物のみ / 現写真では1商品に断定不能",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
             "別商品mix"
@@ -18875,7 +18914,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:45:13 JST",
+            "更新時刻": "2026-04-21 16:55:30 JST",
             "メモ": "name=Letshe ベビー前開きロンパース ピンク 110cm / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only"
           }
         },
@@ -18968,8 +19007,8 @@ window.ZERO_COST_INTAKE = {
             "product_name": "SOUKE SPORTS Cycling shorts ブラック S",
             "barcode_primary": "X000W8HKOT",
             "product_code_type": "amazon_internal",
-            "official_image_state": "実物のみ",
-            "note": "BACK/CODEの2枚で SOUKE SPORTS のパッケージと Cycling shorts / Black / Equipment Size S が一致。FRONTのピンク系キッズ衣類は別商品で混線しているため、サイクリングショーツ側を本命として provisional 登録する。",
+            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "note": "BACK/CODE の2枚で SOUKE SPORTS パッケージと Cycling shorts / Black / Equipment Size S が一致。一方 FRONT はピンク系キッズ衣類で別商品。現写真では1商品に断定不能のため、サイクリングショーツ側を provisional に留める。",
             "evidence": [
               "X000W8HKOT",
               "SOUKE SPORTS",
@@ -18977,7 +19016,10 @@ window.ZERO_COST_INTAKE = {
               "Black",
               "Size S"
             ],
-            "exact_match_guard_state": "clear"
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "別商品mix"
+            ]
           },
           "official": {},
           "commerce": {
@@ -19011,7 +19053,7 @@ window.ZERO_COST_INTAKE = {
           "display_name": "SOUKE SPORTS Cycling shorts ブラック S",
           "product_name": "SOUKE SPORTS Cycling shorts ブラック S",
           "verified_exact_match": false,
-          "official_image_state": "実物のみ / 現写真では1商品に断定不能",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
             "別商品mix"
@@ -19379,7 +19421,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:45:13 JST",
+            "更新時刻": "2026-04-21 16:55:30 JST",
             "メモ": "name=裏起毛トップス オフホワイト L / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -20485,7 +20527,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:45:13 JST",
+            "更新時刻": "2026-04-21 16:55:30 JST",
             "メモ": "name=ロゴ刺繍ベースボールキャップ ブラック系 / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -20678,8 +20720,8 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:45:13 JST",
-            "メモ": "name=ホワイト レディーストップス M / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+            "更新時刻": "2026-04-21 16:55:30 JST",
+            "メモ": "name=ホワイト レディーストップス M / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
         {
@@ -20865,7 +20907,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:45:13 JST",
+            "更新時刻": "2026-04-21 16:55:30 JST",
             "メモ": "name=高視認性安全ベスト 蛍光イエロー / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -21102,14 +21144,17 @@ window.ZERO_COST_INTAKE = {
             "product_name": "花柄シュシュセット",
             "barcode_primary": "",
             "product_code_type": "actual_only",
-            "official_image_state": "実物のみ",
-            "note": "FRONT/BACKの2枚で花柄シュシュ束の実物が一致。CODEはグレー衣類の別ラベルで混線しており、シュシュ側ラベルも tote bag と誤記されているため採用しない。実物ベースでシュシュセットとして provisional 登録する。",
+            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "note": "FRONT/BACK の2枚で花柄シュシュ束の実物が一致。一方 CODE は X00147IEGF のグレー衣類ラベルで別商品。さらにシュシュ側ラベルも tote bag と誤記されているため採用しない。現写真では1商品に断定不能のため、シュシュ側を provisional に留める。",
             "evidence": [
               "花柄",
               "シュシュ",
               "セット"
             ],
-            "exact_match_guard_state": "clear"
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "別商品mix"
+            ]
           },
           "official": {},
           "commerce": {
@@ -21143,7 +21188,7 @@ window.ZERO_COST_INTAKE = {
           "display_name": "花柄シュシュセット",
           "product_name": "花柄シュシュセット",
           "verified_exact_match": false,
-          "official_image_state": "実物のみ / 現写真では1商品に断定不能",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
             "別商品mix"
@@ -21365,7 +21410,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:45:13 JST",
+            "更新時刻": "2026-04-21 16:55:30 JST",
             "メモ": "name=CRZ YOGA レギンス 股下24インチ ダークグレー系 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
@@ -21616,11 +21661,14 @@ window.ZERO_COST_INTAKE = {
               "白いギフト箱",
               "内容物不明"
             ],
-            "exact_match_guard_state": "clear",
+            "exact_match_guard_state": "review_required",
             "brand_override": "FirstC",
             "category_override": "その他 > 記念品・ギフト箱",
             "price_override": 980,
-            "check_items_override": "内容物確認 / 箱状態 / サイズ感 / ギフト箱として出すか判断"
+            "check_items_override": "内容物確認 / 箱状態 / サイズ感 / ギフト箱として出すか判断",
+            "exact_match_guard_reasons": [
+              "内容物未確認"
+            ]
           },
           "official": {},
           "commerce": {
@@ -22271,8 +22319,8 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:45:13 JST",
-            "メモ": "name=Poperdision ブラック 3XL レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+            "更新時刻": "2026-04-21 16:55:30 JST",
+            "メモ": "name=Poperdision ブラック 3XL レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
         {
@@ -22485,8 +22533,8 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-21 16:45:13 JST",
-            "メモ": "name=ATIDIMU 美容液 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
+            "更新時刻": "2026-04-21 16:55:30 JST",
+            "メモ": "name=ATIDIMU 美容液 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / exact-match保留 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact"
           }
         },
         {
@@ -22894,8 +22942,8 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-21 16:45:13 JST",
-            "メモ": "name=JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSNX6qATG7NwnssYkshh"
+            "更新時刻": "2026-04-21 16:55:30 JST",
+            "メモ": "name=JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / inventory_status=販売中 / listingId=2JPSNX6qATG7NwnssYkshh"
           }
         },
         {

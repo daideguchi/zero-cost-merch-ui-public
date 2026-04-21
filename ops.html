@@ -81,10 +81,10 @@
     <h1><span class="dot">●</span> 0円仕入れ物販事業</h1>
     <span class="hq-fresh">更新 2026-04-15</span>
     <nav class="hq-nav">
-      <a href="./">📊統合</a><a href="./intake_cards.html">📥写真</a>
-      <a href="./" class="active">📦商品</a><a href="./channel_listings.html">🏪出品</a>
-      <a href="./unified_shipping.html">🚚発送</a><a href="./unified_inquiry.html">💬問合せ</a>
-      <a href="./settings.html">⚙️設定</a>
+      <a href="./index.html">ホーム</a><a href="./intake_cards.html">④⑤ 写真・AI識別</a>
+      <a href="./ops.html" class="active">⑥ 出品準備</a><a href="./channel_listings.html">出品状況</a>
+      <a href="./shipping.html">⑧ 集荷</a><a href="./routing.html">販路</a>
+      <a href="./roles.html">役割</a>
     </nav>
   </header>
   <div class="hq-wrap">
@@ -803,31 +803,13 @@
     </div>
   </div>
   <div class="hq-footer"><span>スナップショット: 2026-04-15</span></div>
-  <script src="./api_config.js"></script>
-  <script>
-  (function(){
-    function normalizedBase(value) {
-      value = String(value || '').trim().replace(/\/$/, '');
-      if (!value || value === 'null') return '';
-      return value;
-    }
-    var appBase = normalizedBase(window.ZERO_COST_APP_BASE || window.ZERO_COST_API_BASE || '');
-    var current = normalizedBase(window.location.origin || '');
-    if (!appBase || !current || appBase === current) return;
-    var prefix = String(window.ZERO_COST_PUBLIC_PATH_PREFIX || '').trim();
-    var path = String(window.location.pathname || '/');
-    if (prefix && path.indexOf(prefix) === 0) path = path.slice(prefix.length);
-    if (!path) path = '/';
-    if (path.charAt(0) !== '/') path = '/' + path;
-    var target = new URL(path + window.location.search + window.location.hash, appBase);
-    if (target.toString() !== window.location.href) window.location.replace(target.toString());
-  })();
-  </script>
   <script>
     document.write('<script src="./intake_snapshot.js?fresh='
       + encodeURIComponent(new URLSearchParams(window.location.search).get('fresh') || String(Date.now()))
       + '"><\/script>');
   </script>
+  <script src="./api_config.js"></script>
+  <script src="./common.js"></script>
   <script>
   (function(){
     var snapshot = window.ZERO_COST_INTAKE || {};
