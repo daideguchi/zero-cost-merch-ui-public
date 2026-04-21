@@ -1,5 +1,5 @@
 window.ZERO_COST_MILESTONES = {
-  "generated_at": "2026-04-21 22:44:25 JST",
+  "generated_at": "2026-04-21 23:08:53 JST",
   "current_milestone_id": "m4_order_and_pickup_rail",
   "next_phase": "売れた後の発送と集荷レール",
   "milestones": [

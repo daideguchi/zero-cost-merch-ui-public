@@ -1,5 +1,5 @@
 window.ZERO_COST_STATUS = {
-  "generated_at": "2026-04-21 22:44:25 JST",
+  "generated_at": "2026-04-21 23:09:05 JST",
   "workbook_url": "https://docs.google.com/spreadsheets/d/1VjdUJavoijOkdjKtkdKy_zUcdkQqZwG0oRty57H5_lk/edit",
   "metrics": {
     "box_count": "1",
@@ -143,7 +143,7 @@ window.ZERO_COST_STATUS = {
         "proof_done_count": 3,
         "proof_total_count": 4,
         "proof_progress_label": "3/4 完了",
-        "next_step": "BASE準備可 33件 を前提に、注文画面 -> ヤマト集荷 -> 発送完了 の 1件通しを証跡化する",
+        "next_step": "BASE準備可 17件 を前提に、注文画面 -> ヤマト集荷 -> 発送完了 の 1件通しを証跡化する",
         "href": "./routing.html"
       },
       {
@@ -205,7 +205,7 @@ window.ZERO_COST_STATUS = {
         "proof_done_count": 2,
         "proof_total_count": 4,
         "proof_progress_label": "2/4 完了",
-        "next_step": "BASE準備可 33件 / Ship&co候補 33件 を前提に、注文取込 -> 送り状 -> 集荷予約 -> 発送済み反映 の 1件通しを記録する",
+        "next_step": "BASE準備可 17件 / Ship&co候補 17件 を前提に、注文取込 -> 送り状 -> 集荷予約 -> 発送済み反映 の 1件通しを記録する",
         "href": "./routing.html"
       },
       {
@@ -320,16 +320,16 @@ window.ZERO_COST_STATUS = {
   },
   "routing": {
     "total": "36",
-    "mercari_live": "9",
-    "mercari_pending": "25",
-    "base_ready": "33",
-    "shipco_candidate": "33",
-    "human_review_needed": "26",
-    "image_review_waiting": "2",
-    "publish_gate_waiting": "23",
+    "mercari_live": "1",
+    "mercari_pending": "15",
+    "base_ready": "17",
+    "shipco_candidate": "17",
+    "human_review_needed": "33",
+    "image_review_waiting": "1",
+    "publish_gate_waiting": "15",
     "master_waiting": "0",
     "draft_waiting": "0",
-    "base_hold": "4"
+    "base_hold": "19"
   },
   "shipping_guard": {
     "status": "ok",
@@ -494,7 +494,7 @@ window.ZERO_COST_STATUS = {
       {
         "tone": "blue",
         "label": "いま優先するルート",
-        "note": "BASE標準 かんたん発送 / 公式プリンタレス候補 / BASE準備可 33件 を前提に、注文画面 -> ヤマト集荷 -> 発送完了 の 1件通しを証跡化する",
+        "note": "BASE標準 かんたん発送 / 公式プリンタレス候補 / BASE準備可 17件 を前提に、注文画面 -> ヤマト集荷 -> 発送完了 の 1件通しを証跡化する",
         "href": "./routing.html"
       }
     ],
@@ -520,7 +520,7 @@ window.ZERO_COST_STATUS = {
       {
         "tone": "blue",
         "label": "多販路下地",
-        "note": "BASE準備可 33件 / Ship&co候補 33件",
+        "note": "BASE準備可 17件 / Ship&co候補 17件",
         "href": "./routing.html"
       }
     ],
@@ -584,7 +584,7 @@ window.ZERO_COST_STATUS = {
       "proof_done_count": 3,
       "proof_total_count": 4,
       "proof_progress_label": "3/4 完了",
-      "next_step": "BASE準備可 33件 を前提に、注文画面 -> ヤマト集荷 -> 発送完了 の 1件通しを証跡化する",
+      "next_step": "BASE準備可 17件 を前提に、注文画面 -> ヤマト集荷 -> 発送完了 の 1件通しを証跡化する",
       "href": "./routing.html"
     },
     "route_options_title": "選べる発送ルート",
@@ -695,9 +695,16 @@ window.ZERO_COST_STATUS = {
       },
       {
         "severity": "orange",
-        "key": "26件",
+        "key": "33件",
         "title": "販路ルーティングで人確認が必要です",
-        "note": "公開可否 23件 / 画像確認 2件",
+        "note": "公開可否 15件 / 画像確認 1件",
+        "href": "./routing.html"
+      },
+      {
+        "severity": "orange",
+        "key": "8件差",
+        "title": "メルカリ公開件数の見え方に差があります",
+        "note": "routing と channel config の counts を揃える必要があります。",
         "href": "./routing.html"
       }
     ]
@@ -705,18 +712,18 @@ window.ZERO_COST_STATUS = {
   "next_actions": [
     "live受注待ち: 注文1件 = 1回の購入で注文番号が1件発生すること。来たら受注画面 -> 集荷 -> 発送完了まで証跡化する",
     "今すぐ進める: 箱を進める BOX-001",
-    "今すぐ進める: 商品特定キュー: barcode_ready=0 / ocr_ready=0 / missing=0 / exception=2 / split_required=21",
+    "今すぐ進める: 商品特定キュー: barcode_ready=0 / ocr_ready=0 / missing=0 / exception=2 / 写真セット組み直し必要=21",
     "反映待ち: カテゴリ審査反映待ち: applicationId=2zpKKFVRC4aUXzG6o",
     "要確認: 例外許容 BOX-001-ITEM-0058(CODE写真不足は今回の運用では例外許容とする), BOX-001-ITEM-0006(FRONT/BACK/CODE は同一の長方形ギフト箱だが、箱の中身と正式商品名を実物写真から特定できないため、誤出品防止で例外保留とする)",
     "今すぐ進める: 写真セット組み直し BOX-001-ITEM-0025, BOX-001-ITEM-0029, BOX-001-ITEM-0040, BOX-001-ITEM-0034, BOX-001-ITEM-0023 ほか16件",
-    "今すぐ進める: 再分解計画 BOX-001-ITEM-0028 BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 は FRONT=car hook NO-FE040、BACK/CODE=SPEEDWOX X00162U47P の別split。0053 BACK/CODE は Hello Kitty 側。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認したが、新管理番号はまだ切らず staged のまま維持。0052 FRONT の青橙箱は別物。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
+    "今すぐ進める: 写真セット組み直し計画 BOX-001-ITEM-0028 BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 FRONT は car hook NO-FE040、0029 BACK/CODE は SPEEDWOX X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は同一白箱を視認確認済み。0052 FRONT の青橙箱は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。",
     "今すぐ進める: 商品特定待ち BOX-001-ITEM-0001, BOX-001-ITEM-0013, BOX-001-ITEM-0026",
     "今すぐ進める: 出品下書き待ち WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り, WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り, MMC FACE LOTION 240ml",
     "反映待ち: カテゴリ審査待ち WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り",
     "設定要: Ship&co carrier / 日本郵便 / ヤマトB2 / 佐川の必要情報をそろえて Ship&co へ登録する。",
     "設定要: ヤマト開発API / 返信確認の正規 route は Chrome Profile 12 です。/Users/dd/000_AI組織/ops/ヤマトAPI返信を確認する.command を再実行すれば、degutidai@gmail.com で 365日以内の4 query を再確認できます。現時点では relevant reply は見えていないため、Mercari Shops post-sale pickup rail を継続します。",
     "要確認: 販路ルーティング BOX-001-ITEM-0002, BOX-001-ITEM-0003, BOX-001-ITEM-0007",
-    "要確認: 画像同一性確認待ち 2件",
-    "要確認: 公開可否確認待ち 23件"
+    "要確認: 画像同一性確認待ち 1件",
+    "要確認: 公開可否確認待ち 15件"
   ]
 };

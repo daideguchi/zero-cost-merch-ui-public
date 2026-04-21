@@ -376,7 +376,7 @@ window.ZERO_COST_INTAKE = {
         "product_name": "保冷クーラーバッグ ネイビー ショルダー付",
         "barcode_primary": "X001B4RKGV",
         "product_code_type": "amazon_internal",
-        "official_image_state": "比較画像候補あり / 現写真では1商品に断定不能",
+        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
         "note": "実物写真ではネイビー系ソフトクーラーバッグ本体、ショルダーストラップ、コードラベル X001B4RKGV、保冷バック / クーラーバッグ の表記まで確認できる。ブランド断定はせず、actual-only 前提で provisional に上げる。比較画像検索も実施したが、100% 同一と断定できる公開画像は確保できなかったため、actual-only 固定で進める。 / X001B4RKGV / 保冷バッグ / クーラーバッグ / ネイビー / ショルダーストラップ は実物で確認できる。比較画像は安全に断定できないため採用しない。",
         "evidence": [
           "X001B4RKGV",
@@ -411,7 +411,7 @@ window.ZERO_COST_INTAKE = {
         "official_image_url": "",
         "image_source": "actual-only",
         "verified_exact_match": false,
-        "official_image_state": "比較画像候補あり / 現写真では1商品に断定不能",
+        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
         "note": "ネイビーの保冷クーラーバッグ本体、ショルダーストラップ、コードラベル X001B4RKGV までは実物で確認できる。公開画像の再調査を続けても同一性を安全に断定できる候補は得られなかったため、2026-04-21 current truth は actual-only 固定。比較画像なしで進める。",
         "qwen_last_task_name": "比較画像照合担当",
         "qwen_last_review_at": "2026-04-12 06:39:16 JST",
@@ -476,7 +476,7 @@ window.ZERO_COST_INTAKE = {
       "display_name": "保冷クーラーバッグ ネイビー ショルダー付",
       "product_name": "保冷クーラーバッグ ネイビー ショルダー付",
       "verified_exact_match": false,
-      "official_image_state": "比較画像候補あり / 現写真では1商品に断定不能",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
         "色違い",
@@ -5929,7 +5929,7 @@ window.ZERO_COST_INTAKE = {
       "display_name": "写真セット組み直し候補: Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red",
       "product_name": "写真セット組み直し候補: Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red",
       "verified_exact_match": false,
-      "official_image_state": "管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 管理番号再分解待ち",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
         "別商品mix",
@@ -5972,11 +5972,11 @@ window.ZERO_COST_INTAKE = {
       "split_staging": {
         "management_id": "BOX-001-ITEM-0028",
         "stage_status": "partial_manifest_child_minted",
-        "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/緑の冬小物系として未一致保留。0028 CODE は car hook mobile phone holder NO-FE035 箱で、BACK の X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT は car hook mobile phone holder NO-FE040 だが、0029 BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側の staged child。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として live 視認一致まで確認したが、shared sheet / manifest の写真セット組み直し前なので新管理番号はまだ切らず、0052 FRONT の青橙箱は別物として残す。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
-        "ui_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
-        "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 は FRONT=car hook NO-FE040、BACK/CODE=SPEEDWOX X00162U47P の別split。0053 BACK/CODE は Hello Kitty 側。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認したが、新管理番号はまだ切らず staged のまま維持。0052 FRONT の青橙箱は別物。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
-        "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の冬小物系。0029 は別split維持。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認済みで、0052 FRONT は別物。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
-        "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0029は別split維持 / 0053-0052白箱は視認一致済みのため shared sheet・manifest で正式な写真セット組み直し / 0059 は workbook / routing の stopline を決めてから正式反映 / BOX-001-ITEM-0060 は workbook / routing の stopline を決めてから正式反映",
+        "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/緑の冬小物系として未一致保留。0028 CODE は car hook mobile phone holder NO-FE035 箱で、BACK の X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT は car hook mobile phone holder NO-FE040 だが、0029 BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側の仮置き写真セット。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として視認一致済み。0052 FRONT の青橙箱は別物として残す。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 をローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 のローカル写真セットを作成済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "ui_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029 FRONTは car hook 側として別扱い / 0053 FRONT⇄0052 BACK/CODEは同一白箱を視認確認 / 0052 FRONT別物 / 0059白箱はローカル写真セット作成・特定結果反映済み / 0060 SPEEDWOXはローカル写真セット作成・特定結果反映済み",
+        "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 FRONT は car hook NO-FE040、0029 BACK/CODE は SPEEDWOX X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は同一白箱を視認確認済み。0052 FRONT の青橙箱は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。",
+        "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の冬小物系。0029 FRONT は car hook 側として別扱い。0053 FRONT と 0052 BACK/CODE は同一白箱として視認確認済みで、0052 FRONT は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。",
+        "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0029 FRONTは car hook 側として別扱い / 0059白箱は管理表・出品判断の止めどころ確認待ち / 0060SPEEDWOXは管理表・出品判断の止めどころ確認待ち",
         "retain_existing_id": {
           "management_id": "BOX-001-ITEM-0028",
           "product_id": "PRD-BOX-001-028",
@@ -6059,7 +6059,7 @@ window.ZERO_COST_INTAKE = {
             "status": "missing_match",
             "blockers": [
               "一致する BACK/CODE の相方スロットがまだ見つかっていない",
-              "shared sheet / manifest で 1枚孤立スロットを安全に切り出す canonical path が未整備"
+              "1枚だけ孤立している写真は、相方写真が見つかるまで新管理番号を切らない"
             ]
           },
           {
@@ -6071,7 +6071,7 @@ window.ZERO_COST_INTAKE = {
             ],
             "status": "new_management_id_not_minted",
             "blockers": [
-              "shared sheet / manifest で 2枚由来の child を正式採番する canonical path が未整備",
+              "2枚だけの仮置き写真セットは、FRONT相当写真の扱いが決まるまで正式採番しない",
               "Hello Kitty 側は正規品出所確認と、安全な FRONT 相当写真の扱い整理が未完了"
             ]
           },
@@ -6085,16 +6085,16 @@ window.ZERO_COST_INTAKE = {
             ],
             "status": "manifest_child_minted_local_only",
             "blockers": [
-              "confirmed / official は provisional actual-only で反映済み。shared sheet / workbook / routing 反映は別フェーズ。",
+              "ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。",
               "0052 FRONT は青橙の別箱で、白箱側として扱えるのは 0052 BACK/CODE のみ"
             ],
             "minted_management_id": "BOX-001-ITEM-0059",
             "minted_at": "2026-04-21 20:32:46 JST",
             "minted_scope": "local_manifest_only",
-            "minted_note": "photo manifest child は mint 済み。workbook / confirmed / official への反映は別フェーズで行う。",
+            "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
             "truth_promotion_scope": "local_confirmed_official_only",
             "truth_promoted_management_id": "BOX-001-ITEM-0059",
-            "truth_promotion_note": "confirmed / official へ provisional actual-only / 内容物未確認で反映済み。 workbook / routing は別フェーズで行う。",
+            "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み。管理表 / 出品判断は別フェーズで行う。",
             "truth_promoted_at": "2026-04-21 21:20:12 JST"
           },
           {
@@ -6107,9 +6107,9 @@ window.ZERO_COST_INTAKE = {
             ],
             "status": "manifest_child_minted_local_only",
             "blockers": [
-              "confirmed / official は provisional actual-only で反映済み。shared sheet / workbook / routing 反映は別フェーズ。",
+              "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。",
               "0030 FRONT と 0029 BACK/CODE は同一の SPEEDWOX ワイヤーストリッパーパッケージとして実画像確認済み",
-              "workbook / routing 反映は local truth 昇格後に別フェーズで判断"
+              "管理表 / 出品判断への反映は別フェーズで判断"
             ],
             "truth_product_name": "SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556",
             "truth_barcode_primary": "X00162U47P",
@@ -6129,24 +6129,24 @@ window.ZERO_COST_INTAKE = {
             "minted_management_id": "BOX-001-ITEM-0060",
             "minted_at": "2026-04-21 22:38:39 JST",
             "minted_scope": "local_manifest_only",
-            "minted_note": "photo manifest child は mint 済み。workbook / confirmed / official への反映は別フェーズで行う。",
+            "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
             "truth_promotion_scope": "local_confirmed_official_only",
             "truth_promoted_management_id": "BOX-001-ITEM-0060",
-            "truth_promotion_note": "confirmed / official へ provisional actual-only / 内容物未確認で反映済み。 workbook / routing は別フェーズで行う。",
+            "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
             "truth_promoted_at": "2026-04-21 22:44:17 JST"
           }
         ],
         "remaining_blockers": [
-          "shared sheet と photo manifest を壊さずに新管理番号を発番する canonical script が未整備",
+          "ローカル写真セット作成スクリプトは整備済み。残りは対象ごとの採番可否判断",
           "0028 FRONT の相方スロットと正式名が未確定",
           "0029 FRONT は car hook mobile phone holder NO-FE040 だが、BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0028 Zukida 側へ安全に寄せる根拠はまだない",
           "Hello Kitty 側はサンリオ正規品の出所確認が未完了",
-          "白箱 X00197BVHJ 側の local child BOX-001-ITEM-0059 は confirmed / official まで反映済み。 shared sheet / workbook / routing は別フェーズ。"
+          "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
         ],
-        "safe_next_step": "local state では 0028=Zukida anchor を維持し、0028 FRONT は未一致保留、0029 は別splitのまま維持する。0053 BACK/CODE は Hello Kitty 側候補、0053 FRONT と 0052 BACK/CODE は同一白箱として shared sheet / manifest 側で正式な写真セット組み直ししてから新 management_id を切る / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
+        "safe_next_step": "ローカル状態では 0028=Zukida anchor を維持し、0028 FRONT は未一致保留、0029 FRONT は car hook 側として別扱いにする。0053 BACK/CODE は Hello Kitty 側候補。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。次は管理表 / 出品判断へ進めるかを対象ごとに確認する。",
         "match_role": "primary"
       },
-      "split_plan_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
+      "split_plan_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029 FRONTは car hook 側として別扱い / 0053 FRONT⇄0052 BACK/CODEは同一白箱を視認確認 / 0052 FRONT別物 / 0059白箱はローカル写真セット作成・特定結果反映済み / 0060 SPEEDWOXはローカル写真セット作成・特定結果反映済み",
       "split_plan_role": "primary"
     },
     {
@@ -6228,7 +6228,7 @@ window.ZERO_COST_INTAKE = {
         "product_name": "写真セット組み直し候補: Car hook mobile phone holder NO-FE040",
         "barcode_primary": "",
         "product_code_type": "package_text",
-        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能",
+        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
         "note": "FRONT に Car hook mobile phone holder / NO-FE040 / Car Hook Series 合格証を確認。一方 BACK は SPEEDWOX ワイヤーストリッパー X00162U47P ラベル付きの NETWORK TOOL パッケージ、CODE も同じワイヤーストリッパー実物で別商品。現写真では1商品に断定不能で、car hook 側は FRONT しか揃わないため provisional に留める。",
         "evidence": [
           "Car hook",
@@ -6275,7 +6275,7 @@ window.ZERO_COST_INTAKE = {
       "display_name": "写真セット組み直し候補: Car hook mobile phone holder NO-FE040",
       "product_name": "写真セット組み直し候補: Car hook mobile phone holder NO-FE040",
       "verified_exact_match": false,
-      "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能",
+      "official_image_state": "現写真では1商品に断定不能 / 管理番号再分解待ち",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
         "別商品mix",
@@ -6381,7 +6381,7 @@ window.ZERO_COST_INTAKE = {
         "product_name": "写真セット組み直し候補: SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556",
         "barcode_primary": "X00162U47P",
         "product_code_type": "amazon_internal",
-        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能",
+        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
         "note": "FRONT で 2IN1 WIRE STRIPPER & CUTTER / ACS-1556 / X00162U47P を確認。一方 BACK/CODE は婦人服ラベル X001AQYKV3 / M36026 の別商品。現写真では wire stripper 側は FRONT しか coherent でないため provisional に留める。",
         "evidence": [
           "X00162U47P",
@@ -6428,7 +6428,7 @@ window.ZERO_COST_INTAKE = {
       "display_name": "写真セット組み直し候補: SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556",
       "product_name": "写真セット組み直し候補: SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556",
       "verified_exact_match": false,
-      "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 管理番号再分解待ち",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
         "別商品mix",
@@ -10225,7 +10225,7 @@ window.ZERO_COST_INTAKE = {
         "product_name": "写真セット組み直し必要（青橙汎用箱 / 白箱 X00197BVHJ 混在）",
         "barcode_primary": "",
         "product_code_type": "amazon_internal",
-        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 内容物未確認",
+        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番 / 内容物未確認",
         "note": "0052 FRONT は青橙の汎用箱。0052 BACK/CODE は 0053 FRONT と同一の白箱 X00197BVHJ 候補 child で、現 management_id では単一商品に確定できない。FirstC 白箱を 0052 全体の truth に固定せず、写真セット組み直し必要の provisional とする。",
         "evidence": [
           "FRONT=青橙の汎用箱",
@@ -10276,7 +10276,7 @@ window.ZERO_COST_INTAKE = {
       "display_name": "写真セット組み直し必要（青橙汎用箱 / 白箱 X00197BVHJ 混在）",
       "product_name": "写真セット組み直し必要（青橙汎用箱 / 白箱 X00197BVHJ 混在）",
       "verified_exact_match": false,
-      "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 内容物未確認",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 管理番号再分解待ち",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
         "別商品mix",
@@ -10300,11 +10300,11 @@ window.ZERO_COST_INTAKE = {
       "split_staging": {
         "management_id": "BOX-001-ITEM-0028",
         "stage_status": "partial_manifest_child_minted",
-        "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/緑の冬小物系として未一致保留。0028 CODE は car hook mobile phone holder NO-FE035 箱で、BACK の X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT は car hook mobile phone holder NO-FE040 だが、0029 BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側の staged child。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として live 視認一致まで確認したが、shared sheet / manifest の写真セット組み直し前なので新管理番号はまだ切らず、0052 FRONT の青橙箱は別物として残す。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
-        "ui_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
-        "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 は FRONT=car hook NO-FE040、BACK/CODE=SPEEDWOX X00162U47P の別split。0053 BACK/CODE は Hello Kitty 側。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認したが、新管理番号はまだ切らず staged のまま維持。0052 FRONT の青橙箱は別物。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
-        "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の冬小物系。0029 は別split維持。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認済みで、0052 FRONT は別物。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
-        "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0029は別split維持 / 0053-0052白箱は視認一致済みのため shared sheet・manifest で正式な写真セット組み直し / 0059 は workbook / routing の stopline を決めてから正式反映 / BOX-001-ITEM-0060 は workbook / routing の stopline を決めてから正式反映",
+        "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/緑の冬小物系として未一致保留。0028 CODE は car hook mobile phone holder NO-FE035 箱で、BACK の X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT は car hook mobile phone holder NO-FE040 だが、0029 BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側の仮置き写真セット。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として視認一致済み。0052 FRONT の青橙箱は別物として残す。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 をローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 のローカル写真セットを作成済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "ui_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029 FRONTは car hook 側として別扱い / 0053 FRONT⇄0052 BACK/CODEは同一白箱を視認確認 / 0052 FRONT別物 / 0059白箱はローカル写真セット作成・特定結果反映済み / 0060 SPEEDWOXはローカル写真セット作成・特定結果反映済み",
+        "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 FRONT は car hook NO-FE040、0029 BACK/CODE は SPEEDWOX X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は同一白箱を視認確認済み。0052 FRONT の青橙箱は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。",
+        "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の冬小物系。0029 FRONT は car hook 側として別扱い。0053 FRONT と 0052 BACK/CODE は同一白箱として視認確認済みで、0052 FRONT は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。",
+        "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0029 FRONTは car hook 側として別扱い / 0059白箱は管理表・出品判断の止めどころ確認待ち / 0060SPEEDWOXは管理表・出品判断の止めどころ確認待ち",
         "retain_existing_id": {
           "management_id": "BOX-001-ITEM-0028",
           "product_id": "PRD-BOX-001-028",
@@ -10387,7 +10387,7 @@ window.ZERO_COST_INTAKE = {
             "status": "missing_match",
             "blockers": [
               "一致する BACK/CODE の相方スロットがまだ見つかっていない",
-              "shared sheet / manifest で 1枚孤立スロットを安全に切り出す canonical path が未整備"
+              "1枚だけ孤立している写真は、相方写真が見つかるまで新管理番号を切らない"
             ]
           },
           {
@@ -10399,7 +10399,7 @@ window.ZERO_COST_INTAKE = {
             ],
             "status": "new_management_id_not_minted",
             "blockers": [
-              "shared sheet / manifest で 2枚由来の child を正式採番する canonical path が未整備",
+              "2枚だけの仮置き写真セットは、FRONT相当写真の扱いが決まるまで正式採番しない",
               "Hello Kitty 側は正規品出所確認と、安全な FRONT 相当写真の扱い整理が未完了"
             ]
           },
@@ -10413,16 +10413,16 @@ window.ZERO_COST_INTAKE = {
             ],
             "status": "manifest_child_minted_local_only",
             "blockers": [
-              "confirmed / official は provisional actual-only で反映済み。shared sheet / workbook / routing 反映は別フェーズ。",
+              "ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。",
               "0052 FRONT は青橙の別箱で、白箱側として扱えるのは 0052 BACK/CODE のみ"
             ],
             "minted_management_id": "BOX-001-ITEM-0059",
             "minted_at": "2026-04-21 20:32:46 JST",
             "minted_scope": "local_manifest_only",
-            "minted_note": "photo manifest child は mint 済み。workbook / confirmed / official への反映は別フェーズで行う。",
+            "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
             "truth_promotion_scope": "local_confirmed_official_only",
             "truth_promoted_management_id": "BOX-001-ITEM-0059",
-            "truth_promotion_note": "confirmed / official へ provisional actual-only / 内容物未確認で反映済み。 workbook / routing は別フェーズで行う。",
+            "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み。管理表 / 出品判断は別フェーズで行う。",
             "truth_promoted_at": "2026-04-21 21:20:12 JST"
           },
           {
@@ -10435,9 +10435,9 @@ window.ZERO_COST_INTAKE = {
             ],
             "status": "manifest_child_minted_local_only",
             "blockers": [
-              "confirmed / official は provisional actual-only で反映済み。shared sheet / workbook / routing 反映は別フェーズ。",
+              "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。",
               "0030 FRONT と 0029 BACK/CODE は同一の SPEEDWOX ワイヤーストリッパーパッケージとして実画像確認済み",
-              "workbook / routing 反映は local truth 昇格後に別フェーズで判断"
+              "管理表 / 出品判断への反映は別フェーズで判断"
             ],
             "truth_product_name": "SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556",
             "truth_barcode_primary": "X00162U47P",
@@ -10457,24 +10457,24 @@ window.ZERO_COST_INTAKE = {
             "minted_management_id": "BOX-001-ITEM-0060",
             "minted_at": "2026-04-21 22:38:39 JST",
             "minted_scope": "local_manifest_only",
-            "minted_note": "photo manifest child は mint 済み。workbook / confirmed / official への反映は別フェーズで行う。",
+            "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
             "truth_promotion_scope": "local_confirmed_official_only",
             "truth_promoted_management_id": "BOX-001-ITEM-0060",
-            "truth_promotion_note": "confirmed / official へ provisional actual-only / 内容物未確認で反映済み。 workbook / routing は別フェーズで行う。",
+            "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
             "truth_promoted_at": "2026-04-21 22:44:17 JST"
           }
         ],
         "remaining_blockers": [
-          "shared sheet と photo manifest を壊さずに新管理番号を発番する canonical script が未整備",
+          "ローカル写真セット作成スクリプトは整備済み。残りは対象ごとの採番可否判断",
           "0028 FRONT の相方スロットと正式名が未確定",
           "0029 FRONT は car hook mobile phone holder NO-FE040 だが、BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0028 Zukida 側へ安全に寄せる根拠はまだない",
           "Hello Kitty 側はサンリオ正規品の出所確認が未完了",
-          "白箱 X00197BVHJ 側の local child BOX-001-ITEM-0059 は confirmed / official まで反映済み。 shared sheet / workbook / routing は別フェーズ。"
+          "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
         ],
-        "safe_next_step": "local state では 0028=Zukida anchor を維持し、0028 FRONT は未一致保留、0029 は別splitのまま維持する。0053 BACK/CODE は Hello Kitty 側候補、0053 FRONT と 0052 BACK/CODE は同一白箱として shared sheet / manifest 側で正式な写真セット組み直ししてから新 management_id を切る / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
+        "safe_next_step": "ローカル状態では 0028=Zukida anchor を維持し、0028 FRONT は未一致保留、0029 FRONT は car hook 側として別扱いにする。0053 BACK/CODE は Hello Kitty 側候補。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。次は管理表 / 出品判断へ進めるかを対象ごとに確認する。",
         "match_role": "related"
       },
-      "split_plan_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
+      "split_plan_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029 FRONTは car hook 側として別扱い / 0053 FRONT⇄0052 BACK/CODEは同一白箱を視認確認 / 0052 FRONT別物 / 0059白箱はローカル写真セット作成・特定結果反映済み / 0060 SPEEDWOXはローカル写真セット作成・特定結果反映済み",
       "split_plan_role": "related"
     },
     {
@@ -10611,7 +10611,7 @@ window.ZERO_COST_INTAKE = {
       "display_name": "写真セット組み直し必要（白箱 X00197BVHJ / Hello Kitty 50TH ANNIVERSARY 系 混在）",
       "product_name": "写真セット組み直し必要（白箱 X00197BVHJ / Hello Kitty 50TH ANNIVERSARY 系 混在）",
       "verified_exact_match": false,
-      "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番 / 正規性確認待ち",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 管理番号再分解待ち",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
         "別商品mix",
@@ -10634,11 +10634,11 @@ window.ZERO_COST_INTAKE = {
       "split_staging": {
         "management_id": "BOX-001-ITEM-0028",
         "stage_status": "partial_manifest_child_minted",
-        "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/緑の冬小物系として未一致保留。0028 CODE は car hook mobile phone holder NO-FE035 箱で、BACK の X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT は car hook mobile phone holder NO-FE040 だが、0029 BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側の staged child。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として live 視認一致まで確認したが、shared sheet / manifest の写真セット組み直し前なので新管理番号はまだ切らず、0052 FRONT の青橙箱は別物として残す。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
-        "ui_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
-        "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 は FRONT=car hook NO-FE040、BACK/CODE=SPEEDWOX X00162U47P の別split。0053 BACK/CODE は Hello Kitty 側。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認したが、新管理番号はまだ切らず staged のまま維持。0052 FRONT の青橙箱は別物。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
-        "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の冬小物系。0029 は別split維持。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認済みで、0052 FRONT は別物。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
-        "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0029は別split維持 / 0053-0052白箱は視認一致済みのため shared sheet・manifest で正式な写真セット組み直し / 0059 は workbook / routing の stopline を決めてから正式反映 / BOX-001-ITEM-0060 は workbook / routing の stopline を決めてから正式反映",
+        "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/緑の冬小物系として未一致保留。0028 CODE は car hook mobile phone holder NO-FE035 箱で、BACK の X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT は car hook mobile phone holder NO-FE040 だが、0029 BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側の仮置き写真セット。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として視認一致済み。0052 FRONT の青橙箱は別物として残す。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 をローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 のローカル写真セットを作成済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "ui_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029 FRONTは car hook 側として別扱い / 0053 FRONT⇄0052 BACK/CODEは同一白箱を視認確認 / 0052 FRONT別物 / 0059白箱はローカル写真セット作成・特定結果反映済み / 0060 SPEEDWOXはローカル写真セット作成・特定結果反映済み",
+        "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 FRONT は car hook NO-FE040、0029 BACK/CODE は SPEEDWOX X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は同一白箱を視認確認済み。0052 FRONT の青橙箱は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。",
+        "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の冬小物系。0029 FRONT は car hook 側として別扱い。0053 FRONT と 0052 BACK/CODE は同一白箱として視認確認済みで、0052 FRONT は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。",
+        "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0029 FRONTは car hook 側として別扱い / 0059白箱は管理表・出品判断の止めどころ確認待ち / 0060SPEEDWOXは管理表・出品判断の止めどころ確認待ち",
         "retain_existing_id": {
           "management_id": "BOX-001-ITEM-0028",
           "product_id": "PRD-BOX-001-028",
@@ -10721,7 +10721,7 @@ window.ZERO_COST_INTAKE = {
             "status": "missing_match",
             "blockers": [
               "一致する BACK/CODE の相方スロットがまだ見つかっていない",
-              "shared sheet / manifest で 1枚孤立スロットを安全に切り出す canonical path が未整備"
+              "1枚だけ孤立している写真は、相方写真が見つかるまで新管理番号を切らない"
             ]
           },
           {
@@ -10733,7 +10733,7 @@ window.ZERO_COST_INTAKE = {
             ],
             "status": "new_management_id_not_minted",
             "blockers": [
-              "shared sheet / manifest で 2枚由来の child を正式採番する canonical path が未整備",
+              "2枚だけの仮置き写真セットは、FRONT相当写真の扱いが決まるまで正式採番しない",
               "Hello Kitty 側は正規品出所確認と、安全な FRONT 相当写真の扱い整理が未完了"
             ]
           },
@@ -10747,16 +10747,16 @@ window.ZERO_COST_INTAKE = {
             ],
             "status": "manifest_child_minted_local_only",
             "blockers": [
-              "confirmed / official は provisional actual-only で反映済み。shared sheet / workbook / routing 反映は別フェーズ。",
+              "ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。",
               "0052 FRONT は青橙の別箱で、白箱側として扱えるのは 0052 BACK/CODE のみ"
             ],
             "minted_management_id": "BOX-001-ITEM-0059",
             "minted_at": "2026-04-21 20:32:46 JST",
             "minted_scope": "local_manifest_only",
-            "minted_note": "photo manifest child は mint 済み。workbook / confirmed / official への反映は別フェーズで行う。",
+            "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
             "truth_promotion_scope": "local_confirmed_official_only",
             "truth_promoted_management_id": "BOX-001-ITEM-0059",
-            "truth_promotion_note": "confirmed / official へ provisional actual-only / 内容物未確認で反映済み。 workbook / routing は別フェーズで行う。",
+            "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み。管理表 / 出品判断は別フェーズで行う。",
             "truth_promoted_at": "2026-04-21 21:20:12 JST"
           },
           {
@@ -10769,9 +10769,9 @@ window.ZERO_COST_INTAKE = {
             ],
             "status": "manifest_child_minted_local_only",
             "blockers": [
-              "confirmed / official は provisional actual-only で反映済み。shared sheet / workbook / routing 反映は別フェーズ。",
+              "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。",
               "0030 FRONT と 0029 BACK/CODE は同一の SPEEDWOX ワイヤーストリッパーパッケージとして実画像確認済み",
-              "workbook / routing 反映は local truth 昇格後に別フェーズで判断"
+              "管理表 / 出品判断への反映は別フェーズで判断"
             ],
             "truth_product_name": "SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556",
             "truth_barcode_primary": "X00162U47P",
@@ -10791,24 +10791,24 @@ window.ZERO_COST_INTAKE = {
             "minted_management_id": "BOX-001-ITEM-0060",
             "minted_at": "2026-04-21 22:38:39 JST",
             "minted_scope": "local_manifest_only",
-            "minted_note": "photo manifest child は mint 済み。workbook / confirmed / official への反映は別フェーズで行う。",
+            "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
             "truth_promotion_scope": "local_confirmed_official_only",
             "truth_promoted_management_id": "BOX-001-ITEM-0060",
-            "truth_promotion_note": "confirmed / official へ provisional actual-only / 内容物未確認で反映済み。 workbook / routing は別フェーズで行う。",
+            "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
             "truth_promoted_at": "2026-04-21 22:44:17 JST"
           }
         ],
         "remaining_blockers": [
-          "shared sheet と photo manifest を壊さずに新管理番号を発番する canonical script が未整備",
+          "ローカル写真セット作成スクリプトは整備済み。残りは対象ごとの採番可否判断",
           "0028 FRONT の相方スロットと正式名が未確定",
           "0029 FRONT は car hook mobile phone holder NO-FE040 だが、BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0028 Zukida 側へ安全に寄せる根拠はまだない",
           "Hello Kitty 側はサンリオ正規品の出所確認が未完了",
-          "白箱 X00197BVHJ 側の local child BOX-001-ITEM-0059 は confirmed / official まで反映済み。 shared sheet / workbook / routing は別フェーズ。"
+          "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
         ],
-        "safe_next_step": "local state では 0028=Zukida anchor を維持し、0028 FRONT は未一致保留、0029 は別splitのまま維持する。0053 BACK/CODE は Hello Kitty 側候補、0053 FRONT と 0052 BACK/CODE は同一白箱として shared sheet / manifest 側で正式な写真セット組み直ししてから新 management_id を切る / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
+        "safe_next_step": "ローカル状態では 0028=Zukida anchor を維持し、0028 FRONT は未一致保留、0029 FRONT は car hook 側として別扱いにする。0053 BACK/CODE は Hello Kitty 側候補。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。次は管理表 / 出品判断へ進めるかを対象ごとに確認する。",
         "match_role": "related"
       },
-      "split_plan_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
+      "split_plan_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029 FRONTは car hook 側として別扱い / 0053 FRONT⇄0052 BACK/CODEは同一白箱を視認確認 / 0052 FRONT別物 / 0059白箱はローカル写真セット作成・特定結果反映済み / 0060 SPEEDWOXはローカル写真セット作成・特定結果反映済み",
       "split_plan_role": "related"
     },
     {
@@ -12561,7 +12561,7 @@ window.ZERO_COST_INTAKE = {
             "product_name": "保冷クーラーバッグ ネイビー ショルダー付",
             "barcode_primary": "X001B4RKGV",
             "product_code_type": "amazon_internal",
-            "official_image_state": "比較画像候補あり / 現写真では1商品に断定不能",
+            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
             "note": "実物写真ではネイビー系ソフトクーラーバッグ本体、ショルダーストラップ、コードラベル X001B4RKGV、保冷バック / クーラーバッグ の表記まで確認できる。ブランド断定はせず、actual-only 前提で provisional に上げる。比較画像検索も実施したが、100% 同一と断定できる公開画像は確保できなかったため、actual-only 固定で進める。 / X001B4RKGV / 保冷バッグ / クーラーバッグ / ネイビー / ショルダーストラップ は実物で確認できる。比較画像は安全に断定できないため採用しない。",
             "evidence": [
               "X001B4RKGV",
@@ -12596,7 +12596,7 @@ window.ZERO_COST_INTAKE = {
             "official_image_url": "",
             "image_source": "actual-only",
             "verified_exact_match": false,
-            "official_image_state": "比較画像候補あり / 現写真では1商品に断定不能",
+            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
             "note": "ネイビーの保冷クーラーバッグ本体、ショルダーストラップ、コードラベル X001B4RKGV までは実物で確認できる。公開画像の再調査を続けても同一性を安全に断定できる候補は得られなかったため、2026-04-21 current truth は actual-only 固定。比較画像なしで進める。",
             "qwen_last_task_name": "比較画像照合担当",
             "qwen_last_review_at": "2026-04-12 06:39:16 JST",
@@ -12661,7 +12661,7 @@ window.ZERO_COST_INTAKE = {
           "display_name": "保冷クーラーバッグ ネイビー ショルダー付",
           "product_name": "保冷クーラーバッグ ネイビー ショルダー付",
           "verified_exact_match": false,
-          "official_image_state": "比較画像候補あり / 現写真では1商品に断定不能",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
             "色違い",
@@ -18114,7 +18114,7 @@ window.ZERO_COST_INTAKE = {
           "display_name": "写真セット組み直し候補: Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red",
           "product_name": "写真セット組み直し候補: Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red",
           "verified_exact_match": false,
-          "official_image_state": "管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 管理番号再分解待ち",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
             "別商品mix",
@@ -18157,11 +18157,11 @@ window.ZERO_COST_INTAKE = {
           "split_staging": {
             "management_id": "BOX-001-ITEM-0028",
             "stage_status": "partial_manifest_child_minted",
-            "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/緑の冬小物系として未一致保留。0028 CODE は car hook mobile phone holder NO-FE035 箱で、BACK の X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT は car hook mobile phone holder NO-FE040 だが、0029 BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側の staged child。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として live 視認一致まで確認したが、shared sheet / manifest の写真セット組み直し前なので新管理番号はまだ切らず、0052 FRONT の青橙箱は別物として残す。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
-            "ui_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
-            "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 は FRONT=car hook NO-FE040、BACK/CODE=SPEEDWOX X00162U47P の別split。0053 BACK/CODE は Hello Kitty 側。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認したが、新管理番号はまだ切らず staged のまま維持。0052 FRONT の青橙箱は別物。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
-            "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の冬小物系。0029 は別split維持。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認済みで、0052 FRONT は別物。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
-            "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0029は別split維持 / 0053-0052白箱は視認一致済みのため shared sheet・manifest で正式な写真セット組み直し / 0059 は workbook / routing の stopline を決めてから正式反映 / BOX-001-ITEM-0060 は workbook / routing の stopline を決めてから正式反映",
+            "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/緑の冬小物系として未一致保留。0028 CODE は car hook mobile phone holder NO-FE035 箱で、BACK の X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT は car hook mobile phone holder NO-FE040 だが、0029 BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側の仮置き写真セット。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として視認一致済み。0052 FRONT の青橙箱は別物として残す。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 をローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 のローカル写真セットを作成済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "ui_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029 FRONTは car hook 側として別扱い / 0053 FRONT⇄0052 BACK/CODEは同一白箱を視認確認 / 0052 FRONT別物 / 0059白箱はローカル写真セット作成・特定結果反映済み / 0060 SPEEDWOXはローカル写真セット作成・特定結果反映済み",
+            "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 FRONT は car hook NO-FE040、0029 BACK/CODE は SPEEDWOX X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は同一白箱を視認確認済み。0052 FRONT の青橙箱は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。",
+            "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の冬小物系。0029 FRONT は car hook 側として別扱い。0053 FRONT と 0052 BACK/CODE は同一白箱として視認確認済みで、0052 FRONT は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。",
+            "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0029 FRONTは car hook 側として別扱い / 0059白箱は管理表・出品判断の止めどころ確認待ち / 0060SPEEDWOXは管理表・出品判断の止めどころ確認待ち",
             "retain_existing_id": {
               "management_id": "BOX-001-ITEM-0028",
               "product_id": "PRD-BOX-001-028",
@@ -18244,7 +18244,7 @@ window.ZERO_COST_INTAKE = {
                 "status": "missing_match",
                 "blockers": [
                   "一致する BACK/CODE の相方スロットがまだ見つかっていない",
-                  "shared sheet / manifest で 1枚孤立スロットを安全に切り出す canonical path が未整備"
+                  "1枚だけ孤立している写真は、相方写真が見つかるまで新管理番号を切らない"
                 ]
               },
               {
@@ -18256,7 +18256,7 @@ window.ZERO_COST_INTAKE = {
                 ],
                 "status": "new_management_id_not_minted",
                 "blockers": [
-                  "shared sheet / manifest で 2枚由来の child を正式採番する canonical path が未整備",
+                  "2枚だけの仮置き写真セットは、FRONT相当写真の扱いが決まるまで正式採番しない",
                   "Hello Kitty 側は正規品出所確認と、安全な FRONT 相当写真の扱い整理が未完了"
                 ]
               },
@@ -18270,16 +18270,16 @@ window.ZERO_COST_INTAKE = {
                 ],
                 "status": "manifest_child_minted_local_only",
                 "blockers": [
-                  "confirmed / official は provisional actual-only で反映済み。shared sheet / workbook / routing 反映は別フェーズ。",
+                  "ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。",
                   "0052 FRONT は青橙の別箱で、白箱側として扱えるのは 0052 BACK/CODE のみ"
                 ],
                 "minted_management_id": "BOX-001-ITEM-0059",
                 "minted_at": "2026-04-21 20:32:46 JST",
                 "minted_scope": "local_manifest_only",
-                "minted_note": "photo manifest child は mint 済み。workbook / confirmed / official への反映は別フェーズで行う。",
+                "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
                 "truth_promotion_scope": "local_confirmed_official_only",
                 "truth_promoted_management_id": "BOX-001-ITEM-0059",
-                "truth_promotion_note": "confirmed / official へ provisional actual-only / 内容物未確認で反映済み。 workbook / routing は別フェーズで行う。",
+                "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み。管理表 / 出品判断は別フェーズで行う。",
                 "truth_promoted_at": "2026-04-21 21:20:12 JST"
               },
               {
@@ -18292,9 +18292,9 @@ window.ZERO_COST_INTAKE = {
                 ],
                 "status": "manifest_child_minted_local_only",
                 "blockers": [
-                  "confirmed / official は provisional actual-only で反映済み。shared sheet / workbook / routing 反映は別フェーズ。",
+                  "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。",
                   "0030 FRONT と 0029 BACK/CODE は同一の SPEEDWOX ワイヤーストリッパーパッケージとして実画像確認済み",
-                  "workbook / routing 反映は local truth 昇格後に別フェーズで判断"
+                  "管理表 / 出品判断への反映は別フェーズで判断"
                 ],
                 "truth_product_name": "SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556",
                 "truth_barcode_primary": "X00162U47P",
@@ -18314,24 +18314,24 @@ window.ZERO_COST_INTAKE = {
                 "minted_management_id": "BOX-001-ITEM-0060",
                 "minted_at": "2026-04-21 22:38:39 JST",
                 "minted_scope": "local_manifest_only",
-                "minted_note": "photo manifest child は mint 済み。workbook / confirmed / official への反映は別フェーズで行う。",
+                "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
                 "truth_promotion_scope": "local_confirmed_official_only",
                 "truth_promoted_management_id": "BOX-001-ITEM-0060",
-                "truth_promotion_note": "confirmed / official へ provisional actual-only / 内容物未確認で反映済み。 workbook / routing は別フェーズで行う。",
+                "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
                 "truth_promoted_at": "2026-04-21 22:44:17 JST"
               }
             ],
             "remaining_blockers": [
-              "shared sheet と photo manifest を壊さずに新管理番号を発番する canonical script が未整備",
+              "ローカル写真セット作成スクリプトは整備済み。残りは対象ごとの採番可否判断",
               "0028 FRONT の相方スロットと正式名が未確定",
               "0029 FRONT は car hook mobile phone holder NO-FE040 だが、BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0028 Zukida 側へ安全に寄せる根拠はまだない",
               "Hello Kitty 側はサンリオ正規品の出所確認が未完了",
-              "白箱 X00197BVHJ 側の local child BOX-001-ITEM-0059 は confirmed / official まで反映済み。 shared sheet / workbook / routing は別フェーズ。"
+              "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
             ],
-            "safe_next_step": "local state では 0028=Zukida anchor を維持し、0028 FRONT は未一致保留、0029 は別splitのまま維持する。0053 BACK/CODE は Hello Kitty 側候補、0053 FRONT と 0052 BACK/CODE は同一白箱として shared sheet / manifest 側で正式な写真セット組み直ししてから新 management_id を切る / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
+            "safe_next_step": "ローカル状態では 0028=Zukida anchor を維持し、0028 FRONT は未一致保留、0029 FRONT は car hook 側として別扱いにする。0053 BACK/CODE は Hello Kitty 側候補。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。次は管理表 / 出品判断へ進めるかを対象ごとに確認する。",
             "match_role": "primary"
           },
-          "split_plan_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
+          "split_plan_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029 FRONTは car hook 側として別扱い / 0053 FRONT⇄0052 BACK/CODEは同一白箱を視認確認 / 0052 FRONT別物 / 0059白箱はローカル写真セット作成・特定結果反映済み / 0060 SPEEDWOXはローカル写真セット作成・特定結果反映済み",
           "split_plan_role": "primary"
         },
         {
@@ -18413,7 +18413,7 @@ window.ZERO_COST_INTAKE = {
             "product_name": "写真セット組み直し候補: Car hook mobile phone holder NO-FE040",
             "barcode_primary": "",
             "product_code_type": "package_text",
-            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能",
+            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
             "note": "FRONT に Car hook mobile phone holder / NO-FE040 / Car Hook Series 合格証を確認。一方 BACK は SPEEDWOX ワイヤーストリッパー X00162U47P ラベル付きの NETWORK TOOL パッケージ、CODE も同じワイヤーストリッパー実物で別商品。現写真では1商品に断定不能で、car hook 側は FRONT しか揃わないため provisional に留める。",
             "evidence": [
               "Car hook",
@@ -18460,7 +18460,7 @@ window.ZERO_COST_INTAKE = {
           "display_name": "写真セット組み直し候補: Car hook mobile phone holder NO-FE040",
           "product_name": "写真セット組み直し候補: Car hook mobile phone holder NO-FE040",
           "verified_exact_match": false,
-          "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能",
+          "official_image_state": "現写真では1商品に断定不能 / 管理番号再分解待ち",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
             "別商品mix",
@@ -18566,7 +18566,7 @@ window.ZERO_COST_INTAKE = {
             "product_name": "写真セット組み直し候補: SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556",
             "barcode_primary": "X00162U47P",
             "product_code_type": "amazon_internal",
-            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能",
+            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
             "note": "FRONT で 2IN1 WIRE STRIPPER & CUTTER / ACS-1556 / X00162U47P を確認。一方 BACK/CODE は婦人服ラベル X001AQYKV3 / M36026 の別商品。現写真では wire stripper 側は FRONT しか coherent でないため provisional に留める。",
             "evidence": [
               "X00162U47P",
@@ -18613,7 +18613,7 @@ window.ZERO_COST_INTAKE = {
           "display_name": "写真セット組み直し候補: SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556",
           "product_name": "写真セット組み直し候補: SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556",
           "verified_exact_match": false,
-          "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 管理番号再分解待ち",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
             "別商品mix",
@@ -22410,7 +22410,7 @@ window.ZERO_COST_INTAKE = {
             "product_name": "写真セット組み直し必要（青橙汎用箱 / 白箱 X00197BVHJ 混在）",
             "barcode_primary": "",
             "product_code_type": "amazon_internal",
-            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 内容物未確認",
+            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番 / 内容物未確認",
             "note": "0052 FRONT は青橙の汎用箱。0052 BACK/CODE は 0053 FRONT と同一の白箱 X00197BVHJ 候補 child で、現 management_id では単一商品に確定できない。FirstC 白箱を 0052 全体の truth に固定せず、写真セット組み直し必要の provisional とする。",
             "evidence": [
               "FRONT=青橙の汎用箱",
@@ -22461,7 +22461,7 @@ window.ZERO_COST_INTAKE = {
           "display_name": "写真セット組み直し必要（青橙汎用箱 / 白箱 X00197BVHJ 混在）",
           "product_name": "写真セット組み直し必要（青橙汎用箱 / 白箱 X00197BVHJ 混在）",
           "verified_exact_match": false,
-          "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 内容物未確認",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 管理番号再分解待ち",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
             "別商品mix",
@@ -22485,11 +22485,11 @@ window.ZERO_COST_INTAKE = {
           "split_staging": {
             "management_id": "BOX-001-ITEM-0028",
             "stage_status": "partial_manifest_child_minted",
-            "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/緑の冬小物系として未一致保留。0028 CODE は car hook mobile phone holder NO-FE035 箱で、BACK の X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT は car hook mobile phone holder NO-FE040 だが、0029 BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側の staged child。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として live 視認一致まで確認したが、shared sheet / manifest の写真セット組み直し前なので新管理番号はまだ切らず、0052 FRONT の青橙箱は別物として残す。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
-            "ui_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
-            "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 は FRONT=car hook NO-FE040、BACK/CODE=SPEEDWOX X00162U47P の別split。0053 BACK/CODE は Hello Kitty 側。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認したが、新管理番号はまだ切らず staged のまま維持。0052 FRONT の青橙箱は別物。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
-            "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の冬小物系。0029 は別split維持。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認済みで、0052 FRONT は別物。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
-            "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0029は別split維持 / 0053-0052白箱は視認一致済みのため shared sheet・manifest で正式な写真セット組み直し / 0059 は workbook / routing の stopline を決めてから正式反映 / BOX-001-ITEM-0060 は workbook / routing の stopline を決めてから正式反映",
+            "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/緑の冬小物系として未一致保留。0028 CODE は car hook mobile phone holder NO-FE035 箱で、BACK の X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT は car hook mobile phone holder NO-FE040 だが、0029 BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側の仮置き写真セット。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として視認一致済み。0052 FRONT の青橙箱は別物として残す。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 をローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 のローカル写真セットを作成済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "ui_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029 FRONTは car hook 側として別扱い / 0053 FRONT⇄0052 BACK/CODEは同一白箱を視認確認 / 0052 FRONT別物 / 0059白箱はローカル写真セット作成・特定結果反映済み / 0060 SPEEDWOXはローカル写真セット作成・特定結果反映済み",
+            "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 FRONT は car hook NO-FE040、0029 BACK/CODE は SPEEDWOX X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は同一白箱を視認確認済み。0052 FRONT の青橙箱は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。",
+            "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の冬小物系。0029 FRONT は car hook 側として別扱い。0053 FRONT と 0052 BACK/CODE は同一白箱として視認確認済みで、0052 FRONT は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。",
+            "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0029 FRONTは car hook 側として別扱い / 0059白箱は管理表・出品判断の止めどころ確認待ち / 0060SPEEDWOXは管理表・出品判断の止めどころ確認待ち",
             "retain_existing_id": {
               "management_id": "BOX-001-ITEM-0028",
               "product_id": "PRD-BOX-001-028",
@@ -22572,7 +22572,7 @@ window.ZERO_COST_INTAKE = {
                 "status": "missing_match",
                 "blockers": [
                   "一致する BACK/CODE の相方スロットがまだ見つかっていない",
-                  "shared sheet / manifest で 1枚孤立スロットを安全に切り出す canonical path が未整備"
+                  "1枚だけ孤立している写真は、相方写真が見つかるまで新管理番号を切らない"
                 ]
               },
               {
@@ -22584,7 +22584,7 @@ window.ZERO_COST_INTAKE = {
                 ],
                 "status": "new_management_id_not_minted",
                 "blockers": [
-                  "shared sheet / manifest で 2枚由来の child を正式採番する canonical path が未整備",
+                  "2枚だけの仮置き写真セットは、FRONT相当写真の扱いが決まるまで正式採番しない",
                   "Hello Kitty 側は正規品出所確認と、安全な FRONT 相当写真の扱い整理が未完了"
                 ]
               },
@@ -22598,16 +22598,16 @@ window.ZERO_COST_INTAKE = {
                 ],
                 "status": "manifest_child_minted_local_only",
                 "blockers": [
-                  "confirmed / official は provisional actual-only で反映済み。shared sheet / workbook / routing 反映は別フェーズ。",
+                  "ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。",
                   "0052 FRONT は青橙の別箱で、白箱側として扱えるのは 0052 BACK/CODE のみ"
                 ],
                 "minted_management_id": "BOX-001-ITEM-0059",
                 "minted_at": "2026-04-21 20:32:46 JST",
                 "minted_scope": "local_manifest_only",
-                "minted_note": "photo manifest child は mint 済み。workbook / confirmed / official への反映は別フェーズで行う。",
+                "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
                 "truth_promotion_scope": "local_confirmed_official_only",
                 "truth_promoted_management_id": "BOX-001-ITEM-0059",
-                "truth_promotion_note": "confirmed / official へ provisional actual-only / 内容物未確認で反映済み。 workbook / routing は別フェーズで行う。",
+                "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み。管理表 / 出品判断は別フェーズで行う。",
                 "truth_promoted_at": "2026-04-21 21:20:12 JST"
               },
               {
@@ -22620,9 +22620,9 @@ window.ZERO_COST_INTAKE = {
                 ],
                 "status": "manifest_child_minted_local_only",
                 "blockers": [
-                  "confirmed / official は provisional actual-only で反映済み。shared sheet / workbook / routing 反映は別フェーズ。",
+                  "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。",
                   "0030 FRONT と 0029 BACK/CODE は同一の SPEEDWOX ワイヤーストリッパーパッケージとして実画像確認済み",
-                  "workbook / routing 反映は local truth 昇格後に別フェーズで判断"
+                  "管理表 / 出品判断への反映は別フェーズで判断"
                 ],
                 "truth_product_name": "SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556",
                 "truth_barcode_primary": "X00162U47P",
@@ -22642,24 +22642,24 @@ window.ZERO_COST_INTAKE = {
                 "minted_management_id": "BOX-001-ITEM-0060",
                 "minted_at": "2026-04-21 22:38:39 JST",
                 "minted_scope": "local_manifest_only",
-                "minted_note": "photo manifest child は mint 済み。workbook / confirmed / official への反映は別フェーズで行う。",
+                "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
                 "truth_promotion_scope": "local_confirmed_official_only",
                 "truth_promoted_management_id": "BOX-001-ITEM-0060",
-                "truth_promotion_note": "confirmed / official へ provisional actual-only / 内容物未確認で反映済み。 workbook / routing は別フェーズで行う。",
+                "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
                 "truth_promoted_at": "2026-04-21 22:44:17 JST"
               }
             ],
             "remaining_blockers": [
-              "shared sheet と photo manifest を壊さずに新管理番号を発番する canonical script が未整備",
+              "ローカル写真セット作成スクリプトは整備済み。残りは対象ごとの採番可否判断",
               "0028 FRONT の相方スロットと正式名が未確定",
               "0029 FRONT は car hook mobile phone holder NO-FE040 だが、BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0028 Zukida 側へ安全に寄せる根拠はまだない",
               "Hello Kitty 側はサンリオ正規品の出所確認が未完了",
-              "白箱 X00197BVHJ 側の local child BOX-001-ITEM-0059 は confirmed / official まで反映済み。 shared sheet / workbook / routing は別フェーズ。"
+              "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
             ],
-            "safe_next_step": "local state では 0028=Zukida anchor を維持し、0028 FRONT は未一致保留、0029 は別splitのまま維持する。0053 BACK/CODE は Hello Kitty 側候補、0053 FRONT と 0052 BACK/CODE は同一白箱として shared sheet / manifest 側で正式な写真セット組み直ししてから新 management_id を切る / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
+            "safe_next_step": "ローカル状態では 0028=Zukida anchor を維持し、0028 FRONT は未一致保留、0029 FRONT は car hook 側として別扱いにする。0053 BACK/CODE は Hello Kitty 側候補。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。次は管理表 / 出品判断へ進めるかを対象ごとに確認する。",
             "match_role": "related"
           },
-          "split_plan_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
+          "split_plan_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029 FRONTは car hook 側として別扱い / 0053 FRONT⇄0052 BACK/CODEは同一白箱を視認確認 / 0052 FRONT別物 / 0059白箱はローカル写真セット作成・特定結果反映済み / 0060 SPEEDWOXはローカル写真セット作成・特定結果反映済み",
           "split_plan_role": "related"
         },
         {
@@ -22796,7 +22796,7 @@ window.ZERO_COST_INTAKE = {
           "display_name": "写真セット組み直し必要（白箱 X00197BVHJ / Hello Kitty 50TH ANNIVERSARY 系 混在）",
           "product_name": "写真セット組み直し必要（白箱 X00197BVHJ / Hello Kitty 50TH ANNIVERSARY 系 混在）",
           "verified_exact_match": false,
-          "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番 / 正規性確認待ち",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 管理番号再分解待ち",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
             "別商品mix",
@@ -22819,11 +22819,11 @@ window.ZERO_COST_INTAKE = {
           "split_staging": {
             "management_id": "BOX-001-ITEM-0028",
             "stage_status": "partial_manifest_child_minted",
-            "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/緑の冬小物系として未一致保留。0028 CODE は car hook mobile phone holder NO-FE035 箱で、BACK の X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT は car hook mobile phone holder NO-FE040 だが、0029 BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側の staged child。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として live 視認一致まで確認したが、shared sheet / manifest の写真セット組み直し前なので新管理番号はまだ切らず、0052 FRONT の青橙箱は別物として残す。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
-            "ui_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
-            "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 は FRONT=car hook NO-FE040、BACK/CODE=SPEEDWOX X00162U47P の別split。0053 BACK/CODE は Hello Kitty 側。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認したが、新管理番号はまだ切らず staged のまま維持。0052 FRONT の青橙箱は別物。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
-            "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の冬小物系。0029 は別split維持。0053 FRONT と 0052 BACK/CODE は同一白箱を live 視認確認済みで、0052 FRONT は別物。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
-            "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0029は別split維持 / 0053-0052白箱は視認一致済みのため shared sheet・manifest で正式な写真セット組み直し / 0059 は workbook / routing の stopline を決めてから正式反映 / BOX-001-ITEM-0060 は workbook / routing の stopline を決めてから正式反映",
+            "plan_summary": "現IDは X0010CU9L7 の Zukida を保持する。0028 FRONT は黒/緑の冬小物系として未一致保留。0028 CODE は car hook mobile phone holder NO-FE035 箱で、BACK の X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT は car hook mobile phone holder NO-FE040 だが、0029 BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側の仮置き写真セット。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱として視認一致済み。0052 FRONT の青橙箱は別物として残す。 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 のローカル写真セットを作成済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 をローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 のローカル写真セットを作成済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "ui_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029 FRONTは car hook 側として別扱い / 0053 FRONT⇄0052 BACK/CODEは同一白箱を視認確認 / 0052 FRONT別物 / 0059白箱はローカル写真セット作成・特定結果反映済み / 0060 SPEEDWOXはローカル写真セット作成・特定結果反映済み",
+            "operator_summary": "BOX-001-ITEM-0028 は Zukida を現IDで保持。0028 FRONT は別物の冬小物系で未一致保留。0028 CODE は car hook NO-FE035 箱で、X0010CU9L7 直接証拠ではない。0029 FRONT は car hook NO-FE040、0029 BACK/CODE は SPEEDWOX X00162U47P で別商品。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は同一白箱を視認確認済み。0052 FRONT の青橙箱は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。",
+            "routing_note": "現IDは Zukida を保持。0028 FRONT は未一致の冬小物系。0029 FRONT は car hook 側として別扱い。0053 FRONT と 0052 BACK/CODE は同一白箱として視認確認済みで、0052 FRONT は別物。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。",
+            "routing_next_action": "現ID=Zukida維持 / 0028 FRONT保留 / 0029 FRONTは car hook 側として別扱い / 0059白箱は管理表・出品判断の止めどころ確認待ち / 0060SPEEDWOXは管理表・出品判断の止めどころ確認待ち",
             "retain_existing_id": {
               "management_id": "BOX-001-ITEM-0028",
               "product_id": "PRD-BOX-001-028",
@@ -22906,7 +22906,7 @@ window.ZERO_COST_INTAKE = {
                 "status": "missing_match",
                 "blockers": [
                   "一致する BACK/CODE の相方スロットがまだ見つかっていない",
-                  "shared sheet / manifest で 1枚孤立スロットを安全に切り出す canonical path が未整備"
+                  "1枚だけ孤立している写真は、相方写真が見つかるまで新管理番号を切らない"
                 ]
               },
               {
@@ -22918,7 +22918,7 @@ window.ZERO_COST_INTAKE = {
                 ],
                 "status": "new_management_id_not_minted",
                 "blockers": [
-                  "shared sheet / manifest で 2枚由来の child を正式採番する canonical path が未整備",
+                  "2枚だけの仮置き写真セットは、FRONT相当写真の扱いが決まるまで正式採番しない",
                   "Hello Kitty 側は正規品出所確認と、安全な FRONT 相当写真の扱い整理が未完了"
                 ]
               },
@@ -22932,16 +22932,16 @@ window.ZERO_COST_INTAKE = {
                 ],
                 "status": "manifest_child_minted_local_only",
                 "blockers": [
-                  "confirmed / official は provisional actual-only で反映済み。shared sheet / workbook / routing 反映は別フェーズ。",
+                  "ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。",
                   "0052 FRONT は青橙の別箱で、白箱側として扱えるのは 0052 BACK/CODE のみ"
                 ],
                 "minted_management_id": "BOX-001-ITEM-0059",
                 "minted_at": "2026-04-21 20:32:46 JST",
                 "minted_scope": "local_manifest_only",
-                "minted_note": "photo manifest child は mint 済み。workbook / confirmed / official への反映は別フェーズで行う。",
+                "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
                 "truth_promotion_scope": "local_confirmed_official_only",
                 "truth_promoted_management_id": "BOX-001-ITEM-0059",
-                "truth_promotion_note": "confirmed / official へ provisional actual-only / 内容物未確認で反映済み。 workbook / routing は別フェーズで行う。",
+                "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み。管理表 / 出品判断は別フェーズで行う。",
                 "truth_promoted_at": "2026-04-21 21:20:12 JST"
               },
               {
@@ -22954,9 +22954,9 @@ window.ZERO_COST_INTAKE = {
                 ],
                 "status": "manifest_child_minted_local_only",
                 "blockers": [
-                  "confirmed / official は provisional actual-only で反映済み。shared sheet / workbook / routing 反映は別フェーズ。",
+                  "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。",
                   "0030 FRONT と 0029 BACK/CODE は同一の SPEEDWOX ワイヤーストリッパーパッケージとして実画像確認済み",
-                  "workbook / routing 反映は local truth 昇格後に別フェーズで判断"
+                  "管理表 / 出品判断への反映は別フェーズで判断"
                 ],
                 "truth_product_name": "SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556",
                 "truth_barcode_primary": "X00162U47P",
@@ -22976,24 +22976,24 @@ window.ZERO_COST_INTAKE = {
                 "minted_management_id": "BOX-001-ITEM-0060",
                 "minted_at": "2026-04-21 22:38:39 JST",
                 "minted_scope": "local_manifest_only",
-                "minted_note": "photo manifest child は mint 済み。workbook / confirmed / official への反映は別フェーズで行う。",
+                "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
                 "truth_promotion_scope": "local_confirmed_official_only",
                 "truth_promoted_management_id": "BOX-001-ITEM-0060",
-                "truth_promotion_note": "confirmed / official へ provisional actual-only / 内容物未確認で反映済み。 workbook / routing は別フェーズで行う。",
+                "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
                 "truth_promoted_at": "2026-04-21 22:44:17 JST"
               }
             ],
             "remaining_blockers": [
-              "shared sheet と photo manifest を壊さずに新管理番号を発番する canonical script が未整備",
+              "ローカル写真セット作成スクリプトは整備済み。残りは対象ごとの採番可否判断",
               "0028 FRONT の相方スロットと正式名が未確定",
               "0029 FRONT は car hook mobile phone holder NO-FE040 だが、BACK/CODE は SPEEDWOX / network tool X00162U47P で別商品。0028 Zukida 側へ安全に寄せる根拠はまだない",
               "Hello Kitty 側はサンリオ正規品の出所確認が未完了",
-              "白箱 X00197BVHJ 側の local child BOX-001-ITEM-0059 は confirmed / official まで反映済み。 shared sheet / workbook / routing は別フェーズ。"
+              "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
             ],
-            "safe_next_step": "local state では 0028=Zukida anchor を維持し、0028 FRONT は未一致保留、0029 は別splitのまま維持する。0053 BACK/CODE は Hello Kitty 側候補、0053 FRONT と 0052 BACK/CODE は同一白箱として shared sheet / manifest 側で正式な写真セット組み直ししてから新 management_id を切る / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
+            "safe_next_step": "ローカル状態では 0028=Zukida anchor を維持し、0028 FRONT は未一致保留、0029 FRONT は car hook 側として別扱いにする。0053 BACK/CODE は Hello Kitty 側候補。0059白箱と0060SPEEDWOXはローカル写真セット作成・特定結果反映済み。次は管理表 / 出品判断へ進めるかを対象ごとに確認する。",
             "match_role": "related"
           },
-          "split_plan_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029は別split維持 / 0053 FRONT⇄0052 BACK/CODEは同一白箱をlive視認確認 / 0052 FRONT別物 / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を local manifest child として mint 済み / SPLIT-BOX-001-0053-WHITEBOX=BOX-001-ITEM-0059 を confirmed / official へ provisional actual-only で反映済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を local manifest child として mint 済み / SPLIT-BOX-001-0030-SPEEDWOX=BOX-001-ITEM-0060 を confirmed / official へ provisional actual-only で反映済み",
+          "split_plan_summary": "現ID=Zukida維持 / 0028 FRONT未一致 / 0029 FRONTは car hook 側として別扱い / 0053 FRONT⇄0052 BACK/CODEは同一白箱を視認確認 / 0052 FRONT別物 / 0059白箱はローカル写真セット作成・特定結果反映済み / 0060 SPEEDWOXはローカル写真セット作成・特定結果反映済み",
           "split_plan_role": "related"
         },
         {

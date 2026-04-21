@@ -1001,18 +1001,19 @@
         </div>
         <div class="drive-panel">
           <div class="drive-header">
-            <div class="drive-title">別メンバー用 Google Drive 共有</div>
+            <div class="drive-title">別メンバー用 共有フォルダ</div>
             <div class="drive-badge">1日1回確認</div>
           </div>
           <div class="drive-note">
-            必要な時だけ Google Drive URL を作って共有できます。通常確認は <strong>1日1回</strong> です。急ぐ時だけ「今すぐDrive確認」を使ってください。
+            1. <strong>共有フォルダを用意</strong> を押します。 2. 出たリンクを相手に送ります。 3. 相手はそのフォルダへ写真をまとめて入れるだけです。
+            フォルダ追加は不要です。通常確認は <strong>1日1回</strong>、急ぐ時だけ「今すぐ共有フォルダ確認」を使います。
           </div>
           <div class="drive-actions">
-            <button id="drive-share-btn" class="action-link" type="button">Google Drive URLを作る</button>
-            <button id="drive-sync-btn" class="action-link primary" type="button">今すぐDrive確認</button>
+            <button id="drive-share-btn" class="action-link" type="button">共有フォルダを用意</button>
+            <button id="drive-sync-btn" class="action-link primary" type="button">今すぐ共有フォルダ確認</button>
           </div>
-          <div id="drive-status" class="drive-status">箱を選ぶと、共有URLを作れます。通常確認は1日1回です。</div>
-          <a id="drive-link" class="drive-link" href="#" target="_blank" rel="noreferrer noopener" hidden>Google Drive フォルダを開く</a>
+          <div id="drive-status" class="drive-status">箱を選ぶと共有フォルダを1つ用意できます。相手はそのフォルダへ写真を入れるだけです。</div>
+          <a id="drive-link" class="drive-link" href="#" target="_blank" rel="noreferrer noopener" hidden>共有フォルダを開く</a>
         </div>
       </div>
     </section>
@@ -1400,7 +1401,7 @@
     function setDriveLink(url) {
       if (url) {
         driveLinkEl.href = url;
-        driveLinkEl.textContent = 'Google Drive フォルダを開く';
+        driveLinkEl.textContent = '共有フォルダを開く';
         driveLinkEl.hidden = false;
         return;
       }
@@ -1474,7 +1475,7 @@
       driveShareBtn.disabled = isUploading || isDriveBusy;
       driveSyncBtn.disabled = isUploading || isDriveBusy;
       setDriveLink(storedDriveLink(box.id));
-      setDriveStatus(box.label + ' の Drive 共有を使えます。通常確認は1日1回です。', '');
+      setDriveStatus(box.label + ' の共有フォルダを使えます。相手はそのフォルダへ写真を入れるだけです。', '');
       refreshDriveAutoStatus({ silent: true });
       if (selectedFiles.length) {
         renderSelectedFiles(selectedFiles, box);
@@ -1920,7 +1921,9 @@
             data = {};
           }
           if (!response.ok || !data.ok) {
-            throw new Error((data && data.error) || ('HTTP ' + response.status + ' / ' + text.slice(0, 160)));
+            var error = new Error((data && data.error) || ('HTTP ' + response.status + ' / ' + text.slice(0, 160)));
+            error.payload = data;
+            throw error;
           }
           return data;
         });
@@ -1974,13 +1977,13 @@
       if (error) {
         return {
           tone: 'error',
-          text: label + ' の自動取り込み確認でエラーが出ています。' + error
+          text: label + ' の共有フォルダ確認でエラーが出ています。' + error
         };
       }
       if (blockedGroups || looseImages) {
         return {
           tone: 'error',
-          text: label + ' に自動取り込みできない画像があります。'
+          text: label + ' でそのまま取り込めない写真があります。'
             + (blockedGroups ? ' 未処理グループ ' + blockedGroups + '件。' : '')
             + (looseImages ? ' 未処理画像 ' + looseImages + '枚。' : '')
             + (detail ? ' 例: ' + detail + '。' : '')
@@ -1997,12 +2000,12 @@
       if (lastCycleAt) {
         return {
           tone: '',
-          text: label + ' の自動確認は1日1回で動作中です。まだ取り込み対象はありません。最終確認 ' + lastCycleAt + '。'
+          text: label + ' の共有フォルダ確認は1日1回で動作中です。まだ取り込み対象はありません。最終確認 ' + lastCycleAt + '。'
         };
       }
       return {
         tone: '',
-        text: label + ' の Drive 共有を使えます。通常確認は1日1回です。'
+        text: label + ' の共有フォルダを使えます。相手はそのフォルダへ写真を入れるだけです。'
       };
     }
 
@@ -2011,7 +2014,7 @@
       var box = currentBox();
       if (!box || !box.id) return Promise.resolve(null);
       if ((isDriveBusy || isUploading) && !options.force) {
-        scheduleDriveStatusPoll(12000);
+        scheduleDriveStatusPoll(86400000);
         return Promise.resolve(null);
       }
       var requestId = ++driveStatusRequestId;
@@ -2042,14 +2045,14 @@
             var message = buildDriveAutoStatusMessage(box, status);
             setDriveStatus(message.text, message.tone);
           }
-          scheduleDriveStatusPoll((num(data.interval_sec) || 20) * 1000);
+          scheduleDriveStatusPoll((num(data.interval_sec) || 86400) * 1000);
           return status;
         })
         .catch(function(error) {
           if (!options.silent) {
-            setDriveStatus('Drive 自動確認の状態を読めません。' + (error && error.message ? ' ' + error.message : ''), 'error');
+            setDriveStatus('共有フォルダ確認の状態を読めません。' + (error && error.message ? ' ' + error.message : ''), 'error');
           }
-          scheduleDriveStatusPoll(15000);
+          scheduleDriveStatusPoll(86400000);
           return null;
         });
     }
@@ -2059,8 +2062,8 @@
       if (!box || isDriveBusy || isUploading) return;
       isDriveBusy = true;
       setUploadButtonState();
-      driveShareBtn.textContent = 'URL作成中...';
-      setDriveStatus(box.label + ' の共有URLを作っています。', '');
+      driveShareBtn.textContent = '共有フォルダ準備中...';
+      setDriveStatus(box.label + ' の共有フォルダを用意しています。', '');
       postJson(driveShareApiUrl(), boxPayload(box))
         .then(function(data) {
           var folderUrl = String(data.folder_url || '');
@@ -2068,16 +2071,16 @@
             rememberDriveLink(box.id, folderUrl);
             setDriveLink(folderUrl);
           }
-          setDriveStatus(box.label + ' の共有URLを作りました。', 'ok');
+          setDriveStatus(box.label + ' の共有フォルダを用意しました。下のリンクを相手に送ってください。', 'ok');
         })
         .catch(function(error) {
-          setDriveStatus('Google Drive URL 作成に失敗しました。' + (error && error.message ? ' ' + error.message : ''), 'error');
+          setDriveStatus('共有フォルダの準備に失敗しました。' + (error && error.message ? ' ' + error.message : ''), 'error');
         })
         .finally(function() {
           isDriveBusy = false;
-          driveShareBtn.textContent = 'Google Drive URLを作る';
+          driveShareBtn.textContent = '共有フォルダを用意';
           setUploadButtonState();
-          scheduleDriveStatusPoll(3000);
+          scheduleDriveStatusPoll(86400000);
         });
     }
 
@@ -2086,8 +2089,8 @@
       if (!box || isDriveBusy || isUploading) return;
       isDriveBusy = true;
       setUploadButtonState();
-      driveSyncBtn.textContent = 'Drive取り込み中...';
-      setDriveStatus(box.label + ' の Drive 新着を確認しています。', '');
+      driveSyncBtn.textContent = '共有フォルダ確認中...';
+      setDriveStatus(box.label + ' の共有フォルダを確認しています。', '');
       postJson(driveSyncApiUrl(), boxPayload(box))
         .then(function(data) {
           var folderUrl = String(data.folder_url || '');
@@ -2100,14 +2103,14 @@
             var looseImages = num(data.loose_image_count);
             if (blockedGroups || looseImages) {
               setDriveStatus(
-                box.label + ' に自動取り込みできない画像があります。'
+                box.label + ' でそのまま取り込めない写真があります。'
                 + (blockedGroups ? ' 未処理グループ ' + blockedGroups + '件。' : '')
                 + (looseImages ? ' 未処理画像 ' + looseImages + '枚。' : ''),
                 'error'
               );
               return;
             }
-            setDriveStatus(box.label + ' にまだ新着画像はありません。通常確認は1日1回です。必要な時だけこのボタンで確認できます。', '');
+            setDriveStatus(box.label + ' の共有フォルダにまだ新着画像はありません。通常確認は1日1回です。必要な時だけこのボタンで確認できます。', '');
             return;
           }
           setDriveStatus((data.box_label || box.label) + ' に '
@@ -2122,13 +2125,20 @@
           }, 700);
         })
         .catch(function(error) {
-          setDriveStatus('Drive写真の取り込みに失敗しました。' + (error && error.message ? ' ' + error.message : ''), 'error');
+          var payload = error && error.payload || {};
+          if (payload.failed_batch) {
+            showImmediateFailedBatch(payload.failed_batch);
+            refreshFailureBatches({ focus: true });
+            setDriveStatus('共有フォルダの写真は保存しました。下の「判定失敗」で理由と写真を確認してください。', 'error');
+            return;
+          }
+          setDriveStatus('共有フォルダの取り込みに失敗しました。' + (error && error.message ? ' ' + error.message : ''), 'error');
         })
         .finally(function() {
           isDriveBusy = false;
-          driveSyncBtn.textContent = '今すぐDrive確認';
+          driveSyncBtn.textContent = '今すぐ共有フォルダ確認';
           setUploadButtonState();
-          scheduleDriveStatusPoll(5000);
+          scheduleDriveStatusPoll(86400000);
         });
     }
 
