@@ -1,10 +1,10 @@
 window.ZERO_COST_INTAKE = {
-  "generated_at": "2026-04-22 03:08:23 JST",
+  "generated_at": "2026-04-22 09:00:19 JST",
   "box_id": "BOX-001",
   "box_label": "数字箱 001",
   "box_lane": "numeric",
   "box_code": "001",
-  "source_dir": "/Users/dd/merch_deal_finder/写真データ230404",
+  "source_dir": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260421_140558/originals",
   "slot_order": [
     "FRONT",
     "BACK",
@@ -12,13 +12,13 @@ window.ZERO_COST_INTAKE = {
   ],
   "slots_per_item": 3,
   "total_files": 197,
-  "total_items": 66,
-  "complete_items": 65,
+  "total_items": 69,
+  "complete_items": 68,
   "incomplete_items": 1,
-  "next_sequence": 67,
-  "next_management_id": "BOX-001-ITEM-0067",
+  "next_sequence": 70,
+  "next_management_id": "BOX-001-ITEM-0070",
   "identification_counts": {
-    "barcode_ready": 42,
+    "barcode_ready": 45,
     "ocr_ready": 2,
     "image_only": 0,
     "missing_slots": 0,
@@ -26,21 +26,21 @@ window.ZERO_COST_INTAKE = {
   },
   "resolution_counts": {
     "confirmed": 2,
-    "provisional": 64,
+    "provisional": 67,
     "official_image_pending": 0,
     "accepted_exception": 2
   },
   "top_priority_ids": [
-    "BOX-001-ITEM-0001",
+    "BOX-001-ITEM-0058",
+    "BOX-001-ITEM-0053",
+    "BOX-001-ITEM-0045",
     "BOX-001-ITEM-0002",
-    "BOX-001-ITEM-0003",
-    "BOX-001-ITEM-0004",
-    "BOX-001-ITEM-0005",
-    "BOX-001-ITEM-0006",
-    "BOX-001-ITEM-0007",
-    "BOX-001-ITEM-0008",
-    "BOX-001-ITEM-0009",
-    "BOX-001-ITEM-0010"
+    "BOX-001-ITEM-0024",
+    "BOX-001-ITEM-0042",
+    "BOX-001-ITEM-0048",
+    "BOX-001-ITEM-0049",
+    "BOX-001-ITEM-0052",
+    "BOX-001-ITEM-0029"
   ],
   "items": [
     {
@@ -289,7 +289,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "審査監視",
         "AI次アクション": "カテゴリ審査反映待ち",
         "ルーティング状態": "審査待ち",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り / publish_ok=カテゴリ審査待ち / draft_status=カテゴリ審査待ち / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=clear"
       }
     },
@@ -469,7 +469,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -516,7 +516,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "実物のみで進める / 比較画像は後追い",
         "ルーティング状態": "HQ判断済み",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=保冷クーラーバッグ ネイビー ショルダー付 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=色違い / 型番違い / サイズ違い / セット違い / 別商品mix / qwen_hq=actual-only固定優先 / 2026-04-21 current truth: actual-only固定。比較画像なしでも実物写真のみで進める。"
       }
     },
@@ -661,7 +661,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -701,7 +701,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=YUGYUG サングラス ブラック/グレー ケース付き / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
       }
     },
@@ -959,7 +959,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "precision guard 解消",
         "ルーティング状態": "停止",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=IAWNI ショルダーバッグ メッセンジャーバッグ / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=ブランド不一致 / inventory_status=販売中 / listingId=2JPSMJHwgfzNjEkYfN8SMv"
       }
     },
@@ -1217,7 +1217,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "precision guard 解消",
         "ルーティング状態": "停止",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=CEEN サルエルパンツ 七分丈 ワイドパンツ / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=柄違い / inventory_status=販売中 / listingId=2JPQCYwtnC7WCswDeG37b9"
       }
     },
@@ -1371,7 +1371,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -1549,7 +1549,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -1589,7 +1589,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=GIOVANA Tシャツ ベージュ 2XL / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
       }
     },
@@ -1850,7 +1850,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "precision guard 解消",
         "ルーティング状態": "停止",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=オナーファッション 綿100% トップス ミントグリーン 3XL / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=review_required / guard_reasons=ブランド不一致 / inventory_status=販売中 / listingId=2JPSMSqu7EDWJu3jDcTo5h"
       }
     },
@@ -2119,7 +2119,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=Hotaty ピアス 金属アレルギー対応 ギフトBOX付き / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=clear / inventory_status=販売中 / listingId=2JPSMUTrpVNxK6fGZdtMqT"
       }
     },
@@ -2273,7 +2273,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [
         {
@@ -2334,7 +2334,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "precision guard 解消",
         "ルーティング状態": "停止",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=SHANGCHU シェフユニフォーム ブラック 4XL / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=色違い"
       }
     },
@@ -2590,7 +2590,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "precision guard 解消",
         "ルーティング状態": "停止",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=Dkieta 帽子 レディース ネックカバー付き 花柄日よけ帽子 / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=柄違い / inventory_status=販売中 / listingId=2JPSMPEuG8NMB3ZieyYzHU"
       }
     },
@@ -2848,7 +2848,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "precision guard 解消",
         "ルーティング状態": "停止",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=gany ガーゼハンカチ 30×30cm 10枚セット 綿100% / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=セット違い / inventory_status=販売中 / listingId=2JPTBgBM5kND3h8AhVf4bf"
       }
     },
@@ -2992,7 +2992,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [
         {
@@ -3050,7 +3050,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り / publish_ok=公開待ち / draft_status=公開待ち / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=clear"
       }
     },
@@ -3327,7 +3327,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "precision guard 解消",
         "ルーティング状態": "停止",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=HAYAHARU キッズ靴下 LS4602LS / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=柄違い / セット違い / inventory_status=販売中 / listingId=2JPSMLyKhRCgPASDJFH2dc"
       }
     },
@@ -3473,7 +3473,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -3513,7 +3513,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=Llink 靴下 5足セット ボーダー パステル / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
       }
     },
@@ -3657,7 +3657,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -3697,7 +3697,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=ZERUI 靴下 5足セット パステル 蝶リボン / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
       }
     },
@@ -3853,7 +3853,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -3899,7 +3899,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "用途確認と商品名補正",
         "ルーティング状態": "用途確認待ち",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=FirstC ティアグッズ記念品ギフト オレンジ丸型ポーチ（用途要確認） / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / 用途要確認 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=柄違い / 型番違い / 形状違い / 用途要確認"
       }
     },
@@ -4044,7 +4044,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -4084,7 +4084,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=SWEETBOY 子供パーカー ネイビー×イエロー 130 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
       }
     },
@@ -4337,7 +4337,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "停止",
         "AI次アクション": "空き板を維持",
         "ルーティング状態": "一時停止",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=ポロベア キャンバス トートバッグ POLO BEAR LAUREN / publish_ok=確認待ち / draft_status=一時取り下げ / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=clear / inventory_status=一時取り下げ"
       }
     },
@@ -4486,7 +4486,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -4526,7 +4526,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=首サポーター カバー付き グレー M HJ-GY-M / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
       }
     },
@@ -4661,7 +4661,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -4880,7 +4880,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [
         {
@@ -4938,7 +4938,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=LE BLANC フェムケアPRO 低刺激 デリケートゾーン 150mL / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
       }
     },
@@ -5070,7 +5070,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -5260,7 +5260,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -5527,7 +5527,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -5810,7 +5810,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [
         {
@@ -5868,7 +5868,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
       }
     },
@@ -6018,7 +6018,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [
         {
@@ -6079,7 +6079,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
         "ルーティング状態": "写真セット組み直し必要",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix"
       }
     },
@@ -6250,7 +6250,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -6296,8 +6296,8 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
         "ルーティング状態": "写真セット組み直し必要",
-        "更新時刻": "2026-04-22 00:33:59 JST",
-        "メモ": "name=写真セット組み直し候補: Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 正規性確認待ち / 管理番号再分解待ち / HQレビュー済み / 新管理番号未採番 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=review_required / guard_reasons=別商品mix / 写真セット組み直し必要 / 内容物未確認 / 真贋確認 / qwen_hq=needs_split / 0028 は FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。"
+        "更新時刻": "2026-04-22 08:50:03 JST",
+        "メモ": "name=写真セット組み直し候補: Zukida 車のフック 電話ホルダー付き 後部座席用 Red / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 正規性確認待ち / 管理番号再分解待ち / HQレビュー済み / 新管理番号未採番 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=review_required / guard_reasons=別商品mix / 写真セット組み直し必要 / 内容物未確認 / 真贋確認 / qwen_hq=needs_split / 0028 は FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK=X0010CU9L7 / Zukida 車のフック Red ラベル、CODE=car hook mobile phone holder / NO-FE035 箱面。BACK/CODE は同じ車用フック系・同箱候補だが、NO-FE035 は X0010CU9L7 の直接証拠ではない。現IDは Zukida anchor のまま維持しつつ公開不可。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。"
       },
       "split_staging": {
         "management_id": "BOX-001-ITEM-0028",
@@ -6432,7 +6432,7 @@ window.ZERO_COST_INTAKE = {
             "minted_management_id": "BOX-001-ITEM-0061",
             "minted_at": "2026-04-21 23:11:56 JST",
             "minted_scope": "local_manifest_only",
-            "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+            "minted_note": "ローカル写真一覧へ作成済み。ローカル特定結果へは反映済み。管理表 / 出品判断は別フェーズで行う。",
             "truth_promotion_scope": "local_confirmed_official_only",
             "truth_promoted_management_id": "BOX-001-ITEM-0061",
             "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
@@ -6636,7 +6636,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -6790,7 +6790,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -6960,7 +6960,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -7000,7 +7000,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=LEISURE WEAR ベージュ系レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
       }
     },
@@ -7262,7 +7262,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "precision guard 解消",
         "ルーティング状態": "停止",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=ZUCCA CLUB リラックス リカバリー サンダル / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=色違い / 形状違い / inventory_status=販売中 / listingId=2JPTBkWndxGku2L9EVw4UP"
       }
     },
@@ -7417,7 +7417,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -7460,7 +7460,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
         "ルーティング状態": "写真セット組み直し必要",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=jchinjia リュック メンズ ビジネスリュック 男女兼用 カジュアルバッグ おしゃれ トラベルバッグ / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix"
       }
     },
@@ -7593,7 +7593,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -7766,7 +7766,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -7806,7 +7806,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=Letshe ベビー前開きロンパース ピンク 110cm / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
       }
     },
@@ -7941,7 +7941,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -8175,7 +8175,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -8346,7 +8346,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -8386,7 +8386,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=裏起毛トップス オフホワイト L / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
       }
     },
@@ -8503,7 +8503,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -8668,10 +8668,11 @@ window.ZERO_COST_INTAKE = {
         "remaining_blockers": [
           "Pendant child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
           "0039 FRONT のベージュ衣類スロットは相方未確定のまま",
-          "0040 BACK/CODE の Bluetooth マウス側スロットは相方未確定のまま",
+          "0040 BACK/CODE の Bluetooth マウス側スロットは BOX-001-ITEM-0066 として local child 化済み。共有管理表 / 管理表 / 出品判断は別フェーズ。",
+          "0041 BACK/CODE のグレー衣類側は相方未確定のまま",
           "SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
           "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。",
-          "SPLIT-BOX-001-0040-MOUSE=BOX-001-ITEM-0066 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。"
+          "SPLIT-BOX-001-0040-MOUSE=BOX-001-ITEM-0066 のローカル写真セットは作成済み。ローカル特定結果へ反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
         ],
         "safe_next_step": "SPLIT-BOX-001-0039-PENDANT を local mint → local confirmed / official へ provisional actual-only 反映。親 0039 / 0040 は split_required のまま維持する。 / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットを作成済み / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0040-MOUSE=BOX-001-ITEM-0066 のローカル写真セットを作成済み / SPLIT-BOX-001-0040-MOUSE=BOX-001-ITEM-0066 をローカル特定結果へ暫定・実物写真のみで反映済み",
         "stage_status": "partial_manifest_child_minted",
@@ -8806,7 +8807,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -8971,10 +8972,11 @@ window.ZERO_COST_INTAKE = {
         "remaining_blockers": [
           "Pendant child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
           "0039 FRONT のベージュ衣類スロットは相方未確定のまま",
-          "0040 BACK/CODE の Bluetooth マウス側スロットは相方未確定のまま",
+          "0040 BACK/CODE の Bluetooth マウス側スロットは BOX-001-ITEM-0066 として local child 化済み。共有管理表 / 管理表 / 出品判断は別フェーズ。",
+          "0041 BACK/CODE のグレー衣類側は相方未確定のまま",
           "SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
           "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。",
-          "SPLIT-BOX-001-0040-MOUSE=BOX-001-ITEM-0066 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。"
+          "SPLIT-BOX-001-0040-MOUSE=BOX-001-ITEM-0066 のローカル写真セットは作成済み。ローカル特定結果へ反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
         ],
         "safe_next_step": "SPLIT-BOX-001-0039-PENDANT を local mint → local confirmed / official へ provisional actual-only 反映。親 0039 / 0040 は split_required のまま維持する。 / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットを作成済み / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0040-MOUSE=BOX-001-ITEM-0066 のローカル写真セットを作成済み / SPLIT-BOX-001-0040-MOUSE=BOX-001-ITEM-0066 をローカル特定結果へ暫定・実物写真のみで反映済み",
         "stage_status": "partial_manifest_child_minted",
@@ -9112,7 +9114,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -9217,7 +9219,7 @@ window.ZERO_COST_INTAKE = {
         "product_name": "写真セット組み直し候補: NEEDLY Sleeping Lip Mask 10ml",
         "barcode_primary": "X001B1RSSJ",
         "product_code_type": "amazon_internal",
-        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
+        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番 / 内容物未確認",
         "note": "BACK/CODE の2枚で NEEDLY Sleeping Lip Mask 10ml / X001B1RSSJ が一致する。一方 FRONT は青い袋入りの布製品で別商品。現写真では1商品に断定不能のため、NEEDLY 側を provisional に留める。",
         "evidence": [
           "BACK/CODE=NEEDLY Sleeping Lip Mask 10ml",
@@ -9227,7 +9229,8 @@ window.ZERO_COST_INTAKE = {
         "exact_match_guard_state": "review_required",
         "exact_match_guard_reasons": [
           "別商品mix",
-          "写真セット組み直し必要"
+          "写真セット組み直し必要",
+          "内容物未確認"
         ],
         "image_source": "actual-only"
       },
@@ -9241,12 +9244,13 @@ window.ZERO_COST_INTAKE = {
         "official_image_url": "",
         "image_source": "actual-only",
         "verified_exact_match": false,
-        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
+        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番 / 内容物未確認",
         "note": "BACK/CODE の2枚で NEEDLY / Sleeping lip mask / 10ml / X001B1RSSJ が一致する。一方 FRONT は青い袋入り布製品で別商品。比較画像は使わず、NEEDLY 側を actual-only の provisional として扱う。",
         "exact_match_guard_state": "review_required",
         "exact_match_guard_reasons": [
           "別商品mix",
-          "写真セット組み直し必要"
+          "写真セット組み直し必要",
+          "内容物未確認"
         ]
       },
       "commerce": {
@@ -9273,18 +9277,19 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
       "display_name": "写真セット組み直し候補: NEEDLY Sleeping Lip Mask 10ml",
       "product_name": "写真セット組み直し候補: NEEDLY Sleeping Lip Mask 10ml",
       "verified_exact_match": false,
-      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 管理番号再分解待ち",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 管理番号再分解待ち",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
         "別商品mix",
-        "写真セット組み直し必要"
+        "写真セット組み直し必要",
+        "内容物未確認"
       ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
@@ -9302,13 +9307,14 @@ window.ZERO_COST_INTAKE = {
       "route_plan": {},
       "split_staging": {
         "management_id": "BOX-001-ITEM-0042",
-        "plan_summary": "0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致する。0042 FRONT の青い袋入り布製品スロットと 0043 BACK/CODE の DOMAT 財布側スロットは別商品として親 ID に残し、NEEDLY 側だけ local child へ切り出す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
-        "ui_summary": "0043 FRONT + 0042 BACK/CODE は NEEDLY child 候補 / 0042 FRONT は布製品側で別物 / 0043 BACK/CODE は DOMAT 側で別物 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
-        "operator_summary": "BOX-001-ITEM-0042 / 0043 は NEEDLY lip mask と DOMAT 財布側が混在している。0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致するため、NEEDLY 側だけ local child へ切り出す。0042 FRONT の青い袋入り布製品スロットと 0043 BACK/CODE の DOMAT 財布側は親 ID に残す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
-        "routing_note": "0043 FRONT + 0042 BACK/CODE は NEEDLY 側として coherent。0042 FRONT の布製品スロットと 0043 BACK/CODE の DOMAT 財布側は別商品のため親 ID に残す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
-        "routing_next_action": "SPLIT-BOX-001-0042-NEEDLY を local mint → local confirmed / official へ provisional actual-only 反映。親 0042 / 0043 は split_required のまま維持。 / BOX-001-ITEM-0065 は管理表 / 出品判断の止めどころを決めてから正式反映",
+        "plan_summary": "0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致する。0042 FRONT の青い袋入り布製品スロットと 0043 BACK/CODE の DOMAT 財布側スロットは別商品として親 ID に残し、NEEDLY 側だけ local child へ切り出す。さらに 0044 FRONT と 0043 BACK/CODE は X00174LMFZ / DOMAT 財布 レッドブラウンで一致するため、DOMAT 側も local child へ切り出せる。ただし財布本体は布袋内で内容物未確認。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "ui_summary": "0043 FRONT + 0042 BACK/CODE は NEEDLY child 候補 / 0044 FRONT + 0043 BACK/CODE は DOMAT child 候補 / 0042 FRONT は布製品側で別物 / 0044 BACK/CODE は Qzkouma 帽子側で別物 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "operator_summary": "BOX-001-ITEM-0042 / 0043 / 0044 は NEEDLY lip mask、DOMAT 財布側、Qzkouma 帽子側が混在している。0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致するため、NEEDLY 側だけ local child へ切り出す。0044 FRONT と 0043 BACK/CODE は X00174LMFZ / DOMAT 財布 レッドブラウンで一致するため、DOMAT 側も local child へ切り出せる。ただし財布本体は布袋内で内容物未確認。0042 FRONT の青い袋入り布製品スロットと 0044 BACK/CODE の Qzkouma 帽子側は親 ID に残す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_note": "0043 FRONT + 0042 BACK/CODE は NEEDLY 側として coherent。0044 FRONT + 0043 BACK/CODE は DOMAT 財布側として coherent だが、財布本体は布袋内で内容物未確認。0042 FRONT の布製品スロットと 0044 BACK/CODE の Qzkouma 帽子側は別商品のため親 ID に残す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_next_action": "SPLIT-BOX-001-0042-NEEDLY を local mint → local confirmed / official へ provisional actual-only 反映。SPLIT-BOX-001-0043-DOMAT-WALLET も local mint → local confirmed / official へ provisional actual-only / 内容物未確認で反映。親 0042 / 0043 / 0044 は split_required のまま維持。 / BOX-001-ITEM-0065 は管理表 / 出品判断の止めどころを決めてから正式反映 / BOX-001-ITEM-0067 は管理表 / 出品判断の止めどころを決めてから正式反映",
         "related_management_ids": [
-          "BOX-001-ITEM-0043"
+          "BOX-001-ITEM-0043",
+          "BOX-001-ITEM-0044"
         ],
         "source_trace": [
           {
@@ -9340,6 +9346,11 @@ window.ZERO_COST_INTAKE = {
             "management_id": "BOX-001-ITEM-0043",
             "slot": "CODE",
             "observed_as": "DOMAT 財布の別商品コード面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0044",
+            "slot": "FRONT",
+            "observed_as": "DOMAT 箱の中身写真。DOMAT ロゴ入り布袋が見えるが、財布本体は布袋内で内容物未確認"
           }
         ],
         "blocked_split_children": [
@@ -9385,20 +9396,69 @@ window.ZERO_COST_INTAKE = {
             "truth_promoted_management_id": "BOX-001-ITEM-0065",
             "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
             "truth_promoted_at": "2026-04-22 01:15:04 JST"
+          },
+          {
+            "temporary_split_id": "SPLIT-BOX-001-0043-DOMAT-WALLET",
+            "target_label": "DOMAT 財布 レッドブラウン 内容物未確認",
+            "source_slots": [
+              "BOX-001-ITEM-0044:FRONT",
+              "BOX-001-ITEM-0043:BACK",
+              "BOX-001-ITEM-0043:CODE"
+            ],
+            "status": "manifest_child_minted_local_only",
+            "blockers": [
+              "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+              "0044 FRONT と 0043 BACK/CODE は X00174LMFZ / DOMAT 財布 レッドブラウンで一致し、同一の DOMAT 箱として実画像確認済み",
+              "FRONT で見えているのは DOMAT ロゴ入り布袋で、財布本体そのものは見えていないため内容物未確認",
+              "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+              "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+            ],
+            "truth_product_name": "DOMAT 財布 レッドブラウン（内容物未確認）",
+            "truth_barcode_primary": "X00174LMFZ",
+            "truth_product_code_type": "amazon_internal",
+            "truth_content_unknown": true,
+            "truth_official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+            "truth_exact_match_guard_state": "review_required",
+            "truth_exact_match_guard_reasons": [
+              "内容物未確認"
+            ],
+            "truth_evidence": [
+              "X00174LMFZ",
+              "DOMAT",
+              "財布",
+              "赤褐色",
+              "0044:FRONT + 0043:BACK + 0043:CODE",
+              "財布本体は布袋内で内容物未確認"
+            ],
+            "truth_brand_override": "DOMAT",
+            "truth_category_override": "ファッション > メンズ > 小物 > 財布",
+            "truth_check_items_override": "財布本体の有無 / 色味レッドブラウン / 箱状態 / 布袋状態 / 未使用状態",
+            "truth_note": "SPLIT-BOX-001-0043-DOMAT-WALLET は、0044:FRONT と 0043:BACK/CODE の3枚で X00174LMFZ / DOMAT 財布 レッドブラウンの写真セットを組み直し可能。Web検索では DOMAT wallet の流通ページはあるが、X00174LMFZ まで一致する公式級根拠は未取得。FRONT で見えているのは DOMAT ロゴ入り布袋で、財布本体そのものは見えていないため、ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映する。管理表 / 出品判断は別フェーズ。",
+            "truth_price_override": 1980,
+            "minted_management_id": "BOX-001-ITEM-0067",
+            "minted_at": "2026-04-22 03:08:57 JST",
+            "minted_scope": "local_manifest_only",
+            "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+            "truth_promotion_scope": "local_confirmed_official_only",
+            "truth_promoted_management_id": "BOX-001-ITEM-0067",
+            "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み。管理表 / 出品判断は別フェーズで行う。",
+            "truth_promoted_at": "2026-04-22 03:11:56 JST"
           }
         ],
         "remaining_blockers": [
           "NEEDLY child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
           "0042 FRONT の青い袋入り布製品スロットは相方未確定のまま",
-          "0043 BACK/CODE の DOMAT 財布側スロットは相方未確定のまま",
+          "DOMAT 財布側は BOX-001-ITEM-0067 として local child 化し、ローカル特定結果へ反映済み。ただし財布本体は布袋内で内容物未確認。",
+          "0044 BACK/CODE の Qzkouma 帽子側スロットは FRONT 相当写真なしのまま",
           "SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
-          "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。"
+          "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。",
+          "SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットは作成済み。ローカル特定結果へ反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
         ],
-        "safe_next_step": "SPLIT-BOX-001-0042-NEEDLY を local mint → local confirmed / official へ provisional actual-only 反映。親 0042 / 0043 は split_required のまま維持する。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "safe_next_step": "SPLIT-BOX-001-0042-NEEDLY を local mint → local confirmed / official へ provisional actual-only 反映。SPLIT-BOX-001-0043-DOMAT-WALLET を local mint → local confirmed / official へ provisional actual-only / 内容物未確認で反映。親 0042 / 0043 / 0044 は split_required のまま維持する。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
         "stage_status": "partial_manifest_child_minted",
         "match_role": "primary"
       },
-      "split_plan_summary": "0043 FRONT + 0042 BACK/CODE は NEEDLY child 候補 / 0042 FRONT は布製品側で別物 / 0043 BACK/CODE は DOMAT 側で別物 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
+      "split_plan_summary": "0043 FRONT + 0042 BACK/CODE は NEEDLY child 候補 / 0044 FRONT + 0043 BACK/CODE は DOMAT child 候補 / 0042 FRONT は布製品側で別物 / 0044 BACK/CODE は Qzkouma 帽子側で別物 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
       "split_plan_role": "primary"
     },
     {
@@ -9485,7 +9545,7 @@ window.ZERO_COST_INTAKE = {
         "product_name": "写真セット組み直し候補: DOMAT 財布 レッドブラウン",
         "barcode_primary": "X00174LMFZ",
         "product_code_type": "amazon_internal",
-        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
+        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番 / 内容物未確認",
         "note": "BACK/CODE の2枚で DOMAT 箱と X00174LMFZ / 財布 / 赤褐色 が一致。一方 FRONT は NEEDLY SLEEPING LIP MASK 箱の別面で別商品。現写真では1商品に断定不能のため、DOMAT 側を provisional に留める。",
         "evidence": [
           "X00174LMFZ",
@@ -9496,7 +9556,8 @@ window.ZERO_COST_INTAKE = {
         "exact_match_guard_state": "review_required",
         "exact_match_guard_reasons": [
           "別商品mix",
-          "写真セット組み直し必要"
+          "写真セット組み直し必要",
+          "内容物未確認"
         ]
       },
       "official": {},
@@ -9524,18 +9585,19 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
       "display_name": "写真セット組み直し候補: DOMAT 財布 レッドブラウン",
       "product_name": "写真セット組み直し候補: DOMAT 財布 レッドブラウン",
       "verified_exact_match": false,
-      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 管理番号再分解待ち",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 管理番号再分解待ち",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
         "別商品mix",
-        "写真セット組み直し必要"
+        "写真セット組み直し必要",
+        "内容物未確認"
       ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
@@ -9553,13 +9615,14 @@ window.ZERO_COST_INTAKE = {
       "route_plan": {},
       "split_staging": {
         "management_id": "BOX-001-ITEM-0042",
-        "plan_summary": "0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致する。0042 FRONT の青い袋入り布製品スロットと 0043 BACK/CODE の DOMAT 財布側スロットは別商品として親 ID に残し、NEEDLY 側だけ local child へ切り出す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
-        "ui_summary": "0043 FRONT + 0042 BACK/CODE は NEEDLY child 候補 / 0042 FRONT は布製品側で別物 / 0043 BACK/CODE は DOMAT 側で別物 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
-        "operator_summary": "BOX-001-ITEM-0042 / 0043 は NEEDLY lip mask と DOMAT 財布側が混在している。0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致するため、NEEDLY 側だけ local child へ切り出す。0042 FRONT の青い袋入り布製品スロットと 0043 BACK/CODE の DOMAT 財布側は親 ID に残す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
-        "routing_note": "0043 FRONT + 0042 BACK/CODE は NEEDLY 側として coherent。0042 FRONT の布製品スロットと 0043 BACK/CODE の DOMAT 財布側は別商品のため親 ID に残す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
-        "routing_next_action": "SPLIT-BOX-001-0042-NEEDLY を local mint → local confirmed / official へ provisional actual-only 反映。親 0042 / 0043 は split_required のまま維持。 / BOX-001-ITEM-0065 は管理表 / 出品判断の止めどころを決めてから正式反映",
+        "plan_summary": "0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致する。0042 FRONT の青い袋入り布製品スロットと 0043 BACK/CODE の DOMAT 財布側スロットは別商品として親 ID に残し、NEEDLY 側だけ local child へ切り出す。さらに 0044 FRONT と 0043 BACK/CODE は X00174LMFZ / DOMAT 財布 レッドブラウンで一致するため、DOMAT 側も local child へ切り出せる。ただし財布本体は布袋内で内容物未確認。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "ui_summary": "0043 FRONT + 0042 BACK/CODE は NEEDLY child 候補 / 0044 FRONT + 0043 BACK/CODE は DOMAT child 候補 / 0042 FRONT は布製品側で別物 / 0044 BACK/CODE は Qzkouma 帽子側で別物 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "operator_summary": "BOX-001-ITEM-0042 / 0043 / 0044 は NEEDLY lip mask、DOMAT 財布側、Qzkouma 帽子側が混在している。0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致するため、NEEDLY 側だけ local child へ切り出す。0044 FRONT と 0043 BACK/CODE は X00174LMFZ / DOMAT 財布 レッドブラウンで一致するため、DOMAT 側も local child へ切り出せる。ただし財布本体は布袋内で内容物未確認。0042 FRONT の青い袋入り布製品スロットと 0044 BACK/CODE の Qzkouma 帽子側は親 ID に残す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_note": "0043 FRONT + 0042 BACK/CODE は NEEDLY 側として coherent。0044 FRONT + 0043 BACK/CODE は DOMAT 財布側として coherent だが、財布本体は布袋内で内容物未確認。0042 FRONT の布製品スロットと 0044 BACK/CODE の Qzkouma 帽子側は別商品のため親 ID に残す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_next_action": "SPLIT-BOX-001-0042-NEEDLY を local mint → local confirmed / official へ provisional actual-only 反映。SPLIT-BOX-001-0043-DOMAT-WALLET も local mint → local confirmed / official へ provisional actual-only / 内容物未確認で反映。親 0042 / 0043 / 0044 は split_required のまま維持。 / BOX-001-ITEM-0065 は管理表 / 出品判断の止めどころを決めてから正式反映 / BOX-001-ITEM-0067 は管理表 / 出品判断の止めどころを決めてから正式反映",
         "related_management_ids": [
-          "BOX-001-ITEM-0043"
+          "BOX-001-ITEM-0043",
+          "BOX-001-ITEM-0044"
         ],
         "source_trace": [
           {
@@ -9591,6 +9654,11 @@ window.ZERO_COST_INTAKE = {
             "management_id": "BOX-001-ITEM-0043",
             "slot": "CODE",
             "observed_as": "DOMAT 財布の別商品コード面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0044",
+            "slot": "FRONT",
+            "observed_as": "DOMAT 箱の中身写真。DOMAT ロゴ入り布袋が見えるが、財布本体は布袋内で内容物未確認"
           }
         ],
         "blocked_split_children": [
@@ -9636,20 +9704,69 @@ window.ZERO_COST_INTAKE = {
             "truth_promoted_management_id": "BOX-001-ITEM-0065",
             "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
             "truth_promoted_at": "2026-04-22 01:15:04 JST"
+          },
+          {
+            "temporary_split_id": "SPLIT-BOX-001-0043-DOMAT-WALLET",
+            "target_label": "DOMAT 財布 レッドブラウン 内容物未確認",
+            "source_slots": [
+              "BOX-001-ITEM-0044:FRONT",
+              "BOX-001-ITEM-0043:BACK",
+              "BOX-001-ITEM-0043:CODE"
+            ],
+            "status": "manifest_child_minted_local_only",
+            "blockers": [
+              "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+              "0044 FRONT と 0043 BACK/CODE は X00174LMFZ / DOMAT 財布 レッドブラウンで一致し、同一の DOMAT 箱として実画像確認済み",
+              "FRONT で見えているのは DOMAT ロゴ入り布袋で、財布本体そのものは見えていないため内容物未確認",
+              "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+              "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+            ],
+            "truth_product_name": "DOMAT 財布 レッドブラウン（内容物未確認）",
+            "truth_barcode_primary": "X00174LMFZ",
+            "truth_product_code_type": "amazon_internal",
+            "truth_content_unknown": true,
+            "truth_official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+            "truth_exact_match_guard_state": "review_required",
+            "truth_exact_match_guard_reasons": [
+              "内容物未確認"
+            ],
+            "truth_evidence": [
+              "X00174LMFZ",
+              "DOMAT",
+              "財布",
+              "赤褐色",
+              "0044:FRONT + 0043:BACK + 0043:CODE",
+              "財布本体は布袋内で内容物未確認"
+            ],
+            "truth_brand_override": "DOMAT",
+            "truth_category_override": "ファッション > メンズ > 小物 > 財布",
+            "truth_check_items_override": "財布本体の有無 / 色味レッドブラウン / 箱状態 / 布袋状態 / 未使用状態",
+            "truth_note": "SPLIT-BOX-001-0043-DOMAT-WALLET は、0044:FRONT と 0043:BACK/CODE の3枚で X00174LMFZ / DOMAT 財布 レッドブラウンの写真セットを組み直し可能。Web検索では DOMAT wallet の流通ページはあるが、X00174LMFZ まで一致する公式級根拠は未取得。FRONT で見えているのは DOMAT ロゴ入り布袋で、財布本体そのものは見えていないため、ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映する。管理表 / 出品判断は別フェーズ。",
+            "truth_price_override": 1980,
+            "minted_management_id": "BOX-001-ITEM-0067",
+            "minted_at": "2026-04-22 03:08:57 JST",
+            "minted_scope": "local_manifest_only",
+            "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+            "truth_promotion_scope": "local_confirmed_official_only",
+            "truth_promoted_management_id": "BOX-001-ITEM-0067",
+            "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み。管理表 / 出品判断は別フェーズで行う。",
+            "truth_promoted_at": "2026-04-22 03:11:56 JST"
           }
         ],
         "remaining_blockers": [
           "NEEDLY child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
           "0042 FRONT の青い袋入り布製品スロットは相方未確定のまま",
-          "0043 BACK/CODE の DOMAT 財布側スロットは相方未確定のまま",
+          "DOMAT 財布側は BOX-001-ITEM-0067 として local child 化し、ローカル特定結果へ反映済み。ただし財布本体は布袋内で内容物未確認。",
+          "0044 BACK/CODE の Qzkouma 帽子側スロットは FRONT 相当写真なしのまま",
           "SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
-          "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。"
+          "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。",
+          "SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットは作成済み。ローカル特定結果へ反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
         ],
-        "safe_next_step": "SPLIT-BOX-001-0042-NEEDLY を local mint → local confirmed / official へ provisional actual-only 反映。親 0042 / 0043 は split_required のまま維持する。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "safe_next_step": "SPLIT-BOX-001-0042-NEEDLY を local mint → local confirmed / official へ provisional actual-only 反映。SPLIT-BOX-001-0043-DOMAT-WALLET を local mint → local confirmed / official へ provisional actual-only / 内容物未確認で反映。親 0042 / 0043 / 0044 は split_required のまま維持する。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
         "stage_status": "partial_manifest_child_minted",
         "match_role": "related"
       },
-      "split_plan_summary": "0043 FRONT + 0042 BACK/CODE は NEEDLY child 候補 / 0042 FRONT は布製品側で別物 / 0043 BACK/CODE は DOMAT 側で別物 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
+      "split_plan_summary": "0043 FRONT + 0042 BACK/CODE は NEEDLY child 候補 / 0044 FRONT + 0043 BACK/CODE は DOMAT child 候補 / 0042 FRONT は布製品側で別物 / 0044 BACK/CODE は Qzkouma 帽子側で別物 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
       "split_plan_role": "related"
     },
     {
@@ -9737,10 +9854,10 @@ window.ZERO_COST_INTAKE = {
       "resolved": {
         "management_id": "BOX-001-ITEM-0044",
         "resolution_status": "provisional",
-        "product_name": "Qzkouma バケットハット ブラック",
+        "product_name": "写真セット組み直し候補: Qzkouma バケットハット ブラック",
         "barcode_primary": "X0018K5KPV",
         "product_code_type": "amazon_internal",
-        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番 / 内容物未確認",
         "note": "BACK/CODE の2枚で黒い帽子本体と X0018K5KPV / [Qzkouma] キャップ・ハット DBQ-62（ブラック）が一致。一方 FRONT は DOMAT 箱の中身写真で別商品。現写真では1商品に断定不能のため、帽子側を provisional に留める。",
         "evidence": [
           "X0018K5KPV",
@@ -9750,7 +9867,9 @@ window.ZERO_COST_INTAKE = {
         ],
         "exact_match_guard_state": "review_required",
         "exact_match_guard_reasons": [
-          "別商品mix"
+          "別商品mix",
+          "写真セット組み直し必要",
+          "内容物未確認"
         ]
       },
       "official": {},
@@ -9760,12 +9879,12 @@ window.ZERO_COST_INTAKE = {
         "product_id": "PRD-BOX-001-044",
         "draft_id": "DRF-BOX-001-044",
         "research_id": "RES-BOX-001-044",
-        "product_name": "Qzkouma バケットハット ブラック",
+        "product_name": "写真セット組み直し候補: Qzkouma バケットハット ブラック",
         "brand": "",
         "category": "",
         "barcode_primary": "X0018K5KPV",
         "product_code_type": "amazon_internal",
-        "listing_title": "Qzkouma バケットハット ブラック",
+        "listing_title": "写真セット組み直し候補: Qzkouma バケットハット ブラック",
         "listing_price": "",
         "market_floor_price": "",
         "market_floor_state": "未調査",
@@ -9778,17 +9897,19 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
-      "display_name": "Qzkouma バケットハット ブラック",
-      "product_name": "Qzkouma バケットハット ブラック",
+      "display_name": "写真セット組み直し候補: Qzkouma バケットハット ブラック",
+      "product_name": "写真セット組み直し候補: Qzkouma バケットハット ブラック",
       "verified_exact_match": false,
-      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 管理番号再分解待ち",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
-        "別商品mix"
+        "別商品mix",
+        "写真セット組み直し必要",
+        "内容物未確認"
       ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
@@ -9803,7 +9924,162 @@ window.ZERO_COST_INTAKE = {
       "market_floor_price_label": "未調査",
       "listing_price": "",
       "exception": {},
-      "route_plan": {}
+      "route_plan": {},
+      "split_staging": {
+        "management_id": "BOX-001-ITEM-0042",
+        "plan_summary": "0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致する。0042 FRONT の青い袋入り布製品スロットと 0043 BACK/CODE の DOMAT 財布側スロットは別商品として親 ID に残し、NEEDLY 側だけ local child へ切り出す。さらに 0044 FRONT と 0043 BACK/CODE は X00174LMFZ / DOMAT 財布 レッドブラウンで一致するため、DOMAT 側も local child へ切り出せる。ただし財布本体は布袋内で内容物未確認。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "ui_summary": "0043 FRONT + 0042 BACK/CODE は NEEDLY child 候補 / 0044 FRONT + 0043 BACK/CODE は DOMAT child 候補 / 0042 FRONT は布製品側で別物 / 0044 BACK/CODE は Qzkouma 帽子側で別物 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "operator_summary": "BOX-001-ITEM-0042 / 0043 / 0044 は NEEDLY lip mask、DOMAT 財布側、Qzkouma 帽子側が混在している。0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致するため、NEEDLY 側だけ local child へ切り出す。0044 FRONT と 0043 BACK/CODE は X00174LMFZ / DOMAT 財布 レッドブラウンで一致するため、DOMAT 側も local child へ切り出せる。ただし財布本体は布袋内で内容物未確認。0042 FRONT の青い袋入り布製品スロットと 0044 BACK/CODE の Qzkouma 帽子側は親 ID に残す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_note": "0043 FRONT + 0042 BACK/CODE は NEEDLY 側として coherent。0044 FRONT + 0043 BACK/CODE は DOMAT 財布側として coherent だが、財布本体は布袋内で内容物未確認。0042 FRONT の布製品スロットと 0044 BACK/CODE の Qzkouma 帽子側は別商品のため親 ID に残す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_next_action": "SPLIT-BOX-001-0042-NEEDLY を local mint → local confirmed / official へ provisional actual-only 反映。SPLIT-BOX-001-0043-DOMAT-WALLET も local mint → local confirmed / official へ provisional actual-only / 内容物未確認で反映。親 0042 / 0043 / 0044 は split_required のまま維持。 / BOX-001-ITEM-0065 は管理表 / 出品判断の止めどころを決めてから正式反映 / BOX-001-ITEM-0067 は管理表 / 出品判断の止めどころを決めてから正式反映",
+        "related_management_ids": [
+          "BOX-001-ITEM-0043",
+          "BOX-001-ITEM-0044"
+        ],
+        "source_trace": [
+          {
+            "management_id": "BOX-001-ITEM-0042",
+            "slot": "FRONT",
+            "observed_as": "青い袋入りの布製品スロット"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0042",
+            "slot": "BACK",
+            "observed_as": "NEEDLY Sleeping Lip Mask 10ml の箱背面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0042",
+            "slot": "CODE",
+            "observed_as": "X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml コード面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0043",
+            "slot": "FRONT",
+            "observed_as": "NEEDLY Sleeping Lip Mask 10ml の箱 FRONT"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0043",
+            "slot": "BACK",
+            "observed_as": "X00174LMFZ / DOMAT 財布側ラベル面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0043",
+            "slot": "CODE",
+            "observed_as": "DOMAT 財布の別商品コード面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0044",
+            "slot": "FRONT",
+            "observed_as": "DOMAT 箱の中身写真。DOMAT ロゴ入り布袋が見えるが、財布本体は布袋内で内容物未確認"
+          }
+        ],
+        "blocked_split_children": [
+          {
+            "temporary_split_id": "SPLIT-BOX-001-0042-NEEDLY",
+            "target_label": "NEEDLY Sleeping Lip Mask 10ml",
+            "source_slots": [
+              "BOX-001-ITEM-0043:FRONT",
+              "BOX-001-ITEM-0042:BACK",
+              "BOX-001-ITEM-0042:CODE"
+            ],
+            "status": "manifest_child_minted_local_only",
+            "blockers": [
+              "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+              "0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致し、同一の NEEDLY 箱として実画像確認済み",
+              "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+              "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+            ],
+            "truth_product_name": "NEEDLY Sleeping Lip Mask 10ml",
+            "truth_barcode_primary": "X001B1RSSJ",
+            "truth_product_code_type": "amazon_internal",
+            "truth_content_unknown": false,
+            "truth_official_image_state": "actual-only固定 / 比較画像なし",
+            "truth_exact_match_guard_state": "clear",
+            "truth_exact_match_guard_reasons": [],
+            "truth_evidence": [
+              "X001B1RSSJ",
+              "NEEDLY",
+              "Sleeping Lip Mask",
+              "10ml",
+              "0043:FRONT + 0042:BACK + 0042:CODE"
+            ],
+            "truth_brand_override": "NEEDLY",
+            "truth_category_override": "ビューティー > スキンケア・基礎化粧品 > リップケア",
+            "truth_check_items_override": "未開封 / 使用期限 / 箱つぶれ / 10ml表記 / 衛生状態",
+            "truth_note": "SPLIT-BOX-001-0042-NEEDLY は、0043:FRONT と 0042:BACK/CODE の3枚で X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml の写真セットを組み直し済み。Web検索では NEEDLY Sleeping Lip Mask 10ml の流通ページは複数見つかるが、X001B1RSSJ まで一致する根拠は未取得。出品画像は実物のみで扱い、ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+            "truth_price_override": 1680,
+            "minted_management_id": "BOX-001-ITEM-0065",
+            "minted_at": "2026-04-22 01:09:44 JST",
+            "minted_scope": "local_manifest_only",
+            "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+            "truth_promotion_scope": "local_confirmed_official_only",
+            "truth_promoted_management_id": "BOX-001-ITEM-0065",
+            "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
+            "truth_promoted_at": "2026-04-22 01:15:04 JST"
+          },
+          {
+            "temporary_split_id": "SPLIT-BOX-001-0043-DOMAT-WALLET",
+            "target_label": "DOMAT 財布 レッドブラウン 内容物未確認",
+            "source_slots": [
+              "BOX-001-ITEM-0044:FRONT",
+              "BOX-001-ITEM-0043:BACK",
+              "BOX-001-ITEM-0043:CODE"
+            ],
+            "status": "manifest_child_minted_local_only",
+            "blockers": [
+              "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+              "0044 FRONT と 0043 BACK/CODE は X00174LMFZ / DOMAT 財布 レッドブラウンで一致し、同一の DOMAT 箱として実画像確認済み",
+              "FRONT で見えているのは DOMAT ロゴ入り布袋で、財布本体そのものは見えていないため内容物未確認",
+              "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+              "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+            ],
+            "truth_product_name": "DOMAT 財布 レッドブラウン（内容物未確認）",
+            "truth_barcode_primary": "X00174LMFZ",
+            "truth_product_code_type": "amazon_internal",
+            "truth_content_unknown": true,
+            "truth_official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+            "truth_exact_match_guard_state": "review_required",
+            "truth_exact_match_guard_reasons": [
+              "内容物未確認"
+            ],
+            "truth_evidence": [
+              "X00174LMFZ",
+              "DOMAT",
+              "財布",
+              "赤褐色",
+              "0044:FRONT + 0043:BACK + 0043:CODE",
+              "財布本体は布袋内で内容物未確認"
+            ],
+            "truth_brand_override": "DOMAT",
+            "truth_category_override": "ファッション > メンズ > 小物 > 財布",
+            "truth_check_items_override": "財布本体の有無 / 色味レッドブラウン / 箱状態 / 布袋状態 / 未使用状態",
+            "truth_note": "SPLIT-BOX-001-0043-DOMAT-WALLET は、0044:FRONT と 0043:BACK/CODE の3枚で X00174LMFZ / DOMAT 財布 レッドブラウンの写真セットを組み直し可能。Web検索では DOMAT wallet の流通ページはあるが、X00174LMFZ まで一致する公式級根拠は未取得。FRONT で見えているのは DOMAT ロゴ入り布袋で、財布本体そのものは見えていないため、ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映する。管理表 / 出品判断は別フェーズ。",
+            "truth_price_override": 1980,
+            "minted_management_id": "BOX-001-ITEM-0067",
+            "minted_at": "2026-04-22 03:08:57 JST",
+            "minted_scope": "local_manifest_only",
+            "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+            "truth_promotion_scope": "local_confirmed_official_only",
+            "truth_promoted_management_id": "BOX-001-ITEM-0067",
+            "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み。管理表 / 出品判断は別フェーズで行う。",
+            "truth_promoted_at": "2026-04-22 03:11:56 JST"
+          }
+        ],
+        "remaining_blockers": [
+          "NEEDLY child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
+          "0042 FRONT の青い袋入り布製品スロットは相方未確定のまま",
+          "DOMAT 財布側は BOX-001-ITEM-0067 として local child 化し、ローカル特定結果へ反映済み。ただし財布本体は布袋内で内容物未確認。",
+          "0044 BACK/CODE の Qzkouma 帽子側スロットは FRONT 相当写真なしのまま",
+          "SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
+          "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。",
+          "SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットは作成済み。ローカル特定結果へ反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+        ],
+        "safe_next_step": "SPLIT-BOX-001-0042-NEEDLY を local mint → local confirmed / official へ provisional actual-only 反映。SPLIT-BOX-001-0043-DOMAT-WALLET を local mint → local confirmed / official へ provisional actual-only / 内容物未確認で反映。親 0042 / 0043 / 0044 は split_required のまま維持する。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "stage_status": "partial_manifest_child_minted",
+        "match_role": "related"
+      },
+      "split_plan_summary": "0043 FRONT + 0042 BACK/CODE は NEEDLY child 候補 / 0044 FRONT + 0043 BACK/CODE は DOMAT child 候補 / 0042 FRONT は布製品側で別物 / 0044 BACK/CODE は Qzkouma 帽子側で別物 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
+      "split_plan_role": "related"
     },
     {
       "management_id": "BOX-001-ITEM-0045",
@@ -9949,7 +10225,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -9992,7 +10268,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
         "ルーティング状態": "写真セット組み直し必要",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=ロゴ刺繍ベースボールキャップ ブラック系 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix"
       }
     },
@@ -10145,7 +10421,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -10188,7 +10464,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
         "ルーティング状態": "写真セット組み直し必要",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=ホワイト レディーストップス M / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix"
       }
     },
@@ -10335,7 +10611,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -10375,7 +10651,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=高視認性安全ベスト 蛍光イエロー / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
       }
     },
@@ -10512,7 +10788,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -10781,7 +11057,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -11052,7 +11328,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [
         {
@@ -11110,7 +11386,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=CRZ YOGA レギンス 股下24インチ ダークグレー系 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / actual-only固定 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
       }
     },
@@ -11241,7 +11517,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -11381,7 +11657,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -11542,7 +11818,7 @@ window.ZERO_COST_INTAKE = {
             "minted_management_id": "BOX-001-ITEM-0061",
             "minted_at": "2026-04-21 23:11:56 JST",
             "minted_scope": "local_manifest_only",
-            "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+            "minted_note": "ローカル写真一覧へ作成済み。ローカル特定結果へは反映済み。管理表 / 出品判断は別フェーズで行う。",
             "truth_promotion_scope": "local_confirmed_official_only",
             "truth_promoted_management_id": "BOX-001-ITEM-0061",
             "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
@@ -11728,7 +12004,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -11890,7 +12166,7 @@ window.ZERO_COST_INTAKE = {
             "minted_management_id": "BOX-001-ITEM-0061",
             "minted_at": "2026-04-21 23:11:56 JST",
             "minted_scope": "local_manifest_only",
-            "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+            "minted_note": "ローカル写真一覧へ作成済み。ローカル特定結果へは反映済み。管理表 / 出品判断は別フェーズで行う。",
             "truth_promotion_scope": "local_confirmed_official_only",
             "truth_promoted_management_id": "BOX-001-ITEM-0061",
             "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
@@ -12107,7 +12383,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -12152,7 +12428,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
         "ルーティング状態": "写真セット組み直し必要",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=写真セット組み直し候補: Poperdision ブラック 3XL レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / 正規性確認待ち / 管理番号再分解待ち / 新管理番号未採番 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix / 写真セット組み直し必要 / 真贋確認"
       }
     },
@@ -12241,10 +12517,10 @@ window.ZERO_COST_INTAKE = {
       "resolved": {
         "management_id": "BOX-001-ITEM-0055",
         "resolution_status": "provisional",
-        "product_name": "ATIDIMU 美容液",
+        "product_name": "写真セット組み直し候補: ATIDIMU 美容液",
         "barcode_primary": "X001BGAPFR",
         "product_code_type": "amazon_internal",
-        "official_image_state": "比較画像候補あり / 現写真では1商品に断定不能",
+        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
         "note": "BACK/CODE の2枚で X001BGAPFR / ATIDIMU（アティディム）美容液 / 7種植物エキス配合 が一致。一方 FRONT は別商品の黒い衣類パッケージ。公式候補ページは保持するが、現写真では1商品に断定不能のため、ATIDIMU 側を provisional に留める。",
         "evidence": [
           "X001BGAPFR",
@@ -12261,7 +12537,8 @@ window.ZERO_COST_INTAKE = {
         "image_source": "ATIDIMU公式",
         "exact_match_guard_state": "review_required",
         "exact_match_guard_reasons": [
-          "別商品mix"
+          "別商品mix",
+          "写真セット組み直し必要"
         ]
       },
       "official": {
@@ -12274,11 +12551,12 @@ window.ZERO_COST_INTAKE = {
         "official_image_url": "http://atidimu.com/cdn/shop/files/3-1.jpg?v=1759996277",
         "image_source": "ATIDIMU公式",
         "verified_exact_match": false,
-        "official_image_state": "比較画像候補あり / 現写真では1商品に断定不能",
+        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
         "note": "BACK/CODE では X001BGAPFR / ATIDIMU / 美容液 / 7種植物エキス配合 が一致するが、FRONT は別商品の黒い衣類パッケージ。比較画像候補は保持するが、現写真では1商品に断定不能のため出品採用不可。",
         "exact_match_guard_state": "review_required",
         "exact_match_guard_reasons": [
-          "別商品mix"
+          "別商品mix",
+          "写真セット組み直し必要"
         ]
       },
       "commerce": {
@@ -12287,12 +12565,12 @@ window.ZERO_COST_INTAKE = {
         "product_id": "PRD-BOX-001-055",
         "draft_id": "DRF-BOX-001-055",
         "research_id": "RES-BOX-001-055",
-        "product_name": "ATIDIMU 美容液",
+        "product_name": "写真セット組み直し候補: ATIDIMU 美容液",
         "brand": "ATIDIMU",
         "category": "コスメ・美容 > スキンケア・基礎化粧品 > 美容液",
         "barcode_primary": "X001BGAPFR",
         "product_code_type": "amazon_internal",
-        "listing_title": "ATIDIMU 美容液",
+        "listing_title": "写真セット組み直し候補: ATIDIMU 美容液",
         "listing_price": "2480",
         "market_floor_price": "",
         "market_floor_state": "未調査",
@@ -12305,7 +12583,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [
         {
@@ -12327,13 +12605,14 @@ window.ZERO_COST_INTAKE = {
           "verified_exact_match": false
         }
       ],
-      "display_name": "ATIDIMU 美容液",
-      "product_name": "ATIDIMU 美容液",
+      "display_name": "写真セット組み直し候補: ATIDIMU 美容液",
+      "product_name": "写真セット組み直し候補: ATIDIMU 美容液",
       "verified_exact_match": false,
-      "official_image_state": "比較画像候補あり / 現写真では1商品に断定不能",
+      "official_image_state": "比較画像候補あり / 現写真では1商品に断定不能 / 管理番号再分解待ち",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
-        "別商品mix"
+        "別商品mix",
+        "写真セット組み直し必要"
       ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
@@ -12362,13 +12641,187 @@ window.ZERO_COST_INTAKE = {
         "Ship&co条件": "停止",
         "メルカリ配送": "",
         "人確認": "要",
-        "人確認理由": "precision guard: 別商品mix / 停止条件あり",
+        "人確認理由": "precision guard: 別商品mix / 写真セット組み直し必要 / 停止条件あり",
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
         "ルーティング状態": "写真セット組み直し必要",
-        "更新時刻": "2026-04-22 00:33:59 JST",
-        "メモ": "name=ATIDIMU 美容液 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix"
-      }
+        "更新時刻": "2026-04-22 08:50:03 JST",
+        "メモ": "name=写真セット組み直し候補: ATIDIMU 美容液 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / 現写真では1商品に断定不能 / 管理番号再分解待ち / 新管理番号未採番 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix / 写真セット組み直し必要"
+      },
+      "split_staging": {
+        "management_id": "BOX-001-ITEM-0055",
+        "stage_status": "partial_manifest_child_minted",
+        "plan_summary": "0056 FRONT と 0055 BACK/CODE は X001BGAPFR / ATIDIMU FOR MEN No3 FACE SERUM 30mL で一致する。0055 FRONT の黒い袋入り衣類系スロットと 0056 CODE の JODSONE ネイルドライヤー箱は別商品として親 ID に残し、ATIDIMU 側だけ local child へ切り出す。 / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "ui_summary": "0056 FRONT + 0055 BACK/CODE は ATIDIMU child 候補 / 0055 FRONT は黒い袋入り衣類系 / 0056 CODE は JODSONE 側 / 0056 BACK は出品画面スクショ / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "operator_summary": "BOX-001-ITEM-0055 / 0056 は ATIDIMU 美容液、黒い袋入り衣類系、JODSONE ネイルドライヤー、出品画面スクショが混在している。0056 FRONT と 0055 BACK/CODE は X001BGAPFR / ATIDIMU FOR MEN No3 FACE SERUM 30mL で一致するため、ATIDIMU 側だけ local child へ切り出す。Web検索では ATIDIMU 公式ページで 30mL / 日本製 / レチノール・ビタミンE・7種植物エキス配合の同系商品情報を確認したが、X001BGAPFR は内部コード候補として扱い、出品画像は実物のみで扱う。 / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_note": "0056 FRONT + 0055 BACK/CODE は ATIDIMU 側として coherent。0055 FRONT の黒い袋入り衣類系スロット、0056 CODE の JODSONE ネイルドライヤー箱、0056 BACK の出品画面スクショは別扱い。 / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_next_action": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN を local mint → local confirmed / official へ provisional actual-only 反映。親 0055 / 0056 は split_required のまま維持。 / BOX-001-ITEM-0068 は管理表 / 出品判断の止めどころを決めてから正式反映 / BOX-001-ITEM-0069 は管理表 / 出品判断の止めどころを決めてから正式反映",
+        "related_management_ids": [
+          "BOX-001-ITEM-0056",
+          "BOX-001-ITEM-0057"
+        ],
+        "source_trace": [
+          {
+            "management_id": "BOX-001-ITEM-0055",
+            "slot": "FRONT",
+            "observed_as": "黒い袋入り衣類系スロット。ATIDIMU 側ではない"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0055",
+            "slot": "BACK",
+            "observed_as": "X001BGAPFR / ATIDIMU 美容液 メンズ レチノール・ビタミンE・7種植物エキス配合 ラベル面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0055",
+            "slot": "CODE",
+            "observed_as": "ATIDIMU 美容液の成分・使用方法面。30mL 表記あり"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0056",
+            "slot": "FRONT",
+            "observed_as": "ATIDIMU FOR MEN No3 FACE SERUM 箱 FRONT"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0056",
+            "slot": "BACK",
+            "observed_as": "メルカリ出品入力画面スクショ。実物写真ではない"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0056",
+            "slot": "CODE",
+            "observed_as": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク / X001AP6CKV の別商品箱"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0057",
+            "slot": "FRONT",
+            "observed_as": "JODSONE / X001AP6CKV / クイックUV LED自動センサーネイルドライヤー ピンクの箱ラベル面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0057",
+            "slot": "BACK",
+            "observed_as": "Professional Gel Polish LED Nail Dryer Lamp と読める JODSONE ネイルドライヤー箱面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0057",
+            "slot": "CODE",
+            "observed_as": "B09NG1PLHK / RIZZARI 9L自動給水器の対象外ラベル。JODSONE側ではない"
+          }
+        ],
+        "blocked_split_children": [
+          {
+            "temporary_split_id": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN",
+            "target_label": "ATIDIMU FOR MEN No3 FACE SERUM 30mL",
+            "source_slots": [
+              "BOX-001-ITEM-0056:FRONT",
+              "BOX-001-ITEM-0055:BACK",
+              "BOX-001-ITEM-0055:CODE"
+            ],
+            "status": "manifest_child_minted_local_only",
+            "blockers": [
+              "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+              "0056 FRONT と 0055 BACK/CODE は X001BGAPFR / ATIDIMU FOR MEN No3 FACE SERUM 30mL で一致し、同一の ATIDIMU 箱として実画像確認済み",
+              "X001BGAPFR は JAN確定ではなく内部管理番号候補として扱う",
+              "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+              "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+            ],
+            "truth_product_name": "ATIDIMU FOR MEN No3 FACE SERUM 30mL",
+            "truth_barcode_primary": "X001BGAPFR",
+            "truth_product_code_type": "amazon_internal",
+            "truth_content_unknown": false,
+            "truth_official_image_state": "actual-only固定 / 比較画像なし",
+            "truth_exact_match_guard_state": "clear",
+            "truth_exact_match_guard_reasons": [],
+            "truth_evidence": [
+              "X001BGAPFR",
+              "ATIDIMU",
+              "FOR MEN",
+              "No3",
+              "FACE SERUM",
+              "30mL",
+              "レチノール・ビタミンE・7種植物エキス配合",
+              "0056:FRONT + 0055:BACK + 0055:CODE"
+            ],
+            "truth_brand_override": "ATIDIMU",
+            "truth_category_override": "コスメ・美容 > スキンケア・基礎化粧品 > 美容液",
+            "truth_check_items_override": "未開封 / 箱つぶれ / 30mL表記 / 日本製表記 / 使用期限または保管状態",
+            "truth_note": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN は、0056:FRONT と 0055:BACK/CODE の3枚で X001BGAPFR / ATIDIMU FOR MEN No3 FACE SERUM 30mL の写真セットを組み直し可能。ATIDIMU公式ページで 30mL / 日本製 / レチノール・ビタミンE・7種植物エキス配合の同系商品情報を確認したが、X001BGAPFR は内部コード候補として扱い、出品画像は実物のみで扱う。ローカル特定結果へ暫定・実物写真のみで反映し、管理表 / 出品判断は別フェーズ。",
+            "truth_price_override": 2480,
+            "minted_management_id": "BOX-001-ITEM-0068",
+            "minted_at": "2026-04-22 08:08:00 JST",
+            "minted_scope": "local_manifest_only",
+            "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+            "truth_promotion_scope": "local_confirmed_official_only",
+            "truth_promoted_management_id": "BOX-001-ITEM-0068",
+            "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
+            "truth_promoted_at": "2026-04-22 08:10:26 JST"
+          },
+          {
+            "temporary_split_id": "SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER",
+            "target_label": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
+            "source_slots": [
+              "BOX-001-ITEM-0057:FRONT",
+              "BOX-001-ITEM-0057:BACK",
+              "BOX-001-ITEM-0056:CODE"
+            ],
+            "status": "manifest_child_minted_local_only",
+            "blockers": [
+              "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+              "0057 FRONT/BACK と 0056 CODE は X001AP6CKV / JODSONE / クイックUV LED自動センサーネイルドライヤー ピンクで一致し、同一の JODSONE 箱として実画像確認済み",
+              "0057 CODE は B09NG1PLHK / RIZZARI 9L自動給水器の対象外ラベルのため JODSONE 側に使わない",
+              "X001AP6CKV は JAN確定ではなく内部管理番号候補として扱う",
+              "本体そのものは箱内で見えていないため、ローカル特定結果へは内容物未確認で反映する",
+              "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+              "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+            ],
+            "truth_product_name": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク（内容物未確認）",
+            "truth_barcode_primary": "X001AP6CKV",
+            "truth_product_code_type": "amazon_internal",
+            "truth_content_unknown": true,
+            "truth_official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+            "truth_exact_match_guard_state": "review_required",
+            "truth_exact_match_guard_reasons": [
+              "内容物未確認"
+            ],
+            "truth_evidence": [
+              "X001AP6CKV",
+              "JODSONE",
+              "クイックUV LED",
+              "ネイルドライヤー",
+              "ピンク",
+              "Professional Gel Polish LED Nail Dryer Lamp",
+              "0057:FRONT + 0057:BACK + 0056:CODE",
+              "本体そのものは箱内で未確認",
+              "内容物未確認"
+            ],
+            "truth_brand_override": "JODSONE",
+            "truth_category_override": "コスメ・美容 > ネイルケア > ジェルネイル・ネイルシール > その他",
+            "truth_check_items_override": "本体有無 / 点灯確認 / タイマーボタン / 付属品有無 / 開封痕確認 / 箱状態",
+            "truth_note": "SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER は、0057:FRONT/BACK と 0056:CODE の3枚で X001AP6CKV / JODSONE クイックUV LED自動センサーネイルドライヤー ピンクを実物3枚で確認できる写真セット。0057:CODE は B09NG1PLHK / RIZZARI 9L自動給水器の対象外ラベルのため JODSONE 側には使わない。X001AP6CKV は内部コード候補として扱い、出品画像は実物のみで扱う。本体そのものは箱内で見えていないため、ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映し、管理表 / 出品判断は別フェーズ。",
+            "truth_price_override": 2780,
+            "minted_management_id": "BOX-001-ITEM-0069",
+            "minted_at": "2026-04-22 09:00:19 JST",
+            "minted_scope": "local_manifest_only",
+            "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+            "truth_promotion_scope": "local_confirmed_official_only",
+            "truth_promoted_management_id": "BOX-001-ITEM-0069",
+            "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み。管理表 / 出品判断は別フェーズで行う。",
+            "truth_promoted_at": "2026-04-22 09:03:31 JST"
+          }
+        ],
+        "remaining_blockers": [
+          "ATIDIMU child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
+          "0055 FRONT の黒い袋入り衣類系スロットは相方未確定のまま",
+          "0056 CODE の JODSONE ネイルドライヤー箱は BACK/FRONT 相当写真なしのまま",
+          "0056 BACK は出品画面スクショであり、商品写真として使わない",
+          "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
+          "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。",
+          "SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。"
+        ],
+        "safe_next_step": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN を local mint → local confirmed / official へ provisional actual-only 反映。親 0055 / 0056 は split_required のまま維持する。 / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "match_role": "primary"
+      },
+      "split_plan_summary": "0056 FRONT + 0055 BACK/CODE は ATIDIMU child 候補 / 0055 FRONT は黒い袋入り衣類系 / 0056 CODE は JODSONE 側 / 0056 BACK は出品画面スクショ / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+      "split_plan_role": "primary"
     },
     {
       "management_id": "BOX-001-ITEM-0056",
@@ -12455,10 +12908,10 @@ window.ZERO_COST_INTAKE = {
       "resolved": {
         "management_id": "BOX-001-ITEM-0056",
         "resolution_status": "provisional",
-        "product_name": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
+        "product_name": "写真セット組み直し候補: JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
         "barcode_primary": "X001AP6CKV",
         "product_code_type": "amazon_internal",
-        "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番 / 内容物未確認",
         "note": "CODE では JODSONE 箱ラベル X001AP6CKV / クイックUV LED自動センサーネイルドライヤー ピンク が読める。一方 FRONT は ATIDIMU FACE SERUM 箱、BACK は出品入力画面スクショで、現写真では1商品に断定不能。JODSONE 側を provisional に留める。",
         "evidence": [
           "X001AP6CKV",
@@ -12469,7 +12922,9 @@ window.ZERO_COST_INTAKE = {
         ],
         "exact_match_guard_state": "review_required",
         "exact_match_guard_reasons": [
-          "別商品mix"
+          "別商品mix",
+          "写真セット組み直し必要",
+          "内容物未確認"
         ]
       },
       "official": {},
@@ -12479,12 +12934,12 @@ window.ZERO_COST_INTAKE = {
         "product_id": "PRD-BOX-001-056",
         "draft_id": "DRF-BOX-001-056",
         "research_id": "RES-BOX-001-056",
-        "product_name": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
+        "product_name": "写真セット組み直し候補: JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
         "brand": "",
         "category": "",
         "barcode_primary": "X001AP6CKV",
         "product_code_type": "amazon_internal",
-        "listing_title": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
+        "listing_title": "写真セット組み直し候補: JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
         "listing_price": "",
         "market_floor_price": "",
         "market_floor_state": "未調査",
@@ -12497,17 +12952,19 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
-      "display_name": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
-      "product_name": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
+      "display_name": "写真セット組み直し候補: JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
+      "product_name": "写真セット組み直し候補: JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
       "verified_exact_match": false,
-      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 管理番号再分解待ち",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
-        "別商品mix"
+        "別商品mix",
+        "写真セット組み直し必要",
+        "内容物未確認"
       ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
@@ -12522,7 +12979,181 @@ window.ZERO_COST_INTAKE = {
       "market_floor_price_label": "未調査",
       "listing_price": "",
       "exception": {},
-      "route_plan": {}
+      "route_plan": {},
+      "split_staging": {
+        "management_id": "BOX-001-ITEM-0055",
+        "stage_status": "partial_manifest_child_minted",
+        "plan_summary": "0056 FRONT と 0055 BACK/CODE は X001BGAPFR / ATIDIMU FOR MEN No3 FACE SERUM 30mL で一致する。0055 FRONT の黒い袋入り衣類系スロットと 0056 CODE の JODSONE ネイルドライヤー箱は別商品として親 ID に残し、ATIDIMU 側だけ local child へ切り出す。 / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "ui_summary": "0056 FRONT + 0055 BACK/CODE は ATIDIMU child 候補 / 0055 FRONT は黒い袋入り衣類系 / 0056 CODE は JODSONE 側 / 0056 BACK は出品画面スクショ / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "operator_summary": "BOX-001-ITEM-0055 / 0056 は ATIDIMU 美容液、黒い袋入り衣類系、JODSONE ネイルドライヤー、出品画面スクショが混在している。0056 FRONT と 0055 BACK/CODE は X001BGAPFR / ATIDIMU FOR MEN No3 FACE SERUM 30mL で一致するため、ATIDIMU 側だけ local child へ切り出す。Web検索では ATIDIMU 公式ページで 30mL / 日本製 / レチノール・ビタミンE・7種植物エキス配合の同系商品情報を確認したが、X001BGAPFR は内部コード候補として扱い、出品画像は実物のみで扱う。 / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_note": "0056 FRONT + 0055 BACK/CODE は ATIDIMU 側として coherent。0055 FRONT の黒い袋入り衣類系スロット、0056 CODE の JODSONE ネイルドライヤー箱、0056 BACK の出品画面スクショは別扱い。 / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_next_action": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN を local mint → local confirmed / official へ provisional actual-only 反映。親 0055 / 0056 は split_required のまま維持。 / BOX-001-ITEM-0068 は管理表 / 出品判断の止めどころを決めてから正式反映 / BOX-001-ITEM-0069 は管理表 / 出品判断の止めどころを決めてから正式反映",
+        "related_management_ids": [
+          "BOX-001-ITEM-0056",
+          "BOX-001-ITEM-0057"
+        ],
+        "source_trace": [
+          {
+            "management_id": "BOX-001-ITEM-0055",
+            "slot": "FRONT",
+            "observed_as": "黒い袋入り衣類系スロット。ATIDIMU 側ではない"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0055",
+            "slot": "BACK",
+            "observed_as": "X001BGAPFR / ATIDIMU 美容液 メンズ レチノール・ビタミンE・7種植物エキス配合 ラベル面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0055",
+            "slot": "CODE",
+            "observed_as": "ATIDIMU 美容液の成分・使用方法面。30mL 表記あり"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0056",
+            "slot": "FRONT",
+            "observed_as": "ATIDIMU FOR MEN No3 FACE SERUM 箱 FRONT"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0056",
+            "slot": "BACK",
+            "observed_as": "メルカリ出品入力画面スクショ。実物写真ではない"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0056",
+            "slot": "CODE",
+            "observed_as": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク / X001AP6CKV の別商品箱"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0057",
+            "slot": "FRONT",
+            "observed_as": "JODSONE / X001AP6CKV / クイックUV LED自動センサーネイルドライヤー ピンクの箱ラベル面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0057",
+            "slot": "BACK",
+            "observed_as": "Professional Gel Polish LED Nail Dryer Lamp と読める JODSONE ネイルドライヤー箱面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0057",
+            "slot": "CODE",
+            "observed_as": "B09NG1PLHK / RIZZARI 9L自動給水器の対象外ラベル。JODSONE側ではない"
+          }
+        ],
+        "blocked_split_children": [
+          {
+            "temporary_split_id": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN",
+            "target_label": "ATIDIMU FOR MEN No3 FACE SERUM 30mL",
+            "source_slots": [
+              "BOX-001-ITEM-0056:FRONT",
+              "BOX-001-ITEM-0055:BACK",
+              "BOX-001-ITEM-0055:CODE"
+            ],
+            "status": "manifest_child_minted_local_only",
+            "blockers": [
+              "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+              "0056 FRONT と 0055 BACK/CODE は X001BGAPFR / ATIDIMU FOR MEN No3 FACE SERUM 30mL で一致し、同一の ATIDIMU 箱として実画像確認済み",
+              "X001BGAPFR は JAN確定ではなく内部管理番号候補として扱う",
+              "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+              "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+            ],
+            "truth_product_name": "ATIDIMU FOR MEN No3 FACE SERUM 30mL",
+            "truth_barcode_primary": "X001BGAPFR",
+            "truth_product_code_type": "amazon_internal",
+            "truth_content_unknown": false,
+            "truth_official_image_state": "actual-only固定 / 比較画像なし",
+            "truth_exact_match_guard_state": "clear",
+            "truth_exact_match_guard_reasons": [],
+            "truth_evidence": [
+              "X001BGAPFR",
+              "ATIDIMU",
+              "FOR MEN",
+              "No3",
+              "FACE SERUM",
+              "30mL",
+              "レチノール・ビタミンE・7種植物エキス配合",
+              "0056:FRONT + 0055:BACK + 0055:CODE"
+            ],
+            "truth_brand_override": "ATIDIMU",
+            "truth_category_override": "コスメ・美容 > スキンケア・基礎化粧品 > 美容液",
+            "truth_check_items_override": "未開封 / 箱つぶれ / 30mL表記 / 日本製表記 / 使用期限または保管状態",
+            "truth_note": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN は、0056:FRONT と 0055:BACK/CODE の3枚で X001BGAPFR / ATIDIMU FOR MEN No3 FACE SERUM 30mL の写真セットを組み直し可能。ATIDIMU公式ページで 30mL / 日本製 / レチノール・ビタミンE・7種植物エキス配合の同系商品情報を確認したが、X001BGAPFR は内部コード候補として扱い、出品画像は実物のみで扱う。ローカル特定結果へ暫定・実物写真のみで反映し、管理表 / 出品判断は別フェーズ。",
+            "truth_price_override": 2480,
+            "minted_management_id": "BOX-001-ITEM-0068",
+            "minted_at": "2026-04-22 08:08:00 JST",
+            "minted_scope": "local_manifest_only",
+            "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+            "truth_promotion_scope": "local_confirmed_official_only",
+            "truth_promoted_management_id": "BOX-001-ITEM-0068",
+            "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
+            "truth_promoted_at": "2026-04-22 08:10:26 JST"
+          },
+          {
+            "temporary_split_id": "SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER",
+            "target_label": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
+            "source_slots": [
+              "BOX-001-ITEM-0057:FRONT",
+              "BOX-001-ITEM-0057:BACK",
+              "BOX-001-ITEM-0056:CODE"
+            ],
+            "status": "manifest_child_minted_local_only",
+            "blockers": [
+              "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+              "0057 FRONT/BACK と 0056 CODE は X001AP6CKV / JODSONE / クイックUV LED自動センサーネイルドライヤー ピンクで一致し、同一の JODSONE 箱として実画像確認済み",
+              "0057 CODE は B09NG1PLHK / RIZZARI 9L自動給水器の対象外ラベルのため JODSONE 側に使わない",
+              "X001AP6CKV は JAN確定ではなく内部管理番号候補として扱う",
+              "本体そのものは箱内で見えていないため、ローカル特定結果へは内容物未確認で反映する",
+              "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+              "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+            ],
+            "truth_product_name": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク（内容物未確認）",
+            "truth_barcode_primary": "X001AP6CKV",
+            "truth_product_code_type": "amazon_internal",
+            "truth_content_unknown": true,
+            "truth_official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+            "truth_exact_match_guard_state": "review_required",
+            "truth_exact_match_guard_reasons": [
+              "内容物未確認"
+            ],
+            "truth_evidence": [
+              "X001AP6CKV",
+              "JODSONE",
+              "クイックUV LED",
+              "ネイルドライヤー",
+              "ピンク",
+              "Professional Gel Polish LED Nail Dryer Lamp",
+              "0057:FRONT + 0057:BACK + 0056:CODE",
+              "本体そのものは箱内で未確認",
+              "内容物未確認"
+            ],
+            "truth_brand_override": "JODSONE",
+            "truth_category_override": "コスメ・美容 > ネイルケア > ジェルネイル・ネイルシール > その他",
+            "truth_check_items_override": "本体有無 / 点灯確認 / タイマーボタン / 付属品有無 / 開封痕確認 / 箱状態",
+            "truth_note": "SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER は、0057:FRONT/BACK と 0056:CODE の3枚で X001AP6CKV / JODSONE クイックUV LED自動センサーネイルドライヤー ピンクを実物3枚で確認できる写真セット。0057:CODE は B09NG1PLHK / RIZZARI 9L自動給水器の対象外ラベルのため JODSONE 側には使わない。X001AP6CKV は内部コード候補として扱い、出品画像は実物のみで扱う。本体そのものは箱内で見えていないため、ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映し、管理表 / 出品判断は別フェーズ。",
+            "truth_price_override": 2780,
+            "minted_management_id": "BOX-001-ITEM-0069",
+            "minted_at": "2026-04-22 09:00:19 JST",
+            "minted_scope": "local_manifest_only",
+            "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+            "truth_promotion_scope": "local_confirmed_official_only",
+            "truth_promoted_management_id": "BOX-001-ITEM-0069",
+            "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み。管理表 / 出品判断は別フェーズで行う。",
+            "truth_promoted_at": "2026-04-22 09:03:31 JST"
+          }
+        ],
+        "remaining_blockers": [
+          "ATIDIMU child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
+          "0055 FRONT の黒い袋入り衣類系スロットは相方未確定のまま",
+          "0056 CODE の JODSONE ネイルドライヤー箱は BACK/FRONT 相当写真なしのまま",
+          "0056 BACK は出品画面スクショであり、商品写真として使わない",
+          "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
+          "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。",
+          "SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。"
+        ],
+        "safe_next_step": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN を local mint → local confirmed / official へ provisional actual-only 反映。親 0055 / 0056 は split_required のまま維持する。 / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "match_role": "related"
+      },
+      "split_plan_summary": "0056 FRONT + 0055 BACK/CODE は ATIDIMU child 候補 / 0055 FRONT は黒い袋入り衣類系 / 0056 CODE は JODSONE 側 / 0056 BACK は出品画面スクショ / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+      "split_plan_role": "related"
     },
     {
       "management_id": "BOX-001-ITEM-0057",
@@ -12603,11 +13234,11 @@ window.ZERO_COST_INTAKE = {
       "resolved": {
         "management_id": "BOX-001-ITEM-0057",
         "resolution_status": "provisional",
-        "product_name": "JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp",
+        "product_name": "写真セット組み直し候補: JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp",
         "barcode_primary": "JODSONE nail lamp box text",
         "product_code_type": "package_text",
         "verified_exact_match": false,
-        "official_image_state": "比較画像候補あり / 現写真では1商品に断定不能",
+        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番 / 内容物未確認",
         "note": "FRONT/BACK の2枚で JODSONE / Professional Gel Polish LED Nail Dryer Lamp / LED UV / Intelligent sensing / Non-harmful が一致。一方 CODE は B09NG1PLHK の給水器ラベルで別商品。現写真では1商品に断定不能のため、JODSONE 箱側を provisional に留め、比較画像は照合用に保持する。",
         "evidence": [
           "JODSONE",
@@ -12626,7 +13257,9 @@ window.ZERO_COST_INTAKE = {
         "exact_match_guard_state": "review_required",
         "official_image_local": "state/intake/official_images/BOX-001-ITEM-0057_jodsone_nail_lamp.webp",
         "exact_match_guard_reasons": [
-          "別商品mix"
+          "別商品mix",
+          "写真セット組み直し必要",
+          "内容物未確認"
         ]
       },
       "official": {
@@ -12635,11 +13268,13 @@ window.ZERO_COST_INTAKE = {
         "official_image_url": "https://cdn.jodsonebeauty.com/cdn/10954/2025/1108/90301857d3d2d1b0c04a2b85dcefd247-1.webp",
         "official_image_local": "state/intake/official_images/BOX-001-ITEM-0057_jodsone_nail_lamp.webp",
         "verified_exact_match": false,
-        "official_image_state": "比較画像候補あり / 現写真では1商品に断定不能",
+        "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番 / 内容物未確認",
         "note": "FRONT/BACK は JODSONE のネイルランプ箱で揃うが、CODE は B09NG1PLHK の給水器ラベルで別商品。比較画像候補は保持するが、現写真では1商品に断定不能のため出品採用不可。",
         "exact_match_guard_state": "review_required",
         "exact_match_guard_reasons": [
-          "別商品mix"
+          "別商品mix",
+          "写真セット組み直し必要",
+          "内容物未確認"
         ]
       },
       "commerce": {
@@ -12648,12 +13283,12 @@ window.ZERO_COST_INTAKE = {
         "product_id": "PRD-BOX-001-057",
         "draft_id": "DRF-BOX-001-057",
         "research_id": "RES-BOX-001-057",
-        "product_name": "JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp",
+        "product_name": "写真セット組み直し候補: JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp",
         "brand": "JODSONE",
         "category": "コスメ・美容 > ネイルケア > ジェルネイル・ネイルシール > その他",
         "barcode_primary": "JODSONE nail lamp box text",
         "product_code_type": "package_text",
-        "listing_title": "JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp",
+        "listing_title": "写真セット組み直し候補: JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp",
         "listing_price": "2780",
         "market_floor_price": "1500",
         "market_floor_state": "調査済み",
@@ -12673,7 +13308,7 @@ window.ZERO_COST_INTAKE = {
           "label": "比較-1",
           "url": "./assets/official_images/BOX-001-ITEM-0057_official_1.webp",
           "page_url": "https://www.jodsonebeauty.com/product/jodsone-120w-u-v-led-nail-lamp-for-two-hand-led-light-for-gel-with-54-pcs-light-bead-quick-curing-gel-polish-nail-dryer-suitable-salon-and-home-use-blackblack/",
-          "state": "比較画像候補あり / 現写真では1商品に断定不能",
+          "state": "比較画像候補あり / 現写真では1商品に断定不能 / 内容物未確認",
           "source": "web candidate",
           "verified_exact_match": false
         },
@@ -12707,7 +13342,7 @@ window.ZERO_COST_INTAKE = {
           "label": "比較-1",
           "url": "./assets/official_images/BOX-001-ITEM-0057_official_1.webp",
           "page_url": "https://www.jodsonebeauty.com/product/jodsone-120w-u-v-led-nail-lamp-for-two-hand-led-light-for-gel-with-54-pcs-light-bead-quick-curing-gel-polish-nail-dryer-suitable-salon-and-home-use-blackblack/",
-          "state": "比較画像候補あり / 現写真では1商品に断定不能",
+          "state": "比較画像候補あり / 現写真では1商品に断定不能 / 内容物未確認",
           "source": "web candidate",
           "verified_exact_match": false
         },
@@ -12736,13 +13371,15 @@ window.ZERO_COST_INTAKE = {
           "verified_exact_match": false
         }
       ],
-      "display_name": "JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp",
-      "product_name": "JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp",
+      "display_name": "写真セット組み直し候補: JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp",
+      "product_name": "写真セット組み直し候補: JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp",
       "verified_exact_match": false,
-      "official_image_state": "比較画像候補あり / 現写真では1商品に断定不能",
+      "official_image_state": "比較画像候補あり / 現写真では1商品に断定不能 / 内容物未確認 / 管理番号再分解待ち",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
-        "別商品mix"
+        "別商品mix",
+        "写真セット組み直し必要",
+        "内容物未確認"
       ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
@@ -12775,9 +13412,183 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "比較画像照合",
         "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
         "ルーティング状態": "写真セット組み直し必要",
-        "更新時刻": "2026-04-22 00:33:59 JST",
+        "更新時刻": "2026-04-22 08:50:03 JST",
         "メモ": "name=JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=別商品mix / inventory_status=販売中 / listingId=2JPSNX6qATG7NwnssYkshh"
-      }
+      },
+      "split_staging": {
+        "management_id": "BOX-001-ITEM-0055",
+        "stage_status": "partial_manifest_child_minted",
+        "plan_summary": "0056 FRONT と 0055 BACK/CODE は X001BGAPFR / ATIDIMU FOR MEN No3 FACE SERUM 30mL で一致する。0055 FRONT の黒い袋入り衣類系スロットと 0056 CODE の JODSONE ネイルドライヤー箱は別商品として親 ID に残し、ATIDIMU 側だけ local child へ切り出す。 / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "ui_summary": "0056 FRONT + 0055 BACK/CODE は ATIDIMU child 候補 / 0055 FRONT は黒い袋入り衣類系 / 0056 CODE は JODSONE 側 / 0056 BACK は出品画面スクショ / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "operator_summary": "BOX-001-ITEM-0055 / 0056 は ATIDIMU 美容液、黒い袋入り衣類系、JODSONE ネイルドライヤー、出品画面スクショが混在している。0056 FRONT と 0055 BACK/CODE は X001BGAPFR / ATIDIMU FOR MEN No3 FACE SERUM 30mL で一致するため、ATIDIMU 側だけ local child へ切り出す。Web検索では ATIDIMU 公式ページで 30mL / 日本製 / レチノール・ビタミンE・7種植物エキス配合の同系商品情報を確認したが、X001BGAPFR は内部コード候補として扱い、出品画像は実物のみで扱う。 / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_note": "0056 FRONT + 0055 BACK/CODE は ATIDIMU 側として coherent。0055 FRONT の黒い袋入り衣類系スロット、0056 CODE の JODSONE ネイルドライヤー箱、0056 BACK の出品画面スクショは別扱い。 / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_next_action": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN を local mint → local confirmed / official へ provisional actual-only 反映。親 0055 / 0056 は split_required のまま維持。 / BOX-001-ITEM-0068 は管理表 / 出品判断の止めどころを決めてから正式反映 / BOX-001-ITEM-0069 は管理表 / 出品判断の止めどころを決めてから正式反映",
+        "related_management_ids": [
+          "BOX-001-ITEM-0056",
+          "BOX-001-ITEM-0057"
+        ],
+        "source_trace": [
+          {
+            "management_id": "BOX-001-ITEM-0055",
+            "slot": "FRONT",
+            "observed_as": "黒い袋入り衣類系スロット。ATIDIMU 側ではない"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0055",
+            "slot": "BACK",
+            "observed_as": "X001BGAPFR / ATIDIMU 美容液 メンズ レチノール・ビタミンE・7種植物エキス配合 ラベル面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0055",
+            "slot": "CODE",
+            "observed_as": "ATIDIMU 美容液の成分・使用方法面。30mL 表記あり"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0056",
+            "slot": "FRONT",
+            "observed_as": "ATIDIMU FOR MEN No3 FACE SERUM 箱 FRONT"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0056",
+            "slot": "BACK",
+            "observed_as": "メルカリ出品入力画面スクショ。実物写真ではない"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0056",
+            "slot": "CODE",
+            "observed_as": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク / X001AP6CKV の別商品箱"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0057",
+            "slot": "FRONT",
+            "observed_as": "JODSONE / X001AP6CKV / クイックUV LED自動センサーネイルドライヤー ピンクの箱ラベル面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0057",
+            "slot": "BACK",
+            "observed_as": "Professional Gel Polish LED Nail Dryer Lamp と読める JODSONE ネイルドライヤー箱面"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0057",
+            "slot": "CODE",
+            "observed_as": "B09NG1PLHK / RIZZARI 9L自動給水器の対象外ラベル。JODSONE側ではない"
+          }
+        ],
+        "blocked_split_children": [
+          {
+            "temporary_split_id": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN",
+            "target_label": "ATIDIMU FOR MEN No3 FACE SERUM 30mL",
+            "source_slots": [
+              "BOX-001-ITEM-0056:FRONT",
+              "BOX-001-ITEM-0055:BACK",
+              "BOX-001-ITEM-0055:CODE"
+            ],
+            "status": "manifest_child_minted_local_only",
+            "blockers": [
+              "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+              "0056 FRONT と 0055 BACK/CODE は X001BGAPFR / ATIDIMU FOR MEN No3 FACE SERUM 30mL で一致し、同一の ATIDIMU 箱として実画像確認済み",
+              "X001BGAPFR は JAN確定ではなく内部管理番号候補として扱う",
+              "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+              "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+            ],
+            "truth_product_name": "ATIDIMU FOR MEN No3 FACE SERUM 30mL",
+            "truth_barcode_primary": "X001BGAPFR",
+            "truth_product_code_type": "amazon_internal",
+            "truth_content_unknown": false,
+            "truth_official_image_state": "actual-only固定 / 比較画像なし",
+            "truth_exact_match_guard_state": "clear",
+            "truth_exact_match_guard_reasons": [],
+            "truth_evidence": [
+              "X001BGAPFR",
+              "ATIDIMU",
+              "FOR MEN",
+              "No3",
+              "FACE SERUM",
+              "30mL",
+              "レチノール・ビタミンE・7種植物エキス配合",
+              "0056:FRONT + 0055:BACK + 0055:CODE"
+            ],
+            "truth_brand_override": "ATIDIMU",
+            "truth_category_override": "コスメ・美容 > スキンケア・基礎化粧品 > 美容液",
+            "truth_check_items_override": "未開封 / 箱つぶれ / 30mL表記 / 日本製表記 / 使用期限または保管状態",
+            "truth_note": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN は、0056:FRONT と 0055:BACK/CODE の3枚で X001BGAPFR / ATIDIMU FOR MEN No3 FACE SERUM 30mL の写真セットを組み直し可能。ATIDIMU公式ページで 30mL / 日本製 / レチノール・ビタミンE・7種植物エキス配合の同系商品情報を確認したが、X001BGAPFR は内部コード候補として扱い、出品画像は実物のみで扱う。ローカル特定結果へ暫定・実物写真のみで反映し、管理表 / 出品判断は別フェーズ。",
+            "truth_price_override": 2480,
+            "minted_management_id": "BOX-001-ITEM-0068",
+            "minted_at": "2026-04-22 08:08:00 JST",
+            "minted_scope": "local_manifest_only",
+            "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+            "truth_promotion_scope": "local_confirmed_official_only",
+            "truth_promoted_management_id": "BOX-001-ITEM-0068",
+            "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
+            "truth_promoted_at": "2026-04-22 08:10:26 JST"
+          },
+          {
+            "temporary_split_id": "SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER",
+            "target_label": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
+            "source_slots": [
+              "BOX-001-ITEM-0057:FRONT",
+              "BOX-001-ITEM-0057:BACK",
+              "BOX-001-ITEM-0056:CODE"
+            ],
+            "status": "manifest_child_minted_local_only",
+            "blockers": [
+              "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+              "0057 FRONT/BACK と 0056 CODE は X001AP6CKV / JODSONE / クイックUV LED自動センサーネイルドライヤー ピンクで一致し、同一の JODSONE 箱として実画像確認済み",
+              "0057 CODE は B09NG1PLHK / RIZZARI 9L自動給水器の対象外ラベルのため JODSONE 側に使わない",
+              "X001AP6CKV は JAN確定ではなく内部管理番号候補として扱う",
+              "本体そのものは箱内で見えていないため、ローカル特定結果へは内容物未確認で反映する",
+              "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+              "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+            ],
+            "truth_product_name": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク（内容物未確認）",
+            "truth_barcode_primary": "X001AP6CKV",
+            "truth_product_code_type": "amazon_internal",
+            "truth_content_unknown": true,
+            "truth_official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+            "truth_exact_match_guard_state": "review_required",
+            "truth_exact_match_guard_reasons": [
+              "内容物未確認"
+            ],
+            "truth_evidence": [
+              "X001AP6CKV",
+              "JODSONE",
+              "クイックUV LED",
+              "ネイルドライヤー",
+              "ピンク",
+              "Professional Gel Polish LED Nail Dryer Lamp",
+              "0057:FRONT + 0057:BACK + 0056:CODE",
+              "本体そのものは箱内で未確認",
+              "内容物未確認"
+            ],
+            "truth_brand_override": "JODSONE",
+            "truth_category_override": "コスメ・美容 > ネイルケア > ジェルネイル・ネイルシール > その他",
+            "truth_check_items_override": "本体有無 / 点灯確認 / タイマーボタン / 付属品有無 / 開封痕確認 / 箱状態",
+            "truth_note": "SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER は、0057:FRONT/BACK と 0056:CODE の3枚で X001AP6CKV / JODSONE クイックUV LED自動センサーネイルドライヤー ピンクを実物3枚で確認できる写真セット。0057:CODE は B09NG1PLHK / RIZZARI 9L自動給水器の対象外ラベルのため JODSONE 側には使わない。X001AP6CKV は内部コード候補として扱い、出品画像は実物のみで扱う。本体そのものは箱内で見えていないため、ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映し、管理表 / 出品判断は別フェーズ。",
+            "truth_price_override": 2780,
+            "minted_management_id": "BOX-001-ITEM-0069",
+            "minted_at": "2026-04-22 09:00:19 JST",
+            "minted_scope": "local_manifest_only",
+            "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+            "truth_promotion_scope": "local_confirmed_official_only",
+            "truth_promoted_management_id": "BOX-001-ITEM-0069",
+            "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み。管理表 / 出品判断は別フェーズで行う。",
+            "truth_promoted_at": "2026-04-22 09:03:31 JST"
+          }
+        ],
+        "remaining_blockers": [
+          "ATIDIMU child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
+          "0055 FRONT の黒い袋入り衣類系スロットは相方未確定のまま",
+          "0056 CODE の JODSONE ネイルドライヤー箱は BACK/FRONT 相当写真なしのまま",
+          "0056 BACK は出品画面スクショであり、商品写真として使わない",
+          "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
+          "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。",
+          "SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。"
+        ],
+        "safe_next_step": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN を local mint → local confirmed / official へ provisional actual-only 反映。親 0055 / 0056 は split_required のまま維持する。 / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "match_role": "related"
+      },
+      "split_plan_summary": "0056 FRONT + 0055 BACK/CODE は ATIDIMU child 候補 / 0055 FRONT は黒い袋入り衣類系 / 0056 CODE は JODSONE 側 / 0056 BACK は出品画面スクショ / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+      "split_plan_role": "related"
     },
     {
       "management_id": "BOX-001-ITEM-0058",
@@ -12902,7 +13713,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -12974,18 +13785,6 @@ window.ZERO_COST_INTAKE = {
       ],
       "shared_sheet_title_value": "BOX-001-ITEM-0059",
       "shared_sheet_note": "SPLIT-BOX-001-0053-WHITEBOX から local manifest child を写真セット組み直し",
-      "photo_grouping": "split_child_mint",
-      "grouping_warning": "",
-      "product_name": "白箱 X00197BVHJ 記念品・ギフト箱（内容物不明）",
-      "display_name": "白箱 X00197BVHJ 記念品・ギフト箱（内容物不明）",
-      "split_child_label": "白箱 X00197BVHJ 系",
-      "split_temporary_id": "SPLIT-BOX-001-0053-WHITEBOX",
-      "split_source_slots": [
-        "BOX-001-ITEM-0053:FRONT",
-        "BOX-001-ITEM-0052:BACK",
-        "BOX-001-ITEM-0052:CODE"
-      ],
-      "split_status": "manifest_child_minted_local_only",
       "box_label": "数字箱 001",
       "box_lane": "numeric",
       "box_code": "001",
@@ -13119,10 +13918,12 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
+      "display_name": "白箱 X00197BVHJ 記念品・ギフト箱（内容物不明）",
+      "product_name": "白箱 X00197BVHJ 記念品・ギフト箱（内容物不明）",
       "verified_exact_match": false,
       "official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
       "exact_match_guard_state": "review_required",
@@ -13185,18 +13986,6 @@ window.ZERO_COST_INTAKE = {
       ],
       "shared_sheet_title_value": "BOX-001-ITEM-0060",
       "shared_sheet_note": "SPLIT-BOX-001-0030-SPEEDWOX から local manifest child を写真セット組み直し",
-      "photo_grouping": "split_child_mint",
-      "grouping_warning": "",
-      "product_name": "SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556",
-      "display_name": "SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556",
-      "split_child_label": "SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556",
-      "split_temporary_id": "SPLIT-BOX-001-0030-SPEEDWOX",
-      "split_source_slots": [
-        "BOX-001-ITEM-0030:FRONT",
-        "BOX-001-ITEM-0029:BACK",
-        "BOX-001-ITEM-0029:CODE"
-      ],
-      "split_status": "manifest_child_minted_local_only",
       "box_label": "数字箱 001",
       "box_lane": "numeric",
       "box_code": "001",
@@ -13323,10 +14112,12 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
+      "display_name": "SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556",
+      "product_name": "SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556",
       "verified_exact_match": false,
       "official_image_state": "actual-only固定 / 比較画像なし",
       "exact_match_guard_state": "clear",
@@ -13386,18 +14177,6 @@ window.ZERO_COST_INTAKE = {
       ],
       "shared_sheet_title_value": "BOX-001-ITEM-0061",
       "shared_sheet_note": "SPLIT-BOX-001-0053-HELLOKITTY からローカル写真セットを作成",
-      "photo_grouping": "split_child_mint",
-      "grouping_warning": "",
-      "product_name": "Acomiconi ハローキティ リュックアクセサリー 50TH ANNIVERSARY ブラック",
-      "display_name": "Acomiconi ハローキティ リュックアクセサリー 50TH ANNIVERSARY ブラック",
-      "split_child_label": "Hello Kitty 50TH ANNIVERSARY 系 マスコットアクセサリー（正規性未確認）",
-      "split_temporary_id": "SPLIT-BOX-001-0053-HELLOKITTY",
-      "split_source_slots": [
-        "BOX-001-ITEM-0054:FRONT",
-        "BOX-001-ITEM-0053:BACK",
-        "BOX-001-ITEM-0053:CODE"
-      ],
-      "split_status": "manifest_child_minted_local_only",
       "box_label": "数字箱 001",
       "box_lane": "numeric",
       "box_code": "001",
@@ -13535,10 +14314,12 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
+      "display_name": "Acomiconi ハローキティ リュックアクセサリー 50TH ANNIVERSARY ブラック",
+      "product_name": "Acomiconi ハローキティ リュックアクセサリー 50TH ANNIVERSARY ブラック",
       "verified_exact_match": false,
       "official_image_state": "actual-only固定 / 比較画像なし / 正規性確認待ち",
       "exact_match_guard_state": "review_required",
@@ -13601,18 +14382,6 @@ window.ZERO_COST_INTAKE = {
       ],
       "shared_sheet_title_value": "BOX-001-ITEM-0062",
       "shared_sheet_note": "SPLIT-BOX-001-0024-DUCO からローカル写真セットを作成",
-      "photo_grouping": "split_child_mint",
-      "grouping_warning": "",
-      "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
-      "display_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
-      "split_child_label": "DUCO サングラス レディース #016（ブラック・ブルー）",
-      "split_temporary_id": "SPLIT-BOX-001-0024-DUCO",
-      "split_source_slots": [
-        "BOX-001-ITEM-0025:FRONT",
-        "BOX-001-ITEM-0024:BACK",
-        "BOX-001-ITEM-0024:CODE"
-      ],
-      "split_status": "manifest_child_minted_local_only",
       "box_label": "数字箱 001",
       "box_lane": "numeric",
       "box_code": "001",
@@ -13740,10 +14509,12 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
+      "display_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
+      "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
       "verified_exact_match": false,
       "official_image_state": "actual-only固定 / 比較画像なし",
       "exact_match_guard_state": "clear",
@@ -13803,18 +14574,6 @@ window.ZERO_COST_INTAKE = {
       ],
       "shared_sheet_title_value": "BOX-001-ITEM-0063",
       "shared_sheet_note": "SPLIT-BOX-001-0048-VIHFBB からローカル写真セットを作成",
-      "photo_grouping": "split_child_mint",
-      "grouping_warning": "",
-      "product_name": "花柄トートバッグ 40g",
-      "display_name": "花柄トートバッグ 40g",
-      "split_child_label": "VIHFBB 花柄トートバッグ",
-      "split_temporary_id": "SPLIT-BOX-001-0048-VIHFBB",
-      "split_source_slots": [
-        "BOX-001-ITEM-0049:FRONT",
-        "BOX-001-ITEM-0048:BACK",
-        "BOX-001-ITEM-0048:CODE"
-      ],
-      "split_status": "manifest_child_minted_local_only",
       "box_label": "数字箱 001",
       "box_lane": "numeric",
       "box_code": "001",
@@ -13939,10 +14698,12 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
+      "display_name": "花柄トートバッグ 40g",
+      "product_name": "花柄トートバッグ 40g",
       "verified_exact_match": false,
       "official_image_state": "actual-only固定 / 比較画像なし",
       "exact_match_guard_state": "clear",
@@ -14002,18 +14763,6 @@ window.ZERO_COST_INTAKE = {
       ],
       "shared_sheet_title_value": "BOX-001-ITEM-0064",
       "shared_sheet_note": "SPLIT-BOX-001-0039-PENDANT からローカル写真セットを作成",
-      "photo_grouping": "split_child_mint",
-      "grouping_warning": "",
-      "product_name": "fivihoc レディースペンダント ゴールド系 582",
-      "display_name": "fivihoc レディースペンダント ゴールド系 582",
-      "split_child_label": "fivihoc レディースペンダント ゴールド系 582",
-      "split_temporary_id": "SPLIT-BOX-001-0039-PENDANT",
-      "split_source_slots": [
-        "BOX-001-ITEM-0040:FRONT",
-        "BOX-001-ITEM-0039:BACK",
-        "BOX-001-ITEM-0039:CODE"
-      ],
-      "split_status": "manifest_child_minted_local_only",
       "box_label": "数字箱 001",
       "box_lane": "numeric",
       "box_code": "001",
@@ -14141,10 +14890,12 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
+      "display_name": "fivihoc レディースペンダント ゴールド系 582",
+      "product_name": "fivihoc レディースペンダント ゴールド系 582",
       "verified_exact_match": false,
       "official_image_state": "actual-only固定 / 比較画像なし",
       "exact_match_guard_state": "clear",
@@ -14204,18 +14955,6 @@ window.ZERO_COST_INTAKE = {
       ],
       "shared_sheet_title_value": "BOX-001-ITEM-0065",
       "shared_sheet_note": "SPLIT-BOX-001-0042-NEEDLY からローカル写真セットを作成",
-      "photo_grouping": "split_child_mint",
-      "grouping_warning": "",
-      "product_name": "NEEDLY Sleeping Lip Mask 10ml",
-      "display_name": "NEEDLY Sleeping Lip Mask 10ml",
-      "split_child_label": "NEEDLY Sleeping Lip Mask 10ml",
-      "split_temporary_id": "SPLIT-BOX-001-0042-NEEDLY",
-      "split_source_slots": [
-        "BOX-001-ITEM-0043:FRONT",
-        "BOX-001-ITEM-0042:BACK",
-        "BOX-001-ITEM-0042:CODE"
-      ],
-      "split_status": "manifest_child_minted_local_only",
       "box_label": "数字箱 001",
       "box_lane": "numeric",
       "box_code": "001",
@@ -14346,10 +15085,12 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
+      "display_name": "NEEDLY Sleeping Lip Mask 10ml",
+      "product_name": "NEEDLY Sleeping Lip Mask 10ml",
       "verified_exact_match": false,
       "official_image_state": "actual-only固定 / 比較画像なし",
       "exact_match_guard_state": "clear",
@@ -14409,18 +15150,6 @@ window.ZERO_COST_INTAKE = {
       ],
       "shared_sheet_title_value": "BOX-001-ITEM-0066",
       "shared_sheet_note": "SPLIT-BOX-001-0040-MOUSE からローカル写真セットを作成",
-      "photo_grouping": "split_child_mint",
-      "grouping_warning": "",
-      "product_name": "Bluetooth 無線マウス PC/Mac用",
-      "display_name": "Bluetooth 無線マウス PC/Mac用",
-      "split_child_label": "Bluetooth 無線マウス PC/Mac用",
-      "split_temporary_id": "SPLIT-BOX-001-0040-MOUSE",
-      "split_source_slots": [
-        "BOX-001-ITEM-0041:FRONT",
-        "BOX-001-ITEM-0040:BACK",
-        "BOX-001-ITEM-0040:CODE"
-      ],
-      "split_status": "manifest_child_minted_local_only",
       "box_label": "数字箱 001",
       "box_lane": "numeric",
       "box_code": "001",
@@ -14549,10 +15278,12 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 02:43:40 JST"
+        "updated_at": "2026-04-22 09:00:19 JST"
       },
       "comparison_images": [],
       "reference_images": [],
+      "display_name": "Bluetooth 無線マウス PC/Mac用",
+      "product_name": "Bluetooth 無線マウス PC/Mac用",
       "verified_exact_match": false,
       "official_image_state": "actual-only固定 / 比較画像なし",
       "exact_match_guard_state": "clear",
@@ -14570,14 +15301,656 @@ window.ZERO_COST_INTAKE = {
       "listing_price": "",
       "exception": {},
       "route_plan": {}
+    },
+    {
+      "management_id": "BOX-001-ITEM-0067",
+      "box_id": "BOX-001",
+      "sequence": 67,
+      "status": "complete",
+      "missing_slots": [],
+      "slot_count": 3,
+      "slots": [
+        {
+          "slot": "FRONT",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4957.HEIC",
+          "source_name": "IMG_4957.HEIC",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0067/01_FRONT_IMG_4957.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0067/01_FRONT_IMG_4957.jpg",
+          "resident_url": "./assets/intake/BOX-001-ITEM-0067/01_FRONT_IMG_4957.jpg",
+          "rebundled_from": "BOX-001-ITEM-0044:FRONT"
+        },
+        {
+          "slot": "BACK",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4955.HEIC",
+          "source_name": "IMG_4955.HEIC",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0067/02_BACK_IMG_4955.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0067/02_BACK_IMG_4955.jpg",
+          "resident_url": "./assets/intake/BOX-001-ITEM-0067/02_BACK_IMG_4955.jpg",
+          "rebundled_from": "BOX-001-ITEM-0043:BACK"
+        },
+        {
+          "slot": "CODE",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4956.HEIC",
+          "source_name": "IMG_4956.HEIC",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0067/03_CODE_IMG_4956.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0067/03_CODE_IMG_4956.jpg",
+          "resident_url": "./assets/intake/BOX-001-ITEM-0067/03_CODE_IMG_4956.jpg",
+          "rebundled_from": "BOX-001-ITEM-0043:CODE"
+        }
+      ],
+      "shared_sheet_title_value": "BOX-001-ITEM-0067",
+      "shared_sheet_note": "SPLIT-BOX-001-0043-DOMAT-WALLET からローカル写真セットを作成",
+      "photo_grouping": "split_child_mint",
+      "grouping_warning": "",
+      "product_name": "DOMAT 財布 レッドブラウン（内容物未確認）",
+      "display_name": "DOMAT 財布 レッドブラウン（内容物未確認）",
+      "split_child_label": "DOMAT 財布 レッドブラウン 内容物未確認",
+      "split_temporary_id": "SPLIT-BOX-001-0043-DOMAT-WALLET",
+      "split_source_slots": [
+        "BOX-001-ITEM-0044:FRONT",
+        "BOX-001-ITEM-0043:BACK",
+        "BOX-001-ITEM-0043:CODE"
+      ],
+      "split_status": "manifest_child_minted_local_only",
+      "box_label": "数字箱 001",
+      "box_lane": "numeric",
+      "box_code": "001",
+      "identification": {
+        "state": "バーコード候補あり",
+        "barcode_values": [
+          "X00174LMFZ"
+        ],
+        "front_back_texts": [
+          "Bio dimor",
+          "DMF NR.",
+          "Mildewproof piece",
+          "DMF",
+          "DO NOT EAT",
+          "NR."
+        ],
+        "code_texts": [
+          "X00174LMFZ",
+          "（DOMAT】 男性用ドマット..性と女性用の財布。（赤褐色）",
+          "新品",
+          "DOMAT",
+          "= ="
+        ],
+        "ocr_texts": [
+          "Bio dimor",
+          "DMF NR.",
+          "Mildewproof piece",
+          "DMF",
+          "DO NOT EAT",
+          "NR."
+        ],
+        "candidate_query": "Bio dimor DMF NR. Mildewproof piece DMF",
+        "review_flag": "",
+        "ocr_engine": "sauna_tesseract_multistage + vision",
+        "ocr_debug_paths": [
+          "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0067/IMG_4956_CODE_ocr_best.png"
+        ]
+      },
+      "priority_score": 150,
+      "next_action": "Amazon内部コードとOCRで商品特定",
+      "barcode_kind": "amazon_internal",
+      "review_flag": "",
+      "resolved": {
+        "management_id": "BOX-001-ITEM-0067",
+        "raw_id": "RAW-BOX-001-067",
+        "product_id": "PRD-BOX-001-067",
+        "draft_id": "DRF-BOX-001-067",
+        "research_id": "RES-BOX-001-067",
+        "split_temporary_id": "SPLIT-BOX-001-0043-DOMAT-WALLET",
+        "split_source_slots": [
+          "BOX-001-ITEM-0044:FRONT",
+          "BOX-001-ITEM-0043:BACK",
+          "BOX-001-ITEM-0043:CODE"
+        ],
+        "verified_exact_match": false,
+        "official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+        "note": "SPLIT-BOX-001-0043-DOMAT-WALLET は、0044:FRONT と 0043:BACK/CODE の3枚で X00174LMFZ / DOMAT 財布 レッドブラウンの写真セットを組み直し可能。Web検索では DOMAT wallet の流通ページはあるが、X00174LMFZ まで一致する公式級根拠は未取得。FRONT で見えているのは DOMAT ロゴ入り布袋で、財布本体そのものは見えていないため、ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映する。管理表 / 出品判断は別フェーズ。",
+        "image_source": "actual-only",
+        "exact_match_guard_state": "review_required",
+        "official_page_url": "",
+        "official_image_url": "",
+        "official_image_local": "",
+        "supplemental_url": "",
+        "supplemental_image_urls": [],
+        "supplemental_image_locals": [],
+        "exact_match_guard_reasons": [
+          "内容物未確認"
+        ],
+        "resolution_status": "provisional",
+        "product_name": "DOMAT 財布 レッドブラウン（内容物未確認）",
+        "barcode_primary": "X00174LMFZ",
+        "product_code_type": "amazon_internal",
+        "evidence": [
+          "X00174LMFZ",
+          "DOMAT",
+          "財布",
+          "赤褐色",
+          "0044:FRONT + 0043:BACK + 0043:CODE",
+          "財布本体は布袋内で内容物未確認"
+        ],
+        "brand_override": "DOMAT",
+        "category_override": "ファッション > メンズ > 小物 > 財布",
+        "price_override": 1980,
+        "check_items_override": "財布本体の有無 / 色味レッドブラウン / 箱状態 / 布袋状態 / 未使用状態"
+      },
+      "official": {
+        "management_id": "BOX-001-ITEM-0067",
+        "raw_id": "RAW-BOX-001-067",
+        "product_id": "PRD-BOX-001-067",
+        "draft_id": "DRF-BOX-001-067",
+        "research_id": "RES-BOX-001-067",
+        "split_temporary_id": "SPLIT-BOX-001-0043-DOMAT-WALLET",
+        "split_source_slots": [
+          "BOX-001-ITEM-0044:FRONT",
+          "BOX-001-ITEM-0043:BACK",
+          "BOX-001-ITEM-0043:CODE"
+        ],
+        "verified_exact_match": false,
+        "official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+        "note": "SPLIT-BOX-001-0043-DOMAT-WALLET は、0044:FRONT と 0043:BACK/CODE の3枚で X00174LMFZ / DOMAT 財布 レッドブラウンの写真セットを組み直し可能。Web検索では DOMAT wallet の流通ページはあるが、X00174LMFZ まで一致する公式級根拠は未取得。FRONT で見えているのは DOMAT ロゴ入り布袋で、財布本体そのものは見えていないため、ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映する。管理表 / 出品判断は別フェーズ。",
+        "image_source": "actual-only",
+        "exact_match_guard_state": "review_required",
+        "official_page_url": "",
+        "official_image_url": "",
+        "official_image_local": "",
+        "supplemental_url": "",
+        "supplemental_image_urls": [],
+        "supplemental_image_locals": [],
+        "exact_match_guard_reasons": [
+          "内容物未確認"
+        ]
+      },
+      "commerce": {
+        "management_id": "BOX-001-ITEM-0067",
+        "raw_id": "RAW-BOX-001-067",
+        "product_id": "PRD-BOX-001-067",
+        "draft_id": "DRF-BOX-001-067",
+        "research_id": "RES-BOX-001-067",
+        "product_name": "DOMAT 財布 レッドブラウン（内容物未確認）",
+        "brand": "DOMAT",
+        "category": "ファッション > メンズ > 小物 > 財布",
+        "barcode_primary": "X00174LMFZ",
+        "product_code_type": "amazon_internal",
+        "listing_title": "DOMAT 財布 レッドブラウン（内容物未確認）",
+        "listing_price": "1980",
+        "market_floor_price": "",
+        "market_floor_state": "未調査",
+        "market_source_label": "",
+        "market_source_url": "",
+        "market_checked_at": "",
+        "market_note": "",
+        "publish_state": "下書き準備中",
+        "publish_detail": "",
+        "listing_id": "",
+        "public_listing_url": "",
+        "csv_status": "",
+        "updated_at": "2026-04-22 09:00:19 JST"
+      },
+      "comparison_images": [],
+      "reference_images": [],
+      "verified_exact_match": false,
+      "official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "内容物未確認"
+      ],
+      "qwen_hq_review_status": "",
+      "qwen_hq_resolution": "",
+      "qwen_hq_review_note": "",
+      "publish_status": "下書き準備中",
+      "publish_state": "下書き準備中",
+      "public_listing_url": "",
+      "listing_id": "",
+      "comparison_image_ref": "",
+      "reference_image_ref": "",
+      "minimum_price": "",
+      "market_floor_price_label": "未調査",
+      "listing_price": "1980",
+      "exception": {},
+      "route_plan": {}
+    },
+    {
+      "management_id": "BOX-001-ITEM-0068",
+      "box_id": "BOX-001",
+      "sequence": 68,
+      "status": "complete",
+      "missing_slots": [],
+      "slot_count": 3,
+      "slots": [
+        {
+          "slot": "FRONT",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4996.HEIC",
+          "source_name": "IMG_4996.HEIC",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0068/01_FRONT_IMG_4996.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0068/01_FRONT_IMG_4996.jpg",
+          "resident_url": "./assets/intake/BOX-001-ITEM-0068/01_FRONT_IMG_4996.jpg",
+          "rebundled_from": "BOX-001-ITEM-0056:FRONT"
+        },
+        {
+          "slot": "BACK",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4994.HEIC",
+          "source_name": "IMG_4994.HEIC",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0068/02_BACK_IMG_4994.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0068/02_BACK_IMG_4994.jpg",
+          "resident_url": "./assets/intake/BOX-001-ITEM-0068/02_BACK_IMG_4994.jpg",
+          "rebundled_from": "BOX-001-ITEM-0055:BACK"
+        },
+        {
+          "slot": "CODE",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4995.HEIC",
+          "source_name": "IMG_4995.HEIC",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0068/03_CODE_IMG_4995.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0068/03_CODE_IMG_4995.jpg",
+          "resident_url": "./assets/intake/BOX-001-ITEM-0068/03_CODE_IMG_4995.jpg",
+          "rebundled_from": "BOX-001-ITEM-0055:CODE"
+        }
+      ],
+      "shared_sheet_title_value": "BOX-001-ITEM-0068",
+      "shared_sheet_note": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN からローカル写真セットを作成",
+      "photo_grouping": "split_child_mint",
+      "grouping_warning": "",
+      "product_name": "ATIDIMU FOR MEN No3 FACE SERUM 30mL",
+      "display_name": "ATIDIMU FOR MEN No3 FACE SERUM 30mL",
+      "split_child_label": "ATIDIMU FOR MEN No3 FACE SERUM 30mL",
+      "split_temporary_id": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN",
+      "split_source_slots": [
+        "BOX-001-ITEM-0056:FRONT",
+        "BOX-001-ITEM-0055:BACK",
+        "BOX-001-ITEM-0055:CODE"
+      ],
+      "split_status": "manifest_child_minted_local_only",
+      "box_label": "数字箱 001",
+      "box_lane": "numeric",
+      "box_code": "001",
+      "identification": {
+        "state": "バーコード候補あり",
+        "barcode_values": [
+          "X001BGAPFR"
+        ],
+        "front_back_texts": [
+          "ATIDIMU",
+          "FOR MEN",
+          "No3",
+          "FACE SERUM",
+          "SIERO PER IL VISO",
+          "X001BGAPFR"
+        ],
+        "code_texts": [
+          "アティディム 美容液",
+          "【使用方法】化粧水の後、手のひらに適量をとり、",
+          "顔全体にやさしくなじませます。",
+          "【全成分】水、グリセリン、エタノール、BG、DPG、PEG-40水添",
+          "ヒマシ油、ジメチコン、グリコシルトレハロース、PEG-12ジメチ",
+          "コン、PPG-4セテス-20、加水分解水添デンプン、（アクリレー"
+        ],
+        "ocr_texts": [
+          "ATIDIMU",
+          "FOR MEN",
+          "No3",
+          "FACE SERUM",
+          "SIERO PER IL VISO",
+          "X001BGAPFR"
+        ],
+        "candidate_query": "ATIDIMU FOR MEN No3 FACE SERUM",
+        "review_flag": "",
+        "ocr_engine": "sauna_tesseract_multistage + vision",
+        "ocr_debug_paths": [
+          "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0068/IMG_4995_CODE_ocr_best.png"
+        ]
+      },
+      "priority_score": 150,
+      "next_action": "Amazon内部コードとOCRで商品特定",
+      "barcode_kind": "amazon_internal",
+      "review_flag": "",
+      "resolved": {
+        "management_id": "BOX-001-ITEM-0068",
+        "raw_id": "RAW-BOX-001-068",
+        "product_id": "PRD-BOX-001-068",
+        "draft_id": "DRF-BOX-001-068",
+        "research_id": "RES-BOX-001-068",
+        "split_temporary_id": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN",
+        "split_source_slots": [
+          "BOX-001-ITEM-0056:FRONT",
+          "BOX-001-ITEM-0055:BACK",
+          "BOX-001-ITEM-0055:CODE"
+        ],
+        "verified_exact_match": false,
+        "official_image_state": "actual-only固定 / 比較画像なし",
+        "note": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN は、0056:FRONT と 0055:BACK/CODE の3枚で X001BGAPFR / ATIDIMU FOR MEN No3 FACE SERUM 30mL の写真セットを組み直し可能。ATIDIMU公式ページで 30mL / 日本製 / レチノール・ビタミンE・7種植物エキス配合の同系商品情報を確認したが、X001BGAPFR は内部コード候補として扱い、出品画像は実物のみで扱う。ローカル特定結果へ暫定・実物写真のみで反映し、管理表 / 出品判断は別フェーズ。",
+        "image_source": "actual-only",
+        "exact_match_guard_state": "clear",
+        "official_page_url": "",
+        "official_image_url": "",
+        "official_image_local": "",
+        "supplemental_url": "",
+        "supplemental_image_urls": [],
+        "supplemental_image_locals": [],
+        "resolution_status": "provisional",
+        "product_name": "ATIDIMU FOR MEN No3 FACE SERUM 30mL",
+        "barcode_primary": "X001BGAPFR",
+        "product_code_type": "amazon_internal",
+        "evidence": [
+          "X001BGAPFR",
+          "ATIDIMU",
+          "FOR MEN",
+          "No3",
+          "FACE SERUM",
+          "30mL",
+          "レチノール・ビタミンE・7種植物エキス配合",
+          "0056:FRONT + 0055:BACK + 0055:CODE"
+        ],
+        "brand_override": "ATIDIMU",
+        "category_override": "コスメ・美容 > スキンケア・基礎化粧品 > 美容液",
+        "price_override": 2480,
+        "check_items_override": "未開封 / 箱つぶれ / 30mL表記 / 日本製表記 / 使用期限または保管状態"
+      },
+      "official": {
+        "management_id": "BOX-001-ITEM-0068",
+        "raw_id": "RAW-BOX-001-068",
+        "product_id": "PRD-BOX-001-068",
+        "draft_id": "DRF-BOX-001-068",
+        "research_id": "RES-BOX-001-068",
+        "split_temporary_id": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN",
+        "split_source_slots": [
+          "BOX-001-ITEM-0056:FRONT",
+          "BOX-001-ITEM-0055:BACK",
+          "BOX-001-ITEM-0055:CODE"
+        ],
+        "verified_exact_match": false,
+        "official_image_state": "actual-only固定 / 比較画像なし",
+        "note": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN は、0056:FRONT と 0055:BACK/CODE の3枚で X001BGAPFR / ATIDIMU FOR MEN No3 FACE SERUM 30mL の写真セットを組み直し可能。ATIDIMU公式ページで 30mL / 日本製 / レチノール・ビタミンE・7種植物エキス配合の同系商品情報を確認したが、X001BGAPFR は内部コード候補として扱い、出品画像は実物のみで扱う。ローカル特定結果へ暫定・実物写真のみで反映し、管理表 / 出品判断は別フェーズ。",
+        "image_source": "actual-only",
+        "exact_match_guard_state": "clear",
+        "official_page_url": "",
+        "official_image_url": "",
+        "official_image_local": "",
+        "supplemental_url": "",
+        "supplemental_image_urls": [],
+        "supplemental_image_locals": []
+      },
+      "commerce": {
+        "management_id": "BOX-001-ITEM-0068",
+        "raw_id": "RAW-BOX-001-068",
+        "product_id": "PRD-BOX-001-068",
+        "draft_id": "DRF-BOX-001-068",
+        "research_id": "RES-BOX-001-068",
+        "product_name": "ATIDIMU FOR MEN No3 FACE SERUM 30mL",
+        "brand": "ATIDIMU",
+        "category": "コスメ・美容 > スキンケア・基礎化粧品 > 美容液",
+        "barcode_primary": "X001BGAPFR",
+        "product_code_type": "amazon_internal",
+        "listing_title": "ATIDIMU FOR MEN No3 FACE SERUM 30mL",
+        "listing_price": "2480",
+        "market_floor_price": "",
+        "market_floor_state": "未調査",
+        "market_source_label": "",
+        "market_source_url": "",
+        "market_checked_at": "",
+        "market_note": "",
+        "publish_state": "下書き準備中",
+        "publish_detail": "",
+        "listing_id": "",
+        "public_listing_url": "",
+        "csv_status": "",
+        "updated_at": "2026-04-22 09:00:19 JST"
+      },
+      "comparison_images": [],
+      "reference_images": [],
+      "verified_exact_match": false,
+      "official_image_state": "actual-only固定 / 比較画像なし",
+      "exact_match_guard_state": "clear",
+      "qwen_hq_review_status": "",
+      "qwen_hq_resolution": "",
+      "qwen_hq_review_note": "",
+      "publish_status": "下書き準備中",
+      "publish_state": "下書き準備中",
+      "public_listing_url": "",
+      "listing_id": "",
+      "comparison_image_ref": "",
+      "reference_image_ref": "",
+      "minimum_price": "",
+      "market_floor_price_label": "未調査",
+      "listing_price": "2480",
+      "exception": {},
+      "route_plan": {}
+    },
+    {
+      "management_id": "BOX-001-ITEM-0069",
+      "box_id": "BOX-001",
+      "sequence": 69,
+      "status": "complete",
+      "missing_slots": [],
+      "slot_count": 3,
+      "slots": [
+        {
+          "slot": "FRONT",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4999.HEIC",
+          "source_name": "IMG_4999.HEIC",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0069/01_FRONT_IMG_4999.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0069/01_FRONT_IMG_4999.jpg",
+          "resident_url": "./assets/intake/BOX-001-ITEM-0069/01_FRONT_IMG_4999.jpg",
+          "rebundled_from": "BOX-001-ITEM-0057:FRONT"
+        },
+        {
+          "slot": "BACK",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_5002.HEIC",
+          "source_name": "IMG_5002.HEIC",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0069/02_BACK_IMG_5002.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0069/02_BACK_IMG_5002.jpg",
+          "resident_url": "./assets/intake/BOX-001-ITEM-0069/02_BACK_IMG_5002.jpg",
+          "rebundled_from": "BOX-001-ITEM-0057:BACK"
+        },
+        {
+          "slot": "CODE",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4998.HEIC",
+          "source_name": "IMG_4998.HEIC",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0069/03_CODE_IMG_4998.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0069/03_CODE_IMG_4998.jpg",
+          "resident_url": "./assets/intake/BOX-001-ITEM-0069/03_CODE_IMG_4998.jpg",
+          "rebundled_from": "BOX-001-ITEM-0056:CODE"
+        }
+      ],
+      "shared_sheet_title_value": "BOX-001-ITEM-0069",
+      "shared_sheet_note": "SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER からローカル写真セットを作成",
+      "photo_grouping": "split_child_mint",
+      "grouping_warning": "",
+      "product_name": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク（内容物未確認）",
+      "display_name": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク（内容物未確認）",
+      "split_child_label": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
+      "split_temporary_id": "SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER",
+      "split_source_slots": [
+        "BOX-001-ITEM-0057:FRONT",
+        "BOX-001-ITEM-0057:BACK",
+        "BOX-001-ITEM-0056:CODE"
+      ],
+      "split_status": "manifest_child_minted_local_only",
+      "box_label": "数字箱 001",
+      "box_lane": "numeric",
+      "box_code": "001",
+      "identification": {
+        "state": "バーコード候補あり",
+        "barcode_values": [
+          "AZ:UPOKC5UHERFSDEYUD813SS67QM"
+        ],
+        "front_back_texts": [
+          "609",
+          "9os",
+          "120S",
+          "口日",
+          "Scan with the",
+          "Transparency ApP"
+        ],
+        "code_texts": [
+          "（",
+          "603",
+          "90S",
+          "120S",
+          "060",
+          "Scan with the"
+        ],
+        "ocr_texts": [
+          "609",
+          "9os",
+          "120S",
+          "口日",
+          "Scan with the",
+          "Transparency ApP"
+        ],
+        "candidate_query": "609 9os 120S 口日",
+        "review_flag": "",
+        "ocr_engine": "sauna_tesseract_multistage + vision",
+        "ocr_debug_paths": [
+          "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0069/IMG_4998_CODE_ocr_best.png"
+        ]
+      },
+      "priority_score": 180,
+      "next_action": "バーコード候補とOCRで商品特定",
+      "barcode_kind": "other",
+      "review_flag": "",
+      "resolved": {
+        "management_id": "BOX-001-ITEM-0069",
+        "raw_id": "RAW-BOX-001-069",
+        "product_id": "PRD-BOX-001-069",
+        "draft_id": "DRF-BOX-001-069",
+        "research_id": "RES-BOX-001-069",
+        "split_temporary_id": "SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER",
+        "split_source_slots": [
+          "BOX-001-ITEM-0057:FRONT",
+          "BOX-001-ITEM-0057:BACK",
+          "BOX-001-ITEM-0056:CODE"
+        ],
+        "verified_exact_match": false,
+        "official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+        "note": "SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER は、0057:FRONT/BACK と 0056:CODE の3枚で X001AP6CKV / JODSONE クイックUV LED自動センサーネイルドライヤー ピンクを実物3枚で確認できる写真セット。0057:CODE は B09NG1PLHK / RIZZARI 9L自動給水器の対象外ラベルのため JODSONE 側には使わない。X001AP6CKV は内部コード候補として扱い、出品画像は実物のみで扱う。本体そのものは箱内で見えていないため、ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映し、管理表 / 出品判断は別フェーズ。",
+        "image_source": "actual-only",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "内容物未確認"
+        ],
+        "official_page_url": "",
+        "official_image_url": "",
+        "official_image_local": "",
+        "supplemental_url": "",
+        "supplemental_image_urls": [],
+        "supplemental_image_locals": [],
+        "resolution_status": "provisional",
+        "product_name": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク（内容物未確認）",
+        "barcode_primary": "X001AP6CKV",
+        "product_code_type": "amazon_internal",
+        "evidence": [
+          "X001AP6CKV",
+          "JODSONE",
+          "クイックUV LED",
+          "ネイルドライヤー",
+          "ピンク",
+          "Professional Gel Polish LED Nail Dryer Lamp",
+          "0057:FRONT + 0057:BACK + 0056:CODE",
+          "本体そのものは箱内で未確認",
+          "内容物未確認"
+        ],
+        "brand_override": "JODSONE",
+        "category_override": "コスメ・美容 > ネイルケア > ジェルネイル・ネイルシール > その他",
+        "price_override": 2780,
+        "check_items_override": "本体有無 / 点灯確認 / タイマーボタン / 付属品有無 / 開封痕確認 / 箱状態"
+      },
+      "official": {
+        "management_id": "BOX-001-ITEM-0069",
+        "raw_id": "RAW-BOX-001-069",
+        "product_id": "PRD-BOX-001-069",
+        "draft_id": "DRF-BOX-001-069",
+        "research_id": "RES-BOX-001-069",
+        "split_temporary_id": "SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER",
+        "split_source_slots": [
+          "BOX-001-ITEM-0057:FRONT",
+          "BOX-001-ITEM-0057:BACK",
+          "BOX-001-ITEM-0056:CODE"
+        ],
+        "verified_exact_match": false,
+        "official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+        "note": "SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER は、0057:FRONT/BACK と 0056:CODE の3枚で X001AP6CKV / JODSONE クイックUV LED自動センサーネイルドライヤー ピンクを実物3枚で確認できる写真セット。0057:CODE は B09NG1PLHK / RIZZARI 9L自動給水器の対象外ラベルのため JODSONE 側には使わない。X001AP6CKV は内部コード候補として扱い、出品画像は実物のみで扱う。本体そのものは箱内で見えていないため、ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映し、管理表 / 出品判断は別フェーズ。",
+        "image_source": "actual-only",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "内容物未確認"
+        ],
+        "official_page_url": "",
+        "official_image_url": "",
+        "official_image_local": "",
+        "supplemental_url": "",
+        "supplemental_image_urls": [],
+        "supplemental_image_locals": []
+      },
+      "commerce": {
+        "management_id": "BOX-001-ITEM-0069",
+        "raw_id": "RAW-BOX-001-069",
+        "product_id": "PRD-BOX-001-069",
+        "draft_id": "DRF-BOX-001-069",
+        "research_id": "RES-BOX-001-069",
+        "product_name": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク（内容物未確認）",
+        "brand": "JODSONE",
+        "category": "コスメ・美容 > ネイルケア > ジェルネイル・ネイルシール > その他",
+        "barcode_primary": "X001AP6CKV",
+        "product_code_type": "amazon_internal",
+        "listing_title": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク（内容物未確認）",
+        "listing_price": "2780",
+        "market_floor_price": "",
+        "market_floor_state": "未調査",
+        "market_source_label": "",
+        "market_source_url": "",
+        "market_checked_at": "",
+        "market_note": "",
+        "publish_state": "下書き準備中",
+        "publish_detail": "",
+        "listing_id": "",
+        "public_listing_url": "",
+        "csv_status": "",
+        "updated_at": "2026-04-22 09:00:19 JST"
+      },
+      "comparison_images": [],
+      "reference_images": [],
+      "verified_exact_match": false,
+      "official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "内容物未確認"
+      ],
+      "qwen_hq_review_status": "",
+      "qwen_hq_resolution": "",
+      "qwen_hq_review_note": "",
+      "publish_status": "下書き準備中",
+      "publish_state": "下書き準備中",
+      "public_listing_url": "",
+      "listing_id": "",
+      "comparison_image_ref": "",
+      "reference_image_ref": "",
+      "minimum_price": "",
+      "market_floor_price_label": "未調査",
+      "listing_price": "2780",
+      "exception": {},
+      "route_plan": {}
     }
   ],
   "boxes": [
     {
+      "generated_at": "2026-04-22 09:00:19 JST",
       "box_id": "BOX-001",
       "box_label": "数字箱 001",
       "box_lane": "numeric",
       "box_code": "001",
+      "source_dir": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260421_140558/originals",
       "slot_order": [
         "FRONT",
         "BACK",
@@ -14585,11 +15958,36 @@ window.ZERO_COST_INTAKE = {
       ],
       "slots_per_item": 3,
       "total_files": 197,
-      "total_items": 66,
-      "complete_items": 65,
+      "total_items": 69,
+      "complete_items": 68,
       "incomplete_items": 1,
-      "next_sequence": 67,
-      "next_management_id": "BOX-001-ITEM-0067",
+      "next_sequence": 70,
+      "next_management_id": "BOX-001-ITEM-0070",
+      "identification_counts": {
+        "barcode_ready": 45,
+        "ocr_ready": 2,
+        "image_only": 0,
+        "missing_slots": 0,
+        "split_required": 21
+      },
+      "resolution_counts": {
+        "confirmed": 2,
+        "provisional": 67,
+        "official_image_pending": 0,
+        "accepted_exception": 2
+      },
+      "top_priority_ids": [
+        "BOX-001-ITEM-0058",
+        "BOX-001-ITEM-0053",
+        "BOX-001-ITEM-0045",
+        "BOX-001-ITEM-0002",
+        "BOX-001-ITEM-0024",
+        "BOX-001-ITEM-0042",
+        "BOX-001-ITEM-0048",
+        "BOX-001-ITEM-0049",
+        "BOX-001-ITEM-0052",
+        "BOX-001-ITEM-0029"
+      ],
       "items": [
         {
           "management_id": "BOX-001-ITEM-0001",
@@ -14837,7 +16235,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "審査監視",
             "AI次アクション": "カテゴリ審査反映待ち",
             "ルーティング状態": "審査待ち",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り / publish_ok=カテゴリ審査待ち / draft_status=カテゴリ審査待ち / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=clear"
           }
         },
@@ -15017,7 +16415,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -15064,7 +16462,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "実物のみで進める / 比較画像は後追い",
             "ルーティング状態": "HQ判断済み",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=保冷クーラーバッグ ネイビー ショルダー付 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=色違い / 型番違い / サイズ違い / セット違い / 別商品mix / qwen_hq=actual-only固定優先 / 2026-04-21 current truth: actual-only固定。比較画像なしでも実物写真のみで進める。"
           }
         },
@@ -15209,7 +16607,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -15249,7 +16647,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=YUGYUG サングラス ブラック/グレー ケース付き / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
           }
         },
@@ -15507,7 +16905,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "precision guard 解消",
             "ルーティング状態": "停止",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=IAWNI ショルダーバッグ メッセンジャーバッグ / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=ブランド不一致 / inventory_status=販売中 / listingId=2JPSMJHwgfzNjEkYfN8SMv"
           }
         },
@@ -15765,7 +17163,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "precision guard 解消",
             "ルーティング状態": "停止",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=CEEN サルエルパンツ 七分丈 ワイドパンツ / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=柄違い / inventory_status=販売中 / listingId=2JPQCYwtnC7WCswDeG37b9"
           }
         },
@@ -15919,7 +17317,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -16097,7 +17495,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -16137,7 +17535,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=GIOVANA Tシャツ ベージュ 2XL / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
           }
         },
@@ -16398,7 +17796,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "precision guard 解消",
             "ルーティング状態": "停止",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=オナーファッション 綿100% トップス ミントグリーン 3XL / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=review_required / guard_reasons=ブランド不一致 / inventory_status=販売中 / listingId=2JPSMSqu7EDWJu3jDcTo5h"
           }
         },
@@ -16667,7 +18065,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=Hotaty ピアス 金属アレルギー対応 ギフトBOX付き / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=clear / inventory_status=販売中 / listingId=2JPSMUTrpVNxK6fGZdtMqT"
           }
         },
@@ -16821,7 +18219,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [
             {
@@ -16882,7 +18280,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "precision guard 解消",
             "ルーティング状態": "停止",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=SHANGCHU シェフユニフォーム ブラック 4XL / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=色違い"
           }
         },
@@ -17138,7 +18536,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "precision guard 解消",
             "ルーティング状態": "停止",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=Dkieta 帽子 レディース ネックカバー付き 花柄日よけ帽子 / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=柄違い / inventory_status=販売中 / listingId=2JPSMPEuG8NMB3ZieyYzHU"
           }
         },
@@ -17396,7 +18794,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "precision guard 解消",
             "ルーティング状態": "停止",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=gany ガーゼハンカチ 30×30cm 10枚セット 綿100% / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=セット違い / inventory_status=販売中 / listingId=2JPTBgBM5kND3h8AhVf4bf"
           }
         },
@@ -17540,7 +18938,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [
             {
@@ -17598,7 +18996,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り / publish_ok=公開待ち / draft_status=公開待ち / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=clear"
           }
         },
@@ -17875,7 +19273,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "precision guard 解消",
             "ルーティング状態": "停止",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=HAYAHARU キッズ靴下 LS4602LS / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=柄違い / セット違い / inventory_status=販売中 / listingId=2JPSMLyKhRCgPASDJFH2dc"
           }
         },
@@ -18021,7 +19419,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -18061,7 +19459,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=Llink 靴下 5足セット ボーダー パステル / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
           }
         },
@@ -18205,7 +19603,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -18245,7 +19643,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=ZERUI 靴下 5足セット パステル 蝶リボン / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
           }
         },
@@ -18401,7 +19799,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -18447,7 +19845,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "用途確認と商品名補正",
             "ルーティング状態": "用途確認待ち",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=FirstC ティアグッズ記念品ギフト オレンジ丸型ポーチ（用途要確認） / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / 用途要確認 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=柄違い / 型番違い / 形状違い / 用途要確認"
           }
         },
@@ -18592,7 +19990,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -18632,7 +20030,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=SWEETBOY 子供パーカー ネイビー×イエロー 130 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
           }
         },
@@ -18885,7 +20283,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "停止",
             "AI次アクション": "空き板を維持",
             "ルーティング状態": "一時停止",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=ポロベア キャンバス トートバッグ POLO BEAR LAUREN / publish_ok=確認待ち / draft_status=一時取り下げ / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=clear / inventory_status=一時取り下げ"
           }
         },
@@ -19034,7 +20432,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -19074,7 +20472,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=首サポーター カバー付き グレー M HJ-GY-M / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
           }
         },
@@ -19209,7 +20607,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -19428,7 +20826,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [
             {
@@ -19486,7 +20884,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=LE BLANC フェムケアPRO 低刺激 デリケートゾーン 150mL / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
           }
         },
@@ -19618,7 +21016,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -19808,7 +21206,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -20075,7 +21473,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -20358,7 +21756,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [
             {
@@ -20416,7 +21814,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
           }
         },
@@ -20566,7 +21964,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [
             {
@@ -20627,7 +22025,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
             "ルーティング状態": "写真セット組み直し必要",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix"
           }
         },
@@ -20798,7 +22196,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -20844,8 +22242,8 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
             "ルーティング状態": "写真セット組み直し必要",
-            "更新時刻": "2026-04-22 00:33:59 JST",
-            "メモ": "name=写真セット組み直し候補: Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 正規性確認待ち / 管理番号再分解待ち / HQレビュー済み / 新管理番号未採番 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=review_required / guard_reasons=別商品mix / 写真セット組み直し必要 / 内容物未確認 / 真贋確認 / qwen_hq=needs_split / 0028 は FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK/CODE=Zukida 車用フック Red。現IDは Zukida anchor のまま維持。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。"
+            "更新時刻": "2026-04-22 08:50:03 JST",
+            "メモ": "name=写真セット組み直し候補: Zukida 車のフック 電話ホルダー付き 後部座席用 Red / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 正規性確認待ち / 管理番号再分解待ち / HQレビュー済み / 新管理番号未採番 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=review_required / guard_reasons=別商品mix / 写真セット組み直し必要 / 内容物未確認 / 真贋確認 / qwen_hq=needs_split / 0028 は FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK=X0010CU9L7 / Zukida 車のフック Red ラベル、CODE=car hook mobile phone holder / NO-FE035 箱面。BACK/CODE は同じ車用フック系・同箱候補だが、NO-FE035 は X0010CU9L7 の直接証拠ではない。現IDは Zukida anchor のまま維持しつつ公開不可。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。"
           },
           "split_staging": {
             "management_id": "BOX-001-ITEM-0028",
@@ -20980,7 +22378,7 @@ window.ZERO_COST_INTAKE = {
                 "minted_management_id": "BOX-001-ITEM-0061",
                 "minted_at": "2026-04-21 23:11:56 JST",
                 "minted_scope": "local_manifest_only",
-                "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+                "minted_note": "ローカル写真一覧へ作成済み。ローカル特定結果へは反映済み。管理表 / 出品判断は別フェーズで行う。",
                 "truth_promotion_scope": "local_confirmed_official_only",
                 "truth_promoted_management_id": "BOX-001-ITEM-0061",
                 "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
@@ -21184,7 +22582,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -21338,7 +22736,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -21508,7 +22906,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -21548,7 +22946,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=LEISURE WEAR ベージュ系レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
           }
         },
@@ -21810,7 +23208,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "precision guard 解消",
             "ルーティング状態": "停止",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=ZUCCA CLUB リラックス リカバリー サンダル / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=色違い / 形状違い / inventory_status=販売中 / listingId=2JPTBkWndxGku2L9EVw4UP"
           }
         },
@@ -21965,7 +23363,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -22008,7 +23406,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
             "ルーティング状態": "写真セット組み直し必要",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=jchinjia リュック メンズ ビジネスリュック 男女兼用 カジュアルバッグ おしゃれ トラベルバッグ / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix"
           }
         },
@@ -22141,7 +23539,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -22314,7 +23712,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -22354,7 +23752,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=Letshe ベビー前開きロンパース ピンク 110cm / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
           }
         },
@@ -22489,7 +23887,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -22723,7 +24121,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -22894,7 +24292,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -22934,7 +24332,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=裏起毛トップス オフホワイト L / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
           }
         },
@@ -23051,7 +24449,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -23216,10 +24614,11 @@ window.ZERO_COST_INTAKE = {
             "remaining_blockers": [
               "Pendant child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
               "0039 FRONT のベージュ衣類スロットは相方未確定のまま",
-              "0040 BACK/CODE の Bluetooth マウス側スロットは相方未確定のまま",
+              "0040 BACK/CODE の Bluetooth マウス側スロットは BOX-001-ITEM-0066 として local child 化済み。共有管理表 / 管理表 / 出品判断は別フェーズ。",
+              "0041 BACK/CODE のグレー衣類側は相方未確定のまま",
               "SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
               "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。",
-              "SPLIT-BOX-001-0040-MOUSE=BOX-001-ITEM-0066 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。"
+              "SPLIT-BOX-001-0040-MOUSE=BOX-001-ITEM-0066 のローカル写真セットは作成済み。ローカル特定結果へ反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
             ],
             "safe_next_step": "SPLIT-BOX-001-0039-PENDANT を local mint → local confirmed / official へ provisional actual-only 反映。親 0039 / 0040 は split_required のまま維持する。 / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットを作成済み / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0040-MOUSE=BOX-001-ITEM-0066 のローカル写真セットを作成済み / SPLIT-BOX-001-0040-MOUSE=BOX-001-ITEM-0066 をローカル特定結果へ暫定・実物写真のみで反映済み",
             "stage_status": "partial_manifest_child_minted",
@@ -23354,7 +24753,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -23519,10 +24918,11 @@ window.ZERO_COST_INTAKE = {
             "remaining_blockers": [
               "Pendant child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
               "0039 FRONT のベージュ衣類スロットは相方未確定のまま",
-              "0040 BACK/CODE の Bluetooth マウス側スロットは相方未確定のまま",
+              "0040 BACK/CODE の Bluetooth マウス側スロットは BOX-001-ITEM-0066 として local child 化済み。共有管理表 / 管理表 / 出品判断は別フェーズ。",
+              "0041 BACK/CODE のグレー衣類側は相方未確定のまま",
               "SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
               "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。",
-              "SPLIT-BOX-001-0040-MOUSE=BOX-001-ITEM-0066 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。"
+              "SPLIT-BOX-001-0040-MOUSE=BOX-001-ITEM-0066 のローカル写真セットは作成済み。ローカル特定結果へ反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
             ],
             "safe_next_step": "SPLIT-BOX-001-0039-PENDANT を local mint → local confirmed / official へ provisional actual-only 反映。親 0039 / 0040 は split_required のまま維持する。 / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 のローカル写真セットを作成済み / SPLIT-BOX-001-0039-PENDANT=BOX-001-ITEM-0064 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0040-MOUSE=BOX-001-ITEM-0066 のローカル写真セットを作成済み / SPLIT-BOX-001-0040-MOUSE=BOX-001-ITEM-0066 をローカル特定結果へ暫定・実物写真のみで反映済み",
             "stage_status": "partial_manifest_child_minted",
@@ -23660,7 +25060,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -23765,7 +25165,7 @@ window.ZERO_COST_INTAKE = {
             "product_name": "写真セット組み直し候補: NEEDLY Sleeping Lip Mask 10ml",
             "barcode_primary": "X001B1RSSJ",
             "product_code_type": "amazon_internal",
-            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
+            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番 / 内容物未確認",
             "note": "BACK/CODE の2枚で NEEDLY Sleeping Lip Mask 10ml / X001B1RSSJ が一致する。一方 FRONT は青い袋入りの布製品で別商品。現写真では1商品に断定不能のため、NEEDLY 側を provisional に留める。",
             "evidence": [
               "BACK/CODE=NEEDLY Sleeping Lip Mask 10ml",
@@ -23775,7 +25175,8 @@ window.ZERO_COST_INTAKE = {
             "exact_match_guard_state": "review_required",
             "exact_match_guard_reasons": [
               "別商品mix",
-              "写真セット組み直し必要"
+              "写真セット組み直し必要",
+              "内容物未確認"
             ],
             "image_source": "actual-only"
           },
@@ -23789,12 +25190,13 @@ window.ZERO_COST_INTAKE = {
             "official_image_url": "",
             "image_source": "actual-only",
             "verified_exact_match": false,
-            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
+            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番 / 内容物未確認",
             "note": "BACK/CODE の2枚で NEEDLY / Sleeping lip mask / 10ml / X001B1RSSJ が一致する。一方 FRONT は青い袋入り布製品で別商品。比較画像は使わず、NEEDLY 側を actual-only の provisional として扱う。",
             "exact_match_guard_state": "review_required",
             "exact_match_guard_reasons": [
               "別商品mix",
-              "写真セット組み直し必要"
+              "写真セット組み直し必要",
+              "内容物未確認"
             ]
           },
           "commerce": {
@@ -23821,18 +25223,19 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
           "display_name": "写真セット組み直し候補: NEEDLY Sleeping Lip Mask 10ml",
           "product_name": "写真セット組み直し候補: NEEDLY Sleeping Lip Mask 10ml",
           "verified_exact_match": false,
-          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 管理番号再分解待ち",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 管理番号再分解待ち",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
             "別商品mix",
-            "写真セット組み直し必要"
+            "写真セット組み直し必要",
+            "内容物未確認"
           ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
@@ -23850,13 +25253,14 @@ window.ZERO_COST_INTAKE = {
           "route_plan": {},
           "split_staging": {
             "management_id": "BOX-001-ITEM-0042",
-            "plan_summary": "0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致する。0042 FRONT の青い袋入り布製品スロットと 0043 BACK/CODE の DOMAT 財布側スロットは別商品として親 ID に残し、NEEDLY 側だけ local child へ切り出す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
-            "ui_summary": "0043 FRONT + 0042 BACK/CODE は NEEDLY child 候補 / 0042 FRONT は布製品側で別物 / 0043 BACK/CODE は DOMAT 側で別物 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
-            "operator_summary": "BOX-001-ITEM-0042 / 0043 は NEEDLY lip mask と DOMAT 財布側が混在している。0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致するため、NEEDLY 側だけ local child へ切り出す。0042 FRONT の青い袋入り布製品スロットと 0043 BACK/CODE の DOMAT 財布側は親 ID に残す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
-            "routing_note": "0043 FRONT + 0042 BACK/CODE は NEEDLY 側として coherent。0042 FRONT の布製品スロットと 0043 BACK/CODE の DOMAT 財布側は別商品のため親 ID に残す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
-            "routing_next_action": "SPLIT-BOX-001-0042-NEEDLY を local mint → local confirmed / official へ provisional actual-only 反映。親 0042 / 0043 は split_required のまま維持。 / BOX-001-ITEM-0065 は管理表 / 出品判断の止めどころを決めてから正式反映",
+            "plan_summary": "0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致する。0042 FRONT の青い袋入り布製品スロットと 0043 BACK/CODE の DOMAT 財布側スロットは別商品として親 ID に残し、NEEDLY 側だけ local child へ切り出す。さらに 0044 FRONT と 0043 BACK/CODE は X00174LMFZ / DOMAT 財布 レッドブラウンで一致するため、DOMAT 側も local child へ切り出せる。ただし財布本体は布袋内で内容物未確認。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "ui_summary": "0043 FRONT + 0042 BACK/CODE は NEEDLY child 候補 / 0044 FRONT + 0043 BACK/CODE は DOMAT child 候補 / 0042 FRONT は布製品側で別物 / 0044 BACK/CODE は Qzkouma 帽子側で別物 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "operator_summary": "BOX-001-ITEM-0042 / 0043 / 0044 は NEEDLY lip mask、DOMAT 財布側、Qzkouma 帽子側が混在している。0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致するため、NEEDLY 側だけ local child へ切り出す。0044 FRONT と 0043 BACK/CODE は X00174LMFZ / DOMAT 財布 レッドブラウンで一致するため、DOMAT 側も local child へ切り出せる。ただし財布本体は布袋内で内容物未確認。0042 FRONT の青い袋入り布製品スロットと 0044 BACK/CODE の Qzkouma 帽子側は親 ID に残す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_note": "0043 FRONT + 0042 BACK/CODE は NEEDLY 側として coherent。0044 FRONT + 0043 BACK/CODE は DOMAT 財布側として coherent だが、財布本体は布袋内で内容物未確認。0042 FRONT の布製品スロットと 0044 BACK/CODE の Qzkouma 帽子側は別商品のため親 ID に残す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_next_action": "SPLIT-BOX-001-0042-NEEDLY を local mint → local confirmed / official へ provisional actual-only 反映。SPLIT-BOX-001-0043-DOMAT-WALLET も local mint → local confirmed / official へ provisional actual-only / 内容物未確認で反映。親 0042 / 0043 / 0044 は split_required のまま維持。 / BOX-001-ITEM-0065 は管理表 / 出品判断の止めどころを決めてから正式反映 / BOX-001-ITEM-0067 は管理表 / 出品判断の止めどころを決めてから正式反映",
             "related_management_ids": [
-              "BOX-001-ITEM-0043"
+              "BOX-001-ITEM-0043",
+              "BOX-001-ITEM-0044"
             ],
             "source_trace": [
               {
@@ -23888,6 +25292,11 @@ window.ZERO_COST_INTAKE = {
                 "management_id": "BOX-001-ITEM-0043",
                 "slot": "CODE",
                 "observed_as": "DOMAT 財布の別商品コード面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0044",
+                "slot": "FRONT",
+                "observed_as": "DOMAT 箱の中身写真。DOMAT ロゴ入り布袋が見えるが、財布本体は布袋内で内容物未確認"
               }
             ],
             "blocked_split_children": [
@@ -23933,20 +25342,69 @@ window.ZERO_COST_INTAKE = {
                 "truth_promoted_management_id": "BOX-001-ITEM-0065",
                 "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
                 "truth_promoted_at": "2026-04-22 01:15:04 JST"
+              },
+              {
+                "temporary_split_id": "SPLIT-BOX-001-0043-DOMAT-WALLET",
+                "target_label": "DOMAT 財布 レッドブラウン 内容物未確認",
+                "source_slots": [
+                  "BOX-001-ITEM-0044:FRONT",
+                  "BOX-001-ITEM-0043:BACK",
+                  "BOX-001-ITEM-0043:CODE"
+                ],
+                "status": "manifest_child_minted_local_only",
+                "blockers": [
+                  "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+                  "0044 FRONT と 0043 BACK/CODE は X00174LMFZ / DOMAT 財布 レッドブラウンで一致し、同一の DOMAT 箱として実画像確認済み",
+                  "FRONT で見えているのは DOMAT ロゴ入り布袋で、財布本体そのものは見えていないため内容物未確認",
+                  "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+                  "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+                ],
+                "truth_product_name": "DOMAT 財布 レッドブラウン（内容物未確認）",
+                "truth_barcode_primary": "X00174LMFZ",
+                "truth_product_code_type": "amazon_internal",
+                "truth_content_unknown": true,
+                "truth_official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+                "truth_exact_match_guard_state": "review_required",
+                "truth_exact_match_guard_reasons": [
+                  "内容物未確認"
+                ],
+                "truth_evidence": [
+                  "X00174LMFZ",
+                  "DOMAT",
+                  "財布",
+                  "赤褐色",
+                  "0044:FRONT + 0043:BACK + 0043:CODE",
+                  "財布本体は布袋内で内容物未確認"
+                ],
+                "truth_brand_override": "DOMAT",
+                "truth_category_override": "ファッション > メンズ > 小物 > 財布",
+                "truth_check_items_override": "財布本体の有無 / 色味レッドブラウン / 箱状態 / 布袋状態 / 未使用状態",
+                "truth_note": "SPLIT-BOX-001-0043-DOMAT-WALLET は、0044:FRONT と 0043:BACK/CODE の3枚で X00174LMFZ / DOMAT 財布 レッドブラウンの写真セットを組み直し可能。Web検索では DOMAT wallet の流通ページはあるが、X00174LMFZ まで一致する公式級根拠は未取得。FRONT で見えているのは DOMAT ロゴ入り布袋で、財布本体そのものは見えていないため、ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映する。管理表 / 出品判断は別フェーズ。",
+                "truth_price_override": 1980,
+                "minted_management_id": "BOX-001-ITEM-0067",
+                "minted_at": "2026-04-22 03:08:57 JST",
+                "minted_scope": "local_manifest_only",
+                "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+                "truth_promotion_scope": "local_confirmed_official_only",
+                "truth_promoted_management_id": "BOX-001-ITEM-0067",
+                "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み。管理表 / 出品判断は別フェーズで行う。",
+                "truth_promoted_at": "2026-04-22 03:11:56 JST"
               }
             ],
             "remaining_blockers": [
               "NEEDLY child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
               "0042 FRONT の青い袋入り布製品スロットは相方未確定のまま",
-              "0043 BACK/CODE の DOMAT 財布側スロットは相方未確定のまま",
+              "DOMAT 財布側は BOX-001-ITEM-0067 として local child 化し、ローカル特定結果へ反映済み。ただし財布本体は布袋内で内容物未確認。",
+              "0044 BACK/CODE の Qzkouma 帽子側スロットは FRONT 相当写真なしのまま",
               "SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
-              "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。"
+              "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。",
+              "SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットは作成済み。ローカル特定結果へ反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
             ],
-            "safe_next_step": "SPLIT-BOX-001-0042-NEEDLY を local mint → local confirmed / official へ provisional actual-only 反映。親 0042 / 0043 は split_required のまま維持する。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "safe_next_step": "SPLIT-BOX-001-0042-NEEDLY を local mint → local confirmed / official へ provisional actual-only 反映。SPLIT-BOX-001-0043-DOMAT-WALLET を local mint → local confirmed / official へ provisional actual-only / 内容物未確認で反映。親 0042 / 0043 / 0044 は split_required のまま維持する。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
             "stage_status": "partial_manifest_child_minted",
             "match_role": "primary"
           },
-          "split_plan_summary": "0043 FRONT + 0042 BACK/CODE は NEEDLY child 候補 / 0042 FRONT は布製品側で別物 / 0043 BACK/CODE は DOMAT 側で別物 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
+          "split_plan_summary": "0043 FRONT + 0042 BACK/CODE は NEEDLY child 候補 / 0044 FRONT + 0043 BACK/CODE は DOMAT child 候補 / 0042 FRONT は布製品側で別物 / 0044 BACK/CODE は Qzkouma 帽子側で別物 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
           "split_plan_role": "primary"
         },
         {
@@ -24033,7 +25491,7 @@ window.ZERO_COST_INTAKE = {
             "product_name": "写真セット組み直し候補: DOMAT 財布 レッドブラウン",
             "barcode_primary": "X00174LMFZ",
             "product_code_type": "amazon_internal",
-            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
+            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番 / 内容物未確認",
             "note": "BACK/CODE の2枚で DOMAT 箱と X00174LMFZ / 財布 / 赤褐色 が一致。一方 FRONT は NEEDLY SLEEPING LIP MASK 箱の別面で別商品。現写真では1商品に断定不能のため、DOMAT 側を provisional に留める。",
             "evidence": [
               "X00174LMFZ",
@@ -24044,7 +25502,8 @@ window.ZERO_COST_INTAKE = {
             "exact_match_guard_state": "review_required",
             "exact_match_guard_reasons": [
               "別商品mix",
-              "写真セット組み直し必要"
+              "写真セット組み直し必要",
+              "内容物未確認"
             ]
           },
           "official": {},
@@ -24072,18 +25531,19 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
           "display_name": "写真セット組み直し候補: DOMAT 財布 レッドブラウン",
           "product_name": "写真セット組み直し候補: DOMAT 財布 レッドブラウン",
           "verified_exact_match": false,
-          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 管理番号再分解待ち",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 管理番号再分解待ち",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
             "別商品mix",
-            "写真セット組み直し必要"
+            "写真セット組み直し必要",
+            "内容物未確認"
           ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
@@ -24101,13 +25561,14 @@ window.ZERO_COST_INTAKE = {
           "route_plan": {},
           "split_staging": {
             "management_id": "BOX-001-ITEM-0042",
-            "plan_summary": "0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致する。0042 FRONT の青い袋入り布製品スロットと 0043 BACK/CODE の DOMAT 財布側スロットは別商品として親 ID に残し、NEEDLY 側だけ local child へ切り出す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
-            "ui_summary": "0043 FRONT + 0042 BACK/CODE は NEEDLY child 候補 / 0042 FRONT は布製品側で別物 / 0043 BACK/CODE は DOMAT 側で別物 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
-            "operator_summary": "BOX-001-ITEM-0042 / 0043 は NEEDLY lip mask と DOMAT 財布側が混在している。0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致するため、NEEDLY 側だけ local child へ切り出す。0042 FRONT の青い袋入り布製品スロットと 0043 BACK/CODE の DOMAT 財布側は親 ID に残す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
-            "routing_note": "0043 FRONT + 0042 BACK/CODE は NEEDLY 側として coherent。0042 FRONT の布製品スロットと 0043 BACK/CODE の DOMAT 財布側は別商品のため親 ID に残す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
-            "routing_next_action": "SPLIT-BOX-001-0042-NEEDLY を local mint → local confirmed / official へ provisional actual-only 反映。親 0042 / 0043 は split_required のまま維持。 / BOX-001-ITEM-0065 は管理表 / 出品判断の止めどころを決めてから正式反映",
+            "plan_summary": "0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致する。0042 FRONT の青い袋入り布製品スロットと 0043 BACK/CODE の DOMAT 財布側スロットは別商品として親 ID に残し、NEEDLY 側だけ local child へ切り出す。さらに 0044 FRONT と 0043 BACK/CODE は X00174LMFZ / DOMAT 財布 レッドブラウンで一致するため、DOMAT 側も local child へ切り出せる。ただし財布本体は布袋内で内容物未確認。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "ui_summary": "0043 FRONT + 0042 BACK/CODE は NEEDLY child 候補 / 0044 FRONT + 0043 BACK/CODE は DOMAT child 候補 / 0042 FRONT は布製品側で別物 / 0044 BACK/CODE は Qzkouma 帽子側で別物 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "operator_summary": "BOX-001-ITEM-0042 / 0043 / 0044 は NEEDLY lip mask、DOMAT 財布側、Qzkouma 帽子側が混在している。0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致するため、NEEDLY 側だけ local child へ切り出す。0044 FRONT と 0043 BACK/CODE は X00174LMFZ / DOMAT 財布 レッドブラウンで一致するため、DOMAT 側も local child へ切り出せる。ただし財布本体は布袋内で内容物未確認。0042 FRONT の青い袋入り布製品スロットと 0044 BACK/CODE の Qzkouma 帽子側は親 ID に残す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_note": "0043 FRONT + 0042 BACK/CODE は NEEDLY 側として coherent。0044 FRONT + 0043 BACK/CODE は DOMAT 財布側として coherent だが、財布本体は布袋内で内容物未確認。0042 FRONT の布製品スロットと 0044 BACK/CODE の Qzkouma 帽子側は別商品のため親 ID に残す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_next_action": "SPLIT-BOX-001-0042-NEEDLY を local mint → local confirmed / official へ provisional actual-only 反映。SPLIT-BOX-001-0043-DOMAT-WALLET も local mint → local confirmed / official へ provisional actual-only / 内容物未確認で反映。親 0042 / 0043 / 0044 は split_required のまま維持。 / BOX-001-ITEM-0065 は管理表 / 出品判断の止めどころを決めてから正式反映 / BOX-001-ITEM-0067 は管理表 / 出品判断の止めどころを決めてから正式反映",
             "related_management_ids": [
-              "BOX-001-ITEM-0043"
+              "BOX-001-ITEM-0043",
+              "BOX-001-ITEM-0044"
             ],
             "source_trace": [
               {
@@ -24139,6 +25600,11 @@ window.ZERO_COST_INTAKE = {
                 "management_id": "BOX-001-ITEM-0043",
                 "slot": "CODE",
                 "observed_as": "DOMAT 財布の別商品コード面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0044",
+                "slot": "FRONT",
+                "observed_as": "DOMAT 箱の中身写真。DOMAT ロゴ入り布袋が見えるが、財布本体は布袋内で内容物未確認"
               }
             ],
             "blocked_split_children": [
@@ -24184,20 +25650,69 @@ window.ZERO_COST_INTAKE = {
                 "truth_promoted_management_id": "BOX-001-ITEM-0065",
                 "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
                 "truth_promoted_at": "2026-04-22 01:15:04 JST"
+              },
+              {
+                "temporary_split_id": "SPLIT-BOX-001-0043-DOMAT-WALLET",
+                "target_label": "DOMAT 財布 レッドブラウン 内容物未確認",
+                "source_slots": [
+                  "BOX-001-ITEM-0044:FRONT",
+                  "BOX-001-ITEM-0043:BACK",
+                  "BOX-001-ITEM-0043:CODE"
+                ],
+                "status": "manifest_child_minted_local_only",
+                "blockers": [
+                  "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+                  "0044 FRONT と 0043 BACK/CODE は X00174LMFZ / DOMAT 財布 レッドブラウンで一致し、同一の DOMAT 箱として実画像確認済み",
+                  "FRONT で見えているのは DOMAT ロゴ入り布袋で、財布本体そのものは見えていないため内容物未確認",
+                  "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+                  "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+                ],
+                "truth_product_name": "DOMAT 財布 レッドブラウン（内容物未確認）",
+                "truth_barcode_primary": "X00174LMFZ",
+                "truth_product_code_type": "amazon_internal",
+                "truth_content_unknown": true,
+                "truth_official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+                "truth_exact_match_guard_state": "review_required",
+                "truth_exact_match_guard_reasons": [
+                  "内容物未確認"
+                ],
+                "truth_evidence": [
+                  "X00174LMFZ",
+                  "DOMAT",
+                  "財布",
+                  "赤褐色",
+                  "0044:FRONT + 0043:BACK + 0043:CODE",
+                  "財布本体は布袋内で内容物未確認"
+                ],
+                "truth_brand_override": "DOMAT",
+                "truth_category_override": "ファッション > メンズ > 小物 > 財布",
+                "truth_check_items_override": "財布本体の有無 / 色味レッドブラウン / 箱状態 / 布袋状態 / 未使用状態",
+                "truth_note": "SPLIT-BOX-001-0043-DOMAT-WALLET は、0044:FRONT と 0043:BACK/CODE の3枚で X00174LMFZ / DOMAT 財布 レッドブラウンの写真セットを組み直し可能。Web検索では DOMAT wallet の流通ページはあるが、X00174LMFZ まで一致する公式級根拠は未取得。FRONT で見えているのは DOMAT ロゴ入り布袋で、財布本体そのものは見えていないため、ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映する。管理表 / 出品判断は別フェーズ。",
+                "truth_price_override": 1980,
+                "minted_management_id": "BOX-001-ITEM-0067",
+                "minted_at": "2026-04-22 03:08:57 JST",
+                "minted_scope": "local_manifest_only",
+                "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+                "truth_promotion_scope": "local_confirmed_official_only",
+                "truth_promoted_management_id": "BOX-001-ITEM-0067",
+                "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み。管理表 / 出品判断は別フェーズで行う。",
+                "truth_promoted_at": "2026-04-22 03:11:56 JST"
               }
             ],
             "remaining_blockers": [
               "NEEDLY child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
               "0042 FRONT の青い袋入り布製品スロットは相方未確定のまま",
-              "0043 BACK/CODE の DOMAT 財布側スロットは相方未確定のまま",
+              "DOMAT 財布側は BOX-001-ITEM-0067 として local child 化し、ローカル特定結果へ反映済み。ただし財布本体は布袋内で内容物未確認。",
+              "0044 BACK/CODE の Qzkouma 帽子側スロットは FRONT 相当写真なしのまま",
               "SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
-              "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。"
+              "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。",
+              "SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットは作成済み。ローカル特定結果へ反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
             ],
-            "safe_next_step": "SPLIT-BOX-001-0042-NEEDLY を local mint → local confirmed / official へ provisional actual-only 反映。親 0042 / 0043 は split_required のまま維持する。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "safe_next_step": "SPLIT-BOX-001-0042-NEEDLY を local mint → local confirmed / official へ provisional actual-only 反映。SPLIT-BOX-001-0043-DOMAT-WALLET を local mint → local confirmed / official へ provisional actual-only / 内容物未確認で反映。親 0042 / 0043 / 0044 は split_required のまま維持する。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
             "stage_status": "partial_manifest_child_minted",
             "match_role": "related"
           },
-          "split_plan_summary": "0043 FRONT + 0042 BACK/CODE は NEEDLY child 候補 / 0042 FRONT は布製品側で別物 / 0043 BACK/CODE は DOMAT 側で別物 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み",
+          "split_plan_summary": "0043 FRONT + 0042 BACK/CODE は NEEDLY child 候補 / 0044 FRONT + 0043 BACK/CODE は DOMAT child 候補 / 0042 FRONT は布製品側で別物 / 0044 BACK/CODE は Qzkouma 帽子側で別物 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
           "split_plan_role": "related"
         },
         {
@@ -24285,10 +25800,10 @@ window.ZERO_COST_INTAKE = {
           "resolved": {
             "management_id": "BOX-001-ITEM-0044",
             "resolution_status": "provisional",
-            "product_name": "Qzkouma バケットハット ブラック",
+            "product_name": "写真セット組み直し候補: Qzkouma バケットハット ブラック",
             "barcode_primary": "X0018K5KPV",
             "product_code_type": "amazon_internal",
-            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番 / 内容物未確認",
             "note": "BACK/CODE の2枚で黒い帽子本体と X0018K5KPV / [Qzkouma] キャップ・ハット DBQ-62（ブラック）が一致。一方 FRONT は DOMAT 箱の中身写真で別商品。現写真では1商品に断定不能のため、帽子側を provisional に留める。",
             "evidence": [
               "X0018K5KPV",
@@ -24298,7 +25813,9 @@ window.ZERO_COST_INTAKE = {
             ],
             "exact_match_guard_state": "review_required",
             "exact_match_guard_reasons": [
-              "別商品mix"
+              "別商品mix",
+              "写真セット組み直し必要",
+              "内容物未確認"
             ]
           },
           "official": {},
@@ -24308,12 +25825,12 @@ window.ZERO_COST_INTAKE = {
             "product_id": "PRD-BOX-001-044",
             "draft_id": "DRF-BOX-001-044",
             "research_id": "RES-BOX-001-044",
-            "product_name": "Qzkouma バケットハット ブラック",
+            "product_name": "写真セット組み直し候補: Qzkouma バケットハット ブラック",
             "brand": "",
             "category": "",
             "barcode_primary": "X0018K5KPV",
             "product_code_type": "amazon_internal",
-            "listing_title": "Qzkouma バケットハット ブラック",
+            "listing_title": "写真セット組み直し候補: Qzkouma バケットハット ブラック",
             "listing_price": "",
             "market_floor_price": "",
             "market_floor_state": "未調査",
@@ -24326,17 +25843,19 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
-          "display_name": "Qzkouma バケットハット ブラック",
-          "product_name": "Qzkouma バケットハット ブラック",
+          "display_name": "写真セット組み直し候補: Qzkouma バケットハット ブラック",
+          "product_name": "写真セット組み直し候補: Qzkouma バケットハット ブラック",
           "verified_exact_match": false,
-          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 管理番号再分解待ち",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
-            "別商品mix"
+            "別商品mix",
+            "写真セット組み直し必要",
+            "内容物未確認"
           ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
@@ -24351,7 +25870,162 @@ window.ZERO_COST_INTAKE = {
           "market_floor_price_label": "未調査",
           "listing_price": "",
           "exception": {},
-          "route_plan": {}
+          "route_plan": {},
+          "split_staging": {
+            "management_id": "BOX-001-ITEM-0042",
+            "plan_summary": "0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致する。0042 FRONT の青い袋入り布製品スロットと 0043 BACK/CODE の DOMAT 財布側スロットは別商品として親 ID に残し、NEEDLY 側だけ local child へ切り出す。さらに 0044 FRONT と 0043 BACK/CODE は X00174LMFZ / DOMAT 財布 レッドブラウンで一致するため、DOMAT 側も local child へ切り出せる。ただし財布本体は布袋内で内容物未確認。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "ui_summary": "0043 FRONT + 0042 BACK/CODE は NEEDLY child 候補 / 0044 FRONT + 0043 BACK/CODE は DOMAT child 候補 / 0042 FRONT は布製品側で別物 / 0044 BACK/CODE は Qzkouma 帽子側で別物 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "operator_summary": "BOX-001-ITEM-0042 / 0043 / 0044 は NEEDLY lip mask、DOMAT 財布側、Qzkouma 帽子側が混在している。0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致するため、NEEDLY 側だけ local child へ切り出す。0044 FRONT と 0043 BACK/CODE は X00174LMFZ / DOMAT 財布 レッドブラウンで一致するため、DOMAT 側も local child へ切り出せる。ただし財布本体は布袋内で内容物未確認。0042 FRONT の青い袋入り布製品スロットと 0044 BACK/CODE の Qzkouma 帽子側は親 ID に残す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_note": "0043 FRONT + 0042 BACK/CODE は NEEDLY 側として coherent。0044 FRONT + 0043 BACK/CODE は DOMAT 財布側として coherent だが、財布本体は布袋内で内容物未確認。0042 FRONT の布製品スロットと 0044 BACK/CODE の Qzkouma 帽子側は別商品のため親 ID に残す。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_next_action": "SPLIT-BOX-001-0042-NEEDLY を local mint → local confirmed / official へ provisional actual-only 反映。SPLIT-BOX-001-0043-DOMAT-WALLET も local mint → local confirmed / official へ provisional actual-only / 内容物未確認で反映。親 0042 / 0043 / 0044 は split_required のまま維持。 / BOX-001-ITEM-0065 は管理表 / 出品判断の止めどころを決めてから正式反映 / BOX-001-ITEM-0067 は管理表 / 出品判断の止めどころを決めてから正式反映",
+            "related_management_ids": [
+              "BOX-001-ITEM-0043",
+              "BOX-001-ITEM-0044"
+            ],
+            "source_trace": [
+              {
+                "management_id": "BOX-001-ITEM-0042",
+                "slot": "FRONT",
+                "observed_as": "青い袋入りの布製品スロット"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0042",
+                "slot": "BACK",
+                "observed_as": "NEEDLY Sleeping Lip Mask 10ml の箱背面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0042",
+                "slot": "CODE",
+                "observed_as": "X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml コード面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0043",
+                "slot": "FRONT",
+                "observed_as": "NEEDLY Sleeping Lip Mask 10ml の箱 FRONT"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0043",
+                "slot": "BACK",
+                "observed_as": "X00174LMFZ / DOMAT 財布側ラベル面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0043",
+                "slot": "CODE",
+                "observed_as": "DOMAT 財布の別商品コード面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0044",
+                "slot": "FRONT",
+                "observed_as": "DOMAT 箱の中身写真。DOMAT ロゴ入り布袋が見えるが、財布本体は布袋内で内容物未確認"
+              }
+            ],
+            "blocked_split_children": [
+              {
+                "temporary_split_id": "SPLIT-BOX-001-0042-NEEDLY",
+                "target_label": "NEEDLY Sleeping Lip Mask 10ml",
+                "source_slots": [
+                  "BOX-001-ITEM-0043:FRONT",
+                  "BOX-001-ITEM-0042:BACK",
+                  "BOX-001-ITEM-0042:CODE"
+                ],
+                "status": "manifest_child_minted_local_only",
+                "blockers": [
+                  "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+                  "0043 FRONT と 0042 BACK/CODE は X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml で一致し、同一の NEEDLY 箱として実画像確認済み",
+                  "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+                  "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+                ],
+                "truth_product_name": "NEEDLY Sleeping Lip Mask 10ml",
+                "truth_barcode_primary": "X001B1RSSJ",
+                "truth_product_code_type": "amazon_internal",
+                "truth_content_unknown": false,
+                "truth_official_image_state": "actual-only固定 / 比較画像なし",
+                "truth_exact_match_guard_state": "clear",
+                "truth_exact_match_guard_reasons": [],
+                "truth_evidence": [
+                  "X001B1RSSJ",
+                  "NEEDLY",
+                  "Sleeping Lip Mask",
+                  "10ml",
+                  "0043:FRONT + 0042:BACK + 0042:CODE"
+                ],
+                "truth_brand_override": "NEEDLY",
+                "truth_category_override": "ビューティー > スキンケア・基礎化粧品 > リップケア",
+                "truth_check_items_override": "未開封 / 使用期限 / 箱つぶれ / 10ml表記 / 衛生状態",
+                "truth_note": "SPLIT-BOX-001-0042-NEEDLY は、0043:FRONT と 0042:BACK/CODE の3枚で X001B1RSSJ / NEEDLY Sleeping Lip Mask 10ml の写真セットを組み直し済み。Web検索では NEEDLY Sleeping Lip Mask 10ml の流通ページは複数見つかるが、X001B1RSSJ まで一致する根拠は未取得。出品画像は実物のみで扱い、ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズ。",
+                "truth_price_override": 1680,
+                "minted_management_id": "BOX-001-ITEM-0065",
+                "minted_at": "2026-04-22 01:09:44 JST",
+                "minted_scope": "local_manifest_only",
+                "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+                "truth_promotion_scope": "local_confirmed_official_only",
+                "truth_promoted_management_id": "BOX-001-ITEM-0065",
+                "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
+                "truth_promoted_at": "2026-04-22 01:15:04 JST"
+              },
+              {
+                "temporary_split_id": "SPLIT-BOX-001-0043-DOMAT-WALLET",
+                "target_label": "DOMAT 財布 レッドブラウン 内容物未確認",
+                "source_slots": [
+                  "BOX-001-ITEM-0044:FRONT",
+                  "BOX-001-ITEM-0043:BACK",
+                  "BOX-001-ITEM-0043:CODE"
+                ],
+                "status": "manifest_child_minted_local_only",
+                "blockers": [
+                  "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+                  "0044 FRONT と 0043 BACK/CODE は X00174LMFZ / DOMAT 財布 レッドブラウンで一致し、同一の DOMAT 箱として実画像確認済み",
+                  "FRONT で見えているのは DOMAT ロゴ入り布袋で、財布本体そのものは見えていないため内容物未確認",
+                  "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+                  "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+                ],
+                "truth_product_name": "DOMAT 財布 レッドブラウン（内容物未確認）",
+                "truth_barcode_primary": "X00174LMFZ",
+                "truth_product_code_type": "amazon_internal",
+                "truth_content_unknown": true,
+                "truth_official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+                "truth_exact_match_guard_state": "review_required",
+                "truth_exact_match_guard_reasons": [
+                  "内容物未確認"
+                ],
+                "truth_evidence": [
+                  "X00174LMFZ",
+                  "DOMAT",
+                  "財布",
+                  "赤褐色",
+                  "0044:FRONT + 0043:BACK + 0043:CODE",
+                  "財布本体は布袋内で内容物未確認"
+                ],
+                "truth_brand_override": "DOMAT",
+                "truth_category_override": "ファッション > メンズ > 小物 > 財布",
+                "truth_check_items_override": "財布本体の有無 / 色味レッドブラウン / 箱状態 / 布袋状態 / 未使用状態",
+                "truth_note": "SPLIT-BOX-001-0043-DOMAT-WALLET は、0044:FRONT と 0043:BACK/CODE の3枚で X00174LMFZ / DOMAT 財布 レッドブラウンの写真セットを組み直し可能。Web検索では DOMAT wallet の流通ページはあるが、X00174LMFZ まで一致する公式級根拠は未取得。FRONT で見えているのは DOMAT ロゴ入り布袋で、財布本体そのものは見えていないため、ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映する。管理表 / 出品判断は別フェーズ。",
+                "truth_price_override": 1980,
+                "minted_management_id": "BOX-001-ITEM-0067",
+                "minted_at": "2026-04-22 03:08:57 JST",
+                "minted_scope": "local_manifest_only",
+                "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+                "truth_promotion_scope": "local_confirmed_official_only",
+                "truth_promoted_management_id": "BOX-001-ITEM-0067",
+                "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み。管理表 / 出品判断は別フェーズで行う。",
+                "truth_promoted_at": "2026-04-22 03:11:56 JST"
+              }
+            ],
+            "remaining_blockers": [
+              "NEEDLY child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
+              "0042 FRONT の青い袋入り布製品スロットは相方未確定のまま",
+              "DOMAT 財布側は BOX-001-ITEM-0067 として local child 化し、ローカル特定結果へ反映済み。ただし財布本体は布袋内で内容物未確認。",
+              "0044 BACK/CODE の Qzkouma 帽子側スロットは FRONT 相当写真なしのまま",
+              "SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
+              "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。",
+              "SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットは作成済み。ローカル特定結果へ反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+            ],
+            "safe_next_step": "SPLIT-BOX-001-0042-NEEDLY を local mint → local confirmed / official へ provisional actual-only 反映。SPLIT-BOX-001-0043-DOMAT-WALLET を local mint → local confirmed / official へ provisional actual-only / 内容物未確認で反映。親 0042 / 0043 / 0044 は split_required のまま維持する。 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "stage_status": "partial_manifest_child_minted",
+            "match_role": "related"
+          },
+          "split_plan_summary": "0043 FRONT + 0042 BACK/CODE は NEEDLY child 候補 / 0044 FRONT + 0043 BACK/CODE は DOMAT child 候補 / 0042 FRONT は布製品側で別物 / 0044 BACK/CODE は Qzkouma 帽子側で別物 / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 のローカル写真セットを作成済み / SPLIT-BOX-001-0042-NEEDLY=BOX-001-ITEM-0065 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 のローカル写真セットを作成済み / SPLIT-BOX-001-0043-DOMAT-WALLET=BOX-001-ITEM-0067 をローカル特定結果へ暫定・実物写真のみで反映済み",
+          "split_plan_role": "related"
         },
         {
           "management_id": "BOX-001-ITEM-0045",
@@ -24497,7 +26171,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -24540,7 +26214,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
             "ルーティング状態": "写真セット組み直し必要",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=ロゴ刺繍ベースボールキャップ ブラック系 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix"
           }
         },
@@ -24693,7 +26367,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -24736,7 +26410,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
             "ルーティング状態": "写真セット組み直し必要",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=ホワイト レディーストップス M / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix"
           }
         },
@@ -24883,7 +26557,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -24923,7 +26597,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=高視認性安全ベスト 蛍光イエロー / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
           }
         },
@@ -25060,7 +26734,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -25329,7 +27003,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -25600,7 +27274,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [
             {
@@ -25658,7 +27332,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=CRZ YOGA レギンス 股下24インチ ダークグレー系 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / actual-only固定 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
           }
         },
@@ -25789,7 +27463,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -25929,7 +27603,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -26090,7 +27764,7 @@ window.ZERO_COST_INTAKE = {
                 "minted_management_id": "BOX-001-ITEM-0061",
                 "minted_at": "2026-04-21 23:11:56 JST",
                 "minted_scope": "local_manifest_only",
-                "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+                "minted_note": "ローカル写真一覧へ作成済み。ローカル特定結果へは反映済み。管理表 / 出品判断は別フェーズで行う。",
                 "truth_promotion_scope": "local_confirmed_official_only",
                 "truth_promoted_management_id": "BOX-001-ITEM-0061",
                 "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
@@ -26276,7 +27950,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -26438,7 +28112,7 @@ window.ZERO_COST_INTAKE = {
                 "minted_management_id": "BOX-001-ITEM-0061",
                 "minted_at": "2026-04-21 23:11:56 JST",
                 "minted_scope": "local_manifest_only",
-                "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+                "minted_note": "ローカル写真一覧へ作成済み。ローカル特定結果へは反映済み。管理表 / 出品判断は別フェーズで行う。",
                 "truth_promotion_scope": "local_confirmed_official_only",
                 "truth_promoted_management_id": "BOX-001-ITEM-0061",
                 "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
@@ -26655,7 +28329,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -26700,7 +28374,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
             "ルーティング状態": "写真セット組み直し必要",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=写真セット組み直し候補: Poperdision ブラック 3XL レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / 正規性確認待ち / 管理番号再分解待ち / 新管理番号未採番 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix / 写真セット組み直し必要 / 真贋確認"
           }
         },
@@ -26789,10 +28463,10 @@ window.ZERO_COST_INTAKE = {
           "resolved": {
             "management_id": "BOX-001-ITEM-0055",
             "resolution_status": "provisional",
-            "product_name": "ATIDIMU 美容液",
+            "product_name": "写真セット組み直し候補: ATIDIMU 美容液",
             "barcode_primary": "X001BGAPFR",
             "product_code_type": "amazon_internal",
-            "official_image_state": "比較画像候補あり / 現写真では1商品に断定不能",
+            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
             "note": "BACK/CODE の2枚で X001BGAPFR / ATIDIMU（アティディム）美容液 / 7種植物エキス配合 が一致。一方 FRONT は別商品の黒い衣類パッケージ。公式候補ページは保持するが、現写真では1商品に断定不能のため、ATIDIMU 側を provisional に留める。",
             "evidence": [
               "X001BGAPFR",
@@ -26809,7 +28483,8 @@ window.ZERO_COST_INTAKE = {
             "image_source": "ATIDIMU公式",
             "exact_match_guard_state": "review_required",
             "exact_match_guard_reasons": [
-              "別商品mix"
+              "別商品mix",
+              "写真セット組み直し必要"
             ]
           },
           "official": {
@@ -26822,11 +28497,12 @@ window.ZERO_COST_INTAKE = {
             "official_image_url": "http://atidimu.com/cdn/shop/files/3-1.jpg?v=1759996277",
             "image_source": "ATIDIMU公式",
             "verified_exact_match": false,
-            "official_image_state": "比較画像候補あり / 現写真では1商品に断定不能",
+            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番",
             "note": "BACK/CODE では X001BGAPFR / ATIDIMU / 美容液 / 7種植物エキス配合 が一致するが、FRONT は別商品の黒い衣類パッケージ。比較画像候補は保持するが、現写真では1商品に断定不能のため出品採用不可。",
             "exact_match_guard_state": "review_required",
             "exact_match_guard_reasons": [
-              "別商品mix"
+              "別商品mix",
+              "写真セット組み直し必要"
             ]
           },
           "commerce": {
@@ -26835,12 +28511,12 @@ window.ZERO_COST_INTAKE = {
             "product_id": "PRD-BOX-001-055",
             "draft_id": "DRF-BOX-001-055",
             "research_id": "RES-BOX-001-055",
-            "product_name": "ATIDIMU 美容液",
+            "product_name": "写真セット組み直し候補: ATIDIMU 美容液",
             "brand": "ATIDIMU",
             "category": "コスメ・美容 > スキンケア・基礎化粧品 > 美容液",
             "barcode_primary": "X001BGAPFR",
             "product_code_type": "amazon_internal",
-            "listing_title": "ATIDIMU 美容液",
+            "listing_title": "写真セット組み直し候補: ATIDIMU 美容液",
             "listing_price": "2480",
             "market_floor_price": "",
             "market_floor_state": "未調査",
@@ -26853,7 +28529,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [
             {
@@ -26875,13 +28551,14 @@ window.ZERO_COST_INTAKE = {
               "verified_exact_match": false
             }
           ],
-          "display_name": "ATIDIMU 美容液",
-          "product_name": "ATIDIMU 美容液",
+          "display_name": "写真セット組み直し候補: ATIDIMU 美容液",
+          "product_name": "写真セット組み直し候補: ATIDIMU 美容液",
           "verified_exact_match": false,
-          "official_image_state": "比較画像候補あり / 現写真では1商品に断定不能",
+          "official_image_state": "比較画像候補あり / 現写真では1商品に断定不能 / 管理番号再分解待ち",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
-            "別商品mix"
+            "別商品mix",
+            "写真セット組み直し必要"
           ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
@@ -26910,13 +28587,187 @@ window.ZERO_COST_INTAKE = {
             "Ship&co条件": "停止",
             "メルカリ配送": "",
             "人確認": "要",
-            "人確認理由": "precision guard: 別商品mix / 停止条件あり",
+            "人確認理由": "precision guard: 別商品mix / 写真セット組み直し必要 / 停止条件あり",
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
             "ルーティング状態": "写真セット組み直し必要",
-            "更新時刻": "2026-04-22 00:33:59 JST",
-            "メモ": "name=ATIDIMU 美容液 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix"
-          }
+            "更新時刻": "2026-04-22 08:50:03 JST",
+            "メモ": "name=写真セット組み直し候補: ATIDIMU 美容液 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / 現写真では1商品に断定不能 / 管理番号再分解待ち / 新管理番号未採番 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix / 写真セット組み直し必要"
+          },
+          "split_staging": {
+            "management_id": "BOX-001-ITEM-0055",
+            "stage_status": "partial_manifest_child_minted",
+            "plan_summary": "0056 FRONT と 0055 BACK/CODE は X001BGAPFR / ATIDIMU FOR MEN No3 FACE SERUM 30mL で一致する。0055 FRONT の黒い袋入り衣類系スロットと 0056 CODE の JODSONE ネイルドライヤー箱は別商品として親 ID に残し、ATIDIMU 側だけ local child へ切り出す。 / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "ui_summary": "0056 FRONT + 0055 BACK/CODE は ATIDIMU child 候補 / 0055 FRONT は黒い袋入り衣類系 / 0056 CODE は JODSONE 側 / 0056 BACK は出品画面スクショ / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "operator_summary": "BOX-001-ITEM-0055 / 0056 は ATIDIMU 美容液、黒い袋入り衣類系、JODSONE ネイルドライヤー、出品画面スクショが混在している。0056 FRONT と 0055 BACK/CODE は X001BGAPFR / ATIDIMU FOR MEN No3 FACE SERUM 30mL で一致するため、ATIDIMU 側だけ local child へ切り出す。Web検索では ATIDIMU 公式ページで 30mL / 日本製 / レチノール・ビタミンE・7種植物エキス配合の同系商品情報を確認したが、X001BGAPFR は内部コード候補として扱い、出品画像は実物のみで扱う。 / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_note": "0056 FRONT + 0055 BACK/CODE は ATIDIMU 側として coherent。0055 FRONT の黒い袋入り衣類系スロット、0056 CODE の JODSONE ネイルドライヤー箱、0056 BACK の出品画面スクショは別扱い。 / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_next_action": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN を local mint → local confirmed / official へ provisional actual-only 反映。親 0055 / 0056 は split_required のまま維持。 / BOX-001-ITEM-0068 は管理表 / 出品判断の止めどころを決めてから正式反映 / BOX-001-ITEM-0069 は管理表 / 出品判断の止めどころを決めてから正式反映",
+            "related_management_ids": [
+              "BOX-001-ITEM-0056",
+              "BOX-001-ITEM-0057"
+            ],
+            "source_trace": [
+              {
+                "management_id": "BOX-001-ITEM-0055",
+                "slot": "FRONT",
+                "observed_as": "黒い袋入り衣類系スロット。ATIDIMU 側ではない"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0055",
+                "slot": "BACK",
+                "observed_as": "X001BGAPFR / ATIDIMU 美容液 メンズ レチノール・ビタミンE・7種植物エキス配合 ラベル面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0055",
+                "slot": "CODE",
+                "observed_as": "ATIDIMU 美容液の成分・使用方法面。30mL 表記あり"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0056",
+                "slot": "FRONT",
+                "observed_as": "ATIDIMU FOR MEN No3 FACE SERUM 箱 FRONT"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0056",
+                "slot": "BACK",
+                "observed_as": "メルカリ出品入力画面スクショ。実物写真ではない"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0056",
+                "slot": "CODE",
+                "observed_as": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク / X001AP6CKV の別商品箱"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0057",
+                "slot": "FRONT",
+                "observed_as": "JODSONE / X001AP6CKV / クイックUV LED自動センサーネイルドライヤー ピンクの箱ラベル面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0057",
+                "slot": "BACK",
+                "observed_as": "Professional Gel Polish LED Nail Dryer Lamp と読める JODSONE ネイルドライヤー箱面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0057",
+                "slot": "CODE",
+                "observed_as": "B09NG1PLHK / RIZZARI 9L自動給水器の対象外ラベル。JODSONE側ではない"
+              }
+            ],
+            "blocked_split_children": [
+              {
+                "temporary_split_id": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN",
+                "target_label": "ATIDIMU FOR MEN No3 FACE SERUM 30mL",
+                "source_slots": [
+                  "BOX-001-ITEM-0056:FRONT",
+                  "BOX-001-ITEM-0055:BACK",
+                  "BOX-001-ITEM-0055:CODE"
+                ],
+                "status": "manifest_child_minted_local_only",
+                "blockers": [
+                  "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+                  "0056 FRONT と 0055 BACK/CODE は X001BGAPFR / ATIDIMU FOR MEN No3 FACE SERUM 30mL で一致し、同一の ATIDIMU 箱として実画像確認済み",
+                  "X001BGAPFR は JAN確定ではなく内部管理番号候補として扱う",
+                  "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+                  "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+                ],
+                "truth_product_name": "ATIDIMU FOR MEN No3 FACE SERUM 30mL",
+                "truth_barcode_primary": "X001BGAPFR",
+                "truth_product_code_type": "amazon_internal",
+                "truth_content_unknown": false,
+                "truth_official_image_state": "actual-only固定 / 比較画像なし",
+                "truth_exact_match_guard_state": "clear",
+                "truth_exact_match_guard_reasons": [],
+                "truth_evidence": [
+                  "X001BGAPFR",
+                  "ATIDIMU",
+                  "FOR MEN",
+                  "No3",
+                  "FACE SERUM",
+                  "30mL",
+                  "レチノール・ビタミンE・7種植物エキス配合",
+                  "0056:FRONT + 0055:BACK + 0055:CODE"
+                ],
+                "truth_brand_override": "ATIDIMU",
+                "truth_category_override": "コスメ・美容 > スキンケア・基礎化粧品 > 美容液",
+                "truth_check_items_override": "未開封 / 箱つぶれ / 30mL表記 / 日本製表記 / 使用期限または保管状態",
+                "truth_note": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN は、0056:FRONT と 0055:BACK/CODE の3枚で X001BGAPFR / ATIDIMU FOR MEN No3 FACE SERUM 30mL の写真セットを組み直し可能。ATIDIMU公式ページで 30mL / 日本製 / レチノール・ビタミンE・7種植物エキス配合の同系商品情報を確認したが、X001BGAPFR は内部コード候補として扱い、出品画像は実物のみで扱う。ローカル特定結果へ暫定・実物写真のみで反映し、管理表 / 出品判断は別フェーズ。",
+                "truth_price_override": 2480,
+                "minted_management_id": "BOX-001-ITEM-0068",
+                "minted_at": "2026-04-22 08:08:00 JST",
+                "minted_scope": "local_manifest_only",
+                "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+                "truth_promotion_scope": "local_confirmed_official_only",
+                "truth_promoted_management_id": "BOX-001-ITEM-0068",
+                "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
+                "truth_promoted_at": "2026-04-22 08:10:26 JST"
+              },
+              {
+                "temporary_split_id": "SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER",
+                "target_label": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
+                "source_slots": [
+                  "BOX-001-ITEM-0057:FRONT",
+                  "BOX-001-ITEM-0057:BACK",
+                  "BOX-001-ITEM-0056:CODE"
+                ],
+                "status": "manifest_child_minted_local_only",
+                "blockers": [
+                  "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+                  "0057 FRONT/BACK と 0056 CODE は X001AP6CKV / JODSONE / クイックUV LED自動センサーネイルドライヤー ピンクで一致し、同一の JODSONE 箱として実画像確認済み",
+                  "0057 CODE は B09NG1PLHK / RIZZARI 9L自動給水器の対象外ラベルのため JODSONE 側に使わない",
+                  "X001AP6CKV は JAN確定ではなく内部管理番号候補として扱う",
+                  "本体そのものは箱内で見えていないため、ローカル特定結果へは内容物未確認で反映する",
+                  "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+                  "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+                ],
+                "truth_product_name": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク（内容物未確認）",
+                "truth_barcode_primary": "X001AP6CKV",
+                "truth_product_code_type": "amazon_internal",
+                "truth_content_unknown": true,
+                "truth_official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+                "truth_exact_match_guard_state": "review_required",
+                "truth_exact_match_guard_reasons": [
+                  "内容物未確認"
+                ],
+                "truth_evidence": [
+                  "X001AP6CKV",
+                  "JODSONE",
+                  "クイックUV LED",
+                  "ネイルドライヤー",
+                  "ピンク",
+                  "Professional Gel Polish LED Nail Dryer Lamp",
+                  "0057:FRONT + 0057:BACK + 0056:CODE",
+                  "本体そのものは箱内で未確認",
+                  "内容物未確認"
+                ],
+                "truth_brand_override": "JODSONE",
+                "truth_category_override": "コスメ・美容 > ネイルケア > ジェルネイル・ネイルシール > その他",
+                "truth_check_items_override": "本体有無 / 点灯確認 / タイマーボタン / 付属品有無 / 開封痕確認 / 箱状態",
+                "truth_note": "SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER は、0057:FRONT/BACK と 0056:CODE の3枚で X001AP6CKV / JODSONE クイックUV LED自動センサーネイルドライヤー ピンクを実物3枚で確認できる写真セット。0057:CODE は B09NG1PLHK / RIZZARI 9L自動給水器の対象外ラベルのため JODSONE 側には使わない。X001AP6CKV は内部コード候補として扱い、出品画像は実物のみで扱う。本体そのものは箱内で見えていないため、ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映し、管理表 / 出品判断は別フェーズ。",
+                "truth_price_override": 2780,
+                "minted_management_id": "BOX-001-ITEM-0069",
+                "minted_at": "2026-04-22 09:00:19 JST",
+                "minted_scope": "local_manifest_only",
+                "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+                "truth_promotion_scope": "local_confirmed_official_only",
+                "truth_promoted_management_id": "BOX-001-ITEM-0069",
+                "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み。管理表 / 出品判断は別フェーズで行う。",
+                "truth_promoted_at": "2026-04-22 09:03:31 JST"
+              }
+            ],
+            "remaining_blockers": [
+              "ATIDIMU child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
+              "0055 FRONT の黒い袋入り衣類系スロットは相方未確定のまま",
+              "0056 CODE の JODSONE ネイルドライヤー箱は BACK/FRONT 相当写真なしのまま",
+              "0056 BACK は出品画面スクショであり、商品写真として使わない",
+              "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
+              "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。",
+              "SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。"
+            ],
+            "safe_next_step": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN を local mint → local confirmed / official へ provisional actual-only 反映。親 0055 / 0056 は split_required のまま維持する。 / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "match_role": "primary"
+          },
+          "split_plan_summary": "0056 FRONT + 0055 BACK/CODE は ATIDIMU child 候補 / 0055 FRONT は黒い袋入り衣類系 / 0056 CODE は JODSONE 側 / 0056 BACK は出品画面スクショ / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+          "split_plan_role": "primary"
         },
         {
           "management_id": "BOX-001-ITEM-0056",
@@ -27003,10 +28854,10 @@ window.ZERO_COST_INTAKE = {
           "resolved": {
             "management_id": "BOX-001-ITEM-0056",
             "resolution_status": "provisional",
-            "product_name": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
+            "product_name": "写真セット組み直し候補: JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
             "barcode_primary": "X001AP6CKV",
             "product_code_type": "amazon_internal",
-            "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番 / 内容物未確認",
             "note": "CODE では JODSONE 箱ラベル X001AP6CKV / クイックUV LED自動センサーネイルドライヤー ピンク が読める。一方 FRONT は ATIDIMU FACE SERUM 箱、BACK は出品入力画面スクショで、現写真では1商品に断定不能。JODSONE 側を provisional に留める。",
             "evidence": [
               "X001AP6CKV",
@@ -27017,7 +28868,9 @@ window.ZERO_COST_INTAKE = {
             ],
             "exact_match_guard_state": "review_required",
             "exact_match_guard_reasons": [
-              "別商品mix"
+              "別商品mix",
+              "写真セット組み直し必要",
+              "内容物未確認"
             ]
           },
           "official": {},
@@ -27027,12 +28880,12 @@ window.ZERO_COST_INTAKE = {
             "product_id": "PRD-BOX-001-056",
             "draft_id": "DRF-BOX-001-056",
             "research_id": "RES-BOX-001-056",
-            "product_name": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
+            "product_name": "写真セット組み直し候補: JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
             "brand": "",
             "category": "",
             "barcode_primary": "X001AP6CKV",
             "product_code_type": "amazon_internal",
-            "listing_title": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
+            "listing_title": "写真セット組み直し候補: JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
             "listing_price": "",
             "market_floor_price": "",
             "market_floor_state": "未調査",
@@ -27045,17 +28898,19 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
-          "display_name": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
-          "product_name": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
+          "display_name": "写真セット組み直し候補: JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
+          "product_name": "写真セット組み直し候補: JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
           "verified_exact_match": false,
-          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 管理番号再分解待ち",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
-            "別商品mix"
+            "別商品mix",
+            "写真セット組み直し必要",
+            "内容物未確認"
           ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
@@ -27070,7 +28925,181 @@ window.ZERO_COST_INTAKE = {
           "market_floor_price_label": "未調査",
           "listing_price": "",
           "exception": {},
-          "route_plan": {}
+          "route_plan": {},
+          "split_staging": {
+            "management_id": "BOX-001-ITEM-0055",
+            "stage_status": "partial_manifest_child_minted",
+            "plan_summary": "0056 FRONT と 0055 BACK/CODE は X001BGAPFR / ATIDIMU FOR MEN No3 FACE SERUM 30mL で一致する。0055 FRONT の黒い袋入り衣類系スロットと 0056 CODE の JODSONE ネイルドライヤー箱は別商品として親 ID に残し、ATIDIMU 側だけ local child へ切り出す。 / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "ui_summary": "0056 FRONT + 0055 BACK/CODE は ATIDIMU child 候補 / 0055 FRONT は黒い袋入り衣類系 / 0056 CODE は JODSONE 側 / 0056 BACK は出品画面スクショ / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "operator_summary": "BOX-001-ITEM-0055 / 0056 は ATIDIMU 美容液、黒い袋入り衣類系、JODSONE ネイルドライヤー、出品画面スクショが混在している。0056 FRONT と 0055 BACK/CODE は X001BGAPFR / ATIDIMU FOR MEN No3 FACE SERUM 30mL で一致するため、ATIDIMU 側だけ local child へ切り出す。Web検索では ATIDIMU 公式ページで 30mL / 日本製 / レチノール・ビタミンE・7種植物エキス配合の同系商品情報を確認したが、X001BGAPFR は内部コード候補として扱い、出品画像は実物のみで扱う。 / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_note": "0056 FRONT + 0055 BACK/CODE は ATIDIMU 側として coherent。0055 FRONT の黒い袋入り衣類系スロット、0056 CODE の JODSONE ネイルドライヤー箱、0056 BACK の出品画面スクショは別扱い。 / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_next_action": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN を local mint → local confirmed / official へ provisional actual-only 反映。親 0055 / 0056 は split_required のまま維持。 / BOX-001-ITEM-0068 は管理表 / 出品判断の止めどころを決めてから正式反映 / BOX-001-ITEM-0069 は管理表 / 出品判断の止めどころを決めてから正式反映",
+            "related_management_ids": [
+              "BOX-001-ITEM-0056",
+              "BOX-001-ITEM-0057"
+            ],
+            "source_trace": [
+              {
+                "management_id": "BOX-001-ITEM-0055",
+                "slot": "FRONT",
+                "observed_as": "黒い袋入り衣類系スロット。ATIDIMU 側ではない"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0055",
+                "slot": "BACK",
+                "observed_as": "X001BGAPFR / ATIDIMU 美容液 メンズ レチノール・ビタミンE・7種植物エキス配合 ラベル面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0055",
+                "slot": "CODE",
+                "observed_as": "ATIDIMU 美容液の成分・使用方法面。30mL 表記あり"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0056",
+                "slot": "FRONT",
+                "observed_as": "ATIDIMU FOR MEN No3 FACE SERUM 箱 FRONT"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0056",
+                "slot": "BACK",
+                "observed_as": "メルカリ出品入力画面スクショ。実物写真ではない"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0056",
+                "slot": "CODE",
+                "observed_as": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク / X001AP6CKV の別商品箱"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0057",
+                "slot": "FRONT",
+                "observed_as": "JODSONE / X001AP6CKV / クイックUV LED自動センサーネイルドライヤー ピンクの箱ラベル面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0057",
+                "slot": "BACK",
+                "observed_as": "Professional Gel Polish LED Nail Dryer Lamp と読める JODSONE ネイルドライヤー箱面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0057",
+                "slot": "CODE",
+                "observed_as": "B09NG1PLHK / RIZZARI 9L自動給水器の対象外ラベル。JODSONE側ではない"
+              }
+            ],
+            "blocked_split_children": [
+              {
+                "temporary_split_id": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN",
+                "target_label": "ATIDIMU FOR MEN No3 FACE SERUM 30mL",
+                "source_slots": [
+                  "BOX-001-ITEM-0056:FRONT",
+                  "BOX-001-ITEM-0055:BACK",
+                  "BOX-001-ITEM-0055:CODE"
+                ],
+                "status": "manifest_child_minted_local_only",
+                "blockers": [
+                  "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+                  "0056 FRONT と 0055 BACK/CODE は X001BGAPFR / ATIDIMU FOR MEN No3 FACE SERUM 30mL で一致し、同一の ATIDIMU 箱として実画像確認済み",
+                  "X001BGAPFR は JAN確定ではなく内部管理番号候補として扱う",
+                  "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+                  "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+                ],
+                "truth_product_name": "ATIDIMU FOR MEN No3 FACE SERUM 30mL",
+                "truth_barcode_primary": "X001BGAPFR",
+                "truth_product_code_type": "amazon_internal",
+                "truth_content_unknown": false,
+                "truth_official_image_state": "actual-only固定 / 比較画像なし",
+                "truth_exact_match_guard_state": "clear",
+                "truth_exact_match_guard_reasons": [],
+                "truth_evidence": [
+                  "X001BGAPFR",
+                  "ATIDIMU",
+                  "FOR MEN",
+                  "No3",
+                  "FACE SERUM",
+                  "30mL",
+                  "レチノール・ビタミンE・7種植物エキス配合",
+                  "0056:FRONT + 0055:BACK + 0055:CODE"
+                ],
+                "truth_brand_override": "ATIDIMU",
+                "truth_category_override": "コスメ・美容 > スキンケア・基礎化粧品 > 美容液",
+                "truth_check_items_override": "未開封 / 箱つぶれ / 30mL表記 / 日本製表記 / 使用期限または保管状態",
+                "truth_note": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN は、0056:FRONT と 0055:BACK/CODE の3枚で X001BGAPFR / ATIDIMU FOR MEN No3 FACE SERUM 30mL の写真セットを組み直し可能。ATIDIMU公式ページで 30mL / 日本製 / レチノール・ビタミンE・7種植物エキス配合の同系商品情報を確認したが、X001BGAPFR は内部コード候補として扱い、出品画像は実物のみで扱う。ローカル特定結果へ暫定・実物写真のみで反映し、管理表 / 出品判断は別フェーズ。",
+                "truth_price_override": 2480,
+                "minted_management_id": "BOX-001-ITEM-0068",
+                "minted_at": "2026-04-22 08:08:00 JST",
+                "minted_scope": "local_manifest_only",
+                "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+                "truth_promotion_scope": "local_confirmed_official_only",
+                "truth_promoted_management_id": "BOX-001-ITEM-0068",
+                "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
+                "truth_promoted_at": "2026-04-22 08:10:26 JST"
+              },
+              {
+                "temporary_split_id": "SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER",
+                "target_label": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
+                "source_slots": [
+                  "BOX-001-ITEM-0057:FRONT",
+                  "BOX-001-ITEM-0057:BACK",
+                  "BOX-001-ITEM-0056:CODE"
+                ],
+                "status": "manifest_child_minted_local_only",
+                "blockers": [
+                  "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+                  "0057 FRONT/BACK と 0056 CODE は X001AP6CKV / JODSONE / クイックUV LED自動センサーネイルドライヤー ピンクで一致し、同一の JODSONE 箱として実画像確認済み",
+                  "0057 CODE は B09NG1PLHK / RIZZARI 9L自動給水器の対象外ラベルのため JODSONE 側に使わない",
+                  "X001AP6CKV は JAN確定ではなく内部管理番号候補として扱う",
+                  "本体そのものは箱内で見えていないため、ローカル特定結果へは内容物未確認で反映する",
+                  "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+                  "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+                ],
+                "truth_product_name": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク（内容物未確認）",
+                "truth_barcode_primary": "X001AP6CKV",
+                "truth_product_code_type": "amazon_internal",
+                "truth_content_unknown": true,
+                "truth_official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+                "truth_exact_match_guard_state": "review_required",
+                "truth_exact_match_guard_reasons": [
+                  "内容物未確認"
+                ],
+                "truth_evidence": [
+                  "X001AP6CKV",
+                  "JODSONE",
+                  "クイックUV LED",
+                  "ネイルドライヤー",
+                  "ピンク",
+                  "Professional Gel Polish LED Nail Dryer Lamp",
+                  "0057:FRONT + 0057:BACK + 0056:CODE",
+                  "本体そのものは箱内で未確認",
+                  "内容物未確認"
+                ],
+                "truth_brand_override": "JODSONE",
+                "truth_category_override": "コスメ・美容 > ネイルケア > ジェルネイル・ネイルシール > その他",
+                "truth_check_items_override": "本体有無 / 点灯確認 / タイマーボタン / 付属品有無 / 開封痕確認 / 箱状態",
+                "truth_note": "SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER は、0057:FRONT/BACK と 0056:CODE の3枚で X001AP6CKV / JODSONE クイックUV LED自動センサーネイルドライヤー ピンクを実物3枚で確認できる写真セット。0057:CODE は B09NG1PLHK / RIZZARI 9L自動給水器の対象外ラベルのため JODSONE 側には使わない。X001AP6CKV は内部コード候補として扱い、出品画像は実物のみで扱う。本体そのものは箱内で見えていないため、ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映し、管理表 / 出品判断は別フェーズ。",
+                "truth_price_override": 2780,
+                "minted_management_id": "BOX-001-ITEM-0069",
+                "minted_at": "2026-04-22 09:00:19 JST",
+                "minted_scope": "local_manifest_only",
+                "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+                "truth_promotion_scope": "local_confirmed_official_only",
+                "truth_promoted_management_id": "BOX-001-ITEM-0069",
+                "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み。管理表 / 出品判断は別フェーズで行う。",
+                "truth_promoted_at": "2026-04-22 09:03:31 JST"
+              }
+            ],
+            "remaining_blockers": [
+              "ATIDIMU child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
+              "0055 FRONT の黒い袋入り衣類系スロットは相方未確定のまま",
+              "0056 CODE の JODSONE ネイルドライヤー箱は BACK/FRONT 相当写真なしのまま",
+              "0056 BACK は出品画面スクショであり、商品写真として使わない",
+              "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
+              "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。",
+              "SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。"
+            ],
+            "safe_next_step": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN を local mint → local confirmed / official へ provisional actual-only 反映。親 0055 / 0056 は split_required のまま維持する。 / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "match_role": "related"
+          },
+          "split_plan_summary": "0056 FRONT + 0055 BACK/CODE は ATIDIMU child 候補 / 0055 FRONT は黒い袋入り衣類系 / 0056 CODE は JODSONE 側 / 0056 BACK は出品画面スクショ / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+          "split_plan_role": "related"
         },
         {
           "management_id": "BOX-001-ITEM-0057",
@@ -27151,11 +29180,11 @@ window.ZERO_COST_INTAKE = {
           "resolved": {
             "management_id": "BOX-001-ITEM-0057",
             "resolution_status": "provisional",
-            "product_name": "JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp",
+            "product_name": "写真セット組み直し候補: JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp",
             "barcode_primary": "JODSONE nail lamp box text",
             "product_code_type": "package_text",
             "verified_exact_match": false,
-            "official_image_state": "比較画像候補あり / 現写真では1商品に断定不能",
+            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番 / 内容物未確認",
             "note": "FRONT/BACK の2枚で JODSONE / Professional Gel Polish LED Nail Dryer Lamp / LED UV / Intelligent sensing / Non-harmful が一致。一方 CODE は B09NG1PLHK の給水器ラベルで別商品。現写真では1商品に断定不能のため、JODSONE 箱側を provisional に留め、比較画像は照合用に保持する。",
             "evidence": [
               "JODSONE",
@@ -27174,7 +29203,9 @@ window.ZERO_COST_INTAKE = {
             "exact_match_guard_state": "review_required",
             "official_image_local": "state/intake/official_images/BOX-001-ITEM-0057_jodsone_nail_lamp.webp",
             "exact_match_guard_reasons": [
-              "別商品mix"
+              "別商品mix",
+              "写真セット組み直し必要",
+              "内容物未確認"
             ]
           },
           "official": {
@@ -27183,11 +29214,13 @@ window.ZERO_COST_INTAKE = {
             "official_image_url": "https://cdn.jodsonebeauty.com/cdn/10954/2025/1108/90301857d3d2d1b0c04a2b85dcefd247-1.webp",
             "official_image_local": "state/intake/official_images/BOX-001-ITEM-0057_jodsone_nail_lamp.webp",
             "verified_exact_match": false,
-            "official_image_state": "比較画像候補あり / 現写真では1商品に断定不能",
+            "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番 / 内容物未確認",
             "note": "FRONT/BACK は JODSONE のネイルランプ箱で揃うが、CODE は B09NG1PLHK の給水器ラベルで別商品。比較画像候補は保持するが、現写真では1商品に断定不能のため出品採用不可。",
             "exact_match_guard_state": "review_required",
             "exact_match_guard_reasons": [
-              "別商品mix"
+              "別商品mix",
+              "写真セット組み直し必要",
+              "内容物未確認"
             ]
           },
           "commerce": {
@@ -27196,12 +29229,12 @@ window.ZERO_COST_INTAKE = {
             "product_id": "PRD-BOX-001-057",
             "draft_id": "DRF-BOX-001-057",
             "research_id": "RES-BOX-001-057",
-            "product_name": "JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp",
+            "product_name": "写真セット組み直し候補: JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp",
             "brand": "JODSONE",
             "category": "コスメ・美容 > ネイルケア > ジェルネイル・ネイルシール > その他",
             "barcode_primary": "JODSONE nail lamp box text",
             "product_code_type": "package_text",
-            "listing_title": "JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp",
+            "listing_title": "写真セット組み直し候補: JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp",
             "listing_price": "2780",
             "market_floor_price": "1500",
             "market_floor_state": "調査済み",
@@ -27221,7 +29254,7 @@ window.ZERO_COST_INTAKE = {
               "label": "比較-1",
               "url": "./assets/official_images/BOX-001-ITEM-0057_official_1.webp",
               "page_url": "https://www.jodsonebeauty.com/product/jodsone-120w-u-v-led-nail-lamp-for-two-hand-led-light-for-gel-with-54-pcs-light-bead-quick-curing-gel-polish-nail-dryer-suitable-salon-and-home-use-blackblack/",
-              "state": "比較画像候補あり / 現写真では1商品に断定不能",
+              "state": "比較画像候補あり / 現写真では1商品に断定不能 / 内容物未確認",
               "source": "web candidate",
               "verified_exact_match": false
             },
@@ -27255,7 +29288,7 @@ window.ZERO_COST_INTAKE = {
               "label": "比較-1",
               "url": "./assets/official_images/BOX-001-ITEM-0057_official_1.webp",
               "page_url": "https://www.jodsonebeauty.com/product/jodsone-120w-u-v-led-nail-lamp-for-two-hand-led-light-for-gel-with-54-pcs-light-bead-quick-curing-gel-polish-nail-dryer-suitable-salon-and-home-use-blackblack/",
-              "state": "比較画像候補あり / 現写真では1商品に断定不能",
+              "state": "比較画像候補あり / 現写真では1商品に断定不能 / 内容物未確認",
               "source": "web candidate",
               "verified_exact_match": false
             },
@@ -27284,13 +29317,15 @@ window.ZERO_COST_INTAKE = {
               "verified_exact_match": false
             }
           ],
-          "display_name": "JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp",
-          "product_name": "JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp",
+          "display_name": "写真セット組み直し候補: JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp",
+          "product_name": "写真セット組み直し候補: JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp",
           "verified_exact_match": false,
-          "official_image_state": "比較画像候補あり / 現写真では1商品に断定不能",
+          "official_image_state": "比較画像候補あり / 現写真では1商品に断定不能 / 内容物未確認 / 管理番号再分解待ち",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
-            "別商品mix"
+            "別商品mix",
+            "写真セット組み直し必要",
+            "内容物未確認"
           ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
@@ -27323,9 +29358,183 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "比較画像照合",
             "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
             "ルーティング状態": "写真セット組み直し必要",
-            "更新時刻": "2026-04-22 00:33:59 JST",
+            "更新時刻": "2026-04-22 08:50:03 JST",
             "メモ": "name=JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=別商品mix / inventory_status=販売中 / listingId=2JPSNX6qATG7NwnssYkshh"
-          }
+          },
+          "split_staging": {
+            "management_id": "BOX-001-ITEM-0055",
+            "stage_status": "partial_manifest_child_minted",
+            "plan_summary": "0056 FRONT と 0055 BACK/CODE は X001BGAPFR / ATIDIMU FOR MEN No3 FACE SERUM 30mL で一致する。0055 FRONT の黒い袋入り衣類系スロットと 0056 CODE の JODSONE ネイルドライヤー箱は別商品として親 ID に残し、ATIDIMU 側だけ local child へ切り出す。 / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "ui_summary": "0056 FRONT + 0055 BACK/CODE は ATIDIMU child 候補 / 0055 FRONT は黒い袋入り衣類系 / 0056 CODE は JODSONE 側 / 0056 BACK は出品画面スクショ / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "operator_summary": "BOX-001-ITEM-0055 / 0056 は ATIDIMU 美容液、黒い袋入り衣類系、JODSONE ネイルドライヤー、出品画面スクショが混在している。0056 FRONT と 0055 BACK/CODE は X001BGAPFR / ATIDIMU FOR MEN No3 FACE SERUM 30mL で一致するため、ATIDIMU 側だけ local child へ切り出す。Web検索では ATIDIMU 公式ページで 30mL / 日本製 / レチノール・ビタミンE・7種植物エキス配合の同系商品情報を確認したが、X001BGAPFR は内部コード候補として扱い、出品画像は実物のみで扱う。 / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_note": "0056 FRONT + 0055 BACK/CODE は ATIDIMU 側として coherent。0055 FRONT の黒い袋入り衣類系スロット、0056 CODE の JODSONE ネイルドライヤー箱、0056 BACK の出品画面スクショは別扱い。 / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_next_action": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN を local mint → local confirmed / official へ provisional actual-only 反映。親 0055 / 0056 は split_required のまま維持。 / BOX-001-ITEM-0068 は管理表 / 出品判断の止めどころを決めてから正式反映 / BOX-001-ITEM-0069 は管理表 / 出品判断の止めどころを決めてから正式反映",
+            "related_management_ids": [
+              "BOX-001-ITEM-0056",
+              "BOX-001-ITEM-0057"
+            ],
+            "source_trace": [
+              {
+                "management_id": "BOX-001-ITEM-0055",
+                "slot": "FRONT",
+                "observed_as": "黒い袋入り衣類系スロット。ATIDIMU 側ではない"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0055",
+                "slot": "BACK",
+                "observed_as": "X001BGAPFR / ATIDIMU 美容液 メンズ レチノール・ビタミンE・7種植物エキス配合 ラベル面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0055",
+                "slot": "CODE",
+                "observed_as": "ATIDIMU 美容液の成分・使用方法面。30mL 表記あり"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0056",
+                "slot": "FRONT",
+                "observed_as": "ATIDIMU FOR MEN No3 FACE SERUM 箱 FRONT"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0056",
+                "slot": "BACK",
+                "observed_as": "メルカリ出品入力画面スクショ。実物写真ではない"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0056",
+                "slot": "CODE",
+                "observed_as": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク / X001AP6CKV の別商品箱"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0057",
+                "slot": "FRONT",
+                "observed_as": "JODSONE / X001AP6CKV / クイックUV LED自動センサーネイルドライヤー ピンクの箱ラベル面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0057",
+                "slot": "BACK",
+                "observed_as": "Professional Gel Polish LED Nail Dryer Lamp と読める JODSONE ネイルドライヤー箱面"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0057",
+                "slot": "CODE",
+                "observed_as": "B09NG1PLHK / RIZZARI 9L自動給水器の対象外ラベル。JODSONE側ではない"
+              }
+            ],
+            "blocked_split_children": [
+              {
+                "temporary_split_id": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN",
+                "target_label": "ATIDIMU FOR MEN No3 FACE SERUM 30mL",
+                "source_slots": [
+                  "BOX-001-ITEM-0056:FRONT",
+                  "BOX-001-ITEM-0055:BACK",
+                  "BOX-001-ITEM-0055:CODE"
+                ],
+                "status": "manifest_child_minted_local_only",
+                "blockers": [
+                  "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+                  "0056 FRONT と 0055 BACK/CODE は X001BGAPFR / ATIDIMU FOR MEN No3 FACE SERUM 30mL で一致し、同一の ATIDIMU 箱として実画像確認済み",
+                  "X001BGAPFR は JAN確定ではなく内部管理番号候補として扱う",
+                  "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+                  "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+                ],
+                "truth_product_name": "ATIDIMU FOR MEN No3 FACE SERUM 30mL",
+                "truth_barcode_primary": "X001BGAPFR",
+                "truth_product_code_type": "amazon_internal",
+                "truth_content_unknown": false,
+                "truth_official_image_state": "actual-only固定 / 比較画像なし",
+                "truth_exact_match_guard_state": "clear",
+                "truth_exact_match_guard_reasons": [],
+                "truth_evidence": [
+                  "X001BGAPFR",
+                  "ATIDIMU",
+                  "FOR MEN",
+                  "No3",
+                  "FACE SERUM",
+                  "30mL",
+                  "レチノール・ビタミンE・7種植物エキス配合",
+                  "0056:FRONT + 0055:BACK + 0055:CODE"
+                ],
+                "truth_brand_override": "ATIDIMU",
+                "truth_category_override": "コスメ・美容 > スキンケア・基礎化粧品 > 美容液",
+                "truth_check_items_override": "未開封 / 箱つぶれ / 30mL表記 / 日本製表記 / 使用期限または保管状態",
+                "truth_note": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN は、0056:FRONT と 0055:BACK/CODE の3枚で X001BGAPFR / ATIDIMU FOR MEN No3 FACE SERUM 30mL の写真セットを組み直し可能。ATIDIMU公式ページで 30mL / 日本製 / レチノール・ビタミンE・7種植物エキス配合の同系商品情報を確認したが、X001BGAPFR は内部コード候補として扱い、出品画像は実物のみで扱う。ローカル特定結果へ暫定・実物写真のみで反映し、管理表 / 出品判断は別フェーズ。",
+                "truth_price_override": 2480,
+                "minted_management_id": "BOX-001-ITEM-0068",
+                "minted_at": "2026-04-22 08:08:00 JST",
+                "minted_scope": "local_manifest_only",
+                "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+                "truth_promotion_scope": "local_confirmed_official_only",
+                "truth_promoted_management_id": "BOX-001-ITEM-0068",
+                "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみで反映済み。管理表 / 出品判断は別フェーズで行う。",
+                "truth_promoted_at": "2026-04-22 08:10:26 JST"
+              },
+              {
+                "temporary_split_id": "SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER",
+                "target_label": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
+                "source_slots": [
+                  "BOX-001-ITEM-0057:FRONT",
+                  "BOX-001-ITEM-0057:BACK",
+                  "BOX-001-ITEM-0056:CODE"
+                ],
+                "status": "manifest_child_minted_local_only",
+                "blockers": [
+                  "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+                  "0057 FRONT/BACK と 0056 CODE は X001AP6CKV / JODSONE / クイックUV LED自動センサーネイルドライヤー ピンクで一致し、同一の JODSONE 箱として実画像確認済み",
+                  "0057 CODE は B09NG1PLHK / RIZZARI 9L自動給水器の対象外ラベルのため JODSONE 側に使わない",
+                  "X001AP6CKV は JAN確定ではなく内部管理番号候補として扱う",
+                  "本体そのものは箱内で見えていないため、ローカル特定結果へは内容物未確認で反映する",
+                  "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+                  "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+                ],
+                "truth_product_name": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク（内容物未確認）",
+                "truth_barcode_primary": "X001AP6CKV",
+                "truth_product_code_type": "amazon_internal",
+                "truth_content_unknown": true,
+                "truth_official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+                "truth_exact_match_guard_state": "review_required",
+                "truth_exact_match_guard_reasons": [
+                  "内容物未確認"
+                ],
+                "truth_evidence": [
+                  "X001AP6CKV",
+                  "JODSONE",
+                  "クイックUV LED",
+                  "ネイルドライヤー",
+                  "ピンク",
+                  "Professional Gel Polish LED Nail Dryer Lamp",
+                  "0057:FRONT + 0057:BACK + 0056:CODE",
+                  "本体そのものは箱内で未確認",
+                  "内容物未確認"
+                ],
+                "truth_brand_override": "JODSONE",
+                "truth_category_override": "コスメ・美容 > ネイルケア > ジェルネイル・ネイルシール > その他",
+                "truth_check_items_override": "本体有無 / 点灯確認 / タイマーボタン / 付属品有無 / 開封痕確認 / 箱状態",
+                "truth_note": "SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER は、0057:FRONT/BACK と 0056:CODE の3枚で X001AP6CKV / JODSONE クイックUV LED自動センサーネイルドライヤー ピンクを実物3枚で確認できる写真セット。0057:CODE は B09NG1PLHK / RIZZARI 9L自動給水器の対象外ラベルのため JODSONE 側には使わない。X001AP6CKV は内部コード候補として扱い、出品画像は実物のみで扱う。本体そのものは箱内で見えていないため、ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映し、管理表 / 出品判断は別フェーズ。",
+                "truth_price_override": 2780,
+                "minted_management_id": "BOX-001-ITEM-0069",
+                "minted_at": "2026-04-22 09:00:19 JST",
+                "minted_scope": "local_manifest_only",
+                "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+                "truth_promotion_scope": "local_confirmed_official_only",
+                "truth_promoted_management_id": "BOX-001-ITEM-0069",
+                "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み。管理表 / 出品判断は別フェーズで行う。",
+                "truth_promoted_at": "2026-04-22 09:03:31 JST"
+              }
+            ],
+            "remaining_blockers": [
+              "ATIDIMU child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
+              "0055 FRONT の黒い袋入り衣類系スロットは相方未確定のまま",
+              "0056 CODE の JODSONE ネイルドライヤー箱は BACK/FRONT 相当写真なしのまま",
+              "0056 BACK は出品画面スクショであり、商品写真として使わない",
+              "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
+              "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。",
+              "SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。"
+            ],
+            "safe_next_step": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN を local mint → local confirmed / official へ provisional actual-only 反映。親 0055 / 0056 は split_required のまま維持する。 / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "match_role": "related"
+          },
+          "split_plan_summary": "0056 FRONT + 0055 BACK/CODE は ATIDIMU child 候補 / 0055 FRONT は黒い袋入り衣類系 / 0056 CODE は JODSONE 側 / 0056 BACK は出品画面スクショ / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 のローカル写真セットを作成済み / SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN=BOX-001-ITEM-0068 をローカル特定結果へ暫定・実物写真のみで反映済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 のローカル写真セットを作成済み / SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER=BOX-001-ITEM-0069 をローカル特定結果へ暫定・実物写真のみで反映済み",
+          "split_plan_role": "related"
         },
         {
           "management_id": "BOX-001-ITEM-0058",
@@ -27450,7 +29659,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -27522,18 +29731,6 @@ window.ZERO_COST_INTAKE = {
           ],
           "shared_sheet_title_value": "BOX-001-ITEM-0059",
           "shared_sheet_note": "SPLIT-BOX-001-0053-WHITEBOX から local manifest child を写真セット組み直し",
-          "photo_grouping": "split_child_mint",
-          "grouping_warning": "",
-          "product_name": "白箱 X00197BVHJ 記念品・ギフト箱（内容物不明）",
-          "display_name": "白箱 X00197BVHJ 記念品・ギフト箱（内容物不明）",
-          "split_child_label": "白箱 X00197BVHJ 系",
-          "split_temporary_id": "SPLIT-BOX-001-0053-WHITEBOX",
-          "split_source_slots": [
-            "BOX-001-ITEM-0053:FRONT",
-            "BOX-001-ITEM-0052:BACK",
-            "BOX-001-ITEM-0052:CODE"
-          ],
-          "split_status": "manifest_child_minted_local_only",
           "box_label": "数字箱 001",
           "box_lane": "numeric",
           "box_code": "001",
@@ -27667,10 +29864,12 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
+          "display_name": "白箱 X00197BVHJ 記念品・ギフト箱（内容物不明）",
+          "product_name": "白箱 X00197BVHJ 記念品・ギフト箱（内容物不明）",
           "verified_exact_match": false,
           "official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
           "exact_match_guard_state": "review_required",
@@ -27733,18 +29932,6 @@ window.ZERO_COST_INTAKE = {
           ],
           "shared_sheet_title_value": "BOX-001-ITEM-0060",
           "shared_sheet_note": "SPLIT-BOX-001-0030-SPEEDWOX から local manifest child を写真セット組み直し",
-          "photo_grouping": "split_child_mint",
-          "grouping_warning": "",
-          "product_name": "SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556",
-          "display_name": "SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556",
-          "split_child_label": "SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556",
-          "split_temporary_id": "SPLIT-BOX-001-0030-SPEEDWOX",
-          "split_source_slots": [
-            "BOX-001-ITEM-0030:FRONT",
-            "BOX-001-ITEM-0029:BACK",
-            "BOX-001-ITEM-0029:CODE"
-          ],
-          "split_status": "manifest_child_minted_local_only",
           "box_label": "数字箱 001",
           "box_lane": "numeric",
           "box_code": "001",
@@ -27871,10 +30058,12 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
+          "display_name": "SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556",
+          "product_name": "SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556",
           "verified_exact_match": false,
           "official_image_state": "actual-only固定 / 比較画像なし",
           "exact_match_guard_state": "clear",
@@ -27934,18 +30123,6 @@ window.ZERO_COST_INTAKE = {
           ],
           "shared_sheet_title_value": "BOX-001-ITEM-0061",
           "shared_sheet_note": "SPLIT-BOX-001-0053-HELLOKITTY からローカル写真セットを作成",
-          "photo_grouping": "split_child_mint",
-          "grouping_warning": "",
-          "product_name": "Acomiconi ハローキティ リュックアクセサリー 50TH ANNIVERSARY ブラック",
-          "display_name": "Acomiconi ハローキティ リュックアクセサリー 50TH ANNIVERSARY ブラック",
-          "split_child_label": "Hello Kitty 50TH ANNIVERSARY 系 マスコットアクセサリー（正規性未確認）",
-          "split_temporary_id": "SPLIT-BOX-001-0053-HELLOKITTY",
-          "split_source_slots": [
-            "BOX-001-ITEM-0054:FRONT",
-            "BOX-001-ITEM-0053:BACK",
-            "BOX-001-ITEM-0053:CODE"
-          ],
-          "split_status": "manifest_child_minted_local_only",
           "box_label": "数字箱 001",
           "box_lane": "numeric",
           "box_code": "001",
@@ -28083,10 +30260,12 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
+          "display_name": "Acomiconi ハローキティ リュックアクセサリー 50TH ANNIVERSARY ブラック",
+          "product_name": "Acomiconi ハローキティ リュックアクセサリー 50TH ANNIVERSARY ブラック",
           "verified_exact_match": false,
           "official_image_state": "actual-only固定 / 比較画像なし / 正規性確認待ち",
           "exact_match_guard_state": "review_required",
@@ -28149,18 +30328,6 @@ window.ZERO_COST_INTAKE = {
           ],
           "shared_sheet_title_value": "BOX-001-ITEM-0062",
           "shared_sheet_note": "SPLIT-BOX-001-0024-DUCO からローカル写真セットを作成",
-          "photo_grouping": "split_child_mint",
-          "grouping_warning": "",
-          "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
-          "display_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
-          "split_child_label": "DUCO サングラス レディース #016（ブラック・ブルー）",
-          "split_temporary_id": "SPLIT-BOX-001-0024-DUCO",
-          "split_source_slots": [
-            "BOX-001-ITEM-0025:FRONT",
-            "BOX-001-ITEM-0024:BACK",
-            "BOX-001-ITEM-0024:CODE"
-          ],
-          "split_status": "manifest_child_minted_local_only",
           "box_label": "数字箱 001",
           "box_lane": "numeric",
           "box_code": "001",
@@ -28288,10 +30455,12 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
+          "display_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
+          "product_name": "DUCO サングラス レディース #016（ブラック・ブルー）",
           "verified_exact_match": false,
           "official_image_state": "actual-only固定 / 比較画像なし",
           "exact_match_guard_state": "clear",
@@ -28351,18 +30520,6 @@ window.ZERO_COST_INTAKE = {
           ],
           "shared_sheet_title_value": "BOX-001-ITEM-0063",
           "shared_sheet_note": "SPLIT-BOX-001-0048-VIHFBB からローカル写真セットを作成",
-          "photo_grouping": "split_child_mint",
-          "grouping_warning": "",
-          "product_name": "花柄トートバッグ 40g",
-          "display_name": "花柄トートバッグ 40g",
-          "split_child_label": "VIHFBB 花柄トートバッグ",
-          "split_temporary_id": "SPLIT-BOX-001-0048-VIHFBB",
-          "split_source_slots": [
-            "BOX-001-ITEM-0049:FRONT",
-            "BOX-001-ITEM-0048:BACK",
-            "BOX-001-ITEM-0048:CODE"
-          ],
-          "split_status": "manifest_child_minted_local_only",
           "box_label": "数字箱 001",
           "box_lane": "numeric",
           "box_code": "001",
@@ -28487,10 +30644,12 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
+          "display_name": "花柄トートバッグ 40g",
+          "product_name": "花柄トートバッグ 40g",
           "verified_exact_match": false,
           "official_image_state": "actual-only固定 / 比較画像なし",
           "exact_match_guard_state": "clear",
@@ -28550,18 +30709,6 @@ window.ZERO_COST_INTAKE = {
           ],
           "shared_sheet_title_value": "BOX-001-ITEM-0064",
           "shared_sheet_note": "SPLIT-BOX-001-0039-PENDANT からローカル写真セットを作成",
-          "photo_grouping": "split_child_mint",
-          "grouping_warning": "",
-          "product_name": "fivihoc レディースペンダント ゴールド系 582",
-          "display_name": "fivihoc レディースペンダント ゴールド系 582",
-          "split_child_label": "fivihoc レディースペンダント ゴールド系 582",
-          "split_temporary_id": "SPLIT-BOX-001-0039-PENDANT",
-          "split_source_slots": [
-            "BOX-001-ITEM-0040:FRONT",
-            "BOX-001-ITEM-0039:BACK",
-            "BOX-001-ITEM-0039:CODE"
-          ],
-          "split_status": "manifest_child_minted_local_only",
           "box_label": "数字箱 001",
           "box_lane": "numeric",
           "box_code": "001",
@@ -28689,10 +30836,12 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
+          "display_name": "fivihoc レディースペンダント ゴールド系 582",
+          "product_name": "fivihoc レディースペンダント ゴールド系 582",
           "verified_exact_match": false,
           "official_image_state": "actual-only固定 / 比較画像なし",
           "exact_match_guard_state": "clear",
@@ -28752,18 +30901,6 @@ window.ZERO_COST_INTAKE = {
           ],
           "shared_sheet_title_value": "BOX-001-ITEM-0065",
           "shared_sheet_note": "SPLIT-BOX-001-0042-NEEDLY からローカル写真セットを作成",
-          "photo_grouping": "split_child_mint",
-          "grouping_warning": "",
-          "product_name": "NEEDLY Sleeping Lip Mask 10ml",
-          "display_name": "NEEDLY Sleeping Lip Mask 10ml",
-          "split_child_label": "NEEDLY Sleeping Lip Mask 10ml",
-          "split_temporary_id": "SPLIT-BOX-001-0042-NEEDLY",
-          "split_source_slots": [
-            "BOX-001-ITEM-0043:FRONT",
-            "BOX-001-ITEM-0042:BACK",
-            "BOX-001-ITEM-0042:CODE"
-          ],
-          "split_status": "manifest_child_minted_local_only",
           "box_label": "数字箱 001",
           "box_lane": "numeric",
           "box_code": "001",
@@ -28894,10 +31031,12 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
+          "display_name": "NEEDLY Sleeping Lip Mask 10ml",
+          "product_name": "NEEDLY Sleeping Lip Mask 10ml",
           "verified_exact_match": false,
           "official_image_state": "actual-only固定 / 比較画像なし",
           "exact_match_guard_state": "clear",
@@ -28957,18 +31096,6 @@ window.ZERO_COST_INTAKE = {
           ],
           "shared_sheet_title_value": "BOX-001-ITEM-0066",
           "shared_sheet_note": "SPLIT-BOX-001-0040-MOUSE からローカル写真セットを作成",
-          "photo_grouping": "split_child_mint",
-          "grouping_warning": "",
-          "product_name": "Bluetooth 無線マウス PC/Mac用",
-          "display_name": "Bluetooth 無線マウス PC/Mac用",
-          "split_child_label": "Bluetooth 無線マウス PC/Mac用",
-          "split_temporary_id": "SPLIT-BOX-001-0040-MOUSE",
-          "split_source_slots": [
-            "BOX-001-ITEM-0041:FRONT",
-            "BOX-001-ITEM-0040:BACK",
-            "BOX-001-ITEM-0040:CODE"
-          ],
-          "split_status": "manifest_child_minted_local_only",
           "box_label": "数字箱 001",
           "box_lane": "numeric",
           "box_code": "001",
@@ -29097,7 +31224,431 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 02:43:40 JST"
+            "updated_at": "2026-04-22 09:00:19 JST"
+          },
+          "comparison_images": [],
+          "reference_images": [],
+          "display_name": "Bluetooth 無線マウス PC/Mac用",
+          "product_name": "Bluetooth 無線マウス PC/Mac用",
+          "verified_exact_match": false,
+          "official_image_state": "actual-only固定 / 比較画像なし",
+          "exact_match_guard_state": "clear",
+          "qwen_hq_review_status": "",
+          "qwen_hq_resolution": "",
+          "qwen_hq_review_note": "",
+          "publish_status": "下書き準備中",
+          "publish_state": "下書き準備中",
+          "public_listing_url": "",
+          "listing_id": "",
+          "comparison_image_ref": "",
+          "reference_image_ref": "",
+          "minimum_price": "",
+          "market_floor_price_label": "未調査",
+          "listing_price": "",
+          "exception": {},
+          "route_plan": {}
+        },
+        {
+          "management_id": "BOX-001-ITEM-0067",
+          "box_id": "BOX-001",
+          "sequence": 67,
+          "status": "complete",
+          "missing_slots": [],
+          "slot_count": 3,
+          "slots": [
+            {
+              "slot": "FRONT",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4957.HEIC",
+              "source_name": "IMG_4957.HEIC",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0067/01_FRONT_IMG_4957.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0067/01_FRONT_IMG_4957.jpg",
+              "resident_url": "./assets/intake/BOX-001-ITEM-0067/01_FRONT_IMG_4957.jpg",
+              "rebundled_from": "BOX-001-ITEM-0044:FRONT"
+            },
+            {
+              "slot": "BACK",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4955.HEIC",
+              "source_name": "IMG_4955.HEIC",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0067/02_BACK_IMG_4955.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0067/02_BACK_IMG_4955.jpg",
+              "resident_url": "./assets/intake/BOX-001-ITEM-0067/02_BACK_IMG_4955.jpg",
+              "rebundled_from": "BOX-001-ITEM-0043:BACK"
+            },
+            {
+              "slot": "CODE",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4956.HEIC",
+              "source_name": "IMG_4956.HEIC",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0067/03_CODE_IMG_4956.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0067/03_CODE_IMG_4956.jpg",
+              "resident_url": "./assets/intake/BOX-001-ITEM-0067/03_CODE_IMG_4956.jpg",
+              "rebundled_from": "BOX-001-ITEM-0043:CODE"
+            }
+          ],
+          "shared_sheet_title_value": "BOX-001-ITEM-0067",
+          "shared_sheet_note": "SPLIT-BOX-001-0043-DOMAT-WALLET からローカル写真セットを作成",
+          "photo_grouping": "split_child_mint",
+          "grouping_warning": "",
+          "product_name": "DOMAT 財布 レッドブラウン（内容物未確認）",
+          "display_name": "DOMAT 財布 レッドブラウン（内容物未確認）",
+          "split_child_label": "DOMAT 財布 レッドブラウン 内容物未確認",
+          "split_temporary_id": "SPLIT-BOX-001-0043-DOMAT-WALLET",
+          "split_source_slots": [
+            "BOX-001-ITEM-0044:FRONT",
+            "BOX-001-ITEM-0043:BACK",
+            "BOX-001-ITEM-0043:CODE"
+          ],
+          "split_status": "manifest_child_minted_local_only",
+          "box_label": "数字箱 001",
+          "box_lane": "numeric",
+          "box_code": "001",
+          "identification": {
+            "state": "バーコード候補あり",
+            "barcode_values": [
+              "X00174LMFZ"
+            ],
+            "front_back_texts": [
+              "Bio dimor",
+              "DMF NR.",
+              "Mildewproof piece",
+              "DMF",
+              "DO NOT EAT",
+              "NR."
+            ],
+            "code_texts": [
+              "X00174LMFZ",
+              "（DOMAT】 男性用ドマット..性と女性用の財布。（赤褐色）",
+              "新品",
+              "DOMAT",
+              "= ="
+            ],
+            "ocr_texts": [
+              "Bio dimor",
+              "DMF NR.",
+              "Mildewproof piece",
+              "DMF",
+              "DO NOT EAT",
+              "NR."
+            ],
+            "candidate_query": "Bio dimor DMF NR. Mildewproof piece DMF",
+            "review_flag": "",
+            "ocr_engine": "sauna_tesseract_multistage + vision",
+            "ocr_debug_paths": [
+              "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0067/IMG_4956_CODE_ocr_best.png"
+            ]
+          },
+          "priority_score": 150,
+          "next_action": "Amazon内部コードとOCRで商品特定",
+          "barcode_kind": "amazon_internal",
+          "review_flag": "",
+          "resolved": {
+            "management_id": "BOX-001-ITEM-0067",
+            "raw_id": "RAW-BOX-001-067",
+            "product_id": "PRD-BOX-001-067",
+            "draft_id": "DRF-BOX-001-067",
+            "research_id": "RES-BOX-001-067",
+            "split_temporary_id": "SPLIT-BOX-001-0043-DOMAT-WALLET",
+            "split_source_slots": [
+              "BOX-001-ITEM-0044:FRONT",
+              "BOX-001-ITEM-0043:BACK",
+              "BOX-001-ITEM-0043:CODE"
+            ],
+            "verified_exact_match": false,
+            "official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+            "note": "SPLIT-BOX-001-0043-DOMAT-WALLET は、0044:FRONT と 0043:BACK/CODE の3枚で X00174LMFZ / DOMAT 財布 レッドブラウンの写真セットを組み直し可能。Web検索では DOMAT wallet の流通ページはあるが、X00174LMFZ まで一致する公式級根拠は未取得。FRONT で見えているのは DOMAT ロゴ入り布袋で、財布本体そのものは見えていないため、ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映する。管理表 / 出品判断は別フェーズ。",
+            "image_source": "actual-only",
+            "exact_match_guard_state": "review_required",
+            "official_page_url": "",
+            "official_image_url": "",
+            "official_image_local": "",
+            "supplemental_url": "",
+            "supplemental_image_urls": [],
+            "supplemental_image_locals": [],
+            "exact_match_guard_reasons": [
+              "内容物未確認"
+            ],
+            "resolution_status": "provisional",
+            "product_name": "DOMAT 財布 レッドブラウン（内容物未確認）",
+            "barcode_primary": "X00174LMFZ",
+            "product_code_type": "amazon_internal",
+            "evidence": [
+              "X00174LMFZ",
+              "DOMAT",
+              "財布",
+              "赤褐色",
+              "0044:FRONT + 0043:BACK + 0043:CODE",
+              "財布本体は布袋内で内容物未確認"
+            ],
+            "brand_override": "DOMAT",
+            "category_override": "ファッション > メンズ > 小物 > 財布",
+            "price_override": 1980,
+            "check_items_override": "財布本体の有無 / 色味レッドブラウン / 箱状態 / 布袋状態 / 未使用状態"
+          },
+          "official": {
+            "management_id": "BOX-001-ITEM-0067",
+            "raw_id": "RAW-BOX-001-067",
+            "product_id": "PRD-BOX-001-067",
+            "draft_id": "DRF-BOX-001-067",
+            "research_id": "RES-BOX-001-067",
+            "split_temporary_id": "SPLIT-BOX-001-0043-DOMAT-WALLET",
+            "split_source_slots": [
+              "BOX-001-ITEM-0044:FRONT",
+              "BOX-001-ITEM-0043:BACK",
+              "BOX-001-ITEM-0043:CODE"
+            ],
+            "verified_exact_match": false,
+            "official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+            "note": "SPLIT-BOX-001-0043-DOMAT-WALLET は、0044:FRONT と 0043:BACK/CODE の3枚で X00174LMFZ / DOMAT 財布 レッドブラウンの写真セットを組み直し可能。Web検索では DOMAT wallet の流通ページはあるが、X00174LMFZ まで一致する公式級根拠は未取得。FRONT で見えているのは DOMAT ロゴ入り布袋で、財布本体そのものは見えていないため、ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映する。管理表 / 出品判断は別フェーズ。",
+            "image_source": "actual-only",
+            "exact_match_guard_state": "review_required",
+            "official_page_url": "",
+            "official_image_url": "",
+            "official_image_local": "",
+            "supplemental_url": "",
+            "supplemental_image_urls": [],
+            "supplemental_image_locals": [],
+            "exact_match_guard_reasons": [
+              "内容物未確認"
+            ]
+          },
+          "commerce": {
+            "management_id": "BOX-001-ITEM-0067",
+            "raw_id": "RAW-BOX-001-067",
+            "product_id": "PRD-BOX-001-067",
+            "draft_id": "DRF-BOX-001-067",
+            "research_id": "RES-BOX-001-067",
+            "product_name": "DOMAT 財布 レッドブラウン（内容物未確認）",
+            "brand": "DOMAT",
+            "category": "ファッション > メンズ > 小物 > 財布",
+            "barcode_primary": "X00174LMFZ",
+            "product_code_type": "amazon_internal",
+            "listing_title": "DOMAT 財布 レッドブラウン（内容物未確認）",
+            "listing_price": "1980",
+            "market_floor_price": "",
+            "market_floor_state": "未調査",
+            "market_source_label": "",
+            "market_source_url": "",
+            "market_checked_at": "",
+            "market_note": "",
+            "publish_state": "下書き準備中",
+            "publish_detail": "",
+            "listing_id": "",
+            "public_listing_url": "",
+            "csv_status": "",
+            "updated_at": "2026-04-22 09:00:19 JST"
+          },
+          "comparison_images": [],
+          "reference_images": [],
+          "verified_exact_match": false,
+          "official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "内容物未確認"
+          ],
+          "qwen_hq_review_status": "",
+          "qwen_hq_resolution": "",
+          "qwen_hq_review_note": "",
+          "publish_status": "下書き準備中",
+          "publish_state": "下書き準備中",
+          "public_listing_url": "",
+          "listing_id": "",
+          "comparison_image_ref": "",
+          "reference_image_ref": "",
+          "minimum_price": "",
+          "market_floor_price_label": "未調査",
+          "listing_price": "1980",
+          "exception": {},
+          "route_plan": {}
+        },
+        {
+          "management_id": "BOX-001-ITEM-0068",
+          "box_id": "BOX-001",
+          "sequence": 68,
+          "status": "complete",
+          "missing_slots": [],
+          "slot_count": 3,
+          "slots": [
+            {
+              "slot": "FRONT",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4996.HEIC",
+              "source_name": "IMG_4996.HEIC",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0068/01_FRONT_IMG_4996.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0068/01_FRONT_IMG_4996.jpg",
+              "resident_url": "./assets/intake/BOX-001-ITEM-0068/01_FRONT_IMG_4996.jpg",
+              "rebundled_from": "BOX-001-ITEM-0056:FRONT"
+            },
+            {
+              "slot": "BACK",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4994.HEIC",
+              "source_name": "IMG_4994.HEIC",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0068/02_BACK_IMG_4994.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0068/02_BACK_IMG_4994.jpg",
+              "resident_url": "./assets/intake/BOX-001-ITEM-0068/02_BACK_IMG_4994.jpg",
+              "rebundled_from": "BOX-001-ITEM-0055:BACK"
+            },
+            {
+              "slot": "CODE",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4995.HEIC",
+              "source_name": "IMG_4995.HEIC",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0068/03_CODE_IMG_4995.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0068/03_CODE_IMG_4995.jpg",
+              "resident_url": "./assets/intake/BOX-001-ITEM-0068/03_CODE_IMG_4995.jpg",
+              "rebundled_from": "BOX-001-ITEM-0055:CODE"
+            }
+          ],
+          "shared_sheet_title_value": "BOX-001-ITEM-0068",
+          "shared_sheet_note": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN からローカル写真セットを作成",
+          "photo_grouping": "split_child_mint",
+          "grouping_warning": "",
+          "product_name": "ATIDIMU FOR MEN No3 FACE SERUM 30mL",
+          "display_name": "ATIDIMU FOR MEN No3 FACE SERUM 30mL",
+          "split_child_label": "ATIDIMU FOR MEN No3 FACE SERUM 30mL",
+          "split_temporary_id": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN",
+          "split_source_slots": [
+            "BOX-001-ITEM-0056:FRONT",
+            "BOX-001-ITEM-0055:BACK",
+            "BOX-001-ITEM-0055:CODE"
+          ],
+          "split_status": "manifest_child_minted_local_only",
+          "box_label": "数字箱 001",
+          "box_lane": "numeric",
+          "box_code": "001",
+          "identification": {
+            "state": "バーコード候補あり",
+            "barcode_values": [
+              "X001BGAPFR"
+            ],
+            "front_back_texts": [
+              "ATIDIMU",
+              "FOR MEN",
+              "No3",
+              "FACE SERUM",
+              "SIERO PER IL VISO",
+              "X001BGAPFR"
+            ],
+            "code_texts": [
+              "アティディム 美容液",
+              "【使用方法】化粧水の後、手のひらに適量をとり、",
+              "顔全体にやさしくなじませます。",
+              "【全成分】水、グリセリン、エタノール、BG、DPG、PEG-40水添",
+              "ヒマシ油、ジメチコン、グリコシルトレハロース、PEG-12ジメチ",
+              "コン、PPG-4セテス-20、加水分解水添デンプン、（アクリレー"
+            ],
+            "ocr_texts": [
+              "ATIDIMU",
+              "FOR MEN",
+              "No3",
+              "FACE SERUM",
+              "SIERO PER IL VISO",
+              "X001BGAPFR"
+            ],
+            "candidate_query": "ATIDIMU FOR MEN No3 FACE SERUM",
+            "review_flag": "",
+            "ocr_engine": "sauna_tesseract_multistage + vision",
+            "ocr_debug_paths": [
+              "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0068/IMG_4995_CODE_ocr_best.png"
+            ]
+          },
+          "priority_score": 150,
+          "next_action": "Amazon内部コードとOCRで商品特定",
+          "barcode_kind": "amazon_internal",
+          "review_flag": "",
+          "resolved": {
+            "management_id": "BOX-001-ITEM-0068",
+            "raw_id": "RAW-BOX-001-068",
+            "product_id": "PRD-BOX-001-068",
+            "draft_id": "DRF-BOX-001-068",
+            "research_id": "RES-BOX-001-068",
+            "split_temporary_id": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN",
+            "split_source_slots": [
+              "BOX-001-ITEM-0056:FRONT",
+              "BOX-001-ITEM-0055:BACK",
+              "BOX-001-ITEM-0055:CODE"
+            ],
+            "verified_exact_match": false,
+            "official_image_state": "actual-only固定 / 比較画像なし",
+            "note": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN は、0056:FRONT と 0055:BACK/CODE の3枚で X001BGAPFR / ATIDIMU FOR MEN No3 FACE SERUM 30mL の写真セットを組み直し可能。ATIDIMU公式ページで 30mL / 日本製 / レチノール・ビタミンE・7種植物エキス配合の同系商品情報を確認したが、X001BGAPFR は内部コード候補として扱い、出品画像は実物のみで扱う。ローカル特定結果へ暫定・実物写真のみで反映し、管理表 / 出品判断は別フェーズ。",
+            "image_source": "actual-only",
+            "exact_match_guard_state": "clear",
+            "official_page_url": "",
+            "official_image_url": "",
+            "official_image_local": "",
+            "supplemental_url": "",
+            "supplemental_image_urls": [],
+            "supplemental_image_locals": [],
+            "resolution_status": "provisional",
+            "product_name": "ATIDIMU FOR MEN No3 FACE SERUM 30mL",
+            "barcode_primary": "X001BGAPFR",
+            "product_code_type": "amazon_internal",
+            "evidence": [
+              "X001BGAPFR",
+              "ATIDIMU",
+              "FOR MEN",
+              "No3",
+              "FACE SERUM",
+              "30mL",
+              "レチノール・ビタミンE・7種植物エキス配合",
+              "0056:FRONT + 0055:BACK + 0055:CODE"
+            ],
+            "brand_override": "ATIDIMU",
+            "category_override": "コスメ・美容 > スキンケア・基礎化粧品 > 美容液",
+            "price_override": 2480,
+            "check_items_override": "未開封 / 箱つぶれ / 30mL表記 / 日本製表記 / 使用期限または保管状態"
+          },
+          "official": {
+            "management_id": "BOX-001-ITEM-0068",
+            "raw_id": "RAW-BOX-001-068",
+            "product_id": "PRD-BOX-001-068",
+            "draft_id": "DRF-BOX-001-068",
+            "research_id": "RES-BOX-001-068",
+            "split_temporary_id": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN",
+            "split_source_slots": [
+              "BOX-001-ITEM-0056:FRONT",
+              "BOX-001-ITEM-0055:BACK",
+              "BOX-001-ITEM-0055:CODE"
+            ],
+            "verified_exact_match": false,
+            "official_image_state": "actual-only固定 / 比較画像なし",
+            "note": "SPLIT-BOX-001-0055-ATIDIMU-FOR-MEN は、0056:FRONT と 0055:BACK/CODE の3枚で X001BGAPFR / ATIDIMU FOR MEN No3 FACE SERUM 30mL の写真セットを組み直し可能。ATIDIMU公式ページで 30mL / 日本製 / レチノール・ビタミンE・7種植物エキス配合の同系商品情報を確認したが、X001BGAPFR は内部コード候補として扱い、出品画像は実物のみで扱う。ローカル特定結果へ暫定・実物写真のみで反映し、管理表 / 出品判断は別フェーズ。",
+            "image_source": "actual-only",
+            "exact_match_guard_state": "clear",
+            "official_page_url": "",
+            "official_image_url": "",
+            "official_image_local": "",
+            "supplemental_url": "",
+            "supplemental_image_urls": [],
+            "supplemental_image_locals": []
+          },
+          "commerce": {
+            "management_id": "BOX-001-ITEM-0068",
+            "raw_id": "RAW-BOX-001-068",
+            "product_id": "PRD-BOX-001-068",
+            "draft_id": "DRF-BOX-001-068",
+            "research_id": "RES-BOX-001-068",
+            "product_name": "ATIDIMU FOR MEN No3 FACE SERUM 30mL",
+            "brand": "ATIDIMU",
+            "category": "コスメ・美容 > スキンケア・基礎化粧品 > 美容液",
+            "barcode_primary": "X001BGAPFR",
+            "product_code_type": "amazon_internal",
+            "listing_title": "ATIDIMU FOR MEN No3 FACE SERUM 30mL",
+            "listing_price": "2480",
+            "market_floor_price": "",
+            "market_floor_state": "未調査",
+            "market_source_label": "",
+            "market_source_url": "",
+            "market_checked_at": "",
+            "market_note": "",
+            "publish_state": "下書き準備中",
+            "publish_detail": "",
+            "listing_id": "",
+            "public_listing_url": "",
+            "csv_status": "",
+            "updated_at": "2026-04-22 09:00:19 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -29115,7 +31666,225 @@ window.ZERO_COST_INTAKE = {
           "reference_image_ref": "",
           "minimum_price": "",
           "market_floor_price_label": "未調査",
-          "listing_price": "",
+          "listing_price": "2480",
+          "exception": {},
+          "route_plan": {}
+        },
+        {
+          "management_id": "BOX-001-ITEM-0069",
+          "box_id": "BOX-001",
+          "sequence": 69,
+          "status": "complete",
+          "missing_slots": [],
+          "slot_count": 3,
+          "slots": [
+            {
+              "slot": "FRONT",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4999.HEIC",
+              "source_name": "IMG_4999.HEIC",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0069/01_FRONT_IMG_4999.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0069/01_FRONT_IMG_4999.jpg",
+              "resident_url": "./assets/intake/BOX-001-ITEM-0069/01_FRONT_IMG_4999.jpg",
+              "rebundled_from": "BOX-001-ITEM-0057:FRONT"
+            },
+            {
+              "slot": "BACK",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_5002.HEIC",
+              "source_name": "IMG_5002.HEIC",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0069/02_BACK_IMG_5002.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0069/02_BACK_IMG_5002.jpg",
+              "resident_url": "./assets/intake/BOX-001-ITEM-0069/02_BACK_IMG_5002.jpg",
+              "rebundled_from": "BOX-001-ITEM-0057:BACK"
+            },
+            {
+              "slot": "CODE",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_4998.HEIC",
+              "source_name": "IMG_4998.HEIC",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0069/03_CODE_IMG_4998.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0069/03_CODE_IMG_4998.jpg",
+              "resident_url": "./assets/intake/BOX-001-ITEM-0069/03_CODE_IMG_4998.jpg",
+              "rebundled_from": "BOX-001-ITEM-0056:CODE"
+            }
+          ],
+          "shared_sheet_title_value": "BOX-001-ITEM-0069",
+          "shared_sheet_note": "SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER からローカル写真セットを作成",
+          "photo_grouping": "split_child_mint",
+          "grouping_warning": "",
+          "product_name": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク（内容物未確認）",
+          "display_name": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク（内容物未確認）",
+          "split_child_label": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク",
+          "split_temporary_id": "SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER",
+          "split_source_slots": [
+            "BOX-001-ITEM-0057:FRONT",
+            "BOX-001-ITEM-0057:BACK",
+            "BOX-001-ITEM-0056:CODE"
+          ],
+          "split_status": "manifest_child_minted_local_only",
+          "box_label": "数字箱 001",
+          "box_lane": "numeric",
+          "box_code": "001",
+          "identification": {
+            "state": "バーコード候補あり",
+            "barcode_values": [
+              "AZ:UPOKC5UHERFSDEYUD813SS67QM"
+            ],
+            "front_back_texts": [
+              "609",
+              "9os",
+              "120S",
+              "口日",
+              "Scan with the",
+              "Transparency ApP"
+            ],
+            "code_texts": [
+              "（",
+              "603",
+              "90S",
+              "120S",
+              "060",
+              "Scan with the"
+            ],
+            "ocr_texts": [
+              "609",
+              "9os",
+              "120S",
+              "口日",
+              "Scan with the",
+              "Transparency ApP"
+            ],
+            "candidate_query": "609 9os 120S 口日",
+            "review_flag": "",
+            "ocr_engine": "sauna_tesseract_multistage + vision",
+            "ocr_debug_paths": [
+              "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0069/IMG_4998_CODE_ocr_best.png"
+            ]
+          },
+          "priority_score": 180,
+          "next_action": "バーコード候補とOCRで商品特定",
+          "barcode_kind": "other",
+          "review_flag": "",
+          "resolved": {
+            "management_id": "BOX-001-ITEM-0069",
+            "raw_id": "RAW-BOX-001-069",
+            "product_id": "PRD-BOX-001-069",
+            "draft_id": "DRF-BOX-001-069",
+            "research_id": "RES-BOX-001-069",
+            "split_temporary_id": "SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER",
+            "split_source_slots": [
+              "BOX-001-ITEM-0057:FRONT",
+              "BOX-001-ITEM-0057:BACK",
+              "BOX-001-ITEM-0056:CODE"
+            ],
+            "verified_exact_match": false,
+            "official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+            "note": "SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER は、0057:FRONT/BACK と 0056:CODE の3枚で X001AP6CKV / JODSONE クイックUV LED自動センサーネイルドライヤー ピンクを実物3枚で確認できる写真セット。0057:CODE は B09NG1PLHK / RIZZARI 9L自動給水器の対象外ラベルのため JODSONE 側には使わない。X001AP6CKV は内部コード候補として扱い、出品画像は実物のみで扱う。本体そのものは箱内で見えていないため、ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映し、管理表 / 出品判断は別フェーズ。",
+            "image_source": "actual-only",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "内容物未確認"
+            ],
+            "official_page_url": "",
+            "official_image_url": "",
+            "official_image_local": "",
+            "supplemental_url": "",
+            "supplemental_image_urls": [],
+            "supplemental_image_locals": [],
+            "resolution_status": "provisional",
+            "product_name": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク（内容物未確認）",
+            "barcode_primary": "X001AP6CKV",
+            "product_code_type": "amazon_internal",
+            "evidence": [
+              "X001AP6CKV",
+              "JODSONE",
+              "クイックUV LED",
+              "ネイルドライヤー",
+              "ピンク",
+              "Professional Gel Polish LED Nail Dryer Lamp",
+              "0057:FRONT + 0057:BACK + 0056:CODE",
+              "本体そのものは箱内で未確認",
+              "内容物未確認"
+            ],
+            "brand_override": "JODSONE",
+            "category_override": "コスメ・美容 > ネイルケア > ジェルネイル・ネイルシール > その他",
+            "price_override": 2780,
+            "check_items_override": "本体有無 / 点灯確認 / タイマーボタン / 付属品有無 / 開封痕確認 / 箱状態"
+          },
+          "official": {
+            "management_id": "BOX-001-ITEM-0069",
+            "raw_id": "RAW-BOX-001-069",
+            "product_id": "PRD-BOX-001-069",
+            "draft_id": "DRF-BOX-001-069",
+            "research_id": "RES-BOX-001-069",
+            "split_temporary_id": "SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER",
+            "split_source_slots": [
+              "BOX-001-ITEM-0057:FRONT",
+              "BOX-001-ITEM-0057:BACK",
+              "BOX-001-ITEM-0056:CODE"
+            ],
+            "verified_exact_match": false,
+            "official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+            "note": "SPLIT-BOX-001-0056-JODSONE-NAIL-DRYER は、0057:FRONT/BACK と 0056:CODE の3枚で X001AP6CKV / JODSONE クイックUV LED自動センサーネイルドライヤー ピンクを実物3枚で確認できる写真セット。0057:CODE は B09NG1PLHK / RIZZARI 9L自動給水器の対象外ラベルのため JODSONE 側には使わない。X001AP6CKV は内部コード候補として扱い、出品画像は実物のみで扱う。本体そのものは箱内で見えていないため、ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映し、管理表 / 出品判断は別フェーズ。",
+            "image_source": "actual-only",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "内容物未確認"
+            ],
+            "official_page_url": "",
+            "official_image_url": "",
+            "official_image_local": "",
+            "supplemental_url": "",
+            "supplemental_image_urls": [],
+            "supplemental_image_locals": []
+          },
+          "commerce": {
+            "management_id": "BOX-001-ITEM-0069",
+            "raw_id": "RAW-BOX-001-069",
+            "product_id": "PRD-BOX-001-069",
+            "draft_id": "DRF-BOX-001-069",
+            "research_id": "RES-BOX-001-069",
+            "product_name": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク（内容物未確認）",
+            "brand": "JODSONE",
+            "category": "コスメ・美容 > ネイルケア > ジェルネイル・ネイルシール > その他",
+            "barcode_primary": "X001AP6CKV",
+            "product_code_type": "amazon_internal",
+            "listing_title": "JODSONE クイックUV LED自動センサーネイルドライヤー ピンク（内容物未確認）",
+            "listing_price": "2780",
+            "market_floor_price": "",
+            "market_floor_state": "未調査",
+            "market_source_label": "",
+            "market_source_url": "",
+            "market_checked_at": "",
+            "market_note": "",
+            "publish_state": "下書き準備中",
+            "publish_detail": "",
+            "listing_id": "",
+            "public_listing_url": "",
+            "csv_status": "",
+            "updated_at": "2026-04-22 09:00:19 JST"
+          },
+          "comparison_images": [],
+          "reference_images": [],
+          "verified_exact_match": false,
+          "official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "内容物未確認"
+          ],
+          "qwen_hq_review_status": "",
+          "qwen_hq_resolution": "",
+          "qwen_hq_review_note": "",
+          "publish_status": "下書き準備中",
+          "publish_state": "下書き準備中",
+          "public_listing_url": "",
+          "listing_id": "",
+          "comparison_image_ref": "",
+          "reference_image_ref": "",
+          "minimum_price": "",
+          "market_floor_price_label": "未調査",
+          "listing_price": "2780",
           "exception": {},
           "route_plan": {}
         }

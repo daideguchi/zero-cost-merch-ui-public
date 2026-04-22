@@ -1,5 +1,5 @@
 window.ZERO_COST_TASK_CARD_QUEUE = {
-  "generated_at": "2026-04-22 02:49:57 JST",
+  "generated_at": "2026-04-22 09:09:26 JST",
   "business_name": "0円仕入れ物販事業",
   "counts": {
     "open_jobs": 23,
@@ -46,7 +46,7 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
         "image_gate": "画像同一性確認待ち",
         "base_condition": "停止",
         "shipco_condition": "停止",
-        "review_reason": "画像同一性未確認 / precision guard: 別商品mix / 停止条件あり",
+        "review_reason": "画像同一性未確認 / precision guard: 別商品mix / 写真セット組み直し必要 / 内容物未確認 / 停止条件あり / 写真セット組み直し計画: ローカル写真セット作成済み",
         "low_cost_job": "比較画像照合"
       }
     },
@@ -92,7 +92,7 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
         "image_gate": "画像同一性確認待ち",
         "base_condition": "停止",
         "shipco_condition": "停止",
-        "review_reason": "画像同一性未確認 / precision guard: 別商品mix / 停止条件あり",
+        "review_reason": "画像同一性未確認 / precision guard: 別商品mix / 写真セット組み直し必要 / 内容物未確認 / 停止条件あり / 写真セット組み直し計画: ローカル写真セット作成済み",
         "low_cost_job": "比較画像照合"
       }
     },

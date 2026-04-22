@@ -1,10 +1,10 @@
 window.ZERO_COST_STATUS = {
-  "generated_at": "2026-04-22 02:50:08 JST",
+  "generated_at": "2026-04-22 09:10:07 JST",
   "workbook_url": "https://docs.google.com/spreadsheets/d/1VjdUJavoijOkdjKtkdKy_zUcdkQqZwG0oRty57H5_lk/edit",
   "metrics": {
     "box_count": "1",
     "box_note": "受入対象の箱数です。先頭: BOX-001",
-    "research_pending": "65",
+    "research_pending": "68",
     "research_note": "JAN / 型番 / 比較画像の確認待ち件数です。barcode_ready=0 / ocr_ready=0 / blocking_missing=0 / exception=2",
     "draft_pending": "19",
     "draft_note": "公開前に AI が整える下書き件数です。",
@@ -341,11 +341,11 @@ window.ZERO_COST_STATUS = {
     "headline": "注文はまだありません。発送・集荷は shipping.html で固定済みです。",
     "detail": "メルカリShopsは メルカリBiz配送 + 送り状印刷 + ヤマト集荷、BASEは BASE標準 かんたん発送。残りは実注文 1件の通し確認です。",
     "api_badge": "本線固定",
-    "api_unresolved": "2",
+    "api_unresolved": "3",
     "api_mainline_blockers": "0",
-    "api_headline": "今すぐの発送・集荷は shipping.html で固定済みです。Ship&co と YBM 返信は2段目です。",
-    "api_detail": "メルカリは メルカリBiz配送 + 送り状印刷 + ヤマト集荷、BASEは BASE標準 かんたん発送 で進めます。待たないもの: YBM For Developers 返信 / Ship&co 国内 carrier 設定 / Ship&co API の live orders 疎通。",
-    "api_stoplines_preview": "Ship&co carrier / ヤマト開発API"
+    "api_headline": "今すぐの発送・集荷は shipping.html で固定済みです。副販路連携は2段目で育てます。",
+    "api_detail": "メルカリは メルカリBiz配送 + 送り状印刷 + ヤマト集荷、BASEは BASE標準 かんたん発送、Yahoo!ショッピングは Yahoo!ショッピング ストア配送 + ヤマト集荷 で進めます。待たないもの: YBM For Developers 返信 / Ship&co 国内 carrier 設定 / Ship&co API の live orders 疎通。",
+    "api_stoplines_preview": "Yahoo!ショッピング / Ship&co carrier / ヤマト開発API"
   },
   "inquiries": {
     "total": "3",
@@ -464,13 +464,13 @@ window.ZERO_COST_STATUS = {
       "review_count": 0,
       "order_count_total": 0,
       "inquiry_count_open": 0,
-      "shipping_lane": "shipandco_or_store_native",
-      "owner_note": "repo 側の下書き / publish plan は整備。live 出品は Yahoo!ショッピングの store/app auth 待ち",
+      "shipping_lane": "Yahoo!ショッピング ストア配送 + ヤマト集荷",
+      "owner_note": "OAuth と token bundle は取得済み。初回の売却後フローは Yahoo!ショッピング標準のストア配送を優先し、Ship&co は後段の共通化候補として扱う。",
       "planned_count": 14,
       "blocked_count": 8,
-      "auth_label": "store設定待ち",
-      "plan_note": "repo計画 14件 / 停止 8件 / store設定待ち",
-      "next_step": "store設定 解消後に repo計画 14件 を順に流す",
+      "auth_label": "seller/business設定待ち",
+      "plan_note": "repo計画 14件 / 停止 8件 / seller/business設定待ち",
+      "next_step": "YAHOO_SHOPPING_SELLER_ID / YAHOO_SHOPPING_BUSINESS_ID を入れ、ストア配送優先で最初の1件を閉じる。",
       "href": "./routing.html"
     },
     {
@@ -713,9 +713,9 @@ window.ZERO_COST_STATUS = {
     "alerts": [
       {
         "severity": "orange",
-        "key": "2件",
+        "key": "3件",
         "title": "発送API / 認証に未設定が残っています",
-        "note": "Ship&co carrier / ヤマト開発API",
+        "note": "Yahoo!ショッピング / Ship&co carrier",
         "href": "./shipping.html"
       },
       {
@@ -753,6 +753,7 @@ window.ZERO_COST_STATUS = {
     "今すぐ進める: 商品特定待ち BOX-001-ITEM-0001, BOX-001-ITEM-0002, BOX-001-ITEM-0003",
     "今すぐ進める: 出品下書き待ち WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り, WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り, MMC FACE LOTION 240ml",
     "反映待ち: カテゴリ審査待ち WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り",
+    "設定要: Yahoo!ショッピング / YAHOO_SHOPPING_SELLER_ID / YAHOO_SHOPPING_BUSINESS_ID を入れ、ストア配送優先で最初の1件を閉じる。",
     "設定要: Ship&co carrier / 日本郵便 / ヤマトB2 / 佐川の必要情報をそろえて Ship&co へ登録する。",
     "設定要: ヤマト開発API / 返信確認の正規 route は Chrome Profile 12 です。/Users/dd/000_AI組織/ops/ヤマトAPI返信を確認する.command を再実行すれば、degutidai@gmail.com で 365日以内の4 query を再確認できます。現時点では relevant reply は見えていないため、Mercari Shops post-sale pickup rail を継続します。",
     "要確認: 販路ルーティング BOX-001-ITEM-0002, BOX-001-ITEM-0003, BOX-001-ITEM-0007",

@@ -1,5 +1,5 @@
 window.ZERO_COST_SHIPPING_BOARD = {
-  "generated_at": "2026-04-22 03:17:53 JST",
+  "generated_at": "2026-04-22 08:44:12 JST",
   "workbook_url": "https://docs.google.com/spreadsheets/d/1VjdUJavoijOkdjKtkdKy_zUcdkQqZwG0oRty57H5_lk/edit",
   "resident_url": "./shipping.html",
   "git_url": "https://github.com/daideguchi/zero-cost-merch-branch",
@@ -113,7 +113,7 @@ window.ZERO_COST_SHIPPING_BOARD = {
     ]
   },
   "last_monitor": {
-    "checked_at": "2026-04-22 03:17:30 JST",
+    "checked_at": "2026-04-22 08:39:07 JST",
     "orders_count": 0,
     "new_orders_count": 0,
     "apply_capture_enabled": true,
@@ -229,7 +229,7 @@ window.ZERO_COST_SHIPPING_BOARD = {
     "予備線でも詰まる時だけ、配送方法未定 + ヤマトWeb集荷（送り状持参または印字送り状） へ逃がす",
     "shipping.html の 印刷 / エクスポート から JSON / CSV / 印刷ビュー を出せる状態を維持する",
     "多販路共通配送は Ship&co を候補に維持する。メルカリ本線は切り離して考える",
-    "API整備: Yahoo!ショッピング / 不足: YAHOO_SHOPPING_SELLER_ID / YAHOO_SHOPPING_BUSINESS_ID を補完する。",
+    "API整備: Yahoo!ショッピング / YAHOO_SHOPPING_SELLER_ID / YAHOO_SHOPPING_BUSINESS_ID を入れ、ストア配送優先で最初の1件を閉じる。",
     "API整備: Ship&co carrier / 日本郵便 / ヤマトB2 / 佐川の必要情報をそろえて Ship&co へ登録する。",
     "API整備: ヤマト開発API / 返信確認の正規 route は Chrome Profile 12 です。/Users/dd/000_AI組織/ops/ヤマトAPI返信を確認する.command を再実行すれば、degutidai@gmail.com で 365日以内の4 query を再確認できます。現時点では relevant reply は見えていないため、Mercari Shops post-sale pickup rail を継続します。"
   ],
@@ -297,7 +297,7 @@ window.ZERO_COST_SHIPPING_BOARD = {
       {
         "severity": "yellow",
         "label": "Yahoo!ショッピング",
-        "detail": "本線では待たない: dry-run planned 14件 / total 22件 / blocked_not_ready_to_publish 8件 / blocked_routing_gate 0件 / already_published 0件"
+        "detail": "本線では待たない: OAuth と token bundle は取得済み。初回の売却後フローは Yahoo!ショッピング標準のストア配送を優先し、Ship&co は後段の共通化候補として扱う。"
       },
       {
         "severity": "orange",
@@ -344,8 +344,8 @@ window.ZERO_COST_SHIPPING_BOARD = {
       {
         "label": "同期ヘルス",
         "items": [
-          "同期OK / 2026-04-22 03:17:53 JST",
-          "last-good: 2026-04-22 03:17:53 JST",
+          "同期OK / 2026-04-22 08:44:12 JST",
+          "last-good: 2026-04-22 08:44:12 JST",
           "post-sale: ok / 2026-04-21T18:17:44.065790Z",
           "post-sale last success: 2026-04-22 03:17:44 JST",
           "post-sale duration: 9.6s",
@@ -358,7 +358,7 @@ window.ZERO_COST_SHIPPING_BOARD = {
         "items": [
           "メルカリShops: 出品=active / 発送=メルカリBiz配送 + 送り状印刷 + ヤマト集荷 / 状態=Biz配送 ready / 次=初注文 1件を shipping.html で最後まで通す",
           "BASE: 出品=OAuth ready / 発送=BASE標準 かんたん発送 / 状態=order_waiting / 次=BASE実注文 1件で 注文画面 -> 集荷 -> 発送完了 を証跡化する",
-          "Yahoo!ショッピング: 出品=store設定待ち / 発送=ストア配送 または Ship&co / 状態=受注後本線未固定 / 次=不足: YAHOO_SHOPPING_SELLER_ID / YAHOO_SHOPPING_BUSINESS_ID を補完し、ストア配送 or Ship&co の本線を決める"
+          "Yahoo!ショッピング: 出品=seller/business設定待ち / 発送=Yahoo!ショッピング ストア配送 + ヤマト集荷 / 状態=seller/business設定待ち / 次=YAHOO_SHOPPING_SELLER_ID / YAHOO_SHOPPING_BUSINESS_ID を入れ、ストア配送優先で最初の1件を閉じる。"
         ]
       },
       {
@@ -799,7 +799,7 @@ window.ZERO_COST_SHIPPING_BOARD = {
     }
   ],
   "validation": {
-    "generated_at": "2026-04-22 03:17:53 JST",
+    "generated_at": "2026-04-22 08:44:12 JST",
     "contract_version": "2026-04-11",
     "summary": {
       "status": "ok",
@@ -815,11 +815,11 @@ window.ZERO_COST_SHIPPING_BOARD = {
     "warnings": []
   },
   "api_readiness": {
-    "generated_at": "2026-04-22 03:17:53 JST",
+    "generated_at": "2026-04-22 08:44:12 JST",
     "summary": {
       "badge": "本線固定",
       "headline": "今すぐの発送・集荷は shipping.html で固定済みです。副販路連携は2段目で育てます。",
-      "detail": "メルカリは メルカリBiz配送 + 送り状印刷 + ヤマト集荷、BASEは BASE標準 かんたん発送 で進めます。待たないもの: YBM For Developers 返信 / Ship&co 国内 carrier 設定 / Ship&co API の live orders 疎通。",
+      "detail": "メルカリは メルカリBiz配送 + 送り状印刷 + ヤマト集荷、BASEは BASE標準 かんたん発送、Yahoo!ショッピングは Yahoo!ショッピング ストア配送 + ヤマト集荷 で進めます。待たないもの: YBM For Developers 返信 / Ship&co 国内 carrier 設定 / Ship&co API の live orders 疎通。",
       "unresolved": 3,
       "mainline_blockers": 0,
       "optional_blockers": 3
@@ -853,9 +853,9 @@ window.ZERO_COST_SHIPPING_BOARD = {
         "id": "yahoo_shopping_publish_api",
         "label": "Yahoo!ショッピング連携",
         "progress": 6,
-        "status": "store設定待ち",
-        "summary": "dry-run planned 14件 / total 22件 / blocked_not_ready_to_publish 8件 / blocked_routing_gate 0件 / already_published 0件",
-        "detail": "不足: YAHOO_SHOPPING_SELLER_ID / YAHOO_SHOPPING_BUSINESS_ID を補完する。"
+        "status": "seller/business設定待ち",
+        "summary": "OAuth と token bundle は取得済み。初回の売却後フローは Yahoo!ショッピング標準のストア配送を優先し、Ship&co は後段の共通化候補として扱う。",
+        "detail": "YAHOO_SHOPPING_SELLER_ID / YAHOO_SHOPPING_BUSINESS_ID を入れ、ストア配送優先で最初の1件を閉じる。"
       },
       {
         "id": "shipandco_shared_shipping",
@@ -879,8 +879,8 @@ window.ZERO_COST_SHIPPING_BOARD = {
         "severity": "yellow",
         "area": "Yahoo!ショッピング",
         "mainline_blocker": false,
-        "message": "dry-run planned 14件 / total 22件 / blocked_not_ready_to_publish 8件 / blocked_routing_gate 0件 / already_published 0件",
-        "next_action": "不足: YAHOO_SHOPPING_SELLER_ID / YAHOO_SHOPPING_BUSINESS_ID を補完する。"
+        "message": "OAuth と token bundle は取得済み。初回の売却後フローは Yahoo!ショッピング標準のストア配送を優先し、Ship&co は後段の共通化候補として扱う。",
+        "next_action": "YAHOO_SHOPPING_SELLER_ID / YAHOO_SHOPPING_BUSINESS_ID を入れ、ストア配送優先で最初の1件を閉じる。"
       },
       {
         "severity": "orange",
@@ -992,7 +992,7 @@ window.ZERO_COST_SHIPPING_BOARD = {
       "phone": "09044879771"
     },
     "payload": {
-      "generated_at": "2026-04-22 03:17:53 JST",
+      "generated_at": "2026-04-22 08:44:12 JST",
       "mode": "sample",
       "note": "shipping.html が出すのは carrier 正式ラベルそのものではなく、印刷・持参・引渡し用の整理済みパケットです。",
       "shipments": [
@@ -1117,9 +1117,9 @@ window.ZERO_COST_SHIPPING_BOARD = {
     "required_but_missing_upstream": [],
     "download_ready": true,
     "filenames": {
-      "json": "shipping_print_packets_20260422_031753.json",
-      "shipment_csv": "shipping_print_packets_20260422_031753.csv",
-      "batch_csv": "shipping_pickup_batches_20260422_031753.csv"
+      "json": "shipping_print_packets_20260422_084412.json",
+      "shipment_csv": "shipping_print_packets_20260422_084412.csv",
+      "batch_csv": "shipping_pickup_batches_20260422_084412.csv"
     }
   },
   "capture_contract": {
@@ -1166,7 +1166,7 @@ window.ZERO_COST_SHIPPING_BOARD = {
       "publish_status": "active",
       "shipping_lane": "メルカリBiz配送 + 送り状印刷 + ヤマト集荷",
       "fulfillment_status": "Biz配送 ready",
-      "post_sale_status": "monitor 2026-04-22 03:17:30 JST / orders=0",
+      "post_sale_status": "monitor 2026-04-22 08:39:07 JST / orders=0",
       "proof_status": "live 1件待ち",
       "next_action": "初注文 1件を shipping.html で最後まで通す",
       "blocker": "なし"
@@ -1185,24 +1185,24 @@ window.ZERO_COST_SHIPPING_BOARD = {
     {
       "id": "yahoo_shopping",
       "label": "Yahoo!ショッピング",
-      "publish_status": "store設定待ち",
-      "shipping_lane": "ストア配送 または Ship&co",
-      "fulfillment_status": "受注後本線未固定",
-      "post_sale_status": "dry-run planned 14件 / total 22件 / blocked_not_ready_to_publish 8件 / blocked_routing_gate 0件 / already_published 0件",
-      "proof_status": "受注 0件 / post-sale未実証",
-      "next_action": "不足: YAHOO_SHOPPING_SELLER_ID / YAHOO_SHOPPING_BUSINESS_ID を補完し、ストア配送 or Ship&co の本線を決める",
+      "publish_status": "seller/business設定待ち",
+      "shipping_lane": "Yahoo!ショッピング ストア配送 + ヤマト集荷",
+      "fulfillment_status": "seller/business設定待ち",
+      "post_sale_status": "OAuth と token bundle は取得済み。初回の売却後フローは Yahoo!ショッピング標準のストア配送を優先し、Ship&co は後段の共通化候補として扱う。",
+      "proof_status": "受注 0件 / ストア配送未実証",
+      "next_action": "YAHOO_SHOPPING_SELLER_ID / YAHOO_SHOPPING_BUSINESS_ID を入れ、ストア配送優先で最初の1件を閉じる。",
       "blocker": "YAHOO_SHOPPING_SELLER_ID / YAHOO_SHOPPING_BUSINESS_ID"
     }
   ],
   "sync_health": {
-    "checked_at": "2026-04-22 03:17:53 JST",
+    "checked_at": "2026-04-22 08:44:12 JST",
     "status": "ok",
     "badge": "同期OK",
     "headline": "Sheets fetch と shipping render は通りました。",
-    "detail": "直近 monitor: 2026-04-21T18:17:30.996Z / orders=0. post-sale sync: 2026-04-21T18:17:44.065790Z / duration=9.6s.",
+    "detail": "直近 monitor: 2026-04-21T23:39:07.120Z / orders=0. post-sale sync: 2026-04-21T18:17:44.065790Z / duration=9.6s.",
     "next_action": "live注文が来たら 09 -> 07 -> 08 -> 11 -> 10 の順で閉じる",
     "fallback_in_use": false,
-    "last_success_generated_at": "2026-04-22 03:17:53 JST",
+    "last_success_generated_at": "2026-04-22 08:44:12 JST",
     "last_success_at": "2026-04-22 03:17:44 JST",
     "last_run_duration_ms": 9564,
     "duration_label": "9.6s",
@@ -1214,7 +1214,7 @@ window.ZERO_COST_SHIPPING_BOARD = {
         "status": "ok",
         "attempts": 1,
         "rows": 0,
-        "elapsed_ms": 359
+        "elapsed_ms": 1528
       },
       {
         "label": "07_発送候補",
@@ -1222,7 +1222,7 @@ window.ZERO_COST_SHIPPING_BOARD = {
         "status": "ok",
         "attempts": 1,
         "rows": 0,
-        "elapsed_ms": 388
+        "elapsed_ms": 367
       },
       {
         "label": "08_集荷待ち",
@@ -1230,7 +1230,7 @@ window.ZERO_COST_SHIPPING_BOARD = {
         "status": "ok",
         "attempts": 1,
         "rows": 0,
-        "elapsed_ms": 412
+        "elapsed_ms": 375
       },
       {
         "label": "10_出荷実績",
@@ -1238,7 +1238,7 @@ window.ZERO_COST_SHIPPING_BOARD = {
         "status": "ok",
         "attempts": 1,
         "rows": 0,
-        "elapsed_ms": 455
+        "elapsed_ms": 331
       },
       {
         "label": "11_集荷バッチ",
@@ -1246,12 +1246,12 @@ window.ZERO_COST_SHIPPING_BOARD = {
         "status": "ok",
         "attempts": 1,
         "rows": 0,
-        "elapsed_ms": 377
+        "elapsed_ms": 346
       }
     ],
     "failed_sources": [],
     "monitor": {
-      "checked_at": "2026-04-21T18:17:30.996Z",
+      "checked_at": "2026-04-21T23:39:07.120Z",
       "orders_count": 0,
       "new_orders_count": 0,
       "next_action": "No new orders detected."

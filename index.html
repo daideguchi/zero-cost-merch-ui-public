@@ -202,6 +202,12 @@
       font-weight: 700;
       color: var(--text-2);
     }
+    .upload-note {
+      margin-top: 10px;
+      font-size: 12px;
+      line-height: 1.6;
+      color: var(--text-2);
+    }
     .upload-links {
       display: flex;
       flex-wrap: wrap;
@@ -561,9 +567,10 @@
         </div>
         <div class="upload-zone" id="upload-zone">
           <div class="upload-icon">📷</div>
-          <div id="upload-main" class="upload-main">写真を選ぶ</div>
+          <div id="upload-main" class="upload-main">スマホの写真をまとめて選ぶ</div>
           <input type="file" id="file-input" multiple accept="image/*,.heic,.heif">
           <div class="upload-status" id="upload-status">箱を選んだら写真を入れます</div>
+          <div class="upload-note">Google Drive は使わなくて大丈夫です。スマホからこの画面へ直接まとめて入れてください。バーコード区切りの判定は Acer 側で行います。</div>
         </div>
         <div class="upload-links">
           <button id="upload-submit" class="action-link primary" type="button" disabled hidden>写真を取り込む</button>
@@ -584,12 +591,11 @@
         </div>
         <div class="drive-panel">
           <div class="drive-header">
-            <div class="drive-title">相手に送る共有フォルダ</div>
+            <div class="drive-title">予備の共有フォルダ</div>
             <div class="drive-badge">1日1回確認</div>
           </div>
           <div class="drive-note">
-            1. 箱を選ぶと共有リンクは <strong>こちらで自動用意</strong> します。 2. <strong>相手に送るリンクをコピー</strong> を押してそのまま相手に送ります。 3. 相手は開いた共有フォルダへ <strong>撮影順のまま</strong> 写真を入れるだけです。
-            フォルダ追加は不要です。Acer 側で <strong>時系列順 + バーコード写真を区切り</strong> にまとめます。通常確認は <strong>1日1回</strong>、急ぐ時だけ「今すぐ共有フォルダ確認」を使います。
+            通常は上の <strong>直接アップロードだけ使えば足ります</strong>。ここはどうしても直接アップロードできない時だけ使う予備です。
           </div>
           <div class="drive-actions">
             <button id="drive-share-btn" class="action-link" type="button">相手に送るリンクをコピー</button>
@@ -1202,6 +1208,39 @@
       return (manifest || []).filter(function(entry) { return entry && entry.is_barcode; }).length;
     }
 
+    function isLikelyMobileClient() {
+      return /iPhone|iPad|iPod|Android/i.test(String((navigator && navigator.userAgent) || ''));
+    }
+
+    function selectedFilesTotalBytes(files) {
+      return Array.prototype.slice.call(files || []).reduce(function(total, file) {
+        return total + Math.max(0, num(file && file.size));
+      }, 0);
+    }
+
+    function preferServerBarcodeGrouping(files) {
+      var currentFiles = Array.prototype.slice.call(files || []);
+      if (!currentFiles.length) return false;
+      if (!window.BarcodeDetector || !window.createImageBitmap) return true;
+      if (isLikelyMobileClient()) return true;
+      if (currentFiles.length >= 12) return true;
+      return selectedFilesTotalBytes(currentFiles) >= (24 * 1024 * 1024);
+    }
+
+    function clonePhotoManifestEntries(manifest, files) {
+      var fallback = initialPhotoManifest(files || []);
+      return fallback.map(function(entry, index) {
+        var source = manifest && manifest[index] && typeof manifest[index] === 'object' ? manifest[index] : entry;
+        return {
+          index: index,
+          name: String(source.name || entry.name || ''),
+          is_barcode: Boolean(source.is_barcode),
+          barcode_values: Array.prototype.slice.call(source.barcode_values || []).filter(Boolean),
+          detector: String(source.detector || entry.detector || '')
+        };
+      });
+    }
+
     function estimatedItemsFor(files) {
       var count = selectedPhotoManifest.length ? barcodeDelimiterCount(selectedPhotoManifest) : 0;
       if (count > 0) return count;
@@ -1242,7 +1281,7 @@
     function refreshPhotoManifest(files) {
       var currentFiles = Array.prototype.slice.call(files || []);
       selectedPhotoManifest = initialPhotoManifest(currentFiles);
-      if (!window.BarcodeDetector || !window.createImageBitmap) {
+      if (preferServerBarcodeGrouping(currentFiles)) {
         barcodeDetectionPending = false;
         return Promise.resolve(selectedPhotoManifest);
       }
@@ -1267,10 +1306,13 @@
     function groupingStatusText(fileCount, itemCount) {
       var delimiterCount = barcodeDelimiterCount(selectedPhotoManifest);
       if (barcodeDetectionPending) {
-        return ' / バーコード区切りを確認中';
+        return ' / ブラウザ確認中だが、このまま送信可';
       }
       if (delimiterCount > 0) {
         return ' / バーコード区切り ' + delimiterCount + '件';
+      }
+      if (preferServerBarcodeGrouping(selectedFiles) && fileCount > 1) {
+        return ' / スマホ向けに Acer側で区切り判定';
       }
       if (fileCount > 1) {
         return ' / ブラウザ未検出。Acer側で判定';
@@ -1279,8 +1321,14 @@
     }
 
     function uploadGroupingWarning() {
-      if (!selectedFiles.length || selectedFiles.length === 1 || barcodeDetectionPending) return '';
+      if (!selectedFiles.length || selectedFiles.length === 1) return '';
       if (barcodeDelimiterCount(selectedPhotoManifest) > 0) return '';
+      if (preferServerBarcodeGrouping(selectedFiles)) {
+        return 'スマホ大量アップロードのため、バーコード区切りは Acer 側で判定します。';
+      }
+      if (barcodeDetectionPending) {
+        return 'ブラウザ確認中ですが、このまま送信できます。Acer 側でも区切り判定します。';
+      }
       return 'ブラウザ側では区切り未検出です。Acer側の実画像判定で商品ごとに束ねます。';
     }
 
@@ -1291,13 +1339,11 @@
       uploadSubmit.hidden = !hasPending;
       intakeLink.hidden = hasPending;
       opsLink.hidden = hasPending;
-      uploadSubmit.disabled = isUploading || isRegisteringBox || barcodeDetectionPending || !hasPending || !box;
+      uploadSubmit.disabled = isUploading || isRegisteringBox || !hasPending || !box;
       driveShareBtn.disabled = isUploading || isDriveBusy || isRegisteringBox || !box;
       driveSyncBtn.disabled = isUploading || isDriveBusy || isRegisteringBox || !box;
       if (!isUploading) {
-        uploadSubmit.textContent = barcodeDetectionPending
-          ? 'バーコード確認中...'
-          : (box && hasPending ? (box.label + ' に取り込む') : '写真を取り込む');
+        uploadSubmit.textContent = box && hasPending ? (box.label + ' に取り込む') : '写真を取り込む';
       }
     }
 
@@ -1324,6 +1370,18 @@
 
     function uploadApiUrl() {
       return apiUrl('/api/zero-cost/intake-upload');
+    }
+
+    function uploadSessionStartApiUrl() {
+      return apiUrl('/api/zero-cost/intake-upload-session/start');
+    }
+
+    function uploadSessionChunkApiUrl() {
+      return apiUrl('/api/zero-cost/intake-upload-session/chunk');
+    }
+
+    function uploadSessionFinishApiUrl() {
+      return apiUrl('/api/zero-cost/intake-upload-session/finish');
     }
 
     function registerBoxApiUrl() {
@@ -1558,6 +1616,28 @@
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload || {})
+      }).then(function(response) {
+        return response.text().then(function(text) {
+          var data = {};
+          try {
+            data = text ? JSON.parse(text) : {};
+          } catch (_) {
+            data = {};
+          }
+          if (!response.ok || !data.ok) {
+            var error = new Error((data && data.error) || ('HTTP ' + response.status + ' / ' + text.slice(0, 160)));
+            error.payload = data;
+            throw error;
+          }
+          return data;
+        });
+      });
+    }
+
+    function postForm(url, formData) {
+      return fetch(url, {
+        method: 'POST',
+        body: formData
       }).then(function(response) {
         return response.text().then(function(text) {
           var data = {};
@@ -1860,7 +1940,7 @@
       statusEl.style.color = 'var(--green)';
       setUploadButtonState();
       refreshPhotoManifest(selectedFiles).then(function() {
-        if (!selectedFiles.length) return;
+        if (!selectedFiles.length || isUploading) return;
         var latestItems = estimatedItemsFor(selectedFiles.length, box);
         var latestEnd = start + Math.max(latestItems - 1, 0);
         var groupingWarning = uploadGroupingWarning();
@@ -1874,22 +1954,43 @@
       });
     }
 
+    function buildUploadChunks(files, manifest) {
+      var list = Array.prototype.slice.call(files || []);
+      var manifestEntries = clonePhotoManifestEntries(manifest, list);
+      var maxFiles = isLikelyMobileClient() ? 10 : 12;
+      var maxBytes = isLikelyMobileClient() ? (20 * 1024 * 1024) : (28 * 1024 * 1024);
+      var chunks = [];
+      var currentFiles = [];
+      var currentManifest = [];
+      var currentBytes = 0;
+      var currentStart = 0;
+      list.forEach(function(file, index) {
+        var fileSize = Math.max(0, num(file && file.size));
+        var nextWouldOverflow = currentFiles.length > 0
+          && (currentFiles.length >= maxFiles || (currentBytes + fileSize) > maxBytes);
+        if (nextWouldOverflow) {
+          chunks.push({ start: currentStart, files: currentFiles, manifest: currentManifest });
+          currentFiles = [];
+          currentManifest = [];
+          currentBytes = 0;
+          currentStart = index;
+        }
+        if (!currentFiles.length) currentStart = index;
+        currentFiles.push(file);
+        currentManifest.push(manifestEntries[index]);
+        currentBytes += fileSize;
+      });
+      if (currentFiles.length) {
+        chunks.push({ start: currentStart, files: currentFiles, manifest: currentManifest });
+      }
+      return chunks;
+    }
+
     function uploadSelectedFiles() {
       var box = currentBox();
       if (!box || !selectedFiles.length || isUploading) return;
-      if (barcodeDetectionPending) return;
-      var form = new FormData();
-      form.append('box_id', box.id);
-      form.append('box_label', box.label);
-      form.append('box_lane', box.lane);
-      form.append('box_code', box.code);
-      form.append('next_sequence', String(box.nextSequence || 1));
-      form.append('slots_per_item', String(box.slotsPerItem || 3));
-      form.append('photo_grouping', 'barcode_delimiter');
-      form.append('photo_manifest', JSON.stringify(selectedPhotoManifest || []));
-      selectedFiles.forEach(function(file) {
-        form.append('photos', file, file.name);
-      });
+      var manifestSnapshot = clonePhotoManifestEntries(selectedPhotoManifest, selectedFiles);
+      var uploadChunks = buildUploadChunks(selectedFiles, manifestSnapshot);
       isUploading = true;
       uploadSubmit.disabled = true;
       uploadSubmit.textContent = '取り込み中...';
@@ -1897,24 +1998,39 @@
       statusEl.style.color = 'var(--text-2)';
       assertUploadApiReady()
         .then(function() {
-          statusEl.textContent = box.label + ' に保存しています。画面を閉じずに待ってください。';
-          return fetch(uploadApiUrl(), { method: 'POST', body: form });
+          statusEl.textContent = box.label + ' の作業箱を用意しています。';
+          return postJson(uploadSessionStartApiUrl(), {
+            box_id: box.id,
+            box_label: box.label,
+            box_lane: box.lane,
+            box_code: box.code,
+            slots_per_item: box.slotsPerItem || 3,
+            total_files: selectedFiles.length,
+            photo_grouping: 'barcode_delimiter'
+          });
         })
-        .then(function(response) {
-          return response.text().then(function(text) {
-            var data = {};
-            try {
-              data = text ? JSON.parse(text) : {};
-            } catch (_) {
-              data = {};
-            }
-            if (!response.ok || !data.ok) {
-              var failure = new Error((data && data.error) || ('HTTP ' + response.status + ' / ' + text.slice(0, 120)));
-              failure.payload = data || {};
-              failure.httpStatus = response.status;
-              throw failure;
-            }
-            return data;
+        .then(function(startPayload) {
+          var sessionId = String(startPayload.session_id || '').trim();
+          if (!sessionId) throw new Error('アップロード作業箱を作れませんでした。');
+          return uploadChunks.reduce(function(chain, chunk, chunkIndex) {
+            return chain.then(function() {
+              var form = new FormData();
+              form.append('session_id', sessionId);
+              form.append('chunk_start', String(chunk.start || 0));
+              form.append('total_files', String(selectedFiles.length));
+              form.append('photo_manifest', JSON.stringify(chunk.manifest || []));
+              Array.prototype.slice.call(chunk.files || []).forEach(function(file) {
+                form.append('photos', file, file.name);
+              });
+              statusEl.textContent = box.label + ' に写真を送っています。'
+                + ' ' + (chunkIndex + 1) + '/' + uploadChunks.length + ' 回目'
+                + ' / ' + Math.min(selectedFiles.length, (chunk.start || 0) + (chunk.files || []).length)
+                + '/' + selectedFiles.length + '枚';
+              return postForm(uploadSessionChunkApiUrl(), form);
+            });
+          }, Promise.resolve()).then(function() {
+            statusEl.textContent = box.label + ' の写真をまとめています。Acer 側で商品ごとに区切っています。';
+            return postJson(uploadSessionFinishApiUrl(), { session_id: sessionId });
           });
         })
         .then(function(data) {
@@ -1941,7 +2057,6 @@
           }
           statusEl.style.color = 'var(--red)';
           isUploading = false;
-          fileInput.value = '';
           setUploadButtonState();
         });
     }
