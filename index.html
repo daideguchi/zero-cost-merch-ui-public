@@ -497,6 +497,46 @@
       line-height: 1.75;
       color: #334155;
     }
+    .drive-help {
+      margin-top: 12px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .drive-step {
+      min-height: 86px;
+      padding: 10px;
+      border-radius: 14px;
+      border: 1px solid rgba(2,132,199,.18);
+      background: rgba(255,255,255,.92);
+      color: #0f172a;
+      box-shadow: 0 1px 2px rgba(15,23,42,.04);
+    }
+    .drive-step-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      border-radius: 999px;
+      background: #0369a1;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 900;
+    }
+    .drive-step-title {
+      margin-top: 8px;
+      font-size: 12px;
+      font-weight: 900;
+      color: #0f172a;
+    }
+    .drive-step-text {
+      margin-top: 5px;
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 1.55;
+      color: #475569;
+    }
     .drive-actions {
       display: flex;
       flex-wrap: wrap;
@@ -541,6 +581,13 @@
       .upload-title { font-size: 22px; }
       .box-grid {
         grid-template-columns: 1fr;
+      }
+      .drive-help {
+        grid-template-columns: 1fr;
+      }
+      .drive-actions .action-link {
+        width: 100%;
+        justify-content: center;
       }
     }
   </style>
@@ -595,13 +642,30 @@
             <div class="drive-badge">1日1回確認</div>
           </div>
           <div class="drive-note">
-            通常は上の <strong>直接アップロードだけ使えば足ります</strong>。ここはどうしても直接アップロードできない時だけ使う予備です。
+            通常は上の <strong>直接アップロードだけ使えば足ります</strong>。Google Drive は、UIが重い・落ちた・相手が後でまとめて入れる時だけの予備です。
+          </div>
+          <div class="drive-help" aria-label="スマホでGoogle Driveへ写真を入れる手順">
+            <div class="drive-step">
+              <span class="drive-step-num">1</span>
+              <div class="drive-step-title">共有フォルダを開く</div>
+              <div class="drive-step-text">この箱専用のリンクを開きます。Google Driveアプリで開くと一番迷いにくいです。</div>
+            </div>
+            <div class="drive-step">
+              <span class="drive-step-num">2</span>
+              <div class="drive-step-title">＋ / アップロード</div>
+              <div class="drive-step-text">スマホの「＋」または「アップロード」から、写真と動画を選びます。フォルダ作成は不要です。</div>
+            </div>
+            <div class="drive-step">
+              <span class="drive-step-num">3</span>
+              <div class="drive-step-title">撮影順のまま追加</div>
+              <div class="drive-step-text">バーコード写真が区切りです。バーコード + 商品写真を崩さず、まとめて入れてください。</div>
+            </div>
           </div>
           <div class="drive-actions">
-            <button id="drive-share-btn" class="action-link" type="button">相手に送るリンクをコピー</button>
-            <button id="drive-sync-btn" class="action-link primary" type="button">今すぐ共有フォルダ確認</button>
+            <button id="drive-share-btn" class="action-link" type="button">予備リンクをコピー</button>
+            <button id="drive-sync-btn" class="action-link primary" type="button">共有フォルダを今すぐ確認</button>
           </div>
-          <div id="drive-status" class="drive-status">箱を選ぶと、相手に送る共有リンクをこちらで自動用意します。相手は開いた共有フォルダへ写真を入れるだけです。</div>
+          <div id="drive-status" class="drive-status">箱を選ぶと、写真追加できる共有フォルダをこちらで自動用意します。相手はリンクを開いて写真を入れるだけです。</div>
           <a id="drive-link" class="drive-link" href="#" target="_blank" rel="noreferrer noopener" hidden>共有フォルダを開く</a>
         </div>
       </div>
@@ -1064,7 +1128,7 @@
       driveShareBtn.disabled = isUploading || isDriveBusy || isRegisteringBox;
       driveSyncBtn.disabled = isUploading || isDriveBusy || isRegisteringBox;
       setDriveLink(storedDriveLink(box.id));
-      setDriveStatus(box.label + ' の共有リンクはこちらで用意します。ボタンを押すと相手に送るリンクをコピーできます。', '');
+      setDriveStatus(box.label + ' の予備リンクはこちらで用意します。相手はスマホで開いて、＋ / アップロードから写真を追加できます。', '');
       refreshDriveAutoStatus({ silent: true }).then(function(status) {
         if (currentBox() && currentBox().id === box.id) {
           ensureDriveShareLink(box, { silent: true, copy: false, force: !status });
@@ -1731,7 +1795,7 @@
       }
       return {
         tone: '',
-          text: label + ' の共有リンクはこちらで用意します。ボタンを押すと相手に送るリンクをコピーできます。'
+          text: label + ' の予備リンクはこちらで用意します。スマホではGoogle Driveアプリで開き、＋ / アップロードから写真を追加してください。'
       };
     }
 
@@ -1795,13 +1859,13 @@
         return copyText(existingUrl)
           .then(function() {
             if (!options.silent && currentBox() && currentBox().id === boxId) {
-              setDriveStatus(boxLabel + ' の共有リンクをコピーしました。相手へそのまま送ってください。', 'ok');
+              setDriveStatus(boxLabel + ' の予備リンクをコピーしました。相手へ送り、スマホで＋ / アップロードから写真を入れてもらってください。', 'ok');
             }
             return existingUrl;
           })
           .catch(function() {
             if (!options.silent && currentBox() && currentBox().id === boxId) {
-              setDriveStatus(boxLabel + ' の共有リンクは準備済みです。下のリンクを相手に送ってください。', 'ok');
+              setDriveStatus(boxLabel + ' の予備リンクは準備済みです。下のリンクを相手に送ってください。', 'ok');
             }
             return existingUrl;
           });
@@ -1811,7 +1875,7 @@
       setUploadButtonState();
       driveShareBtn.textContent = options.copy ? 'リンク準備中...' : 'リンク自動準備中...';
       if (!options.silent && currentBox() && currentBox().id === boxId) {
-        setDriveStatus(boxLabel + ' の共有リンクを用意しています。', '');
+        setDriveStatus(boxLabel + ' の予備リンクを用意しています。', '');
       }
       return postJson(driveShareApiUrl(), boxPayload(box))
         .then(function(data) {
@@ -1823,33 +1887,33 @@
           }
           if (!options.copy) {
             if (!options.silent && currentBox() && currentBox().id === boxId) {
-              setDriveStatus(boxLabel + ' の共有リンクを用意しました。', 'ok');
+              setDriveStatus(boxLabel + ' の予備リンクを用意しました。', 'ok');
             }
             return folderUrl;
           }
           return copyText(folderUrl)
             .then(function() {
               if (!options.silent && currentBox() && currentBox().id === boxId) {
-                setDriveStatus(boxLabel + ' の共有リンクをコピーしました。相手へ送って、撮影順のまま写真を入れてもらってください。', 'ok');
+                setDriveStatus(boxLabel + ' の予備リンクをコピーしました。相手へ送り、撮影順のまま写真を入れてもらってください。', 'ok');
               }
               return folderUrl;
             })
             .catch(function() {
               if (!options.silent && currentBox() && currentBox().id === boxId) {
-                setDriveStatus(boxLabel + ' の共有リンクを用意しました。下のリンクを相手に送ってください。', 'ok');
+                setDriveStatus(boxLabel + ' の予備リンクを用意しました。下のリンクを相手に送ってください。', 'ok');
               }
               return folderUrl;
             });
         })
         .catch(function(error) {
           if (!options.silent && currentBox() && currentBox().id === boxId) {
-            setDriveStatus('共有リンクの準備に失敗しました。' + (error && error.message ? ' ' + error.message : ''), 'error');
+            setDriveStatus('予備リンクの準備に失敗しました。' + (error && error.message ? ' ' + error.message : ''), 'error');
           }
           return '';
         })
         .finally(function() {
           isDriveBusy = false;
-          driveShareBtn.textContent = '相手に送るリンクをコピー';
+          driveShareBtn.textContent = '予備リンクをコピー';
           setUploadButtonState();
           scheduleDriveStatusPoll(86400000);
         });
@@ -1913,7 +1977,7 @@
         })
         .finally(function() {
           isDriveBusy = false;
-          driveSyncBtn.textContent = '今すぐ共有フォルダ確認';
+          driveSyncBtn.textContent = '共有フォルダを今すぐ確認';
           setUploadButtonState();
           scheduleDriveStatusPoll(86400000);
         });

@@ -1,5 +1,5 @@
 window.ZERO_COST_INTAKE = {
-  "generated_at": "2026-04-22 09:00:19 JST",
+  "generated_at": "2026-04-22 09:44:43 JST",
   "box_id": "BOX-001",
   "box_label": "数字箱 001",
   "box_lane": "numeric",
@@ -12,13 +12,13 @@ window.ZERO_COST_INTAKE = {
   ],
   "slots_per_item": 3,
   "total_files": 197,
-  "total_items": 69,
-  "complete_items": 68,
+  "total_items": 70,
+  "complete_items": 69,
   "incomplete_items": 1,
-  "next_sequence": 70,
-  "next_management_id": "BOX-001-ITEM-0070",
+  "next_sequence": 71,
+  "next_management_id": "BOX-001-ITEM-0071",
   "identification_counts": {
-    "barcode_ready": 45,
+    "barcode_ready": 46,
     "ocr_ready": 2,
     "image_only": 0,
     "missing_slots": 0,
@@ -26,21 +26,21 @@ window.ZERO_COST_INTAKE = {
   },
   "resolution_counts": {
     "confirmed": 2,
-    "provisional": 67,
+    "provisional": 68,
     "official_image_pending": 0,
     "accepted_exception": 2
   },
   "top_priority_ids": [
-    "BOX-001-ITEM-0058",
-    "BOX-001-ITEM-0053",
-    "BOX-001-ITEM-0045",
-    "BOX-001-ITEM-0002",
-    "BOX-001-ITEM-0024",
-    "BOX-001-ITEM-0042",
-    "BOX-001-ITEM-0048",
-    "BOX-001-ITEM-0049",
-    "BOX-001-ITEM-0052",
-    "BOX-001-ITEM-0029"
+    "BOX-001-ITEM-0001",
+    "BOX-001-ITEM-0013",
+    "BOX-001-ITEM-0026",
+    "BOX-001-ITEM-0027",
+    "BOX-001-ITEM-0032",
+    "BOX-001-ITEM-0034",
+    "BOX-001-ITEM-0003",
+    "BOX-001-ITEM-0004",
+    "BOX-001-ITEM-0005",
+    "BOX-001-ITEM-0007"
   ],
   "items": [
     {
@@ -289,7 +289,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "審査監視",
         "AI次アクション": "カテゴリ審査反映待ち",
         "ルーティング状態": "審査待ち",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り / publish_ok=カテゴリ審査待ち / draft_status=カテゴリ審査待ち / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=clear"
       }
     },
@@ -469,7 +469,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -516,7 +516,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "実物のみで進める / 比較画像は後追い",
         "ルーティング状態": "HQ判断済み",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=保冷クーラーバッグ ネイビー ショルダー付 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=色違い / 型番違い / サイズ違い / セット違い / 別商品mix / qwen_hq=actual-only固定優先 / 2026-04-21 current truth: actual-only固定。比較画像なしでも実物写真のみで進める。"
       }
     },
@@ -661,7 +661,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -701,7 +701,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=YUGYUG サングラス ブラック/グレー ケース付き / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
       }
     },
@@ -959,7 +959,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "precision guard 解消",
         "ルーティング状態": "停止",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=IAWNI ショルダーバッグ メッセンジャーバッグ / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=ブランド不一致 / inventory_status=販売中 / listingId=2JPSMJHwgfzNjEkYfN8SMv"
       }
     },
@@ -1217,7 +1217,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "precision guard 解消",
         "ルーティング状態": "停止",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=CEEN サルエルパンツ 七分丈 ワイドパンツ / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=柄違い / inventory_status=販売中 / listingId=2JPQCYwtnC7WCswDeG37b9"
       }
     },
@@ -1371,7 +1371,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -1549,7 +1549,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -1589,7 +1589,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=GIOVANA Tシャツ ベージュ 2XL / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
       }
     },
@@ -1850,7 +1850,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "precision guard 解消",
         "ルーティング状態": "停止",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=オナーファッション 綿100% トップス ミントグリーン 3XL / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=review_required / guard_reasons=ブランド不一致 / inventory_status=販売中 / listingId=2JPSMSqu7EDWJu3jDcTo5h"
       }
     },
@@ -2119,7 +2119,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "受注監視",
         "AI次アクション": "受注待ち",
         "ルーティング状態": "販売中",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=Hotaty ピアス 金属アレルギー対応 ギフトBOX付き / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=clear / inventory_status=販売中 / listingId=2JPSMUTrpVNxK6fGZdtMqT"
       }
     },
@@ -2273,7 +2273,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [
         {
@@ -2334,7 +2334,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "precision guard 解消",
         "ルーティング状態": "停止",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=SHANGCHU シェフユニフォーム ブラック 4XL / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=色違い"
       }
     },
@@ -2590,7 +2590,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "precision guard 解消",
         "ルーティング状態": "停止",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=Dkieta 帽子 レディース ネックカバー付き 花柄日よけ帽子 / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=柄違い / inventory_status=販売中 / listingId=2JPSMPEuG8NMB3ZieyYzHU"
       }
     },
@@ -2848,7 +2848,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "precision guard 解消",
         "ルーティング状態": "停止",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=gany ガーゼハンカチ 30×30cm 10枚セット 綿100% / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=セット違い / inventory_status=販売中 / listingId=2JPTBgBM5kND3h8AhVf4bf"
       }
     },
@@ -2992,7 +2992,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [
         {
@@ -3050,7 +3050,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り / publish_ok=公開待ち / draft_status=公開待ち / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=clear"
       }
     },
@@ -3327,7 +3327,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "precision guard 解消",
         "ルーティング状態": "停止",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=HAYAHARU キッズ靴下 LS4602LS / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=柄違い / セット違い / inventory_status=販売中 / listingId=2JPSMLyKhRCgPASDJFH2dc"
       }
     },
@@ -3473,7 +3473,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -3513,7 +3513,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=Llink 靴下 5足セット ボーダー パステル / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
       }
     },
@@ -3657,7 +3657,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -3697,7 +3697,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=ZERUI 靴下 5足セット パステル 蝶リボン / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
       }
     },
@@ -3853,7 +3853,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -3899,7 +3899,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "用途確認と商品名補正",
         "ルーティング状態": "用途確認待ち",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=FirstC ティアグッズ記念品ギフト オレンジ丸型ポーチ（用途要確認） / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / 用途要確認 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=柄違い / 型番違い / 形状違い / 用途要確認"
       }
     },
@@ -4044,7 +4044,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -4084,7 +4084,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=SWEETBOY 子供パーカー ネイビー×イエロー 130 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
       }
     },
@@ -4337,7 +4337,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "停止",
         "AI次アクション": "空き板を維持",
         "ルーティング状態": "一時停止",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=ポロベア キャンバス トートバッグ POLO BEAR LAUREN / publish_ok=確認待ち / draft_status=一時取り下げ / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=clear / inventory_status=一時取り下げ"
       }
     },
@@ -4486,7 +4486,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -4526,7 +4526,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=首サポーター カバー付き グレー M HJ-GY-M / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
       }
     },
@@ -4613,7 +4613,7 @@ window.ZERO_COST_INTAKE = {
       "next_action": "写真セットを組み直す",
       "barcode_kind": "amazon_internal",
       "review_flag": "FRONT/BACK/CODE が別商品です",
-      "manual_note": "FRONT は黒いカー用品系パッケージ、BACK/CODE は赤いギフト箱（レモンツリーシルバーリングサイズ10）のラベルでした。",
+      "manual_note": "FRONT は X001AIILBV / HJ-GY-M の首サポーター包装で 0020 側、BACK/CODE は赤いギフト箱（X00020VHV9 / 1.1CT レモンクォーツ シルバーリング サイズ10）のラベルでした。リング側は FRONT 相当写真なしのため出品不可。",
       "resolved": {
         "management_id": "BOX-001-ITEM-0021",
         "resolution_status": "provisional",
@@ -4621,7 +4621,7 @@ window.ZERO_COST_INTAKE = {
         "barcode_primary": "X00020VHV9",
         "product_code_type": "amazon_internal",
         "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能",
-        "note": "BACK/CODE の2枚で赤いギフト箱とラベル X00020VHV9 / 1.1CT レモンクォーツ / シルバーリング / サイズ10 が一致。一方 FRONT は X001AIILBV / HJ-GY-M の首サポーター包装で、0020 側の商品写真として扱うべき別物。X00020VHV9 はJAN確定ではなく内部管理番号の可能性があるため、番号単独で確定にしない。現写真では1商品に断定不能のため、リング側を provisional に留める。",
+        "note": "BACK/CODE の2枚で赤いギフト箱とラベル X00020VHV9 / 1.1CT レモンクォーツ / シルバーリング / サイズ10 が一致。一方 FRONT は X001AIILBV / HJ-GY-M の首サポーター包装で、0020 側の商品写真として扱うべき別物。リング側は FRONT 相当写真がなく、X00020VHV9 もJAN確定ではなく内部管理番号の可能性があるため、番号単独で確定にしない。現写真では1商品に断定不能のため、リング側を provisional に留める。",
         "evidence": [
           "X00020VHV9",
           "1.1CT",
@@ -4661,7 +4661,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -4880,7 +4880,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [
         {
@@ -4938,7 +4938,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=LE BLANC フェムケアPRO 低刺激 デリケートゾーン 150mL / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
       }
     },
@@ -5070,7 +5070,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -5260,7 +5260,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -5527,7 +5527,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -5810,7 +5810,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [
         {
@@ -5868,7 +5868,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
       }
     },
@@ -6018,7 +6018,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [
         {
@@ -6079,7 +6079,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
         "ルーティング状態": "写真セット組み直し必要",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix"
       }
     },
@@ -6172,8 +6172,8 @@ window.ZERO_COST_INTAKE = {
         "barcode_primary": "X0010CU9L7",
         "product_code_type": "amazon_internal",
         "verified_exact_match": false,
-        "official_image_state": "管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能 / 新管理番号未採番 / 正規性確認待ち / 内容物未確認",
-        "note": "BACK のラベルで X0010CU9L7 / Zukida 車のフック 後部座席 (Red) を確認。Web検索では Zukida 車のフック 電話ホルダー付き系の関連ページと、NO-FE035 の car hook mobile phone holder 流通ページは見つかるが、X0010CU9L7 / Red / NO-FE035 まで一体で一致する公式級根拠は未取得。CODE は car hook mobile phone holder 箱面で NO-FE035 表記があり、同じ車用フック系・同箱候補ではあるが X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT の NO-FE040 とも型番が違うため混ぜない。一方 FRONT は黒/白/緑の厚手ニット靴下またはレッグウォーマー系で別商品。現IDは Zukida anchor を維持するが、現写真では1商品に断定不能のため provisional に留める。",
+        "official_image_state": "管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能 / 新管理番号未採番 / 内容物未確認",
+        "note": "BACK のラベルで X0010CU9L7 / Zukida 車のフック 後部座席 (Red) を確認。2026-04-22 の再検索でも Zukida 車のフック 電話ホルダー付き系の関連ページと、NO-FE035 の car hook mobile phone holder 流通ページは見つかるが、X0010CU9L7 / Red / NO-FE035 まで一体で一致する公式級根拠は未取得。CODE は car hook mobile phone holder 箱面で NO-FE035 表記があり、同じ車用フック系・同箱候補ではあるが X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT の NO-FE040 とも型番が違うため混ぜない。一方 FRONT は黒/白/緑の厚手ニット靴下またはレッグウォーマー系で別商品。旧Qwen記録に Hello Kitty 誤認があったが、0028 の現在判断には使わない。現IDは Zukida anchor を維持するが、現写真では1商品に断定不能のため provisional に留める。",
         "evidence": [
           "X0010CU9L7",
           "Zukida",
@@ -6189,13 +6189,12 @@ window.ZERO_COST_INTAKE = {
         "exact_match_guard_reasons": [
           "別商品mix",
           "写真セット組み直し必要",
-          "内容物未確認",
-          "真贋確認"
+          "内容物未確認"
         ],
         "qwen_hq_review_status": "resolved",
         "qwen_hq_resolution": "needs_split",
         "qwen_hq_review_at": "2026-04-13 08:25:22 JST",
-        "qwen_hq_review_note": "0028 は FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK=X0010CU9L7 / Zukida 車のフック Red ラベル、CODE=car hook mobile phone holder / NO-FE035 箱面。BACK/CODE は同じ車用フック系・同箱候補だが、NO-FE035 は X0010CU9L7 の直接証拠ではない。現IDは Zukida anchor のまま維持しつつ公開不可。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。"
+        "qwen_hq_review_note": "0028 は FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK=X0010CU9L7 / Zukida 車のフック Red ラベル、CODE=car hook mobile phone holder / NO-FE035 箱面。BACK/CODE は同じ車用フック系・同箱候補だが、NO-FE035 は X0010CU9L7 の直接証拠ではない。旧Qwen記録に Hello Kitty 誤認があったが、0028 の現在判断には使わない。現IDは Zukida anchor のまま維持しつつ公開不可。"
       },
       "official": {
         "management_id": "BOX-001-ITEM-0028",
@@ -6207,23 +6206,22 @@ window.ZERO_COST_INTAKE = {
         "official_image_url": "",
         "image_source": "",
         "verified_exact_match": false,
-        "official_image_state": "管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能 / 新管理番号未採番 / 正規性確認待ち / 内容物未確認",
-        "note": "Qwen 公開前チェック担当: CRITICAL: FRONT/BACK/CODE が別商品 mix 状態（intake_manual_overrides.json で split_required 登録済み） / CRITICAL: Hello Kitty 50TH ANNIVERSARY はサンリオ著作権/商標権関連リスク。正規品出所証明がないと削除・制限対象の可能性 / ほか3件 / HQ 公開前チェック担当: 管理番号の再分解: 0028 は FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK=X0010CU9L7 / Zukida 車のフック Red ラベル、CODE=car hook mobile phone holder / NO-FE035 箱面。BACK/CODE は同じ車用フック系・同箱候補だが NO-FE035 は X0010CU9L7 の直接証拠ではない。現IDは Zukida anchor のまま維持しつつ公開不可。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。",
+        "official_image_state": "管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能 / 新管理番号未採番 / 内容物未確認",
+        "note": "Qwen 公開前チェック担当の旧記録には Hello Kitty 誤認が含まれていたため、HQ current truth で上書き済み。0028 は FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK=X0010CU9L7 / Zukida 車のフック Red ラベル、CODE=car hook mobile phone holder / NO-FE035 箱面。BACK/CODE は同じ車用フック系・同箱候補だが NO-FE035 は X0010CU9L7 の直接証拠ではない。2026-04-22 の再検索でも X0010CU9L7 / Red / NO-FE035 を1本で裏付ける公式級根拠は未取得。現IDは Zukida anchor のまま維持しつつ公開不可。",
         "qwen_last_task_name": "公開前チェック担当",
         "qwen_last_review_at": "2026-04-12 06:38:33 JST",
         "qwen_last_recommended_status": "blocked",
         "qwen_last_source_file": "20260412_063833__-001_BOX-001-ITEM-0028.json",
-        "qwen_last_summary": "CRITICAL: FRONT/BACK/CODE が別商品 mix 状態（intake_manual_overrides.json で split_required 登録済み） / CRITICAL: Hello Kitty 50TH ANNIVERSARY はサンリオ著作権/商標権関連リスク。正規品出所証明がないと削除・制限対象の可能性 / ほか3件",
+        "qwen_last_summary": "旧Qwen summary には Hello Kitty 誤認が含まれていたため HQ current truth で上書き済み。現在は FRONT/BACK/CODE が別商品 mix 状態として扱う。",
         "qwen_hq_review_status": "resolved",
         "qwen_hq_resolution": "needs_split",
         "qwen_hq_review_at": "2026-04-13 08:25:22 JST",
-        "qwen_hq_review_note": "0028 は FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK=X0010CU9L7 / Zukida 車のフック Red ラベル、CODE=car hook mobile phone holder / NO-FE035 箱面。BACK/CODE は同じ車用フック系・同箱候補だが、NO-FE035 は X0010CU9L7 の直接証拠ではない。現IDは Zukida anchor のまま維持しつつ公開不可。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。",
+        "qwen_hq_review_note": "0028 は FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK=X0010CU9L7 / Zukida 車のフック Red ラベル、CODE=car hook mobile phone holder / NO-FE035 箱面。BACK/CODE は同じ車用フック系・同箱候補だが、NO-FE035 は X0010CU9L7 の直接証拠ではない。旧Qwen記録に Hello Kitty 誤認があったが、0028 の現在判断には使わない。現IDは Zukida anchor のまま維持しつつ公開不可。",
         "exact_match_guard_state": "review_required",
         "exact_match_guard_reasons": [
           "別商品mix",
           "写真セット組み直し必要",
-          "内容物未確認",
-          "真贋確認"
+          "内容物未確認"
         ]
       },
       "commerce": {
@@ -6250,24 +6248,23 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
       "display_name": "写真セット組み直し候補: Zukida 車のフック 電話ホルダー付き 後部座席用 Red",
       "product_name": "写真セット組み直し候補: Zukida 車のフック 電話ホルダー付き 後部座席用 Red",
       "verified_exact_match": false,
-      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 正規性確認待ち / 管理番号再分解待ち",
+      "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 管理番号再分解待ち",
       "exact_match_guard_state": "review_required",
       "exact_match_guard_reasons": [
         "別商品mix",
         "写真セット組み直し必要",
-        "内容物未確認",
-        "真贋確認"
+        "内容物未確認"
       ],
       "qwen_hq_review_status": "resolved",
       "qwen_hq_resolution": "needs_split",
-      "qwen_hq_review_note": "0028 は FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK=X0010CU9L7 / Zukida 車のフック Red ラベル、CODE=car hook mobile phone holder / NO-FE035 箱面。BACK/CODE は同じ車用フック系・同箱候補だが、NO-FE035 は X0010CU9L7 の直接証拠ではない。現IDは Zukida anchor のまま維持しつつ公開不可。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。",
+      "qwen_hq_review_note": "0028 は FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK=X0010CU9L7 / Zukida 車のフック Red ラベル、CODE=car hook mobile phone holder / NO-FE035 箱面。BACK/CODE は同じ車用フック系・同箱候補だが、NO-FE035 は X0010CU9L7 の直接証拠ではない。旧Qwen記録に Hello Kitty 誤認があったが、0028 の現在判断には使わない。現IDは Zukida anchor のまま維持しつつ公開不可。",
       "publish_status": "下書き",
       "publish_state": "下書き",
       "public_listing_url": "",
@@ -6296,7 +6293,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
         "ルーティング状態": "写真セット組み直し必要",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=写真セット組み直し候補: Zukida 車のフック 電話ホルダー付き 後部座席用 Red / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 正規性確認待ち / 管理番号再分解待ち / HQレビュー済み / 新管理番号未採番 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=review_required / guard_reasons=別商品mix / 写真セット組み直し必要 / 内容物未確認 / 真贋確認 / qwen_hq=needs_split / 0028 は FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK=X0010CU9L7 / Zukida 車のフック Red ラベル、CODE=car hook mobile phone holder / NO-FE035 箱面。BACK/CODE は同じ車用フック系・同箱候補だが、NO-FE035 は X0010CU9L7 の直接証拠ではない。現IDは Zukida anchor のまま維持しつつ公開不可。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。"
       },
       "split_staging": {
@@ -6636,7 +6633,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -6790,7 +6787,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -6960,7 +6957,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -7000,7 +6997,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=LEISURE WEAR ベージュ系レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
       }
     },
@@ -7262,7 +7259,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "precision guard 解消",
         "ルーティング状態": "停止",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=ZUCCA CLUB リラックス リカバリー サンダル / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=色違い / 形状違い / inventory_status=販売中 / listingId=2JPTBkWndxGku2L9EVw4UP"
       }
     },
@@ -7417,7 +7414,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -7460,7 +7457,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
         "ルーティング状態": "写真セット組み直し必要",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=jchinjia リュック メンズ ビジネスリュック 男女兼用 カジュアルバッグ おしゃれ トラベルバッグ / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix"
       }
     },
@@ -7593,7 +7590,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -7766,7 +7763,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -7806,7 +7803,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=Letshe ベビー前開きロンパース ピンク 110cm / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
       }
     },
@@ -7941,7 +7938,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -8175,7 +8172,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -8346,7 +8343,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -8386,7 +8383,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=裏起毛トップス オフホワイト L / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
       }
     },
@@ -8503,7 +8500,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -8807,7 +8804,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -9114,7 +9111,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -9277,7 +9274,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -9585,7 +9582,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -9897,7 +9894,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -10225,7 +10222,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -10268,7 +10265,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
         "ルーティング状態": "写真セット組み直し必要",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=ロゴ刺繍ベースボールキャップ ブラック系 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix"
       }
     },
@@ -10421,7 +10418,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -10464,7 +10461,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
         "ルーティング状態": "写真セット組み直し必要",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=ホワイト レディーストップス M / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix"
       }
     },
@@ -10611,7 +10608,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -10651,7 +10648,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=高視認性安全ベスト 蛍光イエロー / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
       }
     },
@@ -10788,7 +10785,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -11057,7 +11054,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -11328,7 +11325,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [
         {
@@ -11386,7 +11383,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "公開前チェック",
         "AI次アクション": "人確認後にメルカリ投入",
         "ルーティング状態": "人確認待ち",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=CRZ YOGA レギンス 股下24インチ ダークグレー系 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / actual-only固定 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
       }
     },
@@ -11517,7 +11514,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -11657,7 +11654,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -12004,7 +12001,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -12383,7 +12380,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -12428,7 +12425,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
         "ルーティング状態": "写真セット組み直し必要",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=写真セット組み直し候補: Poperdision ブラック 3XL レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / 正規性確認待ち / 管理番号再分解待ち / 新管理番号未採番 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix / 写真セット組み直し必要 / 真贋確認"
       }
     },
@@ -12583,7 +12580,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [
         {
@@ -12645,7 +12642,7 @@ window.ZERO_COST_INTAKE = {
         "低コストAI作業": "商品特定再調査",
         "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
         "ルーティング状態": "写真セット組み直し必要",
-        "更新時刻": "2026-04-22 08:50:03 JST",
+        "更新時刻": "2026-04-22 09:08:44 JST",
         "メモ": "name=写真セット組み直し候補: ATIDIMU 美容液 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / 現写真では1商品に断定不能 / 管理番号再分解待ち / 新管理番号未採番 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix / 写真セット組み直し必要"
       },
       "split_staging": {
@@ -12952,7 +12949,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -13408,12 +13405,12 @@ window.ZERO_COST_INTAKE = {
         "Ship&co条件": "停止",
         "メルカリ配送": "",
         "人確認": "要",
-        "人確認理由": "画像同一性未確認 / precision guard: 別商品mix / 停止条件あり",
+        "人確認理由": "画像同一性未確認 / precision guard: 別商品mix / 写真セット組み直し必要 / 内容物未確認 / 停止条件あり",
         "低コストAI作業": "比較画像照合",
         "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
         "ルーティング状態": "写真セット組み直し必要",
-        "更新時刻": "2026-04-22 08:50:03 JST",
-        "メモ": "name=JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=別商品mix / inventory_status=販売中 / listingId=2JPSNX6qATG7NwnssYkshh"
+        "更新時刻": "2026-04-22 09:08:44 JST",
+        "メモ": "name=写真セット組み直し候補: JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / 現写真では1商品に断定不能 / 内容物未確認 / 管理番号再分解待ち / 新管理番号未採番 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=別商品mix / 写真セット組み直し必要 / 内容物未確認 / inventory_status=販売中 / listingId=2JPSNX6qATG7NwnssYkshh"
       },
       "split_staging": {
         "management_id": "BOX-001-ITEM-0055",
@@ -13662,18 +13659,23 @@ window.ZERO_COST_INTAKE = {
       "resolved": {
         "management_id": "BOX-001-ITEM-0058",
         "resolution_status": "provisional",
-        "product_name": "AUTOMATIC WATER DISPENSER Upgraded Stainless Steel Basin",
+        "product_name": "写真セット組み直し候補: AUTOMATIC WATER DISPENSER Upgraded Stainless Steel Basin",
         "barcode_primary": "",
         "product_code_type": "package_text",
-        "official_image_state": "actual-only固定 / 比較画像なし",
+        "official_image_state": "管理番号再分解待ち / 新管理番号未採番 / 内容物未確認",
         "note": "FRONT/BACK の2枚で AUTOMATIC WATER DISPENSER / Upgraded Stainless Steel Basin / 304 Stainless Steel の箱表示が一致する。CODE 写真は欠けているが、現写真だけで自動給水器の箱と判断できるため actual-only の provisional で扱う。",
         "evidence": [
           "AUTOMATIC WATER DISPENSER",
           "Upgraded Stainless Steel Basin",
           "304 Stainless Steel"
         ],
-        "exact_match_guard_state": "clear",
-        "image_source": "actual-only"
+        "exact_match_guard_state": "review_required",
+        "image_source": "actual-only",
+        "exact_match_guard_reasons": [
+          "別商品mix",
+          "写真セット組み直し必要",
+          "内容物未確認"
+        ]
       },
       "official": {
         "management_id": "BOX-001-ITEM-0058",
@@ -13685,9 +13687,14 @@ window.ZERO_COST_INTAKE = {
         "official_image_url": "",
         "image_source": "actual-only",
         "verified_exact_match": false,
-        "official_image_state": "actual-only固定 / 比較画像なし",
+        "official_image_state": "管理番号再分解待ち / 新管理番号未採番 / 内容物未確認",
         "note": "FRONT/BACK の2枚で AUTOMATIC WATER DISPENSER / Upgraded Stainless Steel Basin / 304 Stainless Steel の箱表示が一致する。CODE 写真はないが、現写真だけで自動給水器の箱と判断できるため、比較画像なしの actual-only で扱う。",
-        "exact_match_guard_state": "clear"
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "別商品mix",
+          "写真セット組み直し必要",
+          "内容物未確認"
+        ]
       },
       "commerce": {
         "management_id": "BOX-001-ITEM-0058",
@@ -13695,12 +13702,12 @@ window.ZERO_COST_INTAKE = {
         "product_id": "PRD-BOX-001-058",
         "draft_id": "DRF-BOX-001-058",
         "research_id": "RES-BOX-001-058",
-        "product_name": "AUTOMATIC WATER DISPENSER Upgraded Stainless Steel Basin",
+        "product_name": "写真セット組み直し候補: AUTOMATIC WATER DISPENSER Upgraded Stainless Steel Basin",
         "brand": "",
         "category": "",
         "barcode_primary": "",
         "product_code_type": "package_text",
-        "listing_title": "AUTOMATIC WATER DISPENSER Upgraded Stainless Steel Basin",
+        "listing_title": "写真セット組み直し候補: AUTOMATIC WATER DISPENSER Upgraded Stainless Steel Basin",
         "listing_price": "",
         "market_floor_price": "",
         "market_floor_state": "未調査",
@@ -13713,15 +13720,19 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
-      "display_name": "AUTOMATIC WATER DISPENSER Upgraded Stainless Steel Basin",
-      "product_name": "AUTOMATIC WATER DISPENSER Upgraded Stainless Steel Basin",
+      "display_name": "写真セット組み直し候補: AUTOMATIC WATER DISPENSER Upgraded Stainless Steel Basin",
+      "product_name": "写真セット組み直し候補: AUTOMATIC WATER DISPENSER Upgraded Stainless Steel Basin",
       "verified_exact_match": false,
-      "official_image_state": "actual-only固定 / 比較画像なし",
-      "exact_match_guard_state": "clear",
+      "official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認 / 管理番号再分解待ち / 現写真では1商品に断定不能",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "写真セット組み直し必要",
+        "内容物未確認"
+      ],
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
@@ -13742,7 +13753,102 @@ window.ZERO_COST_INTAKE = {
         "blocking": false,
         "reason": "CODE写真不足は今回の運用では例外許容とする"
       },
-      "route_plan": {}
+      "route_plan": {},
+      "split_staging": {
+        "management_id": "BOX-001-ITEM-0058",
+        "stage_status": "partial_manifest_child_minted",
+        "plan_summary": "0058 FRONT/BACK は AUTOMATIC WATER DISPENSER / Upgraded Stainless Steel Basin / 304 Stainless Steel の給水器箱で揃う。0057 CODE は B09NG1PLHK / RIZZARI 9L自動給水器 ブラックのラベルで、撮影元ファイルも IMG_5003 → IMG_5004 → IMG_5005 と連番接続しているため、0058 箱の CODE ずれとして local child 化する。 / SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER=BOX-001-ITEM-0070 のローカル写真セットを作成済み / SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER=BOX-001-ITEM-0070 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "ui_summary": "0058 FRONT/BACK は同一の給水器箱。0057 CODE は RIZZARI 9L自動給水器ラベル。0058 単体は CODE 欠けだが、0058 FRONT/BACK + 0057 CODE で coherent な3枚束に再構成できる。 / SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER=BOX-001-ITEM-0070 のローカル写真セットを作成済み / SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER=BOX-001-ITEM-0070 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "operator_summary": "BOX-001-ITEM-0058 は CODE 欠けで例外許容のまま止めていたが、実物再照合で 0057 CODE の B09NG1PLHK / RIZZARI 9L自動給水器 ブラック ラベルが同じ給水器箱側のものと判断できる。0058 FRONT/BACK の AUTOMATIC WATER DISPENSER / Upgraded Stainless Steel Basin / 304 Stainless Steel 表示、0057 CODE の商品ラベル、撮影連番 IMG_5003 → IMG_5004 → IMG_5005 を根拠に、RIZZARI 側だけ local child へ切り出す。B09NG1PLHK は ASIN として扱い、出品画像は実物のみで扱う。 / SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER=BOX-001-ITEM-0070 のローカル写真セットを作成済み / SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER=BOX-001-ITEM-0070 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_note": "0058 FRONT/BACK + 0057 CODE は RIZZARI 9L自動給水器側として coherent。親 0057 は JODSONE 箱2枚 + 給水器ラベル1枚の raw parent のまま維持し、親 0058 も raw parent として残す。 / SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER=BOX-001-ITEM-0070 のローカル写真セットを作成済み / SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER=BOX-001-ITEM-0070 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "routing_next_action": "SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER を local mint → local confirmed / official へ provisional actual-only / 内容物未確認で反映。親 0057 / 0058 は raw parent のまま維持。 / BOX-001-ITEM-0070 は管理表 / 出品判断の止めどころを決めてから正式反映",
+        "related_management_ids": [
+          "BOX-001-ITEM-0057",
+          "BOX-001-ITEM-0058"
+        ],
+        "source_trace": [
+          {
+            "management_id": "BOX-001-ITEM-0058",
+            "slot": "FRONT",
+            "observed_as": "AUTOMATIC WATER DISPENSER / Upgraded Stainless Steel Basin / 304 Stainless Steel の箱 FRONT"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0058",
+            "slot": "BACK",
+            "observed_as": "同一給水器箱の側面。給水器シルエット一致"
+          },
+          {
+            "management_id": "BOX-001-ITEM-0057",
+            "slot": "CODE",
+            "observed_as": "B09NG1PLHK / 新品-RIZZARI 9L自動給水器、猫・中型犬・大型犬用（ブラック,9L）ラベル面"
+          }
+        ],
+        "blocked_split_children": [
+          {
+            "temporary_split_id": "SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER",
+            "target_label": "RIZZARI 9L自動給水器 ブラック",
+            "source_slots": [
+              "BOX-001-ITEM-0058:FRONT",
+              "BOX-001-ITEM-0058:BACK",
+              "BOX-001-ITEM-0057:CODE"
+            ],
+            "status": "manifest_child_minted_local_only",
+            "blockers": [
+              "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+              "0058 FRONT/BACK は AUTOMATIC WATER DISPENSER / Upgraded Stainless Steel Basin / 304 Stainless Steel で同一箱として一致する",
+              "0057 CODE は B09NG1PLHK / 新品-RIZZARI 9L自動給水器、猫・中型犬・大型犬用（ブラック,9L）ラベルで、0058 箱と商品種別が一致する",
+              "撮影元ファイルが IMG_5003 → IMG_5004 → IMG_5005 と連番で接続しており、0058 CODE 欠けの補完候補として妥当",
+              "B09NG1PLHK は JAN ではなく ASIN として扱う",
+              "本体そのものは箱内で見えていないため、ローカル特定結果へは内容物未確認で反映する",
+              "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+              "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+            ],
+            "truth_product_name": "RIZZARI 9L自動給水器 ブラック（内容物未確認）",
+            "truth_barcode_primary": "B09NG1PLHK",
+            "truth_product_code_type": "asin",
+            "truth_content_unknown": true,
+            "truth_official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+            "truth_exact_match_guard_state": "review_required",
+            "truth_exact_match_guard_reasons": [
+              "内容物未確認"
+            ],
+            "truth_evidence": [
+              "B09NG1PLHK",
+              "RIZZARI",
+              "9L自動給水器",
+              "ブラック",
+              "AUTOMATIC WATER DISPENSER",
+              "Upgraded Stainless Steel Basin",
+              "304 Stainless Steel",
+              "0058:FRONT + 0058:BACK + 0057:CODE",
+              "IMG_5003 → IMG_5004 → IMG_5005",
+              "本体そのものは箱内で未確認",
+              "内容物未確認"
+            ],
+            "truth_brand_override": "RIZZARI",
+            "truth_category_override": "ペット用品 > 犬用品 > 食器・餌やり・水やり用品 > 給水器",
+            "truth_check_items_override": "本体有無 / タンク割れ / ステンレス皿 / 付属フィルター有無 / キャップ有無 / 箱状態",
+            "truth_note": "SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER は、0058:FRONT/BACK と 0057:CODE の3枚で B09NG1PLHK / RIZZARI 9L自動給水器 ブラックを実物3枚で確認できる写真セット。0058 FRONT/BACK では AUTOMATIC WATER DISPENSER / Upgraded Stainless Steel Basin / 304 Stainless Steel の箱表示が一致し、0057 CODE では B09NG1PLHK / 新品-RIZZARI 9L自動給水器、猫・中型犬・大型犬用（ブラック,9L）ラベルを確認。撮影元ファイルも IMG_5003 → IMG_5004 → IMG_5005 と連番接続しており、同一給水器箱の CODE ずれと判断する。B09NG1PLHK は ASIN として扱い、出品画像は実物のみで扱う。本体そのものは箱内で見えていないため、ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映し、管理表 / 出品判断は別フェーズ。",
+            "minted_management_id": "BOX-001-ITEM-0070",
+            "minted_at": "2026-04-22 09:44:43 JST",
+            "minted_scope": "local_manifest_only",
+            "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+            "truth_promotion_scope": "local_confirmed_official_only",
+            "truth_promoted_management_id": "BOX-001-ITEM-0070",
+            "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み。管理表 / 出品判断は別フェーズで行う。",
+            "truth_promoted_at": "2026-04-22 09:49:49 JST"
+          }
+        ],
+        "remaining_blockers": [
+          "RIZZARI child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
+          "SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER=BOX-001-ITEM-0070 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
+          "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。"
+        ],
+        "safe_next_step": "SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER を local mint → local confirmed / official へ provisional actual-only / 内容物未確認で反映。親 0057 / 0058 は raw parent のまま維持する。 / SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER=BOX-001-ITEM-0070 のローカル写真セットを作成済み / SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER=BOX-001-ITEM-0070 をローカル特定結果へ暫定・実物写真のみで反映済み",
+        "match_role": "primary"
+      },
+      "split_plan_summary": "0058 FRONT/BACK は同一の給水器箱。0057 CODE は RIZZARI 9L自動給水器ラベル。0058 単体は CODE 欠けだが、0058 FRONT/BACK + 0057 CODE で coherent な3枚束に再構成できる。 / SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER=BOX-001-ITEM-0070 のローカル写真セットを作成済み / SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER=BOX-001-ITEM-0070 をローカル特定結果へ暫定・実物写真のみで反映済み",
+      "split_plan_role": "primary"
     },
     {
       "management_id": "BOX-001-ITEM-0059",
@@ -13918,7 +14024,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -14112,7 +14218,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -14314,7 +14420,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -14509,7 +14615,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -14698,7 +14804,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -14890,7 +14996,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -15085,7 +15191,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -15278,7 +15384,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -15491,7 +15597,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -15702,7 +15808,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -15917,7 +16023,223 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-22 09:00:19 JST"
+        "updated_at": "2026-04-22 09:44:43 JST"
+      },
+      "comparison_images": [],
+      "reference_images": [],
+      "verified_exact_match": false,
+      "official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+      "exact_match_guard_state": "review_required",
+      "exact_match_guard_reasons": [
+        "内容物未確認"
+      ],
+      "qwen_hq_review_status": "",
+      "qwen_hq_resolution": "",
+      "qwen_hq_review_note": "",
+      "publish_status": "下書き準備中",
+      "publish_state": "下書き準備中",
+      "public_listing_url": "",
+      "listing_id": "",
+      "comparison_image_ref": "",
+      "reference_image_ref": "",
+      "minimum_price": "",
+      "market_floor_price_label": "未調査",
+      "listing_price": "2780",
+      "exception": {},
+      "route_plan": {}
+    },
+    {
+      "management_id": "BOX-001-ITEM-0070",
+      "box_id": "BOX-001",
+      "sequence": 70,
+      "status": "complete",
+      "missing_slots": [],
+      "slot_count": 3,
+      "slots": [
+        {
+          "slot": "FRONT",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_5004.HEIC",
+          "source_name": "IMG_5004.HEIC",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0070/01_FRONT_IMG_5004.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0070/01_FRONT_IMG_5004.jpg",
+          "resident_url": "./assets/intake/BOX-001-ITEM-0070/01_FRONT_IMG_5004.jpg",
+          "rebundled_from": "BOX-001-ITEM-0058:FRONT"
+        },
+        {
+          "slot": "BACK",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_5005.HEIC",
+          "source_name": "IMG_5005.HEIC",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0070/02_BACK_IMG_5005.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0070/02_BACK_IMG_5005.jpg",
+          "resident_url": "./assets/intake/BOX-001-ITEM-0070/02_BACK_IMG_5005.jpg",
+          "rebundled_from": "BOX-001-ITEM-0058:BACK"
+        },
+        {
+          "slot": "CODE",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_5003.HEIC",
+          "source_name": "IMG_5003.HEIC",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0070/03_CODE_IMG_5003.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0070/03_CODE_IMG_5003.jpg",
+          "resident_url": "./assets/intake/BOX-001-ITEM-0070/03_CODE_IMG_5003.jpg",
+          "rebundled_from": "BOX-001-ITEM-0057:CODE"
+        }
+      ],
+      "shared_sheet_title_value": "BOX-001-ITEM-0070",
+      "shared_sheet_note": "SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER からローカル写真セットを作成",
+      "photo_grouping": "split_child_mint",
+      "grouping_warning": "",
+      "product_name": "RIZZARI 9L自動給水器 ブラック（内容物未確認）",
+      "display_name": "RIZZARI 9L自動給水器 ブラック（内容物未確認）",
+      "split_child_label": "RIZZARI 9L自動給水器 ブラック",
+      "split_temporary_id": "SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER",
+      "split_source_slots": [
+        "BOX-001-ITEM-0058:FRONT",
+        "BOX-001-ITEM-0058:BACK",
+        "BOX-001-ITEM-0057:CODE"
+      ],
+      "split_status": "manifest_child_minted_local_only",
+      "box_label": "数字箱 001",
+      "box_lane": "numeric",
+      "box_code": "001",
+      "identification": {
+        "state": "バーコード候補あり",
+        "barcode_values": [
+          "B09NG1PLHK"
+        ],
+        "front_back_texts": [
+          "AUTOMATIC WATER",
+          "DISPENSER",
+          "Upgraded Stainless Steel Basin",
+          "304 Stainless Steel",
+          "Drinking Water is Healthier",
+          "M"
+        ],
+        "code_texts": [
+          "B09NG1PLHK",
+          "新品-RIZZARI 9L自動給水器、猫・中型犬・大型大用（ブラック.9L）"
+        ],
+        "ocr_texts": [
+          "AUTOMATIC WATER",
+          "DISPENSER",
+          "Upgraded Stainless Steel Basin",
+          "304 Stainless Steel",
+          "Drinking Water is Healthier",
+          "M"
+        ],
+        "candidate_query": "AUTOMATIC WATER DISPENSER Upgraded Stainless Steel Basin 304 Stainless Steel",
+        "review_flag": "",
+        "ocr_engine": "vision + sauna_tesseract_multistage",
+        "ocr_debug_paths": [
+          "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0058/IMG_5005_BACK_ocr_best.png"
+        ]
+      },
+      "priority_score": 110,
+      "next_action": "本体表示とコードラベルを突合",
+      "barcode_kind": "asin",
+      "review_flag": "本体表示とコードラベルの不一致疑い",
+      "resolved": {
+        "management_id": "BOX-001-ITEM-0070",
+        "raw_id": "RAW-BOX-001-070",
+        "product_id": "PRD-BOX-001-070",
+        "draft_id": "DRF-BOX-001-070",
+        "research_id": "RES-BOX-001-070",
+        "split_temporary_id": "SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER",
+        "split_source_slots": [
+          "BOX-001-ITEM-0058:FRONT",
+          "BOX-001-ITEM-0058:BACK",
+          "BOX-001-ITEM-0057:CODE"
+        ],
+        "verified_exact_match": false,
+        "official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+        "note": "SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER は、0058:FRONT/BACK と 0057:CODE の3枚で B09NG1PLHK / RIZZARI 9L自動給水器 ブラックを実物3枚で確認できる写真セット。0058 FRONT/BACK では AUTOMATIC WATER DISPENSER / Upgraded Stainless Steel Basin / 304 Stainless Steel の箱表示が一致し、0057 CODE では B09NG1PLHK / 新品-RIZZARI 9L自動給水器、猫・中型犬・大型犬用（ブラック,9L）ラベルを確認。撮影元ファイルも IMG_5003 → IMG_5004 → IMG_5005 と連番接続しており、同一給水器箱の CODE ずれと判断する。B09NG1PLHK は ASIN として扱い、出品画像は実物のみで扱う。本体そのものは箱内で見えていないため、ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映し、管理表 / 出品判断は別フェーズ。",
+        "image_source": "actual-only",
+        "exact_match_guard_state": "review_required",
+        "official_page_url": "",
+        "official_image_url": "",
+        "official_image_local": "",
+        "supplemental_url": "",
+        "supplemental_image_urls": [],
+        "supplemental_image_locals": [],
+        "exact_match_guard_reasons": [
+          "内容物未確認"
+        ],
+        "resolution_status": "provisional",
+        "product_name": "RIZZARI 9L自動給水器 ブラック（内容物未確認）",
+        "barcode_primary": "B09NG1PLHK",
+        "product_code_type": "asin",
+        "evidence": [
+          "B09NG1PLHK",
+          "RIZZARI",
+          "9L自動給水器",
+          "ブラック",
+          "AUTOMATIC WATER DISPENSER",
+          "Upgraded Stainless Steel Basin",
+          "304 Stainless Steel",
+          "0058:FRONT + 0058:BACK + 0057:CODE",
+          "IMG_5003 → IMG_5004 → IMG_5005",
+          "本体そのものは箱内で未確認",
+          "内容物未確認"
+        ],
+        "brand_override": "RIZZARI",
+        "category_override": "ペット用品 > 犬用品 > 食器・餌やり・水やり用品 > 給水器",
+        "price_override": 2780,
+        "check_items_override": "本体有無 / タンク割れ / ステンレス皿 / 付属フィルター有無 / キャップ有無 / 箱状態"
+      },
+      "official": {
+        "management_id": "BOX-001-ITEM-0070",
+        "raw_id": "RAW-BOX-001-070",
+        "product_id": "PRD-BOX-001-070",
+        "draft_id": "DRF-BOX-001-070",
+        "research_id": "RES-BOX-001-070",
+        "split_temporary_id": "SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER",
+        "split_source_slots": [
+          "BOX-001-ITEM-0058:FRONT",
+          "BOX-001-ITEM-0058:BACK",
+          "BOX-001-ITEM-0057:CODE"
+        ],
+        "verified_exact_match": false,
+        "official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+        "note": "SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER は、0058:FRONT/BACK と 0057:CODE の3枚で B09NG1PLHK / RIZZARI 9L自動給水器 ブラックを実物3枚で確認できる写真セット。0058 FRONT/BACK では AUTOMATIC WATER DISPENSER / Upgraded Stainless Steel Basin / 304 Stainless Steel の箱表示が一致し、0057 CODE では B09NG1PLHK / 新品-RIZZARI 9L自動給水器、猫・中型犬・大型犬用（ブラック,9L）ラベルを確認。撮影元ファイルも IMG_5003 → IMG_5004 → IMG_5005 と連番接続しており、同一給水器箱の CODE ずれと判断する。B09NG1PLHK は ASIN として扱い、出品画像は実物のみで扱う。本体そのものは箱内で見えていないため、ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映し、管理表 / 出品判断は別フェーズ。",
+        "image_source": "actual-only",
+        "exact_match_guard_state": "review_required",
+        "official_page_url": "",
+        "official_image_url": "",
+        "official_image_local": "",
+        "supplemental_url": "",
+        "supplemental_image_urls": [],
+        "supplemental_image_locals": [],
+        "exact_match_guard_reasons": [
+          "内容物未確認"
+        ]
+      },
+      "commerce": {
+        "management_id": "BOX-001-ITEM-0070",
+        "raw_id": "RAW-BOX-001-070",
+        "product_id": "PRD-BOX-001-070",
+        "draft_id": "DRF-BOX-001-070",
+        "research_id": "RES-BOX-001-070",
+        "product_name": "RIZZARI 9L自動給水器 ブラック（内容物未確認）",
+        "brand": "RIZZARI",
+        "category": "ペット用品 > 犬用品 > 食器・餌やり・水やり用品 > 給水器",
+        "barcode_primary": "B09NG1PLHK",
+        "product_code_type": "asin",
+        "listing_title": "RIZZARI 9L自動給水器 ブラック（内容物未確認）",
+        "listing_price": "2780",
+        "market_floor_price": "",
+        "market_floor_state": "未調査",
+        "market_source_label": "",
+        "market_source_url": "",
+        "market_checked_at": "",
+        "market_note": "",
+        "publish_state": "下書き準備中",
+        "publish_detail": "",
+        "listing_id": "",
+        "public_listing_url": "",
+        "csv_status": "",
+        "updated_at": "2026-04-22 09:44:43 JST"
       },
       "comparison_images": [],
       "reference_images": [],
@@ -15945,7 +16267,7 @@ window.ZERO_COST_INTAKE = {
   ],
   "boxes": [
     {
-      "generated_at": "2026-04-22 09:00:19 JST",
+      "generated_at": "2026-04-22 09:44:43 JST",
       "box_id": "BOX-001",
       "box_label": "数字箱 001",
       "box_lane": "numeric",
@@ -15958,13 +16280,13 @@ window.ZERO_COST_INTAKE = {
       ],
       "slots_per_item": 3,
       "total_files": 197,
-      "total_items": 69,
-      "complete_items": 68,
+      "total_items": 70,
+      "complete_items": 69,
       "incomplete_items": 1,
-      "next_sequence": 70,
-      "next_management_id": "BOX-001-ITEM-0070",
+      "next_sequence": 71,
+      "next_management_id": "BOX-001-ITEM-0071",
       "identification_counts": {
-        "barcode_ready": 45,
+        "barcode_ready": 46,
         "ocr_ready": 2,
         "image_only": 0,
         "missing_slots": 0,
@@ -15972,21 +16294,21 @@ window.ZERO_COST_INTAKE = {
       },
       "resolution_counts": {
         "confirmed": 2,
-        "provisional": 67,
+        "provisional": 68,
         "official_image_pending": 0,
         "accepted_exception": 2
       },
       "top_priority_ids": [
-        "BOX-001-ITEM-0058",
-        "BOX-001-ITEM-0053",
-        "BOX-001-ITEM-0045",
-        "BOX-001-ITEM-0002",
-        "BOX-001-ITEM-0024",
-        "BOX-001-ITEM-0042",
-        "BOX-001-ITEM-0048",
-        "BOX-001-ITEM-0049",
-        "BOX-001-ITEM-0052",
-        "BOX-001-ITEM-0029"
+        "BOX-001-ITEM-0001",
+        "BOX-001-ITEM-0013",
+        "BOX-001-ITEM-0026",
+        "BOX-001-ITEM-0027",
+        "BOX-001-ITEM-0032",
+        "BOX-001-ITEM-0034",
+        "BOX-001-ITEM-0003",
+        "BOX-001-ITEM-0004",
+        "BOX-001-ITEM-0005",
+        "BOX-001-ITEM-0007"
       ],
       "items": [
         {
@@ -16235,7 +16557,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "審査監視",
             "AI次アクション": "カテゴリ審査反映待ち",
             "ルーティング状態": "審査待ち",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り / publish_ok=カテゴリ審査待ち / draft_status=カテゴリ審査待ち / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=clear"
           }
         },
@@ -16415,7 +16737,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -16462,7 +16784,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "実物のみで進める / 比較画像は後追い",
             "ルーティング状態": "HQ判断済み",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=保冷クーラーバッグ ネイビー ショルダー付 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=色違い / 型番違い / サイズ違い / セット違い / 別商品mix / qwen_hq=actual-only固定優先 / 2026-04-21 current truth: actual-only固定。比較画像なしでも実物写真のみで進める。"
           }
         },
@@ -16607,7 +16929,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -16647,7 +16969,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=YUGYUG サングラス ブラック/グレー ケース付き / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
           }
         },
@@ -16905,7 +17227,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "precision guard 解消",
             "ルーティング状態": "停止",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=IAWNI ショルダーバッグ メッセンジャーバッグ / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=ブランド不一致 / inventory_status=販売中 / listingId=2JPSMJHwgfzNjEkYfN8SMv"
           }
         },
@@ -17163,7 +17485,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "precision guard 解消",
             "ルーティング状態": "停止",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=CEEN サルエルパンツ 七分丈 ワイドパンツ / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=柄違い / inventory_status=販売中 / listingId=2JPQCYwtnC7WCswDeG37b9"
           }
         },
@@ -17317,7 +17639,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -17495,7 +17817,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -17535,7 +17857,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=GIOVANA Tシャツ ベージュ 2XL / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
           }
         },
@@ -17796,7 +18118,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "precision guard 解消",
             "ルーティング状態": "停止",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=オナーファッション 綿100% トップス ミントグリーン 3XL / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=review_required / guard_reasons=ブランド不一致 / inventory_status=販売中 / listingId=2JPSMSqu7EDWJu3jDcTo5h"
           }
         },
@@ -18065,7 +18387,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "受注監視",
             "AI次アクション": "受注待ち",
             "ルーティング状態": "販売中",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=Hotaty ピアス 金属アレルギー対応 ギフトBOX付き / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=clear / inventory_status=販売中 / listingId=2JPSMUTrpVNxK6fGZdtMqT"
           }
         },
@@ -18219,7 +18541,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [
             {
@@ -18280,7 +18602,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "precision guard 解消",
             "ルーティング状態": "停止",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=SHANGCHU シェフユニフォーム ブラック 4XL / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=色違い"
           }
         },
@@ -18536,7 +18858,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "precision guard 解消",
             "ルーティング状態": "停止",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=Dkieta 帽子 レディース ネックカバー付き 花柄日よけ帽子 / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=柄違い / inventory_status=販売中 / listingId=2JPSMPEuG8NMB3ZieyYzHU"
           }
         },
@@ -18794,7 +19116,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "precision guard 解消",
             "ルーティング状態": "停止",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=gany ガーゼハンカチ 30×30cm 10枚セット 綿100% / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=セット違い / inventory_status=販売中 / listingId=2JPTBgBM5kND3h8AhVf4bf"
           }
         },
@@ -18938,7 +19260,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [
             {
@@ -18996,7 +19318,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り / publish_ok=公開待ち / draft_status=公開待ち / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=clear"
           }
         },
@@ -19273,7 +19595,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "precision guard 解消",
             "ルーティング状態": "停止",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=HAYAHARU キッズ靴下 LS4602LS / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=柄違い / セット違い / inventory_status=販売中 / listingId=2JPSMLyKhRCgPASDJFH2dc"
           }
         },
@@ -19419,7 +19741,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -19459,7 +19781,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=Llink 靴下 5足セット ボーダー パステル / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
           }
         },
@@ -19603,7 +19925,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -19643,7 +19965,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=ZERUI 靴下 5足セット パステル 蝶リボン / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
           }
         },
@@ -19799,7 +20121,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -19845,7 +20167,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "用途確認と商品名補正",
             "ルーティング状態": "用途確認待ち",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=FirstC ティアグッズ記念品ギフト オレンジ丸型ポーチ（用途要確認） / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / 用途要確認 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=柄違い / 型番違い / 形状違い / 用途要確認"
           }
         },
@@ -19990,7 +20312,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -20030,7 +20352,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=SWEETBOY 子供パーカー ネイビー×イエロー 130 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
           }
         },
@@ -20283,7 +20605,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "停止",
             "AI次アクション": "空き板を維持",
             "ルーティング状態": "一時停止",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=ポロベア キャンバス トートバッグ POLO BEAR LAUREN / publish_ok=確認待ち / draft_status=一時取り下げ / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=clear / inventory_status=一時取り下げ"
           }
         },
@@ -20432,7 +20754,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -20472,7 +20794,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=首サポーター カバー付き グレー M HJ-GY-M / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
           }
         },
@@ -20559,7 +20881,7 @@ window.ZERO_COST_INTAKE = {
           "next_action": "写真セットを組み直す",
           "barcode_kind": "amazon_internal",
           "review_flag": "FRONT/BACK/CODE が別商品です",
-          "manual_note": "FRONT は黒いカー用品系パッケージ、BACK/CODE は赤いギフト箱（レモンツリーシルバーリングサイズ10）のラベルでした。",
+          "manual_note": "FRONT は X001AIILBV / HJ-GY-M の首サポーター包装で 0020 側、BACK/CODE は赤いギフト箱（X00020VHV9 / 1.1CT レモンクォーツ シルバーリング サイズ10）のラベルでした。リング側は FRONT 相当写真なしのため出品不可。",
           "resolved": {
             "management_id": "BOX-001-ITEM-0021",
             "resolution_status": "provisional",
@@ -20567,7 +20889,7 @@ window.ZERO_COST_INTAKE = {
             "barcode_primary": "X00020VHV9",
             "product_code_type": "amazon_internal",
             "official_image_state": "管理番号再分解待ち / 現写真では1商品に断定不能",
-            "note": "BACK/CODE の2枚で赤いギフト箱とラベル X00020VHV9 / 1.1CT レモンクォーツ / シルバーリング / サイズ10 が一致。一方 FRONT は X001AIILBV / HJ-GY-M の首サポーター包装で、0020 側の商品写真として扱うべき別物。X00020VHV9 はJAN確定ではなく内部管理番号の可能性があるため、番号単独で確定にしない。現写真では1商品に断定不能のため、リング側を provisional に留める。",
+            "note": "BACK/CODE の2枚で赤いギフト箱とラベル X00020VHV9 / 1.1CT レモンクォーツ / シルバーリング / サイズ10 が一致。一方 FRONT は X001AIILBV / HJ-GY-M の首サポーター包装で、0020 側の商品写真として扱うべき別物。リング側は FRONT 相当写真がなく、X00020VHV9 もJAN確定ではなく内部管理番号の可能性があるため、番号単独で確定にしない。現写真では1商品に断定不能のため、リング側を provisional に留める。",
             "evidence": [
               "X00020VHV9",
               "1.1CT",
@@ -20607,7 +20929,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -20826,7 +21148,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [
             {
@@ -20884,7 +21206,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=LE BLANC フェムケアPRO 低刺激 デリケートゾーン 150mL / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
           }
         },
@@ -21016,7 +21338,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -21206,7 +21528,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -21473,7 +21795,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -21756,7 +22078,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [
             {
@@ -21814,7 +22136,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
           }
         },
@@ -21964,7 +22286,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [
             {
@@ -22025,7 +22347,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
             "ルーティング状態": "写真セット組み直し必要",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix"
           }
         },
@@ -22118,8 +22440,8 @@ window.ZERO_COST_INTAKE = {
             "barcode_primary": "X0010CU9L7",
             "product_code_type": "amazon_internal",
             "verified_exact_match": false,
-            "official_image_state": "管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能 / 新管理番号未採番 / 正規性確認待ち / 内容物未確認",
-            "note": "BACK のラベルで X0010CU9L7 / Zukida 車のフック 後部座席 (Red) を確認。Web検索では Zukida 車のフック 電話ホルダー付き系の関連ページと、NO-FE035 の car hook mobile phone holder 流通ページは見つかるが、X0010CU9L7 / Red / NO-FE035 まで一体で一致する公式級根拠は未取得。CODE は car hook mobile phone holder 箱面で NO-FE035 表記があり、同じ車用フック系・同箱候補ではあるが X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT の NO-FE040 とも型番が違うため混ぜない。一方 FRONT は黒/白/緑の厚手ニット靴下またはレッグウォーマー系で別商品。現IDは Zukida anchor を維持するが、現写真では1商品に断定不能のため provisional に留める。",
+            "official_image_state": "管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能 / 新管理番号未採番 / 内容物未確認",
+            "note": "BACK のラベルで X0010CU9L7 / Zukida 車のフック 後部座席 (Red) を確認。2026-04-22 の再検索でも Zukida 車のフック 電話ホルダー付き系の関連ページと、NO-FE035 の car hook mobile phone holder 流通ページは見つかるが、X0010CU9L7 / Red / NO-FE035 まで一体で一致する公式級根拠は未取得。CODE は car hook mobile phone holder 箱面で NO-FE035 表記があり、同じ車用フック系・同箱候補ではあるが X0010CU9L7 を直接裏付けるコード面ではない。0029 FRONT の NO-FE040 とも型番が違うため混ぜない。一方 FRONT は黒/白/緑の厚手ニット靴下またはレッグウォーマー系で別商品。旧Qwen記録に Hello Kitty 誤認があったが、0028 の現在判断には使わない。現IDは Zukida anchor を維持するが、現写真では1商品に断定不能のため provisional に留める。",
             "evidence": [
               "X0010CU9L7",
               "Zukida",
@@ -22135,13 +22457,12 @@ window.ZERO_COST_INTAKE = {
             "exact_match_guard_reasons": [
               "別商品mix",
               "写真セット組み直し必要",
-              "内容物未確認",
-              "真贋確認"
+              "内容物未確認"
             ],
             "qwen_hq_review_status": "resolved",
             "qwen_hq_resolution": "needs_split",
             "qwen_hq_review_at": "2026-04-13 08:25:22 JST",
-            "qwen_hq_review_note": "0028 は FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK=X0010CU9L7 / Zukida 車のフック Red ラベル、CODE=car hook mobile phone holder / NO-FE035 箱面。BACK/CODE は同じ車用フック系・同箱候補だが、NO-FE035 は X0010CU9L7 の直接証拠ではない。現IDは Zukida anchor のまま維持しつつ公開不可。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。"
+            "qwen_hq_review_note": "0028 は FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK=X0010CU9L7 / Zukida 車のフック Red ラベル、CODE=car hook mobile phone holder / NO-FE035 箱面。BACK/CODE は同じ車用フック系・同箱候補だが、NO-FE035 は X0010CU9L7 の直接証拠ではない。旧Qwen記録に Hello Kitty 誤認があったが、0028 の現在判断には使わない。現IDは Zukida anchor のまま維持しつつ公開不可。"
           },
           "official": {
             "management_id": "BOX-001-ITEM-0028",
@@ -22153,23 +22474,22 @@ window.ZERO_COST_INTAKE = {
             "official_image_url": "",
             "image_source": "",
             "verified_exact_match": false,
-            "official_image_state": "管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能 / 新管理番号未採番 / 正規性確認待ち / 内容物未確認",
-            "note": "Qwen 公開前チェック担当: CRITICAL: FRONT/BACK/CODE が別商品 mix 状態（intake_manual_overrides.json で split_required 登録済み） / CRITICAL: Hello Kitty 50TH ANNIVERSARY はサンリオ著作権/商標権関連リスク。正規品出所証明がないと削除・制限対象の可能性 / ほか3件 / HQ 公開前チェック担当: 管理番号の再分解: 0028 は FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK=X0010CU9L7 / Zukida 車のフック Red ラベル、CODE=car hook mobile phone holder / NO-FE035 箱面。BACK/CODE は同じ車用フック系・同箱候補だが NO-FE035 は X0010CU9L7 の直接証拠ではない。現IDは Zukida anchor のまま維持しつつ公開不可。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。",
+            "official_image_state": "管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能 / 新管理番号未採番 / 内容物未確認",
+            "note": "Qwen 公開前チェック担当の旧記録には Hello Kitty 誤認が含まれていたため、HQ current truth で上書き済み。0028 は FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK=X0010CU9L7 / Zukida 車のフック Red ラベル、CODE=car hook mobile phone holder / NO-FE035 箱面。BACK/CODE は同じ車用フック系・同箱候補だが NO-FE035 は X0010CU9L7 の直接証拠ではない。2026-04-22 の再検索でも X0010CU9L7 / Red / NO-FE035 を1本で裏付ける公式級根拠は未取得。現IDは Zukida anchor のまま維持しつつ公開不可。",
             "qwen_last_task_name": "公開前チェック担当",
             "qwen_last_review_at": "2026-04-12 06:38:33 JST",
             "qwen_last_recommended_status": "blocked",
             "qwen_last_source_file": "20260412_063833__-001_BOX-001-ITEM-0028.json",
-            "qwen_last_summary": "CRITICAL: FRONT/BACK/CODE が別商品 mix 状態（intake_manual_overrides.json で split_required 登録済み） / CRITICAL: Hello Kitty 50TH ANNIVERSARY はサンリオ著作権/商標権関連リスク。正規品出所証明がないと削除・制限対象の可能性 / ほか3件",
+            "qwen_last_summary": "旧Qwen summary には Hello Kitty 誤認が含まれていたため HQ current truth で上書き済み。現在は FRONT/BACK/CODE が別商品 mix 状態として扱う。",
             "qwen_hq_review_status": "resolved",
             "qwen_hq_resolution": "needs_split",
             "qwen_hq_review_at": "2026-04-13 08:25:22 JST",
-            "qwen_hq_review_note": "0028 は FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK=X0010CU9L7 / Zukida 車のフック Red ラベル、CODE=car hook mobile phone holder / NO-FE035 箱面。BACK/CODE は同じ車用フック系・同箱候補だが、NO-FE035 は X0010CU9L7 の直接証拠ではない。現IDは Zukida anchor のまま維持しつつ公開不可。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。",
+            "qwen_hq_review_note": "0028 は FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK=X0010CU9L7 / Zukida 車のフック Red ラベル、CODE=car hook mobile phone holder / NO-FE035 箱面。BACK/CODE は同じ車用フック系・同箱候補だが、NO-FE035 は X0010CU9L7 の直接証拠ではない。旧Qwen記録に Hello Kitty 誤認があったが、0028 の現在判断には使わない。現IDは Zukida anchor のまま維持しつつ公開不可。",
             "exact_match_guard_state": "review_required",
             "exact_match_guard_reasons": [
               "別商品mix",
               "写真セット組み直し必要",
-              "内容物未確認",
-              "真贋確認"
+              "内容物未確認"
             ]
           },
           "commerce": {
@@ -22196,24 +22516,23 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
           "display_name": "写真セット組み直し候補: Zukida 車のフック 電話ホルダー付き 後部座席用 Red",
           "product_name": "写真セット組み直し候補: Zukida 車のフック 電話ホルダー付き 後部座席用 Red",
           "verified_exact_match": false,
-          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 正規性確認待ち / 管理番号再分解待ち",
+          "official_image_state": "actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 管理番号再分解待ち",
           "exact_match_guard_state": "review_required",
           "exact_match_guard_reasons": [
             "別商品mix",
             "写真セット組み直し必要",
-            "内容物未確認",
-            "真贋確認"
+            "内容物未確認"
           ],
           "qwen_hq_review_status": "resolved",
           "qwen_hq_resolution": "needs_split",
-          "qwen_hq_review_note": "0028 は FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK=X0010CU9L7 / Zukida 車のフック Red ラベル、CODE=car hook mobile phone holder / NO-FE035 箱面。BACK/CODE は同じ車用フック系・同箱候補だが、NO-FE035 は X0010CU9L7 の直接証拠ではない。現IDは Zukida anchor のまま維持しつつ公開不可。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。",
+          "qwen_hq_review_note": "0028 は FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK=X0010CU9L7 / Zukida 車のフック Red ラベル、CODE=car hook mobile phone holder / NO-FE035 箱面。BACK/CODE は同じ車用フック系・同箱候補だが、NO-FE035 は X0010CU9L7 の直接証拠ではない。旧Qwen記録に Hello Kitty 誤認があったが、0028 の現在判断には使わない。現IDは Zukida anchor のまま維持しつつ公開不可。",
           "publish_status": "下書き",
           "publish_state": "下書き",
           "public_listing_url": "",
@@ -22242,7 +22561,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
             "ルーティング状態": "写真セット組み直し必要",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=写真セット組み直し候補: Zukida 車のフック 電話ホルダー付き 後部座席用 Red / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / 内容物未確認 / 正規性確認待ち / 管理番号再分解待ち / HQレビュー済み / 新管理番号未採番 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=review_required / guard_reasons=別商品mix / 写真セット組み直し必要 / 内容物未確認 / 真贋確認 / qwen_hq=needs_split / 0028 は FRONT=黒/白/緑の厚手ニット靴下またはレッグウォーマー系、BACK=X0010CU9L7 / Zukida 車のフック Red ラベル、CODE=car hook mobile phone holder / NO-FE035 箱面。BACK/CODE は同じ車用フック系・同箱候補だが、NO-FE035 は X0010CU9L7 の直接証拠ではない。現IDは Zukida anchor のまま維持しつつ公開不可。0053 BACK/CODE は Hello Kitty 側候補。0053 FRONT と 0052 BACK/CODE は白箱 X00197BVHJ の同一箱を live 視認確認済みだが、shared sheet / manifest の正式な写真セット組み直しと Hello Kitty 側の正規性確認が終わるまで新管理番号は発番せず公開不可。0052 FRONT は別物。"
           },
           "split_staging": {
@@ -22582,7 +22901,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -22736,7 +23055,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -22906,7 +23225,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -22946,7 +23265,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=LEISURE WEAR ベージュ系レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
           }
         },
@@ -23208,7 +23527,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "precision guard 解消",
             "ルーティング状態": "停止",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=ZUCCA CLUB リラックス リカバリー サンダル / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=色違い / 形状違い / inventory_status=販売中 / listingId=2JPTBkWndxGku2L9EVw4UP"
           }
         },
@@ -23363,7 +23682,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -23406,7 +23725,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
             "ルーティング状態": "写真セット組み直し必要",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=jchinjia リュック メンズ ビジネスリュック 男女兼用 カジュアルバッグ おしゃれ トラベルバッグ / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix"
           }
         },
@@ -23539,7 +23858,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -23712,7 +24031,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -23752,7 +24071,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=Letshe ベビー前開きロンパース ピンク 110cm / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
           }
         },
@@ -23887,7 +24206,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -24121,7 +24440,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -24292,7 +24611,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -24332,7 +24651,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=裏起毛トップス オフホワイト L / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
           }
         },
@@ -24449,7 +24768,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -24753,7 +25072,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -25060,7 +25379,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -25223,7 +25542,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -25531,7 +25850,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -25843,7 +26162,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -26171,7 +26490,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -26214,7 +26533,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
             "ルーティング状態": "写真セット組み直し必要",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=ロゴ刺繍ベースボールキャップ ブラック系 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix"
           }
         },
@@ -26367,7 +26686,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -26410,7 +26729,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
             "ルーティング状態": "写真セット組み直し必要",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=ホワイト レディーストップス M / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix"
           }
         },
@@ -26557,7 +26876,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -26597,7 +26916,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=高視認性安全ベスト 蛍光イエロー / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
           }
         },
@@ -26734,7 +27053,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -27003,7 +27322,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -27274,7 +27593,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [
             {
@@ -27332,7 +27651,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "公開前チェック",
             "AI次アクション": "人確認後にメルカリ投入",
             "ルーティング状態": "人確認待ち",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=CRZ YOGA レギンス 股下24インチ ダークグレー系 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / actual-only固定 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
           }
         },
@@ -27463,7 +27782,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -27603,7 +27922,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -27950,7 +28269,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -28329,7 +28648,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -28374,7 +28693,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
             "ルーティング状態": "写真セット組み直し必要",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=写真セット組み直し候補: Poperdision ブラック 3XL レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / 正規性確認待ち / 管理番号再分解待ち / 新管理番号未採番 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix / 写真セット組み直し必要 / 真贋確認"
           }
         },
@@ -28529,7 +28848,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [
             {
@@ -28591,7 +28910,7 @@ window.ZERO_COST_INTAKE = {
             "低コストAI作業": "商品特定再調査",
             "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
             "ルーティング状態": "写真セット組み直し必要",
-            "更新時刻": "2026-04-22 08:50:03 JST",
+            "更新時刻": "2026-04-22 09:08:44 JST",
             "メモ": "name=写真セット組み直し候補: ATIDIMU 美容液 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / 現写真では1商品に断定不能 / 管理番号再分解待ち / 新管理番号未採番 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=review_required / guard_reasons=別商品mix / 写真セット組み直し必要"
           },
           "split_staging": {
@@ -28898,7 +29217,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -29354,12 +29673,12 @@ window.ZERO_COST_INTAKE = {
             "Ship&co条件": "停止",
             "メルカリ配送": "",
             "人確認": "要",
-            "人確認理由": "画像同一性未確認 / precision guard: 別商品mix / 停止条件あり",
+            "人確認理由": "画像同一性未確認 / precision guard: 別商品mix / 写真セット組み直し必要 / 内容物未確認 / 停止条件あり",
             "低コストAI作業": "比較画像照合",
             "AI次アクション": "写真セットを正しい FRONT/BACK/CODE に組み直す",
             "ルーティング状態": "写真セット組み直し必要",
-            "更新時刻": "2026-04-22 08:50:03 JST",
-            "メモ": "name=JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=別商品mix / inventory_status=販売中 / listingId=2JPSNX6qATG7NwnssYkshh"
+            "更新時刻": "2026-04-22 09:08:44 JST",
+            "メモ": "name=写真セット組み直し候補: JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / 現写真では1商品に断定不能 / 内容物未確認 / 管理番号再分解待ち / 新管理番号未採番 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=review_required / guard_reasons=別商品mix / 写真セット組み直し必要 / 内容物未確認 / inventory_status=販売中 / listingId=2JPSNX6qATG7NwnssYkshh"
           },
           "split_staging": {
             "management_id": "BOX-001-ITEM-0055",
@@ -29608,18 +29927,23 @@ window.ZERO_COST_INTAKE = {
           "resolved": {
             "management_id": "BOX-001-ITEM-0058",
             "resolution_status": "provisional",
-            "product_name": "AUTOMATIC WATER DISPENSER Upgraded Stainless Steel Basin",
+            "product_name": "写真セット組み直し候補: AUTOMATIC WATER DISPENSER Upgraded Stainless Steel Basin",
             "barcode_primary": "",
             "product_code_type": "package_text",
-            "official_image_state": "actual-only固定 / 比較画像なし",
+            "official_image_state": "管理番号再分解待ち / 新管理番号未採番 / 内容物未確認",
             "note": "FRONT/BACK の2枚で AUTOMATIC WATER DISPENSER / Upgraded Stainless Steel Basin / 304 Stainless Steel の箱表示が一致する。CODE 写真は欠けているが、現写真だけで自動給水器の箱と判断できるため actual-only の provisional で扱う。",
             "evidence": [
               "AUTOMATIC WATER DISPENSER",
               "Upgraded Stainless Steel Basin",
               "304 Stainless Steel"
             ],
-            "exact_match_guard_state": "clear",
-            "image_source": "actual-only"
+            "exact_match_guard_state": "review_required",
+            "image_source": "actual-only",
+            "exact_match_guard_reasons": [
+              "別商品mix",
+              "写真セット組み直し必要",
+              "内容物未確認"
+            ]
           },
           "official": {
             "management_id": "BOX-001-ITEM-0058",
@@ -29631,9 +29955,14 @@ window.ZERO_COST_INTAKE = {
             "official_image_url": "",
             "image_source": "actual-only",
             "verified_exact_match": false,
-            "official_image_state": "actual-only固定 / 比較画像なし",
+            "official_image_state": "管理番号再分解待ち / 新管理番号未採番 / 内容物未確認",
             "note": "FRONT/BACK の2枚で AUTOMATIC WATER DISPENSER / Upgraded Stainless Steel Basin / 304 Stainless Steel の箱表示が一致する。CODE 写真はないが、現写真だけで自動給水器の箱と判断できるため、比較画像なしの actual-only で扱う。",
-            "exact_match_guard_state": "clear"
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "別商品mix",
+              "写真セット組み直し必要",
+              "内容物未確認"
+            ]
           },
           "commerce": {
             "management_id": "BOX-001-ITEM-0058",
@@ -29641,12 +29970,12 @@ window.ZERO_COST_INTAKE = {
             "product_id": "PRD-BOX-001-058",
             "draft_id": "DRF-BOX-001-058",
             "research_id": "RES-BOX-001-058",
-            "product_name": "AUTOMATIC WATER DISPENSER Upgraded Stainless Steel Basin",
+            "product_name": "写真セット組み直し候補: AUTOMATIC WATER DISPENSER Upgraded Stainless Steel Basin",
             "brand": "",
             "category": "",
             "barcode_primary": "",
             "product_code_type": "package_text",
-            "listing_title": "AUTOMATIC WATER DISPENSER Upgraded Stainless Steel Basin",
+            "listing_title": "写真セット組み直し候補: AUTOMATIC WATER DISPENSER Upgraded Stainless Steel Basin",
             "listing_price": "",
             "market_floor_price": "",
             "market_floor_state": "未調査",
@@ -29659,15 +29988,19 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
-          "display_name": "AUTOMATIC WATER DISPENSER Upgraded Stainless Steel Basin",
-          "product_name": "AUTOMATIC WATER DISPENSER Upgraded Stainless Steel Basin",
+          "display_name": "写真セット組み直し候補: AUTOMATIC WATER DISPENSER Upgraded Stainless Steel Basin",
+          "product_name": "写真セット組み直し候補: AUTOMATIC WATER DISPENSER Upgraded Stainless Steel Basin",
           "verified_exact_match": false,
-          "official_image_state": "actual-only固定 / 比較画像なし",
-          "exact_match_guard_state": "clear",
+          "official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認 / 管理番号再分解待ち / 現写真では1商品に断定不能",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "写真セット組み直し必要",
+            "内容物未確認"
+          ],
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
@@ -29688,7 +30021,102 @@ window.ZERO_COST_INTAKE = {
             "blocking": false,
             "reason": "CODE写真不足は今回の運用では例外許容とする"
           },
-          "route_plan": {}
+          "route_plan": {},
+          "split_staging": {
+            "management_id": "BOX-001-ITEM-0058",
+            "stage_status": "partial_manifest_child_minted",
+            "plan_summary": "0058 FRONT/BACK は AUTOMATIC WATER DISPENSER / Upgraded Stainless Steel Basin / 304 Stainless Steel の給水器箱で揃う。0057 CODE は B09NG1PLHK / RIZZARI 9L自動給水器 ブラックのラベルで、撮影元ファイルも IMG_5003 → IMG_5004 → IMG_5005 と連番接続しているため、0058 箱の CODE ずれとして local child 化する。 / SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER=BOX-001-ITEM-0070 のローカル写真セットを作成済み / SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER=BOX-001-ITEM-0070 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "ui_summary": "0058 FRONT/BACK は同一の給水器箱。0057 CODE は RIZZARI 9L自動給水器ラベル。0058 単体は CODE 欠けだが、0058 FRONT/BACK + 0057 CODE で coherent な3枚束に再構成できる。 / SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER=BOX-001-ITEM-0070 のローカル写真セットを作成済み / SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER=BOX-001-ITEM-0070 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "operator_summary": "BOX-001-ITEM-0058 は CODE 欠けで例外許容のまま止めていたが、実物再照合で 0057 CODE の B09NG1PLHK / RIZZARI 9L自動給水器 ブラック ラベルが同じ給水器箱側のものと判断できる。0058 FRONT/BACK の AUTOMATIC WATER DISPENSER / Upgraded Stainless Steel Basin / 304 Stainless Steel 表示、0057 CODE の商品ラベル、撮影連番 IMG_5003 → IMG_5004 → IMG_5005 を根拠に、RIZZARI 側だけ local child へ切り出す。B09NG1PLHK は ASIN として扱い、出品画像は実物のみで扱う。 / SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER=BOX-001-ITEM-0070 のローカル写真セットを作成済み / SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER=BOX-001-ITEM-0070 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_note": "0058 FRONT/BACK + 0057 CODE は RIZZARI 9L自動給水器側として coherent。親 0057 は JODSONE 箱2枚 + 給水器ラベル1枚の raw parent のまま維持し、親 0058 も raw parent として残す。 / SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER=BOX-001-ITEM-0070 のローカル写真セットを作成済み / SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER=BOX-001-ITEM-0070 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "routing_next_action": "SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER を local mint → local confirmed / official へ provisional actual-only / 内容物未確認で反映。親 0057 / 0058 は raw parent のまま維持。 / BOX-001-ITEM-0070 は管理表 / 出品判断の止めどころを決めてから正式反映",
+            "related_management_ids": [
+              "BOX-001-ITEM-0057",
+              "BOX-001-ITEM-0058"
+            ],
+            "source_trace": [
+              {
+                "management_id": "BOX-001-ITEM-0058",
+                "slot": "FRONT",
+                "observed_as": "AUTOMATIC WATER DISPENSER / Upgraded Stainless Steel Basin / 304 Stainless Steel の箱 FRONT"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0058",
+                "slot": "BACK",
+                "observed_as": "同一給水器箱の側面。給水器シルエット一致"
+              },
+              {
+                "management_id": "BOX-001-ITEM-0057",
+                "slot": "CODE",
+                "observed_as": "B09NG1PLHK / 新品-RIZZARI 9L自動給水器、猫・中型犬・大型犬用（ブラック,9L）ラベル面"
+              }
+            ],
+            "blocked_split_children": [
+              {
+                "temporary_split_id": "SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER",
+                "target_label": "RIZZARI 9L自動給水器 ブラック",
+                "source_slots": [
+                  "BOX-001-ITEM-0058:FRONT",
+                  "BOX-001-ITEM-0058:BACK",
+                  "BOX-001-ITEM-0057:CODE"
+                ],
+                "status": "manifest_child_minted_local_only",
+                "blockers": [
+                  "ローカル写真一覧へ作成済み。共有管理表 / 管理表への反映は別フェーズ。",
+                  "0058 FRONT/BACK は AUTOMATIC WATER DISPENSER / Upgraded Stainless Steel Basin / 304 Stainless Steel で同一箱として一致する",
+                  "0057 CODE は B09NG1PLHK / 新品-RIZZARI 9L自動給水器、猫・中型犬・大型犬用（ブラック,9L）ラベルで、0058 箱と商品種別が一致する",
+                  "撮影元ファイルが IMG_5003 → IMG_5004 → IMG_5005 と連番で接続しており、0058 CODE 欠けの補完候補として妥当",
+                  "B09NG1PLHK は JAN ではなく ASIN として扱う",
+                  "本体そのものは箱内で見えていないため、ローカル特定結果へは内容物未確認で反映する",
+                  "ローカル写真セット作成後も、共有管理表 / 管理表 / 出品判断は別フェーズで止める",
+                  "ローカル特定結果へ暫定・実物写真のみで反映済み。共有管理表 / 管理表 / 出品判断は別フェーズ。"
+                ],
+                "truth_product_name": "RIZZARI 9L自動給水器 ブラック（内容物未確認）",
+                "truth_barcode_primary": "B09NG1PLHK",
+                "truth_product_code_type": "asin",
+                "truth_content_unknown": true,
+                "truth_official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+                "truth_exact_match_guard_state": "review_required",
+                "truth_exact_match_guard_reasons": [
+                  "内容物未確認"
+                ],
+                "truth_evidence": [
+                  "B09NG1PLHK",
+                  "RIZZARI",
+                  "9L自動給水器",
+                  "ブラック",
+                  "AUTOMATIC WATER DISPENSER",
+                  "Upgraded Stainless Steel Basin",
+                  "304 Stainless Steel",
+                  "0058:FRONT + 0058:BACK + 0057:CODE",
+                  "IMG_5003 → IMG_5004 → IMG_5005",
+                  "本体そのものは箱内で未確認",
+                  "内容物未確認"
+                ],
+                "truth_brand_override": "RIZZARI",
+                "truth_category_override": "ペット用品 > 犬用品 > 食器・餌やり・水やり用品 > 給水器",
+                "truth_check_items_override": "本体有無 / タンク割れ / ステンレス皿 / 付属フィルター有無 / キャップ有無 / 箱状態",
+                "truth_note": "SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER は、0058:FRONT/BACK と 0057:CODE の3枚で B09NG1PLHK / RIZZARI 9L自動給水器 ブラックを実物3枚で確認できる写真セット。0058 FRONT/BACK では AUTOMATIC WATER DISPENSER / Upgraded Stainless Steel Basin / 304 Stainless Steel の箱表示が一致し、0057 CODE では B09NG1PLHK / 新品-RIZZARI 9L自動給水器、猫・中型犬・大型犬用（ブラック,9L）ラベルを確認。撮影元ファイルも IMG_5003 → IMG_5004 → IMG_5005 と連番接続しており、同一給水器箱の CODE ずれと判断する。B09NG1PLHK は ASIN として扱い、出品画像は実物のみで扱う。本体そのものは箱内で見えていないため、ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映し、管理表 / 出品判断は別フェーズ。",
+                "minted_management_id": "BOX-001-ITEM-0070",
+                "minted_at": "2026-04-22 09:44:43 JST",
+                "minted_scope": "local_manifest_only",
+                "minted_note": "ローカル写真一覧へ作成済み。管理表 / 特定結果 / 比較画像候補への反映は別フェーズで行う。",
+                "truth_promotion_scope": "local_confirmed_official_only",
+                "truth_promoted_management_id": "BOX-001-ITEM-0070",
+                "truth_promotion_note": "ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映済み。管理表 / 出品判断は別フェーズで行う。",
+                "truth_promoted_at": "2026-04-22 09:49:49 JST"
+              }
+            ],
+            "remaining_blockers": [
+              "RIZZARI child を local child として切り出しても、共有管理表 / 管理表 / 出品判断は別フェーズ",
+              "SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER=BOX-001-ITEM-0070 のローカル写真セットは作成済み。共有管理表 / 管理表 / 特定結果への反映は別フェーズ。",
+              "白箱 X00197BVHJ 側の BOX-001-ITEM-0059 はローカル特定結果まで反映済み。 共有管理表 / 管理表 / 出品判断は別フェーズ。"
+            ],
+            "safe_next_step": "SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER を local mint → local confirmed / official へ provisional actual-only / 内容物未確認で反映。親 0057 / 0058 は raw parent のまま維持する。 / SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER=BOX-001-ITEM-0070 のローカル写真セットを作成済み / SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER=BOX-001-ITEM-0070 をローカル特定結果へ暫定・実物写真のみで反映済み",
+            "match_role": "primary"
+          },
+          "split_plan_summary": "0058 FRONT/BACK は同一の給水器箱。0057 CODE は RIZZARI 9L自動給水器ラベル。0058 単体は CODE 欠けだが、0058 FRONT/BACK + 0057 CODE で coherent な3枚束に再構成できる。 / SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER=BOX-001-ITEM-0070 のローカル写真セットを作成済み / SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER=BOX-001-ITEM-0070 をローカル特定結果へ暫定・実物写真のみで反映済み",
+          "split_plan_role": "primary"
         },
         {
           "management_id": "BOX-001-ITEM-0059",
@@ -29864,7 +30292,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -30058,7 +30486,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -30260,7 +30688,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -30455,7 +30883,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -30644,7 +31072,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -30836,7 +31264,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -31031,7 +31459,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -31224,7 +31652,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -31437,7 +31865,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -31648,7 +32076,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
@@ -31863,7 +32291,223 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-22 09:00:19 JST"
+            "updated_at": "2026-04-22 09:44:43 JST"
+          },
+          "comparison_images": [],
+          "reference_images": [],
+          "verified_exact_match": false,
+          "official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+          "exact_match_guard_state": "review_required",
+          "exact_match_guard_reasons": [
+            "内容物未確認"
+          ],
+          "qwen_hq_review_status": "",
+          "qwen_hq_resolution": "",
+          "qwen_hq_review_note": "",
+          "publish_status": "下書き準備中",
+          "publish_state": "下書き準備中",
+          "public_listing_url": "",
+          "listing_id": "",
+          "comparison_image_ref": "",
+          "reference_image_ref": "",
+          "minimum_price": "",
+          "market_floor_price_label": "未調査",
+          "listing_price": "2780",
+          "exception": {},
+          "route_plan": {}
+        },
+        {
+          "management_id": "BOX-001-ITEM-0070",
+          "box_id": "BOX-001",
+          "sequence": 70,
+          "status": "complete",
+          "missing_slots": [],
+          "slot_count": 3,
+          "slots": [
+            {
+              "slot": "FRONT",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_5004.HEIC",
+              "source_name": "IMG_5004.HEIC",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0070/01_FRONT_IMG_5004.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0070/01_FRONT_IMG_5004.jpg",
+              "resident_url": "./assets/intake/BOX-001-ITEM-0070/01_FRONT_IMG_5004.jpg",
+              "rebundled_from": "BOX-001-ITEM-0058:FRONT"
+            },
+            {
+              "slot": "BACK",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_5005.HEIC",
+              "source_name": "IMG_5005.HEIC",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0070/02_BACK_IMG_5005.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0070/02_BACK_IMG_5005.jpg",
+              "resident_url": "./assets/intake/BOX-001-ITEM-0070/02_BACK_IMG_5005.jpg",
+              "rebundled_from": "BOX-001-ITEM-0058:BACK"
+            },
+            {
+              "slot": "CODE",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/写真データ230404/IMG_5003.HEIC",
+              "source_name": "IMG_5003.HEIC",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-001-ITEM-0070/03_CODE_IMG_5003.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-001-ITEM-0070/03_CODE_IMG_5003.jpg",
+              "resident_url": "./assets/intake/BOX-001-ITEM-0070/03_CODE_IMG_5003.jpg",
+              "rebundled_from": "BOX-001-ITEM-0057:CODE"
+            }
+          ],
+          "shared_sheet_title_value": "BOX-001-ITEM-0070",
+          "shared_sheet_note": "SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER からローカル写真セットを作成",
+          "photo_grouping": "split_child_mint",
+          "grouping_warning": "",
+          "product_name": "RIZZARI 9L自動給水器 ブラック（内容物未確認）",
+          "display_name": "RIZZARI 9L自動給水器 ブラック（内容物未確認）",
+          "split_child_label": "RIZZARI 9L自動給水器 ブラック",
+          "split_temporary_id": "SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER",
+          "split_source_slots": [
+            "BOX-001-ITEM-0058:FRONT",
+            "BOX-001-ITEM-0058:BACK",
+            "BOX-001-ITEM-0057:CODE"
+          ],
+          "split_status": "manifest_child_minted_local_only",
+          "box_label": "数字箱 001",
+          "box_lane": "numeric",
+          "box_code": "001",
+          "identification": {
+            "state": "バーコード候補あり",
+            "barcode_values": [
+              "B09NG1PLHK"
+            ],
+            "front_back_texts": [
+              "AUTOMATIC WATER",
+              "DISPENSER",
+              "Upgraded Stainless Steel Basin",
+              "304 Stainless Steel",
+              "Drinking Water is Healthier",
+              "M"
+            ],
+            "code_texts": [
+              "B09NG1PLHK",
+              "新品-RIZZARI 9L自動給水器、猫・中型犬・大型大用（ブラック.9L）"
+            ],
+            "ocr_texts": [
+              "AUTOMATIC WATER",
+              "DISPENSER",
+              "Upgraded Stainless Steel Basin",
+              "304 Stainless Steel",
+              "Drinking Water is Healthier",
+              "M"
+            ],
+            "candidate_query": "AUTOMATIC WATER DISPENSER Upgraded Stainless Steel Basin 304 Stainless Steel",
+            "review_flag": "",
+            "ocr_engine": "vision + sauna_tesseract_multistage",
+            "ocr_debug_paths": [
+              "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-001-ITEM-0058/IMG_5005_BACK_ocr_best.png"
+            ]
+          },
+          "priority_score": 110,
+          "next_action": "本体表示とコードラベルを突合",
+          "barcode_kind": "asin",
+          "review_flag": "本体表示とコードラベルの不一致疑い",
+          "resolved": {
+            "management_id": "BOX-001-ITEM-0070",
+            "raw_id": "RAW-BOX-001-070",
+            "product_id": "PRD-BOX-001-070",
+            "draft_id": "DRF-BOX-001-070",
+            "research_id": "RES-BOX-001-070",
+            "split_temporary_id": "SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER",
+            "split_source_slots": [
+              "BOX-001-ITEM-0058:FRONT",
+              "BOX-001-ITEM-0058:BACK",
+              "BOX-001-ITEM-0057:CODE"
+            ],
+            "verified_exact_match": false,
+            "official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+            "note": "SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER は、0058:FRONT/BACK と 0057:CODE の3枚で B09NG1PLHK / RIZZARI 9L自動給水器 ブラックを実物3枚で確認できる写真セット。0058 FRONT/BACK では AUTOMATIC WATER DISPENSER / Upgraded Stainless Steel Basin / 304 Stainless Steel の箱表示が一致し、0057 CODE では B09NG1PLHK / 新品-RIZZARI 9L自動給水器、猫・中型犬・大型犬用（ブラック,9L）ラベルを確認。撮影元ファイルも IMG_5003 → IMG_5004 → IMG_5005 と連番接続しており、同一給水器箱の CODE ずれと判断する。B09NG1PLHK は ASIN として扱い、出品画像は実物のみで扱う。本体そのものは箱内で見えていないため、ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映し、管理表 / 出品判断は別フェーズ。",
+            "image_source": "actual-only",
+            "exact_match_guard_state": "review_required",
+            "official_page_url": "",
+            "official_image_url": "",
+            "official_image_local": "",
+            "supplemental_url": "",
+            "supplemental_image_urls": [],
+            "supplemental_image_locals": [],
+            "exact_match_guard_reasons": [
+              "内容物未確認"
+            ],
+            "resolution_status": "provisional",
+            "product_name": "RIZZARI 9L自動給水器 ブラック（内容物未確認）",
+            "barcode_primary": "B09NG1PLHK",
+            "product_code_type": "asin",
+            "evidence": [
+              "B09NG1PLHK",
+              "RIZZARI",
+              "9L自動給水器",
+              "ブラック",
+              "AUTOMATIC WATER DISPENSER",
+              "Upgraded Stainless Steel Basin",
+              "304 Stainless Steel",
+              "0058:FRONT + 0058:BACK + 0057:CODE",
+              "IMG_5003 → IMG_5004 → IMG_5005",
+              "本体そのものは箱内で未確認",
+              "内容物未確認"
+            ],
+            "brand_override": "RIZZARI",
+            "category_override": "ペット用品 > 犬用品 > 食器・餌やり・水やり用品 > 給水器",
+            "price_override": 2780,
+            "check_items_override": "本体有無 / タンク割れ / ステンレス皿 / 付属フィルター有無 / キャップ有無 / 箱状態"
+          },
+          "official": {
+            "management_id": "BOX-001-ITEM-0070",
+            "raw_id": "RAW-BOX-001-070",
+            "product_id": "PRD-BOX-001-070",
+            "draft_id": "DRF-BOX-001-070",
+            "research_id": "RES-BOX-001-070",
+            "split_temporary_id": "SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER",
+            "split_source_slots": [
+              "BOX-001-ITEM-0058:FRONT",
+              "BOX-001-ITEM-0058:BACK",
+              "BOX-001-ITEM-0057:CODE"
+            ],
+            "verified_exact_match": false,
+            "official_image_state": "actual-only固定 / 比較画像なし / 内容物未確認",
+            "note": "SPLIT-BOX-001-0058-RIZZARI-WATER-DISPENSER は、0058:FRONT/BACK と 0057:CODE の3枚で B09NG1PLHK / RIZZARI 9L自動給水器 ブラックを実物3枚で確認できる写真セット。0058 FRONT/BACK では AUTOMATIC WATER DISPENSER / Upgraded Stainless Steel Basin / 304 Stainless Steel の箱表示が一致し、0057 CODE では B09NG1PLHK / 新品-RIZZARI 9L自動給水器、猫・中型犬・大型犬用（ブラック,9L）ラベルを確認。撮影元ファイルも IMG_5003 → IMG_5004 → IMG_5005 と連番接続しており、同一給水器箱の CODE ずれと判断する。B09NG1PLHK は ASIN として扱い、出品画像は実物のみで扱う。本体そのものは箱内で見えていないため、ローカル特定結果へ暫定・実物写真のみ・内容物未確認で反映し、管理表 / 出品判断は別フェーズ。",
+            "image_source": "actual-only",
+            "exact_match_guard_state": "review_required",
+            "official_page_url": "",
+            "official_image_url": "",
+            "official_image_local": "",
+            "supplemental_url": "",
+            "supplemental_image_urls": [],
+            "supplemental_image_locals": [],
+            "exact_match_guard_reasons": [
+              "内容物未確認"
+            ]
+          },
+          "commerce": {
+            "management_id": "BOX-001-ITEM-0070",
+            "raw_id": "RAW-BOX-001-070",
+            "product_id": "PRD-BOX-001-070",
+            "draft_id": "DRF-BOX-001-070",
+            "research_id": "RES-BOX-001-070",
+            "product_name": "RIZZARI 9L自動給水器 ブラック（内容物未確認）",
+            "brand": "RIZZARI",
+            "category": "ペット用品 > 犬用品 > 食器・餌やり・水やり用品 > 給水器",
+            "barcode_primary": "B09NG1PLHK",
+            "product_code_type": "asin",
+            "listing_title": "RIZZARI 9L自動給水器 ブラック（内容物未確認）",
+            "listing_price": "2780",
+            "market_floor_price": "",
+            "market_floor_state": "未調査",
+            "market_source_label": "",
+            "market_source_url": "",
+            "market_checked_at": "",
+            "market_note": "",
+            "publish_state": "下書き準備中",
+            "publish_detail": "",
+            "listing_id": "",
+            "public_listing_url": "",
+            "csv_status": "",
+            "updated_at": "2026-04-22 09:44:43 JST"
           },
           "comparison_images": [],
           "reference_images": [],
