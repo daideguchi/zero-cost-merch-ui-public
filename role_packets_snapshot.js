@@ -1,5 +1,5 @@
 window.ZERO_COST_ROLE_PACKETS = {
-  "generated_at": "2026-04-22 09:49:57 JST",
+  "generated_at": "2026-04-23 07:34:28 JST",
   "business_name": "0円仕入れ物販事業",
   "meta": {
     "resident_url": "./roles.html",
@@ -16,16 +16,16 @@ window.ZERO_COST_ROLE_PACKETS = {
   },
   "counts": {
     "confirmed": 2,
-    "provisional": 68,
+    "provisional": 73,
     "official_image_pending": 0,
     "draft_ready": 19,
     "published": 9,
     "inquiry_open": 0,
     "barcode_ready": 0,
     "ocr_ready": 0,
-    "split_required": 21,
+    "split_required": 22,
     "exception": 2,
-    "exact_pending": 68,
+    "exact_pending": 73,
     "official_pending": 10,
     "market_priced": 5,
     "market_pending": 53,
@@ -33,11 +33,11 @@ window.ZERO_COST_ROLE_PACKETS = {
     "category_review_waiting": 1,
     "routing_total": 36,
     "image_review_waiting": 1,
-    "publish_gate_waiting": 15,
-    "base_ready_routing": 17,
+    "publish_gate_waiting": 16,
+    "base_ready_routing": 22,
     "qwen_review_pending": 0,
     "qwen_review_resolved": 2,
-    "hq_blocked": 0,
+    "hq_blocked": 1,
     "exact_confirmed": 2
   },
   "packets": [
@@ -51,11 +51,11 @@ window.ZERO_COST_ROLE_PACKETS = {
         "draft_ready": 19,
         "pickup_pending": 0,
         "image_review_waiting": 1,
-        "publish_gate_waiting": 15,
+        "publish_gate_waiting": 16,
         "qwen_review_pending": 0,
         "qwen_review_resolved": 2,
-        "split_required": 21,
-        "hq_blocked": 0
+        "split_required": 22,
+        "hq_blocked": 1
       },
       "target_ids": [
         "BOX-001-ITEM-0004",
@@ -114,17 +114,20 @@ window.ZERO_COST_ROLE_PACKETS = {
         "BOX-001-ITEM-0003",
         "BOX-001-ITEM-0004"
       ],
+      "blocked_ids": [
+        "BOX-001-ITEM-0002"
+      ],
       "split_required_ids": [
         "BOX-001-ITEM-0028",
-        "BOX-001-ITEM-0034",
-        "BOX-001-ITEM-0030",
-        "BOX-001-ITEM-0052",
+        "BOX-001-ITEM-0049",
+        "BOX-001-ITEM-0039",
         "BOX-001-ITEM-0053",
-        "BOX-001-ITEM-0056",
-        "BOX-001-ITEM-0025",
-        "BOX-001-ITEM-0048"
+        "BOX-001-ITEM-0044",
+        "BOX-001-ITEM-0036",
+        "BOX-001-ITEM-0021",
+        "BOX-001-ITEM-0022"
       ],
-      "launch_prompt": "あなたは 0円仕入れ物販事業の 0円出品部長 です。\nゴール: ショップ運営を優先し、問い合わせ・公開済み監査・審査待ち・下書き待ちを各担当へ振って resident と Git の整合まで持つ\n必ず見るもの:\n- README.md\n- docs/12_ルーティン運用マニュアル.md\n- docs/14_AI担当役職と起動プロンプト集.md\n- docs/16_UI起動パケット仕様.md\n制約:\n- 100%同一確認済みでない比較画像を出品画像へ上げない\n- README・resident・Z-98・Git を最後に必ずそろえる\n必要なら次の担当へ振ってください:\n- 商品特定担当\n- 比較画像精査担当\n- 相場調査担当\n- 出品下書き担当\n- API公開担当\n- 問い合わせ対応担当\n- 集荷運用担当\n次の条件では上位AIへ引き継いでください:\n- 顧客対応が絡む時\n- 商品同一性の断定に迷う時\n- カテゴリ審査や API 異常が絡む時\nいま優先して見るID:\n- BOX-001-ITEM-0001\n- BOX-001-ITEM-0013\n- BOX-001-ITEM-0026\n- BOX-001-ITEM-0027\n- BOX-001-ITEM-0032\n- BOX-001-ITEM-0034\n- BOX-001-ITEM-0003\n- BOX-001-ITEM-0004\n写真セット組み直しが必要なID:\n- BOX-001-ITEM-0028\n- BOX-001-ITEM-0034\n- BOX-001-ITEM-0030\n- BOX-001-ITEM-0052\n- BOX-001-ITEM-0053\n- BOX-001-ITEM-0056\n- BOX-001-ITEM-0025\n- BOX-001-ITEM-0048\n今回の対象ID:\n- BOX-001-ITEM-0004\n- BOX-001-ITEM-0005\n- BOX-001-ITEM-0008\n- BOX-001-ITEM-0009\n- BOX-001-ITEM-0011\n- BOX-001-ITEM-0012\n期待する出力:\n- 今の件数\n- 次に進める商品ID\n- どの担当へ何を振るか\n- 更新した正本\n最後に resident・README・Z-98・Git をそろえてください。"
+      "launch_prompt": "あなたは 0円仕入れ物販事業の 0円出品部長 です。\nゴール: ショップ運営を優先し、問い合わせ・公開済み監査・審査待ち・下書き待ちを各担当へ振って resident と Git の整合まで持つ\n必ず見るもの:\n- README.md\n- docs/12_ルーティン運用マニュアル.md\n- docs/14_AI担当役職と起動プロンプト集.md\n- docs/16_UI起動パケット仕様.md\n制約:\n- 100%同一確認済みでない比較画像を出品画像へ上げない\n- README・resident・Z-98・Git を最後に必ずそろえる\n必要なら次の担当へ振ってください:\n- 商品特定担当\n- 比較画像精査担当\n- 相場調査担当\n- 出品下書き担当\n- API公開担当\n- 問い合わせ対応担当\n- 集荷運用担当\n次の条件では上位AIへ引き継いでください:\n- 顧客対応が絡む時\n- 商品同一性の断定に迷う時\n- カテゴリ審査や API 異常が絡む時\nいま優先して見るID:\n- BOX-001-ITEM-0001\n- BOX-001-ITEM-0013\n- BOX-001-ITEM-0026\n- BOX-001-ITEM-0027\n- BOX-001-ITEM-0032\n- BOX-001-ITEM-0034\n- BOX-001-ITEM-0003\n- BOX-001-ITEM-0004\nHQ差し止め中のID:\n- BOX-001-ITEM-0002\n写真セット組み直しが必要なID:\n- BOX-001-ITEM-0028\n- BOX-001-ITEM-0049\n- BOX-001-ITEM-0039\n- BOX-001-ITEM-0053\n- BOX-001-ITEM-0044\n- BOX-001-ITEM-0036\n- BOX-001-ITEM-0021\n- BOX-001-ITEM-0022\n今回の対象ID:\n- BOX-001-ITEM-0004\n- BOX-001-ITEM-0005\n- BOX-001-ITEM-0008\n- BOX-001-ITEM-0009\n- BOX-001-ITEM-0011\n- BOX-001-ITEM-0012\n期待する出力:\n- 今の件数\n- 次に進める商品ID\n- どの担当へ何を振るか\n- 更新した正本\n最後に resident・README・Z-98・Git をそろえてください。"
     },
     {
       "role_name": "商品特定担当",
@@ -132,7 +135,7 @@ window.ZERO_COST_ROLE_PACKETS = {
       "current_counts": {
         "barcode_ready": 0,
         "ocr_ready": 0,
-        "split_required": 21,
+        "split_required": 22,
         "exception": 2
       },
       "target_ids": [],
@@ -214,7 +217,7 @@ window.ZERO_COST_ROLE_PACKETS = {
       "current_counts": {
         "priced": 5,
         "market_pending": 8,
-        "provisional": 68
+        "provisional": 73
       },
       "target_ids": [
         "BOX-001-ITEM-0001",
@@ -257,7 +260,7 @@ window.ZERO_COST_ROLE_PACKETS = {
       "current_counts": {
         "draft_ready": 19,
         "confirmed": 2,
-        "provisional": 68
+        "provisional": 73
       },
       "target_ids": [
         "BOX-001-ITEM-0001",
@@ -307,9 +310,9 @@ window.ZERO_COST_ROLE_PACKETS = {
       "target_ids": [
         "BOX-001-ITEM-0001",
         "BOX-001-ITEM-0003",
+        "BOX-001-ITEM-0005",
         "BOX-001-ITEM-0007",
-        "BOX-001-ITEM-0009",
-        "BOX-001-ITEM-0015"
+        "BOX-001-ITEM-0009"
       ],
       "must_read": [
         "docs/09_公開から集荷までの自動化設計.md",
@@ -338,7 +341,7 @@ window.ZERO_COST_ROLE_PACKETS = {
         "API がエラーを返す時",
         "カテゴリ審査待ちと API 不良の切り分けが必要な時"
       ],
-      "launch_prompt": "あなたは 0円仕入れ物販事業の API公開担当 です。\nゴール: seller session GraphQL API で公開し、listing_id と公開URLを残す\n必ず見るもの:\n- docs/09_公開から集荷までの自動化設計.md\n- state/mercari_api_status.json\n- README.md\n制約:\n- actual-only 画像ポリシーを守る\n- カテゴリ審査待ちと API 不良を混同しない\n次の条件では上位AIへ引き継いでください:\n- API がエラーを返す時\n- カテゴリ審査待ちと API 不良の切り分けが必要な時\n今回の対象ID:\n- BOX-001-ITEM-0001\n- BOX-001-ITEM-0003\n- BOX-001-ITEM-0007\n- BOX-001-ITEM-0009\n- BOX-001-ITEM-0015\n期待する出力:\n- listing_id\n- public_url\n- image_check_result\n最後に resident・README・Z-98・Git をそろえてください。"
+      "launch_prompt": "あなたは 0円仕入れ物販事業の API公開担当 です。\nゴール: seller session GraphQL API で公開し、listing_id と公開URLを残す\n必ず見るもの:\n- docs/09_公開から集荷までの自動化設計.md\n- state/mercari_api_status.json\n- README.md\n制約:\n- actual-only 画像ポリシーを守る\n- カテゴリ審査待ちと API 不良を混同しない\n次の条件では上位AIへ引き継いでください:\n- API がエラーを返す時\n- カテゴリ審査待ちと API 不良の切り分けが必要な時\n今回の対象ID:\n- BOX-001-ITEM-0001\n- BOX-001-ITEM-0003\n- BOX-001-ITEM-0005\n- BOX-001-ITEM-0007\n- BOX-001-ITEM-0009\n期待する出力:\n- listing_id\n- public_url\n- image_check_result\n最後に resident・README・Z-98・Git をそろえてください。"
     },
     {
       "role_name": "問い合わせ対応担当",
@@ -430,7 +433,7 @@ window.ZERO_COST_ROLE_PACKETS = {
       "current_counts": {
         "barcode_ready": 0,
         "ocr_ready": 0,
-        "split_required": 21
+        "split_required": 22
       },
       "target_ids": [],
       "input_fields": [
@@ -479,7 +482,7 @@ window.ZERO_COST_ROLE_PACKETS = {
       "role_name": "低コストAI",
       "goal": "比較画像候補を集めて、同一性判断の材料だけを残す",
       "current_counts": {
-        "exact_pending": 68,
+        "exact_pending": 73,
         "official_image_pending": 0
       },
       "target_ids": [
@@ -585,18 +588,18 @@ window.ZERO_COST_ROLE_PACKETS = {
       "role_name": "低コストAI",
       "goal": "公開可否確認待ちの商品を、出品前チェックの材料だけに整理する",
       "current_counts": {
-        "publish_gate_waiting": 15,
+        "publish_gate_waiting": 16,
         "draft_ready": 19
       },
       "target_ids": [
         "BOX-001-ITEM-0003",
         "BOX-001-ITEM-0007",
+        "BOX-001-ITEM-0010",
         "BOX-001-ITEM-0013",
         "BOX-001-ITEM-0015",
         "BOX-001-ITEM-0016",
         "BOX-001-ITEM-0018",
-        "BOX-001-ITEM-0020",
-        "BOX-001-ITEM-0022"
+        "BOX-001-ITEM-0020"
       ],
       "input_fields": [
         "management_id",
@@ -640,14 +643,14 @@ window.ZERO_COST_ROLE_PACKETS = {
       "job_target_ids": [
         "BOX-001-ITEM-0003",
         "BOX-001-ITEM-0007",
+        "BOX-001-ITEM-0010",
         "BOX-001-ITEM-0013",
         "BOX-001-ITEM-0015",
         "BOX-001-ITEM-0016",
         "BOX-001-ITEM-0018",
-        "BOX-001-ITEM-0020",
-        "BOX-001-ITEM-0022"
+        "BOX-001-ITEM-0020"
       ],
-      "launch_prompt": "あなたは 0円仕入れ物販事業の 公開前チェック担当 です。\nあなたのAI層は 低コストAI です。\nゴール: 公開可否確認待ちの商品を、出品前チェックの材料だけに整理する\n今回の batch_size: 3\n今回の対象ID:\n- BOX-001-ITEM-0003\n- BOX-001-ITEM-0007\n- BOX-001-ITEM-0013\n- BOX-001-ITEM-0015\n- BOX-001-ITEM-0016\n- BOX-001-ITEM-0018\n- BOX-001-ITEM-0020\n- BOX-001-ITEM-0022\n入力として見るもの:\n- management_id\n- product_name\n- publish_ok\n- draft_status\n- image_gate\n- routing_reason\n書き戻してよい場所:\n- zero_cost_merch_branch/state/routing_plan.json\n- zero_cost_merch_branch/state/qwen_runs/\nやってはいけないこと:\n- 公開可 と断定しない\n- 出品や API 公開を実行しない\n- 顧客対応をしない\n- 100%同一確認済み を勝手に付けない\n- 問い合わせへ直接返答しない\n次に当てはまったら止めて上位AIへ渡してください:\n- 画像同一性が未確認\n- 説明文や価格に誤認リスクがある\n- カテゴリ審査や規制確認が必要になる\n期待する出力:\n- preflight_checklist\n- risk_flags\n- hq_review_note\n最後に README・resident・Z-98・Git のうち、自分に許可された更新だけをそろえてください。"
+      "launch_prompt": "あなたは 0円仕入れ物販事業の 公開前チェック担当 です。\nあなたのAI層は 低コストAI です。\nゴール: 公開可否確認待ちの商品を、出品前チェックの材料だけに整理する\n今回の batch_size: 3\n今回の対象ID:\n- BOX-001-ITEM-0003\n- BOX-001-ITEM-0007\n- BOX-001-ITEM-0010\n- BOX-001-ITEM-0013\n- BOX-001-ITEM-0015\n- BOX-001-ITEM-0016\n- BOX-001-ITEM-0018\n- BOX-001-ITEM-0020\n入力として見るもの:\n- management_id\n- product_name\n- publish_ok\n- draft_status\n- image_gate\n- routing_reason\n書き戻してよい場所:\n- zero_cost_merch_branch/state/routing_plan.json\n- zero_cost_merch_branch/state/qwen_runs/\nやってはいけないこと:\n- 公開可 と断定しない\n- 出品や API 公開を実行しない\n- 顧客対応をしない\n- 100%同一確認済み を勝手に付けない\n- 問い合わせへ直接返答しない\n次に当てはまったら止めて上位AIへ渡してください:\n- 画像同一性が未確認\n- 説明文や価格に誤認リスクがある\n- カテゴリ審査や規制確認が必要になる\n期待する出力:\n- preflight_checklist\n- risk_flags\n- hq_review_note\n最後に README・resident・Z-98・Git のうち、自分に許可された更新だけをそろえてください。"
     },
     {
       "task_name": "審査監視担当",
@@ -704,7 +707,7 @@ window.ZERO_COST_ROLE_PACKETS = {
       "role_name": "低コストAI",
       "goal": "BASE 側へ流せる商品を、同期材料だけに整理する",
       "current_counts": {
-        "base_ready_routing": 17
+        "base_ready_routing": 22
       },
       "target_ids": [],
       "input_fields": [
@@ -753,7 +756,7 @@ window.ZERO_COST_ROLE_PACKETS = {
       "goal": "最低価格と根拠URLと調査時刻を集める",
       "current_counts": {
         "market_pending": 53,
-        "provisional": 68,
+        "provisional": 73,
         "published": 9
       },
       "target_ids": [
@@ -1052,6 +1055,53 @@ window.ZERO_COST_ROLE_PACKETS = {
     {
       "job_id": "公開前チェック担当-003",
       "task_name": "公開前チェック担当",
+      "management_id": "BOX-001-ITEM-0010",
+      "status": "open",
+      "recommended_ai_tier": "低コストAI可",
+      "goal": "公開可否確認待ちの商品を、出品前チェックの材料だけに整理する",
+      "input_fields": [
+        "management_id",
+        "product_name",
+        "publish_ok",
+        "draft_status",
+        "image_gate",
+        "routing_reason"
+      ],
+      "write_targets": [
+        "zero_cost_merch_branch/state/routing_plan.json",
+        "zero_cost_merch_branch/state/qwen_runs/"
+      ],
+      "must_not_do": [
+        "公開可 と断定しない",
+        "出品や API 公開を実行しない",
+        "顧客対応をしない",
+        "100%同一確認済み を勝手に付けない",
+        "問い合わせへ直接返答しない"
+      ],
+      "stop_conditions": [
+        "画像同一性が未確認",
+        "説明文や価格に誤認リスクがある",
+        "カテゴリ審査や規制確認が必要になる"
+      ],
+      "expected_outputs": [
+        "preflight_checklist",
+        "risk_flags",
+        "hq_review_note"
+      ],
+      "batch_size": 3,
+      "routing_context": {
+        "mercari_lane": "出品準備中",
+        "mercari_gate": "公開可否確認待ち",
+        "image_gate": "実物のみで可",
+        "base_condition": "同期準備可",
+        "shipco_condition": "送り状共通化候補",
+        "review_reason": "公開可否未確定",
+        "low_cost_job": "公開前チェック"
+      }
+    },
+    {
+      "job_id": "公開前チェック担当-004",
+      "task_name": "公開前チェック担当",
       "management_id": "BOX-001-ITEM-0013",
       "status": "open",
       "recommended_ai_tier": "低コストAI可",
@@ -1097,7 +1147,7 @@ window.ZERO_COST_ROLE_PACKETS = {
       }
     },
     {
-      "job_id": "公開前チェック担当-004",
+      "job_id": "公開前チェック担当-005",
       "task_name": "公開前チェック担当",
       "management_id": "BOX-001-ITEM-0015",
       "status": "open",
@@ -1144,7 +1194,7 @@ window.ZERO_COST_ROLE_PACKETS = {
       }
     },
     {
-      "job_id": "公開前チェック担当-005",
+      "job_id": "公開前チェック担当-006",
       "task_name": "公開前チェック担当",
       "management_id": "BOX-001-ITEM-0016",
       "status": "open",
@@ -1191,7 +1241,7 @@ window.ZERO_COST_ROLE_PACKETS = {
       }
     },
     {
-      "job_id": "公開前チェック担当-006",
+      "job_id": "公開前チェック担当-007",
       "task_name": "公開前チェック担当",
       "management_id": "BOX-001-ITEM-0018",
       "status": "open",
@@ -1238,56 +1288,9 @@ window.ZERO_COST_ROLE_PACKETS = {
       }
     },
     {
-      "job_id": "公開前チェック担当-007",
-      "task_name": "公開前チェック担当",
-      "management_id": "BOX-001-ITEM-0020",
-      "status": "open",
-      "recommended_ai_tier": "低コストAI可",
-      "goal": "公開可否確認待ちの商品を、出品前チェックの材料だけに整理する",
-      "input_fields": [
-        "management_id",
-        "product_name",
-        "publish_ok",
-        "draft_status",
-        "image_gate",
-        "routing_reason"
-      ],
-      "write_targets": [
-        "zero_cost_merch_branch/state/routing_plan.json",
-        "zero_cost_merch_branch/state/qwen_runs/"
-      ],
-      "must_not_do": [
-        "公開可 と断定しない",
-        "出品や API 公開を実行しない",
-        "顧客対応をしない",
-        "100%同一確認済み を勝手に付けない",
-        "問い合わせへ直接返答しない"
-      ],
-      "stop_conditions": [
-        "画像同一性が未確認",
-        "説明文や価格に誤認リスクがある",
-        "カテゴリ審査や規制確認が必要になる"
-      ],
-      "expected_outputs": [
-        "preflight_checklist",
-        "risk_flags",
-        "hq_review_note"
-      ],
-      "batch_size": 3,
-      "routing_context": {
-        "mercari_lane": "出品準備中",
-        "mercari_gate": "公開可否確認待ち",
-        "image_gate": "実物のみで可",
-        "base_condition": "同期準備可",
-        "shipco_condition": "送り状共通化候補",
-        "review_reason": "公開可否未確定",
-        "low_cost_job": "公開前チェック"
-      }
-    },
-    {
       "job_id": "公開前チェック担当-008",
       "task_name": "公開前チェック担当",
-      "management_id": "BOX-001-ITEM-0022",
+      "management_id": "BOX-001-ITEM-0020",
       "status": "open",
       "recommended_ai_tier": "低コストAI可",
       "goal": "公開可否確認待ちの商品を、出品前チェックの材料だけに整理する",
@@ -1455,10 +1458,10 @@ window.ZERO_COST_ROLE_PACKETS = {
       "routing_context": {
         "mercari_lane": "停止",
         "mercari_gate": "停止",
-        "image_gate": "実物のみで可",
+        "image_gate": "画像OK",
         "base_condition": "停止",
         "shipco_condition": "停止",
-        "review_reason": "precision guard: 色違い / 型番違い / サイズ違い / セット違い / 別商品mix / 停止条件あり / Qwen HQ判断: 比較画像照合担当 / actual-only固定優先",
+        "review_reason": "precision guard: 色違い / 型番違い / サイズ違い / セット違い / 別商品mix / 停止条件あり / Qwen HQ判断: 比較画像照合担当 / blocked",
         "low_cost_job": "商品特定再調査"
       }
     },
@@ -1585,13 +1588,13 @@ window.ZERO_COST_ROLE_PACKETS = {
       ],
       "batch_size": 4,
       "routing_context": {
-        "mercari_lane": "停止",
-        "mercari_gate": "停止",
+        "mercari_lane": "公開済み",
+        "mercari_gate": "公開済み",
         "image_gate": "実物のみで可",
-        "base_condition": "停止",
-        "shipco_condition": "停止",
-        "review_reason": "precision guard: 柄違い / 停止条件あり",
-        "low_cost_job": "商品特定再調査"
+        "base_condition": "同期準備可",
+        "shipco_condition": "送り状共通化候補",
+        "review_reason": "例外時のみ",
+        "low_cost_job": "受注監視"
       }
     },
     {
@@ -1725,13 +1728,13 @@ window.ZERO_COST_ROLE_PACKETS = {
       ],
       "batch_size": 6,
       "routing_context": {
-        "mercari_lane": "停止",
-        "mercari_gate": "停止",
+        "mercari_lane": "公開済み",
+        "mercari_gate": "公開済み",
         "image_gate": "実物のみで可",
-        "base_condition": "停止",
-        "shipco_condition": "停止",
-        "review_reason": "precision guard: 柄違い / 停止条件あり",
-        "low_cost_job": "商品特定再調査"
+        "base_condition": "同期準備可",
+        "shipco_condition": "送り状共通化候補",
+        "review_reason": "例外時のみ",
+        "low_cost_job": "受注監視"
       }
     },
     {
@@ -1869,13 +1872,13 @@ window.ZERO_COST_ROLE_PACKETS = {
       ],
       "batch_size": 6,
       "routing_context": {
-        "mercari_lane": "停止",
-        "mercari_gate": "停止",
+        "mercari_lane": "公開済み",
+        "mercari_gate": "公開済み",
         "image_gate": "実物のみで可",
-        "base_condition": "停止",
-        "shipco_condition": "停止",
-        "review_reason": "precision guard: 柄違い / 停止条件あり",
-        "low_cost_job": "商品特定再調査"
+        "base_condition": "同期準備可",
+        "shipco_condition": "送り状共通化候補",
+        "review_reason": "例外時のみ",
+        "low_cost_job": "受注監視"
       }
     },
     {
@@ -1917,13 +1920,13 @@ window.ZERO_COST_ROLE_PACKETS = {
       ],
       "batch_size": 6,
       "routing_context": {
-        "mercari_lane": "停止",
-        "mercari_gate": "停止",
+        "mercari_lane": "公開済み",
+        "mercari_gate": "公開済み",
         "image_gate": "実物のみで可",
-        "base_condition": "停止",
-        "shipco_condition": "停止",
-        "review_reason": "precision guard: セット違い / 停止条件あり",
-        "low_cost_job": "商品特定再調査"
+        "base_condition": "同期準備可",
+        "shipco_condition": "送り状共通化候補",
+        "review_reason": "例外時のみ",
+        "low_cost_job": "受注監視"
       }
     }
   ]

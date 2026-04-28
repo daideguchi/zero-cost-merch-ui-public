@@ -4,6 +4,8 @@ window.ZERO_COST_PUBLIC_PATH_PREFIX = "/zero-cost-merch-ui-public";
 window.ZERO_COST_CAPABILITIES = {
   "live_backend": true,
   "intake_upload": true,
+  "item_update": true,
+  "item_delete": true,
   "intake_failures": true,
   "drive_share": true,
   "drive_sync": true

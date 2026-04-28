@@ -1,10 +1,10 @@
 window.ZERO_COST_STATUS = {
-  "generated_at": "2026-04-22 09:49:57 JST",
+  "generated_at": "2026-04-28 08:25:19 JST",
   "workbook_url": "https://docs.google.com/spreadsheets/d/1VjdUJavoijOkdjKtkdKy_zUcdkQqZwG0oRty57H5_lk/edit",
   "metrics": {
     "box_count": "1",
     "box_note": "受入対象の箱数です。先頭: BOX-001",
-    "research_pending": "69",
+    "research_pending": "0",
     "research_note": "JAN / 型番 / 比較画像の確認待ち件数です。barcode_ready=0 / ocr_ready=0 / blocking_missing=0 / exception=2",
     "draft_pending": "19",
     "draft_note": "公開前に AI が整える下書き件数です。",
@@ -12,7 +12,7 @@ window.ZERO_COST_STATUS = {
     "review_note": "非コスメは API 公開済みです。コスメだけ審査継続中です。",
     "pickup_pending": "0",
     "pickup_note": "梱包後に集荷バッチへ流す待機件数です。",
-    "split_required": "21",
+    "split_required": "22",
     "dd_inquiry_pending": "0",
     "shipping_errors": "0",
     "shipping_warnings": "0"
@@ -143,7 +143,7 @@ window.ZERO_COST_STATUS = {
         "proof_done_count": 3,
         "proof_total_count": 4,
         "proof_progress_label": "3/4 完了",
-        "next_step": "BASE準備可 17件 を前提に、注文画面 -> ヤマト集荷 -> 発送完了 の 1件通しを証跡化する",
+        "next_step": "BASE準備可 22件 を前提に、注文画面 -> ヤマト集荷 -> 発送完了 の 1件通しを証跡化する",
         "href": "./routing.html"
       },
       {
@@ -205,7 +205,7 @@ window.ZERO_COST_STATUS = {
         "proof_done_count": 2,
         "proof_total_count": 4,
         "proof_progress_label": "2/4 完了",
-        "next_step": "BASE準備可 17件 / Ship&co候補 17件 を前提に、注文取込 -> 送り状 -> 集荷予約 -> 発送済み反映 の 1件通しを記録する",
+        "next_step": "BASE準備可 22件 / Ship&co候補 22件 を前提に、注文取込 -> 送り状 -> 集荷予約 -> 発送済み反映 の 1件通しを記録する",
         "href": "./routing.html"
       },
       {
@@ -320,16 +320,16 @@ window.ZERO_COST_STATUS = {
   },
   "routing": {
     "total": "36",
-    "mercari_live": "1",
-    "mercari_pending": "15",
-    "base_ready": "17",
-    "shipco_candidate": "17",
-    "human_review_needed": "33",
+    "mercari_live": "5",
+    "mercari_pending": "16",
+    "base_ready": "22",
+    "shipco_candidate": "22",
+    "human_review_needed": "29",
     "image_review_waiting": "1",
-    "publish_gate_waiting": "15",
+    "publish_gate_waiting": "16",
     "master_waiting": "0",
     "draft_waiting": "0",
-    "base_hold": "19"
+    "base_hold": "14"
   },
   "shipping_guard": {
     "status": "ok",
@@ -379,17 +379,17 @@ window.ZERO_COST_STATUS = {
       "status": "active",
       "badge": "自社EC",
       "tone": "green",
-      "published_count": 3,
+      "published_count": 36,
       "draft_count": 0,
       "review_count": 0,
       "order_count_total": 0,
       "inquiry_count_open": 0,
       "shipping_lane": "BASE かんたん発送 / Ship&co",
       "owner_note": "自社EC は公開済み。公開確認は BASE admin 商品一覧 / search API / 通常ブラウザ表示 を正本にする",
-      "planned_count": 12,
-      "blocked_count": 8,
+      "planned_count": 0,
+      "blocked_count": 7,
       "auth_label": "OAuth ready",
-      "plan_note": "repo計画 12件 / 停止 8件 / OAuth ready",
+      "plan_note": "停止 7件 / OAuth ready",
       "next_step": "最初の live 1件を BASE注文 -> かんたん発送 / Ship&co 比較で証跡化する",
       "href": "./routing.html"
     },
@@ -466,10 +466,10 @@ window.ZERO_COST_STATUS = {
       "inquiry_count_open": 0,
       "shipping_lane": "Yahoo!ショッピング ストア配送 + ヤマト集荷",
       "owner_note": "OAuth と token bundle は取得済み。初回の売却後フローは Yahoo!ショッピング標準のストア配送を優先し、Ship&co は後段の共通化候補として扱う。",
-      "planned_count": 14,
-      "blocked_count": 8,
+      "planned_count": 0,
+      "blocked_count": 9,
       "auth_label": "seller/business設定待ち",
-      "plan_note": "repo計画 14件 / 停止 8件 / seller/business設定待ち",
+      "plan_note": "停止 9件 / seller/business設定待ち",
       "next_step": "YAHOO_SHOPPING_SELLER_ID / YAHOO_SHOPPING_BUSINESS_ID を入れ、ストア配送優先で最初の1件を閉じる。",
       "href": "./routing.html"
     },
@@ -526,7 +526,7 @@ window.ZERO_COST_STATUS = {
       {
         "tone": "blue",
         "label": "いま優先するルート",
-        "note": "BASE標準 かんたん発送 / 公式プリンタレス候補 / BASE準備可 17件 を前提に、注文画面 -> ヤマト集荷 -> 発送完了 の 1件通しを証跡化する",
+        "note": "BASE標準 かんたん発送 / 公式プリンタレス候補 / BASE準備可 22件 を前提に、注文画面 -> ヤマト集荷 -> 発送完了 の 1件通しを証跡化する",
         "href": "./routing.html"
       }
     ],
@@ -552,7 +552,7 @@ window.ZERO_COST_STATUS = {
       {
         "tone": "blue",
         "label": "多販路下地",
-        "note": "BASE準備可 17件 / Ship&co候補 17件",
+        "note": "BASE準備可 22件 / Ship&co候補 22件",
         "href": "./routing.html"
       }
     ],
@@ -616,7 +616,7 @@ window.ZERO_COST_STATUS = {
       "proof_done_count": 3,
       "proof_total_count": 4,
       "proof_progress_label": "3/4 完了",
-      "next_step": "BASE準備可 17件 を前提に、注文画面 -> ヤマト集荷 -> 発送完了 の 1件通しを証跡化する",
+      "next_step": "BASE準備可 22件 を前提に、注文画面 -> ヤマト集荷 -> 発送完了 の 1件通しを証跡化する",
       "href": "./routing.html"
     },
     "route_options_title": "選べる発送ルート",
@@ -653,7 +653,7 @@ window.ZERO_COST_STATUS = {
       }
     ],
     "profit_focus": {
-      "headline": "メルカリ公開中 9件 / BASE公開 3件 / 売価合計 ¥13,540 / 平均 ¥1,504",
+      "headline": "メルカリ公開中 9件 / BASE公開 36件 / 売価合計 ¥15,420 / 平均 ¥1,713",
       "note": "0円仕入れ前提で、今は known fee だけを引いています。送料・梱包材・Ship&co月額按分はまだ差し引いていません。",
       "stats": [
         {
@@ -663,12 +663,12 @@ window.ZERO_COST_STATUS = {
         },
         {
           "label": "売価合計",
-          "value": "¥13,540",
+          "value": "¥15,420",
           "tone": "blue"
         },
         {
           "label": "平均売価",
-          "value": "¥1,504",
+          "value": "¥1,713",
           "tone": "purple"
         },
         {
@@ -681,31 +681,31 @@ window.ZERO_COST_STATUS = {
         {
           "tone": "blue",
           "label": "BASE live 商品",
-          "note": "3件。BOX-001-ITEM-0022, BOX-001-ITEM-0026, BOX-001-ITEM-0001 は admin search / 商品一覧で公開確認済み。",
+          "note": "36件。BOX-001-ITEM-0004, BOX-001-ITEM-0005, BOX-001-ITEM-0008 は admin search / 商品一覧で公開確認済み。",
           "href": "./channel_listings.html"
         },
         {
           "tone": "green",
           "label": "メルカリ公開中の送料前ざっくり",
-          "note": "メルカリShops の fee_rate 9-12% を差し引くと、売価合計 ¥13,540 は 送料前で ¥11,915〜¥12,321。",
+          "note": "メルカリShops の fee_rate 9-12% を差し引くと、売価合計 ¥15,420 は 送料前で ¥13,570〜¥14,032。",
           "href": "./channel_listings.html"
         },
         {
           "tone": "blue",
           "label": "BASE標準 かんたん発送の参考",
-          "note": "メルカリ公開中平均 ¥1,504 なら、既知固定費後は ¥1,365。集荷ならさらに -¥80、実送料は別。",
+          "note": "メルカリ公開中平均 ¥1,713 なら、既知固定費後は ¥1,560。集荷ならさらに -¥80、実送料は別。",
           "href": "./routing.html"
         },
         {
           "tone": "purple",
           "label": "BASE + Ship&co の参考",
-          "note": "メルカリ公開中平均 ¥1,504 なら、既知固定費後は ¥1,343。実送料と月額1,100円の按分は別。",
+          "note": "メルカリ公開中平均 ¥1,713 なら、既知固定費後は ¥1,538。実送料と月額1,100円の按分は別。",
           "href": "./routing.html"
         },
         {
           "tone": "gray",
           "label": "価格整備の残り",
-          "note": "価格未設定 0件 / 価格あり下書き 22件 / 相場あり 4件",
+          "note": "価格未設定 0件 / 価格あり下書き 42件 / 相場あり 4件",
           "href": "./channel_listings.html"
         }
       ]
@@ -720,21 +720,21 @@ window.ZERO_COST_STATUS = {
       },
       {
         "severity": "orange",
-        "key": "21件",
+        "key": "22件",
         "title": "写真セット組み直しが必要です",
         "note": "FRONT/BACK/CODE の写真が別商品で混ざっているため、正しい3枚セットに直す必要があります。",
         "href": "./ops.html"
       },
       {
         "severity": "orange",
-        "key": "33件",
+        "key": "29件",
         "title": "販路ルーティングで人確認が必要です",
-        "note": "公開可否 15件 / 画像確認 1件",
+        "note": "公開可否 16件 / 画像確認 1件",
         "href": "./routing.html"
       },
       {
         "severity": "orange",
-        "key": "8件差",
+        "key": "4件差",
         "title": "メルカリ公開件数の見え方に差があります",
         "note": "routing と channel config の counts を揃える必要があります。",
         "href": "./routing.html"
@@ -744,13 +744,12 @@ window.ZERO_COST_STATUS = {
   "next_actions": [
     "live受注待ち: 注文1件 = 1回の購入で注文番号が1件発生すること。来たら受注画面 -> 集荷 -> 発送完了まで証跡化する",
     "今すぐ進める: 箱を進める BOX-001",
-    "今すぐ進める: 商品特定キュー: barcode_ready=0 / ocr_ready=0 / missing=0 / exception=2 / 写真セット組み直し必要=21",
+    "今すぐ進める: 商品特定キュー: barcode_ready=0 / ocr_ready=0 / missing=0 / exception=2 / 写真セット組み直し必要=22",
     "反映待ち: カテゴリ審査反映待ち: applicationId=2zpKKFVRC4aUXzG6o",
     "要確認: 例外許容 BOX-001-ITEM-0058(CODE写真不足は今回の運用では例外許容とする), BOX-001-ITEM-0006(FRONT/BACK/CODE は同一の長方形ギフト箱だが、箱の中身と正式商品名を実物写真から特定できないため、誤出品防止で例外保留とする)",
-    "今すぐ進める: 写真セット組み直し BOX-001-ITEM-0025, BOX-001-ITEM-0029, BOX-001-ITEM-0040, BOX-001-ITEM-0034, BOX-001-ITEM-0023 ほか16件",
-    "今すぐ進める: 写真セット組み直し計画 BOX-001-ITEM-0021 BOX-001-ITEM-0021 は首サポーターとレモンクォーツリングが混在している。FRONT は X001AIILBV / HJ-GY-M の首サポーターで 0020 側に寄せる。BACK/CODE は X00020VHV9 / 1.1CT レモンクォーツ / シルバーリング / サイズ10 の同一赤箱だが、FRONT 相当写真がないため local child mint は保留。",
-    "今すぐ進める: 写真セット組み直し計画 BOX-001-ITEM-0023 BOX-001-ITEM-0023 は LE BLANC フェムケアPRO と Trekking Pole-Blue が混在している。BACK/CODE は X0013QXDQX / Trekking Pole-Blue / N-82 BLUE の同一黒袋だが、FRONT 相当写真がない。Web検索でも X0013QXDQX の完全一致ページは見つからないため、現写真では local child mint せず保留する。",
-    "今すぐ進める: 商品特定待ち BOX-001-ITEM-0001, BOX-001-ITEM-0013, BOX-001-ITEM-0026",
+    "今すぐ進める: 写真セット組み直し BOX-001-ITEM-0025, BOX-001-ITEM-0029, BOX-001-ITEM-0040, BOX-001-ITEM-0034, BOX-001-ITEM-0023 ほか17件",
+    "今すぐ進める: 写真セット組み直し計画 BOX-001-ITEM-0021 BOX-001-ITEM-0021 は首サポーターとレモンクォーツリングが混在している。FRONT は X001AIILBV / HJ-GY-M の首サポーターで 0020 側に寄せる。BACK/CODE は X00020VHV9 / 1.1CT レモンクォーツ / シルバーリング / サイズ10 の同一赤箱で、0022 FRONT も同じ赤箱の別面として接続できるため、0022 FRONT + 0021 BACK/CODE で local child mint に進める。 / SPLIT-BOX-001-0021-LEMONQUARTZ-RING=BOX-001-ITEM-0071 のローカル写真セットを作成済み / SPLIT-BOX-001-0021-LEMONQUARTZ-RING=BOX-001-ITEM-0071 をローカル特定結果へ暫定・実物写真のみで反映済み",
+    "今すぐ進める: 写真セット組み直し計画 BOX-001-ITEM-0022 BOX-001-ITEM-0022 は赤いリング箱と LE BLANC フェムケアPRO が混在している。FRONT は 0021 側リング箱の別面。BACK/CODE は LE BLANC / EMCAREPRO の同一ボトルで、0023 FRONT も同一ボトルの別面として接続できるため、0023 FRONT + 0022 BACK/CODE で LE BLANC child を local mint に進める。 / SPLIT-BOX-001-0022-LEBLANC-FEMCAREPRO=BOX-001-ITEM-0072 のローカル写真セットを作成済み / SPLIT-BOX-001-0022-LEBLANC-FEMCAREPRO=BOX-001-ITEM-0072 をローカル特定結果へ暫定・実物写真のみで反映済み",
     "今すぐ進める: 出品下書き待ち WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り, WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り, MMC FACE LOTION 240ml",
     "反映待ち: カテゴリ審査待ち WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り",
     "設定要: Yahoo!ショッピング / YAHOO_SHOPPING_SELLER_ID / YAHOO_SHOPPING_BUSINESS_ID を入れ、ストア配送優先で最初の1件を閉じる。",
@@ -758,6 +757,6 @@ window.ZERO_COST_STATUS = {
     "設定要: ヤマト開発API / 返信確認の正規 route は Chrome Profile 12 です。/Users/dd/000_AI組織/ops/ヤマトAPI返信を確認する.command を再実行すれば、degutidai@gmail.com で 365日以内の4 query を再確認できます。現時点では relevant reply は見えていないため、Mercari Shops post-sale pickup rail を継続します。",
     "要確認: 販路ルーティング BOX-001-ITEM-0002, BOX-001-ITEM-0003, BOX-001-ITEM-0007",
     "要確認: 画像同一性確認待ち 1件",
-    "要確認: 公開可否確認待ち 15件"
+    "要確認: 公開可否確認待ち 16件"
   ]
 };

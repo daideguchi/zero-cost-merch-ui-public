@@ -48,6 +48,34 @@
     .ops-id { font-size: 9px; font-family: monospace; color: var(--accent); font-weight: 700; }
     .ops-name { font-size: 12px; font-weight: 700; line-height: 1.3; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
     .ops-meta { display: flex; align-items: center; gap: 6px; }
+    .ops-meta { flex-wrap: wrap; }
+    .ops-gate {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(15,23,42,.12);
+      font-size: 10px;
+      font-weight: 800;
+      line-height: 1.4;
+    }
+    .ops-gate.ready {
+      border-color: rgba(21,128,61,.22);
+      background: rgba(21,128,61,.08);
+      color: var(--green);
+    }
+    .ops-gate.pending {
+      border-color: rgba(180,83,9,.22);
+      background: #fff7ed;
+      color: #b45309;
+    }
+    .ops-review-link {
+      font-size: 10px;
+      color: var(--accent);
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .ops-review-link:hover { text-decoration: underline; }
     .ops-link {
       font-size: 11px; color: var(--accent); font-weight: 700;
       text-decoration: none; align-self: center;
@@ -101,6 +129,8 @@
       <button class="ops-filter-btn" data-f="provisional">仮特定 1</button>
       <button class="ops-filter-btn" data-f="confirmed">確認済 1</button>
       <button class="ops-filter-btn" data-f="unidentified">❓未特定 2</button>
+      <button class="ops-filter-btn" data-f="gate_pending">人確認待ち 0</button>
+      <button class="ops-filter-btn" data-f="gate_ready">人確認OK 0</button>
     </div>
     <div id="ops-empty" class="ops-empty">この箱のカードはまだありません。</div>
     <div class="ops-grid">
@@ -829,7 +859,9 @@
       paused: '⏸取り下げ',
       provisional: '仮特定',
       confirmed: '確認済',
-      unidentified: '❓未特定'
+      unidentified: '❓未特定',
+      gate_pending: '人確認待ち',
+      gate_ready: '人確認OK'
     };
     var activeFilter = 'all';
     var requestedMid = '';
@@ -869,6 +901,58 @@
 
     function snapshotItemName(item) {
       return item.product_name || item.display_name || (item.commerce && item.commerce.product_name) || (item.resolved && item.resolved.product_name) || '未特定';
+    }
+
+    function snapshotItemMap(data) {
+      var map = {};
+      snapshotBoxList(data).forEach(function(box) {
+        (box.items || []).forEach(function(item) {
+          var mid = String(item && item.management_id || '').trim();
+          if (mid) map[mid] = item;
+        });
+      });
+      return map;
+    }
+
+    var snapshotItemsById = snapshotItemMap(snapshot);
+
+    function snapshotHumanGate(item) {
+      var gate = item && item.human_gate || {};
+      return {
+        ready: Boolean(gate.ready),
+        requiresAi: Boolean(gate.requires_ai_images_ok),
+        reason: String(gate.reason || '').trim()
+      };
+    }
+
+    function reviewHref(mid, boxId) {
+      return './intake_cards.html?box=' + encodeURIComponent(boxId || boxFromMid(mid)) + '&mid=' + encodeURIComponent(mid || '');
+    }
+
+    function humanGateBadgeHtml(gate) {
+      return '<span class="ops-gate ' + (gate.ready ? 'ready' : 'pending') + '">'
+        + (gate.ready ? '人確認OK' : '人確認待ち')
+        + '</span>';
+    }
+
+    function ensureHumanGateMeta(card, item, boxId, mid) {
+      var meta = card.querySelector('.ops-meta');
+      if (!meta) return;
+      var gate = snapshotHumanGate(item || {});
+      card.dataset.gateReady = gate.ready ? '1' : '0';
+      card.dataset.gatePending = gate.ready ? '0' : '1';
+      var badge = meta.querySelector('.ops-gate');
+      if (badge) badge.remove();
+      var link = meta.querySelector('.ops-review-link');
+      if (link) link.remove();
+      meta.insertAdjacentHTML('beforeend', humanGateBadgeHtml(gate));
+      meta.insertAdjacentHTML(
+        'beforeend',
+        '<a class="ops-review-link" href="' + reviewHref(mid, boxId) + '">' + (gate.ready ? '確認内容を見る' : '写真確認へ') + '</a>'
+      );
+      if (gate.reason) {
+        card.title = gate.reason;
+      }
     }
 
     function snapshotStatus(item) {
@@ -956,6 +1040,7 @@
       allCards().forEach(function(card) {
         var mid = cardMid(card);
         card.dataset.boxId = boxFromMid(mid);
+        ensureHumanGateMeta(card, snapshotItemsById[mid] || {}, card.dataset.boxId, mid);
       });
     }
 
@@ -982,7 +1067,9 @@
             + '<div class="ops-info">'
             + '<div class="ops-id">' + escapeHtml(mid) + '</div>'
             + '<div class="ops-name">' + escapeHtml(snapshotItemName(item)) + '</div>'
-            + '<div class="ops-meta"><span class="badge ' + escapeHtml(status.badge) + '">' + escapeHtml(status.label) + '</span></div>'
+            + '<div class="ops-meta"><span class="badge ' + escapeHtml(status.badge) + '">' + escapeHtml(status.label) + '</span>'
+            + humanGateBadgeHtml(snapshotHumanGate(item))
+            + '<a class="ops-review-link" href="' + reviewHref(mid, boxId) + '">写真確認へ</a></div>'
             + '</div>'
             + '<a class="ops-link" href="./ops.html?box=' + encodeURIComponent(boxId) + '&mid=' + encodeURIComponent(mid) + '">詳細→</a>'
             + '</div>';
@@ -995,7 +1082,10 @@
 
     function cardMatches(card) {
       var boxOk = !selectedBoxId || card.dataset.boxId === selectedBoxId;
-      var filterOk = activeFilter === 'all' || card.getAttribute('data-cat') === activeFilter;
+      var filterOk = activeFilter === 'all'
+        || card.getAttribute('data-cat') === activeFilter
+        || (activeFilter === 'gate_ready' && card.dataset.gateReady === '1')
+        || (activeFilter === 'gate_pending' && card.dataset.gatePending === '1');
       return boxOk && filterOk;
     }
 
@@ -1003,7 +1093,10 @@
       return allCards().filter(function(card) {
         var boxOk = !selectedBoxId || card.dataset.boxId === selectedBoxId;
         if (!boxOk) return false;
-        return filterKey === 'all' || card.getAttribute('data-cat') === filterKey;
+        return filterKey === 'all'
+          || card.getAttribute('data-cat') === filterKey
+          || (filterKey === 'gate_ready' && card.dataset.gateReady === '1')
+          || (filterKey === 'gate_pending' && card.dataset.gatePending === '1');
       }).length;
     }
 

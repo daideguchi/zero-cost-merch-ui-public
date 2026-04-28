@@ -38,6 +38,13 @@
       font-weight: 800;
       color: var(--text-2);
     }
+    .box-fixed-note {
+      margin-top: 8px;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1.6;
+      color: var(--text-2);
+    }
     .box-row {
       display: flex;
       flex-wrap: wrap;
@@ -45,20 +52,8 @@
       align-items: center;
       margin-top: 10px;
     }
-    .box-select {
-      flex: 1;
-      min-width: 220px;
-      padding: 12px 14px;
-      border-radius: var(--radius);
-      border: 1px solid var(--border);
-      background: var(--surface);
-      color: var(--text);
-      font: 14px/1.4 inherit;
-    }
-    .box-select:focus {
-      outline: none;
-      border-color: var(--accent);
-    }
+    /* legacy select hidden – card UI is used instead */
+    .box-select { display: none; }
     .box-next {
       display: inline-flex;
       align-items: center;
@@ -71,6 +66,105 @@
       font-weight: 800;
       white-space: nowrap;
     }
+    /* ── Box selector cards ── */
+    .box-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .box-card {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      flex: 1 0 150px;
+      min-width: 150px;
+      max-width: 260px;
+      padding: 14px 16px 13px;
+      border-radius: var(--radius-lg);
+      border: 2px solid var(--border);
+      background: var(--surface);
+      cursor: pointer;
+      text-align: left;
+      position: relative;
+      transition: border-color .14s, background .14s, box-shadow .14s, transform .1s;
+    }
+    .box-card:hover:not(:disabled) {
+      border-color: var(--accent);
+      background: var(--surface-2);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 14px rgba(37,99,235,.10);
+    }
+    .box-card.selected {
+      border-color: var(--accent);
+      background: #eff6ff;
+      box-shadow: 0 0 0 3px rgba(37,99,235,.12), 0 2px 8px rgba(37,99,235,.12);
+    }
+    .box-card:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+    .box-card-check {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 2px solid var(--border);
+      background: var(--surface);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      line-height: 1;
+      color: transparent;
+      transition: border-color .14s, background .14s, color .14s;
+    }
+    .box-card.selected .box-card-check {
+      border-color: var(--accent);
+      background: var(--accent);
+      color: #fff;
+    }
+    .box-card-id {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      color: var(--text-3);
+      margin-right: 26px;
+    }
+    .box-card.selected .box-card-id { color: var(--accent); }
+    .box-card-label {
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--text);
+      line-height: 1.2;
+      letter-spacing: -.02em;
+    }
+    .box-card-subtitle {
+      margin-top: 4px;
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--text-2);
+      line-height: 1.45;
+    }
+    .box-card-meta {
+      margin-top: 6px;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-3);
+      line-height: 1.5;
+    }
+    .box-card.selected .box-card-meta { color: #2563eb; }
+    .box-card-note {
+      margin-top: 8px;
+      font-size: 11px;
+      font-weight: 800;
+      line-height: 1.55;
+      color: #334155;
+    }
+    .box-card.selected .box-card-note { color: #1d4ed8; }
     .box-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -99,6 +193,7 @@
     }
     .box-create-row {
       margin-top: 10px;
+      display: none;
     }
     .box-create-btn {
       padding: 0;
@@ -207,6 +302,39 @@
       font-size: 12px;
       line-height: 1.6;
       color: var(--text-2);
+    }
+    .ops-memo {
+      margin-top: 14px;
+      padding: 14px;
+      border: 1px solid rgba(37,99,235,.16);
+      border-radius: var(--radius-lg);
+      background: linear-gradient(180deg, #f8fbff 0%, #eef6ff 100%);
+      display: grid;
+      gap: 8px;
+    }
+    .ops-memo-title {
+      font-size: 13px;
+      font-weight: 900;
+      color: #1d4ed8;
+    }
+    .ops-memo-body {
+      font-size: 12px;
+      line-height: 1.7;
+      color: var(--text-2);
+    }
+    .ops-memo-list {
+      margin: 0;
+      padding-left: 18px;
+      display: grid;
+      gap: 6px;
+      font-size: 12px;
+      line-height: 1.6;
+      color: var(--text-2);
+    }
+    .ops-memo-list code {
+      font-size: 11px;
+      font-weight: 800;
+      color: #1d4ed8;
     }
     .upload-links {
       display: flex;
@@ -579,6 +707,7 @@
     }
     @media (max-width: 640px) {
       .upload-title { font-size: 22px; }
+      .box-card { flex: 1 0 100%; max-width: 100%; }
       .box-grid {
         grid-template-columns: 1fr;
       }
@@ -595,6 +724,15 @@
 <body>
   <header class="hq-header">
     <h1><span class="dot">●</span> 0円仕入れ物販事業</h1>
+    <nav class="hq-nav" aria-label="0円仕入れ物販 ナビゲーション">
+      <a data-zero-cost-current-box="1" class="active" href="index.html">ホーム</a>
+      <a data-zero-cost-current-box="1" href="intake_cards.html">④⑤ 写真・AI識別</a>
+      <a data-zero-cost-current-box="1" href="ops.html">⑥ 出品準備</a>
+      <a data-zero-cost-current-box="1" href="channel_listings.html">出品状況</a>
+      <a data-zero-cost-current-box="1" href="shipping.html">⑧ 集荷</a>
+      <a data-zero-cost-current-box="1" href="routing.html">販路</a>
+      <a data-zero-cost-current-box="1" href="roles.html">役割</a>
+    </nav>
   </header>
 
   <div class="hq-wrap">
@@ -603,12 +741,17 @@
         <div class="upload-title">写真を入れる箱を選ぶ</div>
         <div class="box-panel">
           <div class="box-label">いま使う箱</div>
-          <div class="box-row">
-            <select id="box-select" class="box-select" aria-label="写真を入れる箱"></select>
+          <div class="box-fixed-note">箱は <strong>数字の1 / 数字の2 / アルファベットA</strong> の3種類だけです。まずここをタップして選びます。</div>
+          <!-- card selector (visible) -->
+          <div id="box-cards" class="box-cards" role="radiogroup" aria-label="使う箱を選ぶ"></div>
+          <!-- legacy select hidden but kept for JS state -->
+          <select id="box-select" class="box-select" aria-label="写真を入れる箱" aria-hidden="true" tabindex="-1"></select>
+          <!-- next-sequence badge + KPI detail -->
+          <div class="box-row" style="margin-top:10px">
             <div id="box-next" class="box-next">次の番号を確認中</div>
           </div>
           <div id="box-grid" class="box-grid"></div>
-          <div class="box-create-row">
+          <div class="box-create-row" hidden>
             <button id="box-create-btn" class="box-create-btn" type="button">＋ 新しい箱を作る</button>
           </div>
         </div>
@@ -617,12 +760,21 @@
           <div id="upload-main" class="upload-main">スマホの写真をまとめて選ぶ</div>
           <input type="file" id="file-input" multiple accept="image/*,.heic,.heif">
           <div class="upload-status" id="upload-status">箱を選んだら写真を入れます</div>
-          <div class="upload-note">Google Drive は使わなくて大丈夫です。スマホからこの画面へ直接まとめて入れてください。バーコード区切りの判定は Acer 側で行います。</div>
+          <div id="upload-note" class="upload-note">箱を選ぶと、その箱に合わせた入れ方をここへ出します。</div>
         </div>
         <div class="upload-links">
           <button id="upload-submit" class="action-link primary" type="button" disabled hidden>写真を取り込む</button>
           <a id="intake-link" class="action-link primary" href="./intake_cards.html">④⑤ 写真・AI識別へ →</a>
           <a id="ops-link" class="action-link" href="./ops.html">⑥ 出品準備 →</a>
+        </div>
+        <div class="ops-memo" role="note" aria-label="運営メモ">
+          <div class="ops-memo-title">運営メモ</div>
+          <div class="ops-memo-body">写真が見えない時は、最初に人を疑わず、送信した前提で証拠保全へ進みます。</div>
+          <ul class="ops-memo-list">
+            <li><strong>送ったはず</strong> と言われたら、最初に <strong>未送信では</strong> と返さない</li>
+            <li>先に <strong>送信した前提で残骸を探す</strong> と受ける</li>
+            <li>確認順は <code>intake_upload_audit</code> / <code>intake_upload_sessions</code> / <code>intake_failures</code> / <code>assets/intake_failed</code></li>
+          </ul>
         </div>
         <div id="failure-panel" class="failure-panel">
           <div class="failure-head">
@@ -638,11 +790,11 @@
         </div>
         <div class="drive-panel">
           <div class="drive-header">
-            <div class="drive-title">予備の共有フォルダ</div>
-            <div class="drive-badge">1日1回確認</div>
+            <div id="drive-title" class="drive-title">共有フォルダ</div>
+            <div class="drive-badge">自動確認</div>
           </div>
-          <div class="drive-note">
-            通常は上の <strong>直接アップロードだけ使えば足ります</strong>。Google Drive は、UIが重い・落ちた・相手が後でまとめて入れる時だけの予備です。
+          <div id="drive-note" class="drive-note">
+            箱を選ぶと、この箱での Drive の使い方をここへ出します。
           </div>
           <div class="drive-help" aria-label="スマホでGoogle Driveへ写真を入れる手順">
             <div class="drive-step">
@@ -687,14 +839,9 @@
     </div>
   </div>
 
-  <script src="./status_snapshot.js"></script>
-  <script>
-    document.write('<script src="./intake_snapshot.js?fresh='
-      + encodeURIComponent(new URLSearchParams(window.location.search).get('fresh') || String(Date.now()))
-      + '"><\\/script>');
-  </script>
-  <script src="./api_config.js"></script>
-  <script src="./common.js"></script>
+  <script src="./status_snapshot.js" defer></script>
+  <script src="./intake_snapshot.js" defer></script>
+  <script src="./common.js" defer></script>
   <script>
   (function(){
     var S = window.ZERO_COST_STATUS || {};
@@ -703,8 +850,10 @@
     var fileInput = document.getElementById('file-input');
     var statusEl = document.getElementById('upload-status');
     var uploadMain = document.getElementById('upload-main');
+    var uploadNoteEl = document.getElementById('upload-note');
     var uploadSubmit = document.getElementById('upload-submit');
     var boxSelect = document.getElementById('box-select');
+    var boxCards = document.getElementById('box-cards');
     var boxNext = document.getElementById('box-next');
     var boxGrid = document.getElementById('box-grid');
     var failurePanel = document.getElementById('failure-panel');
@@ -717,6 +866,8 @@
     var driveSyncBtn = document.getElementById('drive-sync-btn');
     var driveStatusEl = document.getElementById('drive-status');
     var driveLinkEl = document.getElementById('drive-link');
+    var driveTitleEl = document.getElementById('drive-title');
+    var driveNoteEl = document.getElementById('drive-note');
     var boxCreateBtn = document.getElementById('box-create-btn');
     var boxModal = document.getElementById('box-modal');
     var boxModalLane = document.getElementById('box-modal-lane');
@@ -731,6 +882,8 @@
     var isRegisteringBox = false;
     var driveStatusPollTimer = 0;
     var driveStatusRequestId = 0;
+    var drivePollDefaultMs = 60000;
+    var drivePollMinimumMs = 20000;
     var failureRequestId = 0;
 
     function esc(value){
@@ -819,6 +972,124 @@
         value = Math.floor((value - 1) / 26);
       }
       return code || 'A';
+    }
+
+    var FIXED_BOX_ORDER = ['BOX-001', 'BOX-002', 'BOX-A'];
+    var FIXED_BOX_META = {
+      'BOX-001': {
+        lane: 'numeric',
+        code: '001',
+        label: '数字箱 001',
+        choiceLabel: '数字の1',
+        laneLabel: '数字ロット',
+        manageLabel: '直接アップロードが基本',
+        shootLabel: 'バーコード → 表 → 裏',
+        uploadNote: '標準の数字箱です。基本はこの画面から直接まとめて入れて大丈夫です。重い時や相手があとで入れる時だけ Google Drive を使います。',
+        driveTitle: '補助の共有フォルダ',
+        driveNote: '数字の1は、この画面からの直接取り込みが基本です。UIが重い時や、相手があとで入れる時だけ共有フォルダを使います。',
+        driveStatus: '数字箱 001 の共有フォルダを用意します。通常は直接取り込み、重い時だけ Drive を使います。'
+      },
+      'BOX-002': {
+        lane: 'numeric',
+        code: '002',
+        label: '数字箱 002',
+        choiceLabel: '数字の2',
+        laneLabel: '数字ロット',
+        manageLabel: 'Google Drive raw 管理が基本',
+        shootLabel: 'バーコード → 表 → 裏 を繰り返し',
+        sourcePath: '/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-002/20260428_104852/originals',
+        uploadNote: 'この箱の元写真は 0円物販 repo 側の intake_uploads/BOX-002/.../originals に置きます。Google Drive 管理を基本にし、急ぎの時だけこの画面へ直接入れてください。',
+        driveTitle: '基本の共有フォルダ',
+        driveNote: '数字の2は Google Drive を正本として使います。撮影順のまま、バーコード → 表 → 裏 を崩さず追加してください。',
+        driveStatus: '数字箱 002 は Google Drive 管理が基本です。共有フォルダを開いて、バーコード → 表 → 裏 の順のまま追加してください。'
+      },
+      'BOX-A': {
+        lane: 'alphabet',
+        code: 'A',
+        label: '英字箱 A',
+        choiceLabel: 'アルファベットA',
+        laneLabel: '英字ロット',
+        manageLabel: 'Drive と intake cards で確認',
+        shootLabel: 'CODE / FRONT / BACK をそろえる',
+        uploadNote: '英字箱Aです。復旧済み写真と見比べながら、追加分だけ丁寧に入れてください。',
+        driveTitle: '共有フォルダ',
+        driveNote: '英字箱Aの写真追加や確認はこの共有フォルダから行えます。取り込み後は intake cards 側ですぐ照合します。',
+        driveStatus: '英字箱 A の共有フォルダを用意します。追加分は CODE / FRONT / BACK が分かる形で入れてください。'
+      }
+    };
+
+    function isFixedBoxId(boxId) {
+      return FIXED_BOX_ORDER.indexOf(String(boxId || '').trim().toUpperCase()) !== -1;
+    }
+
+    function fixedBoxMeta(boxId) {
+      return FIXED_BOX_META[String(boxId || '').trim().toUpperCase()] || {};
+    }
+
+    function fixedPlaceholderBox(boxId, fallbackSlotOrder, fallbackSlotsPerItem) {
+      var meta = fixedBoxMeta(boxId);
+      var lane = meta.lane || inferBoxLane(boxId);
+      var slotOrder = (fallbackSlotOrder || []).slice();
+      return {
+        id: boxId,
+        lane: lane,
+        laneLabel: meta.laneLabel || laneLabel(lane),
+        code: meta.code || boxCodeFromId(boxId, lane),
+        label: meta.label || boxDisplayLabel(boxId, '', lane, meta.code),
+        totalItems: 0,
+        completeItems: 0,
+        incompleteItems: 0,
+        nextSequence: 1,
+        nextManagementId: boxId + '-ITEM-0001',
+        slotsPerItem: Math.max(1, num(fallbackSlotsPerItem) || slotOrder.length || 3),
+        slotOrder: slotOrder,
+        sourceDir: meta.sourcePath || '',
+        hasSnapshot: false,
+        isDraft: false
+      };
+    }
+
+    function mergeFixedBoxOption(option) {
+      var meta = fixedBoxMeta(option && option.id);
+      var lane = meta.lane || option.lane;
+      return Object.assign({}, option || {}, {
+        lane: lane,
+        laneLabel: meta.laneLabel || option.laneLabel || laneLabel(lane),
+        code: meta.code || option.code,
+        label: meta.label || option.label,
+        choiceLabel: meta.choiceLabel || option.label,
+        manageLabel: meta.manageLabel || '',
+        shootLabel: meta.shootLabel || '',
+        sourcePath: option.sourceDir || meta.sourcePath || ''
+      });
+    }
+
+    function boxChoiceLabel(box) {
+      return String(box && box.choiceLabel || box && box.label || '').trim();
+    }
+
+    function boxManageLabel(box) {
+      return String(box && box.manageLabel || fixedBoxMeta(box && box.id).manageLabel || '').trim();
+    }
+
+    function boxShootLabel(box) {
+      return String(box && box.shootLabel || fixedBoxMeta(box && box.id).shootLabel || '').trim();
+    }
+
+    function boxUploadNote(box) {
+      return String(fixedBoxMeta(box && box.id).uploadNote || '箱を選ぶと、その箱に合わせた入れ方をここへ出します。').trim();
+    }
+
+    function boxDriveTitle(box) {
+      return String(fixedBoxMeta(box && box.id).driveTitle || '共有フォルダ').trim();
+    }
+
+    function boxDriveNote(box) {
+      return String(fixedBoxMeta(box && box.id).driveNote || '箱を選ぶと、この箱での Drive の使い方をここへ出します。').trim();
+    }
+
+    function boxDriveStatus(box) {
+      return String(fixedBoxMeta(box && box.id).driveStatus || '箱を選ぶと、写真追加できる共有フォルダをこちらで用意します。').trim();
     }
 
     function loadCustomBoxes(fallbackSlotOrder, fallbackSlotsPerItem) {
@@ -962,23 +1233,40 @@
       var fallbackSlotOrder = I.slot_order || [];
       var fallbackSlotsPerItem = num(I.slots_per_item) || fallbackSlotOrder.length || 3;
       var snapshots = (Array.isArray(I.boxes) && I.boxes.length) ? I.boxes : [I];
-      var base = [];
+      var snapshotMap = {};
       snapshots.forEach(function(snapshotBox) {
         var option = boxOptionFromSnapshot(snapshotBox, fallbackSlotOrder, fallbackSlotsPerItem);
-        if (option && !base.some(function(existing) { return existing.id === option.id; })) {
-          base.push(option);
-        }
+        if (option && isFixedBoxId(option.id)) snapshotMap[option.id] = option;
       });
-      var customBoxes = loadCustomBoxes(I.slot_order || [], num(I.slots_per_item) || 3);
-      customBoxes.forEach(function(box) {
-        if (!base.some(function(existing) { return existing.id === box.id; })) {
-          base.push(box);
-        }
+      return FIXED_BOX_ORDER.map(function(boxId) {
+        return mergeFixedBoxOption(snapshotMap[boxId] || fixedPlaceholderBox(boxId, fallbackSlotOrder, fallbackSlotsPerItem));
       });
-      return base;
     }
 
     var boxOptions = buildBoxOptions();
+
+    // Keep localStorage aligned with the fixed three-box taxonomy.
+    (function() {
+      try {
+        if (window.localStorage) {
+          var rawCustom = window.localStorage.getItem('zeroCostCustomBoxes');
+          if (rawCustom) {
+            var parsed = JSON.parse(rawCustom);
+            var filtered = (parsed || []).filter(function(b) {
+              return isFixedBoxId(String(b && b.id || '').trim().toUpperCase());
+            });
+            if (filtered.length !== (parsed || []).length) {
+              window.localStorage.setItem('zeroCostCustomBoxes', JSON.stringify(filtered));
+              boxOptions = buildBoxOptions();
+            }
+          }
+          var sel = window.localStorage.getItem('zeroCostSelectedBox');
+          if (sel && !isFixedBoxId(String(sel).trim().toUpperCase())) {
+            window.localStorage.removeItem('zeroCostSelectedBox');
+          }
+        }
+      } catch (_) {}
+    }());
     var requestedBoxId = '';
     try {
       requestedBoxId = new URLSearchParams(window.location.search).get('box') || '';
@@ -988,6 +1276,9 @@
       storedBoxId = window.localStorage ? (window.localStorage.getItem('zeroCostSelectedBox') || '') : '';
     } catch (_) {}
     var selectedBoxId = requestedBoxId || storedBoxId || (boxOptions[0] && boxOptions[0].id) || '';
+    if (!boxOptions.some(function(box) { return box.id === selectedBoxId; })) {
+      selectedBoxId = (boxOptions[0] && boxOptions[0].id) || '';
+    }
 
     function currentBox() {
       return boxOptions.filter(function(box) {
@@ -1093,14 +1384,18 @@
         boxSelect.disabled = true;
         boxCreateBtn.disabled = isRegisteringBox;
         setBoxModalBusyState(isRegisteringBox);
+        renderBoxCards();
         boxNext.textContent = '箱が未設定です';
         boxGrid.innerHTML = '';
         uploadMain.textContent = '写真を選ぶ';
         statusEl.textContent = '箱の情報がありません';
+        if (uploadNoteEl) uploadNoteEl.textContent = '箱を選ぶと、その箱に合わせた入れ方をここへ出します。';
         uploadSubmit.disabled = true;
         updateActionLinks(null);
         driveShareBtn.disabled = true;
         driveSyncBtn.disabled = true;
+        if (driveTitleEl) driveTitleEl.textContent = '共有フォルダ';
+        if (driveNoteEl) driveNoteEl.textContent = '箱を選ぶと、この箱での Drive の使い方をここへ出します。';
         setDriveStatus('箱の情報がありません。', 'error');
         setDriveLink('');
         return;
@@ -1111,24 +1406,33 @@
       setBoxModalBusyState(isRegisteringBox);
       boxSelect.innerHTML = boxOptions.map(function(option) {
         return '<option value="' + esc(option.id) + '"' + (option.id === box.id ? ' selected' : '') + '>'
-          + esc(option.laneLabel + ' / ' + option.label)
+          + esc(boxChoiceLabel(option) + ' / ' + option.label)
           + '</option>';
       }).join('');
+      renderBoxCards();
       boxNext.textContent = '次 No.' + padSequence(box.nextSequence);
-      boxGrid.innerHTML = [
-        ['箱', box.label],
-        ['次の管理番号', box.nextManagementId]
-      ].map(function(row) {
+      var boxRows = [
+        ['次の管理番号', box.nextManagementId],
+        ['いまの商品数', String(num(box.totalItems)) + '件（完了 ' + String(num(box.completeItems)) + ' / 要確認 ' + String(num(box.incompleteItems)) + '）'],
+        ['管理の基本', boxManageLabel(box)],
+        ['撮影の目安', boxShootLabel(box)]
+      ];
+      if (box.sourcePath) boxRows.push(['実体パス', box.sourcePath]);
+      boxGrid.innerHTML = boxRows.map(function(row) {
         return '<div class="box-kpi"><div class="box-kpi-label">' + esc(row[0]) + '</div><div class="box-kpi-value">' + esc(row[1]) + '</div></div>';
       }).join('');
-      uploadMain.textContent = box.label + ' に写真を入れる';
-      statusEl.textContent = box.laneLabel + ' / ' + box.label + ' / 次 No.' + padSequence(box.nextSequence);
+      uploadMain.textContent = boxChoiceLabel(box) + ' に写真を入れる';
+      if (uploadNoteEl) uploadNoteEl.textContent = boxUploadNote(box);
+      statusEl.textContent = boxChoiceLabel(box) + ' / ' + box.label + ' / 次 No.' + padSequence(box.nextSequence);
       statusEl.style.color = 'var(--text-2)';
       updateActionLinks(box);
       driveShareBtn.disabled = isUploading || isDriveBusy || isRegisteringBox;
       driveSyncBtn.disabled = isUploading || isDriveBusy || isRegisteringBox;
+      driveShareBtn.textContent = '共有リンクをコピー';
+      if (driveTitleEl) driveTitleEl.textContent = boxDriveTitle(box);
+      if (driveNoteEl) driveNoteEl.textContent = boxDriveNote(box);
       setDriveLink(storedDriveLink(box.id));
-      setDriveStatus(box.label + ' の予備リンクはこちらで用意します。相手はスマホで開いて、＋ / アップロードから写真を追加できます。', '');
+      setDriveStatus(boxDriveStatus(box), '');
       refreshDriveAutoStatus({ silent: true }).then(function(status) {
         if (currentBox() && currentBox().id === box.id) {
           ensureDriveShareLink(box, { silent: true, copy: false, force: !status });
@@ -1140,6 +1444,41 @@
       } else {
         setUploadButtonState();
       }
+    }
+
+    function renderBoxCards() {
+      if (!boxCards) return;
+      var disabled = boxSelect.disabled;
+      if (!boxOptions.length) {
+        boxCards.innerHTML = '<div style="font-size:12px;color:var(--text-3);padding:4px 0;">箱情報がありません</div>';
+        return;
+      }
+      boxCards.innerHTML = boxOptions.map(function(option) {
+        var isSelected = option.id === selectedBoxId;
+        var metaParts = [];
+        metaParts.push(String(num(option.totalItems)) + '件');
+        if (option.nextManagementId) {
+          var seq = option.nextManagementId.replace(option.id + '-ITEM-', 'No.');
+          metaParts.push('次 ' + seq);
+        }
+        var primaryLabel = boxChoiceLabel(option);
+        var secondaryLabel = option.label && option.label !== primaryLabel ? option.label : '';
+        return '<button class="box-card' + (isSelected ? ' selected' : '') + '"'
+          + ' type="button"'
+          + ' role="radio"'
+          + ' aria-checked="' + (isSelected ? 'true' : 'false') + '"'
+          + ' aria-label="' + esc(primaryLabel + ' を選ぶ') + '"'
+          + ' data-box-id="' + esc(option.id) + '"'
+          + (disabled ? ' disabled' : '')
+          + '>'
+          + '<span class="box-card-check" aria-hidden="true">✓</span>'
+          + '<div class="box-card-id">' + esc(option.id) + '</div>'
+          + '<div class="box-card-label">' + esc(primaryLabel) + '</div>'
+          + (secondaryLabel ? '<div class="box-card-subtitle">' + esc(secondaryLabel) + '</div>' : '')
+          + (metaParts.length ? '<div class="box-card-meta">' + esc(metaParts.join(' · ')) + '</div>' : '')
+          + (boxManageLabel(option) ? '<div class="box-card-note">' + esc(boxManageLabel(option)) + '</div>' : '')
+          + '</button>';
+      }).join('');
     }
 
     function nextCustomBoxId(lane) {
@@ -1418,34 +1757,81 @@
       return 'http://127.0.0.1:18777';
     }
 
+    function localLiveBackendOrigin() {
+      return 'http://127.0.0.1:18777';
+    }
+
     function backendOrigin() {
       var base = String(window.ZERO_COST_API_BASE || window.ZERO_COST_APP_BASE || '').trim().replace(/\/$/, '');
       if (base && base !== 'null') return base;
-      return portalOrigin().replace(/\/$/, '');
+      var origin = portalOrigin().replace(/\/$/, '');
+      if (origin === 'http://127.0.0.1:18778' || origin === 'http://localhost:18778') {
+        return localLiveBackendOrigin();
+      }
+      return origin;
     }
 
-    function apiUrl(path) {
+    var selectedUploadApiBase = '';
+    var selectedUploadApiService = '';
+    var selectedUploadApiCapabilities = {};
+
+    function buildApiUrl(base, path) {
       try {
-        return new URL(path, backendOrigin() + '/').toString();
+        return new URL(path, String(base || '').replace(/\/$/, '') + '/').toString();
       } catch (_) {
-        return backendOrigin() + path;
+        return String(base || '').replace(/\/$/, '') + path;
       }
     }
 
+    function apiUrl(path) {
+      return buildApiUrl(backendOrigin(), path);
+    }
+
+    function uniqueUploadApiBases() {
+      var bases = [
+        selectedUploadApiBase,
+        backendOrigin(),
+        localLiveBackendOrigin(),
+        'http://127.0.0.1:18779',
+        'http://localhost:18779'
+      ];
+      var seen = {};
+      return bases.filter(function(base) {
+        base = String(base || '').trim().replace(/\/$/, '');
+        if (!base || seen[base]) return false;
+        seen[base] = true;
+        return true;
+      });
+    }
+
+    function uploadApiUrlFor(base, path) {
+      return buildApiUrl(base || selectedUploadApiBase || backendOrigin(), path);
+    }
+
+    function sessionUploadAvailable() {
+      if (selectedUploadApiService === 'intake-upload-api') return false;
+      if (selectedUploadApiCapabilities && selectedUploadApiCapabilities.live_backend) return true;
+      return selectedUploadApiService === 'zero-cost-live-backend';
+    }
+
+    function uploadApiUnavailableMessage(errors) {
+      return 'アップロードAPIに届いていません。' + (errors && errors.length ? ' ' + errors.slice(-2).join(' / ') : '');
+    }
+
     function uploadApiUrl() {
-      return apiUrl('/api/zero-cost/intake-upload');
+      return uploadApiUrlFor('', '/api/zero-cost/intake-upload');
     }
 
     function uploadSessionStartApiUrl() {
-      return apiUrl('/api/zero-cost/intake-upload-session/start');
+      return uploadApiUrlFor('', '/api/zero-cost/intake-upload-session/start');
     }
 
     function uploadSessionChunkApiUrl() {
-      return apiUrl('/api/zero-cost/intake-upload-session/chunk');
+      return uploadApiUrlFor('', '/api/zero-cost/intake-upload-session/chunk');
     }
 
     function uploadSessionFinishApiUrl() {
-      return apiUrl('/api/zero-cost/intake-upload-session/finish');
+      return uploadApiUrlFor('', '/api/zero-cost/intake-upload-session/finish');
     }
 
     function registerBoxApiUrl() {
@@ -1660,19 +2046,29 @@
       if (window.location.protocol === 'file:') {
         return Promise.reject(new Error('この画面を file:// で開いています。http://127.0.0.1:18777/merch/zero-cost/index.html か resident URL で開いてください。'));
       }
-      return fetch(uploadApiUrl() + '/health?ts=' + encodeURIComponent(String(Date.now())), { cache: 'no-store' })
-        .then(function(response) {
-          if (!response.ok) {
-            throw new Error('アップロードAPIに届いていません。HTTP ' + response.status);
-          }
-          return response.json().catch(function() { return {}; });
-        })
-        .then(function(data) {
-          if (!data.ok) {
-            throw new Error('アップロードAPIの準備ができていません。');
-          }
-          return data;
+      var errors = [];
+      return uniqueUploadApiBases().reduce(function(chain, base) {
+        return chain.catch(function() {
+          return fetch(uploadApiUrlFor(base, '/api/zero-cost/intake-upload/health') + '?ts=' + encodeURIComponent(String(Date.now())), { cache: 'no-store' })
+            .then(function(response) {
+              return response.json().catch(function() { return {}; }).then(function(data) {
+                if (!response.ok || !data.ok) {
+                  throw new Error(base + ' HTTP ' + response.status);
+                }
+                selectedUploadApiBase = String(base || '').replace(/\/$/, '');
+                selectedUploadApiService = String(data.service || '');
+                selectedUploadApiCapabilities = data.capabilities || {};
+                return data;
+              });
+            })
+            .catch(function(error) {
+              errors.push(base + ' ' + (error && error.message ? error.message : '接続失敗'));
+              throw error;
+            });
         });
+      }, Promise.reject(new Error('start'))).catch(function() {
+        throw new Error(uploadApiUnavailableMessage(errors));
+      });
     }
 
     function postJson(url, payload) {
@@ -1739,7 +2135,8 @@
 
     function scheduleDriveStatusPoll(delayMs) {
       clearDriveStatusPoll();
-      var waitMs = Math.max(86400000, num(delayMs, 86400000));
+      var rawDelayMs = num(delayMs, drivePollDefaultMs);
+      var waitMs = Math.max(drivePollMinimumMs, rawDelayMs || drivePollDefaultMs);
       driveStatusPollTimer = window.setTimeout(function() {
         refreshDriveAutoStatus({ silent: true });
       }, waitMs);
@@ -1790,7 +2187,7 @@
       if (lastCycleAt) {
         return {
           tone: '',
-          text: label + ' の共有フォルダ確認は1日1回で動作中です。まだ取り込み対象はありません。最終確認 ' + lastCycleAt + '。'
+          text: label + ' の共有フォルダ確認は自動で動作中です。まだ取り込み対象はありません。最終確認 ' + lastCycleAt + '。'
         };
       }
       return {
@@ -1804,7 +2201,7 @@
       var box = currentBox();
       if (!box || !box.id) return Promise.resolve(null);
       if ((isDriveBusy || isUploading) && !options.force) {
-        scheduleDriveStatusPoll(86400000);
+        scheduleDriveStatusPoll(drivePollDefaultMs);
         return Promise.resolve(null);
       }
       var requestId = ++driveStatusRequestId;
@@ -1842,7 +2239,7 @@
           if (!options.silent) {
             setDriveStatus('共有フォルダ確認の状態を読めません。' + (error && error.message ? ' ' + error.message : ''), 'error');
           }
-          scheduleDriveStatusPoll(86400000);
+          scheduleDriveStatusPoll(drivePollDefaultMs);
           return null;
         });
     }
@@ -1915,7 +2312,7 @@
           isDriveBusy = false;
           driveShareBtn.textContent = '予備リンクをコピー';
           setUploadButtonState();
-          scheduleDriveStatusPoll(86400000);
+          scheduleDriveStatusPoll(drivePollDefaultMs);
         });
     }
 
@@ -1951,7 +2348,7 @@
               );
               return;
             }
-            setDriveStatus(box.label + ' の共有フォルダにまだ新着画像はありません。通常確認は1日1回です。必要な時だけこのボタンで確認できます。', '');
+            setDriveStatus(box.label + ' の共有フォルダにまだ新着画像はありません。急ぐ時はこのボタンで確認できます。', '');
             return;
           }
           setDriveStatus((data.box_label || box.label) + ' に '
@@ -1979,7 +2376,7 @@
           isDriveBusy = false;
           driveSyncBtn.textContent = '共有フォルダを今すぐ確認';
           setUploadButtonState();
-          scheduleDriveStatusPoll(86400000);
+          scheduleDriveStatusPoll(drivePollDefaultMs);
         });
     }
 
@@ -2062,40 +2459,60 @@
       statusEl.style.color = 'var(--text-2)';
       assertUploadApiReady()
         .then(function() {
-          statusEl.textContent = box.label + ' の作業箱を用意しています。';
-          return postJson(uploadSessionStartApiUrl(), {
-            box_id: box.id,
-            box_label: box.label,
-            box_lane: box.lane,
-            box_code: box.code,
-            slots_per_item: box.slotsPerItem || 3,
-            total_files: selectedFiles.length,
-            photo_grouping: 'barcode_delimiter'
+          if (sessionUploadAvailable()) return null;
+          var form = new FormData();
+          form.append('box_id', box.id);
+          form.append('box_label', box.label);
+          form.append('box_lane', box.lane);
+          form.append('box_code', box.code);
+          form.append('slots_per_item', String(box.slotsPerItem || 3));
+          form.append('photo_grouping', 'barcode_delimiter');
+          form.append('photo_manifest', JSON.stringify(manifestSnapshot || []));
+          Array.prototype.slice.call(selectedFiles || []).forEach(function(file) {
+            form.append('photos', file, file.name);
           });
+          statusEl.textContent = box.label + ' に写真を保存しています。';
+          return postForm(uploadApiUrl(), form);
         })
-        .then(function(startPayload) {
-          var sessionId = String(startPayload.session_id || '').trim();
-          if (!sessionId) throw new Error('アップロード作業箱を作れませんでした。');
-          return uploadChunks.reduce(function(chain, chunk, chunkIndex) {
-            return chain.then(function() {
-              var form = new FormData();
-              form.append('session_id', sessionId);
-              form.append('chunk_start', String(chunk.start || 0));
-              form.append('total_files', String(selectedFiles.length));
-              form.append('photo_manifest', JSON.stringify(chunk.manifest || []));
-              Array.prototype.slice.call(chunk.files || []).forEach(function(file) {
-                form.append('photos', file, file.name);
+        .then(function(directPayload) {
+          if (directPayload) return directPayload;
+          return Promise.resolve()
+            .then(function() {
+              statusEl.textContent = box.label + ' の作業箱を用意しています。';
+              return postJson(uploadSessionStartApiUrl(), {
+                box_id: box.id,
+                box_label: box.label,
+                box_lane: box.lane,
+                box_code: box.code,
+                slots_per_item: box.slotsPerItem || 3,
+                total_files: selectedFiles.length,
+                photo_grouping: 'barcode_delimiter'
               });
-              statusEl.textContent = box.label + ' に写真を送っています。'
-                + ' ' + (chunkIndex + 1) + '/' + uploadChunks.length + ' 回目'
-                + ' / ' + Math.min(selectedFiles.length, (chunk.start || 0) + (chunk.files || []).length)
-                + '/' + selectedFiles.length + '枚';
-              return postForm(uploadSessionChunkApiUrl(), form);
+            })
+            .then(function(startPayload) {
+              var sessionId = String(startPayload.session_id || '').trim();
+              if (!sessionId) throw new Error('アップロード作業箱を作れませんでした。');
+              return uploadChunks.reduce(function(chain, chunk, chunkIndex) {
+                return chain.then(function() {
+                  var form = new FormData();
+                  form.append('session_id', sessionId);
+                  form.append('chunk_start', String(chunk.start || 0));
+                  form.append('total_files', String(selectedFiles.length));
+                  form.append('photo_manifest', JSON.stringify(chunk.manifest || []));
+                  Array.prototype.slice.call(chunk.files || []).forEach(function(file) {
+                    form.append('photos', file, file.name);
+                  });
+                  statusEl.textContent = box.label + ' に写真を送っています。'
+                    + ' ' + (chunkIndex + 1) + '/' + uploadChunks.length + ' 回目'
+                    + ' / ' + Math.min(selectedFiles.length, (chunk.start || 0) + (chunk.files || []).length)
+                    + '/' + selectedFiles.length + '枚';
+                  return postForm(uploadSessionChunkApiUrl(), form);
+                });
+              }, Promise.resolve()).then(function() {
+                statusEl.textContent = box.label + ' の写真をまとめています。Acer 側で商品ごとに区切っています。';
+                return postJson(uploadSessionFinishApiUrl(), { session_id: sessionId });
+              });
             });
-          }, Promise.resolve()).then(function() {
-            statusEl.textContent = box.label + ' の写真をまとめています。Acer 側で商品ごとに区切っています。';
-            return postJson(uploadSessionFinishApiUrl(), { session_id: sessionId });
-          });
         })
         .then(function(data) {
           statusEl.textContent = (data.box_label || box.label) + ' に '
@@ -2131,6 +2548,19 @@
         renderBoxPanel();
         refreshFailureBatches();
       });
+      // Card click handler: selecting a box by clicking a card
+      if (boxCards) {
+        boxCards.addEventListener('click', function(event) {
+          var card = event.target && event.target.closest ? event.target.closest('[data-box-id]') : null;
+          if (!card || card.disabled) return;
+          var boxId = card.getAttribute('data-box-id');
+          if (!boxId || boxId === selectedBoxId) return;
+          boxSelect.value = boxId;
+          rememberSelectedBox(boxId);
+          renderBoxPanel();
+          refreshFailureBatches();
+        });
+      }
       boxCreateBtn.addEventListener('click', openBoxModal);
       boxModalLane.addEventListener('change', updateBoxModalForm);
       boxModalConfirm.addEventListener('click', createCustomBox);
