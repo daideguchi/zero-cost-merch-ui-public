@@ -557,7 +557,7 @@
       align-items: center;
       margin-bottom: 12px;
       position: sticky;
-      top: 53px;
+      top: var(--hq-sticky-offset, 53px);
       z-index: 40;
       background: var(--bg);
       padding: 8px 0;
@@ -846,7 +846,7 @@
     }
     @media (max-width: 640px) {
       .toolbar {
-        top: 49px;
+        top: var(--hq-sticky-offset, 49px);
       }
       .detail-row {
         grid-template-columns: 1fr;
@@ -940,7 +940,6 @@
   </div>
 
   <script src="./routing_snapshot.js"></script>
-  <script src="./api_config.js"></script>
   <script src="./common.js"></script>
   <script>
   (function(){
@@ -964,8 +963,14 @@
     var decisionGridEl = document.getElementById('decision-grid');
     var routeMatrixBodyEl = document.getElementById('route-matrix-body');
     var profitFocusEl = document.getElementById('profit-focus-card');
+    var heroTitleEl = document.querySelector('.hero-title');
+    var heroNoteEl = document.querySelector('.hero-note');
     var activeFilter = 'all';
     var sortMode = 'priority';
+    var selectedBoxScope = window.zeroCostCurrentBoxScope ? window.zeroCostCurrentBoxScope() : '';
+    var selectedBoxId = window.zeroCostCurrentBoxId ? window.zeroCostCurrentBoxId() : '';
+    var selectedBoxLabel = window.zeroCostCurrentBoxLabel ? window.zeroCostCurrentBoxLabel() : selectedBoxId;
+    var baseHeroNote = heroNoteEl ? String(heroNoteEl.textContent || '').trim() : '';
 
     function escapeHtml(value) {
       return String(value || '')
@@ -1055,6 +1060,53 @@
       return href + (href.indexOf('?') === -1 ? '?' : '&') + 'box=' + encodeURIComponent(selected);
     }
 
+    function scopeLabel() {
+      if (selectedBoxId) return selectedBoxLabel || selectedBoxId;
+      if (String(selectedBoxScope || '').toUpperCase() === 'ALL') return '全商品';
+      return '全箱';
+    }
+
+    function scopeIdLabel() {
+      return selectedBoxId || (String(selectedBoxScope || '').toUpperCase() === 'ALL' ? 'ALL' : '全箱');
+    }
+
+    function itemBoxId(item) {
+      return boxFromManagementId(item && item['管理番号']);
+    }
+
+    function scopedItems(rows) {
+      var source = Array.isArray(rows) ? rows : [];
+      if (!selectedBoxId) return source.slice();
+      return source.filter(function(item) {
+        return itemBoxId(item) === selectedBoxId;
+      });
+    }
+
+    function scopedSummary(rows) {
+      var source = scopedItems(rows);
+      return {
+        total: source.length,
+        mercari_live: source.filter(function(item) {
+          return item['メルカリ本線'] === '公開済み' || item['ルーティング状態'] === '販売中';
+        }).length,
+        base_ready: source.filter(function(item) {
+          return item['BASE同期条件'] === '同期準備可';
+        }).length,
+        shipco_candidate: source.filter(function(item) {
+          return item['Ship&co条件'] === '送り状共通化候補';
+        }).length,
+        human_review_needed: source.filter(function(item) {
+          return item['人確認'] === '要' || item['ルーティング状態'] === '人確認待ち' || item['人確認理由'];
+        }).length,
+        image_review_waiting: source.filter(function(item) {
+          return item['画像ゲート'] === '画像同一性確認待ち';
+        }).length,
+        publish_gate_waiting: source.filter(function(item) {
+          return item['メルカリ投入条件'] === '公開可否確認待ち';
+        }).length
+      };
+    }
+
     function normalizeProofCheckpoints(route) {
       if (!route || !Array.isArray(route.proof_checkpoints)) return [];
       return route.proof_checkpoints.map(function(item) {
@@ -1129,12 +1181,14 @@
       var proofSteps = proofStepsFromRoute(priorityRoute);
       var primaryNote = (priorityRoute && priorityRoute.next_step) || (priorityAction && priorityAction.note) || '未設定';
       var secondaryNote = (priorityAction && priorityAction.note) || '';
+      var boxMeta = selectedBoxId ? ('対象箱: ' + scopeLabel() + ' / ' + selectedBoxId) : '';
       heroActionEl.innerHTML = ''
         + '<div class="hero-action-label">' + escapeHtml((priorityAction && priorityAction.label) || '今日の優先アクション') + '</div>'
         + '<div class="hero-action-note">' + escapeHtml(primaryNote) + '</div>'
         + (secondaryNote && secondaryNote !== primaryNote
             ? '<div class="hero-action-meta">' + escapeHtml(secondaryNote) + '</div>'
             : '')
+        + (boxMeta ? '<div class="hero-action-meta">' + escapeHtml(boxMeta) + '</div>' : '')
         + (proofSteps.length
             ? '<div class="proof-trail">' + proofSteps.map(function(step, index) {
                 return '<span class="proof-step">' + escapeHtml(step) + '</span>'
@@ -1170,6 +1224,7 @@
       var priorityRoute = findRouteOption(strategy.priority_route_option_id);
       var officialRoute = findRouteOption(strategy.official_printerless_route_option_id);
       var fallbackRoute = findRouteOption(strategy.fallback_route_option_id);
+      var summary = scopedSummary(items);
       var cards = [];
 
       function pushRouteCard(label, route, fallbackTone, noteKey) {
@@ -1193,14 +1248,15 @@
       cards.push({
         tone: 'gray',
         label: 'いまの前提',
-        title: '比較に使う現在地',
+        title: selectedBoxId ? (scopeLabel() + ' の現在地') : '比較に使う現在地',
         meta: '件数は routing current truth から再生成',
         note: [
-          'メルカリ公開済み ' + (snap.summary && snap.summary.mercari_live || 0) + '件',
-          'BASE準備可 ' + (snap.summary && snap.summary.base_ready || 0) + '件',
-          'Ship&co候補 ' + (snap.summary && snap.summary.shipco_candidate || 0) + '件',
-          '人確認要 ' + (snap.summary && snap.summary.human_review_needed || 0) + '件'
+          'メルカリ公開済み ' + summary.mercari_live + '件',
+          'BASE準備可 ' + summary.base_ready + '件',
+          'Ship&co候補 ' + summary.shipco_candidate + '件',
+          '人確認要 ' + summary.human_review_needed + '件'
         ].join(' / '),
+        detail: selectedBoxId ? ('対象箱: ' + scopeLabel() + ' / ' + selectedBoxId) : '',
         href: linkWithCurrentBox('./index.html'),
         linkLabel: 'owner cockpit を開く →'
       });
@@ -1316,9 +1372,10 @@
 
     function buildCounts() {
       var tests = filterTests();
+      var scopeItems = scopedItems(items);
       var counts = {};
       Object.keys(tests).forEach(function(key) {
-        counts[key] = items.filter(tests[key]).length;
+        counts[key] = scopeItems.filter(tests[key]).length;
       });
       return counts;
     }
@@ -1329,14 +1386,28 @@
       var priorityRoute = findRouteOption(strategy.priority_route_option_id);
       var officialRoute = findRouteOption(strategy.official_printerless_route_option_id);
       var fallbackRoute = findRouteOption(strategy.fallback_route_option_id);
+      var summary = scopedSummary(items);
+      if (heroTitleEl) {
+        heroTitleEl.textContent = selectedBoxId
+          ? (scopeLabel() + ' の販路・確認・AI作業を、商品単位で読む')
+          : '販路・確認・AI作業を、商品単位で読む';
+      }
+      if (heroNoteEl) {
+        heroNoteEl.textContent = baseHeroNote + (selectedBoxId
+          ? (' 今は ' + scopeLabel() + ' / ' + selectedBoxId + ' だけで件数と一覧を見ています。')
+          : (String(selectedBoxScope || '').toUpperCase() === 'ALL'
+              ? ' 今は全商品表示です。'
+              : ' 今は全箱をまとめて見ています。'));
+      }
       heroPills.innerHTML = [
         priorityRoute ? '<span class="hero-pill">優先 route ' + escapeHtml(priorityRoute.name || priorityRoute.id || '-') + '</span>' : '',
         officialRoute ? '<span class="hero-pill">公式プリンタレス ' + escapeHtml(officialRoute.name || officialRoute.id || '-') + '</span>' : '',
         fallbackRoute ? '<span class="hero-pill">予備線 ' + escapeHtml(fallbackRoute.name || fallbackRoute.id || '-') + '</span>' : '',
-        '<span class="hero-pill">公開済み ' + (snap.summary && snap.summary.mercari_live || 0) + '件</span>',
-        '<span class="hero-pill">画像確認待ち ' + (snap.summary && snap.summary.image_review_waiting || 0) + '件</span>',
-        '<span class="hero-pill">公開可否確認待ち ' + (snap.summary && snap.summary.publish_gate_waiting || 0) + '件</span>',
-        '<span class="hero-pill">人確認要 ' + (snap.summary && snap.summary.human_review_needed || 0) + '件</span>'
+        '<span class="hero-pill">対象 ' + summary.total + '件</span>',
+        '<span class="hero-pill">公開済み ' + summary.mercari_live + '件</span>',
+        '<span class="hero-pill">画像確認待ち ' + summary.image_review_waiting + '件</span>',
+        '<span class="hero-pill">公開可否確認待ち ' + summary.publish_gate_waiting + '件</span>',
+        '<span class="hero-pill">人確認要 ' + summary.human_review_needed + '件</span>'
       ].filter(Boolean).join('');
     }
 
@@ -1344,6 +1415,7 @@
       var notes = [];
       if (strategy.decision_driver) notes.push('判断軸: ' + strategy.decision_driver);
       if (strategy.route_selection_guideline) notes.push('使い分け: ' + strategy.route_selection_guideline);
+      if (selectedBoxId) notes.push('対象箱: ' + scopeLabel() + ' / ' + selectedBoxId);
       routeGuidelineEl.textContent = notes.join(' / ') || 'route の使い分けはまだ未設定です。';
       if (!routeOptions.length) {
         routeOptionsEl.innerHTML = '<div class="context-item">発送 route はまだありません。</div>';
@@ -1430,7 +1502,9 @@
       var productId = item['商品ID'] || '';
       var status = item['ルーティング状態'] || '未設定';
       var note = item['AI次アクション'] || item['人確認理由'] || item['メモ'] || '';
+      var routeSubParts = [boxId, productId, '更新 ' + formatDate(item['更新時刻'] || '')].filter(Boolean);
       var detailRowsLeft = [
+        ['箱', boxId],
         ['商品ID', productId],
         ['下書きID', item['下書きID'] || ''],
         ['主販路', item['主販路'] || ''],
@@ -1455,7 +1529,7 @@
         + '<div class="route-head">'
         + '<div class="route-id">' + escapeHtml(managementId) + '</div>'
         + '<div class="route-name">' + escapeHtml(extractName(item)) + '</div>'
-        + '<div class="route-sub">' + escapeHtml(productId) + ' · 更新 ' + escapeHtml(formatDate(item['更新時刻'] || '')) + '</div>'
+        + '<div class="route-sub">' + escapeHtml(routeSubParts.join(' · ')) + '</div>'
         + '</div>'
         + '<div class="route-status"><span class="badge ' + badgeClass(status) + '">' + escapeHtml(status) + '</span></div>'
         + '</div>'
@@ -1496,7 +1570,7 @@
     function filteredItems() {
       var query = String(search.value || '').trim().toUpperCase();
       var tests = filterTests();
-      return items.filter(function(item) {
+      return scopedItems(items).filter(function(item) {
         if (!tests[activeFilter](item)) return false;
         if (!query) return true;
         return [
@@ -1515,13 +1589,19 @@
     }
 
     function renderContext() {
-      document.getElementById('next-actions').innerHTML = (snap.next_actions || []).map(function(line) {
+      var priorityRoute = findRouteOption(strategy.priority_route_option_id);
+      var nextActions = (snap.next_actions || []).slice();
+      if (selectedBoxId) {
+        nextActions.unshift(scopeLabel() + ' / ' + selectedBoxId + ' の件数で下段一覧を再計算しています。');
+      }
+      document.getElementById('next-actions').innerHTML = nextActions.map(function(line) {
         return '<div class="context-item">' + escapeHtml(line) + '</div>';
       }).join('') || '<div class="context-item">現場ログはまだありません。</div>';
 
       var officialRoute = findRouteOption(strategy.official_printerless_route_option_id);
       var fallbackRoute = findRouteOption(strategy.fallback_route_option_id);
       document.getElementById('strategy-grid').innerHTML = [
+        ['対象箱', selectedBoxId ? (scopeLabel() + ' / ' + selectedBoxId) : scopeLabel(), '一覧と件数の基準'],
         ['優先順位', strategy.priority || '-', 'いま最優先で守る判断'],
         ['判断軸', strategy.decision_driver || '-', 'route 比較の基準'],
         ['販売主軸', strategy.sales_channel || '-', '既存の主販路'],
@@ -1548,7 +1628,7 @@
       ].map(function(line) {
         if (!line) return '';
         if (line.indexOf('./') === 0) {
-          var label = line === './ops.html' ? '出品リストを開く' : 'ダッシュボードへ戻る';
+          var label = line.indexOf('./ops.html') === 0 ? '出品リストを開く' : 'ダッシュボードへ戻る';
           return '<a class="context-item" href="' + line + '">' + label + '</a>';
         }
         return line;
@@ -1559,12 +1639,15 @@
       var rows = sortItems(filteredItems());
       if (!rows.length) {
         listEl.innerHTML = '';
+        emptyEl.textContent = selectedBoxId
+          ? (scopeLabel() + ' / ' + selectedBoxId + ' に該当するルーティングがありません')
+          : '該当するルーティングがありません';
         emptyEl.style.display = '';
-        countPill.textContent = '0 件';
+        countPill.textContent = '0 件 / ' + scopeIdLabel();
         return;
       }
       emptyEl.style.display = 'none';
-      countPill.textContent = rows.length + ' 件';
+      countPill.textContent = rows.length + ' 件 / ' + scopeIdLabel();
       listEl.innerHTML = rows.map(renderItem).join('');
     }
 

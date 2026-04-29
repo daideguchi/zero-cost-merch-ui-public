@@ -1,7 +1,7 @@
 window.ZERO_COST_SHIPPING_BOARD = {
-  "generated_at": "2026-04-22 08:44:12 JST",
+  "generated_at": "2026-04-30 00:06:46 JST",
   "workbook_url": "https://docs.google.com/spreadsheets/d/1VjdUJavoijOkdjKtkdKy_zUcdkQqZwG0oRty57H5_lk/edit",
-  "resident_url": "./shipping.html",
+  "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/shipping.html",
   "git_url": "https://github.com/daideguchi/zero-cost-merch-branch",
   "main_lane": {
     "label": "メルカリShops注文",
@@ -113,7 +113,7 @@ window.ZERO_COST_SHIPPING_BOARD = {
     ]
   },
   "last_monitor": {
-    "checked_at": "2026-04-22 08:39:07 JST",
+    "checked_at": "2026-04-30 00:03:56 JST",
     "orders_count": 0,
     "new_orders_count": 0,
     "apply_capture_enabled": true,
@@ -165,8 +165,8 @@ window.ZERO_COST_SHIPPING_BOARD = {
     {
       "id": "shipping_sync_health",
       "label": "同期ヘルス",
-      "progress": 10,
-      "summary": "同期OK / Sheets fetch と shipping render は通りました。"
+      "progress": 8,
+      "summary": "同期古め / shipping render は通っていますが、post-sale sync の最終成功が古いです。"
     },
     {
       "id": "shipping_validation",
@@ -344,27 +344,27 @@ window.ZERO_COST_SHIPPING_BOARD = {
       {
         "label": "同期ヘルス",
         "items": [
-          "同期OK / 2026-04-22 08:44:12 JST",
-          "last-good: 2026-04-22 08:44:12 JST",
+          "同期古め / 2026-04-30 00:06:46 JST",
+          "last-good: 2026-04-30 00:06:46 JST",
           "post-sale: ok / 2026-04-21T18:17:44.065790Z",
           "post-sale last success: 2026-04-22 03:17:44 JST",
           "post-sale duration: 9.6s",
-          "stale reason: なし",
-          "next: live注文が来たら 09 -> 07 -> 08 -> 11 -> 10 の順で閉じる"
+          "stale reason: post-sale sync の最終成功が 188時間前です。",
+          "next: sync_post_sale_flow.py と render_shipping_board.py を再実行して current truth を更新する"
         ]
       },
       {
         "label": "販路別 readiness",
         "items": [
           "メルカリShops: 出品=active / 発送=メルカリBiz配送 + 送り状印刷 + ヤマト集荷 / 状態=Biz配送 ready / 次=初注文 1件を shipping.html で最後まで通す",
-          "BASE: 出品=OAuth ready / 発送=BASE標準 かんたん発送 / 状態=order_waiting / 次=BASE実注文 1件で 注文画面 -> 集荷 -> 発送完了 を証跡化する",
+          "BASE: 出品=refresh_token / 発送=BASE標準 かんたん発送 / 状態=order_waiting / 次=BASE実注文 1件で 注文画面 -> 集荷 -> 発送完了 を証跡化する",
           "Yahoo!ショッピング: 出品=seller/business設定待ち / 発送=Yahoo!ショッピング ストア配送 + ヤマト集荷 / 状態=seller/business設定待ち / 次=YAHOO_SHOPPING_SELLER_ID / YAHOO_SHOPPING_BUSINESS_ID を入れ、ストア配送優先で最初の1件を閉じる。"
         ]
       },
       {
         "label": "入口",
         "items": [
-          "resident: ./shipping.html",
+          "resident: https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/shipping.html",
           "台帳: https://docs.google.com/spreadsheets/d/1VjdUJavoijOkdjKtkdKy_zUcdkQqZwG0oRty57H5_lk/edit"
         ]
       },
@@ -381,7 +381,7 @@ window.ZERO_COST_SHIPPING_BOARD = {
   "backend_contract": {
     "version": "shipping-backend-v5",
     "entrypoints": {
-      "resident": "./shipping.html",
+      "resident": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/shipping.html",
       "workbook": "https://docs.google.com/spreadsheets/d/1VjdUJavoijOkdjKtkdKy_zUcdkQqZwG0oRty57H5_lk/edit",
       "quickstart_doc": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/docs/27_集荷を3分で理解する.md",
       "detail_doc": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/docs/21_発送レール詳細手順.md"
@@ -799,7 +799,7 @@ window.ZERO_COST_SHIPPING_BOARD = {
     }
   ],
   "validation": {
-    "generated_at": "2026-04-22 08:44:12 JST",
+    "generated_at": "2026-04-30 00:06:46 JST",
     "contract_version": "2026-04-11",
     "summary": {
       "status": "ok",
@@ -815,7 +815,7 @@ window.ZERO_COST_SHIPPING_BOARD = {
     "warnings": []
   },
   "api_readiness": {
-    "generated_at": "2026-04-22 08:44:12 JST",
+    "generated_at": "2026-04-30 00:06:46 JST",
     "summary": {
       "badge": "本線固定",
       "headline": "今すぐの発送・集荷は shipping.html で固定済みです。副販路連携は2段目で育てます。",
@@ -839,7 +839,7 @@ window.ZERO_COST_SHIPPING_BOARD = {
         "progress": 9,
         "status": "認証あり",
         "summary": "公式 OAuth API ルート。publish は access token で認証します。",
-        "detail": "OAuth ready / planned 12件 / total 22件 / already published 2件 / blocked_not_ready_to_publish 8件"
+        "detail": "BOX-001-ITEM-0002 published"
       },
       {
         "id": "base_kantan_shipping",
@@ -992,7 +992,7 @@ window.ZERO_COST_SHIPPING_BOARD = {
       "phone": "09044879771"
     },
     "payload": {
-      "generated_at": "2026-04-22 08:44:12 JST",
+      "generated_at": "2026-04-30 00:06:46 JST",
       "mode": "sample",
       "note": "shipping.html が出すのは carrier 正式ラベルそのものではなく、印刷・持参・引渡し用の整理済みパケットです。",
       "shipments": [
@@ -1117,9 +1117,9 @@ window.ZERO_COST_SHIPPING_BOARD = {
     "required_but_missing_upstream": [],
     "download_ready": true,
     "filenames": {
-      "json": "shipping_print_packets_20260422_084412.json",
-      "shipment_csv": "shipping_print_packets_20260422_084412.csv",
-      "batch_csv": "shipping_pickup_batches_20260422_084412.csv"
+      "json": "shipping_print_packets_20260430_000646.json",
+      "shipment_csv": "shipping_print_packets_20260430_000646.csv",
+      "batch_csv": "shipping_pickup_batches_20260430_000646.csv"
     }
   },
   "capture_contract": {
@@ -1166,7 +1166,7 @@ window.ZERO_COST_SHIPPING_BOARD = {
       "publish_status": "active",
       "shipping_lane": "メルカリBiz配送 + 送り状印刷 + ヤマト集荷",
       "fulfillment_status": "Biz配送 ready",
-      "post_sale_status": "monitor 2026-04-22 08:39:07 JST / orders=0",
+      "post_sale_status": "monitor 2026-04-30 00:03:56 JST / orders=0",
       "proof_status": "live 1件待ち",
       "next_action": "初注文 1件を shipping.html で最後まで通す",
       "blocker": "なし"
@@ -1174,7 +1174,7 @@ window.ZERO_COST_SHIPPING_BOARD = {
     {
       "id": "base",
       "label": "BASE",
-      "publish_status": "OAuth ready",
+      "publish_status": "refresh_token",
       "shipping_lane": "BASE標準 かんたん発送",
       "fulfillment_status": "order_waiting",
       "post_sale_status": "ショップ公開 / 運営情報 / public表示は live確認済み。独立した かんたん発送ON 画面はなく、注文0件のため注文画面での出現だけ未確認。",
@@ -1195,18 +1195,18 @@ window.ZERO_COST_SHIPPING_BOARD = {
     }
   ],
   "sync_health": {
-    "checked_at": "2026-04-22 08:44:12 JST",
+    "checked_at": "2026-04-30 00:06:46 JST",
     "status": "ok",
-    "badge": "同期OK",
-    "headline": "Sheets fetch と shipping render は通りました。",
-    "detail": "直近 monitor: 2026-04-21T23:39:07.120Z / orders=0. post-sale sync: 2026-04-21T18:17:44.065790Z / duration=9.6s.",
-    "next_action": "live注文が来たら 09 -> 07 -> 08 -> 11 -> 10 の順で閉じる",
+    "badge": "同期古め",
+    "headline": "shipping render は通っていますが、post-sale sync の最終成功が古いです。",
+    "detail": "post-sale sync の最終成功が 188時間前です。",
+    "next_action": "sync_post_sale_flow.py と render_shipping_board.py を再実行して current truth を更新する",
     "fallback_in_use": false,
-    "last_success_generated_at": "2026-04-22 08:44:12 JST",
+    "last_success_generated_at": "2026-04-30 00:06:46 JST",
     "last_success_at": "2026-04-22 03:17:44 JST",
     "last_run_duration_ms": 9564,
     "duration_label": "9.6s",
-    "stale_reason": "",
+    "stale_reason": "post-sale sync の最終成功が 188時間前です。",
     "source_fetches": [
       {
         "label": "09_受注一覧",
@@ -1214,7 +1214,7 @@ window.ZERO_COST_SHIPPING_BOARD = {
         "status": "ok",
         "attempts": 1,
         "rows": 0,
-        "elapsed_ms": 1528
+        "elapsed_ms": 589
       },
       {
         "label": "07_発送候補",
@@ -1222,7 +1222,7 @@ window.ZERO_COST_SHIPPING_BOARD = {
         "status": "ok",
         "attempts": 1,
         "rows": 0,
-        "elapsed_ms": 367
+        "elapsed_ms": 355
       },
       {
         "label": "08_集荷待ち",
@@ -1230,7 +1230,7 @@ window.ZERO_COST_SHIPPING_BOARD = {
         "status": "ok",
         "attempts": 1,
         "rows": 0,
-        "elapsed_ms": 375
+        "elapsed_ms": 485
       },
       {
         "label": "10_出荷実績",
@@ -1238,7 +1238,7 @@ window.ZERO_COST_SHIPPING_BOARD = {
         "status": "ok",
         "attempts": 1,
         "rows": 0,
-        "elapsed_ms": 331
+        "elapsed_ms": 474
       },
       {
         "label": "11_集荷バッチ",
@@ -1246,12 +1246,12 @@ window.ZERO_COST_SHIPPING_BOARD = {
         "status": "ok",
         "attempts": 1,
         "rows": 0,
-        "elapsed_ms": 346
+        "elapsed_ms": 476
       }
     ],
     "failed_sources": [],
     "monitor": {
-      "checked_at": "2026-04-21T23:39:07.120Z",
+      "checked_at": "2026-04-29T15:03:56.115Z",
       "orders_count": 0,
       "new_orders_count": 0,
       "next_action": "No new orders detected."
@@ -1262,7 +1262,7 @@ window.ZERO_COST_SHIPPING_BOARD = {
       "last_success_at": "2026-04-22 03:17:44 JST",
       "last_run_duration_ms": 9564,
       "duration_label": "9.6s",
-      "stale_reason": "",
+      "stale_reason": "post-sale sync の最終成功が 188時間前です。",
       "next_action": "render_shipping_board.py を回して resident へ反映する",
       "summary": "orders_seen=0 / shipping_added=0 / pickup_wait_added=0 / pickup_added=0"
     }

@@ -1,15 +1,15 @@
 window.ZERO_COST_TASK_CARD_QUEUE = {
-  "generated_at": "2026-04-23 07:34:28 JST",
+  "generated_at": "2026-04-30 01:29:52 JST",
   "business_name": "0円仕入れ物販事業",
   "counts": {
-    "open_jobs": 23,
+    "open_jobs": 29,
     "task_cards": 8
   },
   "jobs": [
     {
       "job_id": "候補URL収集担当-001",
       "task_name": "候補URL収集担当",
-      "management_id": "BOX-001-ITEM-0057",
+      "management_id": "BOX-001-ITEM-0022",
       "status": "open",
       "recommended_ai_tier": "低コストAI可",
       "goal": "比較画像候補を集めて、同一性判断の材料だけを残す",
@@ -41,19 +41,63 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
       ],
       "batch_size": 2,
       "routing_context": {
-        "mercari_lane": "停止",
-        "mercari_gate": "停止",
+        "mercari_lane": "出品準備中",
+        "mercari_gate": "公開可否確認待ち",
         "image_gate": "画像同一性確認待ち",
-        "base_condition": "停止",
-        "shipco_condition": "停止",
-        "review_reason": "画像同一性未確認 / precision guard: 別商品mix / 写真セット組み直し必要 / 内容物未確認 / 停止条件あり / 写真セット組み直し計画: ローカル写真セット作成済み",
+        "base_condition": "画像確認後",
+        "shipco_condition": "送り状共通化候補",
+        "review_reason": "公開可否未確定 / 画像同一性未確認",
+        "low_cost_job": "比較画像照合"
+      }
+    },
+    {
+      "job_id": "候補URL収集担当-002",
+      "task_name": "候補URL収集担当",
+      "management_id": "BOX-001-ITEM-0027",
+      "status": "open",
+      "recommended_ai_tier": "低コストAI可",
+      "goal": "比較画像候補を集めて、同一性判断の材料だけを残す",
+      "input_fields": [
+        "management_id",
+        "product_name",
+        "GTIN / Amazon内部コード",
+        "実物画像3枚",
+        "current_exact_match_status"
+      ],
+      "write_targets": [
+        "zero_cost_merch_branch/state/intake/BOX-001_official_image_candidates.json"
+      ],
+      "must_not_do": [
+        "100%同一確認済み を勝手に付けない",
+        "比較画像を listing へ反映しない",
+        "問い合わせへ直接返答しない",
+        "出品や API 公開を実行しない"
+      ],
+      "stop_conditions": [
+        "色違い / 型番違い / サイズ違いが見えた",
+        "候補画像が似ているだけで断定できない",
+        "顧客影響のある商品に当たった"
+      ],
+      "expected_outputs": [
+        "candidate_urls",
+        "candidate_titles",
+        "一致しそうな根拠メモ"
+      ],
+      "batch_size": 2,
+      "routing_context": {
+        "mercari_lane": "出品準備中",
+        "mercari_gate": "公開可否確認待ち",
+        "image_gate": "画像同一性確認待ち",
+        "base_condition": "画像確認後",
+        "shipco_condition": "送り状共通化候補",
+        "review_reason": "公開可否未確定 / 画像同一性未確認",
         "low_cost_job": "比較画像照合"
       }
     },
     {
       "job_id": "比較画像照合担当-001",
       "task_name": "比較画像照合担当",
-      "management_id": "BOX-001-ITEM-0057",
+      "management_id": "BOX-001-ITEM-0022",
       "status": "open",
       "recommended_ai_tier": "低コストAI可",
       "goal": "routing 上の 画像同一性確認待ち を整理し、同一性判断の材料だけを残す",
@@ -87,19 +131,65 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
       ],
       "batch_size": 2,
       "routing_context": {
-        "mercari_lane": "停止",
-        "mercari_gate": "停止",
+        "mercari_lane": "出品準備中",
+        "mercari_gate": "公開可否確認待ち",
         "image_gate": "画像同一性確認待ち",
-        "base_condition": "停止",
-        "shipco_condition": "停止",
-        "review_reason": "画像同一性未確認 / precision guard: 別商品mix / 写真セット組み直し必要 / 内容物未確認 / 停止条件あり / 写真セット組み直し計画: ローカル写真セット作成済み",
+        "base_condition": "画像確認後",
+        "shipco_condition": "送り状共通化候補",
+        "review_reason": "公開可否未確定 / 画像同一性未確認",
+        "low_cost_job": "比較画像照合"
+      }
+    },
+    {
+      "job_id": "比較画像照合担当-002",
+      "task_name": "比較画像照合担当",
+      "management_id": "BOX-001-ITEM-0027",
+      "status": "open",
+      "recommended_ai_tier": "低コストAI可",
+      "goal": "routing 上の 画像同一性確認待ち を整理し、同一性判断の材料だけを残す",
+      "input_fields": [
+        "management_id",
+        "product_name",
+        "実物画像3枚",
+        "比較画像候補",
+        "routing_reason"
+      ],
+      "write_targets": [
+        "zero_cost_merch_branch/state/intake/BOX-001_official_image_candidates.json",
+        "zero_cost_merch_branch/state/routing_plan.json"
+      ],
+      "must_not_do": [
+        "100%同一確認済み を勝手に付けない",
+        "比較画像を listing へ反映しない",
+        "顧客対応をしない",
+        "問い合わせへ直接返答しない",
+        "出品や API 公開を実行しない"
+      ],
+      "stop_conditions": [
+        "色違い / 型番違い / サイズ違い / セット違いが見えた",
+        "比較画像が似ているだけで断定できない",
+        "顧客影響がある商品に当たった"
+      ],
+      "expected_outputs": [
+        "comparison_findings",
+        "risk_points",
+        "hq_review_note"
+      ],
+      "batch_size": 2,
+      "routing_context": {
+        "mercari_lane": "出品準備中",
+        "mercari_gate": "公開可否確認待ち",
+        "image_gate": "画像同一性確認待ち",
+        "base_condition": "画像確認後",
+        "shipco_condition": "送り状共通化候補",
+        "review_reason": "公開可否未確定 / 画像同一性未確認",
         "low_cost_job": "比較画像照合"
       }
     },
     {
       "job_id": "公開前チェック担当-001",
       "task_name": "公開前チェック担当",
-      "management_id": "BOX-001-ITEM-0003",
+      "management_id": "BOX-001-ITEM-0021",
       "status": "open",
       "recommended_ai_tier": "低コストAI可",
       "goal": "公開可否確認待ちの商品を、出品前チェックの材料だけに整理する",
@@ -136,7 +226,7 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
       "routing_context": {
         "mercari_lane": "出品準備中",
         "mercari_gate": "公開可否確認待ち",
-        "image_gate": "実物のみで可",
+        "image_gate": "画像OK",
         "base_condition": "同期準備可",
         "shipco_condition": "送り状共通化候補",
         "review_reason": "公開可否未確定",
@@ -146,7 +236,7 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
     {
       "job_id": "公開前チェック担当-002",
       "task_name": "公開前チェック担当",
-      "management_id": "BOX-001-ITEM-0007",
+      "management_id": "BOX-001-ITEM-0023",
       "status": "open",
       "recommended_ai_tier": "低コストAI可",
       "goal": "公開可否確認待ちの商品を、出品前チェックの材料だけに整理する",
@@ -183,7 +273,7 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
       "routing_context": {
         "mercari_lane": "出品準備中",
         "mercari_gate": "公開可否確認待ち",
-        "image_gate": "実物のみで可",
+        "image_gate": "画像OK",
         "base_condition": "同期準備可",
         "shipco_condition": "送り状共通化候補",
         "review_reason": "公開可否未確定",
@@ -193,7 +283,7 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
     {
       "job_id": "公開前チェック担当-003",
       "task_name": "公開前チェック担当",
-      "management_id": "BOX-001-ITEM-0010",
+      "management_id": "BOX-001-ITEM-0024",
       "status": "open",
       "recommended_ai_tier": "低コストAI可",
       "goal": "公開可否確認待ちの商品を、出品前チェックの材料だけに整理する",
@@ -230,7 +320,7 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
       "routing_context": {
         "mercari_lane": "出品準備中",
         "mercari_gate": "公開可否確認待ち",
-        "image_gate": "実物のみで可",
+        "image_gate": "画像OK",
         "base_condition": "同期準備可",
         "shipco_condition": "送り状共通化候補",
         "review_reason": "公開可否未確定",
@@ -240,7 +330,7 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
     {
       "job_id": "公開前チェック担当-004",
       "task_name": "公開前チェック担当",
-      "management_id": "BOX-001-ITEM-0013",
+      "management_id": "BOX-001-ITEM-0025",
       "status": "open",
       "recommended_ai_tier": "低コストAI可",
       "goal": "公開可否確認待ちの商品を、出品前チェックの材料だけに整理する",
@@ -287,7 +377,7 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
     {
       "job_id": "公開前チェック担当-005",
       "task_name": "公開前チェック担当",
-      "management_id": "BOX-001-ITEM-0015",
+      "management_id": "BOX-001-ITEM-0028",
       "status": "open",
       "recommended_ai_tier": "低コストAI可",
       "goal": "公開可否確認待ちの商品を、出品前チェックの材料だけに整理する",
@@ -324,7 +414,7 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
       "routing_context": {
         "mercari_lane": "出品準備中",
         "mercari_gate": "公開可否確認待ち",
-        "image_gate": "実物のみで可",
+        "image_gate": "画像OK",
         "base_condition": "同期準備可",
         "shipco_condition": "送り状共通化候補",
         "review_reason": "公開可否未確定",
@@ -334,7 +424,7 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
     {
       "job_id": "公開前チェック担当-006",
       "task_name": "公開前チェック担当",
-      "management_id": "BOX-001-ITEM-0016",
+      "management_id": "BOX-001-ITEM-0029",
       "status": "open",
       "recommended_ai_tier": "低コストAI可",
       "goal": "公開可否確認待ちの商品を、出品前チェックの材料だけに整理する",
@@ -371,7 +461,7 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
       "routing_context": {
         "mercari_lane": "出品準備中",
         "mercari_gate": "公開可否確認待ち",
-        "image_gate": "実物のみで可",
+        "image_gate": "画像OK",
         "base_condition": "同期準備可",
         "shipco_condition": "送り状共通化候補",
         "review_reason": "公開可否未確定",
@@ -381,7 +471,7 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
     {
       "job_id": "公開前チェック担当-007",
       "task_name": "公開前チェック担当",
-      "management_id": "BOX-001-ITEM-0018",
+      "management_id": "BOX-001-ITEM-0030",
       "status": "open",
       "recommended_ai_tier": "低コストAI可",
       "goal": "公開可否確認待ちの商品を、出品前チェックの材料だけに整理する",
@@ -418,7 +508,7 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
       "routing_context": {
         "mercari_lane": "出品準備中",
         "mercari_gate": "公開可否確認待ち",
-        "image_gate": "実物のみで可",
+        "image_gate": "画像OK",
         "base_condition": "同期準備可",
         "shipco_condition": "送り状共通化候補",
         "review_reason": "公開可否未確定",
@@ -428,7 +518,7 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
     {
       "job_id": "公開前チェック担当-008",
       "task_name": "公開前チェック担当",
-      "management_id": "BOX-001-ITEM-0020",
+      "management_id": "BOX-001-ITEM-0033",
       "status": "open",
       "recommended_ai_tier": "低コストAI可",
       "goal": "公開可否確認待ちの商品を、出品前チェックの材料だけに整理する",
@@ -516,39 +606,38 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
       }
     },
     {
-      "job_id": "最低価格収集担当-001",
-      "task_name": "最低価格収集担当",
-      "management_id": "BOX-001-ITEM-0001",
+      "job_id": "審査監視担当-002",
+      "task_name": "審査監視担当",
+      "management_id": "BOX-001-ITEM-0013",
       "status": "open",
       "recommended_ai_tier": "低コストAI可",
-      "goal": "最低価格と根拠URLと調査時刻を集める",
+      "goal": "カテゴリ審査待ち商品の状態と次の確認点を整理する",
       "input_fields": [
         "management_id",
         "product_name",
-        "exact_match_status",
-        "current_min_price"
+        "review_state",
+        "application_id"
       ],
       "write_targets": [
-        "zero_cost_merch_branch/state/intake/BOX-001_market_price_snapshot.json",
-        "zero_cost_merch_branch/state/current_state.json"
+        "zero_cost_merch_branch/state/mercari_api_status.json",
+        "zero_cost_merch_branch/state/routing_plan.json"
       ],
       "must_not_do": [
-        "最低価格という語を説明欄へ書かない",
-        "相場の断定を顧客返答に使わない",
+        "審査通過済み と断定しない",
+        "出品や API 公開を実行しない",
+        "顧客対応をしない",
         "100%同一確認済み を勝手に付けない",
-        "問い合わせへ直接返答しない",
-        "出品や API 公開を実行しない"
+        "問い合わせへ直接返答しない"
       ],
       "stop_conditions": [
-        "候補が複数に割れて exact 商品か分からない",
-        "送料込み / 送料別で比較が崩れる"
+        "カテゴリ審査の current truth が見えない",
+        "API 異常と審査待ちの区別がつかない"
       ],
       "expected_outputs": [
-        "market_floor_price",
-        "market_source_url",
-        "market_checked_at"
+        "review_status_note",
+        "next_check_timing"
       ],
-      "batch_size": 4,
+      "batch_size": 2,
       "routing_context": {
         "mercari_lane": "カテゴリ審査待ち",
         "mercari_gate": "カテゴリ審査待ち",
@@ -560,7 +649,136 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
       }
     },
     {
-      "job_id": "最低価格収集担当-002",
+      "job_id": "審査監視担当-003",
+      "task_name": "審査監視担当",
+      "management_id": "BOX-001-ITEM-0026",
+      "status": "open",
+      "recommended_ai_tier": "低コストAI可",
+      "goal": "カテゴリ審査待ち商品の状態と次の確認点を整理する",
+      "input_fields": [
+        "management_id",
+        "product_name",
+        "review_state",
+        "application_id"
+      ],
+      "write_targets": [
+        "zero_cost_merch_branch/state/mercari_api_status.json",
+        "zero_cost_merch_branch/state/routing_plan.json"
+      ],
+      "must_not_do": [
+        "審査通過済み と断定しない",
+        "出品や API 公開を実行しない",
+        "顧客対応をしない",
+        "100%同一確認済み を勝手に付けない",
+        "問い合わせへ直接返答しない"
+      ],
+      "stop_conditions": [
+        "カテゴリ審査の current truth が見えない",
+        "API 異常と審査待ちの区別がつかない"
+      ],
+      "expected_outputs": [
+        "review_status_note",
+        "next_check_timing"
+      ],
+      "batch_size": 2,
+      "routing_context": {
+        "mercari_lane": "カテゴリ審査待ち",
+        "mercari_gate": "カテゴリ審査待ち",
+        "image_gate": "実物のみで可",
+        "base_condition": "同期準備可",
+        "shipco_condition": "送り状共通化候補",
+        "review_reason": "例外時のみ",
+        "low_cost_job": "審査監視"
+      }
+    },
+    {
+      "job_id": "審査監視担当-004",
+      "task_name": "審査監視担当",
+      "management_id": "BOX-001-ITEM-0065",
+      "status": "open",
+      "recommended_ai_tier": "低コストAI可",
+      "goal": "カテゴリ審査待ち商品の状態と次の確認点を整理する",
+      "input_fields": [
+        "management_id",
+        "product_name",
+        "review_state",
+        "application_id"
+      ],
+      "write_targets": [
+        "zero_cost_merch_branch/state/mercari_api_status.json",
+        "zero_cost_merch_branch/state/routing_plan.json"
+      ],
+      "must_not_do": [
+        "審査通過済み と断定しない",
+        "出品や API 公開を実行しない",
+        "顧客対応をしない",
+        "100%同一確認済み を勝手に付けない",
+        "問い合わせへ直接返答しない"
+      ],
+      "stop_conditions": [
+        "カテゴリ審査の current truth が見えない",
+        "API 異常と審査待ちの区別がつかない"
+      ],
+      "expected_outputs": [
+        "review_status_note",
+        "next_check_timing"
+      ],
+      "batch_size": 2,
+      "routing_context": {
+        "mercari_lane": "カテゴリ審査待ち",
+        "mercari_gate": "カテゴリ審査待ち",
+        "image_gate": "実物のみで可",
+        "base_condition": "同期準備可",
+        "shipco_condition": "送り状共通化候補",
+        "review_reason": "例外時のみ",
+        "low_cost_job": "審査監視"
+      }
+    },
+    {
+      "job_id": "審査監視担当-005",
+      "task_name": "審査監視担当",
+      "management_id": "BOX-001-ITEM-0072",
+      "status": "open",
+      "recommended_ai_tier": "低コストAI可",
+      "goal": "カテゴリ審査待ち商品の状態と次の確認点を整理する",
+      "input_fields": [
+        "management_id",
+        "product_name",
+        "review_state",
+        "application_id"
+      ],
+      "write_targets": [
+        "zero_cost_merch_branch/state/mercari_api_status.json",
+        "zero_cost_merch_branch/state/routing_plan.json"
+      ],
+      "must_not_do": [
+        "審査通過済み と断定しない",
+        "出品や API 公開を実行しない",
+        "顧客対応をしない",
+        "100%同一確認済み を勝手に付けない",
+        "問い合わせへ直接返答しない"
+      ],
+      "stop_conditions": [
+        "カテゴリ審査の current truth が見えない",
+        "API 異常と審査待ちの区別がつかない"
+      ],
+      "expected_outputs": [
+        "review_status_note",
+        "next_check_timing"
+      ],
+      "batch_size": 2,
+      "routing_context": {
+        "mercari_lane": "カテゴリ審査待ち",
+        "mercari_gate": "カテゴリ審査待ち",
+        "image_gate": "実物のみで可",
+        "base_condition": "同期準備可",
+        "shipco_condition": "送り状共通化候補",
+        "review_reason": "例外時のみ",
+        "low_cost_job": "審査監視"
+      }
+    },
+    {
+      "job_id": "最低価格収集担当-001",
       "task_name": "最低価格収集担当",
       "management_id": "BOX-001-ITEM-0002",
       "status": "open",
@@ -596,15 +814,15 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
       "routing_context": {
         "mercari_lane": "停止",
         "mercari_gate": "停止",
-        "image_gate": "画像OK",
+        "image_gate": "実物のみで可",
         "base_condition": "停止",
         "shipco_condition": "停止",
-        "review_reason": "precision guard: 色違い / 型番違い / サイズ違い / セット違い / 別商品mix / 停止条件あり / Qwen HQ判断: 比較画像照合担当 / blocked",
+        "review_reason": "precision guard: 色違い / 型番違い / サイズ違い / セット違い / 停止条件あり / Qwen HQ判断: 比較画像照合担当 / clear",
         "low_cost_job": "商品特定再調査"
       }
     },
     {
-      "job_id": "最低価格収集担当-003",
+      "job_id": "最低価格収集担当-002",
       "task_name": "最低価格収集担当",
       "management_id": "BOX-001-ITEM-0003",
       "status": "open",
@@ -638,17 +856,17 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
       ],
       "batch_size": 4,
       "routing_context": {
-        "mercari_lane": "出品準備中",
-        "mercari_gate": "公開可否確認待ち",
+        "mercari_lane": "公開済み",
+        "mercari_gate": "公開済み",
         "image_gate": "実物のみで可",
         "base_condition": "同期準備可",
         "shipco_condition": "送り状共通化候補",
-        "review_reason": "公開可否未確定",
-        "low_cost_job": "公開前チェック"
+        "review_reason": "例外時のみ",
+        "low_cost_job": "受注監視"
       }
     },
     {
-      "job_id": "最低価格収集担当-004",
+      "job_id": "最低価格収集担当-003",
       "task_name": "最低価格収集担当",
       "management_id": "BOX-001-ITEM-0004",
       "status": "open",
@@ -682,17 +900,17 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
       ],
       "batch_size": 4,
       "routing_context": {
-        "mercari_lane": "停止",
-        "mercari_gate": "停止",
+        "mercari_lane": "公開済み",
+        "mercari_gate": "公開済み",
         "image_gate": "実物のみで可",
-        "base_condition": "停止",
-        "shipco_condition": "停止",
-        "review_reason": "precision guard: ブランド不一致 / 停止条件あり",
-        "low_cost_job": "商品特定再調査"
+        "base_condition": "同期準備可",
+        "shipco_condition": "送り状共通化候補",
+        "review_reason": "例外時のみ",
+        "low_cost_job": "受注監視"
       }
     },
     {
-      "job_id": "最低価格収集担当-005",
+      "job_id": "最低価格収集担当-004",
       "task_name": "最低価格収集担当",
       "management_id": "BOX-001-ITEM-0005",
       "status": "open",
@@ -736,7 +954,7 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
       }
     },
     {
-      "job_id": "最低価格収集担当-006",
+      "job_id": "最低価格収集担当-005",
       "task_name": "最低価格収集担当",
       "management_id": "BOX-001-ITEM-0006",
       "status": "open",
@@ -770,19 +988,63 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
       ],
       "batch_size": 4,
       "routing_context": {
-        "mercari_lane": "",
-        "mercari_gate": "",
-        "image_gate": "",
-        "base_condition": "",
-        "shipco_condition": "",
-        "review_reason": "",
-        "low_cost_job": ""
+        "mercari_lane": "停止",
+        "mercari_gate": "停止",
+        "image_gate": "実物のみで可",
+        "base_condition": "停止",
+        "shipco_condition": "停止",
+        "review_reason": "precision guard: 内容物未確認 / 停止条件あり",
+        "low_cost_job": "商品特定再調査"
+      }
+    },
+    {
+      "job_id": "最低価格収集担当-006",
+      "task_name": "最低価格収集担当",
+      "management_id": "BOX-001-ITEM-0007",
+      "status": "open",
+      "recommended_ai_tier": "低コストAI可",
+      "goal": "最低価格と根拠URLと調査時刻を集める",
+      "input_fields": [
+        "management_id",
+        "product_name",
+        "exact_match_status",
+        "current_min_price"
+      ],
+      "write_targets": [
+        "zero_cost_merch_branch/state/intake/BOX-001_market_price_snapshot.json",
+        "zero_cost_merch_branch/state/current_state.json"
+      ],
+      "must_not_do": [
+        "最低価格という語を説明欄へ書かない",
+        "相場の断定を顧客返答に使わない",
+        "100%同一確認済み を勝手に付けない",
+        "問い合わせへ直接返答しない",
+        "出品や API 公開を実行しない"
+      ],
+      "stop_conditions": [
+        "候補が複数に割れて exact 商品か分からない",
+        "送料込み / 送料別で比較が崩れる"
+      ],
+      "expected_outputs": [
+        "market_floor_price",
+        "market_source_url",
+        "market_checked_at"
+      ],
+      "batch_size": 4,
+      "routing_context": {
+        "mercari_lane": "公開済み",
+        "mercari_gate": "公開済み",
+        "image_gate": "実物のみで可",
+        "base_condition": "同期準備可",
+        "shipco_condition": "送り状共通化候補",
+        "review_reason": "例外時のみ",
+        "low_cost_job": "受注監視"
       }
     },
     {
       "job_id": "resident整合担当-001",
       "task_name": "resident整合担当",
-      "management_id": "BOX-001-ITEM-0004",
+      "management_id": "BOX-001-ITEM-0002",
       "status": "open",
       "recommended_ai_tier": "低コストAI可",
       "goal": "resident と state の件数とリンクを再生成し、ズレを減らす",
@@ -823,14 +1085,14 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
         "image_gate": "実物のみで可",
         "base_condition": "停止",
         "shipco_condition": "停止",
-        "review_reason": "precision guard: ブランド不一致 / 停止条件あり",
+        "review_reason": "precision guard: 色違い / 型番違い / サイズ違い / セット違い / 停止条件あり / Qwen HQ判断: 比較画像照合担当 / clear",
         "low_cost_job": "商品特定再調査"
       }
     },
     {
       "job_id": "resident整合担当-002",
       "task_name": "resident整合担当",
-      "management_id": "BOX-001-ITEM-0005",
+      "management_id": "BOX-001-ITEM-0003",
       "status": "open",
       "recommended_ai_tier": "低コストAI可",
       "goal": "resident と state の件数とリンクを再生成し、ズレを減らす",
@@ -878,7 +1140,7 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
     {
       "job_id": "resident整合担当-003",
       "task_name": "resident整合担当",
-      "management_id": "BOX-001-ITEM-0008",
+      "management_id": "BOX-001-ITEM-0004",
       "status": "open",
       "recommended_ai_tier": "低コストAI可",
       "goal": "resident と state の件数とリンクを再生成し、ズレを減らす",
@@ -914,19 +1176,19 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
       ],
       "batch_size": 6,
       "routing_context": {
-        "mercari_lane": "停止",
-        "mercari_gate": "停止",
+        "mercari_lane": "公開済み",
+        "mercari_gate": "公開済み",
         "image_gate": "実物のみで可",
-        "base_condition": "停止",
-        "shipco_condition": "停止",
-        "review_reason": "precision guard: ブランド不一致 / 停止条件あり",
-        "low_cost_job": "商品特定再調査"
+        "base_condition": "同期準備可",
+        "shipco_condition": "送り状共通化候補",
+        "review_reason": "例外時のみ",
+        "low_cost_job": "受注監視"
       }
     },
     {
       "job_id": "resident整合担当-004",
       "task_name": "resident整合担当",
-      "management_id": "BOX-001-ITEM-0009",
+      "management_id": "BOX-001-ITEM-0005",
       "status": "open",
       "recommended_ai_tier": "低コストAI可",
       "goal": "resident と state の件数とリンクを再生成し、ズレを減らす",
@@ -974,7 +1236,7 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
     {
       "job_id": "resident整合担当-005",
       "task_name": "resident整合担当",
-      "management_id": "BOX-001-ITEM-0011",
+      "management_id": "BOX-001-ITEM-0007",
       "status": "open",
       "recommended_ai_tier": "低コストAI可",
       "goal": "resident と state の件数とリンクを再生成し、ズレを減らす",
@@ -1022,7 +1284,7 @@ window.ZERO_COST_TASK_CARD_QUEUE = {
     {
       "job_id": "resident整合担当-006",
       "task_name": "resident整合担当",
-      "management_id": "BOX-001-ITEM-0012",
+      "management_id": "BOX-001-ITEM-0008",
       "status": "open",
       "recommended_ai_tier": "低コストAI可",
       "goal": "resident と state の件数とリンクを再生成し、ズレを減らす",

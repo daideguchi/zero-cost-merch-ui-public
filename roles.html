@@ -65,7 +65,7 @@
       align-items: center;
       margin-bottom: 12px;
       position: sticky;
-      top: 53px;
+      top: var(--hq-sticky-offset, 53px);
       z-index: 40;
       background: var(--bg);
       padding: 8px 0;
@@ -345,7 +345,7 @@
     }
     @media (max-width: 640px) {
       .toolbar {
-        top: 49px;
+        top: var(--hq-sticky-offset, 49px);
       }
       .packet-head {
         grid-template-columns: 1fr;
@@ -400,7 +400,6 @@
   </div>
 
   <script src="./role_packets_snapshot.js"></script>
-  <script src="./api_config.js"></script>
   <script src="./common.js"></script>
   <script>
   (function(){

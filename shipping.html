@@ -448,6 +448,10 @@
     @media (max-width: 580px) {
       .wc-grid, .wb-two-col, .wb-drawer-grid, .packet-primary-grid, .packet-grid, .kv-grid { grid-template-columns: 1fr; }
       .wb-action-text { font-size: 20px; }
+      .wb-banner-meta { align-items: flex-start; }
+      .wc-head, .packet-top { flex-wrap: wrap; }
+      .wc-title, .packet-title { width: 100%; }
+      .wc-stage, .packet-chip { align-self: flex-start; }
       .wc-cell.code-cell .wc-cell-value { font-size: 20px; }
       .coverage-grid { grid-template-columns: 1fr 1fr; }
     }
@@ -611,7 +615,6 @@
   </div>
 
   <script src="./shipping_snapshot.js"></script>
-  <script src="./api_config.js"></script>
   <script src="./common.js"></script>
   <script>
   (function(){
@@ -620,6 +623,9 @@
     var printExports = board.print_exports || {};
     var backendContract = board.backend_contract || {};
     var apiReadiness = board.api_readiness || {};
+    var selectedBoxScope = window.zeroCostCurrentBoxScope ? window.zeroCostCurrentBoxScope() : '';
+    var selectedBoxId = window.zeroCostCurrentBoxId ? window.zeroCostCurrentBoxId() : '';
+    var selectedBoxLabel = window.zeroCostCurrentBoxLabel ? window.zeroCostCurrentBoxLabel() : selectedBoxId;
 
     /* ── utilities ── */
     function parseJstTimestamp(value){
@@ -687,6 +693,50 @@
       return '';
     }
     function numberValue(v){ return Number(v||0); }
+    function scopeLabel(){
+      if (selectedBoxId) return selectedBoxLabel || selectedBoxId;
+      if (String(selectedBoxScope || '').toUpperCase() === 'ALL') return '全商品';
+      return '全箱';
+    }
+    function scopeLabelWithId(){
+      return selectedBoxId ? (scopeLabel() + ' / ' + selectedBoxId) : scopeLabel();
+    }
+    function boxFromText(value){
+      var text = String(value || '').trim().toUpperCase();
+      if (!text) return '';
+      var match = text.match(/^(BOX-[A-Z0-9]+)-ITEM-/);
+      if (match) return match[1];
+      match = text.match(/\b(BOX-[A-Z0-9]+)\b/);
+      return match ? match[1] : '';
+    }
+    function rowBoxId(row){
+      if (!row || typeof row !== 'object') return '';
+      var keys = ['product_id', '商品ID', '管理番号', 'id_label', 'shipment_id', 'order_id', 'title'];
+      for (var i = 0; i < keys.length; i += 1) {
+        if (Object.prototype.hasOwnProperty.call(row, keys[i])) {
+          var preferred = boxFromText(row[keys[i]]);
+          if (preferred) return preferred;
+        }
+      }
+      var values = Object.keys(row).map(function(key){ return row[key]; });
+      for (var j = 0; j < values.length; j += 1) {
+        var derived = boxFromText(values[j]);
+        if (derived) return derived;
+      }
+      return '';
+    }
+    function filterRowsBySelectedBox(rows){
+      var source = Array.isArray(rows) ? rows : [];
+      if (!selectedBoxId) return source.slice();
+      return source.filter(function(row){
+        return rowBoxId(row) === selectedBoxId;
+      });
+    }
+    function summaryDetailText(detail){
+      var prefix = selectedBoxId ? ('対象箱: ' + scopeLabelWithId()) : '';
+      if (!prefix) return detail || '';
+      return detail ? (prefix + ' ・ ' + detail) : prefix;
+    }
 
     /* ── packet helpers ── */
     function packetLabelHref(p){ return String(p&&(p.label_pdf_url||p.label_download_url||'')||'').trim(); }
@@ -716,6 +766,12 @@
     var cards  = consoleData.work_cards || [];
     var samplePacket = (printExports.sample_shipment && Object.keys(printExports.sample_shipment).length) ? printExports.sample_shipment : null;
     var livePackets  = (printExports.shipments && printExports.shipments.length) ? printExports.shipments : [];
+    var scopedCards = filterRowsBySelectedBox(cards);
+    var scopedLivePackets = filterRowsBySelectedBox(livePackets);
+    var scopedSamplePacket = samplePacket && (!selectedBoxId || rowBoxId(samplePacket) === selectedBoxId) ? samplePacket : null;
+    var shipmentRows = filterRowsBySelectedBox(printExports.shipment_export_rows || []);
+    var batchRows = filterRowsBySelectedBox(printExports.batch_export_rows || []);
+    var shippedRecentRows = filterRowsBySelectedBox(((board.queue_preview||{}).shipped_recent) || []);
 
     function findPacketIndex(card, packets, used){
       if (!card) return -1;
@@ -762,6 +818,7 @@
         labelHref: realLabelHref(packet),
         detailLabelHref: packetLabelHref(packet),
         labelStatus: firstNonEmpty(packet&&packet.label_status, isSample?'見本':''),
+        boxId: firstNonEmpty(rowBoxId(card), rowBoxId(packet), ''),
         missingFields: (packet&&packet.missing_fields)||(card&&card.missing_fields)||[]
       };
     }
@@ -822,6 +879,7 @@
       var recipValue  = item.recipientText ? multilineHtml(item.recipientText) : (recipientMissing ? '⚠ 未取得' : '未取得');
 
       var idParts = [];
+      if (item.boxId)      idParts.push('箱 '+item.boxId);
       if (item.shipmentId) idParts.push('出荷 '+item.shipmentId);
       if (item.orderId)    idParts.push('注文 '+item.orderId);
       if (item.route)      idParts.push(item.route);
@@ -865,9 +923,10 @@
     function renderQueueRowHtml(item){
       var codeSnippet = item.codeText ? (item.codeText.length > 16 ? item.codeText.slice(0,16)+'…' : item.codeText) : '—';
       var pickup = item.pickupText || '—';
+      var queueTitle = item.boxId ? (item.boxId + ' · ' + item.title) : item.title;
       return '<div class="wb-qrow">'
         +'<div class="wb-qrow-stage">'+esc(item.stage)+'</div>'
-        +'<div class="wb-qrow-title">'+esc(item.title)+'</div>'
+        +'<div class="wb-qrow-title">'+esc(queueTitle)+'</div>'
         +'<div class="wb-qrow-code">'+esc(codeSnippet)+'</div>'
         +'<div class="wb-qrow-pickup">'+esc(pickup)+'</div>'
         +'</div>';
@@ -890,29 +949,38 @@
     var metrics = board.metrics || {};
     (function(){
       var m = metrics;
-      var isIdle = !m.orders_open && !m.packing_waiting && !m.pickup_waiting && !m.packed_waiting_pickup && !cards.length;
+      var isIdle = selectedBoxId
+        ? !scopedCards.length && !scopedLivePackets.length && !scopedSamplePacket
+        : (!m.orders_open && !m.packing_waiting && !m.pickup_waiting && !m.packed_waiting_pickup && !cards.length);
       document.body.dataset.mode = isIdle ? 'idle' : 'work';
     })();
 
     /* ── build unified cards ── */
-    var unifiedCards = buildUnifiedCards(cards, livePackets, samplePacket);
+    var unifiedCards = buildUnifiedCards(scopedCards, scopedLivePackets, scopedSamplePacket);
     var focusCard    = unifiedCards.find(function(c){ return !c.isSample && !c.isIdle; }) || unifiedCards[0];
     var queueItems   = unifiedCards.filter(function(c){ return c !== focusCard; });
 
     var apiSummary   = (apiReadiness.summary) || {};
-    var packingCount = Math.max(numberValue(metrics.packing_waiting), unifiedCards.filter(function(c){ return c.mode==='packing' && !c.isSample && !c.isIdle; }).length);
-    var labelCount   = Math.max(
-      numberValue(metrics.packed_waiting_pickup)+numberValue(metrics.pickup_waiting),
-      unifiedCards.filter(function(c){ return c.mode==='label' && !c.isSample && !c.isIdle; }).length
-    );
+    var liveWorkCards = unifiedCards.filter(function(c){ return !c.isSample && !c.isIdle; });
+    var packingCount = selectedBoxId
+      ? liveWorkCards.filter(function(c){ return c.mode==='packing'; }).length
+      : Math.max(numberValue(metrics.packing_waiting), liveWorkCards.filter(function(c){ return c.mode==='packing'; }).length);
+    var labelCount   = selectedBoxId
+      ? liveWorkCards.filter(function(c){ return c.mode==='label'; }).length
+      : Math.max(
+          numberValue(metrics.packed_waiting_pickup)+numberValue(metrics.pickup_waiting),
+          liveWorkCards.filter(function(c){ return c.mode==='label'; }).length
+        );
     var handoffCount = unifiedCards.filter(function(c){ return c.mode==='handoff' && !c.isSample && !c.isIdle; }).length;
-    var soldCount    = Math.max(numberValue(metrics.orders_open), numberValue(metrics.shipping_candidates), packingCount, labelCount, handoffCount);
-    var doneCount    = numberValue(metrics.shipped_total);
+    var soldCount    = selectedBoxId
+      ? Math.max(liveWorkCards.length, packingCount, labelCount, handoffCount)
+      : Math.max(numberValue(metrics.orders_open), numberValue(metrics.shipping_candidates), packingCount, labelCount, handoffCount);
+    var doneCount    = selectedBoxId ? shippedRecentRows.length : numberValue(metrics.shipped_total);
 
     /* ── summary state ── */
     var summaryBadge    = '待機中';
     var summaryHeadline = '売れたらここにカードが出ます。';
-    var summaryDetail   = (routes[0]||{}).value || '';
+    var summaryDetail   = summaryDetailText((routes[0]||{}).value || '');
     var summaryNext     = '今は待つだけです。';
     var currentStepId   = 'idle';
     var badgeMod        = '';
@@ -923,22 +991,22 @@
       currentStepId = handoffCount?'handoff':(labelCount?'label':(packingCount||soldCount?'pack':'sold'));
     } else if (focusCard && focusCard.isSample) {
       summaryBadge='見本'; badgeMod='sample';
-      summaryNext='この見本でコード・宛先・ラベル位置を確認します。';
+      summaryNext=(selectedBoxId ? (scopeLabel() + ' の見本で ') : '') + 'コード・宛先・ラベル位置を確認します。';
     } else if (focusCard && focusCard.isIdle) {
       summaryBadge='待機中';
-      summaryNext='注文が入ると、梱包カードが先頭に出ます。';
+      summaryNext=(selectedBoxId ? (scopeLabel() + ' の注文が入ると、') : '注文が入ると、') + '梱包カードが先頭に出ます。';
     } else if (handoffCount) {
       summaryBadge='引渡し可'; badgeMod='ready'; currentStepId='handoff';
       summaryNext = focusCard && focusCard.action ? focusCard.action : 'コードとラベルを持ってヤマトへ渡します。';
-      summaryDetail = focusCard ? '先頭: '+focusCard.title : summaryDetail;
+      summaryDetail = focusCard ? summaryDetailText('先頭: '+focusCard.title) : summaryDetail;
     } else if (labelCount) {
       summaryBadge='ラベル準備'; badgeMod='active'; currentStepId='label';
       summaryNext = focusCard && focusCard.action ? focusCard.action : '見せるコードと時間帯を確認します。';
-      summaryDetail = focusCard ? '先頭: '+focusCard.title : summaryDetail;
+      summaryDetail = focusCard ? summaryDetailText('先頭: '+focusCard.title) : summaryDetail;
     } else if (packingCount || soldCount) {
       summaryBadge='梱包'; badgeMod='active'; currentStepId='pack';
       summaryNext = focusCard && focusCard.action ? focusCard.action : '商品を取り、梱包します。';
-      summaryDetail = focusCard ? '先頭: '+focusCard.title : summaryDetail;
+      summaryDetail = focusCard ? summaryDetailText('先頭: '+focusCard.title) : summaryDetail;
     }
 
     set('summary-next-step', summaryNext);
@@ -994,6 +1062,8 @@
         }
       });
     }
+    var queueHeaderEl = document.querySelector('.wb-queue-header');
+    if (queueHeaderEl) queueHeaderEl.textContent = selectedBoxId ? (scopeLabel() + ' の次の件') : '次の件';
 
     /* ── D. Queue ── */
     (function(){
@@ -1054,7 +1124,7 @@
     })();
 
     /* ── Print drawer ── */
-    set('print-note', printExports.note || '');
+    set('print-note', (selectedBoxId ? ('対象箱: ' + scopeLabelWithId() + ' / ') : '') + (printExports.note || ''));
     (function(){
       var printCoverageEl = document.getElementById('print-coverage');
       var coverageItems = ((consoleData.print_center||{}).coverage)||[];
@@ -1070,21 +1140,26 @@
 
     var routeList = document.getElementById('route-list');
     if (routeList){
-      routeList.innerHTML = routes.map(function(r){
+      var routeCards = routes.map(function(r){
         return '<div class="compact-route">'
           +'<div class="label">'+esc(r.label||'')+'</div>'
           +'<div class="value">'+esc(r.value||'')+'</div>'
           +'<div class="note">'+esc(r.note||'')+'</div>'
           +'</div>';
-      }).join('');
+      });
+      if (selectedBoxId) {
+        routeCards.unshift('<div class="compact-route"><div class="label">対象箱</div><div class="value">'+esc(scopeLabelWithId())+'</div><div class="note">この箱だけで発送カードと印刷パケットを組みます。</div></div>');
+      }
+      routeList.innerHTML = routeCards.join('');
     }
 
     var packetBox = document.getElementById('print-packets');
-    var detailPackets = livePackets.length ? livePackets : (samplePacket ? [samplePacket] : []);
+    var detailPackets = scopedLivePackets.length ? scopedLivePackets : (scopedSamplePacket ? [scopedSamplePacket] : []);
     if (packetBox){
-      if (!detailPackets.length){ packetBox.innerHTML='<div class="empty">まだありません。</div>'; }
+      if (!detailPackets.length){ packetBox.innerHTML='<div class="empty">'+esc(selectedBoxId ? (scopeLabelWithId() + ' の印刷パケットはまだありません。') : 'まだありません。')+'</div>'; }
       else {
         packetBox.innerHTML = detailPackets.map(function(packet){
+          var packetBoxId = rowBoxId(packet);
           var labelLink = realLabelHref(packet);
           var recAddr   = [packet.recipient_zip, packet.recipient_address].filter(Boolean).join(' ');
           var senderTxt = [packet.sender_name,packet.sender_address,packet.sender_phone].filter(Boolean).join(' / ');
@@ -1097,7 +1172,7 @@
             return '<div class="coverage-pill '+(c.status||'missing')+'">'+esc(c.label||'')+' '+esc(c.value||'')+'</div>';
           }).join('');
           return '<div class="packet-card">'
-            +'<div class="packet-top"><div class="packet-title">'+esc(packet.shipment_id||'未設定')+'</div><div class="packet-chip">'+esc(packet.status||'')+'</div></div>'
+            +'<div class="packet-top"><div class="packet-title">'+esc(packet.shipment_id||'未設定')+(packetBoxId ? ' <span style="font-size:12px;color:var(--text-3)">/ '+esc(packetBoxId)+'</span>' : '')+'</div><div class="packet-chip">'+esc(packet.status||'')+'</div></div>'
             +'<div class="packet-coverage">'+coverageHtml+'</div>'
             +'<div class="packet-actions">'
             +'<button class="mini-btn copy-code" type="button" data-copy="'+attr(codeToCopy)+'"'+(codeToCopy?'':' disabled')+'>コードをコピー</button>'
@@ -1144,7 +1219,6 @@
       }
     }
 
-    var batchRows = printExports.batch_export_rows || [];
     renderTable('print-batches', batchRows);
     var batchPanel = document.getElementById('print-batch-panel');
     if (batchPanel) batchPanel.hidden = !batchRows.length;
@@ -1182,9 +1256,11 @@
       }).join('');
     }
 
-    renderList('next-actions', board.next_actions || []);
-    renderTable('queue-orders', ((board.queue_preview||{}).orders_open)||[]);
-    renderTable('queue-pickup', ((board.queue_preview||{}).pickup_waiting)||[]);
+    var scopedNextActions = (board.next_actions || []).slice();
+    if (selectedBoxId) scopedNextActions.unshift('対象箱: ' + scopeLabelWithId() + '。この画面のカードと印刷パケットはこの箱だけで再計算しています。');
+    renderList('next-actions', scopedNextActions);
+    renderTable('queue-orders', filterRowsBySelectedBox(((board.queue_preview||{}).orders_open)||[]));
+    renderTable('queue-pickup', filterRowsBySelectedBox(((board.queue_preview||{}).pickup_waiting)||[]));
     renderTable('backend-source-tabs', backendContract.source_tabs || []);
 
     var backendPrintContract = document.getElementById('backend-print-contract');
@@ -1208,6 +1284,7 @@
     var syncHealthFetches = document.getElementById('sync-health-fetches');
     if (channelStatuses){
       var channelItems = [];
+      if (selectedBoxId) channelItems.push('対象箱: ' + scopeLabelWithId() + '。この欄は箱共通の販路ルールです。');
       (board.channel_statuses || []).forEach(function(item){
         channelItems.push(
           (item.label||'channel')+': 出品='+(item.publish_status||'未取得')
@@ -1249,19 +1326,29 @@
     }
 
     /* ── Export buttons ── */
-    var jsonPayloadText  = JSON.stringify(printExports.payload||{}, null, 2);
-    var shipmentCsvText  = rowsToCsvText(printExports.shipment_export_rows||[]);
-    var batchCsvText     = rowsToCsvText(printExports.batch_export_rows||[]);
+    var exportPayload = printExports.payload || {};
+    if (selectedBoxId && exportPayload && typeof exportPayload === 'object') {
+      try {
+        exportPayload = JSON.parse(JSON.stringify(exportPayload));
+        if (Array.isArray(exportPayload.shipments)) exportPayload.shipments = filterRowsBySelectedBox(exportPayload.shipments);
+        if (Array.isArray(exportPayload.batch_export_rows)) exportPayload.batch_export_rows = filterRowsBySelectedBox(exportPayload.batch_export_rows);
+        exportPayload.selected_box = selectedBoxId;
+      } catch (_) {}
+    }
+    var jsonPayloadText  = JSON.stringify(exportPayload||{}, null, 2);
+    var shipmentCsvText  = rowsToCsvText(shipmentRows);
+    var batchCsvText     = rowsToCsvText(batchRows);
     var filenames        = printExports.filenames || {};
+    var filenameSuffix   = selectedBoxId ? ('__' + String(selectedBoxId || '').toLowerCase()) : '';
     var hasJson          = !!jsonPayloadText && jsonPayloadText !== '{}';
-    var hasShipmentCsv   = !!(printExports.shipment_export_rows||[]).length;
-    var hasBatchCsv      = !!(printExports.batch_export_rows||[]).length;
-    var hasPrintTarget   = !!detailPackets.length || !!(printExports.batch_export_rows||[]).length;
+    var hasShipmentCsv   = !!shipmentRows.length;
+    var hasBatchCsv      = !!batchRows.length;
+    var hasPrintTarget   = !!detailPackets.length || !!batchRows.length;
 
     function printableHtml(){
       var missingItems = ((consoleData.print_center||{}).missing_upstream)||[];
       var missingHtml  = missingItems.length?'<ul>'+missingItems.map(function(i){ return '<li>'+esc(i)+'</li>'; }).join('')+'</ul>':'<p>upstream不足はありません。</p>';
-      var batchRows2   = printExports.batch_export_rows || [];
+      var batchRows2   = batchRows;
       var batchHtml    = batchRows2.length?(function(){
         var hd=Object.keys(batchRows2[0]);
         return '<table><thead><tr>'+hd.map(function(h){ return '<th>'+esc(h)+'</th>'; }).join('')+'</tr></thead><tbody>'
@@ -1272,6 +1359,7 @@
         +'body{font-family:"Noto Sans JP",sans-serif;padding:24px;color:#111}h1{font-size:24px;margin:0 0 10px}h2{font-size:16px;margin:0 0 10px}.packet{border:1px solid #ddd;border-radius:12px;padding:14px;margin-bottom:16px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.grid div{border:1px solid #ddd;border-radius:10px;padding:10px}strong{font-size:11px;text-transform:uppercase;letter-spacing:.04em}p,li,td,th{font-size:12px;line-height:1.6}table{width:100%;border-collapse:collapse}th,td{border:1px solid #ddd;padding:8px;text-align:left;vertical-align:top}@media print{body{padding:0}.packet{break-inside:avoid}}'
         +'</style></head><body>'
         +'<h1>発送印刷パケット</h1>'
+        +(selectedBoxId ? '<p>対象箱: '+esc(scopeLabelWithId())+'</p>' : '')
         +'<p>'+esc((consoleData.print_center||{}).detail||'')+'</p>'
         +'<p>'+esc(printExports.note||'')+'</p>'
         +'<h2>不足 source</h2>'+missingHtml
@@ -1313,9 +1401,9 @@
     var printBtn   = document.getElementById('open-print-view');
     var copyBtn    = document.getElementById('copy-print-json');
 
-    if (jsonBtn){ jsonBtn.disabled=!hasJson; jsonBtn.addEventListener('click',function(){ downloadText(filenames.json||'shipping_print_packets.json',jsonPayloadText,'application/json;charset=utf-8'); }); }
-    if (shipBtn){ shipBtn.disabled=!hasShipmentCsv; shipBtn.addEventListener('click',function(){ downloadText(filenames.shipment_csv||'shipping_print_packets.csv',shipmentCsvText,'text/csv;charset=utf-8'); }); }
-    if (batchBtn){ batchBtn.disabled=!hasBatchCsv; batchBtn.addEventListener('click',function(){ downloadText(filenames.batch_csv||'shipping_pickup_batches.csv',batchCsvText,'text/csv;charset=utf-8'); }); }
+    if (jsonBtn){ jsonBtn.disabled=!hasJson; jsonBtn.addEventListener('click',function(){ downloadText(filenames.json||('shipping_print_packets'+filenameSuffix+'.json'),jsonPayloadText,'application/json;charset=utf-8'); }); }
+    if (shipBtn){ shipBtn.disabled=!hasShipmentCsv; shipBtn.addEventListener('click',function(){ downloadText(filenames.shipment_csv||('shipping_print_packets'+filenameSuffix+'.csv'),shipmentCsvText,'text/csv;charset=utf-8'); }); }
+    if (batchBtn){ batchBtn.disabled=!hasBatchCsv; batchBtn.addEventListener('click',function(){ downloadText(filenames.batch_csv||('shipping_pickup_batches'+filenameSuffix+'.csv'),batchCsvText,'text/csv;charset=utf-8'); }); }
     if (copyBtn){ copyBtn.disabled=!hasJson; copyBtn.addEventListener('click',function(){ copyText(jsonPayloadText,copyBtn); }); }
     if (printBtn){
       printBtn.disabled=!hasPrintTarget;

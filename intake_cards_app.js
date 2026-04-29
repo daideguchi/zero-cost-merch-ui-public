@@ -128,6 +128,16 @@ window.ZERO_COST_INTAKE_CARDS_APP_READY = true;
     return isFinite(num) && !isNaN(num) ? "¥" + num.toLocaleString() : String(value);
   }
 
+  function numberFromPrice(value) {
+    if (value == null) return null;
+    var text = String(value).trim();
+    if (!text) return null;
+    var cleaned = text.replace(/[^\d.-]/g, "");
+    if (!cleaned) return null;
+    var parsed = Number(cleaned);
+    return isFinite(parsed) && !isNaN(parsed) ? parsed : null;
+  }
+
   function cleanText(value) {
     return String(value || "").replace(/\s+/g, " ").trim();
   }
@@ -228,6 +238,17 @@ window.ZERO_COST_INTAKE_CARDS_APP_READY = true;
       : requestedBoxId;
   }
 
+  function syncGlobalBoxContext() {
+    if (!window.zeroCostSetBoxId) return;
+    if (requestedBoxId === ALL_BOXES_KEY) {
+      window.zeroCostSetBoxId(ALL_BOXES_KEY, { label: "全商品", updateUrl: false });
+      return;
+    }
+    window.zeroCostSetBoxId(requestedBoxId, { label: currentBoxLabel(), updateUrl: true });
+  }
+
+  syncGlobalBoxContext();
+
   function isLive(item) {
     return String(item.publish_state || (item.commerce && item.commerce.publish_state) || "").trim() === "API公開済み";
   }
@@ -261,6 +282,22 @@ window.ZERO_COST_INTAKE_CARDS_APP_READY = true;
     return String(updateKey || "").trim() || "人確認";
   }
 
+  function gateUpdatesPayload(updateKey, value) {
+    var updates = {};
+    updates[updateKey] = value;
+    if (updateKey === "human_ai_images_ok" && value) {
+      updates.human_actual_only_ok = false;
+    }
+    if (updateKey === "human_publish_ok" && value) {
+      updates.human_hold = false;
+    }
+    if (updateKey === "human_publish_ok" && !value) {
+      updates.human_actual_only_ok = false;
+      updates.human_hold = false;
+    }
+    return updates;
+  }
+
   function gateActionMeta(updateKey, value) {
     var meta = {
       action: "gate_toggle",
@@ -289,6 +326,30 @@ window.ZERO_COST_INTAKE_CARDS_APP_READY = true;
       hold: rows.filter(function (item) { return item.human_gate.hold && !isLive(item); }).length,
       unresolved: rows.filter(function (item) { return !item.human_gate.requires_ai_images_ok; }).length,
       live: rows.filter(isLive).length
+    };
+  }
+
+  function summaryFromRows(rows) {
+    var prices = [];
+    (rows || []).forEach(function(item) {
+      var price = numberFromPrice(
+        item && item.market_floor_price
+        || item && item.listing_price
+        || item && item.minimum_price
+        || item && item.commerce && (item.commerce.market_floor_price || item.commerce.listing_price)
+        || item && item.resolved && item.resolved.price_override
+      );
+      if (price == null || price <= 0) return;
+      prices.push(price);
+    });
+    prices.sort(function(a, b) { return b - a; });
+    var totalValue = prices.reduce(function(sum, price) { return sum + price; }, 0);
+    var topSixValue = prices.slice(0, 6).reduce(function(sum, price) { return sum + price; }, 0);
+    return {
+      pricedItems: prices.length,
+      totalValue: totalValue,
+      topSixValue: topSixValue,
+      averageValue: prices.length ? Math.round(totalValue / prices.length) : 0
     };
   }
 
@@ -419,6 +480,27 @@ window.ZERO_COST_INTAKE_CARDS_APP_READY = true;
     }
   }
 
+  function gateRefreshFeedback(data, savedText) {
+    var refresh = data && data.refresh ? data.refresh : null;
+    if (!refresh || refresh.triggered === false) {
+      return { message: savedText, isError: false };
+    }
+    if (refresh.ok === false) {
+      var reason = String(refresh.error || refresh.failed_step || "").trim();
+      return {
+        message: savedText + " ただし再計算に失敗しました。" + (reason ? " " + reason : ""),
+        isError: true
+      };
+    }
+    if (refresh.summary_line) {
+      return {
+        message: savedText + " " + String(refresh.summary_line || "").trim(),
+        isError: false
+      };
+    }
+    return { message: savedText, isError: false };
+  }
+
   function copyText(value) {
     value = String(value || "");
     if (navigator.clipboard && window.isSecureContext) {
@@ -460,11 +542,100 @@ window.ZERO_COST_INTAKE_CARDS_APP_READY = true;
       || "";
   }
 
-  function manualListingPriceSource(item) {
+  function priceDeltaLabel(chosenNum, floorNum) {
+    if (chosenNum == null || floorNum == null) return "比較不可";
+    var diff = chosenNum - floorNum;
+    if (diff === 0) return "相場下限と同額";
+    return diff > 0
+      ? "相場下限より +" + formatPrice(diff).replace(/^¥/, "¥")
+      : "相場下限より -" + formatPrice(Math.abs(diff)).replace(/^¥/, "¥");
+  }
+
+  function manualListingPriceEvidence(item) {
     var commerce = item.commerce || {};
-    if (commerce.market_floor_price) return commerce.market_source_label || commerce.market_source_url || "相場調査";
-    if (commerce.listing_price || item.listing_price || item.manual_market_price) return commerce.market_note || "参考価格";
-    return "未調査。メルカリ画面で最終確認";
+    var resolved = item.resolved || {};
+    var chosenValue = manualListingPrice(item);
+    var listingValue = item.listing_price || commerce.listing_price || "";
+    var marketFloorValue = commerce.market_floor_price || "";
+    var overrideValue = resolved.price_override || item.price_override || "";
+    var manualValue = item.manual_market_price || "";
+    var chosenNum = numberFromPrice(chosenValue);
+    var listingNum = numberFromPrice(listingValue);
+    var marketFloorNum = numberFromPrice(marketFloorValue);
+    var overrideNum = numberFromPrice(overrideValue);
+    var manualNum = numberFromPrice(manualValue);
+    var sourceLabel = cleanText(commerce.market_source_label || "");
+    var sourceUrl = cleanText(commerce.market_source_url || "");
+    var sampleUrls = Array.isArray(commerce.sample_urls)
+      ? commerce.sample_urls.map(cleanText).filter(Boolean)
+      : [];
+    var checkedAt = cleanText(commerce.market_checked_at || "");
+    var note = cleanText(commerce.market_note || "");
+    var popularityLabel = cleanText(item.popularity_proxy_label || commerce.popularity_proxy_label || "");
+    var popularityReason = cleanText(item.popularity_proxy_reason || commerce.popularity_proxy_reason || "");
+    var chosenFrom = "未設定";
+    var chosenText = String(chosenValue || "");
+    if (manualNum !== null && chosenText === String(manualValue)) chosenFrom = "手動で調整した価格";
+    else if (listingNum !== null && chosenText === String(listingValue)) chosenFrom = "出品候補価格";
+    else if (marketFloorNum !== null && chosenText === String(marketFloorValue)) chosenFrom = "相場下限";
+    else if (overrideNum !== null && chosenText === String(overrideValue)) chosenFrom = "price_override";
+    else if (chosenNum !== null) chosenFrom = "保存済みの価格";
+
+    var externalConfirmed = Boolean(sourceUrl);
+    var fallbackOnly = /fallback|override|仮置き|参考価格/i.test(sourceLabel + " " + note);
+    var levelClass = "safe";
+    var levelLabel = "相場確認あり";
+    var headline = "相場URL確認済みの参考価格";
+    var summary = "確認URLを見た上での参考価格です。出品前の再確認負荷は低めです。";
+    if (chosenNum === null) {
+      levelClass = "danger";
+      levelLabel = "要調査";
+      headline = "価格未設定";
+      summary = "まだ価格が入っていません。相場確認をしてから出品価格を決めてください。";
+    } else if (!externalConfirmed && (fallbackOnly || marketFloorNum !== null || listingNum !== null || overrideNum !== null)) {
+      levelClass = "warning";
+      levelLabel = "仮置き";
+      headline = "内部データで仮置き中";
+      summary = "外部相場URLがまだ無いため、いまは price_override / 出品候補価格 / 相場下限 のどれかを採用しています。最終出品前にメルカリ画面で再確認してください。";
+    } else if (!externalConfirmed) {
+      levelClass = "danger";
+      levelLabel = "根拠弱め";
+      headline = "根拠が弱い価格";
+      summary = "価格は入っていますが、相場根拠が薄い状態です。出品前に相場確認を推奨します。";
+    }
+
+    var lines = [
+      { label: "採用元", text: chosenFrom },
+      (marketFloorNum !== null && chosenNum !== null) ? { label: "相場との差", text: priceDeltaLabel(chosenNum, marketFloorNum) } : null,
+      sourceLabel ? { label: "確認元", text: sourceLabel } : null,
+      checkedAt ? { label: "確認日時", text: checkedAt } : null,
+      sourceUrl ? { label: "確認URL", text: "確認ページを開く", href: sourceUrl } : null,
+      popularityReason ? { label: "人気理由", text: popularityReason } : null,
+      (!sourceUrl && chosenNum !== null) ? { label: "最終確認", text: "外部相場URLが無いので、出品前にメルカリ画面で再確認" } : null
+    ].filter(Boolean);
+    if (sampleUrls.length) {
+      lines.push({ label: "比較URL数", text: String(sampleUrls.length) + "件" });
+      sampleUrls.slice(0, 3).forEach(function(url, index) {
+        if (url && url !== sourceUrl) {
+          lines.push({ label: "参考URL " + String(index + 1), text: "比較ページを開く", href: url });
+        }
+      });
+    }
+
+    return {
+      levelClass: levelClass,
+      levelLabel: levelLabel,
+      headline: headline,
+      summary: summary,
+      note: note,
+      metrics: [
+        { label: "採用価格", value: formatPrice(chosenValue) },
+        { label: "相場下限", value: marketFloorNum !== null ? formatPrice(marketFloorValue) : "未取得" },
+        { label: "出品候補", value: listingNum !== null ? formatPrice(listingValue) : "未設定" },
+        { label: "人気見立て", value: popularityLabel || "未評価" }
+      ],
+      lines: lines
+    };
   }
 
   function manualListingDescription(item) {
@@ -485,11 +656,16 @@ window.ZERO_COST_INTAKE_CARDS_APP_READY = true;
   }
 
   function manualListingData(item) {
+    var commerce = item.commerce || {};
+    var priceEvidence = manualListingPriceEvidence(item);
     return {
       title: manualListingTitle(item),
       description: manualListingDescription(item),
       price: manualListingPrice(item),
-      priceSource: manualListingPriceSource(item)
+      priceSource: priceEvidence.headline,
+      priceEvidence: priceEvidence,
+      popularityLabel: item.popularity_proxy_label || commerce.popularity_proxy_label || "",
+      popularityReason: item.popularity_proxy_reason || commerce.popularity_proxy_reason || ""
     };
   }
 
@@ -504,6 +680,40 @@ window.ZERO_COST_INTAKE_CARDS_APP_READY = true;
       "説明文",
       listing.description || ""
     ].join("\n").trim();
+  }
+
+  function manualListingPriceEvidenceHtml(evidence) {
+    if (!evidence) return "";
+    return '<div class="manual-evidence">'
+      + '<div class="manual-evidence-head">'
+      + '<div class="manual-evidence-title">価格根拠</div>'
+      + '<span class="manual-evidence-badge ' + escapeHtml(evidence.levelClass || "") + '">' + escapeHtml(evidence.levelLabel || "") + '</span>'
+      + "</div>"
+      + '<div class="manual-evidence-summary">' + escapeHtml(evidence.summary || "") + "</div>"
+      + '<div class="manual-evidence-grid">'
+      + (evidence.metrics || []).map(function(metric) {
+        return '<div class="manual-evidence-cell">'
+          + '<div class="manual-evidence-cell-label">' + escapeHtml(metric.label || "") + "</div>"
+          + '<div class="manual-evidence-cell-value">' + escapeHtml(metric.value || "") + "</div>"
+          + "</div>";
+      }).join("")
+      + "</div>"
+      + ((evidence.lines || []).length
+        ? '<div class="manual-evidence-list">'
+          + (evidence.lines || []).map(function(line) {
+            return '<div class="manual-evidence-line">'
+              + '<span class="manual-evidence-line-label">' + escapeHtml(line.label || "") + "</span>"
+              + '<span class="manual-evidence-line-value">'
+              + (line.href
+                ? '<a class="manual-evidence-link" href="' + escapeHtml(line.href) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(line.text || "") + "</a>"
+                : escapeHtml(line.text || ""))
+              + "</span>"
+              + "</div>";
+          }).join("")
+          + "</div>"
+        : "")
+      + (evidence.note ? '<div class="manual-evidence-note">' + escapeHtml(evidence.note) + "</div>" : "")
+      + "</div>";
   }
 
   function actualPhotosHtml(item) {
@@ -695,7 +905,7 @@ window.ZERO_COST_INTAKE_CARDS_APP_READY = true;
       + "</div>"
       + '<div class="manual-grid">'
       + '<div class="manual-field"><div class="manual-label"><span>タイトル</span><button class="copy-btn mobile-secondary" type="button" data-copy-value="' + escapeHtml(listing.title) + '">コピー</button></div><div class="manual-value">' + escapeHtml(listing.title || "未設定") + "</div></div>"
-      + '<div class="manual-field"><div class="manual-label"><span>相場・価格</span><button class="copy-btn mobile-secondary" type="button" data-copy-value="' + escapeHtml(String(listing.price || "")) + '">コピー</button></div><div class="manual-value manual-price">' + escapeHtml(formatPrice(listing.price)) + '</div><div class="manual-source">' + escapeHtml(listing.priceSource || "") + "</div></div>"
+      + '<div class="manual-field"><div class="manual-label"><span>相場・価格</span><button class="copy-btn mobile-secondary" type="button" data-copy-value="' + escapeHtml(String(listing.price || "")) + '">コピー</button></div><div class="manual-value manual-price">' + escapeHtml(formatPrice(listing.price)) + '</div><div class="manual-source">' + escapeHtml(listing.priceSource || "") + '</div>' + manualListingPriceEvidenceHtml(listing.priceEvidence) + "</div>"
       + "</div>"
       + '<div class="manual-field"><div class="manual-label"><span>説明文</span><button class="copy-btn mobile-secondary" type="button" data-copy-value="' + escapeHtml(listing.description) + '">コピー</button></div><div class="manual-value manual-desc">' + escapeHtml(listing.description || "未設定") + "</div></div>"
       + "</section>";
@@ -745,6 +955,7 @@ window.ZERO_COST_INTAKE_CARDS_APP_READY = true;
       + '<span class="status-chip ' + gateChipClass + '">' + escapeHtml(humanGateLabel(gate)) + '</span>'
       + (gate.actual_only_ok && !gate.hold ? '<span class="status-chip actual-only">\u5b9f\u7269\u306e\u307f</span>' : '')
       + (isLive(item) ? '<span class="status-chip live">\u516c\u958b\u6e08\u307f</span>' : '')
+      + (commerce.popularity_proxy_label ? '<span class="sequence-chip">\u4eba\u6c17\u5ea6(\u4eee) ' + escapeHtml(commerce.popularity_proxy_label) + '</span>' : '')
       + '</div>'
       + '<div class="item-name" style="font-size:14px;font-weight:900;margin-bottom:8px">' + escapeHtml(shortName) + '</div>'
 
@@ -868,6 +1079,7 @@ window.ZERO_COST_INTAKE_CARDS_APP_READY = true;
   function renderHero() {
     var rows = currentBoxItems();
     var metrics = heroMetrics(rows);
+    var summary = summaryFromRows(rows);
     heroTitle.textContent = currentBoxLabel() + " / " + rows.length + "件";
     heroPills.innerHTML = [
       '<span class="hero-pill">総数 ' + metrics.total + '件</span>',
@@ -875,7 +1087,9 @@ window.ZERO_COST_INTAKE_CARDS_APP_READY = true;
       '<span class="hero-pill">確認待ち ' + metrics.pending + '件</span>',
       metrics.hold ? '<span class="hero-pill" style="color:#b45309;border-color:rgba(217,119,6,.3)">保留 ' + metrics.hold + '件</span>' : '',
       '<span class="hero-pill">未特定 ' + metrics.unresolved + '件</span>',
-      '<span class="hero-pill">公開済み ' + metrics.live + '件</span>'
+      '<span class="hero-pill">公開済み ' + metrics.live + '件</span>',
+      summary.pricedItems ? '<span class="hero-pill hero-pill-money">相場下限 ' + formatPrice(summary.totalValue) + '</span>' : '',
+      summary.pricedItems ? '<span class="hero-pill hero-pill-money">上位6点 ' + formatPrice(summary.topSixValue) + '</span>' : ''
     ].filter(Boolean).join("");
     emptyEl.textContent = rows.length ? "該当する商品がありません" : "まだ商品がありません";
   }
@@ -896,14 +1110,18 @@ window.ZERO_COST_INTAKE_CARDS_APP_READY = true;
       return;
     }
     boxSwitchbar.style.display = "";
+    function boxSummary(items) {
+      var summary = summaryFromRows(items);
+      return summary.pricedItems ? formatPrice(summary.totalValue) : "未集計";
+    }
     var parts = [
-      '<a class="box-switch' + (requestedBoxId === ALL_BOXES_KEY ? " active" : "") + '" href="./intake_cards.html?box=' + encodeURIComponent(ALL_BOXES_KEY) + '"><span>全商品</span><span class="box-switch-count">' + allItems.length + "</span></a>"
+      '<a class="box-switch' + (requestedBoxId === ALL_BOXES_KEY ? " active" : "") + '" href="./intake_cards.html?box=' + encodeURIComponent(ALL_BOXES_KEY) + '"><span>全商品</span><span class="box-switch-count">' + allItems.length + '点</span><span class="box-switch-total">' + boxSummary(allItems) + "</span></a>"
     ];
     boxSnapshots.forEach(function (box) {
       var boxId = String(box && box.box_id || "").trim();
       var label = boxDisplayLabel(boxId, box && box.box_label, box && box.box_lane, box && box.box_code);
       var count = Array.isArray(box && box.items) ? box.items.length : 0;
-      parts.push('<a class="box-switch' + (boxId === requestedBoxId ? " active" : "") + '" href="./intake_cards.html?box=' + encodeURIComponent(boxId) + '"><span>' + escapeHtml(label) + '</span><span class="box-switch-count">' + count + "</span></a>");
+      parts.push('<a class="box-switch' + (boxId === requestedBoxId ? " active" : "") + '" href="./intake_cards.html?box=' + encodeURIComponent(boxId) + '"><span>' + escapeHtml(label) + '</span><span class="box-switch-count">' + count + '点</span><span class="box-switch-total">' + boxSummary(box.items || []) + "</span></a>");
     });
     boxSwitchbar.innerHTML = parts.join("");
   }
@@ -1106,18 +1324,15 @@ window.ZERO_COST_INTAKE_CARDS_APP_READY = true;
     setBulkMessage("更新しています。", false);
     postJson(itemBulkUpdateApiUrl(), {
       management_ids: selected,
-      updates: (function () {
-        var payload = {};
-        payload[updateKey] = value;
-        return payload;
-      })(),
+      updates: gateUpdatesPayload(updateKey, value),
       action_meta: bulkGateActionMeta(updateKey, value)
     }).then(function (data) {
       (data.items || []).forEach(function (row) {
         patchHumanGate(row.management_id, row.human_gate || {});
       });
       renderAll();
-      setBulkMessage((data.changed_ids || selected).length + "件更新しました。", false);
+      var feedback = gateRefreshFeedback(data, (data.changed_ids || selected).length + "件更新しました。");
+      setBulkMessage(feedback.message, feedback.isError);
     }).catch(function (error) {
       setBulkMessage("一括更新に失敗しました。 " + (error && error.message ? error.message : ""), true);
     });
@@ -1184,22 +1399,7 @@ window.ZERO_COST_INTAKE_CARDS_APP_READY = true;
     if (!item) return;
     var gateKey = gateInput.getAttribute("data-gate-toggle");
     var gateValue = Boolean(gateInput.checked);
-    var updates = {};
-    updates[gateKey] = gateValue;
-    /* avoid contradictory stale state on generic checkbox toggles */
-    if (gateKey === "human_ai_images_ok" && gateValue) {
-      /* AI images now OK → actual-only path no longer applies */
-      updates.human_actual_only_ok = false;
-    }
-    if (gateKey === "human_publish_ok" && gateValue) {
-      /* publish turned ON → clear hold flag */
-      updates.human_hold = false;
-    }
-    if (gateKey === "human_publish_ok" && !gateValue) {
-      /* publish turned OFF → clear hold and actual-only (neither is set intentionally) */
-      updates.human_actual_only_ok = false;
-      updates.human_hold = false;
-    }
+    var updates = gateUpdatesPayload(gateKey, gateValue);
     gateInput.disabled = true;
     postJson(itemUpdateApiUrl(), {
       box_id: item._box_id || "",
@@ -1209,7 +1409,8 @@ window.ZERO_COST_INTAKE_CARDS_APP_READY = true;
     }).then(function (data) {
       patchHumanGate(mid, (data.updates || {}).human_gate || {});
       renderAll();
-      setBulkMessage("更新しました。", false);
+      var feedback = gateRefreshFeedback(data, "更新しました。");
+      setBulkMessage(feedback.message, feedback.isError);
     }).catch(function (error) {
       gateInput.checked = !gateInput.checked;
       gateInput.disabled = false;
@@ -1419,7 +1620,8 @@ window.ZERO_COST_INTAKE_CARDS_APP_READY = true;
       }).then(function (data) {
         patchHumanGate(wrongAiMid, (data.updates || {}).human_gate || {});
         renderAll();
-        setBulkMessage('AI\u753b\u50cfOK\u3092\u5916\u3057\u307e\u3057\u305f\u3002', false);
+        var feedback = gateRefreshFeedback(data, 'AI\u753b\u50cfOK\u3092\u5916\u3057\u307e\u3057\u305f\u3002');
+        setBulkMessage(feedback.message, feedback.isError);
         closeWrongAiModal();
       }).catch(function (error) {
         msgEl.textContent = '\u5931\u6557: ' + (error && error.message ? error.message : '');
@@ -1728,7 +1930,8 @@ window.ZERO_COST_INTAKE_CARDS_APP_READY = true;
       }).then(function (data) {
         patchHumanGate(mid, (data.updates || {}).human_gate || {});
         renderAll();
-        setBulkMessage("\u5199\u771f\u306a\u3057\u51fa\u54c1OK\u3092\u8a18\u9332\u3057\u307e\u3057\u305f\u3002", false);
+        var feedback = gateRefreshFeedback(data, "\u5199\u771f\u306a\u3057\u51fa\u54c1OK\u3092\u8a18\u9332\u3057\u307e\u3057\u305f\u3002");
+        setBulkMessage(feedback.message, feedback.isError);
       }).catch(function (error) {
         setBulkMessage("\u66f4\u65b0\u306b\u5931\u6557\u3057\u307e\u3057\u305f\u3002 " + (error && error.message ? error.message : ""), true);
         actualOnlyBtn.disabled = false;
@@ -1752,7 +1955,8 @@ window.ZERO_COST_INTAKE_CARDS_APP_READY = true;
       }).then(function (data) {
         patchHumanGate(mid, (data.updates || {}).human_gate || {});
         renderAll();
-        setBulkMessage("\u5199\u771fOK\u3092\u8a18\u9332\u3057\u307e\u3057\u305f\u3002", false);
+        var feedback = gateRefreshFeedback(data, "\u5199\u771fOK\u3092\u8a18\u9332\u3057\u307e\u3057\u305f\u3002");
+        setBulkMessage(feedback.message, feedback.isError);
       }).catch(function (error) {
         setBulkMessage("\u66f4\u65b0\u306b\u5931\u6557\u3057\u307e\u3057\u305f\u3002 " + (error && error.message ? error.message : ""), true);
         correctBtn.disabled = false;
@@ -1776,7 +1980,8 @@ window.ZERO_COST_INTAKE_CARDS_APP_READY = true;
       }).then(function (data) {
         patchHumanGate(mid, (data.updates || {}).human_gate || {});
         renderAll();
-        setBulkMessage("\u4fdd\u7559\u3057\u307e\u3057\u305f\u3002", false);
+        var feedback = gateRefreshFeedback(data, "\u4fdd\u7559\u3057\u307e\u3057\u305f\u3002");
+        setBulkMessage(feedback.message, feedback.isError);
       }).catch(function (error) {
         setBulkMessage("\u5931\u6557\u3057\u307e\u3057\u305f\u3002 " + (error && error.message ? error.message : ""), true);
         holdBtn.disabled = false;
@@ -1799,7 +2004,8 @@ window.ZERO_COST_INTAKE_CARDS_APP_READY = true;
       }).then(function (data) {
         patchHumanGate(mid2, (data.updates || {}).human_gate || {});
         renderAll();
-        setBulkMessage("\u30c1\u30a7\u30c3\u30af\u3092\u5168\u89e3\u9664\u3057\u307e\u3057\u305f\u3002", false);
+        var feedback = gateRefreshFeedback(data, "\u30c1\u30a7\u30c3\u30af\u3092\u5168\u89e3\u9664\u3057\u307e\u3057\u305f\u3002");
+        setBulkMessage(feedback.message, feedback.isError);
       }).catch(function (error) {
         setBulkMessage("\u5931\u6557\u3057\u307e\u3057\u305f\u3002 " + (error && error.message ? error.message : ""), true);
         uncheckBtn.disabled = false;

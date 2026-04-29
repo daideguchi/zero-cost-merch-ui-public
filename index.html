@@ -899,6 +899,53 @@
       return isFinite(normalized) ? normalized : 0;
     }
 
+    function numberFromPrice(value) {
+      if (value == null) return null;
+      var text = String(value).trim();
+      if (!text) return null;
+      var cleaned = text.replace(/[^\d.-]/g, '');
+      if (!cleaned) return null;
+      var parsed = Number(cleaned);
+      return isFinite(parsed) && !isNaN(parsed) ? parsed : null;
+    }
+
+    function formatYen(value) {
+      var parsed = Number(value || 0);
+      if (!isFinite(parsed) || isNaN(parsed) || parsed <= 0) return '未集計';
+      return '¥' + Math.round(parsed).toLocaleString('ja-JP');
+    }
+
+    function itemMarketFloorValue(item) {
+      var commerce = item && item.commerce || {};
+      var resolved = item && item.resolved || {};
+      return numberFromPrice(
+        commerce.market_floor_price
+        || item && item.market_floor_price
+        || item && item.minimum_price
+        || commerce.listing_price
+        || item && item.listing_price
+        || resolved.price_override
+      );
+    }
+
+    function summarizeBoxItems(items) {
+      var prices = [];
+      (items || []).forEach(function(item) {
+        var price = itemMarketFloorValue(item);
+        if (price == null || price <= 0) return;
+        prices.push(price);
+      });
+      prices.sort(function(a, b) { return b - a; });
+      var marketFloorTotal = prices.reduce(function(sum, price) { return sum + price; }, 0);
+      var topSixTotal = prices.slice(0, 6).reduce(function(sum, price) { return sum + price; }, 0);
+      return {
+        pricedItems: prices.length,
+        marketFloorTotal: marketFloorTotal,
+        topSixTotal: topSixTotal,
+        averagePrice: prices.length ? Math.round(marketFloorTotal / prices.length) : 0
+      };
+    }
+
     function padSequence(value){
       return String(Math.max(0, num(value))).padStart(4, '0');
     }
@@ -1044,6 +1091,10 @@
         slotsPerItem: Math.max(1, num(fallbackSlotsPerItem) || slotOrder.length || 3),
         slotOrder: slotOrder,
         sourceDir: meta.sourcePath || '',
+        pricedItems: 0,
+        marketFloorTotal: 0,
+        topSixTotal: 0,
+        averagePrice: 0,
         hasSnapshot: false,
         isDraft: false
       };
@@ -1177,8 +1228,10 @@
 
     function rememberSelectedBox(boxId) {
       selectedBoxId = boxId || '';
+      var selectedBox = boxOptions.filter(function(box) { return box.id === selectedBoxId; })[0] || null;
+      var selectedLabel = selectedBox ? boxChoiceLabel(selectedBox) : '';
       if (window.zeroCostSetBoxId) {
-        window.zeroCostSetBoxId(selectedBoxId, { updateUrl: true });
+        window.zeroCostSetBoxId(selectedBoxId, { updateUrl: true, label: selectedLabel });
         return;
       }
       try {
@@ -1208,6 +1261,7 @@
       var boxCode = String(raw.box_code || boxCodeFromId(boxId, boxLane)).trim().toUpperCase();
       var boxLabel = boxDisplayLabel(boxId, raw.box_label, boxLane, boxCode);
       var items = raw.items || [];
+      var summary = summarizeBoxItems(items);
       var nextSequence = num(raw.next_sequence) || (maxSequence(items) + 1);
       var slotOrder = raw.slot_order || fallbackSlotOrder || [];
       return {
@@ -1224,6 +1278,10 @@
         slotsPerItem: num(raw.slots_per_item) || slotOrder.length || fallbackSlotsPerItem || 3,
         slotOrder: slotOrder,
         sourceDir: raw.source_dir || I.source_dir || '',
+        pricedItems: summary.pricedItems,
+        marketFloorTotal: summary.marketFloorTotal,
+        topSixTotal: summary.topSixTotal,
+        averagePrice: summary.averagePrice,
         hasSnapshot: true,
         isDraft: false
       };
@@ -1413,7 +1471,9 @@
       boxNext.textContent = '次 No.' + padSequence(box.nextSequence);
       var boxRows = [
         ['次の管理番号', box.nextManagementId],
-        ['いまの商品数', String(num(box.totalItems)) + '件（完了 ' + String(num(box.completeItems)) + ' / 要確認 ' + String(num(box.incompleteItems)) + '）'],
+        ['点数', String(num(box.totalItems)) + '点（完了 ' + String(num(box.completeItems)) + ' / 要確認 ' + String(num(box.incompleteItems)) + '）'],
+        ['箱の相場下限', formatYen(box.marketFloorTotal)],
+        ['上位6点', formatYen(box.topSixTotal)],
         ['管理の基本', boxManageLabel(box)],
         ['撮影の目安', boxShootLabel(box)]
       ];
@@ -1456,13 +1516,17 @@
       boxCards.innerHTML = boxOptions.map(function(option) {
         var isSelected = option.id === selectedBoxId;
         var metaParts = [];
-        metaParts.push(String(num(option.totalItems)) + '件');
-        if (option.nextManagementId) {
-          var seq = option.nextManagementId.replace(option.id + '-ITEM-', 'No.');
-          metaParts.push('次 ' + seq);
-        }
+        metaParts.push(String(num(option.totalItems)) + '点');
+        if (option.marketFloorTotal > 0) metaParts.push(formatYen(option.marketFloorTotal));
         var primaryLabel = boxChoiceLabel(option);
         var secondaryLabel = option.label && option.label !== primaryLabel ? option.label : '';
+        var noteParts = [];
+        if (option.topSixTotal > 0) noteParts.push('上位6点 ' + formatYen(option.topSixTotal));
+        if (option.nextManagementId) {
+          var seq = option.nextManagementId.replace(option.id + '-ITEM-', 'No.');
+          noteParts.push('次 ' + seq);
+        }
+        var noteText = noteParts.join(' ・ ');
         return '<button class="box-card' + (isSelected ? ' selected' : '') + '"'
           + ' type="button"'
           + ' role="radio"'
@@ -1476,7 +1540,7 @@
           + '<div class="box-card-label">' + esc(primaryLabel) + '</div>'
           + (secondaryLabel ? '<div class="box-card-subtitle">' + esc(secondaryLabel) + '</div>' : '')
           + (metaParts.length ? '<div class="box-card-meta">' + esc(metaParts.join(' · ')) + '</div>' : '')
-          + (boxManageLabel(option) ? '<div class="box-card-note">' + esc(boxManageLabel(option)) + '</div>' : '')
+          + (noteText ? '<div class="box-card-note">' + esc(noteText) + '</div>' : '')
           + '</button>';
       }).join('');
     }
@@ -2353,9 +2417,9 @@
           }
           setDriveStatus((data.box_label || box.label) + ' に '
             + num(data.file_count) + '枚 / ' + num(data.item_count) + '商品ぶんを取り込みました。確認画面を開きます。', 'ok');
-          try {
-            if (window.localStorage && data.box_id) window.localStorage.setItem('zeroCostSelectedBox', data.box_id);
-          } catch (_) {}
+          if (window.zeroCostSetBoxId && data.box_id) {
+            window.zeroCostSetBoxId(data.box_id, { label: data.box_label || box.label, updateUrl: false });
+          }
           setTimeout(function() {
             window.location.href = './intake_cards.html?box='
               + encodeURIComponent(data.box_id || box.id)
@@ -2518,9 +2582,9 @@
           statusEl.textContent = (data.box_label || box.label) + ' に '
             + (data.file_count || selectedFiles.length) + '枚を保存しました。確認画面を開きます。';
           statusEl.style.color = 'var(--green)';
-          try {
-            if (window.localStorage && data.box_id) window.localStorage.setItem('zeroCostSelectedBox', data.box_id);
-          } catch (_) {}
+          if (window.zeroCostSetBoxId && data.box_id) {
+            window.zeroCostSetBoxId(data.box_id, { label: data.box_label || box.label, updateUrl: false });
+          }
           setTimeout(function() {
             window.location.href = './intake_cards.html?box='
               + encodeURIComponent(data.box_id || box.id)
