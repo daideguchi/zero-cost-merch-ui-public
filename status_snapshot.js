@@ -1,5 +1,5 @@
 window.ZERO_COST_STATUS = {
-  "generated_at": "2026-04-30 08:19:51 JST",
+  "generated_at": "2026-04-30 08:31:01 JST",
   "workbook_url": "https://docs.google.com/spreadsheets/d/1VjdUJavoijOkdjKtkdKy_zUcdkQqZwG0oRty57H5_lk/edit",
   "metrics": {
     "box_count": "1",
@@ -379,7 +379,7 @@ window.ZERO_COST_STATUS = {
       "status": "active",
       "badge": "自社EC",
       "tone": "green",
-      "published_count": 82,
+      "published_count": 81,
       "draft_count": 0,
       "review_count": 0,
       "order_count_total": 0,
@@ -653,7 +653,7 @@ window.ZERO_COST_STATUS = {
       }
     ],
     "profit_focus": {
-      "headline": "メルカリ公開中 74件 / BASE公開 82件 / 売価合計 ¥107,320 / 平均 ¥1,450",
+      "headline": "メルカリ公開中 74件 / BASE公開 81件 / 売価合計 ¥107,320 / 平均 ¥1,450",
       "note": "0円仕入れ前提で、今は known fee だけを引いています。送料・梱包材・Ship&co月額按分はまだ差し引いていません。",
       "stats": [
         {
@@ -681,7 +681,7 @@ window.ZERO_COST_STATUS = {
         {
           "tone": "blue",
           "label": "BASE live 商品",
-          "note": "82件。BOX-001-ITEM-0001, BOX-001-ITEM-0002, BOX-001-ITEM-0003 は admin search / 商品一覧で公開確認済み。",
+          "note": "81件。BOX-001-ITEM-0001, BOX-001-ITEM-0002, BOX-001-ITEM-0003 は admin search / 商品一覧で公開確認済み。",
           "href": "./channel_listings.html"
         },
         {
