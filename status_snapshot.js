@@ -1,5 +1,5 @@
 window.ZERO_COST_STATUS = {
-  "generated_at": "2026-04-30 08:31:01 JST",
+  "generated_at": "2026-04-30 08:59:13 JST",
   "workbook_url": "https://docs.google.com/spreadsheets/d/1VjdUJavoijOkdjKtkdKy_zUcdkQqZwG0oRty57H5_lk/edit",
   "metrics": {
     "box_count": "1",
@@ -673,7 +673,7 @@ window.ZERO_COST_STATUS = {
         },
         {
           "label": "価格未設定",
-          "value": "8件",
+          "value": "3件",
           "tone": "yellow"
         }
       ],
@@ -705,7 +705,7 @@ window.ZERO_COST_STATUS = {
         {
           "tone": "yellow",
           "label": "価格整備の残り",
-          "note": "価格未設定 8件 / 価格あり下書き 90件 / 相場あり 3件",
+          "note": "価格未設定 3件 / 価格あり下書き 94件 / 相場あり 2件",
           "href": "./channel_listings.html"
         }
       ]
