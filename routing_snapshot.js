@@ -1,5 +1,5 @@
 window.ZERO_COST_ROUTING = {
-  "generated_at": "2026-04-30 13:47:39 JST",
+  "generated_at": "2026-04-30 14:27:14 JST",
   "source_generated_at": "2026-04-30 01:12:40 JST",
   "workbook_url": "https://docs.google.com/spreadsheets/d/1VjdUJavoijOkdjKtkdKy_zUcdkQqZwG0oRty57H5_lk/edit",
   "routing_tab": "94_販路配送ルーティング",
@@ -567,9 +567,9 @@ window.ZERO_COST_ROUTING = {
       },
       {
         "severity": "orange",
-        "key": "45件",
+        "key": "46件",
         "title": "販路ルーティングで人確認が必要です",
-        "note": "公開可否 31件 / 画像確認 2件",
+        "note": "公開可否 31件 / 画像確認 3件",
         "href": "./routing.html"
       },
       {

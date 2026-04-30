@@ -1,5 +1,5 @@
 window.ZERO_COST_ROLE_PACKETS = {
-  "generated_at": "2026-04-30 13:47:39 JST",
+  "generated_at": "2026-04-30 14:27:18 JST",
   "business_name": "0円仕入れ物販事業",
   "meta": {
     "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/roles.html",

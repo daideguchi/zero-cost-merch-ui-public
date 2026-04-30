@@ -1,5 +1,5 @@
 window.ZERO_COST_TASK_CARD_QUEUE = {
-  "generated_at": "2026-04-30 13:47:39 JST",
+  "generated_at": "2026-04-30 14:27:18 JST",
   "business_name": "0円仕入れ物販事業",
   "counts": {
     "open_jobs": 24,

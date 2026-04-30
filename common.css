@@ -240,6 +240,21 @@ a:hover { color: #1d4ed8; }
   background: rgba(255,255,255,.82);
 }
 
+.hq-box-stat.is-ready {
+  border-color: rgba(21,128,61,.24);
+  background: linear-gradient(180deg, #f6fdf8 0%, #ebfaf0 100%);
+}
+
+.hq-box-stat.is-review {
+  border-color: rgba(180,83,9,.24);
+  background: linear-gradient(180deg, #fffaf5 0%, #fff1e4 100%);
+}
+
+.hq-box-stat.is-blocked {
+  border-color: rgba(185,28,28,.18);
+  background: linear-gradient(180deg, #fff8f8 0%, #ffeded 100%);
+}
+
 .hq-box-stat-label {
   font-size: 10px;
   font-weight: 900;

@@ -257,6 +257,38 @@ window.ZERO_COST_INTAKE_CARDS_APP_READY = true;
     return item.route_plan || {};
   }
 
+  function actualPhotoCount(item) {
+    return (item.slots || []).filter(function (slot) {
+      return slot
+        && slot.status === "present"
+        && String(slot.slot || "").trim().toUpperCase() !== "CODE";
+    }).length;
+  }
+
+  function sellAudit(item) {
+    var commerce = item.commerce || {};
+    var resolved = item.resolved || {};
+    var price = numberFromPrice(manualListingPrice(item));
+    var guard = String(
+      resolved.exact_match_guard_state
+      || (item.official && item.official.exact_match_guard_state)
+      || item.exact_match_guard_state
+      || ""
+    ).trim();
+    var hasEvidenceUrl = cleanText(commerce.market_source_url || "") !== "";
+    var hasActual = actualPhotoCount(item) > 0;
+    if (!hasActual) {
+      return { state: "blocked", label: "写真不足", reason: "実物写真が不足しています。" };
+    }
+    if (price == null || price <= 0 || !hasEvidenceUrl) {
+      return { state: "blocked", label: "根拠不足", reason: "価格根拠URLをまだ追加できていません。" };
+    }
+    if (guard === "clear") {
+      return { state: "ready", label: "売れる候補", reason: "商品特定と価格根拠がそろっています。" };
+    }
+    return { state: "review", label: "要精査", reason: "商品特定か比較画像の確認を残しています。" };
+  }
+
   function mediaSets(item) {
     var images = item.comparison_images || item.reference_images || [];
     return {
@@ -319,9 +351,12 @@ window.ZERO_COST_INTAKE_CARDS_APP_READY = true;
   }
 
   function heroMetrics(rows) {
+    var audits = (rows || []).map(sellAudit);
     return {
       total: rows.length,
-      ready: rows.filter(function (item) { return item.human_gate.ready && !isLive(item); }).length,
+      ready: audits.filter(function (audit) { return audit.state === "ready"; }).length,
+      review: audits.filter(function (audit) { return audit.state === "review"; }).length,
+      blocked: audits.filter(function (audit) { return audit.state === "blocked"; }).length,
       pending: rows.filter(function (item) { return !item.human_gate.ready && !isLive(item) && !item.human_gate.hold; }).length,
       hold: rows.filter(function (item) { return item.human_gate.hold && !isLive(item); }).length,
       unresolved: rows.filter(function (item) { return !item.human_gate.requires_ai_images_ok; }).length,
@@ -331,6 +366,9 @@ window.ZERO_COST_INTAKE_CARDS_APP_READY = true;
 
   function summaryFromRows(rows) {
     var prices = [];
+    var ready = 0;
+    var review = 0;
+    var blocked = 0;
     (rows || []).forEach(function(item) {
       var price = numberFromPrice(
         item && item.market_floor_price
@@ -341,6 +379,24 @@ window.ZERO_COST_INTAKE_CARDS_APP_READY = true;
       );
       if (price == null || price <= 0) return;
       prices.push(price);
+      var audit = sellAudit(item);
+      if (audit.state === "ready") ready += 1;
+      else if (audit.state === "review") review += 1;
+      else blocked += 1;
+    });
+    (rows || []).forEach(function(item) {
+      var price = numberFromPrice(
+        item && item.market_floor_price
+        || item && item.listing_price
+        || item && item.minimum_price
+        || item && item.commerce && (item.commerce.market_floor_price || item.commerce.listing_price)
+        || item && item.resolved && item.resolved.price_override
+      );
+      if (price != null && price > 0) return;
+      var audit = sellAudit(item);
+      if (audit.state === "ready") ready += 1;
+      else if (audit.state === "review") review += 1;
+      else blocked += 1;
     });
     prices.sort(function(a, b) { return b - a; });
     var totalValue = prices.reduce(function(sum, price) { return sum + price; }, 0);
@@ -349,7 +405,10 @@ window.ZERO_COST_INTAKE_CARDS_APP_READY = true;
       pricedItems: prices.length,
       totalValue: totalValue,
       topSixValue: topSixValue,
-      averageValue: prices.length ? Math.round(totalValue / prices.length) : 0
+      averageValue: prices.length ? Math.round(totalValue / prices.length) : 0,
+      readyItems: ready,
+      reviewItems: review,
+      blockedItems: blocked
     };
   }
 
@@ -935,6 +994,7 @@ window.ZERO_COST_INTAKE_CARDS_APP_READY = true;
     if (shortName.length > 45) shortName = shortName.slice(0, 44) + '\u2026';
     var gate = item.human_gate;
     var gateChipClass = gate.hold ? 'hold' : (gate.ready ? 'ready' : 'pending');
+    var sell = sellAudit(item);
     var mid = String(item.management_id || '').trim().toUpperCase();
     var isExpanded = Boolean(expandedIds[mid]);
     var cardClass = isExpanded ? 'item-card expanded' : 'item-card';
@@ -952,6 +1012,7 @@ window.ZERO_COST_INTAKE_CARDS_APP_READY = true;
       + '<label class="select-toggle" onclick="event.stopPropagation()"><input type="checkbox" data-select-mid="' + escapeHtml(item.management_id || '') + '"' + (selectionChecked(item) ? ' checked' : '') + '>\u9078\u629e</label>'
       + '<span class="sequence-chip primary">No.' + escapeHtml(sequence) + '</span>'
       + '<span class="sequence-chip">' + escapeHtml(item._box_label || item._box_id || '') + '</span>'
+      + '<span class="status-chip sell-' + escapeHtml(sell.state) + '">' + escapeHtml(sell.label) + '</span>'
       + '<span class="status-chip ' + gateChipClass + '">' + escapeHtml(humanGateLabel(gate)) + '</span>'
       + (gate.actual_only_ok && !gate.hold ? '<span class="status-chip actual-only">\u5b9f\u7269\u306e\u307f</span>' : '')
       + (isLive(item) ? '<span class="status-chip live">\u516c\u958b\u6e08\u307f</span>' : '')
@@ -1083,8 +1144,10 @@ window.ZERO_COST_INTAKE_CARDS_APP_READY = true;
     heroTitle.textContent = currentBoxLabel() + " / " + rows.length + "件";
     heroPills.innerHTML = [
       '<span class="hero-pill">総数 ' + metrics.total + '件</span>',
-      '<span class="hero-pill">出品可 ' + metrics.ready + '件</span>',
-      '<span class="hero-pill">確認待ち ' + metrics.pending + '件</span>',
+      '<span class="hero-pill">売れる候補 ' + metrics.ready + '件</span>',
+      '<span class="hero-pill">要精査 ' + metrics.review + '件</span>',
+      metrics.blocked ? '<span class="hero-pill" style="color:#b91c1c;border-color:rgba(185,28,28,.22)">根拠不足 ' + metrics.blocked + '件</span>' : '',
+      '<span class="hero-pill">人確認待ち ' + metrics.pending + '件</span>',
       metrics.hold ? '<span class="hero-pill" style="color:#b45309;border-color:rgba(217,119,6,.3)">保留 ' + metrics.hold + '件</span>' : '',
       '<span class="hero-pill">未特定 ' + metrics.unresolved + '件</span>',
       '<span class="hero-pill">公開済み ' + metrics.live + '件</span>',
@@ -1112,7 +1175,11 @@ window.ZERO_COST_INTAKE_CARDS_APP_READY = true;
     boxSwitchbar.style.display = "";
     function boxSummary(items) {
       var summary = summaryFromRows(items);
-      return summary.pricedItems ? formatPrice(summary.totalValue) : "未集計";
+      var parts = [];
+      if (summary.pricedItems) parts.push(formatPrice(summary.totalValue));
+      if (summary.readyItems) parts.push("売候補 " + summary.readyItems);
+      if (!parts.length && summary.reviewItems) parts.push("要精査 " + summary.reviewItems);
+      return parts.length ? parts.join(" / ") : "未集計";
     }
     var parts = [
       '<a class="box-switch' + (requestedBoxId === ALL_BOXES_KEY ? " active" : "") + '" href="./intake_cards.html?box=' + encodeURIComponent(ALL_BOXES_KEY) + '"><span>全商品</span><span class="box-switch-count">' + allItems.length + '点</span><span class="box-switch-total">' + boxSummary(allItems) + "</span></a>"

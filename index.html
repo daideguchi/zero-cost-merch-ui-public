@@ -1469,14 +1469,18 @@
       }).join('');
       renderBoxCards();
       boxNext.textContent = '次 No.' + padSequence(box.nextSequence);
+      var liveSummary = window.zeroCostGetBoxSummary
+        ? window.zeroCostGetBoxSummary(box.id || box.box_id || '')
+        : null;
       var boxRows = [
         ['次の管理番号', box.nextManagementId],
         ['点数', String(num(box.totalItems)) + '点（完了 ' + String(num(box.completeItems)) + ' / 要確認 ' + String(num(box.incompleteItems)) + '）'],
         ['箱の相場下限', formatYen(box.marketFloorTotal)],
         ['上位6点', formatYen(box.topSixTotal)],
+        liveSummary ? ['売る気の監査', '売れる候補 ' + String(num(liveSummary.readyItems)) + ' / 要精査 ' + String(num(liveSummary.reviewItems)) + (num(liveSummary.blockedItems) ? ' / 根拠不足 ' + String(num(liveSummary.blockedItems)) : '')] : null,
         ['管理の基本', boxManageLabel(box)],
         ['撮影の目安', boxShootLabel(box)]
-      ];
+      ].filter(Boolean);
       if (box.sourcePath) boxRows.push(['実体パス', box.sourcePath]);
       boxGrid.innerHTML = boxRows.map(function(row) {
         return '<div class="box-kpi"><div class="box-kpi-label">' + esc(row[0]) + '</div><div class="box-kpi-value">' + esc(row[1]) + '</div></div>';

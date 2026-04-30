@@ -67,12 +67,72 @@
     );
   }
 
+  function actualPhotoCount(item) {
+    var count = 0;
+    (item && item.slots || []).forEach(function(slot) {
+      if (!slot || String(slot.status || '').trim() !== 'present') return;
+      if (String(slot.slot || '').trim().toUpperCase() === 'CODE') return;
+      count += 1;
+    });
+    return count;
+  }
+
+  function guardStateFromItem(item) {
+    var resolved = item && item.resolved || {};
+    var official = item && item.official || {};
+    return String(
+      resolved.exact_match_guard_state
+      || official.exact_match_guard_state
+      || item && item.exact_match_guard_state
+      || ''
+    ).trim();
+  }
+
+  function priceEvidenceUrl(item) {
+    var commerce = item && item.commerce || {};
+    return String(
+      commerce.market_source_url
+      || item && item.market_source_url
+      || ''
+    ).trim();
+  }
+
+  function sellAudit(item) {
+    var price = priceFromItem(item);
+    var hasPrice = price != null && price > 0;
+    var hasActual = actualPhotoCount(item) > 0;
+    var hasEvidenceUrl = !!priceEvidenceUrl(item);
+    var guard = guardStateFromItem(item);
+    if (!hasActual || !hasPrice || !hasEvidenceUrl) {
+      return { state: 'blocked' };
+    }
+    if (guard === 'clear') {
+      return { state: 'ready' };
+    }
+    return { state: 'review' };
+  }
+
   function summarizeItems(items) {
     var prices = [];
+    var readyItems = 0;
+    var reviewItems = 0;
+    var blockedItems = 0;
     (items || []).forEach(function(item) {
       var price = priceFromItem(item);
       if (price == null || price <= 0) return;
       prices.push(price);
+      var audit = sellAudit(item);
+      if (audit.state === 'ready') readyItems += 1;
+      else if (audit.state === 'review') reviewItems += 1;
+      else blockedItems += 1;
+    });
+    (items || []).forEach(function(item) {
+      var price = priceFromItem(item);
+      if (price != null && price > 0) return;
+      var audit = sellAudit(item);
+      if (audit.state === 'ready') readyItems += 1;
+      else if (audit.state === 'review') reviewItems += 1;
+      else blockedItems += 1;
     });
     prices.sort(function(a, b) { return b - a; });
     var totalValue = prices.reduce(function(sum, price) { return sum + price; }, 0);
@@ -82,7 +142,10 @@
       pricedItems: prices.length,
       totalValue: totalValue,
       topSixValue: topSixValue,
-      averageValue: prices.length ? Math.round(totalValue / prices.length) : 0
+      averageValue: prices.length ? Math.round(totalValue / prices.length) : 0,
+      readyItems: readyItems,
+      reviewItems: reviewItems,
+      blockedItems: blockedItems
     };
   }
 
@@ -154,6 +217,15 @@
     var parts = [
       '<span class="hq-box-stat"><span class="hq-box-stat-label">点数</span><span class="hq-box-stat-value">' + summary.totalItems + '点</span></span>'
     ];
+    if (summary.readyItems) {
+      parts.push('<span class="hq-box-stat is-ready"><span class="hq-box-stat-label">売れる候補</span><span class="hq-box-stat-value">' + summary.readyItems + '件</span></span>');
+    }
+    if (summary.reviewItems) {
+      parts.push('<span class="hq-box-stat is-review"><span class="hq-box-stat-label">要精査</span><span class="hq-box-stat-value">' + summary.reviewItems + '件</span></span>');
+    }
+    if (summary.blockedItems) {
+      parts.push('<span class="hq-box-stat is-blocked"><span class="hq-box-stat-label">根拠不足</span><span class="hq-box-stat-value">' + summary.blockedItems + '件</span></span>');
+    }
     if (summary.pricedItems) {
       parts.push('<span class="hq-box-stat"><span class="hq-box-stat-label">相場下限</span><span class="hq-box-stat-value">' + formatYen(summary.totalValue) + '</span></span>');
       parts.push('<span class="hq-box-stat"><span class="hq-box-stat-label">上位6点</span><span class="hq-box-stat-value">' + formatYen(summary.topSixValue) + '</span></span>');
@@ -164,6 +236,9 @@
   function renderSummaryHeadline(summary) {
     if (!summary || !summary.totalItems) return '';
     var parts = [summary.totalItems + '点'];
+    if (summary.readyItems) parts.push('売れる候補 ' + summary.readyItems + '件');
+    if (summary.reviewItems) parts.push('要精査 ' + summary.reviewItems + '件');
+    if (summary.blockedItems) parts.push('根拠不足 ' + summary.blockedItems + '件');
     if (summary.pricedItems) {
       parts.push('相場下限 ' + formatYen(summary.totalValue));
       parts.push('上位6点 ' + formatYen(summary.topSixValue));
