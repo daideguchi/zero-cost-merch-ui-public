@@ -1,5 +1,5 @@
 window.ZERO_COST_INQUIRY = {
-  "generated_at": "2026-04-30 08:30:57 JST",
+  "generated_at": "2026-04-30 13:52:28 JST",
   "summary": {
     "total": 3,
     "ai_responded": 2,

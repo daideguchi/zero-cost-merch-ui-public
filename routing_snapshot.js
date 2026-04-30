@@ -1,6 +1,6 @@
 window.ZERO_COST_ROUTING = {
-  "generated_at": "2026-04-30 00:06:42 JST",
-  "source_generated_at": "2026-04-30 00:06:08 JST",
+  "generated_at": "2026-04-30 13:47:39 JST",
+  "source_generated_at": "2026-04-30 01:12:40 JST",
   "workbook_url": "https://docs.google.com/spreadsheets/d/1VjdUJavoijOkdjKtkdKy_zUcdkQqZwG0oRty57H5_lk/edit",
   "routing_tab": "94_販路配送ルーティング",
   "strategy": {
@@ -325,21 +325,21 @@ window.ZERO_COST_ROUTING = {
     "review_waiting": 9,
     "base_ready": 105,
     "shipco_candidate": 105,
-    "human_review_needed": 45,
-    "image_review_waiting": 2,
+    "human_review_needed": 46,
+    "image_review_waiting": 3,
     "publish_gate_waiting": 31,
     "master_waiting": 0,
     "draft_waiting": 0,
-    "base_hold": 17,
+    "base_hold": 18,
     "qwen_review_pending": 0,
     "qwen_review_resolved": 1,
     "qwen_blocked": 0
   },
   "next_actions": [
     "反映待ち: カテゴリ審査が 9 件あります。",
-    "要確認: 画像同一性確認待ちが 2 件あります。",
+    "要確認: 画像同一性確認待ちが 3 件あります。",
     "要確認: 公開可否確認待ちが 31 件あります。",
-    "要確認: 人確認が必要なルーティングが 45 件あります。",
+    "要確認: 人確認が必要なルーティングが 46 件あります。",
     "今すぐ進める: メルカリ本線の公開前整備が 31 件あります。",
     "準備済み: BASE 準備可は 105 件です。",
     "準備済み: Ship&co 候補は 105 件です。",
@@ -373,7 +373,7 @@ window.ZERO_COST_ROUTING = {
       {
         "tone": "blue",
         "label": "いま優先するルート",
-        "note": "BASE標準 かんたん発送 / 公式プリンタレス候補 / BASE準備可 106件 を前提に、注文画面 -> ヤマト集荷 -> 発送完了 の 1件通しを証跡化する",
+        "note": "BASE標準 かんたん発送 / 公式プリンタレス候補 / BASE準備可 105件 を前提に、注文画面 -> ヤマト集荷 -> 発送完了 の 1件通しを証跡化する",
         "href": "./routing.html"
       }
     ],
@@ -399,7 +399,7 @@ window.ZERO_COST_ROUTING = {
       {
         "tone": "blue",
         "label": "多販路下地",
-        "note": "BASE準備可 106件 / Ship&co候補 106件",
+        "note": "BASE準備可 105件 / Ship&co候補 105件",
         "href": "./routing.html"
       }
     ],
@@ -463,7 +463,7 @@ window.ZERO_COST_ROUTING = {
       "proof_done_count": 3,
       "proof_total_count": 4,
       "proof_progress_label": "3/4 完了",
-      "next_step": "BASE準備可 106件 を前提に、注文画面 -> ヤマト集荷 -> 発送完了 の 1件通しを証跡化する",
+      "next_step": "BASE準備可 105件 を前提に、注文画面 -> ヤマト集荷 -> 発送完了 の 1件通しを証跡化する",
       "href": "./routing.html"
     },
     "route_options_title": "選べる発送ルート",
@@ -500,7 +500,7 @@ window.ZERO_COST_ROUTING = {
       }
     ],
     "profit_focus": {
-      "headline": "メルカリ公開中 74件 / BASE公開 82件 / 売価合計 ¥107,320 / 平均 ¥1,450",
+      "headline": "メルカリ公開中 74件 / BASE公開 81件 / 売価合計 ¥107,320 / 平均 ¥1,450",
       "note": "0円仕入れ前提で、今は known fee だけを引いています。送料・梱包材・Ship&co月額按分はまだ差し引いていません。",
       "stats": [
         {
@@ -528,7 +528,7 @@ window.ZERO_COST_ROUTING = {
         {
           "tone": "blue",
           "label": "BASE live 商品",
-          "note": "82件。BOX-001-ITEM-0001, BOX-001-ITEM-0002, BOX-001-ITEM-0003 は admin search / 商品一覧で公開確認済み。",
+          "note": "81件。BOX-001-ITEM-0001, BOX-001-ITEM-0002, BOX-001-ITEM-0003 は admin search / 商品一覧で公開確認済み。",
           "href": "./channel_listings.html"
         },
         {
@@ -552,7 +552,7 @@ window.ZERO_COST_ROUTING = {
         {
           "tone": "gray",
           "label": "価格整備の残り",
-          "note": "価格未設定 0件 / 価格あり下書き 88件 / 相場あり 3件",
+          "note": "価格未設定 0件 / 価格あり下書き 98件 / 相場あり 10件",
           "href": "./channel_listings.html"
         }
       ]
@@ -567,14 +567,14 @@ window.ZERO_COST_ROUTING = {
       },
       {
         "severity": "orange",
-        "key": "44件",
+        "key": "45件",
         "title": "販路ルーティングで人確認が必要です",
         "note": "公開可否 31件 / 画像確認 2件",
         "href": "./routing.html"
       },
       {
         "severity": "orange",
-        "key": "8件差",
+        "key": "9件差",
         "title": "メルカリ公開件数の見え方に差があります",
         "note": "routing と channel config の counts を揃える必要があります。",
         "href": "./routing.html"
@@ -894,8 +894,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "停止",
       "AI次アクション": "空き板を維持",
       "ルーティング状態": "一時停止",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=ポロベア キャンバス トートバッグ POLO BEAR LAUREN / publish_ok=確認待ち / draft_status=一時取り下げ / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=一時取り下げ"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=ポロベア キャンバス トートバッグ POLO BEAR LAUREN / publish_ok=確認待ち / draft_status=一時取り下げ / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=一時取り下げ"
     },
     {
       "商品ID": "PRD-BOX-001-021",
@@ -915,7 +915,7 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "公開前チェック",
       "AI次アクション": "人確認後にメルカリ投入",
       "ルーティング状態": "人確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
+      "更新時刻": "2026-04-30 01:12:40 JST",
       "メモ": "name=写真セット組み直し候補: 1.1CT レモンクォーツ シルバーリング サイズ10 / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番 / 内容物未確認 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=clear"
     },
     {
@@ -936,7 +936,7 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "比較画像照合",
       "AI次アクション": "人確認後にメルカリ投入",
       "ルーティング状態": "人確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
+      "更新時刻": "2026-04-30 01:12:40 JST",
       "メモ": "name=LE BLANC フェムケアPRO 低刺激 デリケートゾーン 150mL / publish_ok=確認待ち / draft_status=下書き / image_state=調査画像取得済み / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=clear"
     },
     {
@@ -957,7 +957,7 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "公開前チェック",
       "AI次アクション": "人確認後にメルカリ投入",
       "ルーティング状態": "人確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
+      "更新時刻": "2026-04-30 01:12:40 JST",
       "メモ": "name=写真セット組み直し候補: Trekking Pole-Blue N-82 BLUE / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=clear"
     },
     {
@@ -978,7 +978,7 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "公開前チェック",
       "AI次アクション": "人確認後にメルカリ投入",
       "ルーティング状態": "人確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
+      "更新時刻": "2026-04-30 01:12:40 JST",
       "メモ": "name=写真セット組み直し候補: DUCO サングラス レディース #016（ブラック・ブルー） / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=clear"
     },
     {
@@ -999,7 +999,7 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "公開前チェック",
       "AI次アクション": "人確認後にメルカリ投入",
       "ルーティング状態": "人確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
+      "更新時刻": "2026-04-30 01:12:40 JST",
       "メモ": "name=写真セット組み直し候補: DUCO サングラス レディース #016（ブラック・ブルー） / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=clear"
     },
     {
@@ -1020,7 +1020,7 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "比較画像照合",
       "AI次アクション": "人確認後にメルカリ投入",
       "ルーティング状態": "人確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
+      "更新時刻": "2026-04-30 01:12:40 JST",
       "メモ": "name=MMC FACE LOTION 240ml / publish_ok=確認待ち / draft_status=下書き / image_state=候補1枚確保 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=clear"
     },
     {
@@ -1041,7 +1041,7 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "公開前チェック",
       "AI次アクション": "人確認後にメルカリ投入",
       "ルーティング状態": "人確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
+      "更新時刻": "2026-04-30 01:12:40 JST",
       "メモ": "name=要再束ね候補: Zukida 車用ヘッドレストフック 後部座席用 アルミ合金製 Red / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / HQレビュー済み / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=clear"
     },
     {
@@ -1062,7 +1062,7 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "公開前チェック",
       "AI次アクション": "人確認後にメルカリ投入",
       "ルーティング状態": "人確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
+      "更新時刻": "2026-04-30 01:12:40 JST",
       "メモ": "name=写真セット組み直し候補: Car hook mobile phone holder NO-FE040 / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / SPEEDWOX child 0060切り出し済み / 内容物未確認 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=clear"
     },
     {
@@ -1083,7 +1083,7 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "公開前チェック",
       "AI次アクション": "人確認後にメルカリ投入",
       "ルーティング状態": "人確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
+      "更新時刻": "2026-04-30 01:12:40 JST",
       "メモ": "name=写真セット組み直し候補: M36026裙胸垫款 レディース衣類 L / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / SPEEDWOX child 0060切り出し済み / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=clear"
     },
     {
@@ -1104,7 +1104,7 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "公開前チェック",
       "AI次アクション": "人確認後にメルカリ投入",
       "ルーティング状態": "人確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
+      "更新時刻": "2026-04-30 01:12:40 JST",
       "メモ": "name=jchinjia リュック メンズ ビジネスリュック 男女兼用 カジュアルバッグ おしゃれ トラベルバッグ / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=clear"
     },
     {
@@ -1125,7 +1125,7 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "公開前チェック",
       "AI次アクション": "人確認後にメルカリ投入",
       "ルーティング状態": "人確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
+      "更新時刻": "2026-04-30 01:12:40 JST",
       "メモ": "name=RemeeHi 女教師コスプレ衣装 ホワイトレース系 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=clear"
     },
     {
@@ -1146,7 +1146,7 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "公開前チェック",
       "AI次アクション": "人確認後にメルカリ投入",
       "ルーティング状態": "人確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
+      "更新時刻": "2026-04-30 01:12:40 JST",
       "メモ": "name=写真セット組み直し候補: SOUKE SPORTS Cycling shorts ブラック S / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=clear"
     },
     {
@@ -1167,7 +1167,7 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "公開前チェック",
       "AI次アクション": "人確認後にメルカリ投入",
       "ルーティング状態": "人確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
+      "更新時刻": "2026-04-30 01:12:40 JST",
       "メモ": "name=写真セット組み直し候補: fivihoc レディースペンダント（ゴールド/582） / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / local child 0064作成済み / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=clear"
     },
     {
@@ -1188,7 +1188,7 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "公開前チェック",
       "AI次アクション": "人確認後にメルカリ投入",
       "ルーティング状態": "人確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
+      "更新時刻": "2026-04-30 01:12:40 JST",
       "メモ": "name=写真セット組み直し候補: Bluetooth 無線マウス PC/Mac用 / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / local child 0064・0066作成済み / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=clear"
     },
     {
@@ -1209,7 +1209,7 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "公開前チェック",
       "AI次アクション": "人確認後にメルカリ投入",
       "ルーティング状態": "人確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
+      "更新時刻": "2026-04-30 01:12:40 JST",
       "メモ": "name=写真セット組み直し候補: Ecicvvi パーカー グレー 4XL / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / local child 0066・0075作成済み / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=clear"
     },
     {
@@ -1230,7 +1230,7 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "公開前チェック",
       "AI次アクション": "人確認後にメルカリ投入",
       "ルーティング状態": "人確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
+      "更新時刻": "2026-04-30 01:12:40 JST",
       "メモ": "name=写真セット組み直し候補: NEEDLY Sleeping Lip Mask 10ml / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / local child 0065・0075作成済み / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=clear"
     },
     {
@@ -1251,7 +1251,7 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "公開前チェック",
       "AI次アクション": "人確認後にメルカリ投入",
       "ルーティング状態": "人確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
+      "更新時刻": "2026-04-30 01:12:40 JST",
       "メモ": "name=写真セット組み直し候補: DOMAT 財布 レッドブラウン / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番 / 内容物未確認 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=clear"
     },
     {
@@ -1272,7 +1272,7 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "公開前チェック",
       "AI次アクション": "人確認後にメルカリ投入",
       "ルーティング状態": "人確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
+      "更新時刻": "2026-04-30 01:12:40 JST",
       "メモ": "name=写真セット組み直し候補: Qzkouma キャップ・ハット DBQ-62 ブラック / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / local child 0067・0073作成済み / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=clear"
     },
     {
@@ -1293,7 +1293,7 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "公開前チェック",
       "AI次アクション": "人確認後にメルカリ投入",
       "ルーティング状態": "人確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
+      "更新時刻": "2026-04-30 01:12:40 JST",
       "メモ": "name=ロゴ刺繍ベースボールキャップ ネイビー系 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=clear"
     },
     {
@@ -1314,7 +1314,7 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "公開前チェック",
       "AI次アクション": "人確認後にメルカリ投入",
       "ルーティング状態": "人確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
+      "更新時刻": "2026-04-30 01:12:40 JST",
       "メモ": "name=ホワイト レディーストップス M / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=clear"
     },
     {
@@ -1335,7 +1335,7 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "公開前チェック",
       "AI次アクション": "人確認後にメルカリ投入",
       "ルーティング状態": "人確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
+      "更新時刻": "2026-04-30 01:12:40 JST",
       "メモ": "name=写真セット組み直し候補: 花柄トートバッグ 40g / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=clear"
     },
     {
@@ -1356,7 +1356,7 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "公開前チェック",
       "AI次アクション": "人確認後にメルカリ投入",
       "ルーティング状態": "人確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
+      "更新時刻": "2026-04-30 01:12:40 JST",
       "メモ": "name=写真セット組み直し候補: SYM002 ライトグレー XL 長袖衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=clear"
     },
     {
@@ -1377,7 +1377,7 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "公開前チェック",
       "AI次アクション": "人確認後にメルカリ投入",
       "ルーティング状態": "人確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
+      "更新時刻": "2026-04-30 01:12:40 JST",
       "メモ": "name=Heated Socks 男女兼用 グレー / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=clear"
     },
     {
@@ -1398,7 +1398,7 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "公開前チェック",
       "AI次アクション": "人確認後にメルカリ投入",
       "ルーティング状態": "人確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
+      "更新時刻": "2026-04-30 01:12:40 JST",
       "メモ": "name=写真セット組み直し必要（青橙汎用箱 / 白箱 X00197BVHJ 混在） / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番 / 内容物未確認 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=clear"
     },
     {
@@ -1419,7 +1419,7 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "公開前チェック",
       "AI次アクション": "人確認後にメルカリ投入",
       "ルーティング状態": "人確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
+      "更新時刻": "2026-04-30 01:12:40 JST",
       "メモ": "name=写真セット組み直し必要（白箱 X00197BVHJ / Hello Kitty 50TH ANNIVERSARY 系 混在） / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番 / 正規性確認待ち / 内容物未確認 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=clear"
     },
     {
@@ -1440,7 +1440,7 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "公開前チェック",
       "AI次アクション": "人確認後にメルカリ投入",
       "ルーティング状態": "人確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
+      "更新時刻": "2026-04-30 01:12:40 JST",
       "メモ": "name=Poperdision ブラック 3XL レディース衣類 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像待ち / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=clear"
     },
     {
@@ -1461,7 +1461,7 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "公開前チェック",
       "AI次アクション": "人確認後にメルカリ投入",
       "ルーティング状態": "人確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
+      "更新時刻": "2026-04-30 01:12:40 JST",
       "メモ": "name=ATIDIMU 美容液 / publish_ok=確認待ち / draft_status=下書き / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=clear"
     },
     {
@@ -1482,7 +1482,7 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "公開前チェック",
       "AI次アクション": "人確認後にメルカリ投入",
       "ルーティング状態": "人確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
+      "更新時刻": "2026-04-30 01:12:40 JST",
       "メモ": "name=写真セット組み直し候補: JODSONE クイックUV LED自動センサーネイルドライヤー ピンク / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 現写真では1商品に断定不能 / 新管理番号未採番 / 内容物未確認 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=clear"
     },
     {
@@ -1503,7 +1503,7 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "公開前チェック",
       "AI次アクション": "人確認後にメルカリ投入",
       "ルーティング状態": "人確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
+      "更新時刻": "2026-04-30 01:12:40 JST",
       "メモ": "name=写真セット組み直し候補: AUTOMATIC WATER DISPENSER Upgraded Stainless Steel Basin / publish_ok=確認待ち / draft_status=下書き / image_state=管理番号再分解待ち / 新管理番号未採番 / 内容物未確認 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=clear"
     },
     {
@@ -1524,8 +1524,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "公開前チェック",
       "AI次アクション": "人確認後にメルカリ投入",
       "ルーティング状態": "人確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=AllenCOCO 18K Gold Plated Interlocking Rolling Trinity Band Ring 3GOLD サイズ7 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=AllenCOCO 18K Gold Plated Interlocking Rolling Trinity Band Ring 3GOLD サイズ7 / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear"
     },
     {
       "商品ID": "PRD-BOX-A-003",
@@ -1545,8 +1545,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "公開前チェック",
       "AI次アクション": "人確認後にメルカリ投入",
       "ルーティング状態": "人確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=THE ANIMAL ORGANICS ペット用イヤークリーナー / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=済 / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=THE ANIMAL ORGANICS ペット用イヤークリーナー / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / image_ready=済 / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear"
     },
     {
       "商品ID": "PRD-BOX-001-002",
@@ -1566,8 +1566,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "商品特定再調査",
       "AI次アクション": "precision guard 解消",
       "ルーティング状態": "停止",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=保冷クーラーバッグ ネイビー ショルダー付 / publish_ok=公開済み / draft_status=公開済み / image_state=現写真では1商品に断定不能 / actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=review_required / guard_reasons=色違い / 型番違い / サイズ違い / セット違い / inventory_status=販売中 / listingId=2JQUsmwJz5ZruPMp9536hM / qwen_hq=clear / 2026-04-29 manual override: 実物3枚で generic 保冷クーラーバッグ ネイビー ショルダー付として actual-only 公開可。公式比較画像なしのためブランド exact-match は採らない。"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=保冷クーラーバッグ ネイビー ショルダー付 / publish_ok=公開済み / draft_status=公開済み / image_state=現写真では1商品に断定不能 / actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=review_required / guard_reasons=色違い / 型番違い / サイズ違い / セット違い / inventory_status=販売中 / listingId=2JQUsmwJz5ZruPMp9536hM / qwen_hq=clear / 2026-04-29 manual override: 実物3枚で generic 保冷クーラーバッグ ネイビー ショルダー付として actual-only 公開可。公式比較画像なしのためブランド exact-match は採らない。"
     },
     {
       "商品ID": "PRD-BOX-001-061",
@@ -1587,8 +1587,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "商品特定再調査",
       "AI次アクション": "precision guard 解消",
       "ルーティング状態": "停止",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=Acomiconi ハローキティ リュックアクセサリー 50TH ANNIVERSARY ブラック / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / 正規性確認待ち / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=review_required / guard_reasons=真贋確認"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=Acomiconi ハローキティ リュックアクセサリー 50TH ANNIVERSARY ブラック / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / 正規性確認待ち / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=review_required / guard_reasons=真贋確認"
     },
     {
       "商品ID": "PRD-BOX-001-062",
@@ -1608,8 +1608,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "商品特定再調査",
       "AI次アクション": "precision guard 解消",
       "ルーティング状態": "停止",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=DUCO サングラス レディース #016（ブラック・ブルー） / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=review_required / guard_reasons=型番違い / inventory_status=販売中 / listingId=2JQUqRVEMWnTQ8fECTjSpC"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=DUCO サングラス レディース #016（ブラック・ブルー） / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=review_required / guard_reasons=型番違い / inventory_status=販売中 / listingId=2JQUqRVEMWnTQ8fECTjSpC"
     },
     {
       "商品ID": "PRD-BOX-001-068",
@@ -1629,8 +1629,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "商品特定再調査",
       "AI次アクション": "precision guard 解消",
       "ルーティング状態": "停止",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=ATIDIMU FOR MEN No3 FACE SERUM 30mL / publish_ok=カテゴリ審査待ち / draft_status=カテゴリ審査待ち / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=review_required / guard_reasons=型番違い"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=ATIDIMU FOR MEN No3 FACE SERUM 30mL / publish_ok=カテゴリ審査待ち / draft_status=カテゴリ審査待ち / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=review_required / guard_reasons=型番違い"
     },
     {
       "商品ID": "PRD-BOX-002-007",
@@ -1650,8 +1650,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "商品特定再調査",
       "AI次アクション": "precision guard 解消",
       "ルーティング状態": "停止",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=BUREI デジタルスポーツウォッチ ブラックグレー BS0183-HHHHH / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=review_required / guard_reasons=型番違い / inventory_status=販売中 / listingId=2JQUcbJ2f5ZiGzUH4C3nFe"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=BUREI デジタルスポーツウォッチ ブラックグレー BS0183-HHHHH / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=review_required / guard_reasons=型番違い / inventory_status=販売中 / listingId=2JQUcbJ2f5ZiGzUH4C3nFe"
     },
     {
       "商品ID": "PRD-BOX-002-039",
@@ -1671,8 +1671,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "商品特定再調査",
       "AI次アクション": "precision guard 解消",
       "ルーティング状態": "停止",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=WOYUE Professional Multifunctional Mixer 4-Channel Stereo Reverberation / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=review_required / guard_reasons=型番違い / inventory_status=販売中 / listingId=2JQUabvQhvzYtQ4KYW4zGP"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=WOYUE Professional Multifunctional Mixer 4-Channel Stereo Reverberation / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=review_required / guard_reasons=型番違い / inventory_status=販売中 / listingId=2JQUabvQhvzYtQ4KYW4zGP"
     },
     {
       "商品ID": "PRD-BOX-002-042",
@@ -1692,8 +1692,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "商品特定再調査",
       "AI次アクション": "precision guard 解消",
       "ルーティング状態": "停止",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=neue ar he AC 1312 フラワービジューパンプス シルバー 24.0cm / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=review_required / guard_reasons=型番違い / inventory_status=販売中 / listingId=2JQUaggy5rSLvJ2KwNfGSg"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=neue ar he AC 1312 フラワービジューパンプス シルバー 24.0cm / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=review_required / guard_reasons=型番違い / inventory_status=販売中 / listingId=2JQUaggy5rSLvJ2KwNfGSg"
     },
     {
       "商品ID": "PRD-BOX-001-006",
@@ -1713,8 +1713,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "商品特定再調査",
       "AI次アクション": "内容物確認と stopline 解消",
       "ルーティング状態": "内容確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=FirstC ティアグッズ記念品ギフト箱（内容物不明） / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / 内容物未確認 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=review_required / guard_reasons=内容物未確認"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=FirstC ティアグッズ記念品ギフト箱（内容物不明） / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / 内容物未確認 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=review_required / guard_reasons=内容物未確認"
     },
     {
       "商品ID": "PRD-BOX-001-059",
@@ -1734,8 +1734,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "商品特定再調査",
       "AI次アクション": "内容物確認と stopline 解消",
       "ルーティング状態": "内容確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=白箱 X00197BVHJ 記念品・ギフト箱（内容物不明） / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / 内容物未確認 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=review_required / guard_reasons=内容物未確認"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=白箱 X00197BVHJ 記念品・ギフト箱（内容物不明） / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / 内容物未確認 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=review_required / guard_reasons=内容物未確認"
     },
     {
       "商品ID": "PRD-BOX-001-067",
@@ -1755,8 +1755,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "商品特定再調査",
       "AI次アクション": "内容物確認と stopline 解消",
       "ルーティング状態": "内容確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=DOMAT 財布 レッドブラウン / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / 内容物未確認 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=review_required / guard_reasons=内容物未確認 / inventory_status=販売中 / listingId=2JQVbDiTKB7GJ8iEKujcYc"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=DOMAT 財布 レッドブラウン / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / 内容物未確認 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=review_required / guard_reasons=内容物未確認 / inventory_status=販売中 / listingId=2JQVbDiTKB7GJ8iEKujcYc"
     },
     {
       "商品ID": "PRD-BOX-001-069",
@@ -1776,8 +1776,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "商品特定再調査",
       "AI次アクション": "内容物確認と stopline 解消",
       "ルーティング状態": "内容確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=JODSONE クイックUV LED自動センサーネイルドライヤー ピンク / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=review_required / guard_reasons=内容物未確認 / inventory_status=販売中 / listingId=2JQVbFnZd8jQXdq6UmadTD"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=JODSONE クイックUV LED自動センサーネイルドライヤー ピンク / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=review_required / guard_reasons=内容物未確認 / inventory_status=販売中 / listingId=2JQVbFnZd8jQXdq6UmadTD"
     },
     {
       "商品ID": "PRD-BOX-001-070",
@@ -1797,8 +1797,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "商品特定再調査",
       "AI次アクション": "内容物確認と stopline 解消",
       "ルーティング状態": "内容確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=RIZZARI 9L自動給水器 ブラック / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / 内容物未確認 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=review_required / guard_reasons=内容物未確認 / inventory_status=販売中 / listingId=2JQVbTmGfPBcrtSxmqi4Px"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=RIZZARI 9L自動給水器 ブラック / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / 内容物未確認 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=review_required / guard_reasons=内容物未確認 / inventory_status=販売中 / listingId=2JQVbTmGfPBcrtSxmqi4Px"
     },
     {
       "商品ID": "PRD-BOX-001-071",
@@ -1818,8 +1818,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "商品特定再調査",
       "AI次アクション": "内容物確認と stopline 解消",
       "ルーティング状態": "内容確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=1.1CT レモンクォーツ シルバーリング サイズ10 / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / 内容物未確認 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=review_required / guard_reasons=内容物未確認 / inventory_status=販売中 / listingId=2JQVbJgNv496WuaMWYVbkV"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=1.1CT レモンクォーツ シルバーリング サイズ10 / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / 内容物未確認 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=review_required / guard_reasons=内容物未確認 / inventory_status=販売中 / listingId=2JQVbJgNv496WuaMWYVbkV"
     },
     {
       "商品ID": "PRD-BOX-001-074",
@@ -1839,8 +1839,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "商品特定再調査",
       "AI次アクション": "内容物確認と stopline 解消",
       "ルーティング状態": "内容確認待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=KumiModa Tシャツレディース ラベル袋 BlueR-L2（内容物未確認） / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / 内容物未確認 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=review_required / guard_reasons=内容物未確認"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=KumiModa Tシャツレディース ラベル袋 BlueR-L2（内容物未確認） / publish_ok=確認待ち / draft_status=下書き / image_state=actual-only固定 / 比較画像なし / 内容物未確認 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=review_required / guard_reasons=内容物未確認"
     },
     {
       "商品ID": "PRD-BOX-001-001",
@@ -1860,8 +1860,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "審査監視",
       "AI次アクション": "カテゴリ審査反映待ち",
       "ルーティング状態": "審査待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り / publish_ok=カテゴリ審査待ち / draft_status=カテゴリ審査待ち / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り / publish_ok=カテゴリ審査待ち / draft_status=カテゴリ審査待ち / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=100%特定時は公式系画像を先頭 / 実物画像を補足 / precision_guard=clear"
     },
     {
       "商品ID": "PRD-BOX-001-013",
@@ -1881,8 +1881,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "審査監視",
       "AI次アクション": "カテゴリ審査反映待ち",
       "ルーティング状態": "審査待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り / publish_ok=カテゴリ審査待ち / draft_status=カテゴリ審査待ち / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=WOOSHIN LABOTTACH FOREHEAD FOCUSED PATCH 18枚入り / publish_ok=カテゴリ審査待ち / draft_status=カテゴリ審査待ち / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=100%特定時は公式系画像を先頭 / 実物画像を補足 / precision_guard=clear"
     },
     {
       "商品ID": "PRD-BOX-001-026",
@@ -1891,19 +1891,19 @@ window.ZERO_COST_ROUTING = {
       "主販路": "メルカリShops",
       "メルカリ本線": "カテゴリ審査待ち",
       "メルカリ投入条件": "カテゴリ審査待ち",
-      "画像ゲート": "実物のみで可",
+      "画像ゲート": "画像同一性確認待ち",
       "外部EC": "BASE準備可",
-      "BASE同期条件": "同期準備可",
+      "BASE同期条件": "画像確認後",
       "共通配送": "Ship&co候補",
       "Ship&co条件": "送り状共通化候補",
       "メルカリ配送": "メルカリBiz配送 + 送り状印刷 + ヤマト集荷",
-      "人確認": "例外時のみ",
-      "人確認理由": "例外時のみ",
-      "低コストAI作業": "審査監視",
+      "人確認": "要",
+      "人確認理由": "画像同一性未確認",
+      "低コストAI作業": "比較画像照合",
       "AI次アクション": "カテゴリ審査反映待ち",
       "ルーティング状態": "審査待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=MMC FACE LOTION 240ml / publish_ok=カテゴリ審査待ち / draft_status=カテゴリ審査待ち / image_state=比較画像候補あり / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=MMC FACE LOTION 240ml / publish_ok=カテゴリ審査待ち / draft_status=カテゴリ審査待ち / image_state=比較画像候補あり / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear"
     },
     {
       "商品ID": "PRD-BOX-001-065",
@@ -1923,8 +1923,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "審査監視",
       "AI次アクション": "カテゴリ審査反映待ち",
       "ルーティング状態": "審査待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=NEEDLY Sleeping Lip Mask 10ml / publish_ok=カテゴリ審査待ち / draft_status=カテゴリ審査待ち / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=NEEDLY Sleeping Lip Mask 10ml / publish_ok=カテゴリ審査待ち / draft_status=カテゴリ審査待ち / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear"
     },
     {
       "商品ID": "PRD-BOX-001-072",
@@ -1944,7 +1944,7 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "審査監視",
       "AI次アクション": "カテゴリ審査反映待ち",
       "ルーティング状態": "審査待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
+      "更新時刻": "2026-04-30 01:12:40 JST",
       "メモ": "name=LE BLANC フェムケアPRO 低刺激 デリケートゾーン 150mL / publish_ok=カテゴリ審査待ち / draft_status=カテゴリ審査待ち / image_state=actual-only固定 / 現写真では1商品に断定不能 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / precision_guard=clear"
     },
     {
@@ -1965,8 +1965,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "審査監視",
       "AI次アクション": "カテゴリ審査反映待ち",
       "ルーティング状態": "審査待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=LE BLANC フェムケアPRO 低刺激 デリケートゾーンソープ 150ml / publish_ok=カテゴリ審査待ち / draft_status=カテゴリ審査待ち / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=LE BLANC フェムケアPRO 低刺激 デリケートゾーンソープ 150ml / publish_ok=カテゴリ審査待ち / draft_status=カテゴリ審査待ち / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear"
     },
     {
       "商品ID": "PRD-BOX-002-026",
@@ -1986,8 +1986,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "審査監視",
       "AI次アクション": "カテゴリ審査反映待ち",
       "ルーティング状態": "審査待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=AETASTA Blemish Balm 50ml / publish_ok=カテゴリ審査待ち / draft_status=カテゴリ審査待ち / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=AETASTA Blemish Balm 50ml / publish_ok=カテゴリ審査待ち / draft_status=カテゴリ審査待ち / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear"
     },
     {
       "商品ID": "PRD-BOX-002-030",
@@ -2007,8 +2007,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "審査監視",
       "AI次アクション": "カテゴリ審査反映待ち",
       "ルーティング状態": "審査待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=NEEDLY Sleeping Lip Mask 10ml / publish_ok=カテゴリ審査待ち / draft_status=カテゴリ審査待ち / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=NEEDLY Sleeping Lip Mask 10ml / publish_ok=カテゴリ審査待ち / draft_status=カテゴリ審査待ち / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear"
     },
     {
       "商品ID": "PRD-BOX-A-001",
@@ -2028,7 +2028,7 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "審査監視",
       "AI次アクション": "カテゴリ審査反映待ち",
       "ルーティング状態": "審査待ち",
-      "更新時刻": "2026-04-30 00:06:08 JST",
+      "更新時刻": "2026-04-30 01:12:40 JST",
       "メモ": "name=withmedica NUMBER SUPPLEMENT 05 有胞子性乳酸菌&セラミド 60粒 / publish_ok=カテゴリ審査待ち / draft_status=カテゴリ審査待ち / image_state=100%同一確認済み / 候補2枚確保 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=clear"
     },
     {
@@ -2049,8 +2049,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=YUGYUG サングラス ブラック/グレー ケース付き / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUatefraSPPB9s8GRDVA"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=YUGYUG サングラス ブラック/グレー ケース付き / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUatefraSPPB9s8GRDVA"
     },
     {
       "商品ID": "PRD-BOX-001-004",
@@ -2070,8 +2070,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=IAWNI ショルダーバッグ メッセンジャーバッグ / publish_ok=確認待ち / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JPSMJHwgfzNjEkYfN8SMv"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=IAWNI ショルダーバッグ メッセンジャーバッグ / publish_ok=確認待ち / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JPSMJHwgfzNjEkYfN8SMv"
     },
     {
       "商品ID": "PRD-BOX-001-005",
@@ -2091,8 +2091,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=CEEN サルエルパンツ 七分丈 ワイドパンツ / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JPQCYwtnC7WCswDeG37b9"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=CEEN サルエルパンツ 七分丈 ワイドパンツ / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JPQCYwtnC7WCswDeG37b9"
     },
     {
       "商品ID": "PRD-BOX-001-007",
@@ -2112,8 +2112,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=GIOVANA Tシャツ ベージュ 2XL / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUavTDD2zNwMZeQHGMce"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=GIOVANA Tシャツ ベージュ 2XL / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUavTDD2zNwMZeQHGMce"
     },
     {
       "商品ID": "PRD-BOX-001-008",
@@ -2133,8 +2133,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=オナーファッション 綿100% トップス ミントグリーン 3XL / publish_ok=確認待ち / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JPSMSqu7EDWJu3jDcTo5h"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=オナーファッション 綿100% トップス ミントグリーン 3XL / publish_ok=確認待ち / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JPSMSqu7EDWJu3jDcTo5h"
     },
     {
       "商品ID": "PRD-BOX-001-009",
@@ -2154,8 +2154,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=Hothrty ピアス パール ギフトBOX付き / publish_ok=確認待ち / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JPSMUTrpVNxK6fGZdtMqT"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=Hothrty ピアス パール ギフトBOX付き / publish_ok=確認待ち / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JPSMUTrpVNxK6fGZdtMqT"
     },
     {
       "商品ID": "PRD-BOX-001-010",
@@ -2175,8 +2175,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=SHANGCHU シェフユニフォーム ブラック 4XL / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear / inventory_status=販売中 / listingId=2JQUaxCAWdvE5G58NEvrwa"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=SHANGCHU シェフユニフォーム ブラック 4XL / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUaxCAWdvE5G58NEvrwa"
     },
     {
       "商品ID": "PRD-BOX-001-011",
@@ -2196,8 +2196,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=Dkieta 帽子 レディース ネックカバー付き 花柄日よけ帽子 / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JPSMPEuG8NMB3ZieyYzHU"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=Dkieta 帽子 レディース ネックカバー付き 花柄日よけ帽子 / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JPSMPEuG8NMB3ZieyYzHU"
     },
     {
       "商品ID": "PRD-BOX-001-012",
@@ -2217,8 +2217,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=gany ガーゼハンカチ 30×30cm 10枚セット 綿100% / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JPTBgBM5kND3h8AhVf4bf"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=gany ガーゼハンカチ 30×30cm 10枚セット 綿100% / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JPTBgBM5kND3h8AhVf4bf"
     },
     {
       "商品ID": "PRD-BOX-001-014",
@@ -2238,8 +2238,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=HAYAHARU キッズ靴下 LS4602LS / publish_ok=確認待ち / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JPSMLyKhRCgPASDJFH2dc"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=HAYAHARU キッズ靴下 LS4602LS / publish_ok=確認待ち / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JPSMLyKhRCgPASDJFH2dc"
     },
     {
       "商品ID": "PRD-BOX-001-015",
@@ -2259,8 +2259,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=Llink 靴下 5足セット ボーダー パステル / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUb2Mz69mEcrwyUeKfzo"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=Llink 靴下 5足セット ボーダー パステル / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUb2Mz69mEcrwyUeKfzo"
     },
     {
       "商品ID": "PRD-BOX-001-016",
@@ -2280,8 +2280,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=ZERUI 靴下 5足セット パステル 蝶リボン / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUb4GkydQ4ULxszxdT95"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=ZERUI 靴下 5足セット パステル 蝶リボン / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUb4GkydQ4ULxszxdT95"
     },
     {
       "商品ID": "PRD-BOX-001-017",
@@ -2301,8 +2301,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=FirstC ティアグッズ記念品ギフト オレンジ折りたたみ帽子 / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear / inventory_status=販売中 / listingId=2JQUb63ZeEjthW7dm22Y8H"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=FirstC ティアグッズ記念品ギフト オレンジ折りたたみ帽子 / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUb63ZeEjthW7dm22Y8H"
     },
     {
       "商品ID": "PRD-BOX-001-018",
@@ -2322,8 +2322,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=SWEETBOY 子供パーカー ネイビー×イエロー 130 / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUb7umMP23voptdjbLKu"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=SWEETBOY 子供パーカー ネイビー×イエロー 130 / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUb7umMP23voptdjbLKu"
     },
     {
       "商品ID": "PRD-BOX-001-020",
@@ -2343,8 +2343,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=首サポーター カバー付き グレー M HJ-GY-M / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear / inventory_status=販売中 / listingId=2JQUcXV4jppwqb29Jbqn4H"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=首サポーター カバー付き グレー M HJ-GY-M / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUcXV4jppwqb29Jbqn4H"
     },
     {
       "商品ID": "PRD-BOX-001-031",
@@ -2364,8 +2364,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=LEISURE WEAR ベージュ系レディース衣類 / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear / inventory_status=販売中 / listingId=2JQUbBMgQMeWMLWLRzccAC"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=LEISURE WEAR ベージュ系レディース衣類 / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUbBMgQMeWMLWLRzccAC"
     },
     {
       "商品ID": "PRD-BOX-001-032",
@@ -2385,8 +2385,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=ZUCCA CLUB リラックス リカバリー サンダル / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JPTBkWndxGku2L9EVw4UP"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=ZUCCA CLUB リラックス リカバリー サンダル / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match不可 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JPTBkWndxGku2L9EVw4UP"
     },
     {
       "商品ID": "PRD-BOX-001-035",
@@ -2406,8 +2406,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=Letshe ベビー前開きロンパース ピンク 110cm / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUbDC7KBpeXR5L7ymfUJ"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=Letshe ベビー前開きロンパース ピンク 110cm / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUbDC7KBpeXR5L7ymfUJ"
     },
     {
       "商品ID": "PRD-BOX-001-037",
@@ -2427,8 +2427,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=ふわふわマフラー ブラウン / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUsmssWGnZ5ZceQTdkif"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=ふわふわマフラー ブラウン / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUsmssWGnZ5ZceQTdkif"
     },
     {
       "商品ID": "PRD-BOX-001-038",
@@ -2448,8 +2448,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=裏起毛トップス オフホワイト L / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear / inventory_status=販売中 / listingId=2JQUbFRq9xHr9T6njZngna"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=裏起毛トップス オフホワイト L / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUbFRq9xHr9T6njZngna"
     },
     {
       "商品ID": "PRD-BOX-001-047",
@@ -2469,8 +2469,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=高視認性安全ベスト 蛍光イエロー / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear / inventory_status=販売中 / listingId=2JQUbHGN4bCPyzG3PgsgNX"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=高視認性安全ベスト 蛍光イエロー / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUbHGN4bCPyzG3PgsgNX"
     },
     {
       "商品ID": "PRD-BOX-001-050",
@@ -2490,8 +2490,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=CRZ YOGA レギンス 股下24インチ ダークグレー系 / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / actual-only固定 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=actual+comparison-if-exact / precision_guard=clear / inventory_status=販売中 / listingId=2JQUbK4ghegAiY99CWmRqU"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=CRZ YOGA レギンス 股下24インチ ダークグレー系 / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / actual-only固定 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUbK4ghegAiY99CWmRqU"
     },
     {
       "商品ID": "PRD-BOX-001-057",
@@ -2511,7 +2511,7 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
+      "更新時刻": "2026-04-30 01:12:40 JST",
       "メモ": "name=JODSONE UV LEDネイルランプ Professional Gel Polish LED Nail Dryer Lamp / publish_ok=確認待ち / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像候補あり / delivery=小型軽量 / precision_guard=clear / inventory_status=販売中 / listingId=2JPSNX6qATG7NwnssYkshh"
     },
     {
@@ -2532,8 +2532,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556 / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUqMXoeTWyJamZVGYsMP"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=SPEEDWOX 2IN1 WIRE STRIPPER & CUTTER ACS-1556 / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUqMXoeTWyJamZVGYsMP"
     },
     {
       "商品ID": "PRD-BOX-001-063",
@@ -2553,8 +2553,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=花柄トートバッグ 40g / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUqUZiuNx7YCRurP9bxa"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=花柄トートバッグ 40g / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUqUZiuNx7YCRurP9bxa"
     },
     {
       "商品ID": "PRD-BOX-001-064",
@@ -2574,8 +2574,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=fivihoc レディースペンダント ゴールド系 582 / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUqYNNBRAuTJonULN25W"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=fivihoc レディースペンダント ゴールド系 582 / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUqYNNBRAuTJonULN25W"
     },
     {
       "商品ID": "PRD-BOX-001-066",
@@ -2595,8 +2595,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=Bluetooth 無線マウス PC/Mac用 / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUr2xtFUZtRGTcrpHEGE"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=Bluetooth 無線マウス PC/Mac用 / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUr2xtFUZtRGTcrpHEGE"
     },
     {
       "商品ID": "PRD-BOX-001-073",
@@ -2616,8 +2616,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=Qzkouma キャップ・ハット DBQ-62 ブラック / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUqdCUPTFub6TGepFofb"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=Qzkouma キャップ・ハット DBQ-62 ブラック / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUqdCUPTFub6TGepFofb"
     },
     {
       "商品ID": "PRD-BOX-001-075",
@@ -2637,8 +2637,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=Ecicvvi パーカー グレー 4XL / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUqfiV49ifzvfZCEshh2"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=Ecicvvi パーカー グレー 4XL / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUqfiV49ifzvfZCEshh2"
     },
     {
       "商品ID": "PRD-BOX-002-001",
@@ -2658,8 +2658,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=CL プールバッグ ベージュ / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUZgtpDsJwAZ2cxHRhXS"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=CL プールバッグ ベージュ / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUZgtpDsJwAZ2cxHRhXS"
     },
     {
       "商品ID": "PRD-BOX-002-002",
@@ -2679,8 +2679,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=シューズケース / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUcZUpfi4MMzFosKEWhC"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=シューズケース / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUcZUpfi4MMzFosKEWhC"
     },
     {
       "商品ID": "PRD-BOX-002-003",
@@ -2700,8 +2700,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=パウ・パトロール ジムサック 36×42cm / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUZjitJREzn5PLvLh8Xc"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=パウ・パトロール ジムサック 36×42cm / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUZjitJREzn5PLvLh8Xc"
     },
     {
       "商品ID": "PRD-BOX-002-004",
@@ -2721,8 +2721,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=レディース衣類 ブラック / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUvcVBm2qKgYp2usUAfN"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=レディース衣類 ブラック / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUvcVBm2qKgYp2usUAfN"
     },
     {
       "商品ID": "PRD-BOX-002-005",
@@ -2742,8 +2742,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=ATBITER ストールクリップ 6ペア / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUZnyySCrZLyTUiyP7z7"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=ATBITER ストールクリップ 6ペア / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUZnyySCrZLyTUiyP7z7"
     },
     {
       "商品ID": "PRD-BOX-002-006",
@@ -2763,8 +2763,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=くま刺繍 ニットマフラー ブラック / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQVZu3eFYrwbB97NTnska"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=くま刺繍 ニットマフラー ブラック / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQVZu3eFYrwbB97NTnska"
     },
     {
       "商品ID": "PRD-BOX-002-008",
@@ -2784,8 +2784,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=fogman 化粧ポーチ 4仕切り / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUZqesvTrTmkGJ9Df3YP"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=fogman 化粧ポーチ 4仕切り / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUZqesvTrTmkGJ9Df3YP"
     },
     {
       "商品ID": "PRD-BOX-002-009",
@@ -2805,8 +2805,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=IZakata ナップサック ブルー / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUZsTo7azNdQnCaKdeye"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=IZakata ナップサック ブルー / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUZsTo7azNdQnCaKdeye"
     },
     {
       "商品ID": "PRD-BOX-002-010",
@@ -2826,8 +2826,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=QISHDIG アクセサリー / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUZuFajsRmvw4VjFVrmD"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=QISHDIG アクセサリー / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUZuFajsRmvw4VjFVrmD"
     },
     {
       "商品ID": "PRD-BOX-002-011",
@@ -2847,8 +2847,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=SABAGEAR MFCSS..ストリグ(マルチカムブラック) XS / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUZvwpwJfkG4koPKjfkB"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=SABAGEAR MFCSS..ストリグ(マルチカムブラック) XS / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUZvwpwJfkG4koPKjfkB"
     },
     {
       "商品ID": "PRD-BOX-002-012",
@@ -2868,8 +2868,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=Yuumo+ くるタフ圧縮パック / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUcdCmwemmXNxHGs6eVe"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=Yuumo+ くるタフ圧縮パック / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUcdCmwemmXNxHGs6eVe"
     },
     {
       "商品ID": "PRD-BOX-002-013",
@@ -2889,8 +2889,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=Natilia ヘッドマッサー / publish_ok=公開済み / draft_status=公開済み / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUZyV8jgSPFCTR69CK3w"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=Natilia ヘッドマッサー / publish_ok=公開済み / draft_status=公開済み / image_state=100%同一確認済み / 候補1枚確保 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUZyV8jgSPFCTR69CK3w"
     },
     {
       "商品ID": "PRD-BOX-002-014",
@@ -2910,8 +2910,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=首掛けエプロン レッド / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUa2Potp9jALa4aH4jQW"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=首掛けエプロン レッド / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUa2Potp9jALa4aH4jQW"
     },
     {
       "商品ID": "PRD-BOX-002-015",
@@ -2931,8 +2931,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=RemeeHi マイクロビキニ / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUa497W26ZXqz5H4EeQW"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=RemeeHi マイクロビキニ / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUa497W26ZXqz5H4EeQW"
     },
     {
       "商品ID": "PRD-BOX-002-016",
@@ -2952,8 +2952,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=YOUHA キッズ水着 グリーン / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUcf88mJhkvVhaoUL2TA"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=YOUHA キッズ水着 グリーン / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUcf88mJhkvVhaoUL2TA"
     },
     {
       "商品ID": "PRD-BOX-002-017",
@@ -2973,8 +2973,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=トラベルポーチ / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUa6h3JuSHFy8aaxrCsA"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=トラベルポーチ / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUa6h3JuSHFy8aaxrCsA"
     },
     {
       "商品ID": "PRD-BOX-002-019",
@@ -2994,8 +2994,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=IKIS レディースパーカー M / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUa9i9GcW3cEzSFXSQjA"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=IKIS レディースパーカー M / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUa9i9GcW3cEzSFXSQjA"
     },
     {
       "商品ID": "PRD-BOX-002-020",
@@ -3015,8 +3015,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=レディーストップス ブラック L / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQVZvkiasHeTHCAmMXuym"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=レディーストップス ブラック L / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQVZvkiasHeTHCAmMXuym"
     },
     {
       "商品ID": "PRD-BOX-002-021",
@@ -3036,8 +3036,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=レディースレギンス ブラック 2XL / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQVZxSt76dzqurhrRYHe7"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=レディースレギンス ブラック 2XL / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQVZxSt76dzqurhrRYHe7"
     },
     {
       "商品ID": "PRD-BOX-002-022",
@@ -3057,8 +3057,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=Enjolt メンズベルト / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUaBS8Ec3stnxRv3mUzB"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=Enjolt メンズベルト / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUaBS8Ec3stnxRv3mUzB"
     },
     {
       "商品ID": "PRD-BOX-002-023",
@@ -3078,8 +3078,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=Reo WOFULOVELY水着ムパンツ(タイプE・XL) s / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUcgywKjFhd2W2p9dTGd"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=Reo WOFULOVELY水着ムパンツ(タイプE・XL) s / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUcgywKjFhd2W2p9dTGd"
     },
     {
       "商品ID": "PRD-BOX-002-024",
@@ -3099,8 +3099,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=Modal 総レースTバックショーツ…感ありランジェリーS枚入り 5枚入り / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUaE34XmH4rptjuSh3DD"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=Modal 総レースTバックショーツ…感ありランジェリーS枚入り 5枚入り / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUaE34XmH4rptjuSh3DD"
     },
     {
       "商品ID": "PRD-BOX-002-025",
@@ -3120,8 +3120,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=Acbands 65W GaN Fast Charger TCS65WCCA / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUciqYJCws55kLedTniQ"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=Acbands 65W GaN Fast Charger TCS65WCCA / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUciqYJCws55kLedTniQ"
     },
     {
       "商品ID": "PRD-BOX-002-027",
@@ -3141,8 +3141,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=VUTRU ヨガタイツ ポケット付き / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUaHiJzzwqieUFjjL8H4"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=VUTRU ヨガタイツ ポケット付き / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUaHiJzzwqieUFjjL8H4"
     },
     {
       "商品ID": "PRD-BOX-002-028",
@@ -3162,8 +3162,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=キノコ柄 ニットマフラー ピンク / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQVZzCQyrY5YFfvvZE9GE"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=キノコ柄 ニットマフラー ピンク / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQVZzCQyrY5YFfvvZE9GE"
     },
     {
       "商品ID": "PRD-BOX-002-029",
@@ -3183,8 +3183,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=［foxseon］メンズtシャツ半袖夏 XL / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUaKSNQ3buMEKk4GrT3h"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=［foxseon］メンズtシャツ半袖夏 XL / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUaKSNQ3buMEKk4GrT3h"
     },
     {
       "商品ID": "PRD-BOX-002-031",
@@ -3204,8 +3204,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=ドケース ［Briskyip］ミニ財布レディース イエロー / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUaNQUDPSkf9beZgoLMW"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=ドケース ［Briskyip］ミニ財布レディース イエロー / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUaNQUDPSkf9beZgoLMW"
     },
     {
       "商品ID": "PRD-BOX-002-032",
@@ -3225,8 +3225,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=Hobemty ノースリーブ ブレザーベスト ホワイト S / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUaQCUW5Mthxzgp5xJ4B"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=Hobemty ノースリーブ ブレザーベスト ホワイト S / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUaQCUW5Mthxzgp5xJ4B"
     },
     {
       "商品ID": "PRD-BOX-002-033",
@@ -3246,8 +3246,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=WOWULOVELY メンズ水着パンツ 緑迷彩 XL / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUaRxgZweLufxVtcwjV5"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=WOWULOVELY メンズ水着パンツ 緑迷彩 XL / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUaRxgZweLufxVtcwjV5"
     },
     {
       "商品ID": "PRD-BOX-002-034",
@@ -3267,8 +3267,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=本夜漫漫 レディースレギンス 150-175cm / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUaTfnrLTJMQgN9con5H"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=本夜漫漫 レディースレギンス 150-175cm / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUaTfnrLTJMQgN9con5H"
     },
     {
       "商品ID": "PRD-BOX-002-035",
@@ -3288,8 +3288,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=DOMATIS ファッションアイテム / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUveUjMyxNmZDn79FJod"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=DOMATIS ファッションアイテム / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUveUjMyxNmZDn79FJod"
     },
     {
       "商品ID": "PRD-BOX-002-036",
@@ -3309,8 +3309,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=ユニベイズ ルームウェア オフホワイト M / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUaWkVVMxJKCS2jHFPVV"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=ユニベイズ ルームウェア オフホワイト M / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUaWkVVMxJKCS2jHFPVV"
     },
     {
       "商品ID": "PRD-BOX-002-037",
@@ -3330,8 +3330,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=GreenHarbor ナロータイ レッド 幅5cm / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUaYTFr4g2zC3SzVYmeL"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=GreenHarbor ナロータイ レッド 幅5cm / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUaYTFr4g2zC3SzVYmeL"
     },
     {
       "商品ID": "PRD-BOX-002-038",
@@ -3351,8 +3351,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=レディースパンツ XL / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUaaBVfx8kFpNnUtFnKf"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=レディースパンツ XL / publish_ok=公開済み / draft_status=公開済み / image_state=actual-only固定 / 比較画像なし / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUaaBVfx8kFpNnUtFnKf"
     },
     {
       "商品ID": "PRD-BOX-002-040",
@@ -3372,8 +3372,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=Super Sparrow TouchFlow Water Bottle 1000ml / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUva48HXnNNqoS9E9nmn"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=Super Sparrow TouchFlow Water Bottle 1000ml / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUva48HXnNNqoS9E9nmn"
     },
     {
       "商品ID": "PRD-BOX-002-041",
@@ -3393,8 +3393,8 @@ window.ZERO_COST_ROUTING = {
       "低コストAI作業": "受注監視",
       "AI次アクション": "受注待ち",
       "ルーティング状態": "販売中",
-      "更新時刻": "2026-04-30 00:06:08 JST",
-      "メモ": "name=ROPE PICNIC PASSAGE シューズ 23.5cm GIA-64040-B / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=actual-only / precision_guard=clear / inventory_status=販売中 / listingId=2JQUaes8m4W649rV4LqY33"
+      "更新時刻": "2026-04-30 01:12:40 JST",
+      "メモ": "name=ROPE PICNIC PASSAGE シューズ 23.5cm GIA-64040-B / publish_ok=公開済み / draft_status=公開済み / image_state=比較画像候補あり / exact-match保留 / image_ready=実物あり / 調査画像待ち / delivery=小型軽量 / image_policy=実物画像を基本に current truth 順で掲載 / precision_guard=clear / inventory_status=販売中 / listingId=2JQUaes8m4W649rV4LqY33"
     }
   ]
 };

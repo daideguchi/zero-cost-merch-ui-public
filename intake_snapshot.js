@@ -1,5 +1,5 @@
 window.ZERO_COST_INTAKE = {
-  "generated_at": "2026-04-30 08:59:02 JST",
+  "generated_at": "2026-04-30 13:46:08 JST",
   "box_id": "BOX-A",
   "box_label": "英字箱 A",
   "box_lane": "alphabet",
@@ -12,20 +12,20 @@ window.ZERO_COST_INTAKE = {
   ],
   "slots_per_item": 3,
   "total_files": 39,
-  "total_items": 11,
+  "total_items": 12,
   "complete_items": 7,
-  "incomplete_items": 4,
-  "next_sequence": 12,
-  "next_management_id": "BOX-A-ITEM-0012",
+  "incomplete_items": 5,
+  "next_sequence": 13,
+  "next_management_id": "BOX-A-ITEM-0013",
   "identification_counts": {
-    "barcode_ready": 4,
-    "ocr_ready": 3,
+    "barcode_ready": 5,
+    "ocr_ready": 2,
     "image_only": 0,
-    "missing_slots": 4
+    "missing_slots": 5
   },
   "resolution_counts": {
     "confirmed": 0,
-    "provisional": 11,
+    "provisional": 12,
     "official_image_pending": 2,
     "accepted_exception": 1
   },
@@ -471,7 +471,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-30 08:59:02 JST",
+        "updated_at": "2026-04-30 13:46:08 JST",
         "human_gate_status": "waiting_both",
         "human_gate_ready": false,
         "human_gate_reason": "出品OK未確認 / AI画像未確認",
@@ -722,7 +722,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-30 08:59:02 JST",
+        "updated_at": "2026-04-30 13:46:08 JST",
         "human_gate_status": "waiting_both",
         "human_gate_ready": false,
         "human_gate_reason": "出品OK未確認 / AI画像未確認",
@@ -955,7 +955,7 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-30 08:59:02 JST",
+        "updated_at": "2026-04-30 13:46:08 JST",
         "human_gate_status": "waiting_both",
         "human_gate_ready": false,
         "human_gate_reason": "出品OK未確認 / AI画像未確認",
@@ -1008,14 +1008,12 @@ window.ZERO_COST_INTAKE = {
       "management_id": "BOX-A-ITEM-0005",
       "box_id": "BOX-A",
       "sequence": 5,
-      "intake_added_at": "2026-04-30 08:58:56 JST",
-      "status": "incomplete",
+      "intake_added_at": "2026-04-30 13:46:08 JST",
+      "status": "complete",
       "photo_grouping": "barcode_delimiter_variable",
-      "grouping_warning": "可変枚数のため actual barcode grouping で再組成",
-      "missing_slots": [
-        "BACK"
-      ],
-      "slot_count": 2,
+      "grouping_warning": "0007からsmart glasses箱面を回収して再束ね",
+      "missing_slots": [],
+      "slot_count": 3,
       "slots": [
         {
           "slot": "CODE",
@@ -1029,11 +1027,20 @@ window.ZERO_COST_INTAKE = {
         {
           "slot": "FRONT",
           "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/022_IMG_2314.heic",
+          "source_name": "022_IMG_2314.heic",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0005/02_FRONT_022_IMG_2314.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0005/02_FRONT_022_IMG_2314.jpg",
+          "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0005/02_FRONT_022_IMG_2314.jpg"
+        },
+        {
+          "slot": "BACK",
+          "status": "present",
           "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/017_IMG_2315.heic",
           "source_name": "017_IMG_2315.heic",
-          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0005/02_FRONT_017_IMG_2315.jpg",
-          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0005/02_FRONT_017_IMG_2315.jpg",
-          "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0005/02_FRONT_017_IMG_2315.jpg"
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0005/03_BACK_017_IMG_2315.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0005/03_BACK_017_IMG_2315.jpg",
+          "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0005/03_BACK_017_IMG_2315.jpg"
         }
       ],
       "shared_sheet_title_value": "BOX-A-ITEM-0005",
@@ -1042,40 +1049,32 @@ window.ZERO_COST_INTAKE = {
       "box_lane": "alphabet",
       "box_code": "A",
       "identification": {
-        "state": "不足あり",
+        "state": "バーコード候補あり",
         "barcode_values": [
-          "X001AH22A3"
+          "X001BW1FPF"
         ],
         "front_back_texts": [
-          "1/11",
-          "X001AH22A3",
-          "112762611",
-          "MOVMAOドライバーセット，13 in",
-          "1，赤と黒",
-          "Neyleペルはきれいにはがせます"
+          "SMART GLASSES",
+          "Model 07",
+          "Black"
         ],
         "code_texts": [
-          "SCREWDRIVER",
-          "Please confirm which product",
-          "style is in the box by marking",
-          "on the front and back of the",
-          "package.",
-          "W III"
+          "X001BW1FPF",
+          "スマートグラス",
+          "骨伝導",
+          "内蔵マイク"
         ],
         "ocr_texts": [
-          "1/11",
-          "X001AH22A3",
-          "112762611",
-          "MOVMAOドライバーセット，13 in",
-          "1，赤と黒",
-          "Neyleペルはきれいにはがせます"
+          "SMART GLASSES",
+          "Model 07",
+          "X001BW1FPF",
+          "スマートグラス",
+          "骨伝導"
         ],
-        "candidate_query": "1/11 X001AH22A3 112762611 MOVMAOドライバーセット，13 in",
+        "candidate_query": "X001BW1FPF SMART GLASSES Model 07",
         "review_flag": "",
-        "ocr_engine": "sauna_tesseract_multistage + vision",
-        "ocr_debug_paths": [
-          "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-A-ITEM-0005/015_IMG_2310_CODE_ocr_best.png"
-        ]
+        "ocr_engine": "manual_regroup",
+        "ocr_debug_paths": []
       },
       "priority_score": 999,
       "next_action": "",
@@ -1132,26 +1131,6 @@ window.ZERO_COST_INTAKE = {
         "supplemental_image_urls": [],
         "supplemental_image_locals": []
       },
-      "comparison_images": [
-        {
-          "label": "比較-1",
-          "url": "./assets/official_images/BOX-A-ITEM-0005_official_1.jpg",
-          "page_url": "https://amazon-ranking.com/product/b0fxdmxq31/",
-          "state": "比較画像候補あり / exact-match保留",
-          "source": "Amazon Ranking B0FXDMXQ31 product image",
-          "verified_exact_match": false
-        }
-      ],
-      "reference_images": [
-        {
-          "label": "比較-1",
-          "url": "./assets/official_images/BOX-A-ITEM-0005_official_1.jpg",
-          "page_url": "https://amazon-ranking.com/product/b0fxdmxq31/",
-          "state": "比較画像候補あり / exact-match保留",
-          "source": "Amazon Ranking B0FXDMXQ31 product image",
-          "verified_exact_match": false
-        }
-      ],
       "commerce": {
         "management_id": "BOX-A-ITEM-0005",
         "raw_id": "BOX-A-RAW-0005",
@@ -1163,7 +1142,7 @@ window.ZERO_COST_INTAKE = {
         "category": "家電・スマホ・カメラ > オーディオ機器 > オーディオグラス",
         "barcode_primary": "LPNNZ043806095",
         "product_code_type": "amazon_internal",
-        "listing_title": "ディオクンス 骨伝導スマートグラス",
+        "listing_title": "スマートメガネ オーディオグラス 骨伝導 ブラック",
         "listing_price": "1980",
         "market_floor_price": "1980",
         "market_floor_state": "外部商品枠あり / 価格未確認",
@@ -1185,12 +1164,51 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-30 08:59:02 JST",
+        "updated_at": "2026-04-30 13:46:08 JST",
         "human_gate_status": "waiting_both",
         "human_gate_ready": false,
         "human_gate_reason": "出品OK未確認 / AI画像未確認",
         "human_gate_requires_ai_images_ok": true
       },
+      "comparison_images": [
+        {
+          "label": "比較-1",
+          "url": "./assets/official_images/BOX-A-ITEM-0005_official_1.jpg",
+          "page_url": "https://amazon-ranking.com/product/b0fxdmxq31/",
+          "state": "比較画像候補あり / exact-match保留",
+          "source": "Amazon Ranking B0FXDMXQ31 product image",
+          "verified_exact_match": false
+        }
+      ],
+      "reference_images": [
+        {
+          "label": "比較-1",
+          "url": "./assets/official_images/BOX-A-ITEM-0005_official_1.jpg",
+          "page_url": "https://amazon-ranking.com/product/b0fxdmxq31/",
+          "state": "比較画像候補あり / exact-match保留",
+          "source": "Amazon Ranking B0FXDMXQ31 product image",
+          "verified_exact_match": false
+        }
+      ],
+      "verified_exact_match": false,
+      "official_image_state": "比較画像候補あり / exact-match保留",
+      "exact_match_guard_state": "clear",
+      "qwen_hq_review_status": "",
+      "qwen_hq_resolution": "",
+      "qwen_hq_review_note": "",
+      "publish_status": "下書き準備中",
+      "publish_state": "下書き準備中",
+      "public_listing_url": "",
+      "listing_id": "",
+      "comparison_image_ref": "./assets/official_images/BOX-A-ITEM-0005_official_1.jpg",
+      "reference_image_ref": "./assets/official_images/BOX-A-ITEM-0005_official_1.jpg",
+      "minimum_price": "1980",
+      "market_floor_price_label": "1980円",
+      "popularity_proxy_label": "低",
+      "popularity_proxy_reason": "Amazon内部コードあり / 商品名候補あり / 参考価格あり",
+      "listing_price": "1980",
+      "exception": {},
+      "route_plan": {},
       "human_gate": {
         "management_id": "BOX-A-ITEM-0005",
         "ai_images_ok": false,
@@ -1213,40 +1231,20 @@ window.ZERO_COST_INTAKE = {
         "actual_only_ok_at": "",
         "hold_at": "",
         "updated_at": ""
-      },
-      "publish_state": "下書き準備中",
-      "public_listing_url": "",
-      "verified_exact_match": false,
-      "official_image_state": "比較画像候補あり / exact-match保留",
-      "exact_match_guard_state": "clear",
-      "qwen_hq_review_status": "",
-      "qwen_hq_resolution": "",
-      "qwen_hq_review_note": "",
-      "publish_status": "下書き準備中",
-      "listing_id": "",
-      "comparison_image_ref": "./assets/official_images/BOX-A-ITEM-0005_official_1.jpg",
-      "reference_image_ref": "./assets/official_images/BOX-A-ITEM-0005_official_1.jpg",
-      "minimum_price": "1980",
-      "market_floor_price_label": "1980円",
-      "popularity_proxy_label": "低",
-      "popularity_proxy_reason": "Amazon内部コードあり / 商品名候補あり / 参考価格あり",
-      "listing_price": "1980",
-      "exception": {},
-      "route_plan": {}
+      }
     },
     {
       "management_id": "BOX-A-ITEM-0006",
       "box_id": "BOX-A",
       "sequence": 6,
-      "intake_added_at": "2026-04-30 08:58:57 JST",
+      "intake_added_at": "2026-04-30 13:46:08 JST",
       "status": "incomplete",
       "photo_grouping": "barcode_delimiter_variable",
-      "grouping_warning": "可変枚数のため actual barcode grouping で再組成",
+      "grouping_warning": "0008からドラマCD front を回収して再束ね",
       "missing_slots": [
-        "FRONT",
         "BACK"
       ],
-      "slot_count": 1,
+      "slot_count": 2,
       "slots": [
         {
           "slot": "CODE",
@@ -1256,6 +1254,15 @@ window.ZERO_COST_INTAKE = {
           "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0006/01_CODE_018_IMG_2349.jpg",
           "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0006/01_CODE_018_IMG_2349.jpg",
           "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0006/01_CODE_018_IMG_2349.jpg"
+        },
+        {
+          "slot": "FRONT",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/026_IMG_2347.heic",
+          "source_name": "026_IMG_2347.heic",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0006/02_FRONT_026_IMG_2347.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0006/02_FRONT_026_IMG_2347.jpg",
+          "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0006/02_FRONT_026_IMG_2347.jpg"
         }
       ],
       "shared_sheet_title_value": "BOX-A-ITEM-0006",
@@ -1266,39 +1273,25 @@ window.ZERO_COST_INTAKE = {
       "identification": {
         "state": "不足あり",
         "barcode_values": [
-          "X000KRR2I1",
-          "LPNNZ043806095"
+          "X000KRR2I1"
         ],
         "front_back_texts": [
-          "LPN Nz 04380 6095",
-          "X.001BW1FPF",
-          "112697.55",
-          "1マ",
-          "トメガイスマートハラス",
-          "ディオクンス 骨伝導"
+          "プリンセスうぃっちぃず",
+          "ハイ☆ぱ〜 ドラマCD"
         ],
         "code_texts": [
-          "S.n",
-          "bil",
-          "nadr",
-          "に録",
-          "自じ",
-          "X000KRR211"
+          "X000KRR2I1",
+          "プリンセスうぃっちぃずハイ☆ぱ〜ドラマCD"
         ],
         "ocr_texts": [
-          "LPN Nz 04380 6095",
-          "X.001BW1FPF",
-          "112697.55",
-          "1マ",
-          "トメガイスマートハラス",
-          "ディオクンス 骨伝導"
+          "プリンセスうぃっちぃず",
+          "ハイ☆ぱ〜 ドラマCD",
+          "X000KRR2I1"
         ],
-        "candidate_query": "LPN Nz 04380 6095 X.001BW1FPF 112697.55 1マ",
+        "candidate_query": "X000KRR2I1 プリンセスうぃっちぃず ハイ☆ぱ〜 ドラマCD",
         "review_flag": "",
-        "ocr_engine": "sauna_tesseract_multistage + vision",
-        "ocr_debug_paths": [
-          "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-A-ITEM-0006/018_IMG_2349_CODE_ocr_best.png"
-        ]
+        "ocr_engine": "manual_regroup",
+        "ocr_debug_paths": []
       },
       "priority_score": 999,
       "next_action": "",
@@ -1328,8 +1321,6 @@ window.ZERO_COST_INTAKE = {
         "price_override": 980
       },
       "official": {},
-      "comparison_images": [],
-      "reference_images": [],
       "commerce": {
         "management_id": "BOX-A-ITEM-0006",
         "raw_id": "RAW-BOX-A-006",
@@ -1359,12 +1350,33 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-30 08:59:02 JST",
+        "updated_at": "2026-04-30 13:46:08 JST",
         "human_gate_status": "waiting_both",
         "human_gate_ready": false,
         "human_gate_reason": "出品OK未確認 / AI画像未確認",
         "human_gate_requires_ai_images_ok": true
       },
+      "comparison_images": [],
+      "reference_images": [],
+      "verified_exact_match": false,
+      "official_image_state": "actual-only固定 / 比較画像なし",
+      "exact_match_guard_state": "clear",
+      "qwen_hq_review_status": "",
+      "qwen_hq_resolution": "",
+      "qwen_hq_review_note": "",
+      "publish_status": "下書き準備中",
+      "publish_state": "下書き準備中",
+      "public_listing_url": "",
+      "listing_id": "",
+      "comparison_image_ref": "",
+      "reference_image_ref": "",
+      "minimum_price": "980",
+      "market_floor_price_label": "980円",
+      "popularity_proxy_label": "低",
+      "popularity_proxy_reason": "Amazon内部コードあり / 商品名候補あり / 参考価格あり",
+      "listing_price": "980",
+      "exception": {},
+      "route_plan": {},
       "human_gate": {
         "management_id": "BOX-A-ITEM-0006",
         "ai_images_ok": false,
@@ -1387,37 +1399,20 @@ window.ZERO_COST_INTAKE = {
         "actual_only_ok_at": "",
         "hold_at": "",
         "updated_at": ""
-      },
-      "publish_state": "下書き準備中",
-      "public_listing_url": "",
-      "verified_exact_match": false,
-      "official_image_state": "actual-only固定 / 比較画像なし",
-      "exact_match_guard_state": "clear",
-      "qwen_hq_review_status": "",
-      "qwen_hq_resolution": "",
-      "qwen_hq_review_note": "",
-      "publish_status": "下書き準備中",
-      "listing_id": "",
-      "comparison_image_ref": "",
-      "reference_image_ref": "",
-      "minimum_price": "980",
-      "market_floor_price_label": "980円",
-      "popularity_proxy_label": "低",
-      "popularity_proxy_reason": "Amazon内部コードあり / 商品名候補あり / 参考価格あり",
-      "listing_price": "980",
-      "exception": {},
-      "route_plan": {}
+      }
     },
     {
       "management_id": "BOX-A-ITEM-0007",
       "box_id": "BOX-A",
       "sequence": 7,
-      "intake_added_at": "2026-04-30 08:58:58 JST",
-      "status": "complete",
+      "intake_added_at": "2026-04-30 13:46:08 JST",
+      "status": "incomplete",
       "photo_grouping": "barcode_delimiter_variable",
-      "grouping_warning": "可変枚数のため actual barcode grouping で再組成",
-      "missing_slots": [],
-      "slot_count": 6,
+      "grouping_warning": "0007 mix から COMEDYKING 日除けマスクを抽出",
+      "missing_slots": [
+        "BACK"
+      ],
+      "slot_count": 2,
       "slots": [
         {
           "slot": "CODE",
@@ -1431,47 +1426,11 @@ window.ZERO_COST_INTAKE = {
         {
           "slot": "FRONT",
           "status": "present",
-          "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/020_IMG_2328.heic",
-          "source_name": "020_IMG_2328.heic",
-          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0007/02_FRONT_020_IMG_2328.jpg",
-          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0007/02_FRONT_020_IMG_2328.jpg",
-          "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0007/02_FRONT_020_IMG_2328.jpg"
-        },
-        {
-          "slot": "BACK",
-          "status": "present",
-          "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/021_IMG_2337.heic",
-          "source_name": "021_IMG_2337.heic",
-          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0007/03_BACK_021_IMG_2337.jpg",
-          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0007/03_BACK_021_IMG_2337.jpg",
-          "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0007/03_BACK_021_IMG_2337.jpg"
-        },
-        {
-          "slot": "PHOTO_04",
-          "status": "present",
-          "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/022_IMG_2314.heic",
-          "source_name": "022_IMG_2314.heic",
-          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0007/04_PHOTO_04_022_IMG_2314.jpg",
-          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0007/04_PHOTO_04_022_IMG_2314.jpg",
-          "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0007/04_PHOTO_04_022_IMG_2314.jpg"
-        },
-        {
-          "slot": "PHOTO_05",
-          "status": "present",
           "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/023_IMG_2318.heic",
           "source_name": "023_IMG_2318.heic",
-          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0007/05_PHOTO_05_023_IMG_2318.jpg",
-          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0007/05_PHOTO_05_023_IMG_2318.jpg",
-          "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0007/05_PHOTO_05_023_IMG_2318.jpg"
-        },
-        {
-          "slot": "PHOTO_06",
-          "status": "present",
-          "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/024_IMG_2329.heic",
-          "source_name": "024_IMG_2329.heic",
-          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0007/06_PHOTO_06_024_IMG_2329.jpg",
-          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0007/06_PHOTO_06_024_IMG_2329.jpg",
-          "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0007/06_PHOTO_06_024_IMG_2329.jpg"
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0007/02_FRONT_023_IMG_2318.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0007/02_FRONT_023_IMG_2318.jpg",
+          "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0007/02_FRONT_023_IMG_2318.jpg"
         }
       ],
       "shared_sheet_title_value": "BOX-A-ITEM-0007",
@@ -1480,107 +1439,156 @@ window.ZERO_COST_INTAKE = {
       "box_lane": "alphabet",
       "box_code": "A",
       "identification": {
-        "state": "バーコード候補あり",
+        "state": "不足あり",
         "barcode_values": [
-          "B0D79JNC1K",
-          "AZ:UC3RS9QICRA5ZGBYYCES78PO8I"
+          "B0D79JNC1K"
         ],
         "front_back_texts": [
           "日焼け止めマスク",
-          "Scan with the",
-          "Transparency App",
-          "BOD79JNC1K",
-          "ICOMEDYKING 20.ルフ（グレー1枚、長め）",
-          "新mil"
+          "COMEDYKING",
+          "グレー1枚 長め"
         ],
         "code_texts": [
-          "NOWSiGHT",
-          "-AUTO LIGHTING =",
-          "簡単取付",
-          "ハロゲン/HID置換",
-          "DC 9V-32V",
-          "動作電圧"
+          "B0D79JNC1K",
+          "COMEDYKING",
+          "日焼け止めマスク"
         ],
         "ocr_texts": [
           "日焼け止めマスク",
-          "Scan with the",
-          "Transparency App",
-          "BOD79JNC1K",
-          "ICOMEDYKING 20.ルフ（グレー1枚、長め）",
-          "新mil"
+          "COMEDYKING",
+          "B0D79JNC1K",
+          "グレー1枚 長め"
         ],
-        "candidate_query": "日焼け止めマスク Scan with the Transparency App BOD79JNC1K",
+        "candidate_query": "B0D79JNC1K COMEDYKING 日焼け止めマスク",
         "review_flag": "",
-        "ocr_engine": "sauna_tesseract_multistage + vision",
-        "ocr_debug_paths": [
-          "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-A-ITEM-0007/021_IMG_2337_CODE_ocr_best.png"
-        ]
+        "ocr_engine": "manual_regroup",
+        "ocr_debug_paths": []
       },
       "priority_score": 999,
       "next_action": "",
       "barcode_kind": "",
       "review_flag": "",
-      "product_name": "写真セット組み直し必要（別商品mix）",
-      "display_name": "写真セット組み直し必要（別商品mix）",
+      "product_name": "COMEDYKING 日除けマスク フェイスカバー グレー 長め",
+      "display_name": "COMEDYKING 日除けマスク フェイスカバー グレー 長め",
       "resolved": {
         "management_id": "BOX-A-ITEM-0007",
         "resolution_status": "provisional",
-        "product_name": "写真セット組み直し必要（別商品mix）",
+        "product_name": "COMEDYKING 日除けマスク フェイスカバー グレー 長め",
         "barcode_primary": "B0D79JNC1K",
         "product_code_type": "asin",
-        "official_image_state": "actual-only固定 / 写真セット組み直し必要",
-        "note": "2026-04-30 箱A variable grouping 再組成。日焼け止めマスクと LOHAS LED 電球の文面が同一グループに混在しており、別商品mix と判断。",
+        "official_image_state": "比較画像候補あり / official-like先頭 / exact-match保留",
+        "note": "2026-04-30 13:46:08 JST mix再束ね。コード写真と説明面が COMEDYKING 日除けマスクの同一商品としてつながるため、別商品mix を解消。Amazon ASIN B0D79JNC1K とメルカリ exact listing を根拠に provisional 化。",
         "evidence": [
           "B0D79JNC1K",
+          "COMEDYKING",
           "日焼け止めマスク",
-          "LOHAS LED",
-          "別商品mix"
+          "グレー1枚 長め"
         ],
-        "brand_override": "不明",
-        "category_override": "その他 > 要再束ね",
-        "check_items_override": "B0D79JNC1K と LED電球の混在確認 / 写真再束ね",
-        "image_source": "actual-only",
-        "exact_match_guard_state": "needs_review",
-        "price_override": 0
+        "brand_override": "COMEDYKING",
+        "category_override": "ファッション > レディース > 小物 > フェイスカバー",
+        "check_items_override": "B0D79JNC1K / COMEDYKING / グレー1枚・長め表記 / 実物2枚一致",
+        "image_source": "Mercari exact listing image",
+        "exact_match_guard_state": "review_required",
+        "price_override": 980
       },
-      "official": {},
-      "comparison_images": [],
-      "reference_images": [],
+      "official": {
+        "management_id": "BOX-A-ITEM-0007",
+        "raw_id": "RAW-BOX-A-007",
+        "product_id": "PRD-BOX-A-007",
+        "draft_id": "DRF-BOX-A-007",
+        "research_id": "RES-BOX-A-007",
+        "official_page_url": "https://www.amazon.co.jp/dp/B0D79JNC1K",
+        "official_image_url": "https://static.mercdn.net/item/detail/orig/photos/m78043035140_1.jpg?1722494084",
+        "official_image_local": "",
+        "image_source": "Mercari exact listing image + Amazon exact ASIN root",
+        "verified_exact_match": false,
+        "official_image_state": "比較画像候補あり / official-like先頭 / exact-match保留",
+        "note": "2026-04-30 13:46:08 JST Amazon exact ASIN B0D79JNC1K の存在を確認。画像はメルカリ exact listing m78043035140 を比較用 official-like として採用。",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "Amazon一次画像の直接抽出は未了のため Mercari exact 画像を比較用に使用"
+        ],
+        "supplemental_url": "https://jp.mercari.com/item/m78043035140",
+        "supplemental_image_urls": [],
+        "supplemental_image_locals": []
+      },
       "commerce": {
         "management_id": "BOX-A-ITEM-0007",
         "raw_id": "RAW-BOX-A-007",
         "product_id": "PRD-BOX-A-007",
         "draft_id": "DRF-BOX-A-007",
         "research_id": "RES-BOX-A-007",
-        "product_name": "写真セット組み直し必要（別商品mix）",
-        "brand": "不明",
-        "category": "その他 > 要再束ね",
+        "product_name": "COMEDYKING 日除けマスク フェイスカバー グレー 長め",
+        "brand": "COMEDYKING",
+        "category": "ファッション > レディース > 小物 > フェイスカバー",
         "barcode_primary": "B0D79JNC1K",
         "product_code_type": "asin",
         "listing_title": "写真セット組み直し必要（別商品mix）",
-        "listing_price": "",
-        "market_floor_price": "",
-        "market_floor_state": "未調査",
-        "market_source_label": "",
-        "market_source_url": "",
-        "market_checked_at": "2026-04-30 08:48:35 JST",
-        "sample_urls": [],
-        "market_note": "外部相場URL未取得。参考価格も未設定。",
-        "popularity_proxy_score": 30,
+        "listing_price": "980",
+        "market_floor_price": "980",
+        "market_floor_state": "外部根拠あり / 価格は保守仮置き",
+        "market_source_label": "Amazon exact ASIN + Mercari exact listing",
+        "market_source_url": "https://www.amazon.co.jp/dp/B0D79JNC1K",
+        "market_checked_at": "2026-04-30 13:46:08 JST",
+        "sample_urls": [
+          "https://www.amazon.co.jp/dp/B0D79JNC1K",
+          "https://jp.mercari.com/item/m78043035140"
+        ],
+        "market_note": "Amazon exact ASIN root と Mercari exact listing を確認。価格取得は未自動化のため、低単価フェイスカバーとして980円の保守仮置き。",
+        "popularity_proxy_score": 34,
         "popularity_proxy_label": "低",
-        "popularity_proxy_reason": "ASINあり / 商品名候補あり",
-        "popularity_proxy_checked_at": "2026-04-30 08:48:35 JST",
+        "popularity_proxy_reason": "ASINあり / exact listing あり / 季節性あり",
+        "popularity_proxy_checked_at": "2026-04-30 13:46:08 JST",
         "publish_state": "下書き準備中",
         "publish_detail": "",
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-30 08:59:02 JST",
+        "updated_at": "2026-04-30 13:46:08 JST",
         "human_gate_status": "waiting_both",
         "human_gate_ready": false,
         "human_gate_reason": "出品OK未確認 / AI画像未確認",
         "human_gate_requires_ai_images_ok": true
       },
+      "comparison_images": [
+        {
+          "label": "比較-1",
+          "url": "./assets/official_images/BOX-A-ITEM-0007_official_1.jpg",
+          "page_url": "https://www.amazon.co.jp/dp/B0D79JNC1K",
+          "state": "比較画像候補あり / exact-match保留",
+          "source": "Mercari exact listing image + Amazon exact ASIN root",
+          "verified_exact_match": false
+        }
+      ],
+      "reference_images": [
+        {
+          "label": "比較-1",
+          "url": "./assets/official_images/BOX-A-ITEM-0007_official_1.jpg",
+          "page_url": "https://www.amazon.co.jp/dp/B0D79JNC1K",
+          "state": "比較画像候補あり / exact-match保留",
+          "source": "Mercari exact listing image + Amazon exact ASIN root",
+          "verified_exact_match": false
+        }
+      ],
+      "verified_exact_match": false,
+      "official_image_state": "比較画像候補あり / exact-match保留",
+      "exact_match_guard_state": "clear",
+      "qwen_hq_review_status": "",
+      "qwen_hq_resolution": "",
+      "qwen_hq_review_note": "",
+      "publish_status": "下書き準備中",
+      "publish_state": "下書き準備中",
+      "public_listing_url": "",
+      "listing_id": "",
+      "comparison_image_ref": "./assets/official_images/BOX-A-ITEM-0007_official_1.jpg",
+      "reference_image_ref": "./assets/official_images/BOX-A-ITEM-0007_official_1.jpg",
+      "minimum_price": "980",
+      "market_floor_price_label": "980円",
+      "popularity_proxy_label": "低",
+      "popularity_proxy_reason": "ASINあり / exact listing あり / 季節性あり",
+      "listing_price": "980",
+      "exception": {},
+      "route_plan": {},
       "human_gate": {
         "management_id": "BOX-A-ITEM-0007",
         "ai_images_ok": false,
@@ -1603,73 +1611,56 @@ window.ZERO_COST_INTAKE = {
         "actual_only_ok_at": "",
         "hold_at": "",
         "updated_at": ""
-      },
-      "publish_state": "下書き準備中",
-      "public_listing_url": "",
-      "verified_exact_match": false,
-      "official_image_state": "現写真では1商品に断定不能",
-      "exact_match_guard_state": "clear",
-      "qwen_hq_review_status": "",
-      "qwen_hq_resolution": "",
-      "qwen_hq_review_note": "",
-      "publish_status": "下書き準備中",
-      "listing_id": "",
-      "comparison_image_ref": "",
-      "reference_image_ref": "",
-      "minimum_price": "",
-      "market_floor_price_label": "未調査",
-      "popularity_proxy_label": "低",
-      "popularity_proxy_reason": "ASINあり / 商品名候補あり",
-      "listing_price": "",
-      "exception": {},
-      "route_plan": {}
+      }
     },
     {
       "management_id": "BOX-A-ITEM-0008",
       "box_id": "BOX-A",
       "sequence": 8,
-      "intake_added_at": "2026-04-30 08:58:59 JST",
-      "status": "complete",
+      "intake_added_at": "2026-04-30 13:46:08 JST",
+      "status": "incomplete",
       "photo_grouping": "barcode_delimiter_variable",
-      "grouping_warning": "可変枚数のため actual barcode grouping で再組成",
-      "missing_slots": [],
+      "grouping_warning": "0007/0008/0011 mix から LOHAS LED を再束ね",
+      "missing_slots": [
+        "CODE"
+      ],
       "slot_count": 4,
       "slots": [
         {
-          "slot": "CODE",
-          "status": "present",
-          "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/025_IMG_2339.heic",
-          "source_name": "025_IMG_2339.heic",
-          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0008/01_CODE_025_IMG_2339.jpg",
-          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0008/01_CODE_025_IMG_2339.jpg",
-          "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0008/01_CODE_025_IMG_2339.jpg"
-        },
-        {
           "slot": "FRONT",
           "status": "present",
-          "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/026_IMG_2347.heic",
-          "source_name": "026_IMG_2347.heic",
-          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0008/02_FRONT_026_IMG_2347.jpg",
-          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0008/02_FRONT_026_IMG_2347.jpg",
-          "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0008/02_FRONT_026_IMG_2347.jpg"
+          "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/020_IMG_2328.heic",
+          "source_name": "020_IMG_2328.heic",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0008/01_FRONT_020_IMG_2328.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0008/01_FRONT_020_IMG_2328.jpg",
+          "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0008/01_FRONT_020_IMG_2328.jpg"
         },
         {
           "slot": "BACK",
           "status": "present",
-          "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/027_IMG_2340.heic",
-          "source_name": "027_IMG_2340.heic",
-          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0008/03_BACK_027_IMG_2340.jpg",
-          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0008/03_BACK_027_IMG_2340.jpg",
-          "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0008/03_BACK_027_IMG_2340.jpg"
+          "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/024_IMG_2329.heic",
+          "source_name": "024_IMG_2329.heic",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0008/02_BACK_024_IMG_2329.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0008/02_BACK_024_IMG_2329.jpg",
+          "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0008/02_BACK_024_IMG_2329.jpg"
         },
         {
           "slot": "PHOTO_04",
           "status": "present",
           "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/028_IMG_2330.heic",
           "source_name": "028_IMG_2330.heic",
-          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0008/04_PHOTO_04_028_IMG_2330.jpg",
-          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0008/04_PHOTO_04_028_IMG_2330.jpg",
-          "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0008/04_PHOTO_04_028_IMG_2330.jpg"
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0008/03_PHOTO_04_028_IMG_2330.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0008/03_PHOTO_04_028_IMG_2330.jpg",
+          "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0008/03_PHOTO_04_028_IMG_2330.jpg"
+        },
+        {
+          "slot": "PHOTO_05",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/036_IMG_2332.heic",
+          "source_name": "036_IMG_2332.heic",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0008/04_PHOTO_05_036_IMG_2332.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0008/04_PHOTO_05_036_IMG_2332.jpg",
+          "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0008/04_PHOTO_05_036_IMG_2332.jpg"
         }
       ],
       "shared_sheet_title_value": "BOX-A-ITEM-0008",
@@ -1678,105 +1669,158 @@ window.ZERO_COST_INTAKE = {
       "box_lane": "alphabet",
       "box_code": "A",
       "identification": {
-        "state": "OCR候補あり",
+        "state": "不足あり",
         "barcode_values": [],
         "front_back_texts": [
-          "SMART GLASSES",
-          "= ven Pid ore: Ties 7s o fa a fee Se & x ate a Es s ee ¢ ee ct ieee sa As a Pe Pes + Si eo ws ~* he as ma 2 AY sie as * ns aa as U We a ve aie Net i Sy <4 a We a bes tir! it Hi",
-          "日焼け止めマスク",
-          "3",
-          "正しい着用方法（手順図をご参照ください）",
-          "保管条件と注意事項"
-        ],
-        "code_texts": [
+          "LOHAS LED",
           "E17",
-          "口金",
-          "密閉形器具対応",
-          "三",
-          "1年保証",
-          "対象商品を購入した日から1年"
+          "60W形相当",
+          "6個入り",
+          "750lm",
+          "6.5W"
         ],
+        "code_texts": [],
         "ocr_texts": [
-          "SMART GLASSES",
-          "= ven Pid ore: Ties 7s o fa a fee Se & x ate a Es s ee ¢ ee ct ieee sa As a Pe Pes + Si eo ws ~* he as ma 2 AY sie as * ns aa as U We a ve aie Net i Sy <4 a We a bes tir! it Hi",
-          "日焼け止めマスク",
-          "3",
-          "正しい着用方法（手順図をご参照ください）",
-          "保管条件と注意事項"
+          "LOHAS LED",
+          "E17",
+          "60W形相当",
+          "6個入り",
+          "750lm",
+          "6.5W"
         ],
-        "candidate_query": "SMART GLASSES = ven Pid ore: Ties 7s o fa a fee Se & x ate a Es s ee ¢ ee ct ieee sa As a Pe Pes + Si eo ws ~* he as ma 2 AY sie as * ns aa as U We a ve aie Net i Sy <4 a We a bes tir! it Hi 日焼け止めマスク 3",
+        "candidate_query": "LOHAS LED E17 60W 6個 750lm 6.5W",
         "review_flag": "",
-        "ocr_engine": "sauna_tesseract_multistage + vision",
-        "ocr_debug_paths": [
-          "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-A-ITEM-0008/024_IMG_2329_CODE_ocr_best.png",
-          "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-A-ITEM-0008/022_IMG_2314_FRONT_ocr_best.png"
-        ]
+        "ocr_engine": "manual_regroup",
+        "ocr_debug_paths": []
       },
       "priority_score": 999,
       "next_action": "",
       "barcode_kind": "",
       "review_flag": "",
-      "product_name": "写真セット組み直し必要（別商品mix）",
-      "display_name": "写真セット組み直し必要（別商品mix）",
+      "product_name": "LOHAS LED 電球 E17口金 60W形相当 6個セット 電球色",
+      "display_name": "LOHAS LED 電球 E17口金 60W形相当 6個セット 電球色",
       "resolved": {
         "management_id": "BOX-A-ITEM-0008",
         "resolution_status": "provisional",
-        "product_name": "写真セット組み直し必要（別商品mix）",
-        "barcode_primary": "https://www.novsights.com",
-        "product_code_type": "url",
-        "official_image_state": "actual-only固定 / 写真セット組み直し必要",
-        "note": "2026-04-30 箱A variable grouping 再組成。Novsight H7 文面と別商品の文面が同一グループに混在しており、別商品mix と判断。",
+        "product_name": "LOHAS LED 電球 E17口金 60W形相当 6個セット 電球色",
+        "barcode_primary": "LOHAS-E17-6PACK-750LM",
+        "product_code_type": "package_text",
+        "official_image_state": "比較画像候補あり / official-like先頭 / exact-match保留",
+        "note": "2026-04-30 13:46:08 JST mix再束ね。LOHAS LED / E17 / 60W形相当 / 6個入り / 750lm / 6.5W の箱面4枚を統合し、同一商品として provisional 化。",
         "evidence": [
-          "https://www.novsights.com",
-          "FITMENT H7",
-          "ドラマCD文面",
-          "別商品mix"
+          "LOHAS LED",
+          "E17",
+          "60W形相当",
+          "6個入り",
+          "750lm",
+          "6.5W"
         ],
-        "brand_override": "不明",
-        "category_override": "その他 > 要再束ね",
-        "check_items_override": "Novsight H7 と ドラマCD文面の混在確認 / 写真再束ね",
-        "image_source": "actual-only",
-        "exact_match_guard_state": "needs_review",
-        "price_override": 0
+        "brand_override": "LOHAS LED",
+        "category_override": "家具・インテリア > ライト・照明 > 蛍光灯・電球",
+        "check_items_override": "LOHAS LED / E17 / 6個入り / 750lm / 6.5W / 電球色",
+        "image_source": "Mercari exact listing image",
+        "exact_match_guard_state": "review_required",
+        "price_override": 1480
       },
-      "official": {},
-      "comparison_images": [],
-      "reference_images": [],
+      "official": {
+        "management_id": "BOX-A-ITEM-0008",
+        "raw_id": "RAW-BOX-A-008",
+        "product_id": "PRD-BOX-A-008",
+        "draft_id": "DRF-BOX-A-008",
+        "research_id": "RES-BOX-A-008",
+        "official_page_url": "https://jp.mercari.com/item/m10224608235",
+        "official_image_url": "https://static.mercdn.net/item/detail/orig/photos/m10224608235_1.jpg?1776923108",
+        "official_image_local": "",
+        "image_source": "Mercari exact listing image",
+        "verified_exact_match": false,
+        "official_image_state": "比較画像候補あり / official-like先頭 / exact-match保留",
+        "note": "2026-04-30 13:46:08 JST LOHAS LED E17 6個セットの exact listing を比較画像候補として接続。ブランド一次画像は未取得。",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "LOHAS 直営一次画像は未取得のため Mercari exact 画像を比較用に使用"
+        ],
+        "supplemental_url": "https://jp.mercari.com/item/m34291892490",
+        "supplemental_image_urls": [],
+        "supplemental_image_locals": []
+      },
       "commerce": {
         "management_id": "BOX-A-ITEM-0008",
         "raw_id": "RAW-BOX-A-008",
         "product_id": "PRD-BOX-A-008",
         "draft_id": "DRF-BOX-A-008",
         "research_id": "RES-BOX-A-008",
-        "product_name": "写真セット組み直し必要（別商品mix）",
-        "brand": "不明",
-        "category": "その他 > 要再束ね",
-        "barcode_primary": "https://www.novsights.com",
-        "product_code_type": "url",
+        "product_name": "LOHAS LED 電球 E17口金 60W形相当 6個セット 電球色",
+        "brand": "LOHAS LED",
+        "category": "家具・インテリア > ライト・照明 > 蛍光灯・電球",
+        "barcode_primary": "LOHAS-E17-6PACK-750LM",
+        "product_code_type": "package_text",
         "listing_title": "写真セット組み直し必要（別商品mix）",
-        "listing_price": "",
-        "market_floor_price": "",
-        "market_floor_state": "未調査",
-        "market_source_label": "",
-        "market_source_url": "",
-        "market_checked_at": "2026-04-30 08:48:35 JST",
-        "sample_urls": [],
-        "market_note": "外部相場URL未取得。参考価格も未設定。",
-        "popularity_proxy_score": 20,
+        "listing_price": "1480",
+        "market_floor_price": "1480",
+        "market_floor_state": "外部根拠あり / 価格は保守仮置き",
+        "market_source_label": "Mercari exact listing LOHAS LED E17 6個セット",
+        "market_source_url": "https://jp.mercari.com/item/m10224608235",
+        "market_checked_at": "2026-04-30 13:46:08 JST",
+        "sample_urls": [
+          "https://jp.mercari.com/item/m10224608235",
+          "https://jp.mercari.com/item/m34291892490",
+          "https://jp.mercari.com/item/m14649144644"
+        ],
+        "market_note": "Mercari で LOHAS LED E17 6個セットの exact title 群を確認。価格自動取得は未了のため、6個セットとして1480円を保守仮置き。",
+        "popularity_proxy_score": 36,
         "popularity_proxy_label": "低",
-        "popularity_proxy_reason": "商品コードあり / 商品名候補あり",
-        "popularity_proxy_checked_at": "2026-04-30 08:48:35 JST",
+        "popularity_proxy_reason": "exact listing 複数あり / 箱面一致",
+        "popularity_proxy_checked_at": "2026-04-30 13:46:08 JST",
         "publish_state": "下書き準備中",
         "publish_detail": "",
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-30 08:59:02 JST",
+        "updated_at": "2026-04-30 13:46:08 JST",
         "human_gate_status": "waiting_both",
         "human_gate_ready": false,
         "human_gate_reason": "出品OK未確認 / AI画像未確認",
         "human_gate_requires_ai_images_ok": true
       },
+      "comparison_images": [
+        {
+          "label": "比較-1",
+          "url": "./assets/official_images/BOX-A-ITEM-0008_official_1.jpg",
+          "page_url": "https://jp.mercari.com/item/m10224608235",
+          "state": "比較画像候補あり / exact-match保留",
+          "source": "Mercari exact listing image",
+          "verified_exact_match": false
+        }
+      ],
+      "reference_images": [
+        {
+          "label": "比較-1",
+          "url": "./assets/official_images/BOX-A-ITEM-0008_official_1.jpg",
+          "page_url": "https://jp.mercari.com/item/m10224608235",
+          "state": "比較画像候補あり / exact-match保留",
+          "source": "Mercari exact listing image",
+          "verified_exact_match": false
+        }
+      ],
+      "verified_exact_match": false,
+      "official_image_state": "比較画像候補あり / exact-match保留",
+      "exact_match_guard_state": "clear",
+      "qwen_hq_review_status": "",
+      "qwen_hq_resolution": "",
+      "qwen_hq_review_note": "",
+      "publish_status": "下書き準備中",
+      "publish_state": "下書き準備中",
+      "public_listing_url": "",
+      "listing_id": "",
+      "comparison_image_ref": "./assets/official_images/BOX-A-ITEM-0008_official_1.jpg",
+      "reference_image_ref": "./assets/official_images/BOX-A-ITEM-0008_official_1.jpg",
+      "minimum_price": "1480",
+      "market_floor_price_label": "1480円",
+      "popularity_proxy_label": "低",
+      "popularity_proxy_reason": "exact listing 複数あり / 箱面一致",
+      "listing_price": "1480",
+      "exception": {},
+      "route_plan": {},
       "human_gate": {
         "management_id": "BOX-A-ITEM-0008",
         "ai_images_ok": false,
@@ -1799,40 +1843,18 @@ window.ZERO_COST_INTAKE = {
         "actual_only_ok_at": "",
         "hold_at": "",
         "updated_at": ""
-      },
-      "publish_state": "下書き準備中",
-      "public_listing_url": "",
-      "verified_exact_match": false,
-      "official_image_state": "現写真では1商品に断定不能",
-      "exact_match_guard_state": "clear",
-      "qwen_hq_review_status": "",
-      "qwen_hq_resolution": "",
-      "qwen_hq_review_note": "",
-      "publish_status": "下書き準備中",
-      "listing_id": "",
-      "comparison_image_ref": "",
-      "reference_image_ref": "",
-      "minimum_price": "",
-      "market_floor_price_label": "未調査",
-      "popularity_proxy_label": "低",
-      "popularity_proxy_reason": "商品コードあり / 商品名候補あり",
-      "listing_price": "",
-      "exception": {},
-      "route_plan": {}
+      }
     },
     {
       "management_id": "BOX-A-ITEM-0009",
       "box_id": "BOX-A",
       "sequence": 9,
-      "intake_added_at": "2026-04-30 08:58:59 JST",
-      "status": "incomplete",
+      "intake_added_at": "2026-04-30 13:46:08 JST",
+      "status": "complete",
       "photo_grouping": "barcode_delimiter_variable",
-      "grouping_warning": "可変枚数のため actual barcode grouping で再組成",
-      "missing_slots": [
-        "FRONT",
-        "BACK"
-      ],
-      "slot_count": 1,
+      "grouping_warning": "0007/0008/0011 mix から Novsight H7 を再束ね",
+      "missing_slots": [],
+      "slot_count": 5,
       "slots": [
         {
           "slot": "CODE",
@@ -1842,6 +1864,42 @@ window.ZERO_COST_INTAKE = {
           "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0009/01_CODE_029_IMG_2342.jpg",
           "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0009/01_CODE_029_IMG_2342.jpg",
           "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0009/01_CODE_029_IMG_2342.jpg"
+        },
+        {
+          "slot": "FRONT",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/021_IMG_2337.heic",
+          "source_name": "021_IMG_2337.heic",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0009/02_FRONT_021_IMG_2337.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0009/02_FRONT_021_IMG_2337.jpg",
+          "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0009/02_FRONT_021_IMG_2337.jpg"
+        },
+        {
+          "slot": "BACK",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/025_IMG_2339.heic",
+          "source_name": "025_IMG_2339.heic",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0009/03_BACK_025_IMG_2339.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0009/03_BACK_025_IMG_2339.jpg",
+          "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0009/03_BACK_025_IMG_2339.jpg"
+        },
+        {
+          "slot": "PHOTO_04",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/027_IMG_2340.heic",
+          "source_name": "027_IMG_2340.heic",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0009/04_PHOTO_04_027_IMG_2340.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0009/04_PHOTO_04_027_IMG_2340.jpg",
+          "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0009/04_PHOTO_04_027_IMG_2340.jpg"
+        },
+        {
+          "slot": "PHOTO_05",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/039_IMG_2341.heic",
+          "source_name": "039_IMG_2341.heic",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0009/05_PHOTO_05_039_IMG_2341.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0009/05_PHOTO_05_039_IMG_2341.jpg",
+          "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0009/05_PHOTO_05_039_IMG_2341.jpg"
         }
       ],
       "shared_sheet_title_value": "BOX-A-ITEM-0009",
@@ -1850,40 +1908,35 @@ window.ZERO_COST_INTAKE = {
       "box_lane": "alphabet",
       "box_code": "A",
       "identification": {
-        "state": "不足あり",
+        "state": "バーコード候補あり",
         "barcode_values": [
-          "https://www.novsights.com"
+          "B07YXHS24J"
         ],
         "front_back_texts": [
-          "FITMENT",
+          "NOVSIGHT",
           "H7",
-          "www.novsights.com",
-          "）",
-          "（E4",
-          "FCCE∞"
+          "LEDヘッドランプ",
+          "DC 9V-32V",
+          "6500K",
+          "20W"
         ],
         "code_texts": [
-          "NovSight Team",
-          "（MADE IN CHINA）",
-          "● Manufachurer: NEVERLAND NETWORK TECHNOLOGY CO.， LIMITED",
-          "● Address： Unit D， 16F， One Capital Place， 18 Luard Road， Wan Chal， Hong Kong",
-          "●URL: www.novsights.com",
-          "●Email: support@novsights.com"
+          "B07YXHS24J",
+          "NOVSIGHT",
+          "H7"
         ],
         "ocr_texts": [
-          "FITMENT",
+          "NOVSIGHT",
           "H7",
-          "www.novsights.com",
-          "）",
-          "（E4",
-          "FCCE∞"
+          "LEDヘッドランプ",
+          "B07YXHS24J",
+          "DC 9V-32V",
+          "6500K"
         ],
-        "candidate_query": "FITMENT H7 www.novsights.com ）",
+        "candidate_query": "B07YXHS24J Novsight H7 LED headlight",
         "review_flag": "",
-        "ocr_engine": "sauna_tesseract_multistage + vision",
-        "ocr_debug_paths": [
-          "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-A-ITEM-0009/027_IMG_2340_CODE_ocr_best.png"
-        ]
+        "ocr_engine": "manual_regroup",
+        "ocr_debug_paths": []
       },
       "priority_score": 999,
       "next_action": "",
@@ -1897,37 +1950,38 @@ window.ZERO_COST_INTAKE = {
         "product_name": "Novsight LED ヘッドライト H7",
         "barcode_primary": "B07YXHS24J",
         "product_code_type": "asin",
-        "official_image_state": "actual-only固定 / 比較画像なし",
-        "note": "2026-04-30 08:48:35 JST OCR seed で provisional 化。 実物写真とコード/OCR から商品名候補を起こし、比較画像はまだ確定していないため actual-only 固定で保持。",
+        "official_image_state": "比較画像候補あり / actual先頭 / exact-match保留",
+        "note": "2026-04-30 13:46:08 JST mix再束ね。0007/0008/0011 に散っていた箱側面と本体写真を 0009 へ戻し、Novsight H7 の実物写真不足を解消。公式比較画像は保持するが、先頭は actual 維持。",
         "evidence": [
           "B07YXHS24J",
           "Novsight",
           "H7",
-          "LED HEADLIGHTS"
+          "LED HEADLIGHTS",
+          "20W"
         ],
         "brand_override": "Novsight",
         "category_override": "車・バイク・自転車 > 車 > パーツ > ライト",
-        "check_items_override": "H7 / Novsight / 点灯可否 / 左右セット有無",
-        "image_source": "actual-only",
-        "exact_match_guard_state": "clear",
+        "check_items_override": "H7 / Novsight / 左右セット / 本体封入あり",
+        "image_source": "actual + Novsight official comparison",
+        "exact_match_guard_state": "review_required",
         "price_override": 1980
       },
       "official": {
         "management_id": "BOX-A-ITEM-0009",
-        "raw_id": "BOX-A-RAW-0009",
-        "product_id": "PRD-BOX-A-0009",
-        "draft_id": "DRF-BOX-A-0009",
-        "research_id": "RES-BOX-A-0009",
+        "raw_id": "RAW-BOX-A-009",
+        "product_id": "PRD-BOX-A-009",
+        "draft_id": "DRF-BOX-A-009",
+        "research_id": "RES-BOX-A-009",
         "official_page_url": "https://www.novsights.com/products/h7-headlight-bulb-car-brightest-headlamp-bulbs-replacement-kits-plug-n-play",
         "official_image_url": "https://www.novsights.com/cdn/shop/products/f1_50edfcf9-dac9-49cb-83be-d591b2cc392d.jpg?v=1777063378&width=2048",
         "official_image_local": "",
         "image_source": "NOVSIGHT official H7 product page",
         "verified_exact_match": false,
-        "official_image_state": "比較画像候補あり / 実物写真不足のため出品画像には未昇格",
-        "note": "2026-04-30 09:07:13 JST NOVSIGHT公式 H7 LED Bulbs page を確認。H7 product family の公式画像候補は取れたが、箱Aの実物側は CODE 写真のみなので、商品ページ用の先頭画像には使わず比較候補として保持する。",
+        "official_image_state": "比較画像候補あり / actual先頭 / exact-match保留",
+        "note": "2026-04-30 13:46:08 JST 実物写真不足は解消。Novsight official H7 比較画像は保持するが、包装差分があるため先頭昇格は見送る。",
         "exact_match_guard_state": "review_required",
         "exact_match_guard_reasons": [
-          "公式直営または実物全スロットでの100%一致までは未確認"
+          "実物包装と公式product family image の完全一致までは未確認"
         ],
         "supplemental_url": "https://www.novsights.com/products/led-headlight-h7-led-light-high-low-beam-convert",
         "supplemental_image_urls": [
@@ -1935,12 +1989,51 @@ window.ZERO_COST_INTAKE = {
         ],
         "supplemental_image_locals": []
       },
+      "commerce": {
+        "management_id": "BOX-A-ITEM-0009",
+        "raw_id": "RAW-BOX-A-009",
+        "product_id": "PRD-BOX-A-009",
+        "draft_id": "DRF-BOX-A-009",
+        "research_id": "RES-BOX-A-009",
+        "product_name": "Novsight LED ヘッドライト H7",
+        "brand": "Novsight",
+        "category": "車・バイク・自転車 > 車 > パーツ > ライト",
+        "barcode_primary": "B07YXHS24J",
+        "product_code_type": "asin",
+        "listing_title": "Novsight LED ヘッドライト H7",
+        "listing_price": "1980",
+        "market_floor_price": "1980",
+        "market_floor_state": "外部根拠あり / 実物写真補強済み",
+        "market_source_label": "NOVSIGHT official H7 product family",
+        "market_source_url": "https://www.novsights.com/products/h7-headlight-bulb-car-brightest-headlamp-bulbs-replacement-kits-plug-n-play",
+        "market_checked_at": "2026-04-30 13:46:08 JST",
+        "sample_urls": [
+          "https://www.novsights.com/products/h7-headlight-bulb-car-brightest-headlamp-bulbs-replacement-kits-plug-n-play",
+          "https://www.novsights.com/products/led-headlight-h7-led-light-high-low-beam-convert",
+          "https://www.walmart.com/ip/158032057"
+        ],
+        "market_note": "Novsight official H7 family の外部価格帯は高いが、箱Aは日本中古回転を優先して1980円の保守価格を維持。",
+        "popularity_proxy_score": 42,
+        "popularity_proxy_label": "低",
+        "popularity_proxy_reason": "ASINあり / official family root あり / 実物5枚へ補強",
+        "popularity_proxy_checked_at": "2026-04-30 13:46:08 JST",
+        "publish_state": "下書き準備中",
+        "publish_detail": "",
+        "listing_id": "",
+        "public_listing_url": "",
+        "csv_status": "",
+        "updated_at": "2026-04-30 13:46:08 JST",
+        "human_gate_status": "waiting_both",
+        "human_gate_ready": false,
+        "human_gate_reason": "出品OK未確認 / AI画像未確認",
+        "human_gate_requires_ai_images_ok": true
+      },
       "comparison_images": [
         {
           "label": "比較-1",
           "url": "./assets/official_images/BOX-A-ITEM-0009_official_1.jpg",
           "page_url": "https://www.novsights.com/products/h7-headlight-bulb-car-brightest-headlamp-bulbs-replacement-kits-plug-n-play",
-          "state": "actual-only固定 / 比較画像なし",
+          "state": "比較画像候補あり / exact-match保留",
           "source": "NOVSIGHT official H7 product page",
           "verified_exact_match": false
         },
@@ -1948,7 +2041,7 @@ window.ZERO_COST_INTAKE = {
           "label": "比較-2",
           "url": "./assets/official_images/BOX-A-ITEM-0009_official_2.jpg",
           "page_url": "https://www.novsights.com/products/h7-headlight-bulb-car-brightest-headlamp-bulbs-replacement-kits-plug-n-play",
-          "state": "actual-only固定 / 比較画像なし",
+          "state": "比較画像候補あり / exact-match保留",
           "source": "NOVSIGHT official H7 product page",
           "verified_exact_match": false
         }
@@ -1958,7 +2051,7 @@ window.ZERO_COST_INTAKE = {
           "label": "比較-1",
           "url": "./assets/official_images/BOX-A-ITEM-0009_official_1.jpg",
           "page_url": "https://www.novsights.com/products/h7-headlight-bulb-car-brightest-headlamp-bulbs-replacement-kits-plug-n-play",
-          "state": "actual-only固定 / 比較画像なし",
+          "state": "比較画像候補あり / exact-match保留",
           "source": "NOVSIGHT official H7 product page",
           "verified_exact_match": false
         },
@@ -1966,50 +2059,30 @@ window.ZERO_COST_INTAKE = {
           "label": "比較-2",
           "url": "./assets/official_images/BOX-A-ITEM-0009_official_2.jpg",
           "page_url": "https://www.novsights.com/products/h7-headlight-bulb-car-brightest-headlamp-bulbs-replacement-kits-plug-n-play",
-          "state": "actual-only固定 / 比較画像なし",
+          "state": "比較画像候補あり / exact-match保留",
           "source": "NOVSIGHT official H7 product page",
           "verified_exact_match": false
         }
       ],
-      "commerce": {
-        "management_id": "BOX-A-ITEM-0009",
-        "raw_id": "BOX-A-RAW-0009",
-        "product_id": "PRD-BOX-A-0009",
-        "draft_id": "DRF-BOX-A-0009",
-        "research_id": "RES-BOX-A-0009",
-        "product_name": "Novsight LED ヘッドライト H7",
-        "brand": "Novsight",
-        "category": "車・バイク・自転車 > 車 > パーツ > ライト",
-        "barcode_primary": "B07YXHS24J",
-        "product_code_type": "asin",
-        "listing_title": "Novsight LED ヘッドライト H7",
-        "listing_price": "1980",
-        "market_floor_price": "1980",
-        "market_floor_state": "外部根拠あり / ただし実物写真不足",
-        "market_source_label": "NOVSIGHT official H7 product family",
-        "market_source_url": "https://www.novsights.com/products/h7-headlight-bulb-car-brightest-headlamp-bulbs-replacement-kits-plug-n-play",
-        "market_checked_at": "2026-04-30 09:07:13 JST",
-        "sample_urls": [
-          "https://www.novsights.com/products/h7-headlight-bulb-car-brightest-headlamp-bulbs-replacement-kits-plug-n-play",
-          "https://www.novsights.com/products/led-headlight-h7-led-light-high-low-beam-convert",
-          "https://www.walmart.com/ip/158032057"
-        ],
-        "market_note": "NOVSIGHT公式H7系は$52.99〜$72.84の高単価だが、箱AはCODE写真のみで実物写真がないため出品停止。価格は現行1980円を保守仮置きとして維持。",
-        "popularity_proxy_score": 40,
-        "popularity_proxy_label": "低",
-        "popularity_proxy_reason": "ASINあり / 商品名候補あり / 参考価格あり",
-        "popularity_proxy_checked_at": "2026-04-30 08:48:35 JST",
-        "publish_state": "下書き準備中",
-        "publish_detail": "",
-        "listing_id": "",
-        "public_listing_url": "",
-        "csv_status": "",
-        "updated_at": "2026-04-30 08:59:02 JST",
-        "human_gate_status": "waiting_both",
-        "human_gate_ready": false,
-        "human_gate_reason": "出品OK未確認 / AI画像未確認",
-        "human_gate_requires_ai_images_ok": true
-      },
+      "verified_exact_match": false,
+      "official_image_state": "比較画像候補あり / exact-match保留",
+      "exact_match_guard_state": "clear",
+      "qwen_hq_review_status": "",
+      "qwen_hq_resolution": "",
+      "qwen_hq_review_note": "",
+      "publish_status": "下書き準備中",
+      "publish_state": "下書き準備中",
+      "public_listing_url": "",
+      "listing_id": "",
+      "comparison_image_ref": "./assets/official_images/BOX-A-ITEM-0009_official_1.jpg",
+      "reference_image_ref": "./assets/official_images/BOX-A-ITEM-0009_official_1.jpg",
+      "minimum_price": "1980",
+      "market_floor_price_label": "1980円",
+      "popularity_proxy_label": "低",
+      "popularity_proxy_reason": "ASINあり / official family root あり / 実物5枚へ補強",
+      "listing_price": "1980",
+      "exception": {},
+      "route_plan": {},
       "human_gate": {
         "management_id": "BOX-A-ITEM-0009",
         "ai_images_ok": false,
@@ -2032,35 +2105,16 @@ window.ZERO_COST_INTAKE = {
         "actual_only_ok_at": "",
         "hold_at": "",
         "updated_at": ""
-      },
-      "publish_state": "下書き準備中",
-      "public_listing_url": "",
-      "verified_exact_match": false,
-      "official_image_state": "actual-only固定 / 比較画像なし",
-      "exact_match_guard_state": "clear",
-      "qwen_hq_review_status": "",
-      "qwen_hq_resolution": "",
-      "qwen_hq_review_note": "",
-      "publish_status": "下書き準備中",
-      "listing_id": "",
-      "comparison_image_ref": "./assets/official_images/BOX-A-ITEM-0009_official_1.jpg",
-      "reference_image_ref": "./assets/official_images/BOX-A-ITEM-0009_official_1.jpg",
-      "minimum_price": "1980",
-      "market_floor_price_label": "1980円",
-      "popularity_proxy_label": "低",
-      "popularity_proxy_reason": "ASINあり / 商品名候補あり / 参考価格あり",
-      "listing_price": "1980",
-      "exception": {},
-      "route_plan": {}
+      }
     },
     {
       "management_id": "BOX-A-ITEM-0010",
       "box_id": "BOX-A",
       "sequence": 10,
-      "intake_added_at": "2026-04-30 08:59:00 JST",
+      "intake_added_at": "2026-04-30 13:46:08 JST",
       "status": "complete",
       "photo_grouping": "barcode_delimiter_variable",
-      "grouping_warning": "可変枚数のため actual barcode grouping で再組成",
+      "grouping_warning": "black box current truth 維持",
       "missing_slots": [],
       "slot_count": 3,
       "slots": [
@@ -2100,39 +2154,29 @@ window.ZERO_COST_INTAKE = {
       "identification": {
         "state": "バーコード候補あり",
         "barcode_values": [
-          "X000ZALOFZ",
-          "B07YXHS24J"
+          "X000ZALOFZ"
         ],
         "front_back_texts": [
-          "屋内交流100V 50/60H2共用",
-          "定格消費電力",
-          "6.5W",
-          "全光東",
-          "750m",
-          "定格寿命"
+          "BLITZWOLF",
+          "Knight X9",
+          "Mosquito Killer",
+          "360° A11-Round"
         ],
         "code_texts": [
-          "Il",
-          "XO00ZALOFZ",
-          "新品",
-          "en Ss i ~., Ce eeeememeneiial ¢ ~*~ | 4 as",
-          "+f —————— N ——— a SN nl SS ————— a f — pA , —_— tA nanan wag as ) —_—_—_—_<<—<— EEE",
-          ", oe ——=5 |"
+          "X000ZALOFZ",
+          "BLITZWOLF",
+          "Knight X9"
         ],
         "ocr_texts": [
-          "屋内交流100V 50/60H2共用",
-          "定格消費電力",
-          "6.5W",
-          "全光東",
-          "750m",
-          "定格寿命"
+          "BLITZWOLF",
+          "Knight X9",
+          "Mosquito Killer",
+          "X000ZALOFZ"
         ],
-        "candidate_query": "屋内交流100V 50/60H2共用 定格消費電力 6.5W 全光東",
+        "candidate_query": "X000ZALOFZ BLITZWOLF Knight X9 Mosquito Killer",
         "review_flag": "",
-        "ocr_engine": "sauna_tesseract_multistage + vision",
-        "ocr_debug_paths": [
-          "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-A-ITEM-0010/030_IMG_2333_CODE_ocr_best.png"
-        ]
+        "ocr_engine": "manual_regroup",
+        "ocr_debug_paths": []
       },
       "priority_score": 999,
       "next_action": "",
@@ -2187,26 +2231,6 @@ window.ZERO_COST_INTAKE = {
         "supplemental_image_urls": [],
         "supplemental_image_locals": []
       },
-      "comparison_images": [
-        {
-          "label": "比較-1",
-          "url": "./assets/official_images/BOX-A-ITEM-0010_official_1.jpg",
-          "page_url": "https://jp.mercari.com/item/m64971229783",
-          "state": "比較画像候補あり / exact-match保留",
-          "source": "Mercari exact listing image",
-          "verified_exact_match": false
-        }
-      ],
-      "reference_images": [
-        {
-          "label": "比較-1",
-          "url": "./assets/official_images/BOX-A-ITEM-0010_official_1.jpg",
-          "page_url": "https://jp.mercari.com/item/m64971229783",
-          "state": "比較画像候補あり / exact-match保留",
-          "source": "Mercari exact listing image",
-          "verified_exact_match": false
-        }
-      ],
       "commerce": {
         "management_id": "BOX-A-ITEM-0010",
         "raw_id": "BOX-A-RAW-0010",
@@ -2240,12 +2264,51 @@ window.ZERO_COST_INTAKE = {
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-30 08:59:02 JST",
+        "updated_at": "2026-04-30 13:46:08 JST",
         "human_gate_status": "waiting_both",
         "human_gate_ready": false,
         "human_gate_reason": "出品OK未確認 / AI画像未確認",
         "human_gate_requires_ai_images_ok": true
       },
+      "comparison_images": [
+        {
+          "label": "比較-1",
+          "url": "./assets/official_images/BOX-A-ITEM-0010_official_1.jpg",
+          "page_url": "https://jp.mercari.com/item/m64971229783",
+          "state": "比較画像候補あり / exact-match保留",
+          "source": "Mercari exact listing image",
+          "verified_exact_match": false
+        }
+      ],
+      "reference_images": [
+        {
+          "label": "比較-1",
+          "url": "./assets/official_images/BOX-A-ITEM-0010_official_1.jpg",
+          "page_url": "https://jp.mercari.com/item/m64971229783",
+          "state": "比較画像候補あり / exact-match保留",
+          "source": "Mercari exact listing image",
+          "verified_exact_match": false
+        }
+      ],
+      "verified_exact_match": false,
+      "official_image_state": "比較画像候補あり / exact-match保留",
+      "exact_match_guard_state": "clear",
+      "qwen_hq_review_status": "",
+      "qwen_hq_resolution": "",
+      "qwen_hq_review_note": "",
+      "publish_status": "下書き準備中",
+      "publish_state": "下書き準備中",
+      "public_listing_url": "",
+      "listing_id": "",
+      "comparison_image_ref": "./assets/official_images/BOX-A-ITEM-0010_official_1.jpg",
+      "reference_image_ref": "./assets/official_images/BOX-A-ITEM-0010_official_1.jpg",
+      "minimum_price": "1500",
+      "market_floor_price_label": "1500円",
+      "popularity_proxy_label": "低",
+      "popularity_proxy_reason": "Amazon内部コードあり / 商品名候補あり / 参考価格あり",
+      "listing_price": "1500",
+      "exception": {},
+      "route_plan": {},
       "human_gate": {
         "management_id": "BOX-A-ITEM-0010",
         "ai_images_ok": false,
@@ -2268,55 +2331,36 @@ window.ZERO_COST_INTAKE = {
         "actual_only_ok_at": "",
         "hold_at": "",
         "updated_at": ""
-      },
-      "publish_state": "下書き準備中",
-      "public_listing_url": "",
-      "verified_exact_match": false,
-      "official_image_state": "比較画像候補あり / exact-match保留",
-      "exact_match_guard_state": "clear",
-      "qwen_hq_review_status": "",
-      "qwen_hq_resolution": "",
-      "qwen_hq_review_note": "",
-      "publish_status": "下書き準備中",
-      "listing_id": "",
-      "comparison_image_ref": "./assets/official_images/BOX-A-ITEM-0010_official_1.jpg",
-      "reference_image_ref": "./assets/official_images/BOX-A-ITEM-0010_official_1.jpg",
-      "minimum_price": "1500",
-      "market_floor_price_label": "1500円",
-      "popularity_proxy_label": "低",
-      "popularity_proxy_reason": "Amazon内部コードあり / 商品名候補あり / 参考価格あり",
-      "listing_price": "1500",
-      "exception": {},
-      "route_plan": {}
+      }
     },
     {
       "management_id": "BOX-A-ITEM-0011",
       "box_id": "BOX-A",
       "sequence": 11,
-      "intake_added_at": "2026-04-30 08:59:02 JST",
+      "intake_added_at": "2026-04-30 13:46:08 JST",
       "status": "complete",
       "photo_grouping": "barcode_delimiter_variable",
-      "grouping_warning": "可変枚数のため actual barcode grouping で再組成",
+      "grouping_warning": "0011 mix から KDD-762 を再束ね",
       "missing_slots": [],
-      "slot_count": 7,
+      "slot_count": 3,
       "slots": [
         {
           "slot": "CODE",
           "status": "present",
-          "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/033_IMG_2309.heic",
-          "source_name": "033_IMG_2309.heic",
-          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0011/01_CODE_033_IMG_2309.jpg",
-          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/01_CODE_033_IMG_2309.jpg",
-          "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/01_CODE_033_IMG_2309.jpg"
+          "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/037_IMG_2322.heic",
+          "source_name": "037_IMG_2322.heic",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0011/01_CODE_037_IMG_2322.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/01_CODE_037_IMG_2322.jpg",
+          "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/01_CODE_037_IMG_2322.jpg"
         },
         {
           "slot": "FRONT",
           "status": "present",
-          "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/034_IMG_2308.heic",
-          "source_name": "034_IMG_2308.heic",
-          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0011/02_FRONT_034_IMG_2308.jpg",
-          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/02_FRONT_034_IMG_2308.jpg",
-          "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/02_FRONT_034_IMG_2308.jpg"
+          "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/038_IMG_2319.heic",
+          "source_name": "038_IMG_2319.heic",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0011/02_FRONT_038_IMG_2319.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/02_FRONT_038_IMG_2319.jpg",
+          "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/02_FRONT_038_IMG_2319.jpg"
         },
         {
           "slot": "BACK",
@@ -2326,42 +2370,6 @@ window.ZERO_COST_INTAKE = {
           "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0011/03_BACK_035_IMG_2321.jpg",
           "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/03_BACK_035_IMG_2321.jpg",
           "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/03_BACK_035_IMG_2321.jpg"
-        },
-        {
-          "slot": "PHOTO_04",
-          "status": "present",
-          "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/036_IMG_2332.heic",
-          "source_name": "036_IMG_2332.heic",
-          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0011/04_PHOTO_04_036_IMG_2332.jpg",
-          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/04_PHOTO_04_036_IMG_2332.jpg",
-          "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/04_PHOTO_04_036_IMG_2332.jpg"
-        },
-        {
-          "slot": "PHOTO_05",
-          "status": "present",
-          "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/037_IMG_2322.heic",
-          "source_name": "037_IMG_2322.heic",
-          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0011/05_PHOTO_05_037_IMG_2322.jpg",
-          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/05_PHOTO_05_037_IMG_2322.jpg",
-          "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/05_PHOTO_05_037_IMG_2322.jpg"
-        },
-        {
-          "slot": "PHOTO_06",
-          "status": "present",
-          "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/038_IMG_2319.heic",
-          "source_name": "038_IMG_2319.heic",
-          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0011/06_PHOTO_06_038_IMG_2319.jpg",
-          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/06_PHOTO_06_038_IMG_2319.jpg",
-          "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/06_PHOTO_06_038_IMG_2319.jpg"
-        },
-        {
-          "slot": "PHOTO_07",
-          "status": "present",
-          "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/039_IMG_2341.heic",
-          "source_name": "039_IMG_2341.heic",
-          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0011/07_PHOTO_07_039_IMG_2341.jpg",
-          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/07_PHOTO_07_039_IMG_2341.jpg",
-          "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/07_PHOTO_07_039_IMG_2341.jpg"
         }
       ],
       "shared_sheet_title_value": "BOX-A-ITEM-0011",
@@ -2372,105 +2380,136 @@ window.ZERO_COST_INTAKE = {
       "identification": {
         "state": "バーコード候補あり",
         "barcode_values": [
-          "X001AQW187"
+          "XJ019GQ4CR"
         ],
         "front_back_texts": [
-          "360° A11-Round",
-          "Mosquito Killer",
-          "X=",
-          "BLITZWOIF",
-          "Knight",
-          "製品名"
+          "KDD",
+          "Desk Organizer Set",
+          "Model KDD-762"
         ],
         "code_texts": [
-          "X001AQW187",
-          "市気感市出剤取..ス、登山など（黒）",
-          "新品",
-          "Made in China",
-          "| | | | Ga [ez mae",
-          "| i] | 7"
+          "XJ019GQ4CR",
+          "Desk Organizer Set",
+          "KDD-762"
         ],
         "ocr_texts": [
-          "360° A11-Round",
-          "Mosquito Killer",
-          "X=",
-          "BLITZWOIF",
-          "Knight",
-          "製品名"
+          "KDD",
+          "Desk Organizer Set",
+          "KDD-762",
+          "XJ019GQ4CR"
         ],
-        "candidate_query": "360° A11-Round Mosquito Killer X= BLITZWOIF",
+        "candidate_query": "KDD-762 Desk Organizer Set XJ019GQ4CR",
         "review_flag": "",
-        "ocr_engine": "sauna_tesseract_multistage + vision",
-        "ocr_debug_paths": [
-          "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-A-ITEM-0011/033_IMG_2309_CODE_ocr_best.png",
-          "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-A-ITEM-0011/032_IMG_2331_BACK_ocr_best.png"
-        ]
+        "ocr_engine": "manual_regroup",
+        "ocr_debug_paths": []
       },
       "priority_score": 999,
       "next_action": "",
       "barcode_kind": "",
       "review_flag": "",
-      "product_name": "写真セット組み直し必要（別商品mix）",
-      "display_name": "写真セット組み直し必要（別商品mix）",
+      "product_name": "KDD Desk Organizer Set KDD-762",
+      "display_name": "KDD Desk Organizer Set KDD-762",
       "resolved": {
         "management_id": "BOX-A-ITEM-0011",
         "resolution_status": "provisional",
-        "product_name": "写真セット組み直し必要（別商品mix）",
-        "barcode_primary": "X001AQW187",
+        "product_name": "KDD Desk Organizer Set KDD-762",
+        "barcode_primary": "XJ019GQ4CR",
         "product_code_type": "amazon_internal",
-        "official_image_state": "actual-only固定 / 写真セット組み直し必要",
-        "note": "2026-04-30 箱A variable grouping 再組成。X001AQW187 の黒物商品と Mosquito Killer 文面が同一グループに混在しており、別商品mix と判断。",
+        "official_image_state": "actual-only固定 / 実物写真優先",
+        "note": "2026-04-30 13:46:08 JST mix再束ね。Desk Organizer Set / Model KDD-762 / KDD service 文面が 3枚で一致したため、KDD 卓上収納セットとして provisional 化。",
         "evidence": [
-          "X001AQW187",
-          "Mosquito Killer",
-          "市気感市出剤取",
-          "別商品mix"
+          "Desk Organizer Set",
+          "KDD-762",
+          "XJ019GQ4CR",
+          "KDD"
         ],
-        "brand_override": "不明",
-        "category_override": "その他 > 要再束ね",
-        "check_items_override": "X001AQW187 と Mosquito Killer 文面の混在確認 / 写真再束ね",
+        "brand_override": "KDD",
+        "category_override": "家具・インテリア > インテリア小物 > 小物入れ",
+        "check_items_override": "Desk Organizer Set / KDD-762 / XJ019GQ4CR / front-back一致",
         "image_source": "actual-only",
-        "exact_match_guard_state": "needs_review",
-        "price_override": 0
+        "exact_match_guard_state": "review_required",
+        "price_override": 1980
       },
-      "official": {},
-      "comparison_images": [],
-      "reference_images": [],
+      "official": {
+        "management_id": "BOX-A-ITEM-0011",
+        "raw_id": "RAW-BOX-A-011",
+        "product_id": "PRD-BOX-A-011",
+        "draft_id": "DRF-BOX-A-011",
+        "research_id": "RES-BOX-A-011",
+        "official_page_url": "https://www.amazon.co.jp/dp/B0DKFNPYKS",
+        "official_image_url": "",
+        "official_image_local": "",
+        "image_source": "actual-only",
+        "verified_exact_match": false,
+        "official_image_state": "actual-only固定 / 実物写真優先",
+        "note": "2026-04-30 13:46:08 JST Amazon exact product root B0DKFNPYKS は確認できたが、一次画像URL抽出は未了のため actual-only を維持。",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "Amazon一次画像URLの直取得未了"
+        ],
+        "supplemental_url": "https://www.kddservice.com/products/kdd-desk-pad-and-organizer-set",
+        "supplemental_image_urls": [],
+        "supplemental_image_locals": []
+      },
       "commerce": {
         "management_id": "BOX-A-ITEM-0011",
         "raw_id": "RAW-BOX-A-011",
         "product_id": "PRD-BOX-A-011",
         "draft_id": "DRF-BOX-A-011",
         "research_id": "RES-BOX-A-011",
-        "product_name": "写真セット組み直し必要（別商品mix）",
-        "brand": "不明",
-        "category": "その他 > 要再束ね",
-        "barcode_primary": "X001AQW187",
+        "product_name": "KDD Desk Organizer Set KDD-762",
+        "brand": "KDD",
+        "category": "家具・インテリア > インテリア小物 > 小物入れ",
+        "barcode_primary": "XJ019GQ4CR",
         "product_code_type": "amazon_internal",
         "listing_title": "写真セット組み直し必要（別商品mix）",
-        "listing_price": "",
-        "market_floor_price": "",
-        "market_floor_state": "未調査",
-        "market_source_label": "",
-        "market_source_url": "",
-        "market_checked_at": "2026-04-30 08:48:35 JST",
-        "sample_urls": [],
-        "market_note": "外部相場URL未取得。参考価格も未設定。",
-        "popularity_proxy_score": 24,
+        "listing_price": "1980",
+        "market_floor_price": "1980",
+        "market_floor_state": "外部根拠あり / 価格は保守仮置き",
+        "market_source_label": "Amazon exact root KDD pen stand organizer",
+        "market_source_url": "https://www.amazon.co.jp/dp/B0DKFNPYKS",
+        "market_checked_at": "2026-04-30 13:46:08 JST",
+        "sample_urls": [
+          "https://www.amazon.co.jp/dp/B0DKFNPYKS",
+          "https://www.kddservice.com/products/kdd-desk-pad-and-organizer-set"
+        ],
+        "market_note": "Amazon exact root と KDD site を確認。画像一次取得が未了のため、卓上収納セットとして1980円を保守仮置き。",
+        "popularity_proxy_score": 35,
         "popularity_proxy_label": "低",
-        "popularity_proxy_reason": "Amazon内部コードあり / 商品名候補あり",
-        "popularity_proxy_checked_at": "2026-04-30 08:48:35 JST",
+        "popularity_proxy_reason": "Amazon root あり / box text exact / 室内収納カテゴリ",
+        "popularity_proxy_checked_at": "2026-04-30 13:46:08 JST",
         "publish_state": "下書き準備中",
         "publish_detail": "",
         "listing_id": "",
         "public_listing_url": "",
         "csv_status": "",
-        "updated_at": "2026-04-30 08:59:02 JST",
+        "updated_at": "2026-04-30 13:46:08 JST",
         "human_gate_status": "waiting_both",
         "human_gate_ready": false,
         "human_gate_reason": "出品OK未確認 / AI画像未確認",
         "human_gate_requires_ai_images_ok": true
       },
+      "comparison_images": [],
+      "reference_images": [],
+      "verified_exact_match": false,
+      "official_image_state": "actual-only固定 / 比較画像なし",
+      "exact_match_guard_state": "clear",
+      "qwen_hq_review_status": "",
+      "qwen_hq_resolution": "",
+      "qwen_hq_review_note": "",
+      "publish_status": "下書き準備中",
+      "publish_state": "下書き準備中",
+      "public_listing_url": "",
+      "listing_id": "",
+      "comparison_image_ref": "",
+      "reference_image_ref": "",
+      "minimum_price": "1980",
+      "market_floor_price_label": "1980円",
+      "popularity_proxy_label": "低",
+      "popularity_proxy_reason": "Amazon root あり / box text exact / 室内収納カテゴリ",
+      "listing_price": "1980",
+      "exception": {},
+      "route_plan": {},
       "human_gate": {
         "management_id": "BOX-A-ITEM-0011",
         "ai_images_ok": false,
@@ -2493,26 +2532,220 @@ window.ZERO_COST_INTAKE = {
         "actual_only_ok_at": "",
         "hold_at": "",
         "updated_at": ""
+      }
+    },
+    {
+      "management_id": "BOX-A-ITEM-0012",
+      "box_id": "BOX-A",
+      "sequence": 12,
+      "intake_added_at": "2026-04-30 13:46:08 JST",
+      "status": "incomplete",
+      "photo_grouping": "barcode_delimiter_variable",
+      "grouping_warning": "0011 mix から white box X9 を別個体として抽出",
+      "missing_slots": [
+        "BACK"
+      ],
+      "slot_count": 2,
+      "slots": [
+        {
+          "slot": "CODE",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/033_IMG_2309.heic",
+          "source_name": "033_IMG_2309.heic",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0012/01_CODE_033_IMG_2309.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0012/01_CODE_033_IMG_2309.jpg",
+          "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0012/01_CODE_033_IMG_2309.jpg"
+        },
+        {
+          "slot": "FRONT",
+          "status": "present",
+          "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/034_IMG_2308.heic",
+          "source_name": "034_IMG_2308.heic",
+          "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0012/02_FRONT_034_IMG_2308.jpg",
+          "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0012/02_FRONT_034_IMG_2308.jpg",
+          "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0012/02_FRONT_034_IMG_2308.jpg"
+        }
+      ],
+      "shared_sheet_title_value": "BOX-A-ITEM-0012",
+      "shared_sheet_note": "管理番号をタイトル欄へ入れる",
+      "box_label": "英字箱 A",
+      "box_lane": "alphabet",
+      "box_code": "A",
+      "identification": {
+        "state": "不足あり",
+        "barcode_values": [
+          "X001AQW187"
+        ],
+        "front_back_texts": [
+          "BLITZWOLF",
+          "Knight X9",
+          "Mosquito Killer",
+          "360° A11-Round"
+        ],
+        "code_texts": [
+          "X001AQW187",
+          "BLITZWOLF",
+          "Knight X9"
+        ],
+        "ocr_texts": [
+          "BLITZWOLF",
+          "Knight X9",
+          "Mosquito Killer",
+          "X001AQW187"
+        ],
+        "candidate_query": "X001AQW187 BLITZWOLF Knight X9 Mosquito Killer",
+        "review_flag": "",
+        "ocr_engine": "manual_regroup",
+        "ocr_debug_paths": []
       },
-      "publish_state": "下書き準備中",
-      "public_listing_url": "",
+      "priority_score": 999,
+      "next_action": "",
+      "barcode_kind": "",
+      "review_flag": "",
+      "product_name": "BLITZWOLF Knight X9 蚊取りランプ 電撃殺虫器",
+      "display_name": "BLITZWOLF Knight X9 蚊取りランプ 電撃殺虫器",
+      "resolved": {
+        "management_id": "BOX-A-ITEM-0012",
+        "resolution_status": "provisional",
+        "product_name": "BLITZWOLF Knight X9 蚊取りランプ 電撃殺虫器",
+        "barcode_primary": "X001AQW187",
+        "product_code_type": "amazon_internal",
+        "official_image_state": "比較画像候補あり / official-like先頭 / exact-match保留",
+        "note": "2026-04-30 13:46:08 JST 0011 mix から white box X9 を別個体として抽出。X001AQW187 ラベルと front 箱面が Knight X9 / Mosquito Killer で一致するため、0010とは別在庫として扱う。",
+        "evidence": [
+          "X001AQW187",
+          "BLITZWOLF",
+          "Knight X9",
+          "Mosquito Killer"
+        ],
+        "brand_override": "BLITZWOLF",
+        "category_override": "生活家電 > 空調 > 蚊取り・殺虫",
+        "check_items_override": "X001AQW187 / Knight X9 / Mosquito Killer / white box",
+        "image_source": "Mercari exact listing image",
+        "exact_match_guard_state": "review_required",
+        "price_override": 1500
+      },
+      "official": {
+        "management_id": "BOX-A-ITEM-0012",
+        "raw_id": "RAW-BOX-A-012",
+        "product_id": "PRD-BOX-A-012",
+        "draft_id": "DRF-BOX-A-012",
+        "research_id": "RES-BOX-A-012",
+        "official_page_url": "https://jp.mercari.com/item/m64971229783",
+        "official_image_url": "https://static.mercdn.net/item/detail/orig/photos/m64971229783_1.jpg?1776006790",
+        "official_image_local": "",
+        "image_source": "Mercari exact listing image",
+        "verified_exact_match": false,
+        "official_image_state": "比較画像候補あり / official-like先頭 / exact-match保留",
+        "note": "2026-04-30 13:46:08 JST white box 個体も Knight X9 exact listing の比較画像を流用。商品 family は同じだが個体は別在庫として管理。",
+        "exact_match_guard_state": "review_required",
+        "exact_match_guard_reasons": [
+          "直営一次ソースまでは未確認"
+        ],
+        "supplemental_url": "https://item.jd.com/10153682907429.html",
+        "supplemental_image_urls": [],
+        "supplemental_image_locals": []
+      },
+      "commerce": {
+        "management_id": "BOX-A-ITEM-0012",
+        "raw_id": "RAW-BOX-A-012",
+        "product_id": "PRD-BOX-A-012",
+        "draft_id": "DRF-BOX-A-012",
+        "research_id": "RES-BOX-A-012",
+        "product_name": "BLITZWOLF Knight X9 蚊取りランプ 電撃殺虫器",
+        "brand": "BLITZWOLF",
+        "category": "生活家電 > 空調 > 蚊取り・殺虫",
+        "barcode_primary": "X001AQW187",
+        "product_code_type": "amazon_internal",
+        "listing_title": "BLITZWOLF Knight X9 蚊取りランプ 電撃殺虫器",
+        "listing_price": "1500",
+        "market_floor_price": "1500",
+        "market_floor_state": "外部相場あり",
+        "market_source_label": "Mercari exact listing Knight X9 family",
+        "market_source_url": "https://jp.mercari.com/item/m64971229783",
+        "market_checked_at": "2026-04-30 13:46:08 JST",
+        "sample_urls": [
+          "https://jp.mercari.com/item/m64971229783",
+          "https://item.jd.com/10153682907429.html"
+        ],
+        "market_note": "white box 個体も Knight X9 family と判断。0010 と同じ保守下限 1500円を適用。",
+        "popularity_proxy_score": 34,
+        "popularity_proxy_label": "低",
+        "popularity_proxy_reason": "商品 family 一致 / exact listing root あり",
+        "popularity_proxy_checked_at": "2026-04-30 13:46:08 JST",
+        "publish_state": "下書き準備中",
+        "publish_detail": "",
+        "listing_id": "",
+        "public_listing_url": "",
+        "csv_status": "",
+        "updated_at": "2026-04-30 13:46:08 JST",
+        "human_gate_status": "waiting_both",
+        "human_gate_ready": false,
+        "human_gate_reason": "出品OK未確認 / AI画像未確認",
+        "human_gate_requires_ai_images_ok": true
+      },
+      "comparison_images": [
+        {
+          "label": "比較-1",
+          "url": "./assets/official_images/BOX-A-ITEM-0012_official_1.jpg",
+          "page_url": "https://jp.mercari.com/item/m64971229783",
+          "state": "比較画像候補あり / exact-match保留",
+          "source": "Mercari exact listing image",
+          "verified_exact_match": false
+        }
+      ],
+      "reference_images": [
+        {
+          "label": "比較-1",
+          "url": "./assets/official_images/BOX-A-ITEM-0012_official_1.jpg",
+          "page_url": "https://jp.mercari.com/item/m64971229783",
+          "state": "比較画像候補あり / exact-match保留",
+          "source": "Mercari exact listing image",
+          "verified_exact_match": false
+        }
+      ],
       "verified_exact_match": false,
-      "official_image_state": "現写真では1商品に断定不能",
+      "official_image_state": "比較画像候補あり / exact-match保留",
       "exact_match_guard_state": "clear",
       "qwen_hq_review_status": "",
       "qwen_hq_resolution": "",
       "qwen_hq_review_note": "",
       "publish_status": "下書き準備中",
+      "publish_state": "下書き準備中",
+      "public_listing_url": "",
       "listing_id": "",
-      "comparison_image_ref": "",
-      "reference_image_ref": "",
-      "minimum_price": "",
-      "market_floor_price_label": "未調査",
+      "comparison_image_ref": "./assets/official_images/BOX-A-ITEM-0012_official_1.jpg",
+      "reference_image_ref": "./assets/official_images/BOX-A-ITEM-0012_official_1.jpg",
+      "minimum_price": "1500",
+      "market_floor_price_label": "1500円",
       "popularity_proxy_label": "低",
-      "popularity_proxy_reason": "Amazon内部コードあり / 商品名候補あり",
-      "listing_price": "",
+      "popularity_proxy_reason": "商品 family 一致 / exact listing root あり",
+      "listing_price": "1500",
       "exception": {},
-      "route_plan": {}
+      "route_plan": {},
+      "human_gate": {
+        "management_id": "BOX-A-ITEM-0012",
+        "ai_images_ok": false,
+        "publish_ok": false,
+        "actual_only_ok": false,
+        "hold": false,
+        "requires_ai_images_ok": true,
+        "ready": false,
+        "status": "waiting_both",
+        "reason": "出品OK未確認 / AI画像未確認",
+        "reasons": [
+          "出品OK未確認",
+          "AI画像未確認"
+        ],
+        "mismatch_reason": "",
+        "action_trail": [],
+        "note": "",
+        "ai_images_ok_at": "",
+        "publish_ok_at": "",
+        "actual_only_ok_at": "",
+        "hold_at": "",
+        "updated_at": ""
+      }
     }
   ],
   "boxes": [
@@ -32338,7 +32571,7 @@ window.ZERO_COST_INTAKE = {
       ]
     },
     {
-      "generated_at": "2026-04-30 08:59:02 JST",
+      "generated_at": "2026-04-30 13:46:08 JST",
       "box_id": "BOX-A",
       "box_label": "英字箱 A",
       "box_lane": "alphabet",
@@ -32351,20 +32584,20 @@ window.ZERO_COST_INTAKE = {
       ],
       "slots_per_item": 3,
       "total_files": 39,
-      "total_items": 11,
+      "total_items": 12,
       "complete_items": 7,
-      "incomplete_items": 4,
-      "next_sequence": 12,
-      "next_management_id": "BOX-A-ITEM-0012",
+      "incomplete_items": 5,
+      "next_sequence": 13,
+      "next_management_id": "BOX-A-ITEM-0013",
       "identification_counts": {
-        "barcode_ready": 4,
-        "ocr_ready": 3,
+        "barcode_ready": 5,
+        "ocr_ready": 2,
         "image_only": 0,
-        "missing_slots": 4
+        "missing_slots": 5
       },
       "resolution_counts": {
         "confirmed": 0,
-        "provisional": 11,
+        "provisional": 12,
         "official_image_pending": 2,
         "accepted_exception": 1
       },
@@ -32799,7 +33032,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-30 08:59:02 JST",
+            "updated_at": "2026-04-30 13:46:08 JST",
             "human_gate_status": "waiting_both",
             "human_gate_ready": false,
             "human_gate_reason": "出品OK未確認 / AI画像未確認",
@@ -33050,7 +33283,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-30 08:59:02 JST",
+            "updated_at": "2026-04-30 13:46:08 JST",
             "human_gate_status": "waiting_both",
             "human_gate_ready": false,
             "human_gate_reason": "出品OK未確認 / AI画像未確認",
@@ -33283,7 +33516,7 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-30 08:59:02 JST",
+            "updated_at": "2026-04-30 13:46:08 JST",
             "human_gate_status": "waiting_both",
             "human_gate_ready": false,
             "human_gate_reason": "出品OK未確認 / AI画像未確認",
@@ -33336,14 +33569,12 @@ window.ZERO_COST_INTAKE = {
           "management_id": "BOX-A-ITEM-0005",
           "box_id": "BOX-A",
           "sequence": 5,
-          "intake_added_at": "2026-04-30 08:58:56 JST",
-          "status": "incomplete",
+          "intake_added_at": "2026-04-30 13:46:08 JST",
+          "status": "complete",
           "photo_grouping": "barcode_delimiter_variable",
-          "grouping_warning": "可変枚数のため actual barcode grouping で再組成",
-          "missing_slots": [
-            "BACK"
-          ],
-          "slot_count": 2,
+          "grouping_warning": "0007からsmart glasses箱面を回収して再束ね",
+          "missing_slots": [],
+          "slot_count": 3,
           "slots": [
             {
               "slot": "CODE",
@@ -33357,11 +33588,20 @@ window.ZERO_COST_INTAKE = {
             {
               "slot": "FRONT",
               "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/022_IMG_2314.heic",
+              "source_name": "022_IMG_2314.heic",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0005/02_FRONT_022_IMG_2314.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0005/02_FRONT_022_IMG_2314.jpg",
+              "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0005/02_FRONT_022_IMG_2314.jpg"
+            },
+            {
+              "slot": "BACK",
+              "status": "present",
               "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/017_IMG_2315.heic",
               "source_name": "017_IMG_2315.heic",
-              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0005/02_FRONT_017_IMG_2315.jpg",
-              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0005/02_FRONT_017_IMG_2315.jpg",
-              "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0005/02_FRONT_017_IMG_2315.jpg"
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0005/03_BACK_017_IMG_2315.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0005/03_BACK_017_IMG_2315.jpg",
+              "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0005/03_BACK_017_IMG_2315.jpg"
             }
           ],
           "shared_sheet_title_value": "BOX-A-ITEM-0005",
@@ -33370,40 +33610,32 @@ window.ZERO_COST_INTAKE = {
           "box_lane": "alphabet",
           "box_code": "A",
           "identification": {
-            "state": "不足あり",
+            "state": "バーコード候補あり",
             "barcode_values": [
-              "X001AH22A3"
+              "X001BW1FPF"
             ],
             "front_back_texts": [
-              "1/11",
-              "X001AH22A3",
-              "112762611",
-              "MOVMAOドライバーセット，13 in",
-              "1，赤と黒",
-              "Neyleペルはきれいにはがせます"
+              "SMART GLASSES",
+              "Model 07",
+              "Black"
             ],
             "code_texts": [
-              "SCREWDRIVER",
-              "Please confirm which product",
-              "style is in the box by marking",
-              "on the front and back of the",
-              "package.",
-              "W III"
+              "X001BW1FPF",
+              "スマートグラス",
+              "骨伝導",
+              "内蔵マイク"
             ],
             "ocr_texts": [
-              "1/11",
-              "X001AH22A3",
-              "112762611",
-              "MOVMAOドライバーセット，13 in",
-              "1，赤と黒",
-              "Neyleペルはきれいにはがせます"
+              "SMART GLASSES",
+              "Model 07",
+              "X001BW1FPF",
+              "スマートグラス",
+              "骨伝導"
             ],
-            "candidate_query": "1/11 X001AH22A3 112762611 MOVMAOドライバーセット，13 in",
+            "candidate_query": "X001BW1FPF SMART GLASSES Model 07",
             "review_flag": "",
-            "ocr_engine": "sauna_tesseract_multistage + vision",
-            "ocr_debug_paths": [
-              "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-A-ITEM-0005/015_IMG_2310_CODE_ocr_best.png"
-            ]
+            "ocr_engine": "manual_regroup",
+            "ocr_debug_paths": []
           },
           "priority_score": 999,
           "next_action": "",
@@ -33460,26 +33692,6 @@ window.ZERO_COST_INTAKE = {
             "supplemental_image_urls": [],
             "supplemental_image_locals": []
           },
-          "comparison_images": [
-            {
-              "label": "比較-1",
-              "url": "./assets/official_images/BOX-A-ITEM-0005_official_1.jpg",
-              "page_url": "https://amazon-ranking.com/product/b0fxdmxq31/",
-              "state": "比較画像候補あり / exact-match保留",
-              "source": "Amazon Ranking B0FXDMXQ31 product image",
-              "verified_exact_match": false
-            }
-          ],
-          "reference_images": [
-            {
-              "label": "比較-1",
-              "url": "./assets/official_images/BOX-A-ITEM-0005_official_1.jpg",
-              "page_url": "https://amazon-ranking.com/product/b0fxdmxq31/",
-              "state": "比較画像候補あり / exact-match保留",
-              "source": "Amazon Ranking B0FXDMXQ31 product image",
-              "verified_exact_match": false
-            }
-          ],
           "commerce": {
             "management_id": "BOX-A-ITEM-0005",
             "raw_id": "BOX-A-RAW-0005",
@@ -33491,7 +33703,7 @@ window.ZERO_COST_INTAKE = {
             "category": "家電・スマホ・カメラ > オーディオ機器 > オーディオグラス",
             "barcode_primary": "LPNNZ043806095",
             "product_code_type": "amazon_internal",
-            "listing_title": "ディオクンス 骨伝導スマートグラス",
+            "listing_title": "スマートメガネ オーディオグラス 骨伝導 ブラック",
             "listing_price": "1980",
             "market_floor_price": "1980",
             "market_floor_state": "外部商品枠あり / 価格未確認",
@@ -33513,12 +33725,51 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-30 08:59:02 JST",
+            "updated_at": "2026-04-30 13:46:08 JST",
             "human_gate_status": "waiting_both",
             "human_gate_ready": false,
             "human_gate_reason": "出品OK未確認 / AI画像未確認",
             "human_gate_requires_ai_images_ok": true
           },
+          "comparison_images": [
+            {
+              "label": "比較-1",
+              "url": "./assets/official_images/BOX-A-ITEM-0005_official_1.jpg",
+              "page_url": "https://amazon-ranking.com/product/b0fxdmxq31/",
+              "state": "比較画像候補あり / exact-match保留",
+              "source": "Amazon Ranking B0FXDMXQ31 product image",
+              "verified_exact_match": false
+            }
+          ],
+          "reference_images": [
+            {
+              "label": "比較-1",
+              "url": "./assets/official_images/BOX-A-ITEM-0005_official_1.jpg",
+              "page_url": "https://amazon-ranking.com/product/b0fxdmxq31/",
+              "state": "比較画像候補あり / exact-match保留",
+              "source": "Amazon Ranking B0FXDMXQ31 product image",
+              "verified_exact_match": false
+            }
+          ],
+          "verified_exact_match": false,
+          "official_image_state": "比較画像候補あり / exact-match保留",
+          "exact_match_guard_state": "clear",
+          "qwen_hq_review_status": "",
+          "qwen_hq_resolution": "",
+          "qwen_hq_review_note": "",
+          "publish_status": "下書き準備中",
+          "publish_state": "下書き準備中",
+          "public_listing_url": "",
+          "listing_id": "",
+          "comparison_image_ref": "./assets/official_images/BOX-A-ITEM-0005_official_1.jpg",
+          "reference_image_ref": "./assets/official_images/BOX-A-ITEM-0005_official_1.jpg",
+          "minimum_price": "1980",
+          "market_floor_price_label": "1980円",
+          "popularity_proxy_label": "低",
+          "popularity_proxy_reason": "Amazon内部コードあり / 商品名候補あり / 参考価格あり",
+          "listing_price": "1980",
+          "exception": {},
+          "route_plan": {},
           "human_gate": {
             "management_id": "BOX-A-ITEM-0005",
             "ai_images_ok": false,
@@ -33541,40 +33792,20 @@ window.ZERO_COST_INTAKE = {
             "actual_only_ok_at": "",
             "hold_at": "",
             "updated_at": ""
-          },
-          "publish_state": "下書き準備中",
-          "public_listing_url": "",
-          "verified_exact_match": false,
-          "official_image_state": "比較画像候補あり / exact-match保留",
-          "exact_match_guard_state": "clear",
-          "qwen_hq_review_status": "",
-          "qwen_hq_resolution": "",
-          "qwen_hq_review_note": "",
-          "publish_status": "下書き準備中",
-          "listing_id": "",
-          "comparison_image_ref": "./assets/official_images/BOX-A-ITEM-0005_official_1.jpg",
-          "reference_image_ref": "./assets/official_images/BOX-A-ITEM-0005_official_1.jpg",
-          "minimum_price": "1980",
-          "market_floor_price_label": "1980円",
-          "popularity_proxy_label": "低",
-          "popularity_proxy_reason": "Amazon内部コードあり / 商品名候補あり / 参考価格あり",
-          "listing_price": "1980",
-          "exception": {},
-          "route_plan": {}
+          }
         },
         {
           "management_id": "BOX-A-ITEM-0006",
           "box_id": "BOX-A",
           "sequence": 6,
-          "intake_added_at": "2026-04-30 08:58:57 JST",
+          "intake_added_at": "2026-04-30 13:46:08 JST",
           "status": "incomplete",
           "photo_grouping": "barcode_delimiter_variable",
-          "grouping_warning": "可変枚数のため actual barcode grouping で再組成",
+          "grouping_warning": "0008からドラマCD front を回収して再束ね",
           "missing_slots": [
-            "FRONT",
             "BACK"
           ],
-          "slot_count": 1,
+          "slot_count": 2,
           "slots": [
             {
               "slot": "CODE",
@@ -33584,6 +33815,15 @@ window.ZERO_COST_INTAKE = {
               "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0006/01_CODE_018_IMG_2349.jpg",
               "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0006/01_CODE_018_IMG_2349.jpg",
               "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0006/01_CODE_018_IMG_2349.jpg"
+            },
+            {
+              "slot": "FRONT",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/026_IMG_2347.heic",
+              "source_name": "026_IMG_2347.heic",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0006/02_FRONT_026_IMG_2347.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0006/02_FRONT_026_IMG_2347.jpg",
+              "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0006/02_FRONT_026_IMG_2347.jpg"
             }
           ],
           "shared_sheet_title_value": "BOX-A-ITEM-0006",
@@ -33594,39 +33834,25 @@ window.ZERO_COST_INTAKE = {
           "identification": {
             "state": "不足あり",
             "barcode_values": [
-              "X000KRR2I1",
-              "LPNNZ043806095"
+              "X000KRR2I1"
             ],
             "front_back_texts": [
-              "LPN Nz 04380 6095",
-              "X.001BW1FPF",
-              "112697.55",
-              "1マ",
-              "トメガイスマートハラス",
-              "ディオクンス 骨伝導"
+              "プリンセスうぃっちぃず",
+              "ハイ☆ぱ〜 ドラマCD"
             ],
             "code_texts": [
-              "S.n",
-              "bil",
-              "nadr",
-              "に録",
-              "自じ",
-              "X000KRR211"
+              "X000KRR2I1",
+              "プリンセスうぃっちぃずハイ☆ぱ〜ドラマCD"
             ],
             "ocr_texts": [
-              "LPN Nz 04380 6095",
-              "X.001BW1FPF",
-              "112697.55",
-              "1マ",
-              "トメガイスマートハラス",
-              "ディオクンス 骨伝導"
+              "プリンセスうぃっちぃず",
+              "ハイ☆ぱ〜 ドラマCD",
+              "X000KRR2I1"
             ],
-            "candidate_query": "LPN Nz 04380 6095 X.001BW1FPF 112697.55 1マ",
+            "candidate_query": "X000KRR2I1 プリンセスうぃっちぃず ハイ☆ぱ〜 ドラマCD",
             "review_flag": "",
-            "ocr_engine": "sauna_tesseract_multistage + vision",
-            "ocr_debug_paths": [
-              "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-A-ITEM-0006/018_IMG_2349_CODE_ocr_best.png"
-            ]
+            "ocr_engine": "manual_regroup",
+            "ocr_debug_paths": []
           },
           "priority_score": 999,
           "next_action": "",
@@ -33656,8 +33882,6 @@ window.ZERO_COST_INTAKE = {
             "price_override": 980
           },
           "official": {},
-          "comparison_images": [],
-          "reference_images": [],
           "commerce": {
             "management_id": "BOX-A-ITEM-0006",
             "raw_id": "RAW-BOX-A-006",
@@ -33687,12 +33911,33 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-30 08:59:02 JST",
+            "updated_at": "2026-04-30 13:46:08 JST",
             "human_gate_status": "waiting_both",
             "human_gate_ready": false,
             "human_gate_reason": "出品OK未確認 / AI画像未確認",
             "human_gate_requires_ai_images_ok": true
           },
+          "comparison_images": [],
+          "reference_images": [],
+          "verified_exact_match": false,
+          "official_image_state": "actual-only固定 / 比較画像なし",
+          "exact_match_guard_state": "clear",
+          "qwen_hq_review_status": "",
+          "qwen_hq_resolution": "",
+          "qwen_hq_review_note": "",
+          "publish_status": "下書き準備中",
+          "publish_state": "下書き準備中",
+          "public_listing_url": "",
+          "listing_id": "",
+          "comparison_image_ref": "",
+          "reference_image_ref": "",
+          "minimum_price": "980",
+          "market_floor_price_label": "980円",
+          "popularity_proxy_label": "低",
+          "popularity_proxy_reason": "Amazon内部コードあり / 商品名候補あり / 参考価格あり",
+          "listing_price": "980",
+          "exception": {},
+          "route_plan": {},
           "human_gate": {
             "management_id": "BOX-A-ITEM-0006",
             "ai_images_ok": false,
@@ -33715,37 +33960,20 @@ window.ZERO_COST_INTAKE = {
             "actual_only_ok_at": "",
             "hold_at": "",
             "updated_at": ""
-          },
-          "publish_state": "下書き準備中",
-          "public_listing_url": "",
-          "verified_exact_match": false,
-          "official_image_state": "actual-only固定 / 比較画像なし",
-          "exact_match_guard_state": "clear",
-          "qwen_hq_review_status": "",
-          "qwen_hq_resolution": "",
-          "qwen_hq_review_note": "",
-          "publish_status": "下書き準備中",
-          "listing_id": "",
-          "comparison_image_ref": "",
-          "reference_image_ref": "",
-          "minimum_price": "980",
-          "market_floor_price_label": "980円",
-          "popularity_proxy_label": "低",
-          "popularity_proxy_reason": "Amazon内部コードあり / 商品名候補あり / 参考価格あり",
-          "listing_price": "980",
-          "exception": {},
-          "route_plan": {}
+          }
         },
         {
           "management_id": "BOX-A-ITEM-0007",
           "box_id": "BOX-A",
           "sequence": 7,
-          "intake_added_at": "2026-04-30 08:58:58 JST",
-          "status": "complete",
+          "intake_added_at": "2026-04-30 13:46:08 JST",
+          "status": "incomplete",
           "photo_grouping": "barcode_delimiter_variable",
-          "grouping_warning": "可変枚数のため actual barcode grouping で再組成",
-          "missing_slots": [],
-          "slot_count": 6,
+          "grouping_warning": "0007 mix から COMEDYKING 日除けマスクを抽出",
+          "missing_slots": [
+            "BACK"
+          ],
+          "slot_count": 2,
           "slots": [
             {
               "slot": "CODE",
@@ -33759,47 +33987,11 @@ window.ZERO_COST_INTAKE = {
             {
               "slot": "FRONT",
               "status": "present",
-              "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/020_IMG_2328.heic",
-              "source_name": "020_IMG_2328.heic",
-              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0007/02_FRONT_020_IMG_2328.jpg",
-              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0007/02_FRONT_020_IMG_2328.jpg",
-              "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0007/02_FRONT_020_IMG_2328.jpg"
-            },
-            {
-              "slot": "BACK",
-              "status": "present",
-              "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/021_IMG_2337.heic",
-              "source_name": "021_IMG_2337.heic",
-              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0007/03_BACK_021_IMG_2337.jpg",
-              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0007/03_BACK_021_IMG_2337.jpg",
-              "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0007/03_BACK_021_IMG_2337.jpg"
-            },
-            {
-              "slot": "PHOTO_04",
-              "status": "present",
-              "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/022_IMG_2314.heic",
-              "source_name": "022_IMG_2314.heic",
-              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0007/04_PHOTO_04_022_IMG_2314.jpg",
-              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0007/04_PHOTO_04_022_IMG_2314.jpg",
-              "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0007/04_PHOTO_04_022_IMG_2314.jpg"
-            },
-            {
-              "slot": "PHOTO_05",
-              "status": "present",
               "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/023_IMG_2318.heic",
               "source_name": "023_IMG_2318.heic",
-              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0007/05_PHOTO_05_023_IMG_2318.jpg",
-              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0007/05_PHOTO_05_023_IMG_2318.jpg",
-              "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0007/05_PHOTO_05_023_IMG_2318.jpg"
-            },
-            {
-              "slot": "PHOTO_06",
-              "status": "present",
-              "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/024_IMG_2329.heic",
-              "source_name": "024_IMG_2329.heic",
-              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0007/06_PHOTO_06_024_IMG_2329.jpg",
-              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0007/06_PHOTO_06_024_IMG_2329.jpg",
-              "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0007/06_PHOTO_06_024_IMG_2329.jpg"
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0007/02_FRONT_023_IMG_2318.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0007/02_FRONT_023_IMG_2318.jpg",
+              "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0007/02_FRONT_023_IMG_2318.jpg"
             }
           ],
           "shared_sheet_title_value": "BOX-A-ITEM-0007",
@@ -33808,107 +34000,156 @@ window.ZERO_COST_INTAKE = {
           "box_lane": "alphabet",
           "box_code": "A",
           "identification": {
-            "state": "バーコード候補あり",
+            "state": "不足あり",
             "barcode_values": [
-              "B0D79JNC1K",
-              "AZ:UC3RS9QICRA5ZGBYYCES78PO8I"
+              "B0D79JNC1K"
             ],
             "front_back_texts": [
               "日焼け止めマスク",
-              "Scan with the",
-              "Transparency App",
-              "BOD79JNC1K",
-              "ICOMEDYKING 20.ルフ（グレー1枚、長め）",
-              "新mil"
+              "COMEDYKING",
+              "グレー1枚 長め"
             ],
             "code_texts": [
-              "NOWSiGHT",
-              "-AUTO LIGHTING =",
-              "簡単取付",
-              "ハロゲン/HID置換",
-              "DC 9V-32V",
-              "動作電圧"
+              "B0D79JNC1K",
+              "COMEDYKING",
+              "日焼け止めマスク"
             ],
             "ocr_texts": [
               "日焼け止めマスク",
-              "Scan with the",
-              "Transparency App",
-              "BOD79JNC1K",
-              "ICOMEDYKING 20.ルフ（グレー1枚、長め）",
-              "新mil"
+              "COMEDYKING",
+              "B0D79JNC1K",
+              "グレー1枚 長め"
             ],
-            "candidate_query": "日焼け止めマスク Scan with the Transparency App BOD79JNC1K",
+            "candidate_query": "B0D79JNC1K COMEDYKING 日焼け止めマスク",
             "review_flag": "",
-            "ocr_engine": "sauna_tesseract_multistage + vision",
-            "ocr_debug_paths": [
-              "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-A-ITEM-0007/021_IMG_2337_CODE_ocr_best.png"
-            ]
+            "ocr_engine": "manual_regroup",
+            "ocr_debug_paths": []
           },
           "priority_score": 999,
           "next_action": "",
           "barcode_kind": "",
           "review_flag": "",
-          "product_name": "写真セット組み直し必要（別商品mix）",
-          "display_name": "写真セット組み直し必要（別商品mix）",
+          "product_name": "COMEDYKING 日除けマスク フェイスカバー グレー 長め",
+          "display_name": "COMEDYKING 日除けマスク フェイスカバー グレー 長め",
           "resolved": {
             "management_id": "BOX-A-ITEM-0007",
             "resolution_status": "provisional",
-            "product_name": "写真セット組み直し必要（別商品mix）",
+            "product_name": "COMEDYKING 日除けマスク フェイスカバー グレー 長め",
             "barcode_primary": "B0D79JNC1K",
             "product_code_type": "asin",
-            "official_image_state": "actual-only固定 / 写真セット組み直し必要",
-            "note": "2026-04-30 箱A variable grouping 再組成。日焼け止めマスクと LOHAS LED 電球の文面が同一グループに混在しており、別商品mix と判断。",
+            "official_image_state": "比較画像候補あり / official-like先頭 / exact-match保留",
+            "note": "2026-04-30 13:46:08 JST mix再束ね。コード写真と説明面が COMEDYKING 日除けマスクの同一商品としてつながるため、別商品mix を解消。Amazon ASIN B0D79JNC1K とメルカリ exact listing を根拠に provisional 化。",
             "evidence": [
               "B0D79JNC1K",
+              "COMEDYKING",
               "日焼け止めマスク",
-              "LOHAS LED",
-              "別商品mix"
+              "グレー1枚 長め"
             ],
-            "brand_override": "不明",
-            "category_override": "その他 > 要再束ね",
-            "check_items_override": "B0D79JNC1K と LED電球の混在確認 / 写真再束ね",
-            "image_source": "actual-only",
-            "exact_match_guard_state": "needs_review",
-            "price_override": 0
+            "brand_override": "COMEDYKING",
+            "category_override": "ファッション > レディース > 小物 > フェイスカバー",
+            "check_items_override": "B0D79JNC1K / COMEDYKING / グレー1枚・長め表記 / 実物2枚一致",
+            "image_source": "Mercari exact listing image",
+            "exact_match_guard_state": "review_required",
+            "price_override": 980
           },
-          "official": {},
-          "comparison_images": [],
-          "reference_images": [],
+          "official": {
+            "management_id": "BOX-A-ITEM-0007",
+            "raw_id": "RAW-BOX-A-007",
+            "product_id": "PRD-BOX-A-007",
+            "draft_id": "DRF-BOX-A-007",
+            "research_id": "RES-BOX-A-007",
+            "official_page_url": "https://www.amazon.co.jp/dp/B0D79JNC1K",
+            "official_image_url": "https://static.mercdn.net/item/detail/orig/photos/m78043035140_1.jpg?1722494084",
+            "official_image_local": "",
+            "image_source": "Mercari exact listing image + Amazon exact ASIN root",
+            "verified_exact_match": false,
+            "official_image_state": "比較画像候補あり / official-like先頭 / exact-match保留",
+            "note": "2026-04-30 13:46:08 JST Amazon exact ASIN B0D79JNC1K の存在を確認。画像はメルカリ exact listing m78043035140 を比較用 official-like として採用。",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "Amazon一次画像の直接抽出は未了のため Mercari exact 画像を比較用に使用"
+            ],
+            "supplemental_url": "https://jp.mercari.com/item/m78043035140",
+            "supplemental_image_urls": [],
+            "supplemental_image_locals": []
+          },
           "commerce": {
             "management_id": "BOX-A-ITEM-0007",
             "raw_id": "RAW-BOX-A-007",
             "product_id": "PRD-BOX-A-007",
             "draft_id": "DRF-BOX-A-007",
             "research_id": "RES-BOX-A-007",
-            "product_name": "写真セット組み直し必要（別商品mix）",
-            "brand": "不明",
-            "category": "その他 > 要再束ね",
+            "product_name": "COMEDYKING 日除けマスク フェイスカバー グレー 長め",
+            "brand": "COMEDYKING",
+            "category": "ファッション > レディース > 小物 > フェイスカバー",
             "barcode_primary": "B0D79JNC1K",
             "product_code_type": "asin",
             "listing_title": "写真セット組み直し必要（別商品mix）",
-            "listing_price": "",
-            "market_floor_price": "",
-            "market_floor_state": "未調査",
-            "market_source_label": "",
-            "market_source_url": "",
-            "market_checked_at": "2026-04-30 08:48:35 JST",
-            "sample_urls": [],
-            "market_note": "外部相場URL未取得。参考価格も未設定。",
-            "popularity_proxy_score": 30,
+            "listing_price": "980",
+            "market_floor_price": "980",
+            "market_floor_state": "外部根拠あり / 価格は保守仮置き",
+            "market_source_label": "Amazon exact ASIN + Mercari exact listing",
+            "market_source_url": "https://www.amazon.co.jp/dp/B0D79JNC1K",
+            "market_checked_at": "2026-04-30 13:46:08 JST",
+            "sample_urls": [
+              "https://www.amazon.co.jp/dp/B0D79JNC1K",
+              "https://jp.mercari.com/item/m78043035140"
+            ],
+            "market_note": "Amazon exact ASIN root と Mercari exact listing を確認。価格取得は未自動化のため、低単価フェイスカバーとして980円の保守仮置き。",
+            "popularity_proxy_score": 34,
             "popularity_proxy_label": "低",
-            "popularity_proxy_reason": "ASINあり / 商品名候補あり",
-            "popularity_proxy_checked_at": "2026-04-30 08:48:35 JST",
+            "popularity_proxy_reason": "ASINあり / exact listing あり / 季節性あり",
+            "popularity_proxy_checked_at": "2026-04-30 13:46:08 JST",
             "publish_state": "下書き準備中",
             "publish_detail": "",
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-30 08:59:02 JST",
+            "updated_at": "2026-04-30 13:46:08 JST",
             "human_gate_status": "waiting_both",
             "human_gate_ready": false,
             "human_gate_reason": "出品OK未確認 / AI画像未確認",
             "human_gate_requires_ai_images_ok": true
           },
+          "comparison_images": [
+            {
+              "label": "比較-1",
+              "url": "./assets/official_images/BOX-A-ITEM-0007_official_1.jpg",
+              "page_url": "https://www.amazon.co.jp/dp/B0D79JNC1K",
+              "state": "比較画像候補あり / exact-match保留",
+              "source": "Mercari exact listing image + Amazon exact ASIN root",
+              "verified_exact_match": false
+            }
+          ],
+          "reference_images": [
+            {
+              "label": "比較-1",
+              "url": "./assets/official_images/BOX-A-ITEM-0007_official_1.jpg",
+              "page_url": "https://www.amazon.co.jp/dp/B0D79JNC1K",
+              "state": "比較画像候補あり / exact-match保留",
+              "source": "Mercari exact listing image + Amazon exact ASIN root",
+              "verified_exact_match": false
+            }
+          ],
+          "verified_exact_match": false,
+          "official_image_state": "比較画像候補あり / exact-match保留",
+          "exact_match_guard_state": "clear",
+          "qwen_hq_review_status": "",
+          "qwen_hq_resolution": "",
+          "qwen_hq_review_note": "",
+          "publish_status": "下書き準備中",
+          "publish_state": "下書き準備中",
+          "public_listing_url": "",
+          "listing_id": "",
+          "comparison_image_ref": "./assets/official_images/BOX-A-ITEM-0007_official_1.jpg",
+          "reference_image_ref": "./assets/official_images/BOX-A-ITEM-0007_official_1.jpg",
+          "minimum_price": "980",
+          "market_floor_price_label": "980円",
+          "popularity_proxy_label": "低",
+          "popularity_proxy_reason": "ASINあり / exact listing あり / 季節性あり",
+          "listing_price": "980",
+          "exception": {},
+          "route_plan": {},
           "human_gate": {
             "management_id": "BOX-A-ITEM-0007",
             "ai_images_ok": false,
@@ -33931,73 +34172,56 @@ window.ZERO_COST_INTAKE = {
             "actual_only_ok_at": "",
             "hold_at": "",
             "updated_at": ""
-          },
-          "publish_state": "下書き準備中",
-          "public_listing_url": "",
-          "verified_exact_match": false,
-          "official_image_state": "現写真では1商品に断定不能",
-          "exact_match_guard_state": "clear",
-          "qwen_hq_review_status": "",
-          "qwen_hq_resolution": "",
-          "qwen_hq_review_note": "",
-          "publish_status": "下書き準備中",
-          "listing_id": "",
-          "comparison_image_ref": "",
-          "reference_image_ref": "",
-          "minimum_price": "",
-          "market_floor_price_label": "未調査",
-          "popularity_proxy_label": "低",
-          "popularity_proxy_reason": "ASINあり / 商品名候補あり",
-          "listing_price": "",
-          "exception": {},
-          "route_plan": {}
+          }
         },
         {
           "management_id": "BOX-A-ITEM-0008",
           "box_id": "BOX-A",
           "sequence": 8,
-          "intake_added_at": "2026-04-30 08:58:59 JST",
-          "status": "complete",
+          "intake_added_at": "2026-04-30 13:46:08 JST",
+          "status": "incomplete",
           "photo_grouping": "barcode_delimiter_variable",
-          "grouping_warning": "可変枚数のため actual barcode grouping で再組成",
-          "missing_slots": [],
+          "grouping_warning": "0007/0008/0011 mix から LOHAS LED を再束ね",
+          "missing_slots": [
+            "CODE"
+          ],
           "slot_count": 4,
           "slots": [
             {
-              "slot": "CODE",
-              "status": "present",
-              "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/025_IMG_2339.heic",
-              "source_name": "025_IMG_2339.heic",
-              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0008/01_CODE_025_IMG_2339.jpg",
-              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0008/01_CODE_025_IMG_2339.jpg",
-              "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0008/01_CODE_025_IMG_2339.jpg"
-            },
-            {
               "slot": "FRONT",
               "status": "present",
-              "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/026_IMG_2347.heic",
-              "source_name": "026_IMG_2347.heic",
-              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0008/02_FRONT_026_IMG_2347.jpg",
-              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0008/02_FRONT_026_IMG_2347.jpg",
-              "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0008/02_FRONT_026_IMG_2347.jpg"
+              "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/020_IMG_2328.heic",
+              "source_name": "020_IMG_2328.heic",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0008/01_FRONT_020_IMG_2328.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0008/01_FRONT_020_IMG_2328.jpg",
+              "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0008/01_FRONT_020_IMG_2328.jpg"
             },
             {
               "slot": "BACK",
               "status": "present",
-              "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/027_IMG_2340.heic",
-              "source_name": "027_IMG_2340.heic",
-              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0008/03_BACK_027_IMG_2340.jpg",
-              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0008/03_BACK_027_IMG_2340.jpg",
-              "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0008/03_BACK_027_IMG_2340.jpg"
+              "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/024_IMG_2329.heic",
+              "source_name": "024_IMG_2329.heic",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0008/02_BACK_024_IMG_2329.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0008/02_BACK_024_IMG_2329.jpg",
+              "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0008/02_BACK_024_IMG_2329.jpg"
             },
             {
               "slot": "PHOTO_04",
               "status": "present",
               "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/028_IMG_2330.heic",
               "source_name": "028_IMG_2330.heic",
-              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0008/04_PHOTO_04_028_IMG_2330.jpg",
-              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0008/04_PHOTO_04_028_IMG_2330.jpg",
-              "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0008/04_PHOTO_04_028_IMG_2330.jpg"
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0008/03_PHOTO_04_028_IMG_2330.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0008/03_PHOTO_04_028_IMG_2330.jpg",
+              "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0008/03_PHOTO_04_028_IMG_2330.jpg"
+            },
+            {
+              "slot": "PHOTO_05",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/036_IMG_2332.heic",
+              "source_name": "036_IMG_2332.heic",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0008/04_PHOTO_05_036_IMG_2332.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0008/04_PHOTO_05_036_IMG_2332.jpg",
+              "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0008/04_PHOTO_05_036_IMG_2332.jpg"
             }
           ],
           "shared_sheet_title_value": "BOX-A-ITEM-0008",
@@ -34006,105 +34230,158 @@ window.ZERO_COST_INTAKE = {
           "box_lane": "alphabet",
           "box_code": "A",
           "identification": {
-            "state": "OCR候補あり",
+            "state": "不足あり",
             "barcode_values": [],
             "front_back_texts": [
-              "SMART GLASSES",
-              "= ven Pid ore: Ties 7s o fa a fee Se & x ate a Es s ee ¢ ee ct ieee sa As a Pe Pes + Si eo ws ~* he as ma 2 AY sie as * ns aa as U We a ve aie Net i Sy <4 a We a bes tir! it Hi",
-              "日焼け止めマスク",
-              "3",
-              "正しい着用方法（手順図をご参照ください）",
-              "保管条件と注意事項"
-            ],
-            "code_texts": [
+              "LOHAS LED",
               "E17",
-              "口金",
-              "密閉形器具対応",
-              "三",
-              "1年保証",
-              "対象商品を購入した日から1年"
+              "60W形相当",
+              "6個入り",
+              "750lm",
+              "6.5W"
             ],
+            "code_texts": [],
             "ocr_texts": [
-              "SMART GLASSES",
-              "= ven Pid ore: Ties 7s o fa a fee Se & x ate a Es s ee ¢ ee ct ieee sa As a Pe Pes + Si eo ws ~* he as ma 2 AY sie as * ns aa as U We a ve aie Net i Sy <4 a We a bes tir! it Hi",
-              "日焼け止めマスク",
-              "3",
-              "正しい着用方法（手順図をご参照ください）",
-              "保管条件と注意事項"
+              "LOHAS LED",
+              "E17",
+              "60W形相当",
+              "6個入り",
+              "750lm",
+              "6.5W"
             ],
-            "candidate_query": "SMART GLASSES = ven Pid ore: Ties 7s o fa a fee Se & x ate a Es s ee ¢ ee ct ieee sa As a Pe Pes + Si eo ws ~* he as ma 2 AY sie as * ns aa as U We a ve aie Net i Sy <4 a We a bes tir! it Hi 日焼け止めマスク 3",
+            "candidate_query": "LOHAS LED E17 60W 6個 750lm 6.5W",
             "review_flag": "",
-            "ocr_engine": "sauna_tesseract_multistage + vision",
-            "ocr_debug_paths": [
-              "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-A-ITEM-0008/024_IMG_2329_CODE_ocr_best.png",
-              "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-A-ITEM-0008/022_IMG_2314_FRONT_ocr_best.png"
-            ]
+            "ocr_engine": "manual_regroup",
+            "ocr_debug_paths": []
           },
           "priority_score": 999,
           "next_action": "",
           "barcode_kind": "",
           "review_flag": "",
-          "product_name": "写真セット組み直し必要（別商品mix）",
-          "display_name": "写真セット組み直し必要（別商品mix）",
+          "product_name": "LOHAS LED 電球 E17口金 60W形相当 6個セット 電球色",
+          "display_name": "LOHAS LED 電球 E17口金 60W形相当 6個セット 電球色",
           "resolved": {
             "management_id": "BOX-A-ITEM-0008",
             "resolution_status": "provisional",
-            "product_name": "写真セット組み直し必要（別商品mix）",
-            "barcode_primary": "https://www.novsights.com",
-            "product_code_type": "url",
-            "official_image_state": "actual-only固定 / 写真セット組み直し必要",
-            "note": "2026-04-30 箱A variable grouping 再組成。Novsight H7 文面と別商品の文面が同一グループに混在しており、別商品mix と判断。",
+            "product_name": "LOHAS LED 電球 E17口金 60W形相当 6個セット 電球色",
+            "barcode_primary": "LOHAS-E17-6PACK-750LM",
+            "product_code_type": "package_text",
+            "official_image_state": "比較画像候補あり / official-like先頭 / exact-match保留",
+            "note": "2026-04-30 13:46:08 JST mix再束ね。LOHAS LED / E17 / 60W形相当 / 6個入り / 750lm / 6.5W の箱面4枚を統合し、同一商品として provisional 化。",
             "evidence": [
-              "https://www.novsights.com",
-              "FITMENT H7",
-              "ドラマCD文面",
-              "別商品mix"
+              "LOHAS LED",
+              "E17",
+              "60W形相当",
+              "6個入り",
+              "750lm",
+              "6.5W"
             ],
-            "brand_override": "不明",
-            "category_override": "その他 > 要再束ね",
-            "check_items_override": "Novsight H7 と ドラマCD文面の混在確認 / 写真再束ね",
-            "image_source": "actual-only",
-            "exact_match_guard_state": "needs_review",
-            "price_override": 0
+            "brand_override": "LOHAS LED",
+            "category_override": "家具・インテリア > ライト・照明 > 蛍光灯・電球",
+            "check_items_override": "LOHAS LED / E17 / 6個入り / 750lm / 6.5W / 電球色",
+            "image_source": "Mercari exact listing image",
+            "exact_match_guard_state": "review_required",
+            "price_override": 1480
           },
-          "official": {},
-          "comparison_images": [],
-          "reference_images": [],
+          "official": {
+            "management_id": "BOX-A-ITEM-0008",
+            "raw_id": "RAW-BOX-A-008",
+            "product_id": "PRD-BOX-A-008",
+            "draft_id": "DRF-BOX-A-008",
+            "research_id": "RES-BOX-A-008",
+            "official_page_url": "https://jp.mercari.com/item/m10224608235",
+            "official_image_url": "https://static.mercdn.net/item/detail/orig/photos/m10224608235_1.jpg?1776923108",
+            "official_image_local": "",
+            "image_source": "Mercari exact listing image",
+            "verified_exact_match": false,
+            "official_image_state": "比較画像候補あり / official-like先頭 / exact-match保留",
+            "note": "2026-04-30 13:46:08 JST LOHAS LED E17 6個セットの exact listing を比較画像候補として接続。ブランド一次画像は未取得。",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "LOHAS 直営一次画像は未取得のため Mercari exact 画像を比較用に使用"
+            ],
+            "supplemental_url": "https://jp.mercari.com/item/m34291892490",
+            "supplemental_image_urls": [],
+            "supplemental_image_locals": []
+          },
           "commerce": {
             "management_id": "BOX-A-ITEM-0008",
             "raw_id": "RAW-BOX-A-008",
             "product_id": "PRD-BOX-A-008",
             "draft_id": "DRF-BOX-A-008",
             "research_id": "RES-BOX-A-008",
-            "product_name": "写真セット組み直し必要（別商品mix）",
-            "brand": "不明",
-            "category": "その他 > 要再束ね",
-            "barcode_primary": "https://www.novsights.com",
-            "product_code_type": "url",
+            "product_name": "LOHAS LED 電球 E17口金 60W形相当 6個セット 電球色",
+            "brand": "LOHAS LED",
+            "category": "家具・インテリア > ライト・照明 > 蛍光灯・電球",
+            "barcode_primary": "LOHAS-E17-6PACK-750LM",
+            "product_code_type": "package_text",
             "listing_title": "写真セット組み直し必要（別商品mix）",
-            "listing_price": "",
-            "market_floor_price": "",
-            "market_floor_state": "未調査",
-            "market_source_label": "",
-            "market_source_url": "",
-            "market_checked_at": "2026-04-30 08:48:35 JST",
-            "sample_urls": [],
-            "market_note": "外部相場URL未取得。参考価格も未設定。",
-            "popularity_proxy_score": 20,
+            "listing_price": "1480",
+            "market_floor_price": "1480",
+            "market_floor_state": "外部根拠あり / 価格は保守仮置き",
+            "market_source_label": "Mercari exact listing LOHAS LED E17 6個セット",
+            "market_source_url": "https://jp.mercari.com/item/m10224608235",
+            "market_checked_at": "2026-04-30 13:46:08 JST",
+            "sample_urls": [
+              "https://jp.mercari.com/item/m10224608235",
+              "https://jp.mercari.com/item/m34291892490",
+              "https://jp.mercari.com/item/m14649144644"
+            ],
+            "market_note": "Mercari で LOHAS LED E17 6個セットの exact title 群を確認。価格自動取得は未了のため、6個セットとして1480円を保守仮置き。",
+            "popularity_proxy_score": 36,
             "popularity_proxy_label": "低",
-            "popularity_proxy_reason": "商品コードあり / 商品名候補あり",
-            "popularity_proxy_checked_at": "2026-04-30 08:48:35 JST",
+            "popularity_proxy_reason": "exact listing 複数あり / 箱面一致",
+            "popularity_proxy_checked_at": "2026-04-30 13:46:08 JST",
             "publish_state": "下書き準備中",
             "publish_detail": "",
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-30 08:59:02 JST",
+            "updated_at": "2026-04-30 13:46:08 JST",
             "human_gate_status": "waiting_both",
             "human_gate_ready": false,
             "human_gate_reason": "出品OK未確認 / AI画像未確認",
             "human_gate_requires_ai_images_ok": true
           },
+          "comparison_images": [
+            {
+              "label": "比較-1",
+              "url": "./assets/official_images/BOX-A-ITEM-0008_official_1.jpg",
+              "page_url": "https://jp.mercari.com/item/m10224608235",
+              "state": "比較画像候補あり / exact-match保留",
+              "source": "Mercari exact listing image",
+              "verified_exact_match": false
+            }
+          ],
+          "reference_images": [
+            {
+              "label": "比較-1",
+              "url": "./assets/official_images/BOX-A-ITEM-0008_official_1.jpg",
+              "page_url": "https://jp.mercari.com/item/m10224608235",
+              "state": "比較画像候補あり / exact-match保留",
+              "source": "Mercari exact listing image",
+              "verified_exact_match": false
+            }
+          ],
+          "verified_exact_match": false,
+          "official_image_state": "比較画像候補あり / exact-match保留",
+          "exact_match_guard_state": "clear",
+          "qwen_hq_review_status": "",
+          "qwen_hq_resolution": "",
+          "qwen_hq_review_note": "",
+          "publish_status": "下書き準備中",
+          "publish_state": "下書き準備中",
+          "public_listing_url": "",
+          "listing_id": "",
+          "comparison_image_ref": "./assets/official_images/BOX-A-ITEM-0008_official_1.jpg",
+          "reference_image_ref": "./assets/official_images/BOX-A-ITEM-0008_official_1.jpg",
+          "minimum_price": "1480",
+          "market_floor_price_label": "1480円",
+          "popularity_proxy_label": "低",
+          "popularity_proxy_reason": "exact listing 複数あり / 箱面一致",
+          "listing_price": "1480",
+          "exception": {},
+          "route_plan": {},
           "human_gate": {
             "management_id": "BOX-A-ITEM-0008",
             "ai_images_ok": false,
@@ -34127,40 +34404,18 @@ window.ZERO_COST_INTAKE = {
             "actual_only_ok_at": "",
             "hold_at": "",
             "updated_at": ""
-          },
-          "publish_state": "下書き準備中",
-          "public_listing_url": "",
-          "verified_exact_match": false,
-          "official_image_state": "現写真では1商品に断定不能",
-          "exact_match_guard_state": "clear",
-          "qwen_hq_review_status": "",
-          "qwen_hq_resolution": "",
-          "qwen_hq_review_note": "",
-          "publish_status": "下書き準備中",
-          "listing_id": "",
-          "comparison_image_ref": "",
-          "reference_image_ref": "",
-          "minimum_price": "",
-          "market_floor_price_label": "未調査",
-          "popularity_proxy_label": "低",
-          "popularity_proxy_reason": "商品コードあり / 商品名候補あり",
-          "listing_price": "",
-          "exception": {},
-          "route_plan": {}
+          }
         },
         {
           "management_id": "BOX-A-ITEM-0009",
           "box_id": "BOX-A",
           "sequence": 9,
-          "intake_added_at": "2026-04-30 08:58:59 JST",
-          "status": "incomplete",
+          "intake_added_at": "2026-04-30 13:46:08 JST",
+          "status": "complete",
           "photo_grouping": "barcode_delimiter_variable",
-          "grouping_warning": "可変枚数のため actual barcode grouping で再組成",
-          "missing_slots": [
-            "FRONT",
-            "BACK"
-          ],
-          "slot_count": 1,
+          "grouping_warning": "0007/0008/0011 mix から Novsight H7 を再束ね",
+          "missing_slots": [],
+          "slot_count": 5,
           "slots": [
             {
               "slot": "CODE",
@@ -34170,6 +34425,42 @@ window.ZERO_COST_INTAKE = {
               "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0009/01_CODE_029_IMG_2342.jpg",
               "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0009/01_CODE_029_IMG_2342.jpg",
               "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0009/01_CODE_029_IMG_2342.jpg"
+            },
+            {
+              "slot": "FRONT",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/021_IMG_2337.heic",
+              "source_name": "021_IMG_2337.heic",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0009/02_FRONT_021_IMG_2337.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0009/02_FRONT_021_IMG_2337.jpg",
+              "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0009/02_FRONT_021_IMG_2337.jpg"
+            },
+            {
+              "slot": "BACK",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/025_IMG_2339.heic",
+              "source_name": "025_IMG_2339.heic",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0009/03_BACK_025_IMG_2339.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0009/03_BACK_025_IMG_2339.jpg",
+              "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0009/03_BACK_025_IMG_2339.jpg"
+            },
+            {
+              "slot": "PHOTO_04",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/027_IMG_2340.heic",
+              "source_name": "027_IMG_2340.heic",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0009/04_PHOTO_04_027_IMG_2340.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0009/04_PHOTO_04_027_IMG_2340.jpg",
+              "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0009/04_PHOTO_04_027_IMG_2340.jpg"
+            },
+            {
+              "slot": "PHOTO_05",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/039_IMG_2341.heic",
+              "source_name": "039_IMG_2341.heic",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0009/05_PHOTO_05_039_IMG_2341.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0009/05_PHOTO_05_039_IMG_2341.jpg",
+              "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0009/05_PHOTO_05_039_IMG_2341.jpg"
             }
           ],
           "shared_sheet_title_value": "BOX-A-ITEM-0009",
@@ -34178,40 +34469,35 @@ window.ZERO_COST_INTAKE = {
           "box_lane": "alphabet",
           "box_code": "A",
           "identification": {
-            "state": "不足あり",
+            "state": "バーコード候補あり",
             "barcode_values": [
-              "https://www.novsights.com"
+              "B07YXHS24J"
             ],
             "front_back_texts": [
-              "FITMENT",
+              "NOVSIGHT",
               "H7",
-              "www.novsights.com",
-              "）",
-              "（E4",
-              "FCCE∞"
+              "LEDヘッドランプ",
+              "DC 9V-32V",
+              "6500K",
+              "20W"
             ],
             "code_texts": [
-              "NovSight Team",
-              "（MADE IN CHINA）",
-              "● Manufachurer: NEVERLAND NETWORK TECHNOLOGY CO.， LIMITED",
-              "● Address： Unit D， 16F， One Capital Place， 18 Luard Road， Wan Chal， Hong Kong",
-              "●URL: www.novsights.com",
-              "●Email: support@novsights.com"
+              "B07YXHS24J",
+              "NOVSIGHT",
+              "H7"
             ],
             "ocr_texts": [
-              "FITMENT",
+              "NOVSIGHT",
               "H7",
-              "www.novsights.com",
-              "）",
-              "（E4",
-              "FCCE∞"
+              "LEDヘッドランプ",
+              "B07YXHS24J",
+              "DC 9V-32V",
+              "6500K"
             ],
-            "candidate_query": "FITMENT H7 www.novsights.com ）",
+            "candidate_query": "B07YXHS24J Novsight H7 LED headlight",
             "review_flag": "",
-            "ocr_engine": "sauna_tesseract_multistage + vision",
-            "ocr_debug_paths": [
-              "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-A-ITEM-0009/027_IMG_2340_CODE_ocr_best.png"
-            ]
+            "ocr_engine": "manual_regroup",
+            "ocr_debug_paths": []
           },
           "priority_score": 999,
           "next_action": "",
@@ -34225,37 +34511,38 @@ window.ZERO_COST_INTAKE = {
             "product_name": "Novsight LED ヘッドライト H7",
             "barcode_primary": "B07YXHS24J",
             "product_code_type": "asin",
-            "official_image_state": "actual-only固定 / 比較画像なし",
-            "note": "2026-04-30 08:48:35 JST OCR seed で provisional 化。 実物写真とコード/OCR から商品名候補を起こし、比較画像はまだ確定していないため actual-only 固定で保持。",
+            "official_image_state": "比較画像候補あり / actual先頭 / exact-match保留",
+            "note": "2026-04-30 13:46:08 JST mix再束ね。0007/0008/0011 に散っていた箱側面と本体写真を 0009 へ戻し、Novsight H7 の実物写真不足を解消。公式比較画像は保持するが、先頭は actual 維持。",
             "evidence": [
               "B07YXHS24J",
               "Novsight",
               "H7",
-              "LED HEADLIGHTS"
+              "LED HEADLIGHTS",
+              "20W"
             ],
             "brand_override": "Novsight",
             "category_override": "車・バイク・自転車 > 車 > パーツ > ライト",
-            "check_items_override": "H7 / Novsight / 点灯可否 / 左右セット有無",
-            "image_source": "actual-only",
-            "exact_match_guard_state": "clear",
+            "check_items_override": "H7 / Novsight / 左右セット / 本体封入あり",
+            "image_source": "actual + Novsight official comparison",
+            "exact_match_guard_state": "review_required",
             "price_override": 1980
           },
           "official": {
             "management_id": "BOX-A-ITEM-0009",
-            "raw_id": "BOX-A-RAW-0009",
-            "product_id": "PRD-BOX-A-0009",
-            "draft_id": "DRF-BOX-A-0009",
-            "research_id": "RES-BOX-A-0009",
+            "raw_id": "RAW-BOX-A-009",
+            "product_id": "PRD-BOX-A-009",
+            "draft_id": "DRF-BOX-A-009",
+            "research_id": "RES-BOX-A-009",
             "official_page_url": "https://www.novsights.com/products/h7-headlight-bulb-car-brightest-headlamp-bulbs-replacement-kits-plug-n-play",
             "official_image_url": "https://www.novsights.com/cdn/shop/products/f1_50edfcf9-dac9-49cb-83be-d591b2cc392d.jpg?v=1777063378&width=2048",
             "official_image_local": "",
             "image_source": "NOVSIGHT official H7 product page",
             "verified_exact_match": false,
-            "official_image_state": "比較画像候補あり / 実物写真不足のため出品画像には未昇格",
-            "note": "2026-04-30 09:07:13 JST NOVSIGHT公式 H7 LED Bulbs page を確認。H7 product family の公式画像候補は取れたが、箱Aの実物側は CODE 写真のみなので、商品ページ用の先頭画像には使わず比較候補として保持する。",
+            "official_image_state": "比較画像候補あり / actual先頭 / exact-match保留",
+            "note": "2026-04-30 13:46:08 JST 実物写真不足は解消。Novsight official H7 比較画像は保持するが、包装差分があるため先頭昇格は見送る。",
             "exact_match_guard_state": "review_required",
             "exact_match_guard_reasons": [
-              "公式直営または実物全スロットでの100%一致までは未確認"
+              "実物包装と公式product family image の完全一致までは未確認"
             ],
             "supplemental_url": "https://www.novsights.com/products/led-headlight-h7-led-light-high-low-beam-convert",
             "supplemental_image_urls": [
@@ -34263,12 +34550,51 @@ window.ZERO_COST_INTAKE = {
             ],
             "supplemental_image_locals": []
           },
+          "commerce": {
+            "management_id": "BOX-A-ITEM-0009",
+            "raw_id": "RAW-BOX-A-009",
+            "product_id": "PRD-BOX-A-009",
+            "draft_id": "DRF-BOX-A-009",
+            "research_id": "RES-BOX-A-009",
+            "product_name": "Novsight LED ヘッドライト H7",
+            "brand": "Novsight",
+            "category": "車・バイク・自転車 > 車 > パーツ > ライト",
+            "barcode_primary": "B07YXHS24J",
+            "product_code_type": "asin",
+            "listing_title": "Novsight LED ヘッドライト H7",
+            "listing_price": "1980",
+            "market_floor_price": "1980",
+            "market_floor_state": "外部根拠あり / 実物写真補強済み",
+            "market_source_label": "NOVSIGHT official H7 product family",
+            "market_source_url": "https://www.novsights.com/products/h7-headlight-bulb-car-brightest-headlamp-bulbs-replacement-kits-plug-n-play",
+            "market_checked_at": "2026-04-30 13:46:08 JST",
+            "sample_urls": [
+              "https://www.novsights.com/products/h7-headlight-bulb-car-brightest-headlamp-bulbs-replacement-kits-plug-n-play",
+              "https://www.novsights.com/products/led-headlight-h7-led-light-high-low-beam-convert",
+              "https://www.walmart.com/ip/158032057"
+            ],
+            "market_note": "Novsight official H7 family の外部価格帯は高いが、箱Aは日本中古回転を優先して1980円の保守価格を維持。",
+            "popularity_proxy_score": 42,
+            "popularity_proxy_label": "低",
+            "popularity_proxy_reason": "ASINあり / official family root あり / 実物5枚へ補強",
+            "popularity_proxy_checked_at": "2026-04-30 13:46:08 JST",
+            "publish_state": "下書き準備中",
+            "publish_detail": "",
+            "listing_id": "",
+            "public_listing_url": "",
+            "csv_status": "",
+            "updated_at": "2026-04-30 13:46:08 JST",
+            "human_gate_status": "waiting_both",
+            "human_gate_ready": false,
+            "human_gate_reason": "出品OK未確認 / AI画像未確認",
+            "human_gate_requires_ai_images_ok": true
+          },
           "comparison_images": [
             {
               "label": "比較-1",
               "url": "./assets/official_images/BOX-A-ITEM-0009_official_1.jpg",
               "page_url": "https://www.novsights.com/products/h7-headlight-bulb-car-brightest-headlamp-bulbs-replacement-kits-plug-n-play",
-              "state": "actual-only固定 / 比較画像なし",
+              "state": "比較画像候補あり / exact-match保留",
               "source": "NOVSIGHT official H7 product page",
               "verified_exact_match": false
             },
@@ -34276,7 +34602,7 @@ window.ZERO_COST_INTAKE = {
               "label": "比較-2",
               "url": "./assets/official_images/BOX-A-ITEM-0009_official_2.jpg",
               "page_url": "https://www.novsights.com/products/h7-headlight-bulb-car-brightest-headlamp-bulbs-replacement-kits-plug-n-play",
-              "state": "actual-only固定 / 比較画像なし",
+              "state": "比較画像候補あり / exact-match保留",
               "source": "NOVSIGHT official H7 product page",
               "verified_exact_match": false
             }
@@ -34286,7 +34612,7 @@ window.ZERO_COST_INTAKE = {
               "label": "比較-1",
               "url": "./assets/official_images/BOX-A-ITEM-0009_official_1.jpg",
               "page_url": "https://www.novsights.com/products/h7-headlight-bulb-car-brightest-headlamp-bulbs-replacement-kits-plug-n-play",
-              "state": "actual-only固定 / 比較画像なし",
+              "state": "比較画像候補あり / exact-match保留",
               "source": "NOVSIGHT official H7 product page",
               "verified_exact_match": false
             },
@@ -34294,50 +34620,30 @@ window.ZERO_COST_INTAKE = {
               "label": "比較-2",
               "url": "./assets/official_images/BOX-A-ITEM-0009_official_2.jpg",
               "page_url": "https://www.novsights.com/products/h7-headlight-bulb-car-brightest-headlamp-bulbs-replacement-kits-plug-n-play",
-              "state": "actual-only固定 / 比較画像なし",
+              "state": "比較画像候補あり / exact-match保留",
               "source": "NOVSIGHT official H7 product page",
               "verified_exact_match": false
             }
           ],
-          "commerce": {
-            "management_id": "BOX-A-ITEM-0009",
-            "raw_id": "BOX-A-RAW-0009",
-            "product_id": "PRD-BOX-A-0009",
-            "draft_id": "DRF-BOX-A-0009",
-            "research_id": "RES-BOX-A-0009",
-            "product_name": "Novsight LED ヘッドライト H7",
-            "brand": "Novsight",
-            "category": "車・バイク・自転車 > 車 > パーツ > ライト",
-            "barcode_primary": "B07YXHS24J",
-            "product_code_type": "asin",
-            "listing_title": "Novsight LED ヘッドライト H7",
-            "listing_price": "1980",
-            "market_floor_price": "1980",
-            "market_floor_state": "外部根拠あり / ただし実物写真不足",
-            "market_source_label": "NOVSIGHT official H7 product family",
-            "market_source_url": "https://www.novsights.com/products/h7-headlight-bulb-car-brightest-headlamp-bulbs-replacement-kits-plug-n-play",
-            "market_checked_at": "2026-04-30 09:07:13 JST",
-            "sample_urls": [
-              "https://www.novsights.com/products/h7-headlight-bulb-car-brightest-headlamp-bulbs-replacement-kits-plug-n-play",
-              "https://www.novsights.com/products/led-headlight-h7-led-light-high-low-beam-convert",
-              "https://www.walmart.com/ip/158032057"
-            ],
-            "market_note": "NOVSIGHT公式H7系は$52.99〜$72.84の高単価だが、箱AはCODE写真のみで実物写真がないため出品停止。価格は現行1980円を保守仮置きとして維持。",
-            "popularity_proxy_score": 40,
-            "popularity_proxy_label": "低",
-            "popularity_proxy_reason": "ASINあり / 商品名候補あり / 参考価格あり",
-            "popularity_proxy_checked_at": "2026-04-30 08:48:35 JST",
-            "publish_state": "下書き準備中",
-            "publish_detail": "",
-            "listing_id": "",
-            "public_listing_url": "",
-            "csv_status": "",
-            "updated_at": "2026-04-30 08:59:02 JST",
-            "human_gate_status": "waiting_both",
-            "human_gate_ready": false,
-            "human_gate_reason": "出品OK未確認 / AI画像未確認",
-            "human_gate_requires_ai_images_ok": true
-          },
+          "verified_exact_match": false,
+          "official_image_state": "比較画像候補あり / exact-match保留",
+          "exact_match_guard_state": "clear",
+          "qwen_hq_review_status": "",
+          "qwen_hq_resolution": "",
+          "qwen_hq_review_note": "",
+          "publish_status": "下書き準備中",
+          "publish_state": "下書き準備中",
+          "public_listing_url": "",
+          "listing_id": "",
+          "comparison_image_ref": "./assets/official_images/BOX-A-ITEM-0009_official_1.jpg",
+          "reference_image_ref": "./assets/official_images/BOX-A-ITEM-0009_official_1.jpg",
+          "minimum_price": "1980",
+          "market_floor_price_label": "1980円",
+          "popularity_proxy_label": "低",
+          "popularity_proxy_reason": "ASINあり / official family root あり / 実物5枚へ補強",
+          "listing_price": "1980",
+          "exception": {},
+          "route_plan": {},
           "human_gate": {
             "management_id": "BOX-A-ITEM-0009",
             "ai_images_ok": false,
@@ -34360,35 +34666,16 @@ window.ZERO_COST_INTAKE = {
             "actual_only_ok_at": "",
             "hold_at": "",
             "updated_at": ""
-          },
-          "publish_state": "下書き準備中",
-          "public_listing_url": "",
-          "verified_exact_match": false,
-          "official_image_state": "actual-only固定 / 比較画像なし",
-          "exact_match_guard_state": "clear",
-          "qwen_hq_review_status": "",
-          "qwen_hq_resolution": "",
-          "qwen_hq_review_note": "",
-          "publish_status": "下書き準備中",
-          "listing_id": "",
-          "comparison_image_ref": "./assets/official_images/BOX-A-ITEM-0009_official_1.jpg",
-          "reference_image_ref": "./assets/official_images/BOX-A-ITEM-0009_official_1.jpg",
-          "minimum_price": "1980",
-          "market_floor_price_label": "1980円",
-          "popularity_proxy_label": "低",
-          "popularity_proxy_reason": "ASINあり / 商品名候補あり / 参考価格あり",
-          "listing_price": "1980",
-          "exception": {},
-          "route_plan": {}
+          }
         },
         {
           "management_id": "BOX-A-ITEM-0010",
           "box_id": "BOX-A",
           "sequence": 10,
-          "intake_added_at": "2026-04-30 08:59:00 JST",
+          "intake_added_at": "2026-04-30 13:46:08 JST",
           "status": "complete",
           "photo_grouping": "barcode_delimiter_variable",
-          "grouping_warning": "可変枚数のため actual barcode grouping で再組成",
+          "grouping_warning": "black box current truth 維持",
           "missing_slots": [],
           "slot_count": 3,
           "slots": [
@@ -34428,39 +34715,29 @@ window.ZERO_COST_INTAKE = {
           "identification": {
             "state": "バーコード候補あり",
             "barcode_values": [
-              "X000ZALOFZ",
-              "B07YXHS24J"
+              "X000ZALOFZ"
             ],
             "front_back_texts": [
-              "屋内交流100V 50/60H2共用",
-              "定格消費電力",
-              "6.5W",
-              "全光東",
-              "750m",
-              "定格寿命"
+              "BLITZWOLF",
+              "Knight X9",
+              "Mosquito Killer",
+              "360° A11-Round"
             ],
             "code_texts": [
-              "Il",
-              "XO00ZALOFZ",
-              "新品",
-              "en Ss i ~., Ce eeeememeneiial ¢ ~*~ | 4 as",
-              "+f —————— N ——— a SN nl SS ————— a f — pA , —_— tA nanan wag as ) —_—_—_—_<<—<— EEE",
-              ", oe ——=5 |"
+              "X000ZALOFZ",
+              "BLITZWOLF",
+              "Knight X9"
             ],
             "ocr_texts": [
-              "屋内交流100V 50/60H2共用",
-              "定格消費電力",
-              "6.5W",
-              "全光東",
-              "750m",
-              "定格寿命"
+              "BLITZWOLF",
+              "Knight X9",
+              "Mosquito Killer",
+              "X000ZALOFZ"
             ],
-            "candidate_query": "屋内交流100V 50/60H2共用 定格消費電力 6.5W 全光東",
+            "candidate_query": "X000ZALOFZ BLITZWOLF Knight X9 Mosquito Killer",
             "review_flag": "",
-            "ocr_engine": "sauna_tesseract_multistage + vision",
-            "ocr_debug_paths": [
-              "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-A-ITEM-0010/030_IMG_2333_CODE_ocr_best.png"
-            ]
+            "ocr_engine": "manual_regroup",
+            "ocr_debug_paths": []
           },
           "priority_score": 999,
           "next_action": "",
@@ -34515,26 +34792,6 @@ window.ZERO_COST_INTAKE = {
             "supplemental_image_urls": [],
             "supplemental_image_locals": []
           },
-          "comparison_images": [
-            {
-              "label": "比較-1",
-              "url": "./assets/official_images/BOX-A-ITEM-0010_official_1.jpg",
-              "page_url": "https://jp.mercari.com/item/m64971229783",
-              "state": "比較画像候補あり / exact-match保留",
-              "source": "Mercari exact listing image",
-              "verified_exact_match": false
-            }
-          ],
-          "reference_images": [
-            {
-              "label": "比較-1",
-              "url": "./assets/official_images/BOX-A-ITEM-0010_official_1.jpg",
-              "page_url": "https://jp.mercari.com/item/m64971229783",
-              "state": "比較画像候補あり / exact-match保留",
-              "source": "Mercari exact listing image",
-              "verified_exact_match": false
-            }
-          ],
           "commerce": {
             "management_id": "BOX-A-ITEM-0010",
             "raw_id": "BOX-A-RAW-0010",
@@ -34568,12 +34825,51 @@ window.ZERO_COST_INTAKE = {
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-30 08:59:02 JST",
+            "updated_at": "2026-04-30 13:46:08 JST",
             "human_gate_status": "waiting_both",
             "human_gate_ready": false,
             "human_gate_reason": "出品OK未確認 / AI画像未確認",
             "human_gate_requires_ai_images_ok": true
           },
+          "comparison_images": [
+            {
+              "label": "比較-1",
+              "url": "./assets/official_images/BOX-A-ITEM-0010_official_1.jpg",
+              "page_url": "https://jp.mercari.com/item/m64971229783",
+              "state": "比較画像候補あり / exact-match保留",
+              "source": "Mercari exact listing image",
+              "verified_exact_match": false
+            }
+          ],
+          "reference_images": [
+            {
+              "label": "比較-1",
+              "url": "./assets/official_images/BOX-A-ITEM-0010_official_1.jpg",
+              "page_url": "https://jp.mercari.com/item/m64971229783",
+              "state": "比較画像候補あり / exact-match保留",
+              "source": "Mercari exact listing image",
+              "verified_exact_match": false
+            }
+          ],
+          "verified_exact_match": false,
+          "official_image_state": "比較画像候補あり / exact-match保留",
+          "exact_match_guard_state": "clear",
+          "qwen_hq_review_status": "",
+          "qwen_hq_resolution": "",
+          "qwen_hq_review_note": "",
+          "publish_status": "下書き準備中",
+          "publish_state": "下書き準備中",
+          "public_listing_url": "",
+          "listing_id": "",
+          "comparison_image_ref": "./assets/official_images/BOX-A-ITEM-0010_official_1.jpg",
+          "reference_image_ref": "./assets/official_images/BOX-A-ITEM-0010_official_1.jpg",
+          "minimum_price": "1500",
+          "market_floor_price_label": "1500円",
+          "popularity_proxy_label": "低",
+          "popularity_proxy_reason": "Amazon内部コードあり / 商品名候補あり / 参考価格あり",
+          "listing_price": "1500",
+          "exception": {},
+          "route_plan": {},
           "human_gate": {
             "management_id": "BOX-A-ITEM-0010",
             "ai_images_ok": false,
@@ -34596,55 +34892,36 @@ window.ZERO_COST_INTAKE = {
             "actual_only_ok_at": "",
             "hold_at": "",
             "updated_at": ""
-          },
-          "publish_state": "下書き準備中",
-          "public_listing_url": "",
-          "verified_exact_match": false,
-          "official_image_state": "比較画像候補あり / exact-match保留",
-          "exact_match_guard_state": "clear",
-          "qwen_hq_review_status": "",
-          "qwen_hq_resolution": "",
-          "qwen_hq_review_note": "",
-          "publish_status": "下書き準備中",
-          "listing_id": "",
-          "comparison_image_ref": "./assets/official_images/BOX-A-ITEM-0010_official_1.jpg",
-          "reference_image_ref": "./assets/official_images/BOX-A-ITEM-0010_official_1.jpg",
-          "minimum_price": "1500",
-          "market_floor_price_label": "1500円",
-          "popularity_proxy_label": "低",
-          "popularity_proxy_reason": "Amazon内部コードあり / 商品名候補あり / 参考価格あり",
-          "listing_price": "1500",
-          "exception": {},
-          "route_plan": {}
+          }
         },
         {
           "management_id": "BOX-A-ITEM-0011",
           "box_id": "BOX-A",
           "sequence": 11,
-          "intake_added_at": "2026-04-30 08:59:02 JST",
+          "intake_added_at": "2026-04-30 13:46:08 JST",
           "status": "complete",
           "photo_grouping": "barcode_delimiter_variable",
-          "grouping_warning": "可変枚数のため actual barcode grouping で再組成",
+          "grouping_warning": "0011 mix から KDD-762 を再束ね",
           "missing_slots": [],
-          "slot_count": 7,
+          "slot_count": 3,
           "slots": [
             {
               "slot": "CODE",
               "status": "present",
-              "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/033_IMG_2309.heic",
-              "source_name": "033_IMG_2309.heic",
-              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0011/01_CODE_033_IMG_2309.jpg",
-              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/01_CODE_033_IMG_2309.jpg",
-              "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/01_CODE_033_IMG_2309.jpg"
+              "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/037_IMG_2322.heic",
+              "source_name": "037_IMG_2322.heic",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0011/01_CODE_037_IMG_2322.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/01_CODE_037_IMG_2322.jpg",
+              "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/01_CODE_037_IMG_2322.jpg"
             },
             {
               "slot": "FRONT",
               "status": "present",
-              "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/034_IMG_2308.heic",
-              "source_name": "034_IMG_2308.heic",
-              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0011/02_FRONT_034_IMG_2308.jpg",
-              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/02_FRONT_034_IMG_2308.jpg",
-              "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/02_FRONT_034_IMG_2308.jpg"
+              "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/038_IMG_2319.heic",
+              "source_name": "038_IMG_2319.heic",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0011/02_FRONT_038_IMG_2319.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/02_FRONT_038_IMG_2319.jpg",
+              "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/02_FRONT_038_IMG_2319.jpg"
             },
             {
               "slot": "BACK",
@@ -34654,42 +34931,6 @@ window.ZERO_COST_INTAKE = {
               "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0011/03_BACK_035_IMG_2321.jpg",
               "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/03_BACK_035_IMG_2321.jpg",
               "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/03_BACK_035_IMG_2321.jpg"
-            },
-            {
-              "slot": "PHOTO_04",
-              "status": "present",
-              "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/036_IMG_2332.heic",
-              "source_name": "036_IMG_2332.heic",
-              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0011/04_PHOTO_04_036_IMG_2332.jpg",
-              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/04_PHOTO_04_036_IMG_2332.jpg",
-              "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/04_PHOTO_04_036_IMG_2332.jpg"
-            },
-            {
-              "slot": "PHOTO_05",
-              "status": "present",
-              "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/037_IMG_2322.heic",
-              "source_name": "037_IMG_2322.heic",
-              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0011/05_PHOTO_05_037_IMG_2322.jpg",
-              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/05_PHOTO_05_037_IMG_2322.jpg",
-              "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/05_PHOTO_05_037_IMG_2322.jpg"
-            },
-            {
-              "slot": "PHOTO_06",
-              "status": "present",
-              "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/038_IMG_2319.heic",
-              "source_name": "038_IMG_2319.heic",
-              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0011/06_PHOTO_06_038_IMG_2319.jpg",
-              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/06_PHOTO_06_038_IMG_2319.jpg",
-              "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/06_PHOTO_06_038_IMG_2319.jpg"
-            },
-            {
-              "slot": "PHOTO_07",
-              "status": "present",
-              "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/039_IMG_2341.heic",
-              "source_name": "039_IMG_2341.heic",
-              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0011/07_PHOTO_07_039_IMG_2341.jpg",
-              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/07_PHOTO_07_039_IMG_2341.jpg",
-              "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0011/07_PHOTO_07_039_IMG_2341.jpg"
             }
           ],
           "shared_sheet_title_value": "BOX-A-ITEM-0011",
@@ -34700,105 +34941,136 @@ window.ZERO_COST_INTAKE = {
           "identification": {
             "state": "バーコード候補あり",
             "barcode_values": [
-              "X001AQW187"
+              "XJ019GQ4CR"
             ],
             "front_back_texts": [
-              "360° A11-Round",
-              "Mosquito Killer",
-              "X=",
-              "BLITZWOIF",
-              "Knight",
-              "製品名"
+              "KDD",
+              "Desk Organizer Set",
+              "Model KDD-762"
             ],
             "code_texts": [
-              "X001AQW187",
-              "市気感市出剤取..ス、登山など（黒）",
-              "新品",
-              "Made in China",
-              "| | | | Ga [ez mae",
-              "| i] | 7"
+              "XJ019GQ4CR",
+              "Desk Organizer Set",
+              "KDD-762"
             ],
             "ocr_texts": [
-              "360° A11-Round",
-              "Mosquito Killer",
-              "X=",
-              "BLITZWOIF",
-              "Knight",
-              "製品名"
+              "KDD",
+              "Desk Organizer Set",
+              "KDD-762",
+              "XJ019GQ4CR"
             ],
-            "candidate_query": "360° A11-Round Mosquito Killer X= BLITZWOIF",
+            "candidate_query": "KDD-762 Desk Organizer Set XJ019GQ4CR",
             "review_flag": "",
-            "ocr_engine": "sauna_tesseract_multistage + vision",
-            "ocr_debug_paths": [
-              "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-A-ITEM-0011/033_IMG_2309_CODE_ocr_best.png",
-              "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/tmp/ocr_debug/BOX-A-ITEM-0011/032_IMG_2331_BACK_ocr_best.png"
-            ]
+            "ocr_engine": "manual_regroup",
+            "ocr_debug_paths": []
           },
           "priority_score": 999,
           "next_action": "",
           "barcode_kind": "",
           "review_flag": "",
-          "product_name": "写真セット組み直し必要（別商品mix）",
-          "display_name": "写真セット組み直し必要（別商品mix）",
+          "product_name": "KDD Desk Organizer Set KDD-762",
+          "display_name": "KDD Desk Organizer Set KDD-762",
           "resolved": {
             "management_id": "BOX-A-ITEM-0011",
             "resolution_status": "provisional",
-            "product_name": "写真セット組み直し必要（別商品mix）",
-            "barcode_primary": "X001AQW187",
+            "product_name": "KDD Desk Organizer Set KDD-762",
+            "barcode_primary": "XJ019GQ4CR",
             "product_code_type": "amazon_internal",
-            "official_image_state": "actual-only固定 / 写真セット組み直し必要",
-            "note": "2026-04-30 箱A variable grouping 再組成。X001AQW187 の黒物商品と Mosquito Killer 文面が同一グループに混在しており、別商品mix と判断。",
+            "official_image_state": "actual-only固定 / 実物写真優先",
+            "note": "2026-04-30 13:46:08 JST mix再束ね。Desk Organizer Set / Model KDD-762 / KDD service 文面が 3枚で一致したため、KDD 卓上収納セットとして provisional 化。",
             "evidence": [
-              "X001AQW187",
-              "Mosquito Killer",
-              "市気感市出剤取",
-              "別商品mix"
+              "Desk Organizer Set",
+              "KDD-762",
+              "XJ019GQ4CR",
+              "KDD"
             ],
-            "brand_override": "不明",
-            "category_override": "その他 > 要再束ね",
-            "check_items_override": "X001AQW187 と Mosquito Killer 文面の混在確認 / 写真再束ね",
+            "brand_override": "KDD",
+            "category_override": "家具・インテリア > インテリア小物 > 小物入れ",
+            "check_items_override": "Desk Organizer Set / KDD-762 / XJ019GQ4CR / front-back一致",
             "image_source": "actual-only",
-            "exact_match_guard_state": "needs_review",
-            "price_override": 0
+            "exact_match_guard_state": "review_required",
+            "price_override": 1980
           },
-          "official": {},
-          "comparison_images": [],
-          "reference_images": [],
+          "official": {
+            "management_id": "BOX-A-ITEM-0011",
+            "raw_id": "RAW-BOX-A-011",
+            "product_id": "PRD-BOX-A-011",
+            "draft_id": "DRF-BOX-A-011",
+            "research_id": "RES-BOX-A-011",
+            "official_page_url": "https://www.amazon.co.jp/dp/B0DKFNPYKS",
+            "official_image_url": "",
+            "official_image_local": "",
+            "image_source": "actual-only",
+            "verified_exact_match": false,
+            "official_image_state": "actual-only固定 / 実物写真優先",
+            "note": "2026-04-30 13:46:08 JST Amazon exact product root B0DKFNPYKS は確認できたが、一次画像URL抽出は未了のため actual-only を維持。",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "Amazon一次画像URLの直取得未了"
+            ],
+            "supplemental_url": "https://www.kddservice.com/products/kdd-desk-pad-and-organizer-set",
+            "supplemental_image_urls": [],
+            "supplemental_image_locals": []
+          },
           "commerce": {
             "management_id": "BOX-A-ITEM-0011",
             "raw_id": "RAW-BOX-A-011",
             "product_id": "PRD-BOX-A-011",
             "draft_id": "DRF-BOX-A-011",
             "research_id": "RES-BOX-A-011",
-            "product_name": "写真セット組み直し必要（別商品mix）",
-            "brand": "不明",
-            "category": "その他 > 要再束ね",
-            "barcode_primary": "X001AQW187",
+            "product_name": "KDD Desk Organizer Set KDD-762",
+            "brand": "KDD",
+            "category": "家具・インテリア > インテリア小物 > 小物入れ",
+            "barcode_primary": "XJ019GQ4CR",
             "product_code_type": "amazon_internal",
             "listing_title": "写真セット組み直し必要（別商品mix）",
-            "listing_price": "",
-            "market_floor_price": "",
-            "market_floor_state": "未調査",
-            "market_source_label": "",
-            "market_source_url": "",
-            "market_checked_at": "2026-04-30 08:48:35 JST",
-            "sample_urls": [],
-            "market_note": "外部相場URL未取得。参考価格も未設定。",
-            "popularity_proxy_score": 24,
+            "listing_price": "1980",
+            "market_floor_price": "1980",
+            "market_floor_state": "外部根拠あり / 価格は保守仮置き",
+            "market_source_label": "Amazon exact root KDD pen stand organizer",
+            "market_source_url": "https://www.amazon.co.jp/dp/B0DKFNPYKS",
+            "market_checked_at": "2026-04-30 13:46:08 JST",
+            "sample_urls": [
+              "https://www.amazon.co.jp/dp/B0DKFNPYKS",
+              "https://www.kddservice.com/products/kdd-desk-pad-and-organizer-set"
+            ],
+            "market_note": "Amazon exact root と KDD site を確認。画像一次取得が未了のため、卓上収納セットとして1980円を保守仮置き。",
+            "popularity_proxy_score": 35,
             "popularity_proxy_label": "低",
-            "popularity_proxy_reason": "Amazon内部コードあり / 商品名候補あり",
-            "popularity_proxy_checked_at": "2026-04-30 08:48:35 JST",
+            "popularity_proxy_reason": "Amazon root あり / box text exact / 室内収納カテゴリ",
+            "popularity_proxy_checked_at": "2026-04-30 13:46:08 JST",
             "publish_state": "下書き準備中",
             "publish_detail": "",
             "listing_id": "",
             "public_listing_url": "",
             "csv_status": "",
-            "updated_at": "2026-04-30 08:59:02 JST",
+            "updated_at": "2026-04-30 13:46:08 JST",
             "human_gate_status": "waiting_both",
             "human_gate_ready": false,
             "human_gate_reason": "出品OK未確認 / AI画像未確認",
             "human_gate_requires_ai_images_ok": true
           },
+          "comparison_images": [],
+          "reference_images": [],
+          "verified_exact_match": false,
+          "official_image_state": "actual-only固定 / 比較画像なし",
+          "exact_match_guard_state": "clear",
+          "qwen_hq_review_status": "",
+          "qwen_hq_resolution": "",
+          "qwen_hq_review_note": "",
+          "publish_status": "下書き準備中",
+          "publish_state": "下書き準備中",
+          "public_listing_url": "",
+          "listing_id": "",
+          "comparison_image_ref": "",
+          "reference_image_ref": "",
+          "minimum_price": "1980",
+          "market_floor_price_label": "1980円",
+          "popularity_proxy_label": "低",
+          "popularity_proxy_reason": "Amazon root あり / box text exact / 室内収納カテゴリ",
+          "listing_price": "1980",
+          "exception": {},
+          "route_plan": {},
           "human_gate": {
             "management_id": "BOX-A-ITEM-0011",
             "ai_images_ok": false,
@@ -34821,26 +35093,220 @@ window.ZERO_COST_INTAKE = {
             "actual_only_ok_at": "",
             "hold_at": "",
             "updated_at": ""
+          }
+        },
+        {
+          "management_id": "BOX-A-ITEM-0012",
+          "box_id": "BOX-A",
+          "sequence": 12,
+          "intake_added_at": "2026-04-30 13:46:08 JST",
+          "status": "incomplete",
+          "photo_grouping": "barcode_delimiter_variable",
+          "grouping_warning": "0011 mix から white box X9 を別個体として抽出",
+          "missing_slots": [
+            "BACK"
+          ],
+          "slot_count": 2,
+          "slots": [
+            {
+              "slot": "CODE",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/033_IMG_2309.heic",
+              "source_name": "033_IMG_2309.heic",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0012/01_CODE_033_IMG_2309.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0012/01_CODE_033_IMG_2309.jpg",
+              "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0012/01_CODE_033_IMG_2309.jpg"
+            },
+            {
+              "slot": "FRONT",
+              "status": "present",
+              "source_path": "/Users/dd/merch_deal_finder/zero_cost_merch_branch/state/intake_uploads/BOX-A/20260430_014137/originals/034_IMG_2308.heic",
+              "source_name": "034_IMG_2308.heic",
+              "execution_path": "/Users/dd/merch_deal_finder/mercari_shops_bulk_branch/exports/public_assets/intake/BOX-A-ITEM-0012/02_FRONT_034_IMG_2308.jpg",
+              "resident_path": "/Users/dd/000_AI組織/07_会社の資料棚/60_すぐ使うセット/63_AI組織ポータル/merch/zero-cost/assets/intake/BOX-A-ITEM-0012/02_FRONT_034_IMG_2308.jpg",
+              "resident_url": "https://macbook-pro-m4.tail8c523e.ts.net:8447/merch/zero-cost/assets/intake/BOX-A-ITEM-0012/02_FRONT_034_IMG_2308.jpg"
+            }
+          ],
+          "shared_sheet_title_value": "BOX-A-ITEM-0012",
+          "shared_sheet_note": "管理番号をタイトル欄へ入れる",
+          "box_label": "英字箱 A",
+          "box_lane": "alphabet",
+          "box_code": "A",
+          "identification": {
+            "state": "不足あり",
+            "barcode_values": [
+              "X001AQW187"
+            ],
+            "front_back_texts": [
+              "BLITZWOLF",
+              "Knight X9",
+              "Mosquito Killer",
+              "360° A11-Round"
+            ],
+            "code_texts": [
+              "X001AQW187",
+              "BLITZWOLF",
+              "Knight X9"
+            ],
+            "ocr_texts": [
+              "BLITZWOLF",
+              "Knight X9",
+              "Mosquito Killer",
+              "X001AQW187"
+            ],
+            "candidate_query": "X001AQW187 BLITZWOLF Knight X9 Mosquito Killer",
+            "review_flag": "",
+            "ocr_engine": "manual_regroup",
+            "ocr_debug_paths": []
           },
-          "publish_state": "下書き準備中",
-          "public_listing_url": "",
+          "priority_score": 999,
+          "next_action": "",
+          "barcode_kind": "",
+          "review_flag": "",
+          "product_name": "BLITZWOLF Knight X9 蚊取りランプ 電撃殺虫器",
+          "display_name": "BLITZWOLF Knight X9 蚊取りランプ 電撃殺虫器",
+          "resolved": {
+            "management_id": "BOX-A-ITEM-0012",
+            "resolution_status": "provisional",
+            "product_name": "BLITZWOLF Knight X9 蚊取りランプ 電撃殺虫器",
+            "barcode_primary": "X001AQW187",
+            "product_code_type": "amazon_internal",
+            "official_image_state": "比較画像候補あり / official-like先頭 / exact-match保留",
+            "note": "2026-04-30 13:46:08 JST 0011 mix から white box X9 を別個体として抽出。X001AQW187 ラベルと front 箱面が Knight X9 / Mosquito Killer で一致するため、0010とは別在庫として扱う。",
+            "evidence": [
+              "X001AQW187",
+              "BLITZWOLF",
+              "Knight X9",
+              "Mosquito Killer"
+            ],
+            "brand_override": "BLITZWOLF",
+            "category_override": "生活家電 > 空調 > 蚊取り・殺虫",
+            "check_items_override": "X001AQW187 / Knight X9 / Mosquito Killer / white box",
+            "image_source": "Mercari exact listing image",
+            "exact_match_guard_state": "review_required",
+            "price_override": 1500
+          },
+          "official": {
+            "management_id": "BOX-A-ITEM-0012",
+            "raw_id": "RAW-BOX-A-012",
+            "product_id": "PRD-BOX-A-012",
+            "draft_id": "DRF-BOX-A-012",
+            "research_id": "RES-BOX-A-012",
+            "official_page_url": "https://jp.mercari.com/item/m64971229783",
+            "official_image_url": "https://static.mercdn.net/item/detail/orig/photos/m64971229783_1.jpg?1776006790",
+            "official_image_local": "",
+            "image_source": "Mercari exact listing image",
+            "verified_exact_match": false,
+            "official_image_state": "比較画像候補あり / official-like先頭 / exact-match保留",
+            "note": "2026-04-30 13:46:08 JST white box 個体も Knight X9 exact listing の比較画像を流用。商品 family は同じだが個体は別在庫として管理。",
+            "exact_match_guard_state": "review_required",
+            "exact_match_guard_reasons": [
+              "直営一次ソースまでは未確認"
+            ],
+            "supplemental_url": "https://item.jd.com/10153682907429.html",
+            "supplemental_image_urls": [],
+            "supplemental_image_locals": []
+          },
+          "commerce": {
+            "management_id": "BOX-A-ITEM-0012",
+            "raw_id": "RAW-BOX-A-012",
+            "product_id": "PRD-BOX-A-012",
+            "draft_id": "DRF-BOX-A-012",
+            "research_id": "RES-BOX-A-012",
+            "product_name": "BLITZWOLF Knight X9 蚊取りランプ 電撃殺虫器",
+            "brand": "BLITZWOLF",
+            "category": "生活家電 > 空調 > 蚊取り・殺虫",
+            "barcode_primary": "X001AQW187",
+            "product_code_type": "amazon_internal",
+            "listing_title": "BLITZWOLF Knight X9 蚊取りランプ 電撃殺虫器",
+            "listing_price": "1500",
+            "market_floor_price": "1500",
+            "market_floor_state": "外部相場あり",
+            "market_source_label": "Mercari exact listing Knight X9 family",
+            "market_source_url": "https://jp.mercari.com/item/m64971229783",
+            "market_checked_at": "2026-04-30 13:46:08 JST",
+            "sample_urls": [
+              "https://jp.mercari.com/item/m64971229783",
+              "https://item.jd.com/10153682907429.html"
+            ],
+            "market_note": "white box 個体も Knight X9 family と判断。0010 と同じ保守下限 1500円を適用。",
+            "popularity_proxy_score": 34,
+            "popularity_proxy_label": "低",
+            "popularity_proxy_reason": "商品 family 一致 / exact listing root あり",
+            "popularity_proxy_checked_at": "2026-04-30 13:46:08 JST",
+            "publish_state": "下書き準備中",
+            "publish_detail": "",
+            "listing_id": "",
+            "public_listing_url": "",
+            "csv_status": "",
+            "updated_at": "2026-04-30 13:46:08 JST",
+            "human_gate_status": "waiting_both",
+            "human_gate_ready": false,
+            "human_gate_reason": "出品OK未確認 / AI画像未確認",
+            "human_gate_requires_ai_images_ok": true
+          },
+          "comparison_images": [
+            {
+              "label": "比較-1",
+              "url": "./assets/official_images/BOX-A-ITEM-0012_official_1.jpg",
+              "page_url": "https://jp.mercari.com/item/m64971229783",
+              "state": "比較画像候補あり / exact-match保留",
+              "source": "Mercari exact listing image",
+              "verified_exact_match": false
+            }
+          ],
+          "reference_images": [
+            {
+              "label": "比較-1",
+              "url": "./assets/official_images/BOX-A-ITEM-0012_official_1.jpg",
+              "page_url": "https://jp.mercari.com/item/m64971229783",
+              "state": "比較画像候補あり / exact-match保留",
+              "source": "Mercari exact listing image",
+              "verified_exact_match": false
+            }
+          ],
           "verified_exact_match": false,
-          "official_image_state": "現写真では1商品に断定不能",
+          "official_image_state": "比較画像候補あり / exact-match保留",
           "exact_match_guard_state": "clear",
           "qwen_hq_review_status": "",
           "qwen_hq_resolution": "",
           "qwen_hq_review_note": "",
           "publish_status": "下書き準備中",
+          "publish_state": "下書き準備中",
+          "public_listing_url": "",
           "listing_id": "",
-          "comparison_image_ref": "",
-          "reference_image_ref": "",
-          "minimum_price": "",
-          "market_floor_price_label": "未調査",
+          "comparison_image_ref": "./assets/official_images/BOX-A-ITEM-0012_official_1.jpg",
+          "reference_image_ref": "./assets/official_images/BOX-A-ITEM-0012_official_1.jpg",
+          "minimum_price": "1500",
+          "market_floor_price_label": "1500円",
           "popularity_proxy_label": "低",
-          "popularity_proxy_reason": "Amazon内部コードあり / 商品名候補あり",
-          "listing_price": "",
+          "popularity_proxy_reason": "商品 family 一致 / exact listing root あり",
+          "listing_price": "1500",
           "exception": {},
-          "route_plan": {}
+          "route_plan": {},
+          "human_gate": {
+            "management_id": "BOX-A-ITEM-0012",
+            "ai_images_ok": false,
+            "publish_ok": false,
+            "actual_only_ok": false,
+            "hold": false,
+            "requires_ai_images_ok": true,
+            "ready": false,
+            "status": "waiting_both",
+            "reason": "出品OK未確認 / AI画像未確認",
+            "reasons": [
+              "出品OK未確認",
+              "AI画像未確認"
+            ],
+            "mismatch_reason": "",
+            "action_trail": [],
+            "note": "",
+            "ai_images_ok_at": "",
+            "publish_ok_at": "",
+            "actual_only_ok_at": "",
+            "hold_at": "",
+            "updated_at": ""
+          }
         }
       ]
     }
