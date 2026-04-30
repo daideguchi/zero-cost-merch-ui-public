@@ -1,5 +1,5 @@
 window.ZERO_COST_STATUS = {
-  "generated_at": "2026-04-30 12:59:56 JST",
+  "generated_at": "2026-04-30 13:05:46 JST",
   "workbook_url": "https://docs.google.com/spreadsheets/d/1VjdUJavoijOkdjKtkdKy_zUcdkQqZwG0oRty57H5_lk/edit",
   "metrics": {
     "box_count": "1",
